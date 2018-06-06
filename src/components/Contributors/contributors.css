@@ -1,16 +1,25 @@
-.row {
-    display: flex;
+
+
+._logo_css{
+	margin-top: 3%;
+    margin-bottom: 4%;
 }
 
-.column {
-    flex: 33.33%;
-    float: left;
-    padding: 5px;
+._heart{
+	color: #c52e32;
 }
 
+._students_researchers{
+	font-size: 21px;
+    font-weight: 150;
+}
 
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
+._align{
+	text-align: center;
+}
+
+._contributor{
+	font-weight: 800 !important;
+    font-size: 36px !important;
+    color: #0d0465 !important;
 }
