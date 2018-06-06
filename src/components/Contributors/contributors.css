@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
