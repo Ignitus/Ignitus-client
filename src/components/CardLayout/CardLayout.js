@@ -5,7 +5,7 @@ import Intern from '../../Images/Cards/intern.png';
 import Offer from '../../Images/Cards/offer.png';
 import Expert from '../../Images/Cards/expert.png';
 import Card from './Components/Card';
-import './CardLayout.css';
+import './card_component.css';
 
 
 class CardLayout extends Component {

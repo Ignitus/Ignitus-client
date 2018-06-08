@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Contributors.css';
+import './contributor_component.css';
 import Stanford_logo from '../../Images/University Logos/Stanford_logo.png';
 import CMU_logo from '../../Images/University Logos/CMU_logo.png';
 import MIT_logo from '../../Images/University Logos/MIT_logo.png';
