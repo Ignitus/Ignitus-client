@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './contributors.css';
-import Stanford_logo from '../../images/Stanford_logo.png';
-import CMU_logo from '../../images/CMU_logo.png';
-import MIT_logo from '../../images/MIT_logo.png';
-import Harvard_logo from '../../images/Harvard_logo.png';
-import Oxford_logo from '../../images/Oxford_logo.png';
-import Yale_logo from '../../images/Yale_logo.png';
-import Princeton_logo from '../../images/Princeton_logo.png';
-import Berkeley_logo from '../../images/Berkeley_logo.png';
+import './Contributors.css';
+import Stanford_logo from '../../Images/University Logos/Stanford_logo.png';
+import CMU_logo from '../../Images/University Logos/CMU_logo.png';
+import MIT_logo from '../../Images/University Logos/MIT_logo.png';
+import Harvard_logo from '../../Images/University Logos/Harvard_logo.png';
+import Oxford_logo from '../../Images/University Logos/Oxford_logo.png';
+import Yale_logo from '../../Images/University Logos/Yale_logo.png';
+import Princeton_logo from '../../Images/University Logos/Princeton_logo.png';
+import Berkeley_logo from '../../Images/University Logos/Berkeley_logo.png';
 
 class Contributors extends Component {
 
@@ -21,7 +21,7 @@ class Contributors extends Component {
 
         return(
 
-           <div className="col-lg-3 col-md-4 col-sm-6 col-9  _logo_css" key = {key}>
+           <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _logo_css" key = {key}>
                   <img src={logo} width="200" alt={"logo"}/> 
             </div>
 
