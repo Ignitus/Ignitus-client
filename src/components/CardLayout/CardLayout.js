@@ -28,8 +28,8 @@ class CardLayout extends Component {
       }
     ];
 
-    let _html = [...data].map((x) => {
-        return <Card image={x.image} title={x.title} description={x.description}/>
+    let _html = [...data].map((x,key) => {
+        return <Card key = {key} image={x.image} title={x.title} description={x.description}/>
      
     })
 
