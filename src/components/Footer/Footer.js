@@ -108,6 +108,11 @@ class Footer extends Component {
                     <i className="fa fa-linkedin"> </i>
                   </a>
                 </li>
+                <li className="list-inline-item">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://github.com/Ignitus">
+                    <i className="fa fa-github"> </i>
+                  </a>
+                </li>
               </ul>
 
               <div className="footer-copyright text-center py-3 heading">© 2018 Copyright Ignitus

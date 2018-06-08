@@ -28,11 +28,11 @@ class Navigation extends Component {
             </ul>
              <ul className="nav navbar-nav navbar-right ml-md-auto ">
                 <li className="nav-item">
-                <a className="nav-link" href="#">Join</a>
+                <a className="nav-link" href="https://ignitus1.typeform.com/to/ykCs5H">Join</a>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <a className="nav-link" href="#">Sign in</a>
-              </li>
+              </li>*/}
             </ul>
           </div>
     </nav>

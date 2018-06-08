@@ -14,7 +14,7 @@ class CardLayout extends Component {
       {
         image:  Intern,
         title: 'Internships',
-        description: "Top quality 'Ignitus-Exclusive' internships and freelance work with professors,researchers,companies and professionals from selected desinations" 
+        description: "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations" 
       },
       { 
         image: Offer,
@@ -36,7 +36,7 @@ class CardLayout extends Component {
     return (
       <div>
           <div className="bg-white mt-5">
-          <div><h1 className="text-center my-5 font-weight-bold ignitus-color">What you will find on Ignitus ?</h1></div>
+          <div><h1 className="text-center my-5 ignitus-color">What you will find on Ignitus ?</h1></div>
           <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5">
             <div className = "row">
            	  {_html}
