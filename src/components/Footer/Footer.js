@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../images/black_logo.png';
+import logo from '../../Images/Logos/black_logo.png';
 import './footer.css';
 
 class Footer extends Component {
@@ -38,7 +38,7 @@ class Footer extends Component {
                     </ul>
                   </div>
 
-                  <div className="col-md-2 mx-auto">
+                  <div className="col-md-2 mx-auto _pd-left">
                     <ul className="list-unstyled">
                       <li>
                         <img src={logo} className="img-responsive img-css" alt={"logo"}/>
@@ -50,13 +50,13 @@ class Footer extends Component {
                     <h5 className=" mt-3 mb-4 heading">Company</h5>
                     <ul className="list-unstyled">
                       <li>
-                        <a  className="link" href="#!">About</a>
+                        <a  className="link" target="_blank" href="https://www.facebook.com/Ignitus.org/">About</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">Careers</a>
+                        <a  className="link" target="_blank" href="https://angel.co/ignitus-2/jobs">Careers</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">Blog</a>
+                        <a  className="link" target="_blank" href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c">Blog</a>
                       </li>
                     </ul>
                   </div>
@@ -81,29 +81,29 @@ class Footer extends Component {
                 </div>
               </div>
 
-              <ul className="list-unstyled list-inline text-center">
+              <ul className="list-unstyled list-inline text-center ">
                 <li className="list-inline-item">
-                  <a className="btn-floating mx-1 link" href="#!">
+                  <a className="btn-floating mx-1 link _color" target="_blank"  target="_blank" href="https://www.facebook.com/Ignitus.org/">
                     <i className="fa fa-facebook"> </i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="btn-floating mx-1 link" href="#!">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://twitter.com/ignitus_org">
                     <i className="fa fa-twitter"> </i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="btn-floating mx-1 link" href="#!">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://angel.co/ignitus-2">
                     <i className="fa fa-angellist"> </i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="btn-floating mx-1 link"href="#!">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="http://bit.do/join-ignitus">
                     <i className="fa fa-slack"> </i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="btn-floating mx-1 link" href="#!">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://www.linkedin.com/company/13733583/admin/updates/">
                     <i className="fa fa-linkedin"> </i>
                   </a>
                 </li>

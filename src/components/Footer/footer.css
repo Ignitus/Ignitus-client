@@ -19,3 +19,11 @@
 	align-self: middle;
 	margin:50px 20px;
 }
+
+._color{
+	color: white;
+}
+
+._pd-left{
+	padding-left: 22px !important;
+}
