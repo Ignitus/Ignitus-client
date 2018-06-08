@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './contributors.css';
+import './Contributors.css';
 import Stanford_logo from '../../Images/University Logos/Stanford_logo.png';
 import CMU_logo from '../../Images/University Logos/CMU_logo.png';
 import MIT_logo from '../../Images/University Logos/MIT_logo.png';
@@ -21,7 +21,7 @@ class Contributors extends Component {
 
         return(
 
-           <div className="col-lg-3 col-md-4 col-sm-6 col-9  _logo_css" key = {key}>
+           <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _logo_css" key = {key}>
                   <img src={logo} width="200" alt={"logo"}/> 
             </div>
 

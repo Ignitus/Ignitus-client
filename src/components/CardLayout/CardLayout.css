@@ -1,0 +1,16 @@
+
+
+
+
+.ignitus-color{
+	color: darkblue;
+}
+
+.card-shadow {
+    padding: 10px;
+    box-shadow: 2px 5px 6px #888888;
+}
+
+.card-shadow:hover {
+	box-shadow: 5px 8px 10px #888888;
+}
