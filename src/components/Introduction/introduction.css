@@ -31,9 +31,11 @@
 
 .box {
 	background: #f3f3f2;
-	height: 550px;
-	margin-bottom: 70px;
-	margin-top: 0px !important;
-	padding-top: 70px;
 }
 
+._border{
+    border: 1px solid black;
+}
+.mt-4{
+    margin-top: 4.5rem!important;
+}
