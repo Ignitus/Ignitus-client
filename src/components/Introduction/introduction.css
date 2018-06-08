@@ -1,0 +1,39 @@
+._align{
+	text-align: center;
+}
+
+._intro{
+	font-size: 55px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+._ignitus{
+	font-size: 65px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #192b65;
+}
+
+._tagline{
+	font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+._content{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.box {
+	background: #f3f3f2;
+	height: 550px;
+	margin-bottom: 70px;
+	margin-top: 0px !important;
+	padding-top: 70px;
+}
+

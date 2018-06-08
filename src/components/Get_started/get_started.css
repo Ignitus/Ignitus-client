@@ -1,0 +1,26 @@
+._align{
+	text-align: center;
+}
+
+._started {
+	font-size: 23px;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+._button {
+	margin-bottom: 50px;
+	background-color: white;
+	color:#343a40 ;
+	text-decoration: none;
+	border: 1px solid #343a40 !important;
+}
+
+._button:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #343a40;
+}
+
+

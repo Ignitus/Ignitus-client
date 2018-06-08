@@ -8,7 +8,6 @@ import Oxford_logo from '../../images/Oxford_logo.png';
 import Yale_logo from '../../images/Yale_logo.png';
 import Princeton_logo from '../../images/Princeton_logo.png';
 import Berkeley_logo from '../../images/Berkeley_logo.png';
-import black_logo from '../../images/black_logo.png';
 
 class Contributors extends Component {
 
