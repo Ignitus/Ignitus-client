@@ -28,7 +28,7 @@ class Navigation extends Component {
             </ul>
              <ul className="nav navbar-nav navbar-right ml-md-auto ">
                 <li className="nav-item">
-                <a className="nav-link" href="https://ignitus1.typeform.com/to/ykCs5H">Join</a>
+                <a className="nav-link" href="http://bit.do/join-ignitus">Join</a>
               </li>
               {/*<li className="nav-item">
                 <a className="nav-link" href="#">Sign in</a>
