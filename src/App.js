@@ -16,8 +16,9 @@ class App extends Component {
         <Introduction/>
         <CardLayout />
         <Contributors />
-        <GetStarted />
+      
         <Partner />
+        <GetStarted />
         <Footer />
         
       </div>
