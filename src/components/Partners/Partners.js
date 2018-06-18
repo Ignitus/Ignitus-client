@@ -32,7 +32,7 @@ class Partner extends Component {
 
         <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
               <div className = "_contributor">Supporters & Partners</div>
-              <div className = "_students_researchers" >Supported with <i className="fa fa-heart _heart"> </i> by Students,Researches and Alumni of ...</div>
+              <div className = "_students_researchers" >Supported with <i className="fa fa-heart _heart"> </i> by following Organizations ...</div>
          </div>
         
         <div className = "container">
