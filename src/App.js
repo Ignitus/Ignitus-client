@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Contributors from './components/Contributors/Contributors';
 import GetStarted from './components/Get_started/Get_started';
 import Introduction from './components/Introduction/Introduction';
+import Testimonial from './components/Testimonial/Testimonial';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <Navigation />
         <Introduction/>
+        <Testimonial/>
         <Contributors />
         <GetStarted />
         <Footer />

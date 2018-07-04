@@ -1,0 +1,112 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 210px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__slide {
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  max-width: 900px;
+  list-style-type: none;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .carousel__slide {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+.carousel__slide--active {
+  display: block;
+}
+
+.carousel-slide__content {
+  margin-bottom: 19px;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .carousel-slide__content {
+    font-size: 18px;
+  }
+}
+
+.carousel-slide__author,
+.carousel-slide__source {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .carousel-slide__author,
+  .carousel-slide__source {
+    font-size: 16px;
+  }
+}
+
+.carousel-slide__source {
+  font-style: italic;
+  color: #888;
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  color: #111;
+  cursor: pointer;
+  opacity: .75;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+.carousel__arrow:focus {
+  outline: 0;
+}
+.carousel__arrow:hover {
+  opacity: .5;
+}
+.carousel__arrow--left {
+  left: 32px;
+}
+.carousel__arrow--right {
+  right: 32px;
+}
+
+.carousel__indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.carousel__indicators li:nth-of-type(n + 2) {
+  margin-left: 9px;
+}
+
+.carousel__indicator {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #111;
+  cursor: pointer;
+  opacity: .15;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+.carousel__indicator:hover {
+  opacity: .5;
+}
+.carousel__indicator--active, .carousel__indicator--active:hover {
+  opacity: .75;
+}
