@@ -3,27 +3,27 @@
 }
 
 ._intro{
-	font-size: 55px;
+	font-size: 50px;
     font-weight: 500;
     margin-top: 30px;
 }
 
 ._ignitus{
-	font-size: 65px;
+	font-size: 60px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #192b65;
 }
 
 ._tagline{
-	font-size: 40px;
+	font-size: 35px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 40px;
 }
 
 ._content{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     margin-top: 35px;
     margin-bottom: 50px;

@@ -1,0 +1,23 @@
+
+
+
+
+.ignitus-color{
+	font-weight: 800 !important;
+    font-size: 36px !important;
+    color: #0d0465 !important;
+    margin-top: 50px;
+}
+
+.card-shadow {
+    /*box-shadow: 2px 5px 6px #e6faff;*/
+   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-shadow:hover {
+	box-shadow:0 4px 8px 0 #999999, 0 6px 20px 0 #999999;
+}
+
+._card{
+	height:200px;
+}

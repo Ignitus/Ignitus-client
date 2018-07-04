@@ -121,12 +121,14 @@ class Testimonial extends Component {
     this.state = {
       activeIndex: 0
     };
+    console.log("egrtgrtgt "+this.props);
   }
 
   goToSlide(index) {
     this.setState({
       activeIndex: index
     });
+    console.log("qqqqqqqqqq "+this.props.index);
   }
 
   goToPrevSlide(e) {
@@ -145,6 +147,7 @@ class Testimonial extends Component {
     this.setState({
       activeIndex: index
     });
+    console.log("wwwwwwwww "+this.props.index);
   }
 
   goToNextSlide(e) {
@@ -163,6 +166,7 @@ class Testimonial extends Component {
     this.setState({
       activeIndex: index
     });
+    console.log("ttttttttttt "+this.props.index);
 
   }
 
