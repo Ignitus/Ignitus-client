@@ -5,7 +5,8 @@ import Sugar_labs    from '../../Images/Partners Logos/sugarLabs.png';
 import mit_media     from '../../Images/Partners Logos/mit_media_lab.png';
 import systers_logo  from '../../Images/Partners Logos/systers-logo.png';
 import gs_logo       from '../../Images/Partners Logos/gslogo.png';
-import lean_in       from '../../Images/Partners Logos/lean_in.png'
+import lean_in       from '../../Images/Partners Logos/lean_in.png';
+import progate       from '../../Images/Partners Logos/progate.jpg';
 
 class Partner extends Component {
 
@@ -13,7 +14,7 @@ class Partner extends Component {
 
   render() {
 
-    const Images_array = [Woo_tech_logo,Sugar_labs,gs_logo,lean_in,systers_logo];
+    const Images_array = [Woo_tech_logo,Sugar_labs,gs_logo,lean_in,systers_logo,progate];
 
     let _html = Images_array.map(function (logo,key) {
 
