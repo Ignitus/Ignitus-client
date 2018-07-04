@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../images/black_logo.png';
+import logo from '../../Images/Logos/black_logo.png';
 
 class Navigation extends Component {
   render() {
@@ -28,11 +28,11 @@ class Navigation extends Component {
             </ul>
              <ul className="nav navbar-nav navbar-right ml-md-auto ">
                 <li className="nav-item">
-                <a className="nav-link" href="#">Join</a>
+                <a className="nav-link" href="http://bit.do/join-ignitus">Join</a>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <a className="nav-link" href="#">Sign in</a>
-              </li>
+              </li>*/}
             </ul>
           </div>
     </nav>
