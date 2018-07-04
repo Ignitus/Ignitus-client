@@ -6,10 +6,11 @@ import Contributors from './components/Contributors/Contributors';
 import GetStarted   from './components/Get_started/Get_started';
 import Introduction from './components/Introduction/Introduction';
 
-import Testimonial from './components/Testimonial/Testimonial';
+import Testimonial  from './components/Testimonial/Testimonial';
 
 import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
+import Data         from './components/Testimonial/testimonial_data';
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
         <Navigation />
         <Introduction/>
 
-        <Testimonial/>
+        <Testimonial slides = {Data}/>
         <CardLayout />
 
         <Contributors />

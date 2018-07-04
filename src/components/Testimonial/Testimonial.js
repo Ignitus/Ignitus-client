@@ -2,45 +2,6 @@ import React, { Component } from 'react';
 import './testimonial.css';
 
 
-const carouselSlidesData = [
-  {
-    content:
-      "Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place.",
-    author: "Bane",
-    source: "facebook"
-  }, {
-    content:
-      "You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.",
-    author: "Ra's Al Ghul",
-    source: "Snapchat"
-  }, {
-    content:
-      "Introduce a little anarchy, upset the established order and everything becomes chaos. I'm an agent of chaos. Oh, and you know the thing about chaos? It's fair.",
-    author: "Joker",
-    source: "facebook"
-  }, {
-    content:
-      "I can't do that as Bruce Wayne... as a man. I'm flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.",
-    author: "Bruce Wayne",
-    source: "facebook"
-  }, {
-    content:
-      "But it's not who you are underneath... it's what you do that defines you.",
-    author: "Rachel Dawes",
-    source: "twitter"
-  }, {
-    content:
-      "When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.",
-    author: "John Blake",
-    source: "Google+"
-  }, {
-    content:
-      "Master Wayne, you've been gone a long time. You look very fashionable. Apart from the mud.",
-    author: "Alfred Pennyworth",
-    source: "twitter"
-  }
-];
-
 class CarouselIndicator extends Component {
   render() {
     return (
@@ -66,9 +27,9 @@ class CarouselSlide extends Component {
             ? "carousel__slide carousel__slide--active"
             : "carousel__slide"
         }>
-        <p className="carousel-slide__content">{this.props.slide.content}</p>
+        <div className="carousel-slide__content">{this.props.slide.content}</div>
 
-        <p>
+        <div>
           <strong className="carousel-slide__author">
             {this.props.slide.author}
           </strong>,
@@ -76,7 +37,7 @@ class CarouselSlide extends Component {
           <small className="carousel-slide__source">
             {this.props.slide.source}
           </small>
-        </p>
+        </div>
       </li>
     );
   }
@@ -114,26 +75,43 @@ class Testimonial extends Component {
 	constructor(props) {
     super(props);
 
-    this.goToSlide = this.goToSlide.bind(this);
+    this.goToSlide     = this.goToSlide.bind(this);
     this.goToPrevSlide = this.goToPrevSlide.bind(this);
     this.goToNextSlide = this.goToNextSlide.bind(this);
+    this.timer         = this.timer.bind(this);
 
     this.state = {
       activeIndex: 0
     };
-    console.log("egrtgrtgt "+this.props);
+  }
+
+  componentDidMount(){
+     let interval = setInterval(this.timer, 4000);
+  }
+
+  componentWillUnmount() {
+     // use intervalId from the state to clear the interval
+     clearInterval(this.state.interval);
+  }
+
+  timer() {
+     // setState method is used to update the state
+     if(this.state.activeIndex  == this.props.slides.length - 1){
+        this.setState({ activeIndex: -1 });
+     }
+
+     this.setState({ activeIndex: this.state.activeIndex + 1 });
   }
 
   goToSlide(index) {
     this.setState({
       activeIndex: index
     });
-    console.log("qqqqqqqqqq "+this.props.index);
   }
 
   goToPrevSlide(e) {
-    e.preventDefault();
 
+    e.preventDefault();
     let index = this.state.activeIndex;
     let { slides } = this.props;
     let slidesLength = slides.length;
@@ -147,12 +125,12 @@ class Testimonial extends Component {
     this.setState({
       activeIndex: index
     });
-    console.log("wwwwwwwww "+this.props.index);
+   
   }
 
   goToNextSlide(e) {
-    e.preventDefault();
 
+    e.preventDefault();
     let index = this.state.activeIndex;
     let { slides } = this.props;
     let slidesLength = slides.length - 1;
@@ -166,14 +144,13 @@ class Testimonial extends Component {
     this.setState({
       activeIndex: index
     });
-    console.log("ttttttttttt "+this.props.index);
-
   }
 
 
   render() {
+
     return (
-      <div className="carousel">
+      <div className="carousel custom_css">
         <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
 
         <ul className="carousel__slides">

@@ -37,10 +37,13 @@ ul {
   margin-bottom: 19px;
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   font-size: 16px;
+  height: 30px;
+  /*border: 1px solid black !important;*/
 }
 @media (max-width: 991px) {
   .carousel-slide__content {
     font-size: 18px;
+    height: 30px;
   }
 }
 
@@ -109,4 +112,8 @@ ul {
 }
 .carousel__indicator--active, .carousel__indicator--active:hover {
   opacity: .75;
+}
+
+.custom_css{
+    margin: 7%;
 }
