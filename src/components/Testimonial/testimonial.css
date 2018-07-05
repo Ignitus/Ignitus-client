@@ -37,13 +37,13 @@ ul {
   margin-bottom: 19px;
  font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  height: 30px;
+  height: 100px;
   /*border: 1px solid black !important;*/
 }
 @media (max-width: 991px) {
   .carousel-slide__content {
     font-size: 18px;
-    height: 70px;
+    height: 120px;
   }
 }
 
@@ -51,11 +51,13 @@ ul {
 .carousel-slide__source {
   font-family: 'Roboto', arial, sans-serif;
   font-size: 14px;
+  color: black !important;
 }
 @media (min-width: 992px) {
   .carousel-slide__author,
   .carousel-slide__source {
     font-size: 16px;
+    color: black !important;
   }
 }
 
