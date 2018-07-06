@@ -27,13 +27,10 @@ class CarouselSlide extends Component {
             ? "carousel__slide carousel__slide--active "
             : "carousel__slide"
         }>
+
         <div className="carousel-slide__content"  >{this.props.slide.content}</div>
 
         <div className = "author-source-container">
-          <strong className="carousel-slide__author">
-            {this.props.slide.author}
-          </strong>
-          {" "}
           <small className="carousel-slide__source">
           <div>
              <strong className="carousel-slide__author">
