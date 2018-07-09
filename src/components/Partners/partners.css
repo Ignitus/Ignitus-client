@@ -23,3 +23,7 @@
     font-size: 36px !important;
     color: #0d0465 !important;
 }
+
+._align-vertically {
+	align-items: center;
+}
