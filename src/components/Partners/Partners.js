@@ -37,7 +37,7 @@ class Partner extends Component {
          </div>
         
         <div className = "container">
-          <div className = "row">
+          <div className = "row _align-vertically">
             {_html}
           </div>
         </div>
