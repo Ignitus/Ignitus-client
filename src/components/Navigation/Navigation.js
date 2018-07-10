@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../Images/Logos/black_logo.png';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
   render() {
@@ -30,9 +31,9 @@ class Navigation extends Component {
                 <li className="nav-item">
                 <a className="nav-link" href="http://bit.do/join-ignitus">Join</a>
               </li>
-              {/*<li className="nav-item">
-                <a className="nav-link" href="#">Sign in</a>
-              </li>*/}
+              <li className="nav-item">
+                <Link to='/login'><a className="nav-link" href="#">Sign in</a></Link>
+              </li>
             </ul>
           </div>
     </nav>
