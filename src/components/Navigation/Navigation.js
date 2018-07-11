@@ -29,7 +29,7 @@ class Navigation extends Component {
             </ul>
              <ul className="nav navbar-nav navbar-right ml-md-auto ">
                 <li className="nav-item">
-                <a className="nav-link" href="http://bit.do/join-ignitus">Join</a>
+                <a className="nav-link" href="https://bit.ly/2NwWLhp">Join</a>
               </li>
               <li className="nav-item">
                 <Link to='/login'><a className="nav-link" href="#">Sign in</a></Link>
