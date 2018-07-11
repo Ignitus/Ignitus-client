@@ -36,7 +36,6 @@ class App extends Component {
           </div>
             )
         }}/>
-        <Route exact path = '/login' component ={Login}/>
       </Switch>
     );
   }
