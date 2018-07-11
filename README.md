@@ -68,4 +68,10 @@ Ignitus Quora -
 * [What are Ignitus and WooTech about?](https://www.quora.com/What-are-Ignitus-and-WooTech-about)
 * [What is Ignitus and Ignitus Scholars?](https://www.quora.com/What-is-Ignitus-and-Ignitus-Scholars)
 
+This Repository is powered by 
 
+![alt tag](https://travis-ci.com/images/logos/TravisCI-Full-Color-light.png
+)
+
+![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225
+)
