@@ -36,6 +36,9 @@ class Footer extends Component {
                       <li>
                         <a  className="link" href="#!">Partners</a>
                       </li>
+                      <li>
+                        <a  className="link" href="#!">Ignitus Woo-Tech</a>
+                      </li>
                     </ul>
                   </div>
 
