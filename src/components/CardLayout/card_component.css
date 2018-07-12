@@ -1,17 +1,17 @@
 
 
 
-
 .ignitus-color{
 	font-weight: 800 !important;
     font-size: 36px !important;
     color: #0d0465 !important;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .card-shadow {
     /*box-shadow: 2px 5px 6px #e6faff;*/
-   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   /*box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+   border: 0;
 }
 
 .card-shadow:hover {
@@ -19,5 +19,12 @@
 }
 
 ._card{
-	height:200px;
+	height:135px;
+}
+
+.card-img-top {
+    width: 40% !important;
+    height:90px !important;
+    margin: 20px 90px 20px 90px !important
+
 }

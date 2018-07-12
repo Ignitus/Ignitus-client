@@ -27,12 +27,15 @@ class Navigation extends Component {
                 <a className="nav-link" href="#">Why Ignitus?</a>
               </li>
             </ul>
-             <ul className="nav navbar-nav navbar-right ml-md-auto ">
-                <li className="nav-item">
+            <ul className="nav navbar-nav navbar-right ml-md-auto ">
+              <li className="nav-item">
                 <a className="nav-link" href="https://bit.ly/2NwWLhp">Join</a>
               </li>
               <li className="nav-item">
                 <Link to='/login'><a className="nav-link" href="#">Sign in</a></Link>
+              </li>
+              <li className="nav-item">
+                <Link to='/signup'><a className="nav-link" href="#">Sign up</a></Link>
               </li>
             </ul>
           </div>
