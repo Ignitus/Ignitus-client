@@ -1,12 +1,12 @@
 import React , { Component } from 'react';
-import './login.css';
+import './Login.css';
 
 class Login extends Component {
 	render () {
 		return (
-			<div className="container border mt-5 rounded">
-			    <h1 className="mt-2 text-secondary font-weight-normal">Sign In</h1>
-				<form className="mt-4">
+			<div className="container  border mt-5 pb-5 px-5 pt-3 rounded center">
+			    <p className="display-4 font-weight-normal pb-1" style={{color: '#212529cc'}}>Sign In</p>
+				<form className="mt-3">
 				  <div class="form-group row">
 				    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
 				    <div class="col-sm-10">
@@ -19,19 +19,16 @@ class Login extends Component {
 				      <input type="password" class="form-control" id="inputPassword3" placeholder="Password"/>
 				    </div>
 				  </div>
-				  <div class="form-group row ml-2">
-				    <div class="col-sm-2"></div>
-				    <div class="col-sm-10 ">
-				      <div class="form-check">
-				        <input class="form-check-input" type="checkbox" id="gridCheck1"/>
-				        <label class="form-check-label" for="gridCheck1">
-				          Remember Me
-				        </label>
-				      </div>
+				  <div class="form-group row ">
+				    <div class="col-2"></div>
+				    <div class="form-check col-sm-10 ">
+				        <label class="form-check-label ml-3" for="gridCheck1">
+				           <input class="form-check-input" type="checkbox" id="gridCheck1"/>Remember Me
+				        </label> 
 				    </div>
 				  </div>
 				  <div className="form-group row text-center">
-					<div className="col-sm-12"><button type="submit" className="btn btn-success px-4 py-2 mb-2"><h5 className="font-weight-bold">Sign in</h5></button></div>
+					<div className="col-sm-12"><button type="submit" className="btn btn-success"><p className="h5">Sign in</p></button></div>
 				  </div>
 				<div className="or-seperator"><i>or</i></div>
 				<div className="mx-auto social-btn">
@@ -44,4 +41,3 @@ class Login extends Component {
 }
 
 export default Login;
-

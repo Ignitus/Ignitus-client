@@ -13,7 +13,7 @@ import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
 
-import Login        from './components/Login/Login';
+import Login        from './components/Login/login';
 
 class App extends Component {
   render() {
@@ -36,7 +36,7 @@ class App extends Component {
           </div>
             )
         }}/>
-        <Route exact path ='/signin' component ={Login}/>
+        <Route exact path ='/login' component ={Login}/>
       </Switch>
     );
   }
