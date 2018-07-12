@@ -9,3 +9,24 @@
 4. Send a **Pull Request**
 
 5. **Enjoy!**
+
+## Setup locally
+
+* Clone or download the repo. into any fresh temporary folder.
+
+    ``` git clone https://github.com/Ignitus/Ignitus-Client-Side-Development.git ```
+
+* Cd into that root folder you just cloned locally.
+
+    ``` cd Ignitus-Client-Side-Development ```
+
+* Open terminal in the current folder and to install all dependencies type.
+
+    ``` npm install ```
+
+* Now typing
+
+    ``` npm start ```
+
+* will start a server ! on http://localhost:3000
+
