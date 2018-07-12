@@ -1,18 +1,20 @@
-
-	.social-btn .btn i {
-		margin: 4px 15px  0 5px;
+.center {
+    margin-top: 140px !important;
+}
+.social-btn .btn i {
+        margin: 4px 15px  0 5px;
         min-width: 15px;
-	}
+    }
 
-    .or-seperator {
+.or-seperator {
         margin: 20px 0 10px;
         text-align: center;
         border-top: 1px solid #ccc;
     }
-    .or-seperator i {
+ .or-seperator i {
         padding: 0 10px;
         background: #f7f7f7;
         position: relative;
         top: -11px;
         z-index: 1;
-    }
+}
