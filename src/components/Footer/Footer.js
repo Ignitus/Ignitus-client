@@ -21,6 +21,12 @@ class Footer extends Component {
                       <li>
                         <a  className="link" href="#!">Opportunities</a>
                       </li>
+                      <li>
+                        <a  className="link" href="#!">Internships</a>
+                      </li>
+                      <li>
+                        <a  className="link" href="#!">Open Source</a>
+                      </li>
                     </ul>
                   </div>
 
@@ -31,13 +37,13 @@ class Footer extends Component {
                         <a  className="link" href="#!">Personal</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">Open Source</a>
-                      </li>
-                      <li>
                         <a  className="link" href="#!">Partners</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">Ignitus Woo-Tech</a>
+                        <a  className="link" href="https://www.quora.com/What-are-Ignitus-and-WooTech-about">Ignitus Woo-Tech</a>
+                      </li>
+                      <li>
+                        <a  className="link" href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7">Ignitus Scholar</a>
                       </li>
                     </ul>
                   </div>
@@ -114,6 +120,11 @@ class Footer extends Component {
                 <li className="list-inline-item">
                   <a className="btn-floating mx-1 link _color" target="_blank" href="https://github.com/Ignitus">
                     <i className="fa fa-github"> </i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://medium.com/@social_63397">
+                    <i className="fa fa-medium"> </i>
                   </a>
                 </li>
               </ul>

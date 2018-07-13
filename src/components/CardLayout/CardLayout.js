@@ -1,9 +1,9 @@
 
 
 import React, { Component } from 'react';
-import Intern from '../../Images/Cards/intern.png';
-import Offer from '../../Images/Cards/offer.png';
-import Expert from '../../Images/Cards/expert.png';
+import Intern from '../../Images/Cards/intern1.png';
+import Offer from '../../Images/Cards/offer1.png';
+import Expert from '../../Images/Cards/expert1.png';
 import Card from './Components/Card';
 import './card_component.css';
 
