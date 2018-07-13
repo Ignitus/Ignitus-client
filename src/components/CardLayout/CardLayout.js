@@ -14,26 +14,27 @@ class CardLayout extends Component {
       {
         image:  Intern,
         title: 'Internships',
-        description: "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations" 
+        description: "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations"
       },
-      { 
+      {
         image: Offer,
         title:'Courses',
-        description:"Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time." 
+        description:"Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time."
       },
       {
         image: Expert,
         title:'Experts Community',
-        description:"Guidance from an unparalleled network of professors,experts and industry professionals supervising internal projects with selected students" 
+        description:"Guidance from an unparalleled network of professors,experts and industry professionals supervising internal projects with selected students"
       }
     ];
 
     let _html = [...data].map((x,key) => {
         return <Card key = {key} image={x.image} title={x.title} description={x.description}/>
-     
+
     })
 
     return (
+      <section id="what-we-do">
       <div>
           <div className="bg-white mt-5">
           <div><h1 className="text-center my-5 ignitus-color">What you will find on Ignitus ?</h1></div>
@@ -44,10 +45,9 @@ class CardLayout extends Component {
           </div>
         </div>
       </div>
+      </section>
       );
   }
 }
 
 export default CardLayout;
-     
-
