@@ -16,7 +16,27 @@ import Data         from './components/Testimonial/testimonial_data';
 import Login        from './components/Login/login';
 
 class App extends Component {
+
+
+  constructor()
+  {
+      super(); 
+      this.state = {isLoading: true} 
+      console.log(this.state.isLoading);
+  }
+  componentDidMount() 
+  { 
+      setTimeout(() => this.setState({isLoading: false}), 3000)
+      console.log("componentDidMount");
+  }
+
   render() {
+
+if(this.state.isLoading){
+    return(
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" className="_loader" /></div>
+      )
+    }
     return (
       <Switch>
         <Route exact path='/' render={() => {
@@ -39,6 +59,8 @@ class App extends Component {
         <Route exact path ='/login' component ={Login}/>
       </Switch>
     );
+  
+
   }
 }
 
