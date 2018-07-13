@@ -12,7 +12,7 @@ import Testimonial  from './components/Testimonial/Testimonial';
 import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
-
+import AboutUs      from './components/AboutUs/AboutUs';
 import Login        from './components/Login/login';
 
 class App extends Component {
@@ -44,7 +44,6 @@ if(this.state.isLoading){
           <div>
             <Navigation />
             <Introduction/>
-
             <Testimonial slides = {Data}/>
             <CardLayout />
 
@@ -57,6 +56,8 @@ if(this.state.isLoading){
             )
         }}/>
         <Route exact path ='/login' component ={Login}/>
+        <Route path ='/aboutus' component ={AboutUs}/>
+        
       </Switch>
     );
   

@@ -30,7 +30,7 @@ class Contributors extends Component {
     })
 
     return (
-      <div>
+     <section id="contributors">
 
         <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
               <div className = "_contributor">Contributors</div>
@@ -42,8 +42,8 @@ class Contributors extends Component {
             {_html}
           </div>
         </div>
-      </div>
-    )
+      </section>
+      );
   }
 }
 

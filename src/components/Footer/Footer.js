@@ -78,13 +78,13 @@ class Footer extends Component {
                         <a  className="link" href="#!">Home</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">How it Works?</a>
+                        <a  className="link" href="#what-we-do">What we provide?</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!">Features</a>
+                        <a  className="link" href="#contributors">Contributors</a>
                       </li>
                       <li>
-                        <a  className="link" href="#!" >Why Ignitus</a>
+                        <a  className="link" href="#!" >About us</a>
                       </li>
                     </ul>
                   </div>
@@ -125,6 +125,11 @@ class Footer extends Component {
                 <li className="list-inline-item">
                   <a className="btn-floating mx-1 link _color" target="_blank" href="https://medium.com/@social_63397">
                     <i className="fa fa-medium"> </i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a className="btn-floating mx-1 link _color" target="_blank" href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw">
+                    <i className="fa fa-youtube"> </i>
                   </a>
                 </li>
               </ul>

@@ -18,13 +18,13 @@ class Navigation extends Component {
                 <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#what-we-do">How It Works?</a>
+                <a className="nav-link" href="#what-we-do">What we provide?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link" href="#contributors">Contributors</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Why Ignitus?</a>
+                <a className="nav-link" href="/aboutus">About us</a>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right ml-md-auto ">
