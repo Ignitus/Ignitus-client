@@ -5,7 +5,7 @@ import './Signup.css';
 
 const Signup =(props) => {
     return (
-        <div className ="container border _container mt-5">
+        <div className ="container border _container rounded mt-5">
             <div className = "my-4">
                 <img className = "img-fluid _img mx-auto d-block" src={logo}/>
             </div>
