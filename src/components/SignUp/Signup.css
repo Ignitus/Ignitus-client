@@ -19,9 +19,3 @@
     top: -11px;
     z-index: 1;
 }
-
-@media(max-width: 400px) {
-  ._container {
-    width: 300px;
-  }
-}
