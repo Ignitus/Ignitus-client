@@ -1,0 +1,21 @@
+._container {
+	width: 400px;
+}
+
+._img {
+	width: 150px;
+	height: 150px;
+}
+
+._or-seperator {
+    margin: 20px 0 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+._or-seperator i {
+    padding: 0 10px;
+    background: white;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
