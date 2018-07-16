@@ -24,7 +24,7 @@ class Navigation extends Component {
                 <a className="nav-link" href="#contributors">Contributors</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/aboutus">About us</a>
+                <a className="nav-link" href="/aboutus">About</a>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right ml-md-auto ">
