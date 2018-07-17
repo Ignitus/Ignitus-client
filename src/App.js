@@ -56,7 +56,7 @@ if(this.state.isLoading){
           </div>
             )
         }}/>
-        <Route exact path ='/login' component ={Login}/>
+        <Route  path ='/login' component ={Login}/>
         <Route  path ='/aboutus' component ={AboutUs}/>
         <Route  path ='/signup' component ={Signup}/>
       </Switch>

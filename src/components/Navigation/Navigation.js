@@ -31,12 +31,25 @@ class Navigation extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="https://bit.ly/2NwWLhp">Join</a>
               </li>
-              <li className="nav-item">
-                <Link to='/login'><a className="nav-link" href="#">Sign in</a></Link>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign in
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/login/student">Student</a>
+                  <a class="dropdown-item" href="/login/professor">Professor</a>
+                </div>
               </li>
-              <li className="nav-item">
-                <Link to='/signup'><a className="nav-link" href="#">Sign up</a></Link>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sign up
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/signup/student">Student</a>
+                  <a class="dropdown-item" href="/signup/professor">Professor</a>
+                </div>
               </li>
+              
             </ul>
           </div>
     </nav>

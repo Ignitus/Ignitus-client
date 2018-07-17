@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from '../../Images/Logos/logo white bg.png';
 import './login.css';
-
+import Navigation from '../Navigation/Navigation';
+import Footer from '../Footer/Footer';
 
 const Login =(props) => {
     return (
+        <div>
+        <Navigation/>
         <div className ="container-fluid">
             <div className="row">
                 <div className="col-xs-4"></div>
@@ -47,6 +50,8 @@ const Login =(props) => {
                 </div>
                 <div className = "col-xs-4"></div> 
             </div>
+        </div>
+        <Footer/>
         </div>
     )
 }
