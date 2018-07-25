@@ -24,7 +24,7 @@ class Navigation extends Component {
                 <a className="nav-link" href="#contributors">Contributors</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/aboutus">About</a>
+                <Link to='/aboutus'><a className="nav-link" href="/aboutus">About</a></Link>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right ml-md-auto ">
@@ -36,8 +36,8 @@ class Navigation extends Component {
                   Sign in
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/login/student">Student</a>
-                  <a class="dropdown-item" href="/login/professor">Professor</a>
+                  <Link to='/login/student'><a class="dropdown-item" href="/login/student">Student</a></Link>
+                  <Link to='/login/professor'><a class="dropdown-item" href="/login/professor">Professor</a></Link>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -45,8 +45,8 @@ class Navigation extends Component {
                   Sign up
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/signup/student">Student</a>
-                  <a class="dropdown-item" href="/signup/professor">Professor</a>
+                  <Link to='/signup/student'><a class="dropdown-item" href="/signup/student">Student</a></Link>
+                  <Link to='/signup/professor'><a class="dropdown-item" href="/signup/professor">Professor</a></Link>
                 </div>
               </li>
               
