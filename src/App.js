@@ -15,6 +15,7 @@ import Data         from './components/Testimonial/testimonial_data';
 import AboutUs      from './components/AboutUs/AboutUs';
 import Login        from './components/Login/login';
 import Signup       from './components/SignUp/Signup';
+import Team         from './components/Team/Team';
 
 class App extends Component {
 
@@ -49,7 +50,7 @@ if(this.state.isLoading){
             <CardLayout />
 
             <Contributors />
-          
+            <Team />
             <Partner />
             <GetStarted />
             <Footer />
