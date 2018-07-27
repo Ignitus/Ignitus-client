@@ -13,8 +13,10 @@ import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
 import AboutUs      from './components/AboutUs/AboutUs';
-import Login        from './components/StudentLogin/Login';
-import Signup       from './components/StudentSignUp/Signup';
+
+import Login        from './components/Login/login';
+import Signup       from './components/SignUp/Signup';
+
 
 class App extends Component {
 
