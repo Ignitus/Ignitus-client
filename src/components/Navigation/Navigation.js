@@ -36,8 +36,8 @@ class Navigation extends Component {
                   Sign in
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/login/student">Student</a>
-                  <a class="dropdown-item" href="/login/professor">Professor</a>
+                  <Link class="dropdown-item" to="/login/student">Student</Link>
+                  <Link class="dropdown-item" to="/login/professor">Professor</Link>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -45,8 +45,8 @@ class Navigation extends Component {
                   Sign up
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/signup/student">Student</a>
-                  <a class="dropdown-item" href="/signup/professor">Professor</a>
+                  <Link  class="dropdown-item" to="/signup/student">Student</Link>
+                  <Link class="dropdown-item" to="/signup/professor">Professor</Link>
                 </div>
               </li>
               

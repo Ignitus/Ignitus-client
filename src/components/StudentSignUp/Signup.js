@@ -27,7 +27,7 @@ class Signup extends React.Component {
     return (
         <div>
         <Navigation/>
-        <div className ="container _container p-5 mx-auto">
+        <div className ="container _container-custom p-5">
             <div className="row shadow">
 
                 <div className="col-md-6 p-0 container-image">

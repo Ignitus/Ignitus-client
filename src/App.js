@@ -14,8 +14,11 @@ import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
 import AboutUs      from './components/AboutUs/AboutUs';
 
-import Login        from './components/Login/login';
-import Signup       from './components/SignUp/Signup';
+import LoginProfessor       from './components/Login/login';
+import SignupProfessor       from './components/SignUp/Signup';
+
+import LoginStudent        from './components/StudentLogin/Login';
+import SignupStudent       from './components/StudentSignUp/Signup';
 
 
 class App extends Component {
@@ -58,9 +61,11 @@ if(this.state.isLoading){
           </div>
             )
         }}/>
-        <Route  path ='/login' component ={Login}/>
         <Route  path ='/aboutus' component ={AboutUs}/>
-        <Route  path ='/signup' component ={Signup}/>
+        <Route  path ='/login/professor' component ={LoginProfessor}/>
+        <Route  path ='/signup/professor' component ={SignupProfessor}/>
+        <Route  path ='/login/student' component ={LoginStudent}/>
+        <Route  path ='/signup/student' component ={SignupStudent}/>
       </Switch>
     );
   

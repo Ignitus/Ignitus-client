@@ -9,7 +9,7 @@ const Login =(props) => {
     return (
         <div>
         <Navigation/>
-        <div className ="container _container p-5 mx-auto">
+        <div className ="_container-custom container p-5">
             <div className="row shadow">
 
                 <div className="col-md-6 p-0 container-image">
