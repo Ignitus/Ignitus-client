@@ -153,7 +153,8 @@ class Testimonial extends Component {
   render() {
 
     return (
-      <div className="carousel">
+      
+      <div className="carousel _bg">
         <div>
           <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
         </div>
@@ -182,6 +183,8 @@ class Testimonial extends Component {
           <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
         </div>
       </div>
+      
+
     );
   }
   

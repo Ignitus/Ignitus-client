@@ -1,18 +1,46 @@
 import React from 'react';
 import logo from '../../Images/Logos/logo white bg.png';
+import loginImg from '../../Images/login.png';
 import './Signup.css';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
 
-const Signup =(props) => {
+class Signup extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+        this.setState({value: e.target.value})
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+    }
+
+    render() {
+
     return (
         <div>
         <Navigation/>
-        <div className ="container-fluid">
-            <div className="row">
-                <div className="col-xs-4"></div>
-                <div className ="container _container rounded mt-5 col-xs-4-">
+        <div className ="container _container-custom p-5">
+            <div className="row shadow">
+
+                <div className="col-md-6 p-0 container-image">
+                    <img className = "img-fluid _img-login d-block" src={loginImg}/>
+                    <div className = 'text-below-image text-center'>
+                        <p className ="mb-5 ">Let's get started</p>
+                        <p>Skyrocket your career with best global opportunities</p>
+                        <p><a href="/signup" class="text-center _link"> I am a Professor</a></p>
+
+                    </div>
+                </div>
+        
+                <div className ="col-md-6  _container-form ">
                     <div className = "my-4">
                         <img className = "img-fluid _img mx-auto d-block" src={logo}/>
                     </div>
@@ -21,7 +49,7 @@ const Signup =(props) => {
                             <div className="input-group-prepend">
                                <span className="input-group-text"><i className="fa fa-envelope-o fa-fw"></i></span>
                             </div>
-                            <input type="text" id= "email" className = "form-control" placeholder = "Email"/>
+                            <input type="text" id= "email" className = "form-control" placeholder = "Email" value = {this.state.value} onChange={this.handleChange}/>
                         </div> 
                         <div className ="input-group form-group">
                             <div className="input-group-prepend">
@@ -44,12 +72,12 @@ const Signup =(props) => {
                         </div>
                     </form>
                 </div>
-                <div className = "col-xs-4"></div> 
             </div>
         </div>
         <Footer/>
         </div>
     )
+}
 }
 
 

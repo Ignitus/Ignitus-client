@@ -21,23 +21,23 @@ class Navigation extends Component {
                 <a className="nav-link" href="#what-we-do">What we provide?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contributors">Contributors</a>
+                <a className="nav-link" href="#">Contributors</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/aboutus">About</a>
+                <Link to="aboutus"><a className="nav-link" href="#">About</a></Link>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right ml-md-auto ">
               <li className="nav-item">
-                <a className="nav-link" href="https://bit.ly/2NwWLhp">Join</a>
+                <a className="nav-link" target="_blank" href="https://bit.ly/2NwWLhp">Join</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sign in
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/login/student">Student</a>
-                  <a class="dropdown-item" href="/login/professor">Professor</a>
+                  <Link class="dropdown-item" to="/login/student">Student</Link>
+                  <Link class="dropdown-item" to="/login/professor">Professor</Link>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -45,9 +45,12 @@ class Navigation extends Component {
                   Sign up
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/signup/student">Student</a>
-                  <a class="dropdown-item" href="/signup/professor">Professor</a>
+                  <Link  class="dropdown-item" to="/signup/student">Student</Link>
+                  <Link class="dropdown-item" to="/signup/professor">Professor</Link>
                 </div>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href=""></a>
               </li>
               
             </ul>
