@@ -20,6 +20,8 @@ import SignupProfessor       from './components/SignUp/Signup';
 import LoginStudent        from './components/StudentLogin/Login';
 import SignupStudent       from './components/StudentSignUp/Signup';
 
+import loader       from './Images/loader.gif';
+
 
 class App extends Component {
 
@@ -40,7 +42,7 @@ class App extends Component {
 
 if(this.state.isLoading){
     return(
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" className="_loader" /></div>
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src={loader} className="_loader" /></div>
       )
     }
     return (
@@ -50,12 +52,13 @@ if(this.state.isLoading){
           <div>
             <Navigation />
             <Introduction/>
-            <Testimonial slides = {Data}/>
+            
             <CardLayout />
 
             <Contributors />
           
             <Partner />
+            <Testimonial slides = {Data}/>
             <GetStarted />
             <Footer />
           </div>

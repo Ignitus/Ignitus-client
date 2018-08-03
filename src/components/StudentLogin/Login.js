@@ -42,7 +42,7 @@ const Login =(props) => {
                         </div>
                         <div className="_or-seperator"><i className ="text-dark">or log in with</i></div>
                         <div className="mb-4">
-                            <button className="btn btn-primary mx-auto btn-block"><i className="fa fa-linkedin mr-3"></i><b>Linked-in</b></button>
+                            <button className="btn btn-primary mx-auto btn-block"><i className="fa fa-linkedin mr-3"></i><b>LinkedIn</b></button>
                         </div>
                     </form>
                 </div>

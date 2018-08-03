@@ -135,3 +135,8 @@ margin-right: auto;
 .custom_css{
     margin: 7%;
 }
+
+._bg{
+  background: #f3f3f2;
+  height: 315px;
+}

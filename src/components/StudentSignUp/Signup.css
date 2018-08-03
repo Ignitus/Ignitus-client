@@ -35,11 +35,23 @@
     font-size: 25px;
 }
 
-.text-below-image p:nth-child(2) {
-    font-size: 18px;
-}
-
 .container-image {
     display: flex;
     flex-direction: column;
+}
+
+.text-below-image p:nth-child(2) {
+    font-size: 16px !important;
+    margin-top: 2px !important;
+}
+
+._linkform{
+    text-decoration: none;
+
+}
+
+._linkform:hover{
+    text-decoration: underline !important;
+    color: white !important;
+    
 }
