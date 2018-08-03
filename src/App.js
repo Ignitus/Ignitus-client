@@ -22,6 +22,8 @@ import SignupStudent       from './components/StudentSignUp/Signup';
 
 import loader       from './Images/loader.gif';
 
+import Team         from './components/Team/Team';
+
 
 class App extends Component {
 
@@ -56,7 +58,7 @@ if(this.state.isLoading){
             <CardLayout />
 
             <Contributors />
-          
+            <Team />
             <Partner />
             <Testimonial slides = {Data}/>
             <GetStarted />
