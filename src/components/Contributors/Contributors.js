@@ -13,38 +13,44 @@ class Contributors extends Component {
 
 
 
-  render() {
+    render() {
 
-    const Images_array = [Stanford_logo,CMU_logo,MIT_logo,Harvard_logo,Oxford_logo,Yale_logo,Princeton_logo,Berkeley_logo];
+        const Images_array = [Stanford_logo,CMU_logo,MIT_logo,Harvard_logo,Oxford_logo,Yale_logo,Princeton_logo,Berkeley_logo];
 
-    let _html = Images_array.map(function (logo,key) {
+        let _html = Images_array.map(function (logo,key) {
 
-        return(
+            return(
 
-           <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _logo_css" key = {key}>
-                  <img src={logo} width="200" alt={"logo"}/> 
-            </div>
+                <div className="col-lg-3 col-md-4 col-sm-10 col-9 _logo_css" key = {key}>
+                    <div className="d-sm-none">
+                        <img src={logo} width="200" alt={"logo"}/>
+                    </div>
+                    <div className="d-none d-sm-block">
+                        <img src={logo} width="200" alt={"logo"}/>
+                    </div>
+                </div>
 
-        )
-      
-    })
+            )
 
-    return (
-     <section id="contributors">
+        })
 
-        <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
-              <div className = "_contributor">Contributors</div>
-              <div className = "_students_researchers" >Made with <i className="fa fa-heart _heart"> </i> by Students,Researches and Alumni of ...</div>
-         </div>
-        
-        <div className = "container">
-          <div className = "row">
-            {_html}
-          </div>
-        </div>
-      </section>
-      );
-  }
+        return (
+            <section id="contributors">
+                <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
+                    <div className = "_contributor">Contributors</div>
+                    <div className = "_students_researchers" >
+                        Made with <i className="fa fa-heart _heart"></i> by Students, Researchers and Alumni of ...
+                    </div>
+                </div>
+
+                <div className = "container">
+                    <div className = "row">
+                        {_html}
+                    </div>
+                </div>
+            </section>
+        );
+    }
 }
 
 export default Contributors;

@@ -37,7 +37,7 @@ class CardLayout extends Component {
       <section id="what-we-do">
       <div>
           <div className="bg-white mt-5">
-          <div><h1 className="text-center my-5 ignitus-color">What you will find on Ignitus ?</h1></div>
+              <div><h1 className="text-center my-5 ignitus-color">What will you find at Ignitus?</h1></div>
           <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5">
             <div className = "row">
            	  {_html}
