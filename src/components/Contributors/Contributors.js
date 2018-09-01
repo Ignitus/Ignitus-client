@@ -21,13 +21,9 @@ class Contributors extends Component {
 
             return(
 
-                <div className="col-lg-3 col-md-4 col-sm-10 col-9 _logo_css" key = {key}>
-                    <div className="d-sm-none">
-                        <img src={logo} width="200" alt={"logo"}/>
-                    </div>
-                    <div className="d-none d-sm-block">
-                        <img src={logo} width="200" alt={"logo"}/>
-                    </div>
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12 _logo_css centered-image"
+                     key = {key}>
+                    <img src={logo} width="200" alt={"logo"}/>
                 </div>
 
             )
