@@ -6,6 +6,8 @@
     font-size: 36px !important;
     color: #0d0465 !important;
     margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .card-shadow {
@@ -27,4 +29,8 @@
     height:90px !important;
     margin: 20px 90px 20px 90px !important
 
+}
+
+.flatten-text {
+    text-align: justify;
 }
