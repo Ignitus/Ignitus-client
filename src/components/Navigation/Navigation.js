@@ -44,7 +44,7 @@ class Navigation extends Component {
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Sign up
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <Link  class="dropdown-item" to="/signup/student">Student</Link>
                   <Link class="dropdown-item" to="/signup/professor">Professor</Link>
                 </div>
