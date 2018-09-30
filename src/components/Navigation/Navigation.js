@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../../Images/Logos/black_logo.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 class Navigation extends Component {
   render() {
@@ -23,19 +24,25 @@ class Navigation extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
+              <HashLink to="/#">
+                <a className="nav-link" href="#">
+                  Home <span className="sr-only">(current)</span>
+                </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#what-we-do">
-                What we provide?
-              </a>
+              <HashLink to="/#what-we-do">
+                <a className="nav-link" href="#">
+                  What we provide?
+                </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contributors
-              </a>
+              <HashLink to="/#contributors">
+                <a className="nav-link" href="#">
+                  Contributors
+                </a>
+              </HashLink>
             </li>
             <li className="nav-item">
               <Link to="/aboutus">
