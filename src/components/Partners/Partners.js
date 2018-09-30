@@ -14,15 +14,15 @@ class Partner extends Component {
 
   render() {
 
-    const Images_array = [Woo_tech_logo,Sugar_labs,gs_logo,lean_in,systers_logo,progate];
+    const Images_array = [systers_logo,gs_logo,Sugar_labs,Woo_tech_logo,progate,lean_in];
 
     let _html = Images_array.map(function (logo,key) {
-
+          const wide = (key == 1 || key == 4 || key == 5) ? "170" : "250";
         return(
 
-           <div className="col-lg-4 col-md-4 col-sm-6 col-12 _logo_css centered-image"
+           <div className="col-lg-3 col-md-4 col-sm-6 col-12 _logo_css1 centered-image"
                 key = {key}>
-               <img src={logo} width="200" alt={"logo"}/>
+               <img src={logo} width={wide} alt={"logo"} />
             </div>
         )
       
@@ -39,7 +39,7 @@ class Partner extends Component {
          </div>
         
         <div className = "container">
-          <div className = "row _align-vertically">
+          <div className = "row">
             {_html}
           </div>
         </div>
