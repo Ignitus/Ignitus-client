@@ -94,7 +94,7 @@ class Navigation extends Component {
                 Sign up
               </a>
               <div
-                class="dropdown-menu"
+                class="dropdown-menu dropdown-menu-right"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <Link to="/signup/student">
