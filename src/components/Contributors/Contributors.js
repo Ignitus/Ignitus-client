@@ -33,7 +33,7 @@ class Contributors extends Component {
         return (
             <section id="contributors">
                 <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
-                    <div className = "_contributor">Contributors</div>
+                    <div className = "_contributor">Contributers</div>
                     <div className = "_students_researchers" >
                         Made with <i className="fa fa-heart _heart"></i> by Students, Researchers and Alumni of ...
                     </div>

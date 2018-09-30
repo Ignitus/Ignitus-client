@@ -47,10 +47,10 @@ if(this.state.isLoading){
             <Introduction/>
             <Testimonial slides = {Data}/>
             <CardLayout />
-
+            <div id="_contributers_partners">
             <Contributors />
-          
             <Partner />
+            </div>
             <GetStarted />
             <Footer />
           </div>
