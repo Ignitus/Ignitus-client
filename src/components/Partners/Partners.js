@@ -20,10 +20,10 @@ class Partner extends Component {
 
         return(
 
-           <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _logo_css" key = {key}>
-                  <img src={logo} width="200" alt={"logo"}/> 
+           <div className="col-lg-4 col-md-4 col-sm-6 col-12 _logo_css centered-image"
+                key = {key}>
+               <img src={logo} width="200" alt={"logo"}/>
             </div>
-
         )
       
     })
@@ -33,7 +33,9 @@ class Partner extends Component {
 
         <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
               <div className = "_contributor">Supporters & Partners</div>
-              <div className = "_students_researchers" >Supported with <i className="fa fa-heart _heart"> </i> by following Organizations ...</div>
+              <div className = "_students_researchers" >
+                  Supported with <i className="fa fa-heart _heart"> </i> by following Organizations ...
+              </div>
          </div>
         
         <div className = "container">

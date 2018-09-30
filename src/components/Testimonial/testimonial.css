@@ -8,6 +8,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  text-align: center;
 }
 
 .carousel-container {
@@ -30,9 +31,9 @@ ul {
   display: none;
   max-width: 900px;
   list-style-type: none;
-  text-align: center;
-  margin-right: 90px;
-  margin-left: 90px;
+  /*text-align: center;*/
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 991px) {
@@ -43,14 +44,14 @@ ul {
 }
 
 .carousel__slide--active {
- display: block;
+  display: block;
 }
 
 .carousel-slide__content {
   margin-bottom: 19px;
- font-family: 'Raleway', sans-serif;
-
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  text-align: justify;
   /*height: 30px;*/
   /*border: 1px solid black !important;*/
 }
@@ -89,7 +90,7 @@ ul {
   cursor: pointer;
   opacity: .75;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
 }
 .carousel__arrow:focus {
@@ -133,7 +134,15 @@ margin-right: auto;
 }
 
 .custom_css{
-    margin: 7%;
+  margin: 7%;
+}
+
+.padding-on-left {
+  padding-left: 10px;
+}
+
+.padding-on-right {
+  padding-right: 10px;
 }
 
 ._bg{
