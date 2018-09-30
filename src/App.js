@@ -13,8 +13,17 @@ import CardLayout   from './components/CardLayout/CardLayout';
 import Partner      from './components/Partners/Partners';
 import Data         from './components/Testimonial/testimonial_data';
 import AboutUs      from './components/AboutUs/AboutUs';
-import Login        from './components/Login/login';
-import Signup       from './components/SignUp/Signup';
+
+import LoginProfessor       from './components/Login/login';
+import SignupProfessor       from './components/SignUp/Signup';
+
+import LoginStudent        from './components/StudentLogin/Login';
+import SignupStudent       from './components/StudentSignUp/Signup';
+
+import loader       from './Images/loader.gif';
+
+import Team         from './components/Team/Team';
+
 
 class App extends Component {
 
@@ -35,7 +44,7 @@ class App extends Component {
 
 if(this.state.isLoading){
     return(
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" className="_loader" /></div>
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src={loader} className="_loader" /></div>
       )
     }
     return (
@@ -45,20 +54,23 @@ if(this.state.isLoading){
           <div>
             <Navigation />
             <Introduction/>
-            <Testimonial slides = {Data}/>
+            
             <CardLayout />
 
             <Contributors />
-          
+            <Team />
             <Partner />
+            <Testimonial slides = {Data}/>
             <GetStarted />
             <Footer />
           </div>
             )
         }}/>
-        <Route  path ='/login' component ={Login}/>
         <Route  path ='/aboutus' component ={AboutUs}/>
-        <Route  path ='/signup' component ={Signup}/>
+        <Route  path ='/login/professor' component ={LoginProfessor}/>
+        <Route  path ='/signup/professor' component ={SignupProfessor}/>
+        <Route  path ='/login/student' component ={LoginStudent}/>
+        <Route  path ='/signup/student' component ={SignupStudent}/>
       </Switch>
     );
   

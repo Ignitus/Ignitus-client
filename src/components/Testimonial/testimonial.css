@@ -144,3 +144,8 @@ margin-right: auto;
 .padding-on-right {
   padding-right: 10px;
 }
+
+._bg{
+  background: #f3f3f2;
+  height: 315px;
+}
