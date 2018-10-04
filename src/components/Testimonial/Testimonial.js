@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./testimonial.css";
+import { string, number, shape, func, array } from 'prop-types'
 
 class CarouselIndicator extends Component {
   render() {
@@ -17,6 +18,11 @@ class CarouselIndicator extends Component {
     );
   }
 }
+
+CarouselIndicator.propTypes = {
+  index: number.isRequired,
+  activeIndex: number.isRequired
+};
 
 class CarouselSlide extends Component {
   render() {
@@ -47,6 +53,16 @@ class CarouselSlide extends Component {
   }
 }
 
+CarouselSlide.propTypes = {
+  index: number.isRequired,
+  activeIndex: number.isRequired,
+  slide: shape({
+    content: string,
+    author: string,
+    source: string
+  }).isRequired
+};
+
 class CarouselLeftArrow extends Component {
   render() {
     return (
@@ -61,6 +77,10 @@ class CarouselLeftArrow extends Component {
   }
 }
 
+CarouselLeftArrow.propTypes = {
+  onClick: func.isRequired
+}
+
 class CarouselRightArrow extends Component {
   render() {
     return (
@@ -73,6 +93,10 @@ class CarouselRightArrow extends Component {
       </a>
     );
   }
+}
+
+CarouselRightArrow.propTypes = {
+  onClick: func.isRequired
 }
 
 // Carousel wrapper component
@@ -183,6 +207,10 @@ class Testimonial extends Component {
       </div>
     );
   }
+}
+
+Testimonial.propTypes = {
+  slides: array.isRequired
 }
 
 export default Testimonial;
