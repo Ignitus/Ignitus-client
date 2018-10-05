@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import pic from '../../Images/prof.png';
 import './Team.css';
+import { string, shape } from 'prop-types'
 
 
 class Team extends Component{
@@ -46,19 +47,7 @@ class Team extends Component{
     let _html = Images_array.map(function (logo,x,key) {
 
         return(
-
-           <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _imgs" key = {key}>
-              <div className="ch-item">
-                <div className="imag">
-                  <img src={logo} alt={"logo"} className = "mx-auto d-block image_style"/> 
-                </div>
-                  <div className="overlay">
-                    <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 middle ">Some Text here</div>
-                  </div>
-              </div>
-                  <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 textalign ">{data[x].title}</div>
-                  <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 textalign ">{data[x].description}</div>
-          </div>
+          <TeamItem key={key} logo={logo} data={data[x]}/>
         )
       })
 
@@ -81,4 +70,28 @@ class Team extends Component{
 	);
 	}
 }
+
+const TeamItem = (props)=>(
+  <div className="col-lg-3 col-md-4 col-sm-6 col-9 mx-auto  _imgs">
+      <div className="ch-item">
+        <div className="imag">
+          <img src={props.logo} alt={"logo"} className = "mx-auto d-block image_style"/> 
+        </div>
+          <div className="overlay">
+            <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 middle ">Some Text here</div>
+          </div>
+      </div>
+          <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 textalign ">{props.data.title}</div>
+          <div className = "col-sm-12 col-md-12 col-lg-12 col-xs-12 textalign ">{props.data.description}</div>
+  </div>
+)
+
+TeamItem.propTypes = {
+  logo: string.isRequired,
+  data: shape({
+    title: string.isRequired,
+    description: string.isRequired
+  }).isRequired
+};
+
 export default Team;
