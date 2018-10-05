@@ -1,20 +1,21 @@
+
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
-import Contributors from './components/Contributors';
-import GetStarted from './components/GetStarted';
-import Introduction from './components/Introduction';
-import Testimonial from './components/Testimonial';
-import CardLayout from './components/WhatWeDo';
-import Partner from './components/Partners';
-import Data from './components/Testimonial/Components/testimonial_data';
-import AboutUs from './components/About';
-import LoginProfessor from './components/Login';
-import SignupProfessor from './components/SignUp';
-import LoginStudent from './components/StudentLogin';
-import SignupStudent from './components/StudentSignUp';
-import loader from './Images/loader.gif';
+import Navigation from './ignitus-Navigation';
+import Footer from './ignitus-Footer';
+import Contributors from './ignitus-Contributors';
+import GetStarted from './ignitus-GetStarted';
+import Introduction from './ignitus-Introduction';
+import Testimonial from './ignitus-Testimonial';
+import CardLayout from './ignitus-WhatWeDo';
+import Partner from './ignitus-Partners';
+import Data from './ignitus-Testimonial/Components/testimonial_data';
+import AboutUs from './ignitus-About';
+import LoginProfessor from './ignitus-Login';
+import SignupProfessor from './ignitus-SignUp';
+import LoginStudent from './ignitus-StudentLogin';
+import SignupStudent from './ignitus-StudentSignUp';
+import loader from './Assets/Images/loader.gif';
 import './App.css';
 
 class App extends Component {
