@@ -1,15 +1,15 @@
-import React from "react";
-import logo from "../../../Images/Logos/logo white bg.png";
-import loginImg from "../../../Images/login.png";
-import "../Styles/style.css";
+import React from 'react';
+import logo from '../../../Images/Logos/logo white bg.png';
+import loginImg from '../../../Images/login.png';
+import '../Styles/style.css';
 
-import Navigation from "../../Navigation";
-import Footer from "../../Footer";
+import Navigation from '../../Navigation';
+import Footer from '../../Footer';
 
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: "" };
+    this.state = { value: '' };
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -33,8 +33,8 @@ class Signup extends React.Component {
                 <p className="mb-5 ">Let's get started</p>
                 <p>Skyrocket your career with best global opportunities</p>
                 <p>
-                  <a href="/signup" class="text-center _link">
-                    {" "}
+                  <a href="/signup" className="text-center _link">
+                    {' '}
                     I am a Professor
                   </a>
                 </p>

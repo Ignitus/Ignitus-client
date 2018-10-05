@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "../Styles/style.css";
-import resume from "../../../Images/Resume.png";
+import React, { Component } from 'react';
+import '../Styles/style.css';
+import resume from '../../../Images/Resume.png';
 
 class Introduction extends Component {
   render() {
@@ -11,7 +11,7 @@ class Introduction extends Component {
             <img
               className="img-fluid"
               src={resume}
-              alt={"resume"}
+              alt="resume"
               align="left"
             />
           </div>

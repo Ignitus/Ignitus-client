@@ -1,3 +1,4 @@
 
 import About from './Components/About';
-export default About
+
+export default About;

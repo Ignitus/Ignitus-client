@@ -1,4 +1,5 @@
 
 
 import Login from './Components/login';
-export default Login
+
+export default Login;

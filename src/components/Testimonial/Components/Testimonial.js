@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "../Styles/style.css";
+import React, { Component } from 'react';
+import '../Styles/style.css';
 
 
 class CarouselIndicator extends Component {
@@ -9,8 +9,8 @@ class CarouselIndicator extends Component {
         <a
           className={
             this.props.index === this.props.activeIndex
-              ? "carousel__indicator carousel__indicator--active"
-              : "carousel__indicator"
+              ? 'carousel__indicator carousel__indicator--active'
+              : 'carousel__indicator'
           }
           onClick={this.props.onClick}
         />
@@ -25,8 +25,8 @@ class CarouselSlide extends Component {
       <li
         className={
           this.props.index === this.props.activeIndex
-            ? "carousel__slide carousel__slide--active "
-            : "carousel__slide"
+            ? 'carousel__slide carousel__slide--active '
+            : 'carousel__slide'
         }
       >
         <div className="carousel-slide__content">
@@ -56,7 +56,7 @@ class CarouselLeftArrow extends Component {
         className="carousel__arrow carousel__arrow--left padding-on-left"
         onClick={this.props.onClick}
       >
-        <i className="fa fa-2x fa-angle-left"> </i>
+        <i className="fa fa-2x fa-angle-left" />
       </a>
     );
   }
@@ -70,7 +70,7 @@ class CarouselRightArrow extends Component {
         className="carousel__arrow carousel__arrow--right padding-on-right"
         onClick={this.props.onClick}
       >
-        <i className="fa fa-2x fa-angle-right"> </i>
+        <i className="fa fa-2x fa-angle-right" />
       </a>
     );
   }
@@ -87,21 +87,19 @@ class Testimonial extends Component {
     this.timer = this.timer.bind(this);
 
     this.state = {
-      activeIndex: 0
+      activeIndex: 0,
     };
   }
 
   componentDidMount() {
-    let interval = setInterval(this.timer, 4000);
+    const interval = setInterval(this.timer, 4000);
   }
 
   componentWillUnmount() {
-    // use intervalId from the state to clear the interval
     clearInterval(this.state.interval);
   }
 
   timer() {
-    // setState method is used to update the state
     if (this.state.activeIndex === this.props.slides.length - 1) {
       this.setState({ activeIndex: -1 });
     }
@@ -111,15 +109,15 @@ class Testimonial extends Component {
 
   goToSlide(index) {
     this.setState({
-      activeIndex: index
+      activeIndex: index,
     });
   }
 
   goToPrevSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    let { slides } = this.props;
-    let slidesLength = slides.length;
+    const { slides } = this.props;
+    const slidesLength = slides.length;
 
     if (index < 1) {
       index = slidesLength;
@@ -128,15 +126,15 @@ class Testimonial extends Component {
     --index;
 
     this.setState({
-      activeIndex: index
+      activeIndex: index,
     });
   }
 
   goToNextSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    let { slides } = this.props;
-    let slidesLength = slides.length - 1;
+    const { slides } = this.props;
+    const slidesLength = slides.length - 1;
 
     if (index === slidesLength) {
       index = -1;
@@ -145,15 +143,18 @@ class Testimonial extends Component {
     ++index;
 
     this.setState({
-      activeIndex: index
+      activeIndex: index,
     });
   }
 
   render() {
+    const { activeIndex } = this.state;
+    const { goToPrevSlide, goToSlide, goToNextSlide } = this;
+
     return (
       <div className="carousel">
         <div>
-          <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
+          <CarouselLeftArrow onClick={e => goToPrevSlide(e)} />
         </div>
         <div>
           <ul className="carousel__slides container">
@@ -161,7 +162,7 @@ class Testimonial extends Component {
               <CarouselSlide
                 key={index}
                 index={index}
-                activeIndex={this.state.activeIndex}
+                activeIndex={activeIndex}
                 slide={slide}
               />
             ))}
@@ -171,15 +172,15 @@ class Testimonial extends Component {
               <CarouselIndicator
                 key={index}
                 index={index}
-                activeIndex={this.state.activeIndex}
-                isActive={this.state.activeIndex === index}
-                onClick={e => this.goToSlide(index)}
+                activeIndex={activeIndex}
+                isActive={activeIndex === index}
+                onClick={e => goToSlide(index)}
               />
             ))}
           </ul>
         </div>
         <div className="arrow-fix">
-          <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
+          <CarouselRightArrow onClick={e => goToNextSlide(e)} />
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 
 
 import Introduction from './Components/Introduction';
-export default Introduction
+
+export default Introduction;

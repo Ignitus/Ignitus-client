@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import logo from "../../../Images/Logos/black_logo.png";
-import "../Styles/style.css";
-//resolved
+import React, { Component } from 'react';
+import logo from '../../../Images/Logos/black_logo.png';
+import '../Styles/style.css';
+// resolved
 
 class Footer extends Component {
   render() {
@@ -75,7 +75,7 @@ class Footer extends Component {
                   <img
                     src={logo}
                     className="img-responsive img-css"
-                    alt={"logo"}
+                    alt="logo"
                   />
                 </li>
               </ul>
@@ -150,7 +150,7 @@ class Footer extends Component {
               target="_blank"
               href="https://www.facebook.com/Ignitus.org/"
             >
-              <i className="fa fa-facebook"> </i>
+              <i className="fa fa-facebook" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -159,7 +159,7 @@ class Footer extends Component {
               target="_blank"
               href="https://twitter.com/ignitus_org"
             >
-              <i className="fa fa-twitter"> </i>
+              <i className="fa fa-twitter" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -168,7 +168,7 @@ class Footer extends Component {
               target="_blank"
               href="https://angel.co/ignitus-2"
             >
-              <i className="fa fa-angellist"> </i>
+              <i className="fa fa-angellist" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -177,7 +177,7 @@ class Footer extends Component {
               target="_blank"
               href="http://bit.do/join-ignitus"
             >
-              <i className="fa fa-slack"> </i>
+              <i className="fa fa-slack" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -186,7 +186,7 @@ class Footer extends Component {
               target="_blank"
               href="https://www.linkedin.com/company/13733583/admin/updates/"
             >
-              <i className="fa fa-linkedin"> </i>
+              <i className="fa fa-linkedin" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -195,7 +195,7 @@ class Footer extends Component {
               target="_blank"
               href="https://github.com/Ignitus"
             >
-              <i className="fa fa-github"> </i>
+              <i className="fa fa-github" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -204,7 +204,7 @@ class Footer extends Component {
               target="_blank"
               href="https://medium.com/@social_63397"
             >
-              <i className="fa fa-medium"> </i>
+              <i className="fa fa-medium" />
             </a>
           </li>
           <li className="list-inline-item">
@@ -213,7 +213,7 @@ class Footer extends Component {
               target="_blank"
               href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"
             >
-              <i className="fa fa-youtube"> </i>
+              <i className="fa fa-youtube" />
             </a>
           </li>
         </ul>

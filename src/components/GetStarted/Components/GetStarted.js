@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "../Styles/style.css";
+import React, { Component } from 'react';
+import '../Styles/style.css';
 
 
 class GetStarted extends Component {

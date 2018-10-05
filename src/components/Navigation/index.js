@@ -1,4 +1,5 @@
 
 
 import Navigation from './Components/Navigation';
-export default Navigation
+
+export default Navigation;

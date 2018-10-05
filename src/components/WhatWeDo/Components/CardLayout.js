@@ -1,43 +1,41 @@
-import React, { Component } from "react";
-import Intern from "../../../Images/Cards/intern1.png";
-import Offer from "../../../Images/Cards/offer1.png";
-import Expert from "../../../Images/Cards/expert1.png";
-import Card from "./Card";
-import "../Styles/style.css";
+import React, { Component } from 'react';
+import Intern from '../../../Images/Cards/intern1.png';
+import Offer from '../../../Images/Cards/offer1.png';
+import Expert from '../../../Images/Cards/expert1.png';
+import Card from './Card';
+import '../Styles/style.css';
 
 class CardLayout extends Component {
   render() {
     const data = [
       {
         image: Intern,
-        title: "Internships",
+        title: 'Internships',
         description:
-          "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations"
+          "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations",
       },
       {
         image: Offer,
-        title: "Courses",
+        title: 'Courses',
         description:
-          "Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time."
+          'Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time.',
       },
       {
         image: Expert,
-        title: "Experts Community",
+        title: 'Experts Community',
         description:
-          "Guidance from an unparalleled network of professors,experts and industry professionals supervising internal projects with selected students"
-      }
+          'Guidance from an unparalleled network of professors,experts and industry professionals supervising internal projects with selected students',
+      },
     ];
 
-    let _html = [...data].map((x, key) => {
-      return (
-        <Card
-          key={key}
-          image={x.image}
-          title={x.title}
-          description={x.description}
-        />
-      );
-    });
+    const html = [...data].map((x, key) => (
+      <Card
+        key={key}
+        image={x.image}
+        title={x.title}
+        description={x.description}
+      />
+    ));
 
     return (
       <section id="what-we-do">
@@ -49,7 +47,7 @@ class CardLayout extends Component {
               </h1>
             </div>
             <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5">
-              <div className="row">{_html}</div>
+              <div className="row">{html}</div>
             </div>
           </div>
         </div>

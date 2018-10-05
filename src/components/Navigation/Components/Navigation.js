@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import logo from "../../../Images/Logos/black_logo.png";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import logo from '../../../Images/Logos/black_logo.png';
+import '../Styles/style.css'
 
 class Navigation extends Component {
   render() {
     return (
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="#">
-          <img src={logo} width="40" height="40" alt={"logo"} />
+          <img src={logo} width="40" height="40" alt="logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -26,7 +27,9 @@ class Navigation extends Component {
             <li className="nav-item active">
               <HashLink to="/#">
                 <span className="nav-link">
-                  Home <span className="sr-only">(current)</span>
+                  Home
+                  {' '}
+                  <span className="sr-only">(current)</span>
                 </span>
               </HashLink>
             </li>
