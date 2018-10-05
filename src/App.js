@@ -6,7 +6,7 @@ import Footer from './ignitus-Footer';
 import Contributors from './ignitus-Contributors';
 import GetStarted from './ignitus-GetStarted';
 import Introduction from './ignitus-Introduction';
-import Testimonial from './ignitus-Testimonial';
+import Testimonial from './ignitus-Testimonial/Containers/TestimonialContainer';
 import CardLayout from './ignitus-WhatWeDo';
 import Partner from './ignitus-Partners';
 import Data from './ignitus-Testimonial/Components/testimonial_data';

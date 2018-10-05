@@ -1,6 +1,6 @@
 
 
-import Testimonial from '../Components/Testimonial';
+import Testimonial from '../../Components/Testimonial';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { set_testimonial_data } from '../actions';

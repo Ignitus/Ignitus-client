@@ -5,8 +5,8 @@ const TestimonialReducer = (state = [] , action) => {
 
 	switch(action.type){
 		case t.SET_TESTIMONIAL_DATA:
-			let newState = state.concat(action.data)
-			return newState;
+			let state = state.concat(action.data)
+			return state ;
 			break;
 
 		default:

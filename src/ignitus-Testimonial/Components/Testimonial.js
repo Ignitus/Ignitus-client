@@ -96,6 +96,7 @@ class Testimonial extends Component {
   }
 
   componentWillMount(){
+      console.log('test state', this)
       this.getData()
   }
 

@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
-// import TestimonialReducer from './components'
+import TestimonialReducer from './ignitus-Testimonial/reducers'
 
 export default combineReducers({
-  
+  	TestimonialReducer
 })
+
