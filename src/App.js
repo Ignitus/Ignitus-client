@@ -23,19 +23,18 @@ import SignupStudent       from './components/StudentSignUp/Signup';
 import loader       from './Images/loader.gif';
 
 import Team         from './components/Team/Team';
-
-
+import data from './Data/data-card-layout';
 class App extends Component {
 
 
   constructor()
   {
-      super(); 
-      this.state = {isLoading: true} 
+      super();
+      this.state = {isLoading: true}
       console.log(this.state.isLoading);
   }
-  componentDidMount() 
-  { 
+  componentDidMount()
+  {
       setTimeout(() => this.setState({isLoading: false}), 3000)
       console.log("componentDidMount");
   }
@@ -54,8 +53,8 @@ if(this.state.isLoading){
           <div>
             <Navigation />
             <Introduction/>
-            
-            <CardLayout />
+
+            <CardLayout data={data} />
 
             <Contributors />
             <Team />
@@ -73,7 +72,7 @@ if(this.state.isLoading){
         <Route  path ='/signup/student' component ={SignupStudent}/>
       </Switch>
     );
-  
+
 
   }
 }
