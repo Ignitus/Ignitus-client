@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string, number, shape, func, array } from 'prop-types'
 import '../Styles/style.css';
 
 
@@ -185,6 +186,35 @@ class Testimonial extends Component {
       </div>
     );
   }
+}
+
+
+
+CarouselIndicator.propTypes = {
+  index: number.isRequired,
+  activeIndex: number.isRequired
+};
+
+CarouselSlide.propTypes = {
+  index: number.isRequired,
+  activeIndex: number.isRequired,
+  slide: shape({
+    content: string,
+    author: string,
+    source: string
+  }).isRequired
+};
+
+CarouselLeftArrow.propTypes = {
+  onClick: func.isRequired
+}
+
+CarouselRightArrow.propTypes = {
+  onClick: func.isRequired
+}
+
+Testimonial.propTypes = {
+  slides: array.isRequired
 }
 
 export default Testimonial;

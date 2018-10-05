@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string } from 'prop-types'
 
 const Card = props => (
 
@@ -12,5 +13,11 @@ const Card = props => (
     <p className="card-text text-center p-4">{props.description}</p>
   </div>
 );
+
+Card.propTypes = {
+    image: string.isRequired,
+    title: string.isRequired,
+    description: string.isRequired,
+};
 
 export default Card;
