@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./get_started_component.css";
+import "../Styles/style.css";
+
 
 class GetStarted extends Component {
   render() {

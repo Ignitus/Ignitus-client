@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import Navigation from "./components/Navigation/Navigation";
-import Footer from "./components/Footer/Footer";
-import Contributors from "./components/Contributors/Contributors";
-import GetStarted from "./components/Get_started/Get_started";
-import Introduction from "./components/Introduction/Introduction";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Contributors from "./components/Contributors";
+import GetStarted from "./components/GetStarted";
+import Introduction from "./components/Introduction";
 
-import Testimonial from "./components/Testimonial/Testimonial";
+import Testimonial from "./components/Testimonial";
 
-import CardLayout from "./components/CardLayout/CardLayout";
-import Partner from "./components/Partners/Partners";
-import Data from "./components/Testimonial/testimonial_data";
-import AboutUs from "./components/AboutUs/AboutUs";
+import CardLayout from "./components/WhatWeDo";
+import Partner from "./components/Partners";
+import Data from "./components/Testimonial/Components/testimonial_data";
+import AboutUs from "./components/About";
 
-import LoginProfessor from "./components/Login/login";
-import SignupProfessor from "./components/SignUp/Signup";
+import LoginProfessor from "./components/Login";
+import SignupProfessor from "./components/SignUp";
 
-import LoginStudent from "./components/StudentLogin/Login";
-import SignupStudent from "./components/StudentSignUp/Signup";
+import LoginStudent from "./components/StudentLogin";
+import SignupStudent from "./components/StudentSignUp";
 
 import loader from "./Images/loader.gif";
 

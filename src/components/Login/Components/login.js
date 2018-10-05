@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "../../Images/Logos/logo white bg.png";
-import "./login.css";
-import Navigation from "../Navigation/Navigation";
-import Footer from "../Footer/Footer";
+import logo from "../../../Images/Logos/logo white bg.png";
+import "../Styles/style.css";
+
+import Navigation from "../../Navigation";
+import Footer from "../../Footer";
 
 const Login = props => {
   return (

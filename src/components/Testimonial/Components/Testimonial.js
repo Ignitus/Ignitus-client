@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./testimonial.css";
+import "../Styles/style.css";
+
 
 class CarouselIndicator extends Component {
   render() {

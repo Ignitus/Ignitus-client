@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./aboutus.css";
-import Navigation from "../Navigation/Navigation";
-import Footer from "../Footer/Footer";
+import "../Styles/style.css";
+import Navigation from "../../Navigation";
+import Footer from "../../Footer";
 
-class AboutUs extends Component {
+class About extends Component {
   render() {
     return (
       <div>
@@ -55,4 +55,4 @@ class AboutUs extends Component {
   }
 }
 
-export default AboutUs;
+export default About;

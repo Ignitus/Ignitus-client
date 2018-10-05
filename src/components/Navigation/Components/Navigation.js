@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../Images/Logos/black_logo.png";
+import logo from "../../../Images/Logos/black_logo.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 

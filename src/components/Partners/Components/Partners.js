@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import "./partners.css";
-import Woo_tech_logo from "../../Images/Partners Logos/wooTech.png";
-import Sugar_labs from "../../Images/Partners Logos/sugarLabs.png";
-import mit_media from "../../Images/Partners Logos/mit_media_lab.png";
-import systers_logo from "../../Images/Partners Logos/systers-logo.png";
-import gs_logo from "../../Images/Partners Logos/gslogo.png";
-import lean_in from "../../Images/Partners Logos/lean_in.png";
-import progate from "../../Images/Partners Logos/progate.jpg";
+import "../Styles/style.css";
+
+import Woo_tech_logo from "../../../Images/Partners Logos/wooTech.png";
+import Sugar_labs from "../../../Images/Partners Logos/sugarLabs.png";
+import mit_media from "../../../Images/Partners Logos/mit_media_lab.png";
+import systers_logo from "../../../Images/Partners Logos/systers-logo.png";
+import gs_logo from "../../../Images/Partners Logos/gslogo.png";
+import lean_in from "../../../Images/Partners Logos/lean_in.png";
+import progate from "../../../Images/Partners Logos/progate.jpg";
 
 class Partner extends Component {
   render() {

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Intern from "../../Images/Cards/intern1.png";
-import Offer from "../../Images/Cards/offer1.png";
-import Expert from "../../Images/Cards/expert1.png";
-import Card from "./Components/Card";
-import "./card_component.css";
+import Intern from "../../../Images/Cards/intern1.png";
+import Offer from "../../../Images/Cards/offer1.png";
+import Expert from "../../../Images/Cards/expert1.png";
+import Card from "./Card";
+import "../Styles/style.css";
 
 class CardLayout extends Component {
   render() {

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import "./contributor_component.css";
-import Stanford_logo from "../../Images/University Logos/Stanford_logo.png";
-import CMU_logo from "../../Images/University Logos/CMU_logo.png";
-import MIT_logo from "../../Images/University Logos/MIT_logo.png";
-import Harvard_logo from "../../Images/University Logos/Harvard_logo.png";
-import Oxford_logo from "../../Images/University Logos/Oxford_logo.png";
-import Yale_logo from "../../Images/University Logos/Yale_logo.png";
-import Princeton_logo from "../../Images/University Logos/Princeton_logo.png";
-import Berkeley_logo from "../../Images/University Logos/Berkeley_logo.png";
+import "../Styles/style.css";
+import Stanford_logo from "../../../Images/University Logos/Stanford_logo.png";
+import CMU_logo from "../../../Images/University Logos/CMU_logo.png";
+import MIT_logo from "../../../Images/University Logos/MIT_logo.png";
+import Harvard_logo from "../../../Images/University Logos/Harvard_logo.png";
+import Oxford_logo from "../../../Images/University Logos/Oxford_logo.png";
+import Yale_logo from "../../../Images/University Logos/Yale_logo.png";
+import Princeton_logo from "../../../Images/University Logos/Princeton_logo.png";
+import Berkeley_logo from "../../../Images/University Logos/Berkeley_logo.png";
 
 class Contributors extends Component {
   render() {
