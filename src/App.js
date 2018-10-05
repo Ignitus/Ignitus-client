@@ -1,79 +1,68 @@
 import React, { Component } from 'react';
-import { Switch,Route } from 'react-router-dom';
-import './App.css';
-import Navigation   from './components/Navigation/Navigation';
-import Footer       from './components/Footer/Footer';
-import Contributors from './components/Contributors/Contributors';
-import GetStarted   from './components/Get_started/Get_started';
-import Introduction from './components/Introduction/Introduction';
-
-import Testimonial  from './components/Testimonial/Testimonial';
-
-import CardLayout   from './components/CardLayout/CardLayout';
-import Partner      from './components/Partners/Partners';
-import Data         from './components/Testimonial/testimonial_data';
-import AboutUs      from './components/AboutUs/AboutUs';
-
-import LoginProfessor       from './components/Login/login';
-import SignupProfessor       from './components/SignUp/Signup';
-
-import LoginStudent        from './components/StudentLogin/Login';
-import SignupStudent       from './components/StudentSignUp/Signup';
-
-import loader       from './Images/loader.gif';
-
-import Team         from './components/Team/Team';
+import { Switch, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Contributors from './components/Contributors';
+import GetStarted from './components/GetStarted';
+import Introduction from './components/Introduction';
+import Testimonial from './components/Testimonial';
+import CardLayout from './components/WhatWeDo';
+import Partner from './components/Partners';
+import Data from './components/Testimonial/Components/testimonial_data';
+import AboutUs from './components/About';
+import LoginProfessor from './components/Login';
+import SignupProfessor from './components/SignUp';
+import LoginStudent from './components/StudentLogin';
+import SignupStudent from './components/StudentSignUp';
+import loader from './Images/loader.gif';
 import data from './Data/data-card-layout';
+import './App.css';
+
 class App extends Component {
-
-
-  constructor()
-  {
-      super();
-      this.state = {isLoading: true}
-      console.log(this.state.isLoading);
+  constructor() {
+    super();
+    this.state = { isLoading: true };
   }
-  componentDidMount()
-  {
-      setTimeout(() => this.setState({isLoading: false}), 3000)
-      console.log("componentDidMount");
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ isLoading: false }), 3000);
   }
 
   render() {
-
-if(this.state.isLoading){
-    return(
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto "><img src={loader} className="_loader" /></div>
-      )
+    const { state: { isLoading } } = this;
+    if (isLoading) {
+      return (
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
+          <img src={loader} className="_loader" />
+        </div>
+      );
     }
     return (
       <Switch>
-        <Route exact path='/' render={() => {
-          return (
-          <div>
-            <Navigation />
-            <Introduction/>
-
-            <CardLayout data={data} />
-
-            <Contributors />
-            <Team />
-            <Partner />
-            <Testimonial slides = {Data}/>
-            <GetStarted />
-            <Footer />
-          </div>
-            )
-        }}/>
-        <Route  path ='/aboutus' component ={AboutUs}/>
-        <Route  path ='/login/professor' component ={LoginProfessor}/>
-        <Route  path ='/signup/professor' component ={SignupProfessor}/>
-        <Route  path ='/login/student' component ={LoginStudent}/>
-        <Route  path ='/signup/student' component ={SignupStudent}/>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <div>
+              <Navigation />
+              <Introduction />
+              <CardLayout data={data}/>
+              <Contributors />
+              <Partner />
+              <Testimonial slides={Data} />
+              <GetStarted />
+              <Footer />
+            </div>
+          )}
+        />
+        <Route path="/aboutus" component={AboutUs} />
+        <Route path="/login/professor" component={LoginProfessor} />
+        <Route path="/signup/professor" component={SignupProfessor} />
+        <Route path="/login/student" component={LoginStudent} />
+        <Route path="/signup/student" component={SignupStudent} />
+        <Route path="/contributors" component={Contributors} />
       </Switch>
     );
-
-
   }
 }
 
