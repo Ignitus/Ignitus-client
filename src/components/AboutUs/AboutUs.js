@@ -48,6 +48,7 @@ class AboutUs extends Component {
             </p>
           </div>
         </div>
+
         <Footer />
       </div>
     );
