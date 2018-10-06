@@ -16,6 +16,7 @@ import SignupProfessor from './ignitus-SignUp';
 import LoginStudent from './ignitus-StudentLogin';
 import SignupStudent from './ignitus-StudentSignUp';
 import loader from './Assets/Images/loader.gif';
+import data from './Data/data-card-layout';
 import './App.css';
 
 class App extends Component {
@@ -46,7 +47,7 @@ class App extends Component {
             <div>
               <Navigation />
               <Introduction />
-              <CardLayout />
+              <CardLayout data={data}/>
               <Contributors />
               <Partner />
               <Testimonial slides={Data} />
