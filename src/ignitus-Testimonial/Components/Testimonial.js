@@ -101,6 +101,11 @@ class Testimonial extends Component {
 
   componentDidUpdate(){}
 
+  // shouldComponentUpdate(nextProps, nextState){
+  //   console.log('nextProps',nextProps)
+  //   console.log('nextState',nextState)
+  // }
+
   getData(){
     this.props.get_testimonial_data()
   }
@@ -115,7 +120,9 @@ class Testimonial extends Component {
   }
 
   timer() {
-    if (this.state.activeIndex === this.props.slides.length - 1) {
+
+    // const {data} = this.props.state.TestimonialReducer[0];
+    if (this.state.activeIndex === this.props.state.TestimonialReducer[0].data.length - 1) {
       this.setState({ activeIndex: -1 });
     }
 
@@ -131,7 +138,7 @@ class Testimonial extends Component {
   goToPrevSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    const { slides } = this.props;
+    const slides = this.props.state.TestimonialReducer[0].data
     const slidesLength = slides.length;
 
     if (index < 1) {
@@ -148,7 +155,7 @@ class Testimonial extends Component {
   goToNextSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    const { slides } = this.props;
+    const slides = this.props.state.TestimonialReducer[0].data;
     const slidesLength = slides.length - 1;
 
     if (index === slidesLength) {
@@ -165,11 +172,6 @@ class Testimonial extends Component {
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
-
-    if(this.props.state){
-        // console.log(this.props.state.TestimonialReducer[0].data)
-        console.log('dsss',this.props.state)
-    }
     
 
     return (
@@ -179,17 +181,19 @@ class Testimonial extends Component {
         </div>
         <div>
           <ul className="carousel__slides container">
-            {this.props.slides.map((slide, index) => (
+            {this.props.state.TestimonialReducer[0]?
+              this.props.state.TestimonialReducer[0].data.map((slide, index) => (
               <CarouselSlide
                 key={index}
                 index={index}
                 activeIndex={activeIndex}
                 slide={slide}
               />
-            ))}
+            )): null}
           </ul>
           <ul className="carousel__indicators">
-            {this.props.slides.map((slide, index) => (
+            {this.props.state.TestimonialReducer[0]? 
+              this.props.state.TestimonialReducer[0].data.map((slide, index) => (
               <CarouselIndicator
                 key={index}
                 index={index}
@@ -197,7 +201,7 @@ class Testimonial extends Component {
                 isActive={activeIndex === index}
                 onClick={e => goToSlide(index)}
               />
-            ))}
+            )): null}
           </ul>
         </div>
         <div className="arrow-fix">
@@ -233,8 +237,5 @@ CarouselRightArrow.propTypes = {
   onClick: func.isRequired
 }
 
-Testimonial.propTypes = {
-  slides: array.isRequired
-}
 
 export default Testimonial;

@@ -4,6 +4,10 @@ import Navigation from '../../ignitus-Navigation';
 import Footer from '../../ignitus-Footer';
 
 class About extends Component {
+
+  constructor(){
+    super()
+  }
   render() {
     return (
       <div>

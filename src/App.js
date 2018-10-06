@@ -9,7 +9,7 @@ import Introduction from './ignitus-Introduction';
 import Testimonial from './ignitus-Testimonial/Containers/TestimonialContainer';
 import CardLayout from './ignitus-WhatWeDo';
 import Partner from './ignitus-Partners';
-import Data from './ignitus-Testimonial/Components/testimonial_data';
+
 import AboutUs from './ignitus-About';
 import LoginProfessor from './ignitus-Login';
 import SignupProfessor from './ignitus-SignUp';
@@ -50,7 +50,7 @@ class App extends Component {
               <CardLayout data={data}/>
               <Contributors />
               <Partner />
-              <Testimonial slides={Data} />
+              <Testimonial />
               <GetStarted />
               <Footer />
             </div>
