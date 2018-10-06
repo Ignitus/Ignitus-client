@@ -96,18 +96,13 @@ class Testimonial extends Component {
   }
 
   componentWillMount(){
-      // this.getData()
+    this.getData()
   }
 
-  componentDidUpdate(){
-      console.log('updated state', this.props.state.TestimonialReducer[0].data)
-  }
+  componentDidUpdate(){}
 
-  async getData(){
-    const response = await axios.get(API_URL)
-    const json     = await response.data;
-
-    this.props.set_testimonial_data(json)
+  getData(){
+    this.props.get_testimonial_data()
   }
 
   componentDidMount() {
@@ -170,6 +165,12 @@ class Testimonial extends Component {
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
+
+    if(this.props.state){
+        // console.log(this.props.state.TestimonialReducer[0].data)
+        console.log('dsss',this.props.state)
+    }
+    
 
     return (
       <div className="carousel">
