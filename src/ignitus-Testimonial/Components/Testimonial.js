@@ -96,16 +96,22 @@ class Testimonial extends Component {
   }
 
   componentWillMount(){
-      console.log('test state', this)
-      this.getData()
+      // this.getData()
+  }
+
+  componentDidUpdate(){
+      console.log('updated state', this.props.state.TestimonialReducer[0].data)
   }
 
   async getData(){
-    const data = await axios.get(API_URL)
-    console.log('data',data)
+    const response = await axios.get(API_URL)
+    const json     = await response.data;
+
+    this.props.set_testimonial_data(json)
   }
 
   componentDidMount() {
+    this.getData()
     const interval = setInterval(this.timer, 4000);
   }
 
