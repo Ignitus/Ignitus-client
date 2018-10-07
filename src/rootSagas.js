@@ -1,0 +1,1 @@
+// import annotationTool from './idv-annotation-tool';

@@ -2,27 +2,26 @@
 import * as t from "./actionTypes";
 import {effects} from 'redux-saga';
 import * as a from "./actions";
-import * as api from "idv-api";
+import * as api from "../ignitus-Api";
 
 const {call, put, takeLatest, all} = effects;
 
-export function* fetchVersion(action) {
-  const calls = {
-    frontend: call(api.fetchFrontendVersion),
-    backend: call(api.fetchBackendVersion)
-  };
-
-  const {frontend, backend} = yield all(calls);
-  const data = {frontend: frontend.data, backend: backend.data.backend};
-  yield put(a.fetchVersion(data));
+function *getTestimonialData(){
+ try {
+    const { data } = yield call(api.get_testimonial_data)
+    yield put({ type: t.SET_TESTIMONIAL_DATA,data });
+  } catch (e) {
+    console.log(e.message);
+  }
 }
 
-export function* watchFetchVersion() {
-  yield takeLatest(t.VERSION_REQUESTED, fetchVersion);
+function *actionWatcher() {
+     yield takeLatest(t.GET_TESTIMONIAL_DATA, getTestimonialData)
 }
 
 export default function* sagas() {
   yield all([
-    watchFetchVersion()
+    actionWatcher(),
   ])
 }
+

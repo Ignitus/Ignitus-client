@@ -2,15 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
+import createSagaMiddleware from 'redux-saga';
+import {logger} from 'redux-logger';
+import rootSaga from './ignitus-Testimonial/sagas';
 import App from './App';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
+const sagaMiddleware = createSagaMiddleware();
 
-const store = createStore(rootReducer)
+const store = createStore(
+   rootReducer,
+   applyMiddleware(sagaMiddleware, logger),
+);
+
+sagaMiddleware.run(rootSaga);
+
 ReactDOM.render((
 	<Provider store={store}>
 		<BrowserRouter>
