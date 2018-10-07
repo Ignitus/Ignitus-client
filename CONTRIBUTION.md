@@ -38,3 +38,7 @@
 ## Linting
 
 * ``` npm run lint ```
+
+## Fix Lint Warnings
+
+* ``` ./node_modules/.bin/eslint src --fix ```
