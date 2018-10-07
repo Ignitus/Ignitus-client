@@ -2,6 +2,10 @@
   "name": "ignitus-client-side-development",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ignitus/Ignitus-Client-Side-Development"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
