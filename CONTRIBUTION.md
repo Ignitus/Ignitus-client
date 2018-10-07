@@ -34,8 +34,10 @@
 
 * Run ```docker-compose up```
  
- Add the mongoURL in db.js and then recreate the docker image.
+## Linting
+
+ * ``` npm run lint ```	* ``` npm run lint ```
  
- * ```docker-compose up -d --force-recreate --build```
+## Fix Lint Warnings
 
-
+ * ``` ./node_modules/.bin/eslint src --fix ```
