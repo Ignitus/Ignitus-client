@@ -9,10 +9,8 @@ it('renders without crashing', () => {
 });
 
 
-jest.mock("react-dom", () => {
-    return {
-        render: () => null,
-        unmountComponentAtNode: () => null,
-        findDOMNode: () => { return {} },
-    };
-});
+jest.mock('react-dom', () => ({
+  render: () => null,
+  unmountComponentAtNode: () => null,
+  findDOMNode: () => ({}),
+}));

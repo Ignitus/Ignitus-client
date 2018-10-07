@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { string, number, shape, func, array } from 'prop-types'
+import {
+  string, number, shape, func, array,
+} from 'prop-types';
 import '../Styles/style.css';
-import {API_URL} from '../constants'
 import axios from 'axios';
+import { API_URL } from '../constants';
 
 
 class CarouselIndicator extends Component {
@@ -95,17 +97,17 @@ class Testimonial extends Component {
     };
   }
 
-  componentWillMount(){
-    this.getData()
+  componentWillMount() {
+    this.getData();
   }
 
 
-  getData(){
-    this.props.get_testimonial_data()
+  getData() {
+    this.props.get_testimonial_data();
   }
 
   componentDidMount() {
-    this.getData()
+    this.getData();
     const interval = setInterval(this.timer, 4000);
   }
 
@@ -114,7 +116,6 @@ class Testimonial extends Component {
   }
 
   timer() {
-
     // const {data} = this.props.state.TestimonialReducer[0];
     if (this.state.activeIndex === this.props.state.TestimonialReducer[0].data.length - 1) {
       this.setState({ activeIndex: -1 });
@@ -132,7 +133,7 @@ class Testimonial extends Component {
   goToPrevSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    const slides = this.props.state.TestimonialReducer[0].data
+    const slides = this.props.state.TestimonialReducer[0].data;
     const slidesLength = slides.length;
 
     if (index < 1) {
@@ -166,7 +167,7 @@ class Testimonial extends Component {
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
-    
+
 
     return (
       <div className="carousel">
@@ -175,27 +176,27 @@ class Testimonial extends Component {
         </div>
         <div>
           <ul className="carousel__slides container">
-            {this.props.state.TestimonialReducer[0]?
-              this.props.state.TestimonialReducer[0].data.map((slide, index) => (
-              <CarouselSlide
-                key={index}
-                index={index}
-                activeIndex={activeIndex}
-                slide={slide}
-              />
-            )): null}
+            {this.props.state.TestimonialReducer[0]
+              ? this.props.state.TestimonialReducer[0].data.map((slide, index) => (
+                <CarouselSlide
+                  key={index}
+                  index={index}
+                  activeIndex={activeIndex}
+                  slide={slide}
+                />
+              )) : null}
           </ul>
           <ul className="carousel__indicators">
-            {this.props.state.TestimonialReducer[0]? 
-              this.props.state.TestimonialReducer[0].data.map((slide, index) => (
-              <CarouselIndicator
-                key={index}
-                index={index}
-                activeIndex={activeIndex}
-                isActive={activeIndex === index}
-                onClick={e => goToSlide(index)}
-              />
-            )): null}
+            {this.props.state.TestimonialReducer[0]
+              ? this.props.state.TestimonialReducer[0].data.map((slide, index) => (
+                <CarouselIndicator
+                  key={index}
+                  index={index}
+                  activeIndex={activeIndex}
+                  isActive={activeIndex === index}
+                  onClick={e => goToSlide(index)}
+                />
+              )) : null}
           </ul>
         </div>
         <div className="arrow-fix">
@@ -207,10 +208,9 @@ class Testimonial extends Component {
 }
 
 
-
 CarouselIndicator.propTypes = {
   index: number.isRequired,
-  activeIndex: number.isRequired
+  activeIndex: number.isRequired,
 };
 
 CarouselSlide.propTypes = {
@@ -219,17 +219,17 @@ CarouselSlide.propTypes = {
   slide: shape({
     content: string,
     author: string,
-    source: string
-  }).isRequired
+    source: string,
+  }).isRequired,
 };
 
 CarouselLeftArrow.propTypes = {
-  onClick: func.isRequired
-}
+  onClick: func.isRequired,
+};
 
 CarouselRightArrow.propTypes = {
-  onClick: func.isRequired
-}
+  onClick: func.isRequired,
+};
 
 
 export default Testimonial;

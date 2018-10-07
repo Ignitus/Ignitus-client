@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { string } from 'prop-types'
+import { string } from 'prop-types';
 
 const Card = props => (
 
@@ -15,9 +15,9 @@ const Card = props => (
 );
 
 Card.propTypes = {
-    image: string.isRequired,
-    title: string.isRequired,
-    description: string.isRequired,
+  image: string.isRequired,
+  title: string.isRequired,
+  description: string.isRequired,
 };
 
 export default Card;

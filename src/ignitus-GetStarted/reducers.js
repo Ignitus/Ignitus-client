@@ -1,17 +1,16 @@
 
 import * as t from './actionTypes';
 
-const TestimonialReducer = (state = [] , action) => {
+const TestimonialReducer = (state = [], action) => {
+  switch (action.type) {
+    case t.SET_TESTIMONIAL_DATA:
+      const state = state.concat(action.data);
+      return state;
+      break;
 
-	switch(action.type){
-		case t.SET_TESTIMONIAL_DATA:
-			let state = state.concat(action.data)
-			return state ;
-			break;
+    default:
+      return state;
+  }
+};
 
-		default:
-			return state
-	}
-}
-
-export default TestimonialReducer
+export default TestimonialReducer;

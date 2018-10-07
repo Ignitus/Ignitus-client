@@ -48,7 +48,7 @@ class App extends Component {
             <div>
               <Navigation />
               <Introduction />
-              <CardLayout data={data}/>
+              <CardLayout data={data} />
               <Contributors />
               <Partner />
               <Testimonial.containers.TestimonialContainer />
