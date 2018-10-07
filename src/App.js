@@ -6,7 +6,7 @@ import Footer from './ignitus-Footer';
 import Contributors from './ignitus-Contributors';
 import GetStarted from './ignitus-GetStarted';
 import Introduction from './ignitus-Introduction';
-import Testimonial from './ignitus-Testimonial/Containers/TestimonialContainer';
+import Testimonial from './ignitus-Testimonial';
 import CardLayout from './ignitus-WhatWeDo';
 import Partner from './ignitus-Partners';
 
@@ -18,6 +18,7 @@ import SignupStudent from './ignitus-StudentSignUp';
 import loader from './Assets/Images/loader.gif';
 import data from './Data/data-card-layout';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
@@ -50,7 +51,7 @@ class App extends Component {
               <CardLayout data={data}/>
               <Contributors />
               <Partner />
-              <Testimonial />
+              <Testimonial.containers.TestimonialContainer />
               <GetStarted />
               <Footer />
             </div>

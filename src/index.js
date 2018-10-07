@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import createSagaMiddleware from 'redux-saga';
 import {logger} from 'redux-logger';
-import rootSaga from './ignitus-Testimonial/sagas';
+import rootSaga from './rootSagas';
 import App from './App';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';

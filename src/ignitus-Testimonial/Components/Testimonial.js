@@ -99,12 +99,6 @@ class Testimonial extends Component {
     this.getData()
   }
 
-  componentDidUpdate(){}
-
-  // shouldComponentUpdate(nextProps, nextState){
-  //   console.log('nextProps',nextProps)
-  //   console.log('nextState',nextState)
-  // }
 
   getData(){
     this.props.get_testimonial_data()
