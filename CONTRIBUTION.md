@@ -33,12 +33,9 @@
 ## Setup Via Docker
 
 * Run ```docker-compose up```
+ 
+ Add the mongoURL in db.js and then recreate the docker image.
+ 
+ * ```docker-compose up -d --force-recreate --build```
 
 
-## Linting
-
-* ``` npm run lint ```
-
-## Fix Lint Warnings
-
-* ``` ./node_modules/.bin/eslint src --fix ```
