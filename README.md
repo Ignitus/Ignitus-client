@@ -13,6 +13,19 @@ Client side development Ignitus.
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
 
+Written in universal JavaScript
+* ReactJS
+* Redux
+* Redux-Sagas
+* ESLINT
+* Docker
+* TRAVIS CI
+* Istanbul
+* JEST
+* Reselect
+* Flow
+* Prop-Types
+
 ## About Ignitus
 
 I’d like to introduce you to Ignitus (A Non-Profit Organization for the welfare of student community ) that helps students and professionals get handpicked top-quality global research and industrial internships, for free! The students participate in projects and training programs supervised by our experts.
@@ -89,3 +102,5 @@ This Repository is powered by
 )
 
 ![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
+
+# Thank You!
