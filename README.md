@@ -1,4 +1,7 @@
+![alt tag](https://avatars0.githubusercontent.com/u/39058097?s=200&v=4)
+
 # Ignitus-client-side
+
 Client side development Ignitus.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
