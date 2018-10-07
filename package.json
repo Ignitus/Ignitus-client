@@ -30,11 +30,16 @@
     "build": "react-scripts build",
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
   },
   "devDependencies": {
     "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0"
+    "enzyme-adapter-react-16": "^1.5.0",
+    "flow-bin": "^0.82.0",
+    "flow-typed": "^2.5.1",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4"
   },
   "jest": {
     "collectCoverageFrom": [
