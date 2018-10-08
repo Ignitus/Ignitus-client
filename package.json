@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
@@ -43,7 +43,8 @@
     "flow-bin": "^0.82.0",
     "flow-typed": "^2.5.1",
     "jest": "^20.0.4",
-    "jest-cli": "^20.0.4"
+    "jest-cli": "^20.0.4",
+    "sw-precache": "^5.2.1"
   },
   "jest": {
     "collectCoverageFrom": [
