@@ -50,7 +50,7 @@ class App extends Component {
               <Introduction />
               <CardLayout data={data} />
               <Contributors />
-              <Partner />
+              <Partner.containers.partnerContainer />
               <Testimonial.containers.TestimonialContainer />
               <GetStarted />
               <Footer />

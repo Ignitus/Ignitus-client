@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Testimonial from '../Components/Testimonial';
+import { Testimonial } from '../Components';
 import { get_testimonial_data } from '../actions';
 
 const mapStateToProps = state => ({ state });
