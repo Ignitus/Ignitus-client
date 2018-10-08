@@ -101,7 +101,6 @@ class Testimonial extends Component {
     this.getData();
   }
 
-
   getData() {
     this.props.get_testimonial_data();
   }
@@ -116,8 +115,8 @@ class Testimonial extends Component {
   }
 
   timer() {
-    // const {data} = this.props.state.TestimonialReducer[0];
-    if (this.state.activeIndex === this.props.state.TestimonialReducer[0].data.length - 1) {
+    const { testimonialData: data } = this.props;
+    if (this.state.activeIndex === data.length - 1) {
       this.setState({ activeIndex: -1 });
     }
 
@@ -133,7 +132,7 @@ class Testimonial extends Component {
   goToPrevSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    const slides = this.props.state.TestimonialReducer[0].data;
+    const slides = this.props.testimonialData;
     const slidesLength = slides.length;
 
     if (index < 1) {
@@ -150,7 +149,7 @@ class Testimonial extends Component {
   goToNextSlide(e) {
     e.preventDefault();
     let index = this.state.activeIndex;
-    const slides = this.props.state.TestimonialReducer[0].data;
+    const slides = this.props.testimonialData;
     const slidesLength = slides.length - 1;
 
     if (index === slidesLength) {
@@ -176,8 +175,8 @@ class Testimonial extends Component {
         </div>
         <div>
           <ul className="carousel__slides container">
-            {this.props.state.TestimonialReducer[0]
-              ? this.props.state.TestimonialReducer[0].data.map((slide, index) => (
+            {this.props.testimonialData.length > 0
+              ? this.props.testimonialData.map((slide, index) => (
                 <CarouselSlide
                   key={index}
                   index={index}
@@ -187,8 +186,8 @@ class Testimonial extends Component {
               )) : null}
           </ul>
           <ul className="carousel__indicators">
-            {this.props.state.TestimonialReducer[0]
-              ? this.props.state.TestimonialReducer[0].data.map((slide, index) => (
+            {this.props.testimonialData.length > 0
+              ? this.props.testimonialData.map((slide, index) => (
                 <CarouselIndicator
                   key={index}
                   index={index}
