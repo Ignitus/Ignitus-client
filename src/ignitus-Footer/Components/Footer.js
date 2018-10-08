@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../../Assets/Images/Logos/black_logo.png';
 import '../Styles/style.css';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 // resolved
 
 class Footer extends Component {
@@ -46,9 +48,11 @@ class Footer extends Component {
                   </a>
                 </li>
                 <li>
-                  <a className="link" href="#!">
-                    Partners
-                  </a>
+                  <HashLink to="/#partners">
+                    <span className="link">
+                      Partners
+                    </span>
+                  </HashLink>
                 </li>
                 <li>
                   <a
@@ -118,24 +122,32 @@ class Footer extends Component {
               <h5 className=" mt-3 mb-4 heading">Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a className="link" href="#!">
-                    Home
-                  </a>
+                  <HashLink to="/#!">
+                    <span className="link">
+                      Home
+                    </span>
+                  </HashLink>
                 </li>
                 <li>
-                  <a className="link" href="#what-we-do">
-                    What we provide?
-                  </a>
+                  <HashLink to="/#what-we-do">
+                    <span className="link">
+                      What we provide?
+                    </span>
+                  </HashLink>
                 </li>
                 <li>
-                  <a className="link" href="#contributors">
-                    Contributors
-                  </a>
+                  <HashLink to="/#contributors">
+                    <span className="link">
+                      Contributors
+                    </span>
+                  </HashLink>
                 </li>
                 <li>
-                  <a className="link" href="#!">
-                    About us
-                  </a>
+                  <Link to="/aboutus">
+                    <span className="link">
+                      About us
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>

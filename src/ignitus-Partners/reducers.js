@@ -1,4 +1,6 @@
 
+
+// ignitus-Testimonial reducer BoilerPlate
 import * as t from './actionTypes';
 
 const TestimonialReducer = (state = [], action) => {
