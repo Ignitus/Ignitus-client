@@ -49,7 +49,7 @@ class App extends Component {
             exact
             path="/"
             render={() => (
-              <div class="content">
+              <div className="content">
                 <Introduction />
                 <CardLayout data={data} />
                 <Contributors />

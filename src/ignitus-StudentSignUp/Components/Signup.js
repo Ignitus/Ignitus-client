@@ -41,7 +41,7 @@ class Signup extends React.Component {
               <img className="img-fluid _img mx-auto d-block" src={logo} />
             </div>
             <form>
-              <div class="px-4">
+              <div className="px-4">
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
