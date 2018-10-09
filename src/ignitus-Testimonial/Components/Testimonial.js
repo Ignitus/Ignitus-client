@@ -1,85 +1,68 @@
-import React, { Component } from 'react';
-import {
-  string, number, shape, func, array,
-} from 'prop-types';
-import '../Styles/style.css';
-import axios from 'axios';
-import { API_URL } from '../constants';
+import React, { Component } from "react";
+import { string, number, shape, func, array } from "prop-types";
+import "../Styles/style.css";
+import axios from "axios";
+import { API_URL } from "../constants";
 
+const CarouselIndicator = ({ index, activeIndex, onClick }) => (
+  <li>
+    <a
+      className={
+        index === activeIndex
+          ? "carousel__indicator carousel__indicator--active"
+          : "carousel__indicator"
+      }
+      onClick={onClick}
+    />
+  </li>
+);
 
-class CarouselIndicator extends Component {
-  render() {
-    return (
-      <li>
-        <a
-          className={
-            this.props.index === this.props.activeIndex
-              ? 'carousel__indicator carousel__indicator--active'
-              : 'carousel__indicator'
-          }
-          onClick={this.props.onClick}
-        />
-      </li>
-    );
-  }
-}
+const CarouselSlide = ({ activeIndex, slide, index }) => {
+  return (
+    <li
+      className={
+        index === activeIndex
+          ? "carousel__slide carousel__slide--active "
+          : "carousel__slide"
+      }
+    >
+      <div className="carousel-slide__content">{slide.content}</div>
 
-class CarouselSlide extends Component {
-  render() {
-    return (
-      <li
-        className={
-          this.props.index === this.props.activeIndex
-            ? 'carousel__slide carousel__slide--active '
-            : 'carousel__slide'
-        }
-      >
-        <div className="carousel-slide__content">
-          {this.props.slide.content}
-        </div>
+      <div className="author-source-container">
+        <small className="carousel-slide__source">
+          <div>
+            <strong className="carousel-slide__author">{slide.author}</strong>
+          </div>
+          {slide.source}
+        </small>
+      </div>
+    </li>
+  );
+};
 
-        <div className="author-source-container">
-          <small className="carousel-slide__source">
-            <div>
-              <strong className="carousel-slide__author">
-                {this.props.slide.author}
-              </strong>
-            </div>
-            {this.props.slide.source}
-          </small>
-        </div>
-      </li>
-    );
-  }
-}
+const CarouselLeftArrow = ({ onClick }) => {
+  return (
+    <a
+      href="#"
+      className="carousel__arrow carousel__arrow--left padding-on-left"
+      onClick={onClick}
+    >
+      <i className="fa fa-2x fa-angle-left" />
+    </a>
+  );
+};
 
-class CarouselLeftArrow extends Component {
-  render() {
-    return (
-      <a
-        href="#"
-        className="carousel__arrow carousel__arrow--left padding-on-left"
-        onClick={this.props.onClick}
-      >
-        <i className="fa fa-2x fa-angle-left" />
-      </a>
-    );
-  }
-}
-
-class CarouselRightArrow extends Component {
-  render() {
-    return (
-      <a
-        href="#"
-        className="carousel__arrow carousel__arrow--right padding-on-right"
-        onClick={this.props.onClick}
-      >
-        <i className="fa fa-2x fa-angle-right" />
-      </a>
-    );
-  }
-}
+const CarouselRightArrow = ({ onClick }) => {
+  return (
+    <a
+      href="#"
+      className="carousel__arrow carousel__arrow--right padding-on-right"
+      onClick={onClick}
+    >
+      <i className="fa fa-2x fa-angle-right" />
+    </a>
+  );
+};
 
 // Carousel wrapper component
 class Testimonial extends Component {
@@ -93,7 +76,7 @@ class Testimonial extends Component {
     this.getData = this.getData.bind(this);
 
     this.state = {
-      activeIndex: 0,
+      activeIndex: 0
     };
   }
 
@@ -107,25 +90,43 @@ class Testimonial extends Component {
 
   componentDidMount() {
     this.getData();
-    const interval = setInterval(this.timer, 4000);
+    this.interval = setInterval(this.timer, 3000);
+  }
+
+  componentDidUpdate() {
+    console.log("divyanshu");
   }
 
   componentWillUnmount() {
-    clearInterval(this.state.interval);
+    clearInterval(this.interval);
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const {activeIndex} = this.state
+
+    if (nextState.activeIndex !== activeIndex) {
+      return true;
+    }
+    return false;
   }
 
   timer() {
     const { testimonialData: data } = this.props;
-    if (this.state.activeIndex === data.length - 1) {
+
+    if (data) {
+      if (this.state.activeIndex === data.length - 1) {
+        this.setState({ activeIndex: -1 });
+      }
+
+      this.setState({ activeIndex: this.state.activeIndex + 1 });
+    } else {
       this.setState({ activeIndex: -1 });
     }
-
-    this.setState({ activeIndex: this.state.activeIndex + 1 });
   }
 
   goToSlide(index) {
     this.setState({
-      activeIndex: index,
+      activeIndex: index
     });
   }
 
@@ -142,7 +143,7 @@ class Testimonial extends Component {
     --index;
 
     this.setState({
-      activeIndex: index,
+      activeIndex: index
     });
   }
 
@@ -159,14 +160,13 @@ class Testimonial extends Component {
     ++index;
 
     this.setState({
-      activeIndex: index,
+      activeIndex: index
     });
   }
 
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
-
 
     return (
       <div className="carousel">
@@ -177,25 +177,27 @@ class Testimonial extends Component {
           <ul className="carousel__slides container">
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
-                <CarouselSlide
-                  key={index}
-                  index={index}
-                  activeIndex={activeIndex}
-                  slide={slide}
-                />
-              )) : null}
+                  <CarouselSlide
+                    key={index}
+                    index={index}
+                    activeIndex={activeIndex}
+                    slide={slide}
+                  />
+                ))
+              : null}
           </ul>
           <ul className="carousel__indicators">
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
-                <CarouselIndicator
-                  key={index}
-                  index={index}
-                  activeIndex={activeIndex}
-                  isActive={activeIndex === index}
-                  onClick={e => goToSlide(index)}
-                />
-              )) : null}
+                  <CarouselIndicator
+                    key={index}
+                    index={index}
+                    activeIndex={activeIndex}
+                    isActive={activeIndex === index}
+                    onClick={e => goToSlide(index)}
+                  />
+                ))
+              : null}
           </ul>
         </div>
         <div className="arrow-fix">
@@ -206,10 +208,9 @@ class Testimonial extends Component {
   }
 }
 
-
 CarouselIndicator.propTypes = {
   index: number.isRequired,
-  activeIndex: number.isRequired,
+  activeIndex: number.isRequired
 };
 
 CarouselSlide.propTypes = {
@@ -218,17 +219,16 @@ CarouselSlide.propTypes = {
   slide: shape({
     content: string,
     author: string,
-    source: string,
-  }).isRequired,
+    source: string
+  }).isRequired
 };
 
 CarouselLeftArrow.propTypes = {
-  onClick: func.isRequired,
+  onClick: func.isRequired
 };
 
 CarouselRightArrow.propTypes = {
-  onClick: func.isRequired,
+  onClick: func.isRequired
 };
-
 
 export default Testimonial;
