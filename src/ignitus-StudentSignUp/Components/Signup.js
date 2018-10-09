@@ -28,7 +28,7 @@ class Signup extends React.Component {
         <div className="container _container-custom p-5">
           <div className="row shadow">
             <div className="col-md-6 p-0 container-image">
-              <img className="img-fluid _img-login d-block" src={loginImg} />
+              <img className="img-fluid _img-login d-block" src={loginImg} alt="login" />
               <div className="text-below-image text-center">
                 <p className="mb-5 ">Let's get started</p>
                 <p>Skyrocket your career with best global opportunities</p>
@@ -43,7 +43,7 @@ class Signup extends React.Component {
 
             <div className="col-md-6  _container-form ">
               <div className="my-4">
-                <img className="img-fluid _img mx-auto d-block" src={logo} />
+                <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
               </div>
               <form>
                 <div className="input-group form-group">
@@ -98,7 +98,7 @@ class Signup extends React.Component {
                   <i className="text-dark">or sign up with</i>
                 </div>
                 <div className="mb-4">
-                  <button className="btn btn-primary mx-auto btn-block">
+                  <button className="btn btn-primary mx-auto btn-block" type="button">
                     <i className="fa fa-linkedin mr-3" />
                     <b>LinkedIn</b>
                   </button>
