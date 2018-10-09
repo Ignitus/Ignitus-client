@@ -29,7 +29,7 @@ class Partner extends Component {
     ));
 
     return (
-      <div>
+      <div id="partners">
         <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
           <div className="_contributor">Supporters & Partners</div>
           <div className="_students_researchers">
