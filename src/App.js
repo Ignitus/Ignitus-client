@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Navigation from './ignitus-Navigation';
-import Footer from './ignitus-Footer';
+import Navigation from './Components/Navigation';
+import Footer from './Components/Footer';
 import Contributors from './ignitus-Contributors';
 import GetStarted from './ignitus-GetStarted';
 import Introduction from './ignitus-Introduction';
@@ -40,30 +40,34 @@ class App extends Component {
       );
     }
     return (
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <div>
-              <Navigation />
-              <Introduction />
-              <CardLayout data={data} />
-              <Contributors />
-              <Partner.containers.partnerContainer />
-              <Testimonial.containers.TestimonialContainer />
-              <GetStarted />
-              <Footer />
-            </div>
-          )}
-        />
-        <Route path="/aboutus" component={AboutUs} />
-        <Route path="/login/professor" component={LoginProfessor} />
-        <Route path="/signup/professor" component={SignupProfessor} />
-        <Route path="/login/student" component={LoginStudent} />
-        <Route path="/signup/student" component={SignupStudent} />
-        <Route path="/contributors" component={Contributors} />
-      </Switch>
+      <div className="content-container">
+        <header>
+          <Navigation />
+        </header>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <div class="content">
+                <Introduction />
+                <CardLayout data={data} />
+                <Contributors />
+                <Partner.containers.partnerContainer />
+                <Testimonial.containers.TestimonialContainer />
+                <GetStarted />
+              </div>
+            )}
+          />
+          <Route path="/aboutus" component={AboutUs} />
+          <Route path="/login/professor" component={LoginProfessor} />
+          <Route path="/signup/professor" component={SignupProfessor} />
+          <Route path="/login/student" component={LoginStudent} />
+          <Route path="/signup/student" component={SignupStudent} />
+          <Route path="/contributors" component={Contributors} />
+        </Switch>
+        <Footer />
+      </div>
     );
   }
 }
