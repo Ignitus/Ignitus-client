@@ -13,7 +13,7 @@
     }
     .or-seperator i {
         padding: 0 10px;
-        background: white;
+        background:#808000;
         position: relative;
         top: -11px;
         z-index: 1;
@@ -22,11 +22,12 @@
 .text-secondary {
     color: black !important;
     text-align: center;
+    
 }
 
 
 ._form{
-    background: white;
+    background:#808000;
     height: 585px;
     width: 40%;
     display: block;
@@ -76,20 +77,21 @@
 
 .btn-success {
     color: #fff;
-    background-color: #28a745;
+    background-color: #808000;
     border-color: #28a745;
     border-radius: 60px;
     text-align: center;
 }
 
 ._link{
-    text-decoration: none;
+    text-decoration:underline;
     color: black;
 }
 
 ._link:hover{
-    text-decoration: none;
+    text-decoration:underline;
     color: grey;
+    text-decoration-style:solid;
 }
 
 ._vertical{
