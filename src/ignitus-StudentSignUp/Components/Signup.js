@@ -46,62 +46,64 @@ class Signup extends React.Component {
                 <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
               </div>
               <form>
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fa fa-envelope-o fa-fw" />
-                    </span>
+                <div class="px-4">
+                 <div className="input-group form-group">
+                    <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <i className="fa fa-envelope-o fa-fw" />
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      id="email"
+                      className="form-control"
+                      placeholder="Email"
+                      value={this.state.value}
+                      onChange={this.handleChange}
+                    />
                   </div>
-                  <input
-                    type="text"
-                    id="email"
-                    className="form-control"
-                    placeholder="Email"
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                  />
-                </div>
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fa fa-key fa-fw" />
-                    </span>
+                  <div className="input-group form-group">
+                    <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <i className="fa fa-key fa-fw" />
+                      </span>
+                    </div>
+                    <input
+                      type="password"
+                      id="pass"
+                      className="form-control"
+                      placeholder="Password"
+                      required
+                    />
                   </div>
-                  <input
-                    type="password"
-                    id="pass"
-                    className="form-control"
-                    placeholder="Password"
-                    required
-                  />
-                </div>
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fa fa-key fa-fw" />
-                    </span>
+                  <div className="input-group form-group">
+                    <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <i className="fa fa-key fa-fw" />
+                      </span>
+                    </div>
+                    <input
+                      type="password"
+                      id="pass"
+                      className="form-control"
+                      placeholder="Confirm Password"
+                      required
+                    />
                   </div>
-                  <input
-                    type="password"
-                    id="pass"
-                    className="form-control"
-                    placeholder="Confirm Password"
-                    required
-                  />
-                </div>
-                <div className="text-center mb-3 mt-3">
-                  <button type="submit" className="btn btn-success px-3 py-2">
-                    <b>Sign up</b>
-                  </button>
-                </div>
-                <div className="_or-seperator">
-                  <i className="text-dark">or sign up with</i>
-                </div>
-                <div className="mb-4">
-                  <button className="btn btn-primary mx-auto btn-block" type="button">
-                    <i className="fa fa-linkedin mr-3" />
-                    <b>LinkedIn</b>
-                  </button>
+                  <div className="text-center mb-3 mt-3">
+                    <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                      Sign up
+                    </button>
+                  </div>
+                  <div className="_or-seperator">
+                    <i className="text-black-50">or sign up with</i>
+                  </div>
+                  <div className="mb-4">
+                    <button className="btn btn-primary btn-rounded mx-auto btn-block">
+                      <i className="fa fa-linkedin mr-3" />
+                      Linked-in
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

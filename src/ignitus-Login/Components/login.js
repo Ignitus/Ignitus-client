@@ -11,11 +11,14 @@ const Login = () => (
     <div className="container-fluid">
       <div className="row">
         <div className="col-xs-4" />
-        <div className="container _container rounded mt-5 col-xs-6">
-          <div className="my-4">
-            <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
+
+        <div className="container mt-5 col-xs-6">
+          <div className="my-5">
+            <img className="img-fluid _img mx-auto d-block" src={logo} />
+  
           </div>
           <form>
+            <div class="_login-form mx-auto">
             <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
@@ -56,17 +59,17 @@ const Login = () => (
               </div>
             </div>
             <div className="text-center mb-3 mt-3">
-              <button type="submit" className="btn btn-success px-3 py-2">
-                <b>Sign in</b>
+              <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                Sign in
               </button>
             </div>
             <div className="_or-seperator">
-              <i className="text-dark">or sign in with</i>
+              <i className="text-black-50">or sign in with</i>
             </div>
             <div className="mb-4">
-              <button className="btn btn-primary mx-auto btn-block" type="button">
+              <button className="btn btn-primary btn-rounded mx-auto btn-block">
                 <i className="fa fa-linkedin mr-3" />
-                <b>LinkedIn</b>
+                Linked-in
               </button>
             </div>
             <div className="text-center mb-3 mt-3">
@@ -78,6 +81,7 @@ const Login = () => (
                     Sign Up
                 </a>
               </div>
+            </div>
             </div>
           </form>
         </div>
