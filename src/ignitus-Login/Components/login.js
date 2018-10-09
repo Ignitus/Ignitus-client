@@ -5,15 +5,17 @@ import '../Styles/style.css';
 import Navigation from '../../ignitus-Navigation';
 import Footer from '../../ignitus-Footer';
 
-const Login = props => (
+const Login = () => (
   <div>
     <Navigation />
     <div className="container-fluid">
       <div className="row">
         <div className="col-xs-4" />
+
         <div className="container mt-5 col-xs-6">
           <div className="my-5">
             <img className="img-fluid _img mx-auto d-block" src={logo} />
+  
           </div>
           <form>
             <div class="_login-form mx-auto">
