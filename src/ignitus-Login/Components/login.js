@@ -5,7 +5,7 @@ import '../Styles/style.css';
 import Navigation from '../../ignitus-Navigation';
 import Footer from '../../ignitus-Footer';
 
-const Login = props => (
+const Login = () => (
   <div>
     <Navigation />
     <div className="container-fluid">
@@ -13,7 +13,7 @@ const Login = props => (
         <div className="col-xs-4" />
         <div className="container _container rounded mt-5 col-xs-6">
           <div className="my-4">
-            <img className="img-fluid _img mx-auto d-block" src={logo} />
+            <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
           </div>
           <form>
             <div className="input-group form-group">
@@ -64,7 +64,7 @@ const Login = props => (
               <i className="text-dark">or sign in with</i>
             </div>
             <div className="mb-4">
-              <button className="btn btn-primary mx-auto btn-block">
+              <button className="btn btn-primary mx-auto btn-block" type="button">
                 <i className="fa fa-linkedin mr-3" />
                 <b>LinkedIn</b>
               </button>
