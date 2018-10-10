@@ -81,18 +81,10 @@ class Testimonial extends Component {
   componentWillMount() {
     this.getData();
   }
-
+  
   componentDidMount() {
     this.getData();
     this.interval = setInterval(this.timer, 3000);
-  }
-
-  componentDidUpdate() {
-    console.log('divyanshu');
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -102,6 +94,10 @@ class Testimonial extends Component {
       return true;
     }
     return false;
+  }
+
+   componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   getData() {
@@ -130,34 +126,34 @@ class Testimonial extends Component {
 
   goToPrevSlide(e) {
     e.preventDefault();
-    let { activeIndex: index, testimonialData: slides } = this.state;
-    const slidesLength = slides.length;
 
-    if (index < 1) {
-      index = slidesLength;
+    const { activeIndex } = this.state;
+    const { testimonialData } = this.props;
+
+    if (activeIndex < 1) {
+      return this.setState(() => ({
+        activeIndex: testimonialData.length - 1,
+      }));
     }
 
-    --index;
-
-    this.setState({
-      activeIndex: index,
-    });
+    return this.setState(prevState => ({
+      activeIndex: prevState.activeIndex - 1,
+    }));
   }
 
   goToNextSlide(e) {
     e.preventDefault();
-    let { activeIndex: index, testimonialData: slides } = this.state;
-    const slidesLength = slides.length - 1;
 
-    if (index === slidesLength) {
-      index = -1;
+    const { activeIndex } = this.state;
+    const { testimonialData } = this.props;
+
+    if (activeIndex === (testimonialData.length - 1)) {
+      return this.setState({ activeIndex: 0 });
     }
 
-    ++index;
-
-    this.setState({
-      activeIndex: index,
-    });
+    return this.setState(prevState => ({
+      activeIndex: prevState.activeIndex + 1,
+    }));
   }
 
   render() {
