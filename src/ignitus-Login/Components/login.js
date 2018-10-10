@@ -2,7 +2,11 @@ import React from 'react';
 import logo from '../../Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
+import Navigation from '../../ignitus-Navigation';
+import Footer from '../../ignitus-Footer';
+
 const Login = props => (
+<<<<<<< HEAD
   <div className="container-fluid">
     <div className="row">
       <div className="col-xs-4" />
@@ -24,62 +28,89 @@ const Login = props => (
               className="form-control"
               placeholder="Email"
             />
+=======
+  <div>
+    <Navigation />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-xs-4" />
+        <div className="container mt-5 col-xs-6">
+          <div className="my-5">
+            <img className="img-fluid _img mx-auto d-block" src={logo} />
+>>>>>>> parent of f3bbe23... add reusable footer and navigation component
           </div>
-          <div className="input-group form-group">
-            <div className="input-group-prepend">
-              <span className="input-group-text">
-                <i className="fa fa-key fa-fw" />
-              </span>
-            </div>
-            <input
-              type="password"
-              id="pass"
-              className="form-control"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div className="input-group form-group">
-            <div className="form-check">
+          <form>
+            <div class="_login-form mx-auto">
+            <div className="input-group form-group">
+              <div className="input-group-prepend">
+                <span className="input-group-text">
+                  <i className="fa fa-envelope-o fa-fw" />
+                </span>
+              </div>
               <input
-                className="form-check-input"
-                type="checkbox"
-                id="gridCheck1"
+                type="text"
+                id="email"
+                className="form-control"
+                placeholder="Email"
               />
-              <label className="form-check-label" htmlFor="gridCheck1">
-                  Remember Me
-              </label>
             </div>
-          </div>
-          <div className="text-center mb-3 mt-3">
-            <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
-              Sign in
-            </button>
-          </div>
-          <div className="_or-seperator">
-            <i className="text-black-50">or sign in with</i>
-          </div>
-          <div className="mb-4">
-            <button className="btn btn-primary btn-rounded mx-auto btn-block">
-              <i className="fa fa-linkedin mr-3" />
-              Linked-in
-            </button>
-          </div>
-          <div className="text-center mb-3 mt-3">
-            <div>
-                Don't have an account?
-              {' '}
-              <a href="/signup" className="text-center _link">
+            <div className="input-group form-group">
+              <div className="input-group-prepend">
+                <span className="input-group-text">
+                  <i className="fa fa-key fa-fw" />
+                </span>
+              </div>
+              <input
+                type="password"
+                id="pass"
+                className="form-control"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div className="input-group form-group">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="gridCheck1"
+                />
+                <label className="form-check-label" htmlFor="gridCheck1">
+                    Remember Me
+                </label>
+              </div>
+            </div>
+            <div className="text-center mb-3 mt-3">
+              <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                Sign in
+              </button>
+            </div>
+            <div className="_or-seperator">
+              <i className="text-black-50">or sign in with</i>
+            </div>
+            <div className="mb-4">
+              <button className="btn btn-primary btn-rounded mx-auto btn-block">
+                <i className="fa fa-linkedin mr-3" />
+                Linked-in
+              </button>
+            </div>
+            <div className="text-center mb-3 mt-3">
+              <div>
+                  Don't have an account?
                 {' '}
-                  Sign Up
-              </a>
+                <a href="/signup" className="text-center _link">
+                  {' '}
+                    Sign Up
+                </a>
+              </div>
             </div>
-          </div>
-          </div>
-        </form>
+            </div>
+          </form>
+        </div>
+        <div className="col-xs-4" />
       </div>
-      <div className="col-xs-4" />
     </div>
+    <Footer />
   </div>
 );
 

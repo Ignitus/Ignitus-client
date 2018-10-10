@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../Assets/Images/Logos/black_logo.png';
+import logo from '../../Assets/Images/Logos/black_logo.png';
+import '../Styles/style.css';
 
 class Navigation extends Component {
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import logo from '../../Assets/Images/Logos/black_logo.png';
+import '../Styles/style.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import logo from '../Assets/Images/Logos/black_logo.png';
-
 // resolved
 
 class Footer extends Component {
