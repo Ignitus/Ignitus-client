@@ -11,21 +11,8 @@ const Signup = props => (
           <img className="img-fluid _img mx-auto d-block" src={logo} />
         </div>
         <form>
-          <div className="_login-form mx-auto">
+          <div class="_login-form mx-auto">
           <div className="input-group form-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text">
-                  <i className="fa fa-user-o fa-fw" />
-                </span>
-              </div>
-              <input
-                type="text"
-                id="name"
-                className="form-control"
-                placeholder="Full Name"
-              />
-            </div>
-            <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
                   <i className="fa fa-user-o fa-fw" />

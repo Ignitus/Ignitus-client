@@ -26,34 +26,40 @@ const Login = props => (
                   <i className="fa fa-envelope-o fa-fw" />
                 </span>
               </div>
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <i className="fa fa-key fa-fw" />
-                  </span>
-                </div>
-                <input
-                  type="password"
-                  id="pass"
-                  className="form-control"
-                  placeholder="Password"
-                  required
-                />
+              <input
+                type="text"
+                id="email"
+                className="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div className="input-group form-group">
+              <div className="input-group-prepend">
+                <span className="input-group-text">
+                  <i className="fa fa-key fa-fw" />
+                </span>
               </div>
-              <div className="text-center mb-3 mt-3">
-                <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
-                  Log in
-                </button>
-              </div>
-              <div className="_or-seperator">
-                <i className="text-black-50">or log in with</i>
-              </div>
-              <div className="mb-4">
-                <button className="btn btn-primary btn-rounded mx-auto btn-block">
-                  <i className="fa fa-linkedin mr-3" />
-                  Linked-in
-                </button>
-              </div>
+              <input
+                type="password"
+                id="pass"
+                className="form-control"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div className="text-center mb-3 mt-3">
+              <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                Log in
+              </button>
+            </div>
+            <div className="_or-seperator">
+              <i className="text-black-50">or log in with</i>
+            </div>
+            <div className="mb-4">
+              <button className="btn btn-primary btn-rounded mx-auto btn-block">
+                <i className="fa fa-linkedin mr-3" />
+                Linked-in
+              </button>
             </div>
           </div>
         </form>

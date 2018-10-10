@@ -1,24 +1,25 @@
-import React, { Component } from "react";
-import { string, number, shape, func, array } from "prop-types";
-import "../Styles/style.css";
-import axios from "axios";
-import { API_URL } from "../constants";
+import React, { Component } from 'react';
+import {
+ string, number, shape, func, array 
+} from 'prop-types';
+import '../Styles/style.css';
+import axios from 'axios';
+import { API_URL } from '../constants';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>
     <a
       className={
         index === activeIndex
-          ? "carousel__indicator carousel__indicator--active"
-          : "carousel__indicator"
+          ? 'carousel__indicator carousel__indicator--active'
+          : 'carousel__indicator'
       }
       onClick={onClick}
     />
   </li>
 );
 
-const CarouselSlide = ({ activeIndex, slide, index }) => {
-  return (
+const CarouselSlide = ({ activeIndex, slide, index }) => (
     <li
       className={
         index === activeIndex
@@ -38,22 +39,20 @@ const CarouselSlide = ({ activeIndex, slide, index }) => {
       </div>
     </li>
   );
-};
 
-const CarouselLeftArrow = ({ onClick }) => {
-  return (
-    <a
-      href="#"
-      className="carousel__arrow carousel__arrow--left padding-on-left"
-      onClick={onClick}
-    >
-      <i className="fa fa-2x fa-angle-left" />
-    </a>
-  );
-};
+// consider refactoring to use button
 
-const CarouselRightArrow = ({ onClick }) => {
-  return (
+const CarouselLeftArrow = ({ onClick }) => (
+  <a
+    href="#"
+    className="carousel__arrow carousel__arrow--left padding-on-left"
+    onClick={onClick}
+  >
+    <i className="fa fa-2x fa-angle-left" />
+  </a>
+);
+
+const CarouselRightArrow = ({ onClick }) => (
     <a
       href="#"
       className="carousel__arrow carousel__arrow--right padding-on-right"
@@ -62,7 +61,6 @@ const CarouselRightArrow = ({ onClick }) => {
       <i className="fa fa-2x fa-angle-right" />
     </a>
   );
-};
 
 // Carousel wrapper component
 class Testimonial extends Component {
@@ -76,38 +74,34 @@ class Testimonial extends Component {
     this.getData = this.getData.bind(this);
 
     this.state = {
-      activeIndex: 0
+      activeIndex: 0,
     };
   }
 
   componentWillMount() {
     this.getData();
   }
-
-  getData() {
-    this.props.get_testimonial_data();
-  }
-
+  
   componentDidMount() {
     this.getData();
     this.interval = setInterval(this.timer, 3000);
   }
 
-  componentDidUpdate() {
-    console.log("divyanshu");
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
   shouldComponentUpdate(nextProps, nextState) {
-    const {activeIndex} = this.state
+    const { activeIndex } = this.state;
 
     if (nextState.activeIndex !== activeIndex) {
       return true;
     }
     return false;
+  }
+
+   componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  getData() {
+    this.props.get_testimonial_data();
   }
 
   timer() {
@@ -126,42 +120,40 @@ class Testimonial extends Component {
 
   goToSlide(index) {
     this.setState({
-      activeIndex: index
+      activeIndex: index,
     });
   }
 
   goToPrevSlide(e) {
     e.preventDefault();
-    let index = this.state.activeIndex;
-    const slides = this.props.testimonialData;
-    const slidesLength = slides.length;
 
-    if (index < 1) {
-      index = slidesLength;
+    const { activeIndex } = this.state;
+    const { testimonialData } = this.props;
+
+    if (activeIndex < 1) {
+      return this.setState(() => ({
+        activeIndex: testimonialData.length - 1,
+      }));
     }
 
-    --index;
-
-    this.setState({
-      activeIndex: index
-    });
+    return this.setState(prevState => ({
+      activeIndex: prevState.activeIndex - 1,
+    }));
   }
 
   goToNextSlide(e) {
     e.preventDefault();
-    let index = this.state.activeIndex;
-    const slides = this.props.testimonialData;
-    const slidesLength = slides.length - 1;
 
-    if (index === slidesLength) {
-      index = -1;
+    const { activeIndex } = this.state;
+    const { testimonialData } = this.props;
+
+    if (activeIndex === (testimonialData.length - 1)) {
+      return this.setState({ activeIndex: 0 });
     }
 
-    ++index;
-
-    this.setState({
-      activeIndex: index
-    });
+    return this.setState(prevState => ({
+      activeIndex: prevState.activeIndex + 1,
+    }));
   }
 
   render() {
@@ -177,26 +169,26 @@ class Testimonial extends Component {
           <ul className="carousel__slides container">
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
-                  <CarouselSlide
+                <CarouselSlide
                     key={index}
                     index={index}
                     activeIndex={activeIndex}
                     slide={slide}
                   />
-                ))
+              ))
               : null}
           </ul>
           <ul className="carousel__indicators">
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
-                  <CarouselIndicator
+                <CarouselIndicator
                     key={index}
                     index={index}
                     activeIndex={activeIndex}
                     isActive={activeIndex === index}
                     onClick={e => goToSlide(index)}
                   />
-                ))
+              ))
               : null}
           </ul>
         </div>
@@ -210,7 +202,7 @@ class Testimonial extends Component {
 
 CarouselIndicator.propTypes = {
   index: number.isRequired,
-  activeIndex: number.isRequired
+  activeIndex: number.isRequired,
 };
 
 CarouselSlide.propTypes = {
@@ -219,16 +211,16 @@ CarouselSlide.propTypes = {
   slide: shape({
     content: string,
     author: string,
-    source: string
-  }).isRequired
+    source: string,
+  }).isRequired,
 };
 
 CarouselLeftArrow.propTypes = {
-  onClick: func.isRequired
+  onClick: func.isRequired,
 };
 
 CarouselRightArrow.propTypes = {
-  onClick: func.isRequired
+  onClick: func.isRequired,
 };
 
 export default Testimonial;

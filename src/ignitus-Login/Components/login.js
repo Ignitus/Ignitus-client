@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
-const Login = props => (
+const Login = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="container mt-5 col-xs-6">
@@ -77,6 +77,7 @@ const Login = props => (
           </div>
         </form>
       </div>
+      <div className="col-xs-4" />
     </div>
   </div>
 );
