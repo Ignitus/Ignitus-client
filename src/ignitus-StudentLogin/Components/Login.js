@@ -3,23 +3,17 @@ import logo from '../../Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
 import loginImg from '../../Assets/Images/login.png';
-import Navigation from '../../ignitus-Navigation';
-import Footer from '../../ignitus-Footer';
 
 const Login = props => (
-  <div>
-    <Navigation />
-    <div className="_container-custom container p-5">
-      <div className="row shadow">
-        <div className="col-md-6 p-0 container-image">
-          <img className="img-fluid _img-login d-block" src={loginImg} />
-          <div className="text-below-image text-center">
-            <p className="mb-5">Let's get started</p>
-            <p>Skyrocket your career with best global opportunities</p>
-          </div>
+  <div className="_container-custom container p-5">
+    <div className="row shadow">
+      <div className="col-md-6 p-0 container-image">
+        <img className="img-fluid _img-login d-block" src={loginImg} />
+        <div className="text-below-image text-center">
+          <p className="mb-5">Let's get started</p>
+          <p>Skyrocket your career with best global opportunities</p>
         </div>
-
-<<<<<<< HEAD
+      </div>
       <div className="col-md-6  _container-form ">
         <div className="my-4">
           <img className="img-fluid _img mx-auto d-block" src={logo} />
@@ -31,26 +25,6 @@ const Login = props => (
                 <span className="input-group-text">
                   <i className="fa fa-envelope-o fa-fw" />
                 </span>
-=======
-        <div className="col-md-6  _container-form ">
-          <div className="my-4">
-            <img className="img-fluid _img mx-auto d-block" src={logo} />
-          </div>
-          <form>
-            <div class="px-4">
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <i className="fa fa-envelope-o fa-fw" />
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  id="email"
-                  className="form-control"
-                  placeholder="Email"
-                />
->>>>>>> parent of f3bbe23... add reusable footer and navigation component
               </div>
               <div className="input-group form-group">
                 <div className="input-group-prepend">
@@ -81,11 +55,10 @@ const Login = props => (
                 </button>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
-    <Footer />
   </div>
 );
 
