@@ -12,19 +12,26 @@ Client side development Ignitus.
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
-
+## Client-Side
 Written in universal JavaScript
 * ReactJS
 * Redux
 * Redux-Sagas
 * ESLINT
-* Docker
-* TRAVIS CI
 * Istanbul
 * JEST
 * Reselect
 * Flow
 * Prop-Types
+
+## Server-Side
+* Node.js
+* JWT
+* Mocha
+* Mongoose
+* MongoDB
+* Docker
+* TRAVIS CI
 
 ## About Ignitus
 
@@ -103,4 +110,6 @@ This Repository is powered by
 
 ![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
 
-# Thank You!
+### For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
+
+### Thank You!

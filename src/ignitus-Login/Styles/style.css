@@ -1,23 +1,22 @@
+.social-btn .btn i {
+    margin: 4px 15px  0 5px;
+    min-width: 15px;
+}
 
-    .social-btn .btn i {
-        margin: 4px 15px  0 5px;
-        min-width: 15px;
-    }
+.or-seperator {
+    margin: 20px auto 10px;
+    text-align: center;
+    border-top: 1px solid black;
+    width: 30%;
 
-    .or-seperator {
-        margin: 20px auto 10px;
-        text-align: center;
-        border-top: 1px solid black;
-        width: 30%;
-
-    }
-    .or-seperator i {
-        padding: 0 10px;
-        background: white;
-        position: relative;
-        top: -11px;
-        z-index: 1;
-    }
+}
+.or-seperator i {
+    padding: 0 10px;
+    background: white;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
 
 .text-secondary {
     color: black !important;
@@ -65,21 +64,20 @@
     margin-left: 70px;
     color: white;
 }
-
+/* TODO: change main colors with scss */
 .btn-primary {
     background-color: #0275b6 !important;
     border-color: #0275b6 !important;
-    border-radius: 60px !important;
-
 }
 
+.btn-rounded {
+    border-radius: 25px !important;
+}
 
 .btn-success {
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    border-radius: 60px;
-    text-align: center;
 }
 
 ._link{
@@ -94,4 +92,10 @@
 
 ._vertical{
     vertical-align: middle;
+}
+
+@media only screen and (min-width: 540px) {
+    ._login-form {
+        width: 25rem;
+    }
 }
