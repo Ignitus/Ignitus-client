@@ -1,11 +1,8 @@
 import React from 'react';
 import '../Styles/style.css';
-import Navigation from '../../ignitus-Navigation';
-import Footer from '../../ignitus-Footer';
 
 const About = () => (
   <div>
-    <Navigation />
     <div className="container _align">
       <div className="_about">About Us</div>
       <div className="_aboutus">
@@ -45,8 +42,6 @@ const About = () => (
         </p>
       </div>
     </div>
-
-    <Footer />
   </div>
 );
 
