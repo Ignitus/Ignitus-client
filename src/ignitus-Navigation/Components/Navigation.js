@@ -25,15 +25,15 @@ const Navigation = () => (
         <li className="nav-item active">
           <HashLink to="/#">
             <span className="nav-link">
-              Home 
-{' '}
-<span className="sr-only">(current)</span>
+              Home
+              {' '}
+              <span className="sr-only">(current)</span>
             </span>
           </HashLink>
         </li>
         <li className="nav-item">
           <HashLink to="/#what-we-do">
-            <span className="nav-link">What we provide?</span>
+            <span className="nav-link">What we provide</span>
           </HashLink>
         </li>
         <li className="nav-item">
