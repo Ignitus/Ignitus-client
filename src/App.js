@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navigation from './ignitus-Navigation';
@@ -19,7 +18,6 @@ import loader from './Assets/Images/loader.gif';
 import data from './Data/data-card-layout';
 import './App.css';
 
-
 class App extends Component {
   constructor() {
     super();
@@ -27,15 +25,19 @@ class App extends Component {
   }
 
   componentDidMount() {
+    /* questionable use of setTimeout
+    I would implement simply a call to setState
+    this.setState({ isLoading: true }); */
+
     setTimeout(() => this.setState({ isLoading: false }), 3000);
   }
 
   render() {
-    const { state: { isLoading } } = this;
+    const { isLoading } = this.state;
     if (isLoading) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
-          <img src={loader} className="_loader" />
+          <img src={loader} className="_loader" alt="loading" />
         </div>
       );
     }
