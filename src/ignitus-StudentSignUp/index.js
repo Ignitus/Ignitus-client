@@ -1,5 +1,3 @@
+import Signup from './Components/Signup';
 
-import * as components from './Components';
-export default {
-  components,
-};
+export default Signup;
