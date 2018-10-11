@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component, Fragment } from 'react';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Navigation from './ignitus-Navigation';
 import Footer from './ignitus-Footer';
 import Contributors from './ignitus-Contributors';
@@ -42,30 +42,34 @@ class App extends Component {
       );
     }
     return (
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <div>
-              <Navigation />
-              <Introduction />
-              <CardLayout data={data} />
-              <Contributors />
-              <Partner.containers.partnerContainer />
-              <Testimonial.containers.TestimonialContainer />
-              <GetStarted />
-              <Footer />
-            </div>
-          )}
-        />
-        <Route path="/aboutus" component={AboutUs} />
-        <Route path="/login/professor" component={LoginProfessor} />
-        <Route path="/signup/professor" component={SignupProfessor} />
-        <Route path="/login/student" component={LoginStudent} />
-        <Route path="/signup/student" component={SignupStudent} />
-        <Route path="/contributors" component={Contributors} />
-      </Switch>
+      <Router>
+        <Fragment>
+          <Navigation />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <div>
+                  <Introduction />
+                  <CardLayout data={data} />
+                  <Contributors />
+                  <Partner.containers.partnerContainer />
+                  <Testimonial.containers.TestimonialContainer />
+                  <GetStarted />
+                </div>
+              )}
+            />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/login/professor" component={LoginProfessor} />
+            <Route path="/signup/professor" component={SignupProfessor} />
+            <Route path="/login/student" component={LoginStudent} />
+            <Route path="/signup/student" component={SignupStudent} />
+            <Route path="/contributors" component={Contributors} />
+          </Switch>
+          <Footer />
+        </Fragment>
+      </Router>
     );
   }
 }
