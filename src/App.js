@@ -11,8 +11,8 @@ import CardLayout from './ignitus-WhatWeDo';
 import Partner from './ignitus-Partners';
 
 import AboutUs from './ignitus-About';
-import LoginProfessor from './ignitus-Login';
-import SignupProfessor from './ignitus-SignUp';
+import LoginProfessor from './ignitus-ProfessorLogin';
+import SignupProfessor from './ignitus-ProfessorSignUp';
 import LoginStudent from './ignitus-StudentLogin';
 import SignupStudent from './ignitus-StudentSignUp';
 import loader from './Assets/Images/loader.gif';
@@ -35,14 +35,14 @@ class App extends Component {
     if (isLoading) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
-          <img src={loader} className="_loader" />
+          <img src={loader} className="loader" />
         </div>
       );
     }
     return (
       <div className="content-container">
         <header>
-          <Navigation />
+          <Navigation.components.Navigation />
         </header>
         <Switch>
           <Route
@@ -50,23 +50,23 @@ class App extends Component {
             path="/"
             render={() => (
               <div className="content">
-                <Introduction />
-                <CardLayout data={data} />
+                <Introduction.components.Introduction />
+                <CardLayout.components.CardLayout data={data} />
                 <Contributors.components.Contributors />
                 <Partner.components.Partner />
                 <Testimonial.containers.TestimonialContainer />
-                <GetStarted />
+                <GetStarted.components.GetStarted />
               </div>
             )}
           />
-          <Route path="/aboutus" component={AboutUs} />
-          <Route path="/login/professor" component={LoginProfessor} />
-          <Route path="/signup/professor" component={SignupProfessor} />
-          <Route path="/login/student" component={LoginStudent} />
-          <Route path="/signup/student" component={SignupStudent} />
-          <Route path="/contributors" component={Contributors} />
+          <Route path="/aboutus" component={AboutUs.components.About} />
+          <Route path="/login/professor" component={LoginProfessor.components.Login} />
+          <Route path="/signup/professor" component={SignupProfessor.components.Signup} />
+          <Route path="/login/student" component={LoginStudent.components.Login} />
+          <Route path="/signup/student" component={SignupStudent.components.Signup} />
+          <Route path="/contributors" component={Contributors.components.Contributors} />
         </Switch>
-        <Footer />
+        <Footer.components.Footer />
       </div>
     );
   }

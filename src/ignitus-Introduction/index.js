@@ -1,5 +1,5 @@
 
-
-import Introduction from './Components/Introduction';
-
-export default Introduction;
+import * as components from './Components';
+export default {
+  components,
+};
