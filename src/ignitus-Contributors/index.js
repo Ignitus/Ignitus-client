@@ -1,4 +1,5 @@
 
-import Contributors from './Components/Contributors';
-
-export default Contributors;
+import * as components from './Components';
+export default {
+  components,
+};

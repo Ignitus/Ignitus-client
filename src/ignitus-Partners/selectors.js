@@ -1,2 +1,0 @@
-
-// ignitus-Testimonial BoilerPlate

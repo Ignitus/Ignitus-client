@@ -52,8 +52,8 @@ class App extends Component {
               <div className="content">
                 <Introduction />
                 <CardLayout data={data} />
-                <Contributors />
-                <Partner.containers.partnerContainer />
+                <Contributors.components.Contributors />
+                <Partner.components.Partner />
                 <Testimonial.containers.TestimonialContainer />
                 <GetStarted />
               </div>
