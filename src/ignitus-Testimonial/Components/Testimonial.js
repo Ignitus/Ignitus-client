@@ -20,25 +20,25 @@ const CarouselIndicator = ({ index, activeIndex, onClick }) => (
 );
 
 const CarouselSlide = ({ activeIndex, slide, index }) => (
-    <li
-      className={
-        index === activeIndex
-          ? "carousel__slide carousel__slide--active "
-          : "carousel__slide"
-      }
-    >
-      <div className="carousel-slide__content">{slide.content}</div>
+  <li
+    className={
+      index === activeIndex
+        ? 'carousel__slide carousel__slide--active '
+        : 'carousel__slide'
+    }
+  >
+    <div className="carousel-slide__content">{slide.content}</div>
 
-      <div className="author-source-container">
-        <small className="carousel-slide__source">
-          <div>
-            <strong className="carousel-slide__author">{slide.author}</strong>
-          </div>
-          {slide.source}
-        </small>
-      </div>
-    </li>
-  );
+    <div className="author-source-container">
+      <small className="carousel-slide__source">
+        <div>
+          <strong className="carousel-slide__author">{slide.author}</strong>
+        </div>
+        {slide.source}
+      </small>
+    </div>
+  </li>
+);
 
 // consider refactoring to use button
 
@@ -53,14 +53,14 @@ const CarouselLeftArrow = ({ onClick }) => (
 );
 
 const CarouselRightArrow = ({ onClick }) => (
-    <a
-      href="#"
-      className="carousel__arrow carousel__arrow--right padding-on-right"
-      onClick={onClick}
-    >
-      <i className="fa fa-2x fa-angle-right" />
-    </a>
-  );
+  <a
+    href="#"
+    className="carousel__arrow carousel__arrow--right padding-on-right"
+    onClick={onClick}
+  >
+    <i className="fa fa-2x fa-angle-right" />
+  </a>
+);
 
 // Carousel wrapper component
 class Testimonial extends Component {
@@ -84,6 +84,7 @@ class Testimonial extends Component {
 
   componentDidMount() {
     this.getData();
+    // don't understand the logic behind this seeing as React is designed to handle this for you so long as you aren't using PureComponent
     this.interval = setInterval(this.timer, 3000);
   }
 
