@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Intern from '../../Assets/Images/Cards/intern1.png';
 import Offer from '../../Assets/Images/Cards/offer1.png';
 import Expert from '../../Assets/Images/Cards/expert1.png';
@@ -21,15 +21,15 @@ const CardLayout = () => {
     },
     {
       image: Expert,
-      title: 'Experts Community',
+      title: 'Community of Experts',
       description:
-        'Guidance from an unparalleled network of professors,experts and industry professionals supervising internal projects with selected students',
+        'Guidance from an unparalleled network of professors, experts and industry professionals supervising internal projects with selected students.',
     },
   ];
-
-  const html = [...data].map((x, key) => (
+  // I would suggest not giving these cards a hover effect because it implies that they are links
+  const html = [...data].map(x => (
     <Card
-      key={key}
+      key={x.title}
       image={x.image}
       title={x.title}
       description={x.description}
