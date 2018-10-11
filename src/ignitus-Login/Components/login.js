@@ -2,23 +2,15 @@ import React from 'react';
 import logo from '../../Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
-import Navigation from '../../ignitus-Navigation';
-import Footer from '../../ignitus-Footer';
-
 const Login = () => (
-  <div>
-    <Navigation />
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-xs-4" />
-
-        <div className="container mt-5 col-xs-6">
-          <div className="my-5">
-            <img className="img-fluid _img mx-auto d-block" src={logo} />
-  
-          </div>
-          <form>
-            <div class="_login-form mx-auto">
+  <div className="container-fluid">
+    <div className="row">
+      <div className="container mt-5 col-xs-6">
+        <div className="my-5">
+          <img className="img-fluid _img mx-auto d-block" src={logo} />
+        </div>
+        <form>
+          <div class="_login-form mx-auto">
             <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
@@ -82,13 +74,11 @@ const Login = () => (
                 </a>
               </div>
             </div>
-            </div>
-          </form>
-        </div>
-        <div className="col-xs-4" />
+          </div>
+        </form>
       </div>
+      <div className="col-xs-4" />
     </div>
-    <Footer />
   </div>
 );
 

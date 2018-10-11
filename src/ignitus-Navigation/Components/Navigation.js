@@ -25,9 +25,14 @@ const Navigation = () => (
         <li className="nav-item active">
           <HashLink to="/#">
             <span className="nav-link">
+
               Home
               {' '}
               <span className="sr-only">(current)</span>
+              Home 
+{' '}
+<span className="sr-only">(current)</span>
+
             </span>
           </HashLink>
         </li>
@@ -94,6 +99,7 @@ const Navigation = () => (
           >
             Sign up
           </a>
+
           <div
             className="dropdown-menu dropdown-menu-right"
             aria-labelledby="navbarDropdownMenuLink"

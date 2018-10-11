@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func, array 
+  string, number, shape, func, array,
 } from 'prop-types';
 import '../Styles/style.css';
 import axios from 'axios';
@@ -84,16 +84,7 @@ class Testimonial extends Component {
 
   componentDidMount() {
     this.getData();
-    // don't understand the logic behind this seeing as React is designed to handle this for you so long as you aren't using PureComponent
     this.interval = setInterval(this.timer, 3000);
-  }
-
-  componentDidUpdate() {
-    console.log('divyanshu');
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -105,15 +96,25 @@ class Testimonial extends Component {
     return false;
   }
 
+  componentDidUpdate() {
+    console.log('divyanshu');
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   getData() {
-    this.props.get_testimonial_data();
+    const { get_testimonial_data } = this.props;
+    get_testimonial_data();
   }
 
   timer() {
-    const { testimonialData: data } = this.props;
+    const { testimonialData: slides } = this.props;
+    const { activeIndex } = this.state;
 
-    if (data) {
-      if (this.state.activeIndex === data.length - 1) {
+    if (slides) {
+      if (activeIndex === slides.length - 1) {
         this.setState({ activeIndex: -1 });
       }
 
@@ -131,39 +132,37 @@ class Testimonial extends Component {
 
   goToPrevSlide(e) {
     e.preventDefault();
-    let { activeIndex: index, testimonialData: slides } = this.state;
-    const slidesLength = slides.length;
+    const { activeIndex } = this.state;
+    const { testimonialData: slides } = this.props;
 
-    if (index < 1) {
-      index = slidesLength;
+    if (activeIndex < 1) {
+      this.setState({
+        activeIndex: slides.length - 1,
+      });
     }
-
-    --index;
-
     this.setState({
-      activeIndex: index,
+      activeIndex: activeIndex - 1,
     });
   }
 
   goToNextSlide(e) {
     e.preventDefault();
-    let { activeIndex: index, testimonialData: slides } = this.state;
-    const slidesLength = slides.length - 1;
+    const { activeIndex } = this.state;
+    const { testimonialData: slides } = this.props;
 
-    if (index === slidesLength) {
-      index = -1;
+    if (activeIndex === slides.length - 1) {
+      this.setState({ activeIndex: 0 });
     }
 
-    ++index;
-
     this.setState({
-      activeIndex: index,
+      activeIndex: activeIndex + 1,
     });
   }
 
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
+    const { testimonialData: data } = this.props;
 
     return (
       <div className="carousel">
@@ -172,29 +171,28 @@ class Testimonial extends Component {
         </div>
         <div>
           <ul className="carousel__slides container">
-            {this.props.testimonialData.length > 0
-              ? this.props.testimonialData.map((slide, index) => (
+            {data.length > 0
+              && data.map((slide, index) => (
                 <CarouselSlide
-                    key={index}
-                    index={index}
-                    activeIndex={activeIndex}
-                    slide={slide}
-                  />
-              ))
-              : null}
+                  key={slide.source}
+                  index={index}
+                  activeIndex={activeIndex}
+                  slide={slide}
+                />
+              ))}
           </ul>
           <ul className="carousel__indicators">
-            {this.props.testimonialData.length > 0
-              ? this.props.testimonialData.map((slide, index) => (
+            {data.length > 0
+              && data.map((slide, index) => (
                 <CarouselIndicator
-                    key={index}
-                    index={index}
-                    activeIndex={activeIndex}
-                    isActive={activeIndex === index}
-                    onClick={e => goToSlide(index)}
-                  />
-              ))
-              : null}
+                  key={slide.source}
+                  index={index}
+                  data-index={index}
+                  activeIndex={activeIndex}
+                  isActive={activeIndex === index}
+                  onClick={() => goToSlide(index)}
+                />
+              ))}
           </ul>
         </div>
         <div className="arrow-fix">
@@ -229,3 +227,4 @@ CarouselRightArrow.propTypes = {
 };
 
 export default Testimonial;
+
