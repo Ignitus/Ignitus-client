@@ -84,7 +84,7 @@ class Signup extends React.Component {
                     </div>
                     <input
                       type="password"
-                      id="pass"
+                      id="confirmpass"
                       className="form-control"
                       placeholder="Confirm Password"
                       required
