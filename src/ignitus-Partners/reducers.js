@@ -1,14 +1,18 @@
-
-
 // ignitus-Testimonial reducer BoilerPlate
 import * as t from './actionTypes';
+// confused as to why you have duplicate reducers
+const initialState = {
+  data: [],
+};
 
-const TestimonialReducer = (state = [], action) => {
-  switch (action.type) {
+const TestimonialReducer = (state = initialState, action) => {
+  const { type, data } = action;
+  switch (type) {
     case t.SET_TESTIMONIAL_DATA:
-      const state = state.concat(action.data);
-      return state;
-      break;
+      return {
+        ...state,
+        data,
+      };
 
     default:
       return state;
