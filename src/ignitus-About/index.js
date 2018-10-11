@@ -1,4 +1,4 @@
-
-import About from './Components/About';
-
-export default About;
+import * as components from './Components';
+export default {
+  components,
+};

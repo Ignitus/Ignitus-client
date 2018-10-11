@@ -1,3 +1,4 @@
+
 // ignitus-Testimonial reducer BoilerPlate
 import * as t from './actionTypes';
 // confused as to why you have duplicate reducers
@@ -20,3 +21,4 @@ const TestimonialReducer = (state = initialState, action) => {
 };
 
 export default TestimonialReducer;
+

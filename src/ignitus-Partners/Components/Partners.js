@@ -1,26 +1,12 @@
 import React, { Component } from 'react';
 import '../Styles/style.css';
-
-import wooTech from '../../Assets/Images/Partners Logos/wooTech.png';
-import sugarLabs from '../../Assets/Images/Partners Logos/sugarLabs.png';
-import systersLogo from '../../Assets/Images/Partners Logos/systers-logo.png';
-import girlScript from '../../Assets/Images/Partners Logos/gslogo.png';
-import leanIn from '../../Assets/Images/Partners Logos/lean_in.png';
-import progate from '../../Assets/Images/Partners Logos/progate.jpg';
+import * as t from './Constants';
 
 const Partner = () => {
-  const imagesArray = [
-    wooTech,
-    sugarLabs,
-    girlScript,
-    leanIn,
-    systersLogo,
-    progate,
-  ];
-
-  const html = imagesArray.map((logo, key) => (
+const array = [ t.WOOTECH, t.SUGARLABS, t.SYSTERS, t.PROGATE, t.LEANIN, t.GIRLSCRIPT];
+const html = array.map((logo, key) => (
     <div
-      className="col-lg-4 col-md-4 col-sm-6 col-12 _logo_css centered-image"
+      className="col-lg-4 col-md-4 col-sm-6 col-12 logoCss centered-image"
       key={key}
     >
       <img src={logo} width="200" alt="logo" />
@@ -29,12 +15,12 @@ const Partner = () => {
 
   return (
     <div id="partners">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 _align mt-4">
-        <div className="_contributor">Supporters & Partners</div>
-        <div className="_students_researchers">
+      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 align mt-4">
+        <div className="contributor">Supporters & Partners</div>
+        <div className="studentsResearchers">
           Supported with 
 {' '}
-<i className="fa fa-heart _heart" />
+<i className="fa fa-heart heart" />
 {' '}
 by following
           Organizations ...
@@ -42,7 +28,7 @@ by following
       </div>
 
       <div className="container">
-        <div className="row _align-vertically">{html}</div>
+        <div className="row align-vertically">{html}</div>
       </div>
     </div>
   );

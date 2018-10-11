@@ -1,5 +1,5 @@
 
-
-import Navigation from './Components/Navigation';
-
-export default Navigation;
+import * as components from './Components';
+export default {
+  components,
+};

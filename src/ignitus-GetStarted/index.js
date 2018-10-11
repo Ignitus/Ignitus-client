@@ -1,5 +1,5 @@
 
-
-import GetStarted from './Components/GetStarted';
-
-export default GetStarted;
+import * as components from './Components';
+export default {
+  components,
+};

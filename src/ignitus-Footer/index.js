@@ -1,5 +1,5 @@
 
-
-import Footer from './Components/Footer';
-
-export default Footer;
+import * as components from './Components';
+export default {
+  components,
+};

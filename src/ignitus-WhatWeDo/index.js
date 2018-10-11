@@ -1,4 +1,5 @@
 
-import CardLayout from './Components/CardLayout';
-
-export default CardLayout;
+import * as components from './Components';
+export default {
+  components,
+};

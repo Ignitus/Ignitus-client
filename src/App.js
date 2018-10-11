@@ -10,8 +10,8 @@ import CardLayout from './ignitus-WhatWeDo';
 import Partner from './ignitus-Partners';
 
 import AboutUs from './ignitus-About';
-import LoginProfessor from './ignitus-Login';
-import SignupProfessor from './ignitus-SignUp';
+import LoginProfessor from './ignitus-ProfessorLogin';
+import SignupProfessor from './ignitus-ProfessorSignUp';
 import LoginStudent from './ignitus-StudentLogin';
 import SignupStudent from './ignitus-StudentSignUp';
 import loader from './Assets/Images/loader.gif';
@@ -42,9 +42,9 @@ class App extends Component {
       );
     }
     return (
-      <Router>
+    <Router>
         <Fragment>
-          <Navigation />
+          <Navigation.components.Navigation />
           <Switch>
             <Route
               exact
@@ -67,7 +67,7 @@ class App extends Component {
             <Route path="/signup/student" component={SignupStudent} />
             <Route path="/contributors" component={Contributors} />
           </Switch>
-          <Footer />
+          <Footer.components.Footer />
         </Fragment>
       </Router>
     );

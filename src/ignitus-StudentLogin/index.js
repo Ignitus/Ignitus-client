@@ -1,5 +1,5 @@
 
-
-import Login from './Components/Login';
-
-export default Login;
+import * as components from './Components';
+export default {
+  components,
+};

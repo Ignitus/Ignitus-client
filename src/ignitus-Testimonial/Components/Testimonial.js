@@ -89,7 +89,6 @@ class Testimonial extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     const { activeIndex } = this.state;
-
     if (nextState.activeIndex !== activeIndex) {
       return true;
     }

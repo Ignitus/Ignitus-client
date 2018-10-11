@@ -1,15 +1,15 @@
-._align{
+.align{
 	text-align: center;
 }
 
-._started {
+.started {
 	font-size: 23px;
     font-weight: 400;
     margin-top: 70px;
     margin-bottom: 40px;
 }
 
-._button {
+.button {
 	margin-bottom: 50px;
 	background-color: white;
 	color:#343a40 ;
@@ -17,7 +17,7 @@
 	border: 2px solid #343a40 !important;
 }
 
-._button:hover {
+.button:hover {
 	text-decoration: none;
 	color: white;
 	background-color: #343a40;

@@ -1,3 +1,4 @@
+
 import * as t from './actionTypes';
 
 const initialState = {
@@ -19,3 +20,4 @@ const TestimonialReducer = (state = initialState, action) => {
 };
 
 export default TestimonialReducer;
+
