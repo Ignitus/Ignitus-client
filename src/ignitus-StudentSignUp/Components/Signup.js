@@ -34,60 +34,61 @@ class Signup extends React.Component {
                 </a>
               </p>
             </div>
-
-            <div className="col-md-6  _container-form ">
-              <div className="my-4">
-                <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
-              </div>
-              <form>
-                <div class="px-4">
-                 <div className="input-group form-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fa fa-envelope-o fa-fw" />
-                      </span>
-                    </div>
-                    <input
-                      type="text"
-                      id="email"
-                      className="form-control"
-                      placeholder="Email"
-                      value={this.state.value}
-                      onChange={this.handleChange}
-                    />
+          </div>
+          <div className="col-md-6  _container-form ">
+            <div className="my-4">
+              <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
+            </div>
+            <form>
+              <div class="px-4">
+                <div className="input-group form-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <i className="fa fa-envelope-o fa-fw" />
+                    </span>
                   </div>
-                  <div className="input-group form-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fa fa-key fa-fw" />
-                      </span>
-                    </div>
-                    <input
-                      type="password"
-                      id="pass"
-                      className="form-control"
-                      placeholder="Password"
-                      required
-                    />
+                  <input
+                    type="text"
+                    id="email"
+                    className="form-control"
+                    placeholder="Email"
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                  />
+                </div>
+                <div className="input-group form-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <i className="fa fa-key fa-fw" />
+                    </span>
                   </div>
-                  <div className="input-group form-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <i className="fa fa-key fa-fw" />
-                      </span>
-                    </div>
-                    <input
-                      type="password"
-                      id="confirmpass"
-                      className="form-control"
-                      placeholder="Confirm Password"
-                      required
-                    />
+                  <input
+                    type="password"
+                    id="pass"
+                    className="form-control"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div className="input-group form-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <i className="fa fa-key fa-fw" />
+                    </span>
                   </div>
-                  <div className="text-center mb-3 mt-3">
-                    <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
-                      Sign up
-                    </button>
+                  <input
+                    type="password"
+                    id="pass"
+                    className="form-control"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </div>
+                <div className="text-center mb-3 mt-3">
+                  <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                    Sign up
+                  </button>
+                </div>
                 <div className="_or-seperator">
                   <i className="text-black-50">or sign up with</i>
                 </div>
@@ -98,10 +99,8 @@ class Signup extends React.Component {
                   </button>
                 </div>
               </div>
-              </div>
             </form>
           </div>
-        </div>
         </div>
       </div>
     );
