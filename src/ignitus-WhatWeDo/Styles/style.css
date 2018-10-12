@@ -17,7 +17,7 @@
   box-shadow: 0 4px 8px 0 #999999, 0 6px 20px 0 #999999;
 }
 
-._card {
+.cardHeight {
   height: 135px;
 }
 
@@ -29,5 +29,5 @@
 }
 
 .flatten-text {
-  text-align: justify;
+  text-align: center;
 }

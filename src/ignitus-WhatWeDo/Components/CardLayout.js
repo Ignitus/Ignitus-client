@@ -1,36 +1,13 @@
-import React from 'react';
-import Intern from '../../Assets/Images/Cards/intern1.png';
-import Offer from '../../Assets/Images/Cards/offer1.png';
-import Expert from '../../Assets/Images/Cards/expert1.png';
+import React, { Component } from 'react';
 import Card from './Card';
+import {data} from './Data'
 import '../Styles/style.css';
 
 const CardLayout = () => {
-  const data = [
-    {
-      image: Intern,
-      title: 'Internships',
-      description:
-        "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations.",
-    },
-    {
-      image: Offer,
-      title: 'Courses',
-      description:
-        'Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time.',
-    },
-    {
-      image: Expert,
-      title: 'Community of Experts',
-      description:
-        'Guidance from an unparalleled network of professors, experts and industry professionals supervising internal projects with selected students.',
-    },
-  ];
-  // I would suggest not giving these cards a hover effect because it implies that they are links
-  const html = [...data].map(x => (
+  const html = [...data].map((x, key) => (
     <Card
-      key={x.title}
-      image={x.image}
+      key={key}
+      image={x.picture}
       title={x.title}
       description={x.description}
     />
