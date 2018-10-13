@@ -8,8 +8,7 @@ export function getTestimonialData() {
 }
 
 export function signUp(email, password){
-
-	console.log('recieved', email, password)
-	// return axios.get(t.STUDENT_SIGN_UP);
-	return []
+	return axios.post(t.STUDENT_SIGN_UP, { email: email, password: password})
+		  .then( response => response)
+		  .catch( (error) => console.log(error));
 }
