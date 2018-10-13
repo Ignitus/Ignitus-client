@@ -1,4 +1,6 @@
+
 import React from 'react';
+import React, { Component } from 'react';
 import Card from './Card';
 import { data } from './Data';
 import '../Styles/style.css';
