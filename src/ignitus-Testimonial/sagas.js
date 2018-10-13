@@ -1,7 +1,6 @@
 
 import { effects } from 'redux-saga';
 import * as t from './actionTypes';
-import * as a from './actions';
 import * as api from '../ignitus-Api';
 
 const {
@@ -10,7 +9,7 @@ const {
 
 function* getTestimonialData() {
   try {
-    const { data } = yield call(api.get_testimonial_data);
+    const { data } = yield call(api.getTestimonialData);
     yield put({ type: t.SET_TESTIMONIAL_DATA, data });
   } catch (e) {
     console.log(e.message);

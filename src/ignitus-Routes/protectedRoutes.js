@@ -11,15 +11,15 @@ export const ProtectedRoutes = (props) => {
 		<div>
 			 <Switch>
 			   <Route
-                    exact
-                    path="/"
-                    render={() => (
-                      <div className="content">
-                        <Notfound />
-                      </div>
-                    )}
-                  />
-                <PrivateRoute path='/dashboard' component={Dashboard.components.Dashboard} />
+            exact
+            path="/"
+            render={() => (
+              <div className="content">
+                <Notfound />
+              </div>
+            )}
+          />
+        <PrivateRoute path='/dashboard' component={Dashboard.components.Dashboard} />
 			 </Switch>
 		</div>
 	)

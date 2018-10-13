@@ -66,7 +66,8 @@ class Login extends Component {
 
   formSubmitHandler = event => {
     event.preventDefault();
-    console.dir(this.state.formControls);
+    // console.dir(this.state.formControls);
+    console.log('clicked')
   }
 
   render() {

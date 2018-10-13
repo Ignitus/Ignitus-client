@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import TestimonialReducer from './ignitus-Testimonial/reducers';
+import testimonialReducer from './ignitus-Testimonial/reducers';
+import studentSignUpReducer from './ignitus-StudentSignUp/reducers';
 
 export default combineReducers({
-  	TestimonialReducer,
+  	testimonialReducer,
+  	studentSignUpReducer
 });

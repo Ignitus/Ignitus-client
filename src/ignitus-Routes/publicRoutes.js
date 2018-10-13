@@ -41,7 +41,7 @@ export const PublicRoutes = (props) => {
                   <Route path="/login/professor" component={LoginProfessor.components.Login} />
                   <Route path="/signup/professor" component={SignupProfessor.components.Signup} />
                   <Route path="/login/student" component={LoginStudent.components.Login} />
-                  <Route path="/signup/student" component={SignupStudent.components.Signup} />
+                  <Route path="/signup/student" component={SignupStudent.containers.signUpContainer} />
                </Switch>
           <Footer.components.Footer />
       </div>

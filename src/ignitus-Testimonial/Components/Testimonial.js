@@ -87,6 +87,10 @@ class Testimonial extends Component {
     this.interval = setInterval(this.timer, 3000);
   }
 
+  componentDidUpdate(){
+    console.log('this',this)
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     const { activeIndex } = this.state;
     if (nextState.activeIndex !== activeIndex) {
@@ -100,7 +104,7 @@ class Testimonial extends Component {
   }
 
   getData() {
-    this.props.get_testimonial_data();
+    this.props.getTestimonialData();
   }
 
   timer() {

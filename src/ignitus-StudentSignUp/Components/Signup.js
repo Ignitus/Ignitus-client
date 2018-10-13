@@ -6,16 +6,13 @@ import '../Styles/style.css';
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
-    this.handleChange = this.handleChange.bind(this);
+    this.state = { email: '', password: '', confirmPassword: '' };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleChange(e) {
-    this.setState({ value: e.target.value });
-  }
-
   handleSubmit(e) {
     e.preventDefault();
+    const {state:{email,password,confirmPassword}} = this
+    this.props.submit(email,password, confirmPassword)
   }
 
   render() {
@@ -40,7 +37,7 @@ class Signup extends React.Component {
               <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
             </div>
             <form>
-              <div class="px-4">
+              <div className="px-4">
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
@@ -53,7 +50,7 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Email"
                     value={this.state.value}
-                    onChange={this.handleChange}
+                    onChange= { (e) => {this.setState({ email: e.target.value })}}
                   />
                 </div>
                 <div className="input-group form-group">
@@ -68,6 +65,7 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Password"
                     required
+                    onChange= { (e) => {this.setState({ password: e.target.value })}}
                   />
                 </div>
                 <div className="input-group form-group">
@@ -78,14 +76,15 @@ class Signup extends React.Component {
                   </div>
                   <input
                     type="password"
-                    id="pass"
+                    id="confirmPass"
                     className="form-control"
                     placeholder="Confirm Password"
                     required
+                    onChange= { (e) => {this.setState({ confirmPassword: e.target.value })}}
                   />
                 </div>
                 <div className="text-center mb-3 mt-3">
-                  <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+                  <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
                     Sign up
                   </button>
                 </div>
