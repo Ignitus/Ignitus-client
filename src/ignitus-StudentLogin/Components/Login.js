@@ -57,7 +57,7 @@ class Login extends Component {
       for (let inputIdentifier in updatedControls) {
         formIsValid = updatedControls[inputIdentifier].valid && formIsValid;
       }
-    
+
       this.setState({
         formControls: updatedControls,
         formIsValid: formIsValid
@@ -68,7 +68,7 @@ class Login extends Component {
     event.preventDefault();
     console.dir(this.state.formControls);
   }
-  
+
   render() {
     return (
       <div className="_container-custom container p-5">
@@ -126,8 +126,8 @@ class Login extends Component {
               </div>
 
               <div className="text-center mb-3 mt-3">
-                <button type="submit" 
-                className="btn btn-success btn-rounded px-3 py-2"                
+                <button type="submit"
+                className="btn btn-success btn-rounded px-3 py-2"
                 onClick={this.formSubmitHandler}
                 disabled={!this.state.formIsValid}
                 >
@@ -144,6 +144,16 @@ class Login extends Component {
                   <i className="fa fa-linkedin mr-3" />
                   Linked-in
                 </button>
+              </div>
+              <div className="text-center mb-3 mt-3">
+                <div>
+                    Don't have an account?
+                  {' '}
+                  <a href="/signup/student" className="text-center _link">
+                    {' '}
+                      Sign Up
+                  </a>
+                </div>
               </div>
             </form>
           </div>
