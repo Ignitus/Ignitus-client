@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Intern from '../../Assets/Images/Cards/intern1.png';
-import Offer from '../../Assets/Images/Cards/offer1.png';
-import Expert from '../../Assets/Images/Cards/expert1.png';
 import Card from './Card';
 import {data} from './Data'
 import '../Styles/style.css';

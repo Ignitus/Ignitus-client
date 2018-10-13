@@ -1,5 +1,5 @@
 .ignitus-color {
-  font-weight: 800 !important;
+  font-weight: 400 !important;
   font-size: 36px !important;
   color: #0d0465 !important;
   margin-top: 40px;
@@ -8,8 +8,6 @@
 }
 
 .card-shadow {
-  /*box-shadow: 2px 5px 6px #e6faff;*/
-  /*box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   border: 0;
 }
 
@@ -21,12 +19,6 @@
   height: 135px;
 }
 
-.card-img-top {
-  width: auto !important;
-  height: 160px !important;
-  margin: 20px 90px 20px 90px !important;
-  object-fit: cover;
-}
 
 .flatten-text {
   text-align: center;
