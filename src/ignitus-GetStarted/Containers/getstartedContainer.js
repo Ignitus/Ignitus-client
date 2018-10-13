@@ -1,10 +1,8 @@
-
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Testimonial from '../../Components/Testimonial';
-import { set_testimonial_data } from '../actions';
+import setTestimonialData from '../actions';
+import Testimonial from '../../ignitus-Testimonial/Components/Testimonial';
 
 const mapStateToProps = state => ({ state });
-const mapDispatchToProps = dispatch => bindActionCreators({ set_testimonial_data }, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ setTestimonialData }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(Testimonial);

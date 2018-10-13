@@ -1,13 +1,15 @@
+
+import React from 'react';
 import React, { Component } from 'react';
 import Card from './Card';
-import {data} from './Data'
+import { data } from './Data';
 import '../Styles/style.css';
 
 const CardLayout = () => {
-  const html = [...data].map((x, key) => (
+  const html = [...data].map(x => (
     <Card
-      key={key}
-      image={x.picture}
+      key={x.title}
+      image={x.image}
       title={x.title}
       description={x.description}
     />
