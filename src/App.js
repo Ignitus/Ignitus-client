@@ -17,7 +17,7 @@ import LoginStudent from './ignitus-StudentLogin';
 import SignupStudent from './ignitus-StudentSignUp';
 import loader from './Assets/Images/loader.gif';
 import data from './Data/data-card-layout';
-import './App.css';
+import './App.scss';
 
 
 class App extends Component {
