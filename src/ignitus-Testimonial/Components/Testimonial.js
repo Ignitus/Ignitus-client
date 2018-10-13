@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func, array 
+  string, number, shape, func,
 } from 'prop-types';
 import '../Styles/style.css';
-import axios from 'axios';
-import { API_URL } from '../constants';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>
@@ -15,52 +13,42 @@ const CarouselIndicator = ({ index, activeIndex, onClick }) => (
           : 'carousel__indicator'
       }
       onClick={onClick}
-    />
+    >
+      <span />
+    </a>
   </li>
 );
 
-const CarouselSlide = ({ activeIndex, slide, index }) => (
-    <li
-      className={
-        index === activeIndex
-          ? "carousel__slide carousel__slide--active "
-          : "carousel__slide"
-      }
-    >
-      <div className="carousel-slide__content">{slide.content}</div>
+const CarouselSlide = ({ index, activeIndex, slide }) => (
+  <li
+    className={
+      index === activeIndex ? 'carousel__slide carousel__slide--active ' : 'carousel__slide'
+    }
+  >
+    <div className="carousel-slide__content">{slide.content}</div>
 
-      <div className="author-source-container">
-        <small className="carousel-slide__source">
-          <div>
-            <strong className="carousel-slide__author">{slide.author}</strong>
-          </div>
-          {slide.source}
-        </small>
-      </div>
-    </li>
-  );
-
-// consider refactoring to use button
+    <div className="author-source-container">
+      <small className="carousel-slide__source">
+        <div>
+          <strong className="carousel-slide__author">{slide.author}</strong>
+        </div>
+        {slide.source}
+      </small>
+    </div>
+  </li>
+);
 
 const CarouselLeftArrow = ({ onClick }) => (
-  <a
-    href="#"
-    className="carousel__arrow carousel__arrow--left padding-on-left"
-    onClick={onClick}
-  >
+  <a href="#" className="carousel__arrow carousel__arrow--left padding-on-left" onClick={onClick}>
     <i className="fa fa-2x fa-angle-left" />
   </a>
 );
 
 const CarouselRightArrow = ({ onClick }) => (
-    <a
-      href="#"
-      className="carousel__arrow carousel__arrow--right padding-on-right"
-      onClick={onClick}
-    >
-      <i className="fa fa-2x fa-angle-right" />
-    </a>
-  );
+  <a href="#" className="carousel__arrow carousel__arrow--right padding-on-right" onClick={onClick}>
+    <i className="fa fa-2x fa-angle-right" />
+  </a>
+);
 
 // Carousel wrapper component
 class Testimonial extends Component {
@@ -81,14 +69,10 @@ class Testimonial extends Component {
   componentWillMount() {
     this.getData();
   }
-  
+
   componentDidMount() {
     this.getData();
     this.interval = setInterval(this.timer, 3000);
-  }
-
-  componentDidUpdate(){
-    console.log('this',this)
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -99,23 +83,29 @@ class Testimonial extends Component {
     return false;
   }
 
-   componentWillUnmount() {
+  componentDidUpdate() {
+    console.log('this', this);
+  }
+
+  componentWillUnmount() {
     clearInterval(this.interval);
   }
 
   getData() {
-    this.props.getTestimonialData();
+    const { getTestimonialData } = this.props;
+    getTestimonialData();
   }
 
   timer() {
     const { testimonialData: data } = this.props;
 
     if (data) {
-      if (this.state.activeIndex === data.length - 1) {
+      const { activeIndex } = this.state;
+      if (activeIndex === data.length - 1) {
         this.setState({ activeIndex: -1 });
       }
 
-      this.setState({ activeIndex: this.state.activeIndex + 1 });
+      this.setState({ activeIndex: activeIndex + 1 });
     } else {
       this.setState({ activeIndex: -1 });
     }
@@ -162,6 +152,7 @@ class Testimonial extends Component {
   render() {
     const { activeIndex } = this.state;
     const { goToPrevSlide, goToSlide, goToNextSlide } = this;
+    const { testimonialData } = this.props;
 
     return (
       <div className="carousel">
@@ -170,27 +161,27 @@ class Testimonial extends Component {
         </div>
         <div>
           <ul className="carousel__slides container">
-            {this.props.testimonialData.length > 0
-              ? this.props.testimonialData.map((slide, index) => (
+            {testimonialData.length > 0
+              ? testimonialData.map((slide, index) => (
                 <CarouselSlide
-                    key={index}
-                    index={index}
-                    activeIndex={activeIndex}
-                    slide={slide}
-                  />
+                  key={slide.author}
+                  index={index}
+                  activeIndex={activeIndex}
+                  slide={slide}
+                />
               ))
               : null}
           </ul>
           <ul className="carousel__indicators">
-            {this.props.testimonialData.length > 0
-              ? this.props.testimonialData.map((slide, index) => (
+            {testimonialData.length > 0
+              ? testimonialData.map((slide, index) => (
                 <CarouselIndicator
-                    key={index}
-                    index={index}
-                    activeIndex={activeIndex}
-                    isActive={activeIndex === index}
-                    onClick={e => goToSlide(index)}
-                  />
+                  key={slide.author}
+                  index={index}
+                  activeIndex={activeIndex}
+                  isActive={activeIndex === index}
+                  onClick={() => goToSlide(index)}
+                />
               ))
               : null}
           </ul>
@@ -203,9 +194,14 @@ class Testimonial extends Component {
   }
 }
 
+Testimonial.propTypes = {
+  getTestimonialData: func.isRequired,
+};
+
 CarouselIndicator.propTypes = {
   index: number.isRequired,
   activeIndex: number.isRequired,
+  onClick: func.isRequired,
 };
 
 CarouselSlide.propTypes = {
@@ -218,12 +214,8 @@ CarouselSlide.propTypes = {
   }).isRequired,
 };
 
-CarouselLeftArrow.propTypes = {
-  onClick: func.isRequired,
-};
+CarouselLeftArrow.propTypes = { onClick: func.isRequired };
 
-CarouselRightArrow.propTypes = {
-  onClick: func.isRequired,
-};
+CarouselRightArrow.propTypes = { onClick: func.isRequired };
 
 export default Testimonial;

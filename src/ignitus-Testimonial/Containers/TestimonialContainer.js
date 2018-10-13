@@ -1,10 +1,7 @@
-
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Testimonial } from '../Components';
 import { createStructuredSelector } from 'reselect';
-
+import Testimonial from '../Components';
 import { getTestimonialData } from '../actions';
 import { makeSelectTestimonialData } from '../selectors';
 
