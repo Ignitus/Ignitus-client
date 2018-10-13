@@ -13,6 +13,7 @@ class Signup extends React.Component {
     e.preventDefault();
     const {state:{email,password,confirmPassword}} = this
     this.props.submit(email,password, confirmPassword)
+    this.setState({email: '', password: '', confirmPassword: ''})
   }
 
   render() {
@@ -49,7 +50,7 @@ class Signup extends React.Component {
                     id="email"
                     className="form-control"
                     placeholder="Email"
-                    value={this.state.value}
+                    value={this.state.email}
                     onChange= { (e) => {this.setState({ email: e.target.value })}}
                   />
                 </div>
@@ -65,6 +66,7 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Password"
                     required
+                    value={this.state.password}
                     onChange= { (e) => {this.setState({ password: e.target.value })}}
                   />
                 </div>
@@ -80,6 +82,7 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Confirm Password"
                     required
+                    value={this.state.confirmPassword}
                     onChange= { (e) => {this.setState({ confirmPassword: e.target.value })}}
                   />
                 </div>
@@ -101,6 +104,10 @@ class Signup extends React.Component {
             </form>
           </div>
         </div>
+          {this.props.studentData.success && <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> Please confirm your email address!
+          </div>}
       </div>
     );
   }
