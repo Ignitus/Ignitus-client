@@ -68,7 +68,7 @@ const Login = () => (
               <div>
                   Don't have an account?
                 {' '}
-                <a href="/signup" className="text-center _link">
+                <a href="/signup/professor" className="text-center _link">
                   {' '}
                     Sign Up
                 </a>
