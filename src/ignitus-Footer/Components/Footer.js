@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/style.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/Images/Logos/black_logo.png';
+import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
 
 // resolved
 

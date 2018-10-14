@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/style.css';
-import resume from '../../Assets/Images/Resume.png';
+import resume from '../../ignitus-Assets/Images/Resume.png';
 
 const Introduction = () => (
   <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5 box">

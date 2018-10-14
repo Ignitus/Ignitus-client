@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from '../../Assets/Images/Logos/logo white bg.png';
+import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
-import loginImg from '../../Assets/Images/login.png';
-import validate from '../../helpers/validate';
+import loginImg from '../../ignitus-Assets/Images/login.png';
+import validate from '../../ignitus-Helpers/validate';
 
 class Login extends Component {
 

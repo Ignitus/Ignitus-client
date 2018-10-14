@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes'
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
 
-import loader from './Assets/Images/loader.gif'; 
+import loader from './ignitus-Assets/Images/loader.gif'; 
 import './App.scss';
 
 

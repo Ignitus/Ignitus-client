@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import logo from '../../Assets/Images/Logos/black_logo.png';
+import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
 import Foo from './Footer';
 
 describe('Footer', () => {

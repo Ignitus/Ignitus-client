@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../Assets/Images/Logos/logo white bg.png';
-import loginImg from '../../Assets/Images/login.png';
+import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import loginImg from '../../ignitus-Assets/Images/login.png';
 import '../Styles/style.css';
 
 class Signup extends React.Component {

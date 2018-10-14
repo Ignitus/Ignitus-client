@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Assets/Images/Logos/logo white bg.png';
+import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
 
 const Signup = props => (
