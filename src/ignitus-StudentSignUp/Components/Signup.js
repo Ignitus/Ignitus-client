@@ -105,7 +105,7 @@ class Signup extends React.Component {
           </div>
         </div>
           {this.props.studentData.success && <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Success!</strong> Please confirm your email address!
           </div>}
       </div>
