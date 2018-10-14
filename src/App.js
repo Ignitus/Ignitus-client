@@ -5,7 +5,7 @@ import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes'
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
 
 import loader from './ignitus-Assets/Images/loader.gif'; 
-import './App.scss';
+import './App.css';
 
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
     if (isLoading) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
-          <img src={loader}  />
+         <div className = "loader"> <img src={loader}  /></div>
         </div>
       );
     }

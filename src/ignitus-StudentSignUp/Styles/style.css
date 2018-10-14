@@ -21,6 +21,14 @@
     z-index: 1;
 }
 
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vw;
+}
+
 ._img-login {
     /* flex-grow: 1; */
     flex-basis: 57%;

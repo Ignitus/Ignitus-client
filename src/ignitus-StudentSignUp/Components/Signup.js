@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
-
 import '../Styles/style.css';
 
 class Signup extends React.Component {
@@ -23,8 +22,8 @@ class Signup extends React.Component {
     const {isFetching} = this.props.studentData;
     if (isFetching) {
       return (
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
-          <img src={loader} className="loader" />
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
+          <div className = "loader"><img src={loader} /></div>
         </div>
       );
     }
