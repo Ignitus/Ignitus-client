@@ -1,3 +1,3 @@
 
-export const SUBMIT  = 'SUBMIT';
-export const SIGN_UP = 'SIGN_UP'
+export const REQUEST  = 'REQUEST';
+export const RESPONSE = 'RESPONSE'

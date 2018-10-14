@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
+import loader from '../../ignitus-Assets/Images/loader.gif';
+
 import '../Styles/style.css';
 
 class Signup extends React.Component {
@@ -12,11 +14,20 @@ class Signup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const {state:{email,password,confirmPassword}} = this
-    this.props.submit(email,password, confirmPassword)
+    this.props.requestApi(email,password, confirmPassword)
     this.setState({email: '', password: '', confirmPassword: ''})
   }
 
   render() {
+
+    const {isFetching} = this.props.studentData;
+    if (isFetching) {
+      return (
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
+          <img src={loader} className="loader" />
+        </div>
+      );
+    }
     return (
       <div className="container _container-custom p-5">
         <div className="row shadow">
@@ -104,9 +115,14 @@ class Signup extends React.Component {
             </form>
           </div>
         </div>
-          {this.props.studentData.success && <div class="alert alert-success alert-dismissible">
+          {this.props.studentData.success && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Success!</strong> Please confirm your email address!
+          </div>}
+
+          {this.props.studentData.success == false && <div className="alert alert-success alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            {this.props.studentData.message}
           </div>}
       </div>
     );

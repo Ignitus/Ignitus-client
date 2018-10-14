@@ -10,7 +10,7 @@ const Login = () => (
           <img className="img-fluid _img mx-auto d-block" src={logo} />
         </div>
         <form>
-          <div class="_login-form mx-auto">
+          <div className="_login-form mx-auto">
             <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
  string, number, shape, func, array 
 } from 'prop-types';
+import shortid from 'shortid';
 import '../Styles/style.css';
 import axios from 'axios';
 import { API_URL } from '../constants';
@@ -99,7 +100,7 @@ class Testimonial extends Component {
     return false;
   }
 
-   componentWillUnmount() {
+  componentWillUnmount() {
     clearInterval(this.interval);
   }
 
@@ -173,7 +174,7 @@ class Testimonial extends Component {
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
                 <CarouselSlide
-                    key={index}
+                    key={shortid.generate()}
                     index={index}
                     activeIndex={activeIndex}
                     slide={slide}
@@ -185,7 +186,7 @@ class Testimonial extends Component {
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
                 <CarouselIndicator
-                    key={index}
+                    key={shortid.generate()}
                     index={index}
                     activeIndex={activeIndex}
                     isActive={activeIndex === index}

@@ -9,6 +9,4 @@ export function getTestimonialData() {
 
 export function signUp(email, password){
 	return axios.post(t.STUDENT_SIGN_UP, { email: email, password: password})
-		  .then( response => response)
-		  .catch( (error) => console.log(error));
 }

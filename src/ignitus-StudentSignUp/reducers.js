@@ -2,11 +2,14 @@
 
 import * as t from './actionTypes';
 
-const studentReducer = (state = [], action) => {
+const studentReducer = (state = {}, action) => {
   switch (action.type) {
-    case t.SIGN_UP:
-      const newState = state.concat([action.data]);
-      return newState;
+    case t.RESPONSE:
+      return Object.assign({}, state, {isFetching: false}, action.data)
+      break;
+
+    case t.REQUEST:
+      return Object.assign({}, state, {isFetching: true})
       break;
 
     default:
