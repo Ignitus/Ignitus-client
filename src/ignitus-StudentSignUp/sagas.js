@@ -14,14 +14,14 @@ function* signUp(action) {
 
   try {
     const { data } = yield call(api.signUp, email, password);
-    yield put(a.responseApi(data));
+    yield put(a.signUpResponse(data));
   } catch (e) {
-    yield put(a.responseApi(e.response.data));
+    yield put(a.signUpResponse(e.response.data));
   }
 }
 
 function* actionWatcher() {
-  yield takeLatest(t.REQUEST, signUp);
+  yield takeLatest(t.SIGN_UP_REQUEST, signUp);
 }
 
 export default function* sagas() {

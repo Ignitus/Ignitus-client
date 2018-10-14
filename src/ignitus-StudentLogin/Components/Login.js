@@ -1,76 +1,44 @@
 import React, { Component } from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.css';
-
+import _ from 'lodash';
+import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
-import validate from '../../ignitus-Helpers/validate';
 
 class Login extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = { email: '', password: '', emptymessage:false};
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    this.state = {
-      formIsValid: false,
-      formControls: {
-          email: {
-            value: '',
-            placeholder: 'Email',
-            valid: false,
-            touched: false,
-            validationRules: {
-                isEmail: true,
-                isRequired: true
-            }
-          },
-          password: {
-            value: '',
-            placeholder: 'Password',
-            valid: false,
-            touched: false,
-            validationRules: {
-                minLength: 3,
-                isRequired: true
-            }
-          }
-      }
+  handleSubmit(e) {
+    e.preventDefault();
+    
+    const {state:{email,password}} = this
+    if(_.isEmpty(email) || _.isEmpty(password)){
+        this.setState({emptymessage: true})
+        return
     }
-  }
 
-  changeHandler = event => {
-      const name = event.target.name;
-      const value = event.target.value;
-
-      const updatedControls = {
-        ...this.state.formControls
-      };
-      const updatedFormElement = {
-        ...updatedControls[name]
-      };
-      updatedFormElement.value = value;
-      updatedFormElement.touched = true;
-      updatedFormElement.valid = validate(value, updatedFormElement.validationRules);
-
-      updatedControls[name] = updatedFormElement;
-
-      let formIsValid = true;
-      for (let inputIdentifier in updatedControls) {
-        formIsValid = updatedControls[inputIdentifier].valid && formIsValid;
-      }
-
-      this.setState({
-        formControls: updatedControls,
-        formIsValid: formIsValid
-      });
-  }
-
-  formSubmitHandler = event => {
-    event.preventDefault();
-    // console.dir(this.state.formControls);
-    console.log('clicked')
+    this.props.logInRequest(email,password)
+    this.setState({email: '', password: '',emptymessage: false})
   }
 
   render() {
+
+    const {isFetching, success, message} = this.props.studentLoginData;
+    const {state:{emptymessage}} = this;
+
+     if (isFetching) {
+      return (
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
+          <div className = "loader"><img src={loader} /></div>
+        </div>
+      );
+    }
+
     return (
       <div className="_container-custom container p-5">
         <div className="row shadow">
@@ -102,8 +70,8 @@ class Login extends Component {
                     id="email"
                     className="form-control"
                     placeholder="Email"
-                    value={this.state.formControls.email.value}
-                    onChange={this.changeHandler}
+                    value={this.state.email}
+                    onChange= { (e) => {this.setState({ email: e.target.value })}}
                   />
 
                 </div>
@@ -120,20 +88,16 @@ class Login extends Component {
                     id="pass"
                     className="form-control"
                     placeholder="Password"
-                    value={this.state.formControls.password.value}
-                    onChange={this.changeHandler}
+                    value={this.state.password}
+                    onChange= { (e) => {this.setState({ password: e.target.value })}}
                   />
                 </div>
               </div>
 
               <div className="text-center mb-3 mt-3">
-                <button type="submit"
-                className="btn btn-success btn-rounded px-3 py-2"
-                onClick={this.formSubmitHandler}
-                disabled={!this.state.formIsValid}
-                >
-                  Log in
-                </button>
+                  <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
+                    Log in
+                  </button>
               </div>
 
               <div className="_or-seperator">
@@ -159,6 +123,22 @@ class Login extends Component {
             </form>
           </div>
         </div>
+
+          {success && <div className="alert alert-success alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> Welcome!
+          </div>}
+
+          {success == false && <div className="alert alert-success alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            {message}
+          </div>}
+
+
+          {emptymessage && <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Please!</strong> fill the form!
+          </div>}
       </div>
     )
   }

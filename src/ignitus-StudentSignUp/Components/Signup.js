@@ -2,24 +2,35 @@ import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
+import _ from 'lodash';
 import '../Styles/style.css';
 
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', confirmPassword: '' };
+    this.state = { email: '', password: '', confirmPassword: '', emptymessage:false, equalmessage: false };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(e) {
     e.preventDefault();
+    
     const {state:{email,password,confirmPassword}} = this
-    this.props.requestApi(email,password, confirmPassword)
-    this.setState({email: '', password: '', confirmPassword: ''})
+    if(_.isEmpty(email) || _.isEmpty(password) || _.isEmpty(confirmPassword)){
+        this.setState({emptymessage: true})
+        return
+    }
+    if(!_.isEqual(password, confirmPassword)){
+        this.setState({equalmessage: true, emptymessage:false})
+        return
+    }
+
+    this.props.signUpRequest(email,password)
+    this.setState({email: '', password: '', confirmPassword: '',emptymessage: false, equalmessage: false  })
   }
 
   render() {
-
-    const {isFetching} = this.props.studentData;
+    const {isFetching, success, message} = this.props.studentSignUpData;
+    const {state:{emptymessage,equalmessage}} = this
     if (isFetching) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
@@ -47,7 +58,7 @@ class Signup extends React.Component {
             <div className="my-4">
               <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
             </div>
-            <form>
+            <form >
               <div className="px-4">
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
@@ -60,6 +71,7 @@ class Signup extends React.Component {
                     id="email"
                     className="form-control"
                     placeholder="Email"
+                    required
                     value={this.state.email}
                     onChange= { (e) => {this.setState({ email: e.target.value })}}
                   />
@@ -114,14 +126,24 @@ class Signup extends React.Component {
             </form>
           </div>
         </div>
-          {this.props.studentData.success && <div className="alert alert-success alert-dismissible margin-Top">
+          {success && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Success!</strong> Please confirm your email address!
           </div>}
 
-          {this.props.studentData.success == false && <div className="alert alert-success alert-dismissible margin-Top">
+          {success == false && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
-            {this.props.studentData.message}
+            {message}
+          </div>}
+
+          {emptymessage && <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Please!</strong> fill the form!
+          </div>}
+
+          {equalmessage && <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Password </strong> does not match the confirm password.!
           </div>}
       </div>
     );
