@@ -14,15 +14,27 @@ Client side development Ignitus.
 
 ## Client-Side
 Written in universal JavaScript
-* ReactJS
-* Redux
-* Redux-Sagas
-* ESLINT
-* Istanbul
-* JEST
-* Reselect
-* Flow
-* Prop-Types
+
+* react
+* redux
+* travis-ci
+* heroku
+* prop-types
+* redux-thunk
+* docker-container
+* redux-sagas
+* flow
+* reselect
+* jest-tests
+* istanbul
+* ignitus-rest-api
+* heroku-pipeline
+* airbnb-eslint
+* react-router-v4
+* bootstrap4
+* enzyme-testing
+* service-worker-precache
+* sass
 
 ## Server-Side
 * Node.js
