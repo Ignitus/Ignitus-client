@@ -3,6 +3,10 @@
 import axios from 'axios';
 import * as t from './constants';
 
+if(sessionStorage.getItem('jwtToken')){
+    axios.defaults.headers.common['access-token'] = sessionStorage.getItem('jwtToken');
+}
+
 export function getTestimonialData() {
   return axios.get(t.TESTIMONIAL_URL);
 }

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import '../Styles/style.css';
 import _ from 'lodash';
+import { Redirect, Route } from 'react-router-dom';
+
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
+import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import '../Styles/style.css';
+
 
 class Login extends Component {
 
@@ -24,6 +27,7 @@ class Login extends Component {
 
     this.props.logInRequest(email,password)
     this.setState({email: '', password: '',emptymessage: false})
+    console.log('history',this)
   }
 
   render() {
@@ -38,6 +42,9 @@ class Login extends Component {
         </div>
       );
     }
+
+     if(success)
+        return <Redirect to="/dashboard" />
 
     return (
       <div className="_container-custom container p-5">
@@ -123,11 +130,6 @@ class Login extends Component {
             </form>
           </div>
         </div>
-
-          {success && <div className="alert alert-success alert-dismissible margin-Top">
-            <button type="button" className="close" data-dismiss="alert">&times;</button>
-            <strong>Success!</strong> Welcome!
-          </div>}
 
           {success == false && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
