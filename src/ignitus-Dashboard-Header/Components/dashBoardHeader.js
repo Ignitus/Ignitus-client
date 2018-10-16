@@ -15,7 +15,7 @@ class dashBoardHeader extends React.Component {
   }
 
   logout(){
-    sessionStorage.clear();
+    localStorage.clear();
     this.setState({redirect : true})
   }
 
@@ -26,9 +26,9 @@ class dashBoardHeader extends React.Component {
      }
 
     let email = '';
-    if(sessionStorage.getItem('data')){
-      console.log(sessionStorage.getItem('data'))
-      email = JSON.parse(sessionStorage.getItem('data')).email;
+    if(localStorage.getItem('data')){
+      console.log(localStorage.getItem('data'))
+      email = JSON.parse(localStorage.getItem('data')).email;
     }
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">

@@ -12,8 +12,8 @@ function* signIn(action) {
   const {email, password} = action;
   try {
     const { data } = yield call(api.signIn, email, password);
-    sessionStorage.setItem('authenticated', true);
-    sessionStorage.setItem('data', JSON.stringify(data.userInfo.clientData))
+    localStorage.setItem('authenticated', true);
+    localStorage.setItem('data', JSON.stringify(data.userInfo.clientData))
     yield put(a.logInResponse(data));
   } catch (e) {
     yield put(a.logInResponse(e.response.data));
