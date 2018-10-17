@@ -36,6 +36,7 @@ Written in universal JavaScript
 * service-worker-precache
 * sass
 * Netlify
+* dependabot
 
 ## Server-Side
 * Node.js
