@@ -126,4 +126,4 @@ This Repository is powered by
 
 ### For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
 
-### Thank You!
+Thank You!
