@@ -35,6 +35,7 @@ Written in universal JavaScript
 * enzyme-testing
 * service-worker-precache
 * sass
+* Netlify
 
 ## Server-Side
 * Node.js
