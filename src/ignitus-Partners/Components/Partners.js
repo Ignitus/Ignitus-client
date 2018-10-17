@@ -9,7 +9,12 @@ const html = array.map((logo, key) => (
       className="col-lg-4 col-md-4 col-sm-6 col-12 logoCss centered-image"
       key={key}
     >
-      <img src={logo} width="200" alt="logo" />
+
+      <div class="card mt-4 shadow">
+        <div class="card-img-top logoCss centered-image d-flex align-middle">
+          <img src={logo} alt="logo" />
+        </div>
+      </div>
     </div>
   ));
 
