@@ -2,18 +2,62 @@
   "name": "ignitus-client-side-development",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ignitus/Ignitus-Client-Side-Development"
+  },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.9.3",
+    "popper.js": "^1.14.4",
+    "prop-types": "^15.6.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-router-hash-link": "^1.2.0",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "shortid": "^2.2.13"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
+    "lint": "eslint ./src",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject",
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "flow-bin": "^0.82.0",
+    "flow-typed": "^2.5.1",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "jest-localstorage-mock": "^2.2.0",
+    "sw-precache": "^5.2.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
   }
 }

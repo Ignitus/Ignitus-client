@@ -30,3 +30,14 @@
 
 * will start a server ! on http://localhost:3000
 
+## Setup Via Docker
+
+* Run ```docker-compose up```
+ 
+## Linting
+
+ * ``` npm run lint ```	* ``` npm run lint ```
+ 
+## Fix Lint Warnings
+
+ * ``` ./node_modules/.bin/eslint src --fix ```

@@ -1,5 +1,49 @@
+![alt tag](https://avatars0.githubusercontent.com/u/39058097?s=200&v=4)
+
 # Ignitus-client-side
+
 Client side development Ignitus.
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+
+## Client-Side
+Written in universal JavaScript
+
+* react
+* redux
+* travis-ci
+* heroku
+* prop-types
+* redux-thunk
+* docker-container
+* redux-sagas
+* flow
+* reselect
+* jest-tests
+* istanbul
+* ignitus-rest-api
+* heroku-pipeline
+* airbnb-eslint
+* react-router-v4
+* bootstrap4
+* enzyme-testing
+* service-worker-precache
+* sass
+
+## Server-Side
+* Node.js
+* JWT
+* Mocha
+* Mongoose
+* MongoDB
+* Docker
+* TRAVIS CI
 
 ## About Ignitus
 
@@ -75,3 +119,9 @@ This Repository is powered by
 
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225
 )
+
+![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
+
+### For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
+
+### Thank You!

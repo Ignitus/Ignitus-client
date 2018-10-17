@@ -1,0 +1,38 @@
+.align{
+	text-align: center;
+}
+
+.intro{
+	font-size: 50px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.ignitus{
+	font-size: 60px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #192b65;
+}
+
+.tagline{
+	font-size: 35px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.content{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.box {
+	background: #f3f3f2;
+}
+.border{
+    border: 1px solid black;
+}
+.mt-4{
+    margin-top: 4.5rem!important;
+}

@@ -1,0 +1,29 @@
+
+.link {
+	color: grey;
+}
+
+.link:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.heading {
+	color: #d9d9d9;
+	font-weight: 500;
+}
+
+.img-css {
+	width: 100px;
+	height: 100px;
+	align-self: middle;
+	margin:50px 20px;
+}
+
+.color{
+	color: white;
+}
+
+.pd-left{
+	padding-left: 22px !important;
+}

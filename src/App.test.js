@@ -7,3 +7,10 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
+jest.mock('react-dom', () => ({
+  render: () => null,
+  unmountComponentAtNode: () => null,
+  findDOMNode: () => ({}),
+}));
