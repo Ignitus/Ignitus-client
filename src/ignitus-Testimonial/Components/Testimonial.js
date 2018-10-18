@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func, array 
+ string, number, shape, func,
 } from 'prop-types';
 import shortid from 'shortid';
 import '../Styles/style.css';
-import axios from 'axios';
-import { API_URL } from '../constants';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>
@@ -88,13 +86,8 @@ class Testimonial extends Component {
     this.interval = setInterval(this.timer, 3000);
   }
 
-  componentDidUpdate(){
-    console.log('this',this)
-  }
-
   shouldComponentUpdate(nextProps, nextState) {
-    const { activeIndex } = this.state;
-    if (nextState.activeIndex !== activeIndex) {
+    if (nextState.activeIndex !== this.state.activeIndex) {
       return true;
     }
     return false;
