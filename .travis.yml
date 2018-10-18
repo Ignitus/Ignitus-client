@@ -1,7 +1,3 @@
 language: node_js
 node_js:
   - "8" 
-install:
-  - npm install -g codecov
-after_success:
-  - ./bin/codecov -e TRAVIS_NODE_VERSION
