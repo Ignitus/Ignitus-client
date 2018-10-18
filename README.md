@@ -50,6 +50,7 @@ Written in universal JavaScript
 * MongoDB
 * Docker
 * TRAVIS CI
+* CodeCov
 
 ## About Ignitus
 
