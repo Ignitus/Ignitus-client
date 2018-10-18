@@ -35,8 +35,12 @@ Written in universal JavaScript
 * enzyme-testing
 * service-worker-precache
 * sass
+
+## Bots
 * Netlify
 * dependabot
+* welcomebot
+* labelsbot
 
 ## Server-Side
 * Node.js
@@ -128,3 +132,4 @@ This Repository is powered by
 For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
 
 Thank You!
+
