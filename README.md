@@ -35,8 +35,12 @@ Written in universal JavaScript
 * enzyme-testing
 * service-worker-precache
 * sass
+
+## Bots
 * Netlify
 * dependabot
+* welcomebot
+* labelsbot
 
 ## Server-Side
 * Node.js
