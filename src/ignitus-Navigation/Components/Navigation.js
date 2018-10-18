@@ -84,15 +84,16 @@ const Navigation = () => (
           </div>
         </li>
         <li className="nav-item dropdown">
-          <span
+          <a
             className="nav-link dropdown-toggle"
+            href="#"
             id="navbarDropdownMenuLink"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Sign up
-          </span>
+          </a>
           <div
             className="dropdown-menu dropdown-menu-right"
             aria-labelledby="navbarDropdownMenuLink"
