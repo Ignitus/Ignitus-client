@@ -44,7 +44,7 @@ function registerValidSW(swUrl) {
       const subscription = await registration.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(
-          'BL_S4Qc7TjBYBvHlTeh3hGuPqlKr0juJEZtU09bPLtKUiJdp5pKOfo_B7BCVBR3YVZN1s2KnX3ZwjJNT778W90c',
+          'BMRATagxJMbZdcX-a-lwaMC93vL7-Kmr3trsTc_g0HJy6C6UGCRMSKfxzJUOjAsXt3W5Ov7t_a8J9y9qROw9mFE',
         ),
       });
         try {
