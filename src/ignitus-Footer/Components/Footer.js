@@ -54,6 +54,8 @@ const Footer = () => (
             <li>
               <a
                 className="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.quora.com/What-are-Ignitus-and-WooTech-about"
               >
                 Ignitus Woo-Tech
@@ -62,6 +64,8 @@ const Footer = () => (
             <li>
               <a
                 className="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7"
               >
                 Ignitus Scholar
