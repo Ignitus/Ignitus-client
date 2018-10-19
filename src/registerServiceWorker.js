@@ -43,27 +43,24 @@ function registerValidSW(swUrl) {
     .then(async (registration) => {
       const subscription = await registration.pushManager.subscribe({
         userVisibleOnly: true,
-        // The `urlBase64ToUint8Array()` function is the same as in
-        // https://www.npmjs.com/package/web-push#using-vapid-key-for-applicationserverkey
-
-        // TODO: You'll have to put your Public Key
         applicationServerKey: urlBase64ToUint8Array(
-          'BMUlQydvBQf3jcWiAjQQrFPgc_Mfm29cdjTbfq7bKgKWRSNBXc-GjCjC0rToB4dNDjG0VwAKdVNKmUGDzNFx-lM',
+          'BL_S4Qc7TjBYBvHlTeh3hGuPqlKr0juJEZtU09bPLtKUiJdp5pKOfo_B7BCVBR3YVZN1s2KnX3ZwjJNT778W90c',
         ),
       });
-      console.log('Registered push');
-
-      console.log('Sending push');
-      try {
-        await fetch('http://localhost:4000/subscribe', {
+        try {
+        fetch('https://ignitusrestapi.herokuapp.com/subscribe', {
           method: 'POST',
           body: JSON.stringify(subscription),
           headers: {
             'content-type': 'application/json',
           },
-        });
-        console.log('Sent push');
-      } catch (error) {
+        }).then(function (response) {
+          console.log('success',response)
+        }).catch(function (err) {
+          console.log('failure',err)
+        })
+      } 
+      catch (error) {
         console.error('error', error);
       }
 
