@@ -44,7 +44,7 @@
   "devDependencies": {
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
-    "flow-bin": "^0.82.0",
+    "flow-bin": "^0.83.0",
     "flow-typed": "^2.5.1",
     "istanbul": "^1.0.0-alpha.2",
     "jest-cli": "^20.0.4",
