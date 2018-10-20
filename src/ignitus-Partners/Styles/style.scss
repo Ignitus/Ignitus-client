@@ -36,14 +36,14 @@
 	align-items: center;
 }
 
-.card{
+.card {
 	border-radius: 1rem;
-	.logoCss{
+	.logoCss {
 	  /* Prevent different heights for each logos */
 	  height: 100px;
-	  img{
-		max-width: 100%;
-		height: 75%;
+	  img {
+			max-width: 100%;
+			height: 75%;
 	  }
 	}
-  }
+}
