@@ -2,7 +2,7 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 
 .started {
-	font-size: $ignite-font-size-md;
+	font-size: $ignite-font-size-md !important;
   font-weight: $ignite-font-weight-normal;
   margin-top: 70px;
   margin-bottom: 40px;
