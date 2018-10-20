@@ -5,7 +5,7 @@ import { Redirect, Route } from 'react-router-dom';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 
 class Login extends Component {

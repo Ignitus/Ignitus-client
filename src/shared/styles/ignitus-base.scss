@@ -1,0 +1,20 @@
+//Base Ignitus site styles
+// import ignitus token variables
+@import 'ignitus-tokens.scss';
+
+//Optionally you can override bootstrap variables here or 
+// in `ignitus.tokens.scss` before `bootstrap.scss` below
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#sass-options
+
+// override bootstrap primary color (buttons, etc)
+$primary: $ignite-color-blue-36;
+$success: $ignite-color-green-40;
+
+// import bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+// import site reset
+@import 'ignitus-reset.scss';
+
+// import site utility classes
+@import 'ignitus-utilities.scss';

@@ -59,9 +59,11 @@ class dashBoardHeader extends React.Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
+              <Link to="/aboutus">
+                <span className="nav-link" href="/aboutus">
+                  About
+                </span>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link disabled" href="#">

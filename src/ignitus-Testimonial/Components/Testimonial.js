@@ -3,7 +3,7 @@ import {
  string, number, shape, func,
 } from 'prop-types';
 import shortid from 'shortid';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>

@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 const Login = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="container mt-5 col-xs-6">
         <div className="my-5">
-          <img className="img-fluid _img mx-auto d-block" src={logo} />
+          <img className="img-fluid _img mx-auto d-block" src={logo} alt="Ignitus" />
         </div>
         <form>
           <div className="_login-form mx-auto">
