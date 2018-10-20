@@ -1,0 +1,31 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.link {
+	color: $ignite-color-neutral-50;
+
+  &:hover {
+    color: $ignite-color-white;
+    text-decoration: none;
+  }
+}
+
+.heading {
+	color: $ignite-color-neutral-85;
+	font-weight: $ignite-font-weight-medium;
+}
+
+.img-css {
+	width: 100px;
+	height: 100px;
+	align-self: middle;
+	margin:50px 20px;
+}
+
+.social-icon {
+	color: $ignite-color-white;
+}
+
+.pd-left {
+	padding-left: 22px;
+}

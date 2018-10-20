@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 import resume from '../../ignitus-Assets/Images/Resume.png';
 
 const Introduction = () => (
@@ -9,12 +9,12 @@ const Introduction = () => (
         <img className="img-fluid" src={resume} alt="resume" align="left" />
       </div>
       <div className="col-sm-12 col-md-5 col-lg-7">
-        <div className="intro   align"> Introducing</div>
+        <div className="intro align">Introducing</div>
         <div className="ignitus align">Ignitus</div>
         <div className="tagline align">Ignite Your resume</div>
         <div className="content align">
-          'Skyrocketing Your Career By Providing You The Best Global
-          Opportunities.'
+          ‘Skyrocketing Your Career By Providing You The Best Global
+          Opportunities.’
         </div>
       </div>
     </div>

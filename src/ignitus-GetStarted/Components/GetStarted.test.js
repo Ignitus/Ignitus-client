@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 import Foo from './GetStarted';
 
 describe('GetStarted', () => {

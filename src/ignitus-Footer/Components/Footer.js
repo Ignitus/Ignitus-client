@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
@@ -149,7 +149,7 @@ const Footer = () => (
     <ul className="list-unstyled list-inline text-center ">
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.facebook.com/Ignitus.org/"
@@ -159,7 +159,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/ignitus_org"
@@ -169,7 +169,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://angel.co/ignitus-2"
@@ -179,7 +179,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="http://bit.do/join-ignitus"
@@ -189,7 +189,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/company/13733583/admin/updates/"
@@ -199,7 +199,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/Ignitus"
@@ -209,7 +209,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://medium.com/@social_63397"
@@ -219,7 +219,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"

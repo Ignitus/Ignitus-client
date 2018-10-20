@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 const About = () => (
-  <div className="container _align">
-    <div className="_about">About Us</div>
-    <div className="_aboutus">
+  <div className="container align">
+    <div className="about">About Us</div>
+    <div className="aboutus">
       <p>
         Ignitus (A Non-Profit Organization for the welfare of student
         community ) that helps students and professionals get handpicked
