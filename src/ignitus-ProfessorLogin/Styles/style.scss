@@ -1,3 +1,6 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
 .social-btn .btn i {
     margin: 4px 15px  0 5px;
     min-width: 15px;
@@ -6,26 +9,26 @@
 .or-seperator {
     margin: 20px auto 10px;
     text-align: center;
-    border-top: 1px solid black;
+    border-top: $ignite-border-default;
     width: 30%;
 
-}
-.or-seperator i {
-    padding: 0 10px;
-    background: white;
-    position: relative;
-    top: -11px;
-    z-index: 1;
+    i {
+      padding: 0 10px;
+      background: $ignite-background-color-white;
+      position: relative;
+      top: -11px;
+      z-index: 1;
+    }
 }
 
 .text-secondary {
-    color: black !important;
+    color: $ignite-text-color-default;
     text-align: center;
 }
 
 
-._form{
-    background: white;
+._form {
+    background: $ignite-color-white;
     height: 585px;
     width: 40%;
     display: block;
@@ -47,47 +50,36 @@
     display: block !important;
 }
 
-._linkedin{
+._linkedin {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-._input{
+._input {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
 
 }
 
-._checkbox{
+._checkbox {
     margin-left: 70px;
     color: white;
-}
-/* TODO: change main colors with scss */
-.btn-primary {
-    background-color: #0275b6 !important;
-    border-color: #0275b6 !important;
 }
 
 .btn-rounded {
     border-radius: 25px !important;
 }
 
-.btn-success {
-    color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
 ._link{
     text-decoration: none;
     color: black;
-}
 
-._link:hover{
-    text-decoration: none;
-    color: grey;
+    &:hover {
+      text-decoration: none;
+      color: grey;
+    }
 }
 
 ._vertical{

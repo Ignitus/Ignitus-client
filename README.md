@@ -36,6 +36,12 @@ Written in universal JavaScript
 * service-worker-precache
 * sass
 
+## Bots
+* Netlify
+* dependabot
+* welcomebot
+* labelsbot
+
 ## Server-Side
 * Node.js
 * JWT
@@ -44,6 +50,7 @@ Written in universal JavaScript
 * MongoDB
 * Docker
 * TRAVIS CI
+* CodeCov
 
 ## About Ignitus
 
@@ -122,6 +129,26 @@ This Repository is powered by
 
 ![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
 
-### For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
 
-### Thank You!
+For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
+
+
+## Contributors
+
+[![Paarmita Bhargava](https://github.com/Paarmita.png?size=100)](https://github.com/Paarmita) | [![Bill Hefty](https://github.com/bhefty.png?size=100)](https://github.com/bhefty) | [![Brian Fernando ](https://github.com/BrianCortes.png?size=100)](https://github.com/BrianCortes) | [![Amit Mangotra](https://github.com/amitmangotra.png?size=100)](https://github.com/amitmangotra) | [![Fabricio Augusto](https://github.com/fabricionaweb.png?size=100)](https://github.com/fabricionaweb) | [![My Trang Hong](https://github.com/meyfleur.png?size=100)](https://github.com/meyfleur)
+---|---|---|---|---|---
+[Paarmita Bhargava](https://github.com/Paarmita) | [Bill Hefty](https://github.com/bhefty) | [Brian Fernando](https://github.com/BrianCortes) | [Amit Mangotra](https://github.com/amitmangotra) | [Fabricio Augusto](https://github.com/fabricionaweb) | [My Trang Hong](https://github.com/meyfleur)
+
+
+[![Sid Bentifraouine](https://github.com/sidbentifraouine.png?size=100)](https://github.com/sidbentifraouine) | [![Abhinav Keshav](https://github.com/shoutoutloud.png?size=100)](https://github.com/shoutoutloud) | [![Trevor Kirpaul](https://github.com/trevorkirpaul.png?size=100)](https://github.com/trevorkirpaul) | [![Tucker Blackwell](https://github.com/trblackw.png?size=100)](https://github.com/trblackw) | [![Nirmal Kumar](https://github.com/nirmalks.png?size=100)](https://github.com/nirmalks) | [![Martin Hofmann](https://github.com/Martskin.png?size=100)](https://github.com/Martskin)
+---|---|---|---|---|---
+[Sid Bentifraouine](https://github.com/sidbentifraouine) | [Abhinav Keshav](https://github.com/shoutoutloud) | [Trevor Kirpaul](https://github.com/trevorkirpaul) | [Tucker Blackwell](https://github.com/trblackw) | [Nirmal Kumar K](https://github.com/nirmalks) | [Martin Hofmann](https://github.com/Martskin)
+
+
+[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |
+---|---|---|
+[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) | [Afreen Rahman](https://github.com/afreen23) |
+
+Thank You All For Your Support!!
+
+Still Adding......

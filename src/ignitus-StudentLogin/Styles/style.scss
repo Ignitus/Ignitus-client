@@ -1,3 +1,6 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
 ._container-custom {
     max-width: 800px;
     margin-top: 60px;
@@ -11,41 +14,40 @@
 ._or-seperator {
     margin: 20px 0 10px;
     text-align: center;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $ignite-color-neutral-80;
 }
 ._or-seperator i {
     padding: 0 10px;
-    background: white;
+    background: $ignite-color-white;
     position: relative;
     top: -11px;
     z-index: 1;
 }
 
 ._img-login {
-    /* flex-grow: 1; */
     flex-basis: 57%;
 }
 
 .text-below-image {
-    background-color: #f1f9fe;
+    background-color: $ignite-color-blue-97;
     flex-basis: 43%;
 }
 
-.text-below-image p:nth-child(1) {
-    font-size: 25px;
-}
+.text-below-image {
 
-.text-below-image p:nth-child(2) {
-    font-size: 18px;
+  p {
+
+    &:nth-child(1) {
+      font-size: $ignite-font-size-md;
+    }
+
+    &:nth-child(2) {
+      font-size: $ignite-font-size-sm;
+    }
+  }
 }
 
 .container-image {
     display: flex;
     flex-direction: column;
 }
-
-/* @media (max-width: 768px) and (min-width: 280px) {
-    ._container {
-        width: 300px;
-    }
-} */

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 const Signup = props => (
   <div className="container-fluid">
@@ -8,7 +8,7 @@ const Signup = props => (
       <div className="col-xs-4" />
       <div className="container mt-5 col-xs-6">
         <div className="my-5">
-          <img className="img-fluid _img mx-auto d-block" src={logo} />
+          <img className="img-fluid _img mx-auto d-block" src={logo} alt="Ignitus" />
         </div>
         <form>
           <div class="_login-form mx-auto">

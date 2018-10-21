@@ -3,7 +3,7 @@ import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import _ from 'lodash';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 
 class Signup extends React.Component {
   constructor(props) {
