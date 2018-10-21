@@ -145,9 +145,9 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 [Sid Bentifraouine](https://github.com/sidbentifraouine) | [Abhinav Keshav](https://github.com/shoutoutloud) | [Trevor Kirpaul](https://github.com/trevorkirpaul) | [Tucker Blackwell](https://github.com/trblackw) | [Nirmal Kumar K](https://github.com/nirmalks) | [Martin Hofmann](https://github.com/Martskin)
 
 
-[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |
----|---|---|
-[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) | [Afreen Rahman](https://github.com/afreen23) |
+[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |	[![paperlambda](https://github.com/paperlambda.png?size=100)](https://github.com/paperlambda)
+---|---|---|---
+[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda)
 
 Thank You All For Your Support!!
 
