@@ -35,6 +35,7 @@ Written in universal JavaScript
 * enzyme-testing
 * service-worker-precache
 * sass
+* lazy-loading(React-lodable)
 
 ## Bots
 * Netlify
