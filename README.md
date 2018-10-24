@@ -49,6 +49,7 @@ Written in universal JavaScript
 * Mongoose
 * MongoDB
 * Docker
+* Redis
 * TRAVIS CI
 * CodeCov
 
