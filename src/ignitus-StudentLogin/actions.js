@@ -7,9 +7,9 @@ import _ from 'lodash';
 
 export const logInRequest = (email, password) => {
   if (!_.isString(email))
-    throw new Error(`email must be number: ` + email);
+    throw new Error(`email must be a string: ` + email);
   if (!_.isString(password))
-    throw new Error(`password must be number: ` + password);
+    throw new Error(`password must be a string: ` + password);
 
   return {type: t.LOG_IN_REQUEST, email, password};
 };
