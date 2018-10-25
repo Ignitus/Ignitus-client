@@ -13,7 +13,7 @@ import CardLayout from '../ignitus-WhatWeDo';
 import Partner from '../ignitus-Partners';
 
 // import AboutUs from '../ignitus-About';
-import LoginProfessor from '../ignitus-ProfessorLogin';
+import LoginProfessor from '../ignitus-ProfessorLogin/loadables';
 import SignupProfessor from '../ignitus-ProfessorSignUp';
 import LoginStudent from '../ignitus-StudentLogin';
 import SignupStudent from '../ignitus-StudentSignUp';
