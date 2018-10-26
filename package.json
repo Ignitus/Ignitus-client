@@ -40,7 +40,8 @@
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "flow": "flow"
+    "flow": "flow",
+    "test:update": "npm test --updateSnapshot"
   },
   "devDependencies": {
     "enzyme": "^3.6.0",
