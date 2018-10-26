@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
+import { withErrorBoundary } from '../../internals';
+
 
 const GetStarted = () => (
   <div className="align container">
@@ -14,4 +16,4 @@ const GetStarted = () => (
   </div>
 );
 
-export default GetStarted;
+export default withErrorBoundary(GetStarted);

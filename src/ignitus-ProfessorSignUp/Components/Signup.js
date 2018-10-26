@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import { withErrorBoundary } from '../../internals';
 import '../Styles/style.scss';
 
 const Signup = props => (
@@ -87,4 +88,4 @@ const Signup = props => (
   </div>
 );
 
-export default Signup;
+export default withErrorBoundary(Signup);

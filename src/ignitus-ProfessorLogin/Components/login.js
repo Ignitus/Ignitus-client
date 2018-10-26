@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import { withErrorBoundary } from '../../internals';
+
 import '../Styles/style.scss';
 
 const Login = () => (
@@ -82,4 +84,4 @@ const Login = () => (
   </div>
 );
 
-export default Login;
+export default withErrorBoundary(Login);

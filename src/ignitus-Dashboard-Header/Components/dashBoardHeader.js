@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import { Redirect, Route } from 'react-router-dom';
+import {withErrorBoundary} from '../../internals'
 
 
 class dashBoardHeader extends React.Component {
@@ -82,4 +83,4 @@ class dashBoardHeader extends React.Component {
   }
 }
 
-export default dashBoardHeader;
+export default withErrorBoundary(dashBoardHeader);

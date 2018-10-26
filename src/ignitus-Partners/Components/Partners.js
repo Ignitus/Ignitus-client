@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/style.scss';
+import { withErrorBoundary } from '../../internals';
 import * as t from './Constants';
 
 const Partner = () => {
@@ -39,4 +40,4 @@ const Partner = () => {
   );
 };
 
-export default Partner;
+export default withErrorBoundary(Partner);
