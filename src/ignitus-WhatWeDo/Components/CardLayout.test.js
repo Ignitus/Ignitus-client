@@ -6,6 +6,6 @@ import Card from './Card';
 describe('CardLayout', () => {
   test('should render cards according to data', () => {
     const wrapper = shallow(<CardLayout/>);
-    expect(wrapper.find(Card)).toHaveLength(3);
+    expect(wrapper).toMatchSnapshot();
   });
 });

@@ -6,11 +6,11 @@ import Foo from './Footer';
 describe('Footer', () => {
   test('should see 5 columns in the footer', () => {
     const wrapper = shallow(<Foo />);
-    expect(wrapper.find('.col-md-2')).toHaveLength(5);
+    expect(wrapper).toMatchSnapshot();
   });
 
   test('renders an image logo', () => {
     const wrapper = shallow(<Foo />);
-    expect(wrapper.find('img').prop('src')).toEqual(logo);
+    expect(wrapper).toMatchSnapshot();
   });
 });
