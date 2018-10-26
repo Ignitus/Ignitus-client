@@ -1,6 +1,9 @@
 import React from 'react';
 import '../Styles/style.scss';
 
+import {withErrorBoundary} from '../../internals';
+
+
 const About = () => (
   <div className="container align">
     <div className="about">About Us</div>
@@ -43,4 +46,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default withErrorBoundary(About);

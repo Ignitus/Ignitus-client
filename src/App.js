@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import {withErrorBoundary} from './internals';
 import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes';
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
 
 import loader from './ignitus-Assets/Images/loader.gif';
 import './App.scss';
-
 
 class App extends Component {
   constructor() {
@@ -40,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withErrorBoundary(App);

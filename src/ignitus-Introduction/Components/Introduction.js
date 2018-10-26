@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
+import { withErrorBoundary } from '../../internals';
+
 import resume from '../../ignitus-Assets/Images/Resume.png';
 
 const Introduction = () => (
@@ -20,4 +22,4 @@ const Introduction = () => (
     </div>
   </div>
 );
-export default Introduction;
+export default withErrorBoundary(Introduction);

@@ -2,7 +2,9 @@ import React from 'react';
 import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import {withErrorBoundary} from '../../internals'
 import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+
 
 // resolved
 
@@ -235,4 +237,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
+export default withErrorBoundary(Footer);

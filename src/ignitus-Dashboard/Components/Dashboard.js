@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/style.scss';
+import {withErrorBoundary} from '../../internals'
 
 class Dashboard extends React.Component{
 
@@ -16,4 +17,4 @@ class Dashboard extends React.Component{
   }
 }
 
-export default Dashboard;
+export default withErrorBoundary(Dashboard);

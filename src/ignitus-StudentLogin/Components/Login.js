@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { Redirect, Route } from 'react-router-dom';
+import { withErrorBoundary } from '../../internals';
+
 
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
@@ -147,4 +149,4 @@ class Login extends Component {
 
 }
 
-export default Login;
+export default withErrorBoundary(Login);

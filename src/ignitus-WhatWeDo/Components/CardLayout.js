@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Card from './Card';
 import {data} from './Data'
 import '../Styles/style.scss';
+import { withErrorBoundary } from '../../internals';
+
 
 const CardLayout = () => {
   const html = [...data].map((x, key) => (
@@ -31,4 +33,4 @@ const CardLayout = () => {
   );
 };
 
-export default CardLayout;
+export default withErrorBoundary(CardLayout);

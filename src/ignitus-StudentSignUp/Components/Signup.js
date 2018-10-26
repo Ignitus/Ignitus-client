@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
+import { withErrorBoundary } from '../../internals';
+
 import _ from 'lodash';
 import '../Styles/style.scss';
 
@@ -150,4 +152,4 @@ class Signup extends React.Component {
   }
 }
 
-export default Signup;
+export default withErrorBoundary(Signup);

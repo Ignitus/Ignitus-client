@@ -3,6 +3,8 @@ import {
  string, number, shape, func,
 } from 'prop-types';
 import shortid from 'shortid';
+import { withErrorBoundary } from '../../internals';
+
 import '../Styles/style.scss';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
@@ -220,4 +222,4 @@ CarouselRightArrow.propTypes = {
   onClick: func.isRequired,
 };
 
-export default Testimonial;
+export default withErrorBoundary(Testimonial);
