@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 
-import {withErrorBoundary} from '../../internals';
+import {withErrorBoundary} from '../../ignitus-Internals';
 
 
 const About = () => (

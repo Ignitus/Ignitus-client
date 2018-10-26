@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { Redirect, Route } from 'react-router-dom';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 
 import loader from '../../ignitus-Assets/Images/loader.gif';

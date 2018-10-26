@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/style.scss';
-import {withErrorBoundary} from '../../internals'
+import {withErrorBoundary} from '../../ignitus-Internals'
 
 class Dashboard extends React.Component{
 

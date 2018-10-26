@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 import '../Styles/style.scss';
 
 const Signup = props => (
@@ -12,7 +12,7 @@ const Signup = props => (
           <img className="img-fluid _img mx-auto d-block" src={logo} alt="Ignitus" />
         </div>
         <form>
-          <div class="_login-form mx-auto">
+          <div className="_login-form mx-auto">
           <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">

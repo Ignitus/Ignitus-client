@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 import resume from '../../ignitus-Assets/Images/Resume.png';
 

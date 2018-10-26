@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Card from './Card';
 import {data} from './Data'
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 
 const CardLayout = () => {

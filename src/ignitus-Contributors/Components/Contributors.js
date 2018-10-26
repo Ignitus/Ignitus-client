@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/style.scss';
 import * as t from './Constants';
 
-import {withErrorBoundary} from '../../internals'
+import {withErrorBoundary} from '../../ignitus-Internals'
 
 const Contributors = () => {
   const array = [t.UCB, t.STANFORD, t.CMU, t.HARVARD, t.MIT, t.OXFORD, t.PRINCETON, t.YALE];

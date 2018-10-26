@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import {withErrorBoundary} from './internals';
+import {withErrorBoundary} from './ignitus-Internals';
 import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes';
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
 

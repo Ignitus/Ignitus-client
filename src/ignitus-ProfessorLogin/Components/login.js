@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 import '../Styles/style.scss';
 

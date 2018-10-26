@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 import { Redirect, Route } from 'react-router-dom';
-import {withErrorBoundary} from '../../internals'
+import {withErrorBoundary} from '../../ignitus-Internals'
 
 
 class dashBoardHeader extends React.Component {

@@ -3,7 +3,7 @@ import {
  string, number, shape, func,
 } from 'prop-types';
 import shortid from 'shortid';
-import { withErrorBoundary } from '../../internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 import '../Styles/style.scss';
 
