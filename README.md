@@ -153,7 +153,8 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 
 * Thank You All For Your Support!!
 
-### 5. Give this Project a Star :star:
+
+### Give this Project a Star :star:
 
 If you liked working on this project, please share this project as much 
 as you can and star this project to help as many people in open source as you can.
