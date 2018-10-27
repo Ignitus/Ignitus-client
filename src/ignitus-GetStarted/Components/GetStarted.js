@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
@@ -10,9 +11,19 @@ const GetStarted = () => (
       using Ignitus to share their knowledge, work together, and get amazing
       opportunites.
     </div>
-    <a href="/signup" className="btn btn-md button-get-started" role="button">
-      Sign Up
-    </a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sign-Up
+  </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <Link to="/signup/student">
+          <span className="dropdown-item">Student</span>
+        </Link>
+        <Link to="/signup/professor">
+          <span className="dropdown-item">Professor</span>
+        </Link>
+      </div>
+    </div>
   </div>
 );
 
