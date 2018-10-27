@@ -151,6 +151,13 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 ---|---|---|---
 [Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda)
 
-Thank You All For Your Support!!
+* Thank You All For Your Support!!
 
-Still Adding......
+### 5. Give this Project a Star :star:
+
+If you liked working on this project, please share this project as much 
+as you can and star this project to help as many people in open source as you can.
+
+
+:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+
