@@ -10,15 +10,23 @@ class PrivateRoute extends React.Component{
     const Component = this.props.component;
     console.log('session',localStorage.getItem('authenticated'))
 
+    let bool;
+
+    if(localStorage.getItem('authenticated')){
+      bool = true;
+    }
+    else{
+      bool = false;
+    }
+
+    console.log('bool',bool)
+
     return( 
         <Route render={props => (
-          localStorage.getItem('authenticated') ? (
+          bool  ? (
             <Component {...this.props}/>
           ) : (
-            <Redirect to={{
-              pathname: '/login/student',
-              state: {from: props.location}
-            }} />
+            <Redirect to='/login/student'/>
           )
         )} />
     )

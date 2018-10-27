@@ -15,16 +15,20 @@ export const ErrorBoundary = class extends Component {
   }
 
   render() {
-    const { error, errorInfo } = this.state;
-
-    if (error) {
-      console.error(`Error loading component, ${error}, ${errorInfo}`);
-
-      return <div>Some error has occurred!</div>;
+    if (this.state.errorInfo) {
+      return (
+        <div className = 'container'>
+          <h2>Something went wrong.</h2>
+          <details style={{ whiteSpace: 'pre-wrap' }}>
+            {this.state.error && this.state.error.toString()}
+            <br />
+            {this.state.errorInfo.componentStack}
+          </details>
+        </div>
+      );
     }
-
     return this.props.children;
-  }
+  }  
 };
 
 ErrorBoundary.propTypes = {
