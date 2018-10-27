@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 import {withErrorBoundary} from '../../ignitus-Internals'
+import Alert from 'react-alerts-component'
 
 class Dashboard extends React.Component{
 
@@ -8,9 +9,7 @@ class Dashboard extends React.Component{
     return(
     <div>
         <div className ="container marginTop">
-          <div className="alert alert-success">
-            <strong>Success!</strong>
-          </div>
+          <Alert type = "success" message = "Success!"/>
         </div>
     </div>
     )
