@@ -129,7 +129,7 @@ This Repository is powered by
 
 ![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
-![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
+![alt tag](https://cdn-images-1.medium.com/max/800/1*jxFIFA8WI8TkMmdbOorOsA.png)
 
 
 For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
