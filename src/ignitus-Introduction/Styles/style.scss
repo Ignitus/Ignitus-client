@@ -1,0 +1,35 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.intro {
+	font-size: $ignite-font-size-xl;
+  font-weight: $ignite-font-weight-medium;
+  margin-top: 30px;
+}
+.ignitus {
+	font-size: $ignite-font-size-xxl;
+  font-weight: $ignite-font-weight-bold;
+  margin-top: 15px;
+  color: $ignite-text-color-brand;
+}
+
+.tagline {
+	font-size: $ignite-font-size-lg;
+  font-weight: $ignite-font-weight-normal;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.content {
+  font-size: $ignite-font-size-md;
+  font-weight: $ignite-font-weight-light;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.box {
+	background: $ignite-background-color-light;
+}
+
+.border {
+  border: $ignite-border-default;
+}

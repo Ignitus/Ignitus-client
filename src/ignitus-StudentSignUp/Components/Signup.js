@@ -1,24 +1,48 @@
 import React from 'react';
-import logo from '../../Assets/Images/Logos/logo white bg.png';
-import loginImg from '../../Assets/Images/login.png';
-import '../Styles/style.css';
+import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import loginImg from '../../ignitus-Assets/Images/login.png';
+import loader from '../../ignitus-Assets/Images/loader.gif';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
+<<<<<<< HEAD
+=======
+import _ from 'lodash';
+import '../Styles/style.scss';
+
+>>>>>>> upstream/master
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
-    this.handleChange = this.handleChange.bind(this);
+    this.state = { email: '', password: '', confirmPassword: '', emptymessage:false, equalmessage: false };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleChange(e) {
-    this.setState({ value: e.target.value });
-  }
-
   handleSubmit(e) {
     e.preventDefault();
+    
+    const {state:{email,password,confirmPassword}} = this
+    if(_.isEmpty(email) || _.isEmpty(password) || _.isEmpty(confirmPassword)){
+        this.setState({emptymessage: true})
+        return
+    }
+    if(!_.isEqual(password, confirmPassword)){
+        this.setState({equalmessage: true, emptymessage:false})
+        return
+    }
+
+    this.props.signUpRequest(email,password)
+    this.setState({email: '', password: '', confirmPassword: '',emptymessage: false, equalmessage: false  })
   }
 
   render() {
+    const {isFetching, success, message} = this.props.studentSignUpData;
+    const {state:{emptymessage,equalmessage}} = this
+    if (isFetching) {
+      return (
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
+          <div className = "loader"><img src={loader} /></div>
+        </div>
+      );
+    }
     return (
       <div className="container _container-custom p-5">
         <div className="row shadow">
@@ -28,7 +52,11 @@ class Signup extends React.Component {
               <p className="mb-5 ">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
               <p>
+<<<<<<< HEAD
                 <a href="/signup" className="text-center _link">
+=======
+                <a href="/signup/professor" className="text-center _link">
+>>>>>>> upstream/master
                   {' '}
                   I am a Professor
                 </a>
@@ -39,8 +67,13 @@ class Signup extends React.Component {
             <div className="my-4">
               <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
             </div>
+<<<<<<< HEAD
             <form>
               <div class="px-4">
+=======
+            <form >
+              <div className="px-4">
+>>>>>>> upstream/master
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
@@ -52,8 +85,14 @@ class Signup extends React.Component {
                     id="email"
                     className="form-control"
                     placeholder="Email"
+<<<<<<< HEAD
                     value={this.state.value}
                     onChange={this.handleChange}
+=======
+                    required
+                    value={this.state.email}
+                    onChange= { (e) => {this.setState({ email: e.target.value })}}
+>>>>>>> upstream/master
                   />
                 </div>
                 <div className="input-group form-group">
@@ -68,6 +107,11 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Password"
                     required
+<<<<<<< HEAD
+=======
+                    value={this.state.password}
+                    onChange= { (e) => {this.setState({ password: e.target.value })}}
+>>>>>>> upstream/master
                   />
                 </div>
                 <div className="input-group form-group">
@@ -78,6 +122,7 @@ class Signup extends React.Component {
                   </div>
                   <input
                     type="password"
+<<<<<<< HEAD
                     id="pass"
                     className="form-control"
                     placeholder="Confirm Password"
@@ -86,6 +131,18 @@ class Signup extends React.Component {
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
+=======
+                    id="confirmPass"
+                    className="form-control"
+                    placeholder="Confirm Password"
+                    required
+                    value={this.state.confirmPassword}
+                    onChange= { (e) => {this.setState({ confirmPassword: e.target.value })}}
+                  />
+                </div>
+                <div className="text-center mb-3 mt-3">
+                  <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
+>>>>>>> upstream/master
                     Sign up
                   </button>
                 </div>
@@ -102,9 +159,31 @@ class Signup extends React.Component {
             </form>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+          {success && <div className="alert alert-success alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> Please confirm your email address!
+          </div>}
+
+          {success == false && <div className="alert alert-success alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            {message}
+          </div>}
+
+          {emptymessage && <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Please!</strong> fill the form!
+          </div>}
+
+          {equalmessage && <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">&times;</button>
+            <strong>Password </strong> does not match the confirm password.!
+          </div>}
+>>>>>>> upstream/master
       </div>
     );
   }
 }
 
-export default Signup;
+export default withErrorBoundary(Signup);

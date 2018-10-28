@@ -5,10 +5,10 @@ import {
 
 describe('Testimonial Selectors', () => {
   describe('selectTestimonialState', () => {
-    test('should select the TestimonialReducer state', () => {
+    test('should select the testimonialReducer state', () => {
       const testimonialState = [];
       const mockedState = {
-        TestimonialReducer: testimonialState,
+        testimonialReducer: testimonialState,
       };
 
       expect(selectTestimonialState(mockedState)).toEqual(testimonialState);
@@ -27,7 +27,7 @@ describe('Testimonial Selectors', () => {
         { data },
       ];
       const mockedState = {
-        TestimonialReducer: testimonialState,
+        testimonialReducer: testimonialState,
       };
       expect(selector(mockedState)).toEqual(data);
     });
@@ -35,7 +35,7 @@ describe('Testimonial Selectors', () => {
     test('should return empty array if Testimonial data does not exist', () => {
       const testimonialState = [];
       const mockedState = {
-        TestimonialReducer: testimonialState,
+        testimonialReducer: testimonialState,
       };
       expect(selector(mockedState)).toEqual([]);
     });

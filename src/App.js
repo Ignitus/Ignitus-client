@@ -1,24 +1,12 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Navigation from './ignitus-Navigation';
-import Footer from './ignitus-Footer';
-import Contributors from './ignitus-Contributors';
-import GetStarted from './ignitus-GetStarted';
-import Introduction from './ignitus-Introduction';
-import Testimonial from './ignitus-Testimonial';
-import CardLayout from './ignitus-WhatWeDo';
-import Partner from './ignitus-Partners';
+import {withErrorBoundary} from './ignitus-Internals';
+import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes';
+import { PublicRoutes } from './ignitus-Routes/publicRoutes';
 
-import AboutUs from './ignitus-About';
-import LoginProfessor from './ignitus-Login';
-import SignupProfessor from './ignitus-SignUp';
-import LoginStudent from './ignitus-StudentLogin';
-import SignupStudent from './ignitus-StudentSignUp';
-import loader from './Assets/Images/loader.gif';
-import data from './Data/data-card-layout';
-import './App.css';
-
+import loader from './ignitus-Assets/Images/loader.gif';
+import './App.scss';
 
 class App extends Component {
   constructor() {
@@ -27,20 +15,23 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ isLoading: false }), 3000);
+    setTimeout(() => this.setState({ isLoading: false }), 2000);
   }
 
   render() {
     const { state: { isLoading } } = this;
     if (isLoading) {
       return (
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto ">
-          <img src={loader} className="_loader" />
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
+          <div className="loader">
+            <img src={loader} alt="Loading..." />
+          </div>
         </div>
       );
     }
     return (
       <div className="content-container">
+<<<<<<< HEAD
         <header>
           <Navigation />
         </header>
@@ -67,9 +58,15 @@ class App extends Component {
           <Route path="/contributors" component={Contributors} />
         </Switch>
         <Footer />
+=======
+        <Switch>
+          <Route path="/dashboard" component={ProtectedRoutes} />
+          <Route path="/" component={PublicRoutes} />
+        </Switch>
+>>>>>>> upstream/master
       </div>
     );
   }
 }
 
-export default App;
+export default withErrorBoundary(App);

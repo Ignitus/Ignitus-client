@@ -1,0 +1,93 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.social-btn .btn i {
+    margin: 4px 15px  0 5px;
+    min-width: 15px;
+}
+
+.or-seperator {
+    margin: 20px auto 10px;
+    text-align: center;
+    border-top: $ignite-border-default;
+    width: 30%;
+
+    i {
+      padding: 0 10px;
+      background: $ignite-background-color-white;
+      position: relative;
+      top: -11px;
+      z-index: 1;
+    }
+}
+
+.text-secondary {
+    color: $ignite-text-color-default;
+    text-align: center;
+}
+
+
+._form {
+    background: $ignite-color-white;
+    height: 585px;
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    color: black;
+    padding-top: 1px;
+}
+
+.btn-block {
+    width: 50% !important;
+}
+
+
+._img-css {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+._linkedin {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+._input {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+._checkbox {
+    margin-left: 70px;
+    color: white;
+}
+
+.btn-rounded {
+    border-radius: 25px !important;
+}
+
+._link{
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: grey;
+    }
+}
+
+._vertical{
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 540px) {
+    ._login-form {
+        width: 25rem;
+    }
+}

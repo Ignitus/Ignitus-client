@@ -1,11 +1,16 @@
 
+
+
 import * as t from './actionTypes';
 
-const TestimonialReducer = (state = [], action) => {
+const studentLoginReducer = (state = {}, action) => {
   switch (action.type) {
-    case t.SET_TESTIMONIAL_DATA:
-      const state = state.concat(action.data);
-      return state;
+    case t.LOG_IN_RESPONSE:
+      return Object.assign({}, state, {isFetching: false}, action.data)
+      break;
+
+    case t.LOG_IN_REQUEST:
+      return Object.assign({}, state, {isFetching: true})
       break;
 
     default:
@@ -13,4 +18,4 @@ const TestimonialReducer = (state = [], action) => {
   }
 };
 
-export default TestimonialReducer;
+export default studentLoginReducer;

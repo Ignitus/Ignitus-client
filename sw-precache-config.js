@@ -1,13 +1,14 @@
 module.exports = {
-  staticFileGlobs: [
-    'build/static/css/**.css',
-    'build/static/js/**.js'
-  ],
+  staticFileGlobs: ['build/index.html', 'build/static/css/**.css', 'build/static/js/**.js'],
   swFilePath: './build/service-worker.js',
   stripPrefix: 'build/',
-  handleFetch: false,
-  runtimeCaching: [{
-    urlPattern: /this\\.is\\.a\\.regex/,
-    handler: 'networkFirst'
-  }]
-}
+  runtimeCaching: [
+    {
+      urlPattern: /this\\.is\\.a\\.regex/,
+      handler: 'networkFirst',
+    },
+  ],
+  navigateFallback: '/index.html',
+  navigateFallbackWhitelist: [/^(?!\/__)/],
+  importScripts: ['push-handler.js'],
+};

@@ -1,7 +1,7 @@
 
 import * as t from './actionTypes';
 
-const TestimonialReducer = (state = [], action) => {
+const testimonialReducer = (state = [], action) => {
   switch (action.type) {
     case t.SET_TESTIMONIAL_DATA:
       const newState = state.concat(action.data);
@@ -13,4 +13,4 @@ const TestimonialReducer = (state = [], action) => {
   }
 };
 
-export default TestimonialReducer;
+export default testimonialReducer;

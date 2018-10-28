@@ -2,27 +2,49 @@
 
 # Ignitus-client-side
 
-Client side development Ignitus.
+<a href="https://www.patreon.com/teamignitus">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
+
+
 ## Client-Side
 Written in universal JavaScript
-* ReactJS
-* Redux
-* Redux-Sagas
-* ESLINT
-* Istanbul
-* JEST
-* Reselect
-* Flow
-* Prop-Types
+
+* react
+* redux
+* travis-ci
+* heroku
+* prop-types
+* redux-thunk
+* docker-container
+* redux-sagas
+* flow
+* reselect
+* jest-tests
+* istanbul
+* ignitus-rest-api
+* heroku-pipeline
+* airbnb-eslint
+* react-router-v4
+* bootstrap4
+* enzyme-testing
+* service-worker-precache
+* sass
+* lazy-loading(React-lodable)
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
+
+
+## Bots
+* Netlify
+* dependabot
+* welcomebot
+* labelsbot
 
 ## Server-Side
 * Node.js
@@ -31,7 +53,11 @@ Written in universal JavaScript
 * Mongoose
 * MongoDB
 * Docker
+* Redis
 * TRAVIS CI
+* CodeCov
+
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
 ## About Ignitus
 
@@ -45,6 +71,8 @@ We are honored to have among us more than admirable leaders in the fight for equ
 You can check out this [YouTube Channel](https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw) to get an overview of what we are all about. 
 
 We are organizing the following programs on a global scale where students can participate remotely to improve their skills and get real-world software development experience-
+
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 ## Ignitus Scholar
 
@@ -82,6 +110,7 @@ If you want to help Ignitus as an Intern please follow the [Link](https://angel.
 
 And the best part is that Ignitus is Non-Profit Everyone is welcome to the community.
 
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
 
 Few Blogs Posts on Ignitus that can help you better Understand it's Mission :
 * [Ignitus — Connecting Students with Opportunities](https://medium.com/ignitus/ignitus-connecting-students-with-opportunities-61f08e19861c)
@@ -95,21 +124,55 @@ Ignitus YouTube -
 * [Ignitus Scholar Presentation](https://www.youtube.com/watch?v=P_01fzigkPs&t=270s)
 * [Ignitus (A Non-Profit Organization)](https://www.youtube.com/watch?v=2IU_Paf2nF0)
 * [Culture At Ignitus](https://www.youtube.com/watch?v=NhU-9cNM1h0)
+* [Introducing Ignitus](https://www.youtube.com/watch?v=Q6s7pQcFmMc)
 
 Ignitus Quora - 
 * [What are Ignitus and WooTech about?](https://www.quora.com/What-are-Ignitus-and-WooTech-about)
 * [What is Ignitus and Ignitus Scholars?](https://www.quora.com/What-is-Ignitus-and-Ignitus-Scholars)
 
-This Repository is powered by 
+##
 
-![alt tag](https://travis-ci.com/images/logos/TravisCI-Full-Color-light.png
-)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
-![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225
-)
+![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
+![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
+![alt tag](https://cdn-images-1.medium.com/max/800/1*jxFIFA8WI8TkMmdbOorOsA.png)
 
-![alt tag](https://cdn-images-1.medium.com/max/788/1*lUNmBw_oyS2ADWqZs4DLOA.png)
 
-### For Installation kindly refer [this](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/CONTRIBUTION.md)
+For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
 
-### Thank You!
+
+## Contributors
+
+[![Paarmita Bhargava](https://github.com/Paarmita.png?size=100)](https://github.com/Paarmita) | [![Bill Hefty](https://github.com/bhefty.png?size=100)](https://github.com/bhefty) | [![Brian Fernando ](https://github.com/BrianCortes.png?size=100)](https://github.com/BrianCortes) | [![Amit Mangotra](https://github.com/amitmangotra.png?size=100)](https://github.com/amitmangotra) | [![Fabricio Augusto](https://github.com/fabricionaweb.png?size=100)](https://github.com/fabricionaweb) | [![My Trang Hong](https://github.com/meyfleur.png?size=100)](https://github.com/meyfleur)
+---|---|---|---|---|---
+[Paarmita Bhargava](https://github.com/Paarmita) | [Bill Hefty](https://github.com/bhefty) | [Brian Fernando](https://github.com/BrianCortes) | [Amit Mangotra](https://github.com/amitmangotra) | [Fabricio Augusto](https://github.com/fabricionaweb) | [My Trang Hong](https://github.com/meyfleur)
+
+
+[![Sid Bentifraouine](https://github.com/sidbentifraouine.png?size=100)](https://github.com/sidbentifraouine) | [![Abhinav Keshav](https://github.com/shoutoutloud.png?size=100)](https://github.com/shoutoutloud) | [![Trevor Kirpaul](https://github.com/trevorkirpaul.png?size=100)](https://github.com/trevorkirpaul) | [![Tucker Blackwell](https://github.com/trblackw.png?size=100)](https://github.com/trblackw) | [![Nirmal Kumar](https://github.com/nirmalks.png?size=100)](https://github.com/nirmalks) | [![Martin Hofmann](https://github.com/Martskin.png?size=100)](https://github.com/Martskin)
+---|---|---|---|---|---
+[Sid Bentifraouine](https://github.com/sidbentifraouine) | [Abhinav Keshav](https://github.com/shoutoutloud) | [Trevor Kirpaul](https://github.com/trevorkirpaul) | [Tucker Blackwell](https://github.com/trblackw) | [Nirmal Kumar K](https://github.com/nirmalks) | [Martin Hofmann](https://github.com/Martskin)
+
+
+[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |	[![paperlambda](https://github.com/paperlambda.png?size=100)](https://github.com/paperlambda)
+---|---|---|---
+[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda)
+
+* Thank You All For Your Support!!
+
+#
+
+### Give this Project a Star :star:
+
+If you liked working on this project, please share this project as much 
+as you can and star this project to help as many people in open source as you can.
+
+
+:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+
+
+#
+
+### License
+MIT © IGNITUS
+

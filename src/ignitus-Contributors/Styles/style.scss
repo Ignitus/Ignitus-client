@@ -1,0 +1,42 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.logoCss {
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+.heart {
+  color: $ignite-color-red-47;
+}
+
+.studentsResearchers {
+  font-size: $ignite-font-size-md;
+  font-weight: $ignite-font-weight-light;
+  text-align: -webkit-center;
+}
+
+.contributor {
+  font-weight: $ignite-font-weight-extra-bold;
+  font-size: $ignite-font-size-lg;
+  color: $ignite-text-color-heading;
+}
+
+.centered-image {
+  vertical-align:middle;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  .logoCss {
+    /* Prevent different heights for each logos */
+    height: 100px;
+    img {
+      max-width: 100%;
+      height: 75%;
+    }
+  }
+}

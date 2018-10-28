@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../Assets/Images/Logos/black_logo.png';
-import '../Styles/style.css';
+import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+
 
 const Navigation = () => (
   <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a className="navbar-brand" href="#">
+    <HashLink className="navbar-brand" to="/#">
       <img src={logo} width="40" height="40" alt="logo" />
-    </a>
+    </HashLink>
     <button
       className="navbar-toggler"
       type="button"
@@ -25,9 +25,9 @@ const Navigation = () => (
         <li className="nav-item active">
           <HashLink to="/#">
             <span className="nav-link">
-              Home 
-{' '}
-<span className="sr-only">(current)</span>
+              Home
+              {' '}
+              <span className="sr-only">(current)</span>
             </span>
           </HashLink>
         </li>
@@ -84,15 +84,16 @@ const Navigation = () => (
           </div>
         </li>
         <li className="nav-item dropdown">
-          <span
+          <a
             className="nav-link dropdown-toggle"
+            href="#"
             id="navbarDropdownMenuLink"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Sign up
-          </span>
+          </a>
           <div
             className="dropdown-menu dropdown-menu-right"
             aria-labelledby="navbarDropdownMenuLink"

@@ -1,0 +1,67 @@
+//Shared Ignitus design tokens/reusable variables
+//namespaced as 'ignite-'.
+
+//Colors
+// The number at the end of the color variable names are derived
+// from the 'l' lightness from the color's HSL value
+
+// black/white
+$ignite-color-black: #000000;
+$ignite-color-white: #ffffff;
+
+// neutral
+$ignite-color-neutral-6: #111111;
+$ignite-color-neutral-22: #343a40;
+$ignite-color-neutral-50: #808080;
+$ignite-color-neutral-53: #888888;
+$ignite-color-neutral-60: #999999;
+$ignite-color-neutral-80: #cccccc;
+$ignite-color-neutral-85: #d9d9d9;
+$ignite-color-neutral-95: #f3f3f2;
+
+// blue
+$ignite-color-blue-20: #0d0465;
+$ignite-color-blue-36: #0275b6;
+$ignite-color-blue-24: #192b65;
+$ignite-color-blue-97: #f1f9fe;
+
+// red
+$ignite-color-red-47: #c52e32;
+
+// green
+$ignite-color-green-40: #28a745;
+
+//Abstract color values to meaningful, semantic names
+// background colors
+$ignite-background-color-white: $ignite-color-white;
+$ignite-background-color-light: $ignite-color-neutral-95;
+
+// text colors
+$ignite-text-color-default: $ignite-color-black;
+$ignite-text-color-brand  : $ignite-color-blue-24;
+$ignite-text-color-heading: $ignite-color-blue-20;
+
+// border colors
+$ignite-border-color-default: $ignite-color-black;
+
+// border
+$ignite-border-default: 1px solid $ignite-border-color-default;
+
+//Font
+// font family
+$ignite-font-family-secondary: 'Roboto', arial, sans-serif;
+
+// font weight
+$ignite-font-weight-light: 300;
+$ignite-font-weight-normal: 400;
+$ignite-font-weight-medium: 500;
+$ignite-font-weight-bold: 600;
+$ignite-font-weight-extra-bold: 800;
+
+// font size
+$ignite-font-size-xs: 14px;
+$ignite-font-size-sm: 16px;
+$ignite-font-size-md: 22px;
+$ignite-font-size-lg: 36px;
+$ignite-font-size-xl: 50px;
+$ignite-font-size-xxl: 60px;

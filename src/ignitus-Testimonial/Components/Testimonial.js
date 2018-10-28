@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func, array 
+ string, number, shape, func,
 } from 'prop-types';
-import '../Styles/style.css';
-import axios from 'axios';
-import { API_URL } from '../constants';
+import shortid from 'shortid';
+import { withErrorBoundary } from '../../ignitus-Internals';
+
+import '../Styles/style.scss';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>
@@ -88,20 +89,18 @@ class Testimonial extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { activeIndex } = this.state;
-
-    if (nextState.activeIndex !== activeIndex) {
+    if (nextState.activeIndex !== this.state.activeIndex) {
       return true;
     }
     return false;
   }
 
-   componentWillUnmount() {
+  componentWillUnmount() {
     clearInterval(this.interval);
   }
 
   getData() {
-    this.props.get_testimonial_data();
+    this.props.getTestimonialData();
   }
 
   timer() {
@@ -170,7 +169,7 @@ class Testimonial extends Component {
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
                 <CarouselSlide
-                    key={index}
+                    key={shortid.generate()}
                     index={index}
                     activeIndex={activeIndex}
                     slide={slide}
@@ -182,7 +181,7 @@ class Testimonial extends Component {
             {this.props.testimonialData.length > 0
               ? this.props.testimonialData.map((slide, index) => (
                 <CarouselIndicator
-                    key={index}
+                    key={shortid.generate()}
                     index={index}
                     activeIndex={activeIndex}
                     isActive={activeIndex === index}
@@ -223,4 +222,4 @@ CarouselRightArrow.propTypes = {
   onClick: func.isRequired,
 };
 
-export default Testimonial;
+export default withErrorBoundary(Testimonial);

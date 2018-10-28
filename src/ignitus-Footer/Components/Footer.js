@@ -1,8 +1,10 @@
 import React from 'react';
-import '../Styles/style.css';
+import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/Images/Logos/black_logo.png';
+import {withErrorBoundary} from '../../ignitus-Internals'
+import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+
 
 // resolved
 
@@ -54,6 +56,8 @@ const Footer = () => (
             <li>
               <a
                 className="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.quora.com/What-are-Ignitus-and-WooTech-about"
               >
                 Ignitus Woo-Tech
@@ -62,6 +66,8 @@ const Footer = () => (
             <li>
               <a
                 className="link"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7"
               >
                 Ignitus Scholar
@@ -70,7 +76,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col-md-2 mx-auto _pd-left">
+        <div className="col-md-2 mx-auto pd-left">
           <ul className="list-unstyled">
             <li>
               <img src={logo} className="img-responsive img-css" alt="logo" />
@@ -145,7 +151,7 @@ const Footer = () => (
     <ul className="list-unstyled list-inline text-center ">
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.facebook.com/Ignitus.org/"
@@ -155,7 +161,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://twitter.com/ignitus_org"
@@ -165,7 +171,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://angel.co/ignitus-2"
@@ -175,7 +181,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="http://bit.do/join-ignitus"
@@ -185,7 +191,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/company/13733583/admin/updates/"
@@ -195,7 +201,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/Ignitus"
@@ -205,7 +211,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://medium.com/@social_63397"
@@ -215,7 +221,7 @@ const Footer = () => (
       </li>
       <li className="list-inline-item">
         <a
-          className="btn-floating mx-1 link _color"
+          className="btn-floating mx-1 link social-icon"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"
@@ -231,4 +237,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
+export default withErrorBoundary(Footer);

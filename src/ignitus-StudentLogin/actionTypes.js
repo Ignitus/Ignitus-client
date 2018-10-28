@@ -1,2 +1,4 @@
 
-export const SET_TESTIMONIAL_DATA = 'SET_TESTIMONIAL_DATA';
+
+export const LOG_IN_REQUEST  = 'LOG_IN_REQUEST';
+export const LOG_IN_RESPONSE = 'LOG_IN_RESPONSE'
