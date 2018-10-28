@@ -4,12 +4,9 @@ import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-<<<<<<< HEAD
-=======
 import _ from 'lodash';
 import '../Styles/style.scss';
 
->>>>>>> upstream/master
 class Signup extends React.Component {
   constructor(props) {
     super(props);
@@ -52,11 +49,7 @@ class Signup extends React.Component {
               <p className="mb-5 ">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
               <p>
-<<<<<<< HEAD
-                <a href="/signup" className="text-center _link">
-=======
                 <a href="/signup/professor" className="text-center _link">
->>>>>>> upstream/master
                   {' '}
                   I am a Professor
                 </a>
@@ -67,13 +60,8 @@ class Signup extends React.Component {
             <div className="my-4">
               <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
             </div>
-<<<<<<< HEAD
-            <form>
-              <div class="px-4">
-=======
             <form >
               <div className="px-4">
->>>>>>> upstream/master
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
                     <span className="input-group-text">
@@ -85,14 +73,9 @@ class Signup extends React.Component {
                     id="email"
                     className="form-control"
                     placeholder="Email"
-<<<<<<< HEAD
-                    value={this.state.value}
-                    onChange={this.handleChange}
-=======
                     required
                     value={this.state.email}
                     onChange= { (e) => {this.setState({ email: e.target.value })}}
->>>>>>> upstream/master
                   />
                 </div>
                 <div className="input-group form-group">
@@ -107,11 +90,8 @@ class Signup extends React.Component {
                     className="form-control"
                     placeholder="Password"
                     required
-<<<<<<< HEAD
-=======
                     value={this.state.password}
                     onChange= { (e) => {this.setState({ password: e.target.value })}}
->>>>>>> upstream/master
                   />
                 </div>
                 <div className="input-group form-group">
@@ -122,16 +102,6 @@ class Signup extends React.Component {
                   </div>
                   <input
                     type="password"
-<<<<<<< HEAD
-                    id="pass"
-                    className="form-control"
-                    placeholder="Confirm Password"
-                    required
-                  />
-                </div>
-                <div className="text-center mb-3 mt-3">
-                  <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
-=======
                     id="confirmPass"
                     className="form-control"
                     placeholder="Confirm Password"
@@ -142,7 +112,6 @@ class Signup extends React.Component {
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
->>>>>>> upstream/master
                     Sign up
                   </button>
                 </div>
@@ -159,8 +128,6 @@ class Signup extends React.Component {
             </form>
           </div>
         </div>
-<<<<<<< HEAD
-=======
           {success && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Success!</strong> Please confirm your email address!
@@ -180,7 +147,6 @@ class Signup extends React.Component {
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Password </strong> does not match the confirm password.!
           </div>}
->>>>>>> upstream/master
       </div>
     );
   }

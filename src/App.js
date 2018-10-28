@@ -31,39 +31,10 @@ class App extends Component {
     }
     return (
       <div className="content-container">
-<<<<<<< HEAD
-        <header>
-          <Navigation />
-        </header>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <div className="content">
-                <Introduction />
-                <CardLayout data={data} />
-                <Contributors />
-                <Partner.containers.partnerContainer />
-                <Testimonial.containers.TestimonialContainer />
-                <GetStarted />
-              </div>
-            )}
-          />
-          <Route path="/aboutus" component={AboutUs} />
-          <Route path="/login/professor" component={LoginProfessor} />
-          <Route path="/signup/professor" component={SignupProfessor} />
-          <Route path="/login/student" component={LoginStudent} />
-          <Route path="/signup/student" component={SignupStudent} />
-          <Route path="/contributors" component={Contributors} />
-        </Switch>
-        <Footer />
-=======
         <Switch>
           <Route path="/dashboard" component={ProtectedRoutes} />
           <Route path="/" component={PublicRoutes} />
         </Switch>
->>>>>>> upstream/master
       </div>
     );
   }

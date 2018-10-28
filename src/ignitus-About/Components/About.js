@@ -1,12 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import '../Styles/style.css';
-
-const About = () => (
-  <div className="container _align">
-    <div className="_about">About Us</div>
-    <div className="_aboutus">
-=======
 import '../Styles/style.scss';
 
 import {withErrorBoundary} from '../../ignitus-Internals';
@@ -16,7 +8,6 @@ const About = () => (
   <div className="container align">
     <div className="about">About Us</div>
     <div className="aboutus">
->>>>>>> upstream/master
       <p>
         Ignitus (A Non-Profit Organization for the welfare of student
         community ) that helps students and professionals get handpicked

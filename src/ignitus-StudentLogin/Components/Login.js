@@ -3,17 +3,12 @@ import _ from 'lodash';
 import { Redirect, Route } from 'react-router-dom';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-<<<<<<< HEAD
-import loginImg from '../../Assets/Images/login.png';
-import validate from '../../helpers/validate';
-=======
 
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import '../Styles/style.scss';
 
->>>>>>> upstream/master
 
 class Login extends Component {
 
@@ -109,36 +104,14 @@ class Login extends Component {
               </div>
 
               <div className="text-center mb-3 mt-3">
-<<<<<<< HEAD
-                <button type="submit" 
-                className="btn btn-success btn-rounded px-3 py-2"                
-                onClick={this.formSubmitHandler}
-                disabled={!this.state.formIsValid}
-                >
-                  Log in
-                </button>
-=======
                   <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
                     Log in
                   </button>
->>>>>>> upstream/master
               </div>
 
               <div className="_or-seperator">
                 <i className="text-black-50">or log in with</i>
               </div>
-<<<<<<< HEAD
-
-              <div className="mb-4">
-                <button className="btn btn-primary btn-rounded mx-auto btn-block">
-                  <i className="fa fa-linkedin mr-3" />
-                  Linked-in
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-=======
 
               <div className="mb-4">
                 <button className="btn btn-primary btn-rounded mx-auto btn-block">
@@ -170,15 +143,10 @@ class Login extends Component {
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             <strong>Please!</strong> fill the form!
           </div>}
->>>>>>> upstream/master
       </div>
     )
   }
 
 }
 
-<<<<<<< HEAD
-export default Login;
-=======
 export default withErrorBoundary(Login);
->>>>>>> upstream/master

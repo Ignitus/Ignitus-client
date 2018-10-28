@@ -2,27 +2,17 @@ import React from 'react';
 import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-<<<<<<< HEAD:src/ignitus-Login/Components/login.js
-=======
 import '../Styles/style.scss';
 
->>>>>>> upstream/master:src/ignitus-ProfessorLogin/Components/login.js
 const Login = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="container mt-5 col-xs-6">
         <div className="my-5">
-<<<<<<< HEAD:src/ignitus-Login/Components/login.js
-          <img className="img-fluid _img mx-auto d-block" src={logo} />
-        </div>
-        <form>
-          <div class="_login-form mx-auto">
-=======
           <img className="img-fluid _img mx-auto d-block" src={logo} alt="Ignitus" />
         </div>
         <form>
           <div className="_login-form mx-auto">
->>>>>>> upstream/master:src/ignitus-ProfessorLogin/Components/login.js
             <div className="input-group form-group">
               <div className="input-group-prepend">
                 <span className="input-group-text">
