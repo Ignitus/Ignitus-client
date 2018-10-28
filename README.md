@@ -5,10 +5,6 @@
 Client side development Ignitus.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
@@ -37,6 +33,9 @@ Written in universal JavaScript
 * sass
 * lazy-loading(React-lodable)
 
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
+
+
 ## Bots
 * Netlify
 * dependabot
@@ -54,6 +53,8 @@ Written in universal JavaScript
 * TRAVIS CI
 * CodeCov
 
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+
 ## About Ignitus
 
 I’d like to introduce you to Ignitus (A Non-Profit Organization for the welfare of student community ) that helps students and professionals get handpicked top-quality global research and industrial internships, for free! The students participate in projects and training programs supervised by our experts.
@@ -66,6 +67,8 @@ We are honored to have among us more than admirable leaders in the fight for equ
 You can check out this [YouTube Channel](https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw) to get an overview of what we are all about. 
 
 We are organizing the following programs on a global scale where students can participate remotely to improve their skills and get real-world software development experience-
+
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 ## Ignitus Scholar
 
@@ -103,6 +106,7 @@ If you want to help Ignitus as an Intern please follow the [Link](https://angel.
 
 And the best part is that Ignitus is Non-Profit Everyone is welcome to the community.
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 Few Blogs Posts on Ignitus that can help you better Understand it's Mission :
 * [Ignitus — Connecting Students with Opportunities](https://medium.com/ignitus/ignitus-connecting-students-with-opportunities-61f08e19861c)
@@ -153,6 +157,7 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 
 * Thank You All For Your Support!!
 
+#
 
 ### Give this Project a Star :star:
 
@@ -161,6 +166,9 @@ as you can and star this project to help as many people in open source as you ca
 
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+
+
+#
 
 ### License
 MIT © IGNITUS
