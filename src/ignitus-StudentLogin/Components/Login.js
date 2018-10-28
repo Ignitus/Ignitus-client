@@ -14,7 +14,7 @@ class Login extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', emptymessage:false};
+    this.state = { email: '', password: '', emptymessage:false, success: false};
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -28,7 +28,7 @@ class Login extends Component {
     }
 
     this.props.logInRequest(email,password)
-    this.setState({email: '', password: '',emptymessage: false})
+    this.setState({email: '', password: '',emptymessage: false, success: true})
     console.log('history',this)
   }
 
@@ -45,7 +45,7 @@ class Login extends Component {
       );
     }
 
-     if(success)
+     if(this.state.success)
         return <Redirect to="/dashboard" />
 
     return (
@@ -133,7 +133,7 @@ class Login extends Component {
           </div>
         </div>
 
-          {success == false && <div className="alert alert-success alert-dismissible margin-Top">
+          {this.state.success == false && <div className="alert alert-success alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">&times;</button>
             {message}
           </div>}
