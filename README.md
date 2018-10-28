@@ -106,7 +106,7 @@ If you want to help Ignitus as an Intern please follow the [Link](https://angel.
 
 And the best part is that Ignitus is Non-Profit Everyone is welcome to the community.
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
 
 Few Blogs Posts on Ignitus that can help you better Understand it's Mission :
 * [Ignitus — Connecting Students with Opportunities](https://medium.com/ignitus/ignitus-connecting-students-with-opportunities-61f08e19861c)
@@ -125,7 +125,9 @@ Ignitus Quora -
 * [What are Ignitus and WooTech about?](https://www.quora.com/What-are-Ignitus-and-WooTech-about)
 * [What is Ignitus and Ignitus Scholars?](https://www.quora.com/What-is-Ignitus-and-Ignitus-Scholars)
 
-This Repository is powered by 
+##
+
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
 ![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
