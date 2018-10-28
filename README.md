@@ -120,6 +120,7 @@ Ignitus YouTube -
 * [Ignitus Scholar Presentation](https://www.youtube.com/watch?v=P_01fzigkPs&t=270s)
 * [Ignitus (A Non-Profit Organization)](https://www.youtube.com/watch?v=2IU_Paf2nF0)
 * [Culture At Ignitus](https://www.youtube.com/watch?v=NhU-9cNM1h0)
+* [Introducing Ignitus](https://www.youtube.com/watch?v=Q6s7pQcFmMc)
 
 Ignitus Quora - 
 * [What are Ignitus and WooTech about?](https://www.quora.com/What-are-Ignitus-and-WooTech-about)
