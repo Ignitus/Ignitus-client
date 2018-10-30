@@ -36,6 +36,7 @@ Written in universal JavaScript
 * service-worker-precache
 * sass
 * lazy-loading(React-lodable)
+* PWA (Progressive Web Application)
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
 
