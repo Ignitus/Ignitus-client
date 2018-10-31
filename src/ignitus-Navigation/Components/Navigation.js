@@ -23,7 +23,7 @@ const Navigation = () => (
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="nav navbar-nav">
         <li className="nav-item active">
-          <HashLink to="/#">
+          <HashLink smooth to="/#">
             <span className="nav-link">
               Home
               {' '}
@@ -32,12 +32,12 @@ const Navigation = () => (
           </HashLink>
         </li>
         <li className="nav-item">
-          <HashLink to="/#what-we-do">
+          <HashLink smooth to="/#what-we-do">
             <span className="nav-link">What we provide?</span>
           </HashLink>
         </li>
         <li className="nav-item">
-          <HashLink to="/#contributors">
+          <HashLink smooth to="/#contributors">
             <span className="nav-link">Contributors</span>
           </HashLink>
         </li>
