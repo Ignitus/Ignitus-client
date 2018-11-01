@@ -9,6 +9,8 @@
 // override bootstrap primary color (buttons, etc)
 $primary: $ignite-color-blue-36;
 $success: $ignite-color-green-40;
+$body-bg: $ignite-color-neutral-95;
+$font-family-base: 'Raleway';
 
 // import bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
