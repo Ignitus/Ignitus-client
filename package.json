@@ -42,9 +42,12 @@
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "test:update": "npm test --updateSnapshot"
+    "test:update": "npm test --updateSnapshot",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "devDependencies": {
+    "docz": "^0.12.9",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "flow-bin": "^0.82.0",
