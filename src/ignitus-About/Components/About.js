@@ -11,14 +11,14 @@ const About = () => (
       <div className="container">
         <div className="row">
           <div className="col-md">
-            <img className="mw-100 p-5" src="/images/about/about-us.png" alt="aboutus" />
+            <img className="mw-100 p-5" src="https://storage.googleapis.com/ignitus/Assets/about-us.png" alt="aboutus" />
           </div>
           <div className="col-md about bg-white p-4">
             <div className="title text-center mb-3">About Us</div>
             <div className="intro-text">
               <p>
                 Ignitus (A Non-Profit Organization for the welfare of student
-                community ) that helps students and professionals get handpicked
+                community) that helps students and professionals get handpicked
                 top-quality global research and industrial internships, for free! The
                 students participate in projects and training programs supervised by
                 our experts.

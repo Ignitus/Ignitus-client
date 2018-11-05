@@ -9,7 +9,7 @@ import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
 // resolved
 
 const Footer = () => (
-  <footer className="bg-dark text-white mt-4">
+  <footer className="footer-bg text-white mt-4">
     <div className="container text-center text-md-left">
       <div className="row">
         <hr className="clearfix w-100 d-md-none" />

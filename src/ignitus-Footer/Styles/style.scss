@@ -2,17 +2,18 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 
 .link {
-	color: $ignite-color-neutral-50;
+	color: $ignite-color-white;
+	font-size:  $ignite-font-size-sm;
 
   &:hover {
-    color: $ignite-color-white;
+    color: $ignite-color-yellow;
     text-decoration: none;
   }
 }
 
 .heading {
-	color: $ignite-color-neutral-85;
-	font-weight: $ignite-font-weight-medium;
+	color: $ignite-color-white;
+	font-weight: $ignite-font-weight-bold;
 }
 
 .img-css {
@@ -28,4 +29,8 @@
 
 .pd-left {
 	padding-left: 22px;
+}
+
+.footer-bg {
+	background-color: $ignite-color-blue-bg;
 }

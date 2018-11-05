@@ -6,8 +6,14 @@
 // from the 'l' lightness from the color's HSL value
 
 // black/white
-$ignite-color-black: #000000;
 $ignite-color-white: #ffffff;
+$ignite-color-gray-10: #E0E0E0;
+$ignite-color-gray-12: #C4C4C4;
+$ignite-color-gray-15: #9C9C9C;
+$ignite-color-gray-18: #4D4D4D;
+$ignite-color-black-20: #2D2D2D;
+$ignite-color-black: #000000;
+
 
 // neutral
 $ignite-color-neutral-6: #111111;
@@ -18,29 +24,42 @@ $ignite-color-neutral-60: #999999;
 $ignite-color-neutral-80: #cccccc;
 $ignite-color-neutral-85: #d9d9d9;
 $ignite-color-neutral-95: #f3f3f2;
+$ignite-color-neutral-97: #F7F7F7;
 
 // blue
 $ignite-color-blue-20: #000E8C;
 $ignite-color-blue-36: #0275b6;
 $ignite-color-blue-24: #192b65;
 $ignite-color-blue-97: #f1f9fe;
+$ignite-color-blue-bg: #000066;
+
 
 // red
 $ignite-color-red-47: #c52e32;
+$ignite-color-red-50: #FF4444;
 
 // green
 $ignite-color-green-40: #28a745;
 
+//yellow
+$ignite-color-yellow: #F9BF64;
+
 //Abstract color values to meaningful, semantic names
 // background colors
 $ignite-background-color-white: $ignite-color-white;
-$ignite-background-color-light: $ignite-color-neutral-95;
+$ignite-background-color-light: $ignite-color-neutral-97;
 $ignite-body-background: #e5e5e5;
 
+//secondary background
+$ignite-background-color-secondary: $ignite-color-yellow;
+
 // text colors
-$ignite-text-color-default: $ignite-color-black;
-$ignite-text-color-brand  : $ignite-color-blue-24;
+$ignite-text-color-default: $ignite-color-black-20;
+$ignite-text-color-brand  : $ignite-color-blue-bg;
 $ignite-text-color-heading: $ignite-color-blue-20;
+
+//notification colors
+$ignite-notification: $ignite-color-red-50;
 
 // border colors
 $ignite-border-color-default: $ignite-color-black;
@@ -50,13 +69,15 @@ $ignite-border-default: 1px solid $ignite-border-color-default;
 
 //Font
 // font family
-$ignite-font-family-secondary: 'Roboto', arial, sans-serif;
+$ignite-font-family-default: 'Raleway', sans-serif;
+$ignite-font-family-secondry: 'Open Sans', sans-serif;
 
 // font weight
 $ignite-font-weight-light: 300;
 $ignite-font-weight-normal: 400;
 $ignite-font-weight-medium: 500;
-$ignite-font-weight-bold: 600;
+$ignite-font-weight-semibold: 600;
+$ignite-font-weight-bold: 700;
 $ignite-font-weight-extra-bold: 800;
 
 // font size
