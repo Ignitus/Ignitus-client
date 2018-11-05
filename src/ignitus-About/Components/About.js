@@ -54,8 +54,8 @@ const About = () => (
           </div>
         </div>
       </div>
+      <Team />
     </div>
-    <Team/>
   </React.Fragment>
 );
 
