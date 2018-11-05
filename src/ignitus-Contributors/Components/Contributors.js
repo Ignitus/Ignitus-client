@@ -22,7 +22,7 @@ const Contributors = () => {
 
   return (
     <section id="contributors">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 align mt-4">
+      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-center mt-4">
         <div className="contributor">Contributors</div>
         <div className="studentsResearchers">
           Made with

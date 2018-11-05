@@ -11,10 +11,10 @@ const Introduction = () => (
         <img className="img-fluid" src={resume} alt="resume" align="left" />
       </div>
       <div className="col-sm-12 col-md-5 col-lg-7">
-        <div className="intro align">Introducing</div>
-        <div className="ignitus align">Ignitus</div>
-        <div className="tagline align">Ignite Your resume</div>
-        <div className="content align">
+        <div className="intro text-center">Introducing</div>
+        <div className="ignitus text-center">Ignitus</div>
+        <div className="tagline text-center">Ignite Your resume</div>
+        <div className="content text-center">
           ‘Skyrocketing Your Career By Providing You The Best Global
           Opportunities.’
         </div>
