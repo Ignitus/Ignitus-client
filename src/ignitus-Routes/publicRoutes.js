@@ -39,7 +39,7 @@ const AboutUs = Loadable({
 
 export const PublicRoutes = (props) => { 
   return(
-      <div>
+      <React.Fragment>
           <Navigation.components.Navigation />
               <Switch>
                   <Route
@@ -63,6 +63,6 @@ export const PublicRoutes = (props) => {
                   <Route path="/signup/student" component={SignupStudent.containers.Signup} />
                </Switch>
           <Footer.components.Footer />
-      </div>
+      </React.Fragment>
   )
 }

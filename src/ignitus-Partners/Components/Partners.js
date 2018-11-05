@@ -21,7 +21,7 @@ const Partner = () => {
 
   return (
     <div id="partners">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 align mt-4">
+      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-center mt-4">
         <div className="contributor">Supporters & Partners</div>
         <div className="studentsResearchers">
           Supported with
@@ -34,7 +34,7 @@ const Partner = () => {
       </div>
 
       <div className="container">
-        <div className="row align-vertically">{html}</div>
+        <div className="row align-items-center">{html}</div>
       </div>
     </div>
   );

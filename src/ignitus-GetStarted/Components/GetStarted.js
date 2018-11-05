@@ -5,7 +5,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 
 
 const GetStarted = () => (
-  <div className="align container">
+  <div className="text-center container">
     <div className="started">
       Get started for free - join thousands of students and researchers already
       using Ignitus to share their knowledge, work together, and get amazing
