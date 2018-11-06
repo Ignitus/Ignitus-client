@@ -157,7 +157,7 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 
 [![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |	[![paperlambda](https://github.com/paperlambda.png?size=100)](https://github.com/paperlambda)
 ---|---|---|---
-[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda)
+[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda) | [Apoorv Taneja](https://github.com/plxity)
 
 * Thank You All For Your Support!!
 
