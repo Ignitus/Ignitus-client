@@ -3,7 +3,7 @@ import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import {withErrorBoundary} from '../../ignitus-Internals'
-import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+import { logo } from './Constants';
 
 
 // resolved
