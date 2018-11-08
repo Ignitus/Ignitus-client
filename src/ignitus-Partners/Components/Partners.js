@@ -34,7 +34,7 @@ const Partner = () => {
       </div>
 
       <div className="container">
-        <div className="row align-items-center">{html}</div>
+        <div className="row align-items-center card_row">{html}</div>
       </div>
     </div>
   );

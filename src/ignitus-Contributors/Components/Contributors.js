@@ -35,7 +35,7 @@ const Contributors = () => {
       </div>
 
       <div className="container">
-        <div className="row">{html}</div>
+        <div className="row card_row">{html}</div>
       </div>
     </section>
   );
