@@ -1,37 +1,36 @@
+import React, { Component } from "react";
+import { Redirect, Route } from "react-router-dom";
 
-import React, { Component}  from 'react';
-import { Redirect, Route } from 'react-router-dom';
-
-class PrivateRoute extends React.Component{
-  constructor(props){ 
-    super(props) 
+class PrivateRoute extends React.Component {
+  constructor(props) {
+    super(props);
   }
-  render(){
+  render() {
     const Component = this.props.component;
-    console.log('session',localStorage.getItem('authenticated'))
+    console.log("session", localStorage.getItem("authenticated"));
 
     let bool;
 
-    if(localStorage.getItem('authenticated')){
+    if (localStorage.getItem("authenticated")) {
       bool = true;
-    }
-    else{
+    } else {
       bool = false;
     }
 
-    console.log('bool',bool)
+    console.log("bool", bool);
 
-    return( 
-        <Route render={props => (
-          bool  ? (
-            <Component {...this.props}/>
+    return (
+      <Route
+        render={props =>
+          bool ? (
+            <Component {...this.props} />
           ) : (
-            <Redirect to='/login/student'/>
+            <Redirect to="/login/student" />
           )
-        )} />
-    )
+        }
+      />
+    );
   }
-} 
+}
 
-export default PrivateRoute
-
+export default PrivateRoute;

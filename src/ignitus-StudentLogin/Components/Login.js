@@ -1,52 +1,54 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
-import { Redirect, Route } from 'react-router-dom';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import React, { Component } from "react";
+import _ from "lodash";
+import { Redirect, Route } from "react-router-dom";
+import { withErrorBoundary } from "../../ignitus-Internals";
 
-
-import loader from '../../ignitus-Assets/Images/loader.gif';
-import loginImg from '../../ignitus-Assets/Images/login.png';
-import { logo } from './Constants';
-import '../Styles/style.scss';
-
+import loader from "../../ignitus-Assets/Images/loader.gif";
+import loginImg from "../../ignitus-Assets/Images/login.png";
+import { logo } from "./Constants";
+import "../Styles/style.scss";
 
 class Login extends Component {
-
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', emptymessage:false};
+    this.state = { email: "", password: "", emptymessage: false, success:false };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    
-    const {state:{email,password}} = this
-    if(_.isEmpty(email) || _.isEmpty(password)){
-        this.setState({emptymessage: true})
-        return
+
+    const {
+      state: { email, password }
+    } = this;
+
+    if (_.isEmpty(email) || _.isEmpty(password)) {
+      this.setState({ emptymessage: true });
+      return;
     }
 
-    this.props.logInRequest(email,password)
-    this.setState({email: '', password: '',emptymessage: false})
-    console.log('history',this)
+    this.props.logInRequest(email, password);
+    this.setState({ email: "", password: "", emptymessage: false, success:true });
   }
 
   render() {
+    const { isFetching, message } = this.props.studentLoginData;
+    const { success } = this.state
+    const {
+      state: { emptymessage }
+    } = this;
 
-    const {isFetching, success, message} = this.props.studentLoginData;
-    const {state:{emptymessage}} = this;
-
-     if (isFetching) {
+    if (isFetching) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
-          <div className = "loader"><img src={loader} /></div>
+          <div className="loader">
+            <img src={loader} />
+          </div>
         </div>
       );
     }
 
-     if(success)
-        return <Redirect to="/dashboard" />
+    if (success) return <Redirect to="/dashboard" />;
 
     return (
       <div className="_container-custom container p-5">
@@ -80,9 +82,10 @@ class Login extends Component {
                     className="form-control"
                     placeholder="Email"
                     value={this.state.email}
-                    onChange= { (e) => {this.setState({ email: e.target.value })}}
+                    onChange={e => {
+                      this.setState({ email: e.target.value });
+                    }}
                   />
-
                 </div>
 
                 <div className="input-group form-group">
@@ -98,15 +101,20 @@ class Login extends Component {
                     className="form-control"
                     placeholder="Password"
                     value={this.state.password}
-                    onChange= { (e) => {this.setState({ password: e.target.value })}}
+                    onChange={e => {
+                      this.setState({ password: e.target.value });
+                    }}
                   />
                 </div>
               </div>
 
               <div className="text-center mb-3 mt-3">
-                  <button className="btn btn-success btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
-                    Log in
-                  </button>
+                <button
+                  className="btn btn-success btn-rounded px-3 py-2"
+                  onClick={this.handleSubmit}
+                >
+                  Log in
+                </button>
               </div>
 
               <div className="_or-seperator">
@@ -121,11 +129,10 @@ class Login extends Component {
               </div>
               <div className="text-center mb-3 mt-3">
                 <div>
-                    Don't have an account?
-                  {' '}
+                  Don't have an account?{" "}
                   <a href="/signup/student" className="text-center _link">
-                    {' '}
-                      Sign Up
+                    {" "}
+                    Sign Up
                   </a>
                 </div>
               </div>
@@ -133,20 +140,17 @@ class Login extends Component {
           </div>
         </div>
 
-          {success == false && <div className="alert alert-success alert-dismissible margin-Top">
-            <button type="button" className="close" data-dismiss="alert">&times;</button>
-            {message}
-          </div>}
-
-
-          {emptymessage && <div className="alert alert-danger alert-dismissible margin-Top">
-            <button type="button" className="close" data-dismiss="alert">&times;</button>
+        {emptymessage && (
+          <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">
+              &times;
+            </button>
             <strong>Please!</strong> fill the form!
-          </div>}
+          </div>
+        )}
       </div>
-    )
+    );
   }
-
 }
 
 export default withErrorBoundary(Login);

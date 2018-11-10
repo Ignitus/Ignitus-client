@@ -1,35 +1,32 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import _ from 'lodash';
-import { Redirect, Route } from 'react-router-dom';
-import {withErrorBoundary} from '../../ignitus-Internals'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import _ from "lodash";
+import { Redirect, Route } from "react-router-dom";
+import { withErrorBoundary } from "../../ignitus-Internals";
 
 class dashBoardHeader extends React.Component {
   constructor(props) {
     super(props);
-     this.state = {
+    this.state = {
       redirect: false
-    }
-    this.logout = this.logout.bind(this)
+    };
+    this.logout = this.logout.bind(this);
   }
 
-  logout(){
+  logout() {
     localStorage.clear();
-    this.setState({redirect : true})
+    this.setState({ redirect: true });
   }
 
-  render() {  
-
+  render() {
     if (this.state.redirect) {
-       return <Redirect to='/'/>;
-     }
+      return <Redirect to="/" />;
+    }
 
-    let email = '';
-    if(localStorage.getItem('data')){
-      console.log(localStorage.getItem('data'))
-      email = JSON.parse(localStorage.getItem('data')).email;
+    let email = "";
+    if (localStorage.getItem("data")) {
+      console.log(localStorage.getItem("data"));
+      email = JSON.parse(localStorage.getItem("data")).email;
     }
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -68,14 +65,16 @@ class dashBoardHeader extends React.Component {
             </li>
             <li className="nav-item">
               <a className="nav-link disabled" href="#">
-                Welcome{" "} {email}
+                Welcome {email}
               </a>
             </li>
           </ul>
           <ul className="navbar-nav">
-              <li className="nav-item">
-                  <a className="nav-link" href= "#" onClick = {this.logout}>Logout</a>
-              </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" onClick={this.logout}>
+                Logout
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
