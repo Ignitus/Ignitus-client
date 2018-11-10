@@ -85,7 +85,7 @@ class Testimonial extends Component {
   
   componentDidMount() {
     this.getData();
-    this.interval = setInterval(this.timer, 3000);
+    this.interval = setInterval(this.timer, 1700);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
