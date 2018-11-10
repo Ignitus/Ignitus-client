@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 
-import Avatars from './Constants';
+import Avatars from './Data';
 import {withErrorBoundary} from '../../ignitus-Internals';
 
 const Team = () => {
@@ -21,7 +21,7 @@ const Team = () => {
         <div className="col">
           <div className="title text-center mb-3">Our Team</div>
           <div className="Team">
-            <div className="row">
+            <div className="row team_row">
               {avatarHTML}
             </div>
           </div>

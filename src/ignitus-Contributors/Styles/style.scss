@@ -11,15 +11,15 @@
 }
 
 .studentsResearchers {
-  font-size: $ignite-font-size-md;
+  font-size: $ignite-font-size-sm;
   font-weight: $ignite-font-weight-light;
   text-align: -webkit-center;
 }
 
 .contributor {
-  font-weight: $ignite-font-weight-extra-bold;
+  font-weight: $ignite-font-weight-normal;
   font-size: $ignite-font-size-lg;
-  color: $ignite-text-color-heading;
+  color: $ignite-color-blue-bg;
 }
 
 .centered-image {
@@ -30,7 +30,6 @@
 }
 
 .card {
-  border-radius: 1rem;
   .logoCss {
     /* Prevent different heights for each logos */
     height: 100px;
@@ -39,4 +38,14 @@
       height: 75%;
     }
   }
+}
+
+.contributor-card {
+  border-radius: 16px !important;
+  border-width: 0px !important;
+}
+
+.card_row {
+    margin-right: 88px !important;
+    margin-left: 88px !important;
 }

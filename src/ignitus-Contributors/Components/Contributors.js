@@ -12,7 +12,7 @@ const Contributors = () => {
       className="col-lg-4 col-md-4 col-sm-6 col-12"
       key={key}
     >
-      <div className="card mt-4 shadow">
+      <div className="card mt-4 shadow contributor-card">
         <div className="card-img-top logoCss centered-image d-flex align-middle">
           <img src={logo}  alt="logo" />
         </div>
@@ -35,7 +35,7 @@ const Contributors = () => {
       </div>
 
       <div className="container">
-        <div className="row">{html}</div>
+        <div className="row card_row">{html}</div>
       </div>
     </section>
   );

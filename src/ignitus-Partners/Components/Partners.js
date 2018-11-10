@@ -11,7 +11,7 @@ const Partner = () => {
       key={key}
     >
 
-      <div className="card mt-4 shadow">
+      <div className="card mt-4 shadow contributor-card">
         <div className="card-img-top logoCss centered-image d-flex align-middle">
           <img src={logo} alt="logo" />
         </div>
@@ -22,7 +22,7 @@ const Partner = () => {
   return (
     <div id="partners">
       <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-center mt-4">
-        <div className="contributor">Supporters & Partners</div>
+        <div className="partners">Supporters & Partners</div>
         <div className="studentsResearchers">
           Supported with
           {' '}
@@ -34,7 +34,7 @@ const Partner = () => {
       </div>
 
       <div className="container">
-        <div className="row align-items-center">{html}</div>
+        <div className="row align-items-center card_row">{html}</div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import loginImg from '../../ignitus-Assets/Images/login.png';
-import logo from '../../ignitus-Assets/Images/Logos/logo white bg.png';
+import { logo } from './Constants';
 import '../Styles/style.scss';
 
 

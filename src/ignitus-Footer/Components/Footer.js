@@ -3,13 +3,13 @@ import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import {withErrorBoundary} from '../../ignitus-Internals'
-import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+import { logo } from './Constants';
 
 
 // resolved
 
 const Footer = () => (
-  <footer className="bg-dark text-white mt-4">
+  <footer className="footer-bg text-white mt-4">
     <div className="container text-center text-md-left">
       <div className="row">
         <hr className="clearfix w-100 d-md-none" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../ignitus-Assets/Images/Logos/black_logo.png';
+import { logo } from './Constants';
 
 
 const Navigation = () => (
