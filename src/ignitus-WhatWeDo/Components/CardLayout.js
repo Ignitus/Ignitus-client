@@ -19,7 +19,7 @@ const CardLayout = () => {
     <section id="what-we-do">
       <div>
         <div className="bg-white mt-5">
-          <div>
+           <div style={{ paddingTop: '6px' }}>
             <h1 className="text-center my-5 ignitus-color">
               What will you find at Ignitus?
             </h1>
