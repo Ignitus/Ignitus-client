@@ -2,19 +2,18 @@ import React from 'react';
 import '../Styles/style.scss';
 import * as t from './Constants';
 
-import {withErrorBoundary} from '../../ignitus-Internals'
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 const Contributors = () => {
   const array = [t.UCB, t.STANFORD, t.CMU, t.HARVARD, t.MIT, t.OXFORD, t.PRINCETON, t.YALE];
-  const html = array.map((logo, key) => (
-    
+  const html = array.map(logo => (
     <div
       className="col-lg-4 col-md-4 col-sm-6 col-12"
-      key={key}
+      key={logo}
     >
       <div className="card mt-4 shadow contributor-card">
         <div className="card-img-top logoCss centered-image d-flex align-middle">
-          <img src={logo}  alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
       </div>
     </div>
