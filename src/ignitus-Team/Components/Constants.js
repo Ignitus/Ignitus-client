@@ -3,12 +3,13 @@ export const Divyanshu  = 'https://storage.googleapis.com/ignitus/Team/divyanshu
 export const Ayush    	= 'https://storage.googleapis.com/ignitus/Team/ayush.jpeg'
 export const Jennifer   = 'https://storage.googleapis.com/ignitus/Team/jennifer.jpeg'
 export const Paarmita   = 'https://storage.googleapis.com/ignitus/Team/paarmita.jpeg'
-export const Pranjal 	= 'https://storage.googleapis.com/ignitus/Team/pranjal.jpeg'
+export const Rajvardhan = 'https://storage.googleapis.com/ignitus/Team/rajvardhan.jpeg'
 export const Hafsa    	= 'https://storage.googleapis.com/ignitus/Team/Hafsa.jpeg'
 export const Desire  	= 'https://storage.googleapis.com/ignitus/Team/Desire.png'
 
 export const Amit    	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Amit.jpeg'
 export const Bill       = 'https://storage.googleapis.com/ignitus/Team/Contributors/Bill.jpeg'
+export const Pranjal 	= 'https://storage.googleapis.com/ignitus/Team/Contributors/pranjal.jpeg'
 export const Brian    	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Brian.jpeg'
 export const Debasish   = 'https://storage.googleapis.com/ignitus/Team/Contributors/Debasish.jpeg'
 export const Martin     = 'https://storage.googleapis.com/ignitus/Team/Contributors/Martin.jpeg'
@@ -18,7 +19,13 @@ export const Tucker  	= 'https://storage.googleapis.com/ignitus/Team/Contributor
 export const Clark    	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Clark.jpeg'
 export const Hassan  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Hassan.jpeg'
 export const Lillian  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Lillian.jpeg'
+export const Apoorv  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Apoorv.jpeg'
+export const Trang  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/MyTrangHong.png'
+export const Razi  	    = 'https://storage.googleapis.com/ignitus/Team/Contributors/Razi.jpeg'
 export const Trevor  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/Trevor.jpeg'
+export const Parul  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/parul.png'
+export const Ikhnaton  	= 'https://storage.googleapis.com/ignitus/Team/Contributors/ikhnaton.jpeg'
+
 
 export const Avatar1    = 'https://storage.googleapis.com/ignitus/Team/avatar-bertha.png'
 export const Avatar2    = 'https://storage.googleapis.com/ignitus/Team/avatar-eugene.png'

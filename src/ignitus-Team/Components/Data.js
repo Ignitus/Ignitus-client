@@ -46,9 +46,9 @@ export const AVATARS = [
         angellist: "https://www.facebook.com/Ignitus.org/"
       },
       {
-        title:"Pranjal Kumar",
-        img: t.Pranjal,
-        description:"Software Engineering" ,
+        title:"Rajvardhan Oak",
+        img: t.Rajvardhan,
+        description:"Ignitus Scholar Lead" ,
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
         facebook: "https://www.facebook.com/Ignitus.org/"
 
@@ -76,6 +76,14 @@ export const CONTRIBUTORS_DATA = [
       {
         title:"Lillian Smith",
         img: t.Lillian,
+      },
+      {
+        title:"Pranjal Kumar",
+        img: t.Pranjal,
+      },
+      {
+        title:"My Trang Hong",
+        img: t.Trang,
       },
       {
         title:"Trevor Kirpaul",
@@ -110,8 +118,24 @@ export const CONTRIBUTORS_DATA = [
         img: t.Martin,
       },
       {
+        title:"Razi",
+        img: t.Razi,
+      },
+      {
+        title:"Apoorv Taneja",
+        img: t.Apoorv,
+      },
+      {
         title:"Tucker Blackwell",
         img: t.Tucker,
+      },
+      {
+        title:"Parul Gupta",
+        img: t.Parul,
+      },
+      {
+        title:"Ikhnaton",
+        img: t.Ikhnaton,
       }
       ];
 
