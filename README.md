@@ -143,7 +143,7 @@ Ignitus Quora -
 For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
 
 
-## Contributors
+## Ignitus Client-Side Web Application Contributors
 
 [![Paarmita Bhargava](https://github.com/Paarmita.png?size=100)](https://github.com/Paarmita) | [![Bill Hefty](https://github.com/bhefty.png?size=100)](https://github.com/bhefty) | [![Brian Fernando ](https://github.com/BrianCortes.png?size=100)](https://github.com/BrianCortes) | [![Amit Mangotra](https://github.com/amitmangotra.png?size=100)](https://github.com/amitmangotra) | [![Fabricio Augusto](https://github.com/fabricionaweb.png?size=100)](https://github.com/fabricionaweb) | [![My Trang Hong](https://github.com/meyfleur.png?size=100)](https://github.com/meyfleur)
 ---|---|---|---|---|---
