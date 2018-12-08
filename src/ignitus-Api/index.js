@@ -18,3 +18,7 @@ export function signUp(email, password){
 export function signIn(email, password){
 	return axios.post(t.STUDENT_SIGN_IN, { email: email, password: password})
 }
+
+export function getContributorsData() {
+  return axios.get(t.GITHUB_API);
+}

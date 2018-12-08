@@ -1,11 +1,13 @@
+
+
 import { createSelector } from 'reselect';
+import _ from 'lodash';
 
-export const selectTeamState = state => state.teamReducer;
+export const selectContributorsState = state => state.contributorsReducer;
 
-export const makeSelectTeamData = () => createSelector(selectTeamState, (substate) => {
-  if (substate && substate.length > 0) {
-    return substate[0].data;
+export const makeSelectContributorsData = () => createSelector(selectContributorsState, (substate) => {
+  if(_.isObject(substate)){
+  	return substate
   }
   return [];
 });
-

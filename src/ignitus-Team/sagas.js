@@ -6,17 +6,17 @@ const {
   call, put, takeLatest, all,
 } = effects;
 
-function* getTeamData() {
+function* getContributorsData() {
   try {
-    const { data } = yield call(api.getTeamData);
-    yield put({ type: t.SET_TEAM_DATA, data });
+    const { data } = yield call(api.getContributorsData);
+    yield put({ type: t.SET_CONTRIBUTORS_DATA, data });
   } catch (e) {
     console.log(e.message);
   }
 }
 
 function* actionWatcher() {
-  yield takeLatest(t.GET_TEAM_DATA, getTeamData);
+  yield takeLatest(t.GET_CONTRIBUTORS_DATA, getContributorsData);
 }
 
 export default function* sagas() {

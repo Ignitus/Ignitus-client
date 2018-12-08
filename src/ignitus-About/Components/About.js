@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import '../Styles/style.scss';
 
-import Team from '../../ignitus-Team/Components/Team';
+import Team from '../../ignitus-Team';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 const About = () => (
@@ -67,7 +67,7 @@ const About = () => (
                     </div>
                 </div>
             </div>
-          <Team />
+          <Team.containers.TeamContainer />
         </div>
     </Fragment>
 );

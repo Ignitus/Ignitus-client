@@ -5,12 +5,12 @@ import { bindActionCreators } from 'redux';
 import { Team } from '../Components';
 import { createStructuredSelector } from 'reselect';
 
-import { getTeamData } from '../actions';
-import { makeSelectTeamData } from '../selectors';
+import { getContributorsData } from '../actions';
+import { makeSelectContributorsData } from '../selectors';
 
 const mapStateToProps = createStructuredSelector({
-  teamData: makeSelectTeamData(),
+  contributorsData: makeSelectContributorsData(),
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({ getTeamData }, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ getContributorsData }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(Team);
