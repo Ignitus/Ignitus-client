@@ -1,9 +1,6 @@
+import * as t from "./actionTypes";
 
-import * as t from './actionTypes';
-
-const initialState = {
-   contributorsData: []
-};
+const initialState = { presets: [], isFetching: false };
 
 const contributorsReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -16,23 +13,16 @@ const contributorsReducer = (state = initialState, action) => {
       break;
 
     default:
-      return returnIntialState(state);
+      return state;
   }
 };
 
-function setContributorsData(state, action){
-	const updatedState = state.data.concat(action.data)
-  return Object.assign({}, { data: updatedState }, { isFetching: false });
+function setContributorsData(state, action) {
+  return Object.assign({}, { presets: action.data }, { isFetching: false });
 }
 
-function getContributorsData(state, action){
-	const updatedState = state.data
-    return Object.assign({}, { data: updatedState }, { isFetching: true });
-}
-
-function returnIntialState(state){
-	const updatedState = state.contributorsData
-    return Object.assign({}, { data: updatedState });
+function getContributorsData(state, action) {
+  return Object.assign({}, { isFetching: true }, { presets: [] });
 }
 
 export default contributorsReducer;

@@ -3,24 +3,32 @@ import "../Styles/style.scss";
 
 import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
 import { withErrorBoundary } from "../../ignitus-Internals";
+import loader from "../../ignitus-Assets/Images/loader.gif";
 
 class Team extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       contributorsData: []
-    }
+    };
   }
 
-  componentDidMount(){
-    this.props.getContributorsData()
+  componentDidMount() {
+    this.props.getContributorsData();
   }
 
   render() {
+    const { presets, isFetching } = this.props.contributorsData;
 
-    const { data, isFetching } = this.props.contributorsData;
-
-    console.log('final Update !!!!!!!!',this);
+    if (isFetching) {
+      return (
+        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
+          <div className="loader">
+            <img src={loader} />
+          </div>
+        </div>
+      );
+    }
 
     const teamHTML = AVATARS.map(item => (
       <div
@@ -38,7 +46,7 @@ class Team extends React.Component {
         </div>
       </div>
     ));
-    const contributorsHTML = data.map(item => (
+    const contributorsHTML = presets.map(item => (
       <div
         key={item.id}
         className="col-3 col-sm-3 col-md-2 avatar-wrapper text-center p-2"
@@ -56,7 +64,7 @@ class Team extends React.Component {
 
     return (
       <div>
-       <div className="team-wrapper container my-5 py-5">
+        <div className="team-wrapper container my-5 py-5">
           <div className="row">
             <div className="col">
               <div className="title text-center mb-3">Our Team</div>
