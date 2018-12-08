@@ -1,6 +1,5 @@
 ![alt tag](https://avatars0.githubusercontent.com/u/39058097?s=200&v=4)
 
-# Ignitus-client-side
 
 <a href="https://www.patreon.com/teamignitus">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
