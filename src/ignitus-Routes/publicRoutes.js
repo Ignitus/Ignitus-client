@@ -18,6 +18,8 @@ import SignupStudent from "../ignitus-StudentSignUp";
 import loader from "../ignitus-Assets/Images/loader.gif";
 import Loadable from "react-loadable";
 
+import {Notfound} from './notFound';
+
 // RouteBased CodeSplitting.
 
 const Loading = () => (
@@ -68,6 +70,10 @@ export const PublicRoutes = props => {
         <Route
           path="/signup/student"
           component={SignupStudent.containers.Signup}
+        />
+        <Route
+          path="/"
+          component={Notfound}
         />
       </Switch>
       <Footer.components.Footer />
