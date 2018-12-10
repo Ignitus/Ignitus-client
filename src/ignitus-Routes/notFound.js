@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const Notfound = (props) => {
 	return (
-		<div className="container">
+		<div className="container-404">
 			<div className="content">
 				<p>404</p>
 				<p>We could not find what you were looking for.</p>
