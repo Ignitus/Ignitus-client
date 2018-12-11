@@ -56,6 +56,8 @@ Written in universal JavaScript
 * Redis
 * TRAVIS CI
 * CodeCov
+* GraphQL Caching
+* TypeScript
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
