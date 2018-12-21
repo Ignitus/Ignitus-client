@@ -167,32 +167,34 @@ class Testimonial extends Component {
           <div>
             <CarouselLeftArrow onClick={e => goToPrevSlide(e)} />
           </div>
-          <div>
-            <ul className="carousel__slides container">
-              {this.props.testimonialData.length > 0
-                ? this.props.testimonialData.map((slide, index) => (
-                  <CarouselSlide
-                      key={shortid.generate()}
-                      index={index}
-                      activeIndex={activeIndex}
-                      slide={slide}
-                    />
-                ))
-                : null}
-            </ul>
-            <ul className="carousel__indicators">
-              {this.props.testimonialData.length > 0
-                ? this.props.testimonialData.map((slide, index) => (
-                  <CarouselIndicator
-                      key={shortid.generate()}
-                      index={index}
-                      activeIndex={activeIndex}
-                      isActive={activeIndex === index}
-                      onClick={e => goToSlide(index)}
-                    />
-                ))
-                : null}
-            </ul>
+          <div className="purple__tile">
+            <div className="carousel--tile">
+              <ul className="carousel__slides container">
+                {this.props.testimonialData.length > 0
+                  ? this.props.testimonialData.map((slide, index) => (
+                    <CarouselSlide
+                        key={shortid.generate()}
+                        index={index}
+                        activeIndex={activeIndex}
+                        slide={slide}
+                      />
+                  ))
+                  : null}
+              </ul>
+              <ul className="carousel__indicators">
+                {this.props.testimonialData.length > 0
+                  ? this.props.testimonialData.map((slide, index) => (
+                    <CarouselIndicator
+                        key={shortid.generate()}
+                        index={index}
+                        activeIndex={activeIndex}
+                        isActive={activeIndex === index}
+                        onClick={e => goToSlide(index)}
+                      />
+                  ))
+                  : null}
+              </ul>
+            </div>
           </div>
           <div className="arrow-fix">
             <CarouselRightArrow onClick={e => goToNextSlide(e)} />
