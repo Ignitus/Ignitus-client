@@ -4,7 +4,7 @@
 .testimonials {
   text-align: center;
   font-weight: $ignite-font-weight-normal;
-  font-size: $ignite-font-size-lg;
+  font-size: $ignite-font-size-md;
   color: $ignite-color-blue-bg;
 }
 
@@ -33,11 +33,13 @@
 
 .carousel__slide {
   display: none;
-  max-width: 900px;
+  width: 93%;
+  max-width: 700px;
+  max-height: 500px;
   list-style-type: none;
   margin-right: 20px;
   margin-left: 20px;
-  border: 1px solid red;
+  border-radius: 12px;
 }
 
 @media (max-width: 991px) {
@@ -49,13 +51,17 @@
 
 .carousel__slide--active {
   display: block;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 30px 40px;
+  box-shadow: 0 0 30px 2px rgba(#888888, 0.76);
 }
 
 .carousel-slide__content {
+  font-style: italic;
   margin-bottom: 19px;
   font-family: 'Raleway', sans-serif;
   font-size: $ignite-font-size-md;
-  text-align: justify;
 }
 
 @media (max-width: 991px) {
@@ -69,6 +75,7 @@
   font-family: $ignite-font-family-default;
   font-size: $ignite-font-size-xs;
   color: $ignite-color-black;
+  text-align: left;
 }
 
 @media (min-width: 992px) {
@@ -80,7 +87,6 @@
 }
 
 .carousel-slide__source {
-  font-style: italic;
   color: $ignite-color-neutral-53;
 }
 
