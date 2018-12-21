@@ -1,6 +1,13 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
 
+.testimonials {
+  text-align: center;
+  font-weight: $ignite-font-weight-normal;
+  font-size: $ignite-font-size-lg;
+  color: $ignite-color-blue-bg;
+}
+
 .author-source-container {
   display: flex;
   flex-direction: column;
@@ -30,6 +37,7 @@
   list-style-type: none;
   margin-right: 20px;
   margin-left: 20px;
+  border: 1px solid red;
 }
 
 @media (max-width: 991px) {
