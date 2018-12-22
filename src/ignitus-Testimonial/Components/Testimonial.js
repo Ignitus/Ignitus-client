@@ -181,19 +181,6 @@ class Testimonial extends Component {
                   ))
                   : null}
               </ul>
-              <ul className="carousel__indicators">
-                {this.props.testimonialData.length > 0
-                  ? this.props.testimonialData.map((slide, index) => (
-                    <CarouselIndicator
-                        key={shortid.generate()}
-                        index={index}
-                        activeIndex={activeIndex}
-                        isActive={activeIndex === index}
-                        onClick={e => goToSlide(index)}
-                      />
-                  ))
-                  : null}
-              </ul>
             </div>
           </div>
           <div className="arrow-fix">
