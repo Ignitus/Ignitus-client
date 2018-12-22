@@ -27,7 +27,6 @@
   justify-content: center;
   align-items: center;
   min-height: 210px;
-  margin-left: 40px;
 }
 
 .carousel__slide {
@@ -45,6 +44,7 @@
 
   background-color: $ignite-color-blue-20;
   height: 300px;
+  width: 90%;
   border-radius: 12px;
   margin: 0 auto;
 
@@ -60,13 +60,14 @@
 
     background-color: $ignite-color-blue-36;
     height: 350px;
+    width: 87%;
     border-radius: 12px;
   }
 }
 
 .purple__tile {
   position: relative;
-  width: 60%;
+  width: 70%;
   height: 250px;
 
   border-radius: 12px;
