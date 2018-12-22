@@ -1,11 +1,9 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
+@import './src/shared/styles/ignitus-mixins.scss';
 
 .testimonials {
   text-align: center;
-  font-weight: $ignite-font-weight-normal;
-  font-size: $ignite-font-size-lg;
-  color: $ignite-color-blue-bg;
 }
 
 .author-source-container {
@@ -43,12 +41,9 @@
 }
 
 .carousel--tile {
+  @include tile-position;
+
   background-color: $ignite-color-blue-20;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 93%;
   height: 300px;
   border-radius: 12px;
   margin: 0 auto;
@@ -61,12 +56,9 @@
   }
 
   .carousel__slides {
+    @include tile-position;
+
     background-color: $ignite-color-blue-36;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 91%;
     height: 350px;
     border-radius: 12px;
   }
@@ -74,11 +66,13 @@
 
 .purple__tile {
   position: relative;
-  background-color: $ignite-color-blue-bg;
   width: 60%;
+  height: 250px;
+
   border-radius: 12px;
   margin: 70px 40px 0 50px;
-  height: 250px;
+
+  background-color: $ignite-color-blue-bg;
 
   @media (max-width: 1125px) {
     & {
@@ -96,23 +90,22 @@
 }
 
 .carousel__slide--active {
+  @include tile-position;
+
   display: block;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px 4px rgba(#888888, 0.76);
+
   width: 100%;
   height: 400px;
-  box-sizing: border-box;
+
   background-color: white;
-  padding: 30px 40px;
-  box-shadow: 0 0 30px 4px rgba(#888888, 0.76);
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  position: absolute;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .carousel-slide__content {
@@ -125,29 +118,15 @@
 @media (max-width: 1125px) {
   .carousel-slide__content {
     font-size: $ignite-font-size-sm;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 748px) {
   .carousel-slide__content {
-    overflow-x: hidden;
     max-height: 225px;
 
-    &::-webkit-scrollbar {
-      width: 5px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: $ignite-color-blue-24;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: $ignite-color-blue-36;
-    }
+    @include scroll-style($ignite-color-blue-20, $ignite-color-blue-36);
   }
 }
 

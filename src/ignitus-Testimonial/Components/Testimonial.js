@@ -161,7 +161,7 @@ class Testimonial extends Component {
 
     return (
       <div>
-        <div className="testimonials">Testimonials</div>
+        <div className="testimonials title">Testimonials</div>
 
         <div className="carousel">
           <div>
