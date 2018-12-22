@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
   min-height: 210px;
+  margin-left: 40px;
 }
 
 .carousel__slide {
@@ -42,7 +43,7 @@
 }
 
 .carousel--tile {
-  background-color: darkviolet;
+  background-color: $ignite-color-blue-20;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,8 +53,15 @@
   border-radius: 12px;
   margin: 0 auto;
 
+  @media (max-width: 1125px) {
+    & {
+      background-color: $ignite-color-blue-36;
+      height: 350px;
+    }
+  }
+
   .carousel__slides {
-    background-color: mediumorchid;
+    background-color: $ignite-color-blue-36;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,11 +74,18 @@
 
 .purple__tile {
   position: relative;
-  background-color: indigo;
+  background-color: $ignite-color-blue-bg;
   width: 60%;
   border-radius: 12px;
   margin: 70px 40px 0 50px;
   height: 250px;
+
+  @media (max-width: 1125px) {
+    & {
+      background-color: $ignite-color-blue-20;
+      height: 300px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -87,11 +102,11 @@
   box-sizing: border-box;
   background-color: white;
   padding: 30px 40px;
-  box-shadow: 0 0 30px 2px rgba(#888888, 0.76);
+  box-shadow: 0 0 30px 4px rgba(#888888, 0.76);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-align-items: center;
+  align-items: center;
 
   position: absolute;
   position: absolute;
@@ -107,9 +122,32 @@ align-items: center;
   font-size: $ignite-font-size-md;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1125px) {
   .carousel-slide__content {
     font-size: $ignite-font-size-sm;
+  }
+}
+
+@media (max-width: 748px) {
+  .carousel-slide__content {
+    overflow-x: hidden;
+    max-height: 225px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $ignite-color-blue-24;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $ignite-color-blue-36;
+    }
   }
 }
 
@@ -135,7 +173,7 @@ align-items: center;
 
 .carousel__arrow {
   display: block;
-  color: rgb(62, 5, 134);
+  color: $ignite-color-blue-20;
   margin-top: 100px;
 
   cursor: pointer;
