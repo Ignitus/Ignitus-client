@@ -1,4 +1,4 @@
-![alt tag](https://avatars0.githubusercontent.com/u/39058097?s=200&v=4)
+![alt tag](https://imgur.com/b0y65se.gif)
 
 
 <a href="https://www.patreon.com/teamignitus">
