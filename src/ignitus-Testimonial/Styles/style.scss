@@ -1,5 +1,10 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
+@import './src/shared/styles/ignitus-mixins.scss';
+
+.testimonials {
+  text-align: center;
+}
 
 .author-source-container {
   display: flex;
@@ -26,10 +31,56 @@
 
 .carousel__slide {
   display: none;
-  max-width: 900px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 500px;
   list-style-type: none;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.carousel--tile {
+  @include tile-position;
+
+  background-color: $ignite-color-blue-20;
+  height: 300px;
+  width: 90%;
+  border-radius: 12px;
+  margin: 0 auto;
+
+  @media (max-width: 1125px) {
+    & {
+      background-color: $ignite-color-blue-36;
+      height: 350px;
+    }
+  }
+
+  .carousel__slides {
+    @include tile-position;
+
+    background-color: $ignite-color-blue-36;
+    height: 350px;
+    width: 87%;
+    border-radius: 12px;
+  }
+}
+
+.purple__tile {
+  position: relative;
+  width: 70%;
+  height: 250px;
+
+  border-radius: 12px;
+  margin: 70px 40px 0 50px;
+
+  background-color: $ignite-color-blue-bg;
+
+  @media (max-width: 1125px) {
+    & {
+      background-color: $ignite-color-blue-20;
+      height: 300px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -40,19 +91,43 @@
 }
 
 .carousel__slide--active {
+  @include tile-position;
+
   display: block;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px 4px rgba(#888888, 0.76);
+
+  width: 100%;
+  height: 400px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .carousel-slide__content {
+  font-style: italic;
   margin-bottom: 19px;
   font-family: 'Raleway', sans-serif;
   font-size: $ignite-font-size-md;
-  text-align: justify;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1125px) {
   .carousel-slide__content {
     font-size: $ignite-font-size-sm;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 748px) {
+  .carousel-slide__content {
+    max-height: 225px;
+
+    @include scroll-style($ignite-color-blue-20, $ignite-color-blue-36);
   }
 }
 
@@ -61,6 +136,7 @@
   font-family: $ignite-font-family-default;
   font-size: $ignite-font-size-xs;
   color: $ignite-color-black;
+  text-align: left;
 }
 
 @media (min-width: 992px) {
@@ -72,15 +148,15 @@
 }
 
 .carousel-slide__source {
-  font-style: italic;
   color: $ignite-color-neutral-53;
 }
 
 .carousel__arrow {
   display: block;
-  color: $ignite-color-neutral-6;
+  color: $ignite-color-blue-20;
+  margin-top: 100px;
+
   cursor: pointer;
-  opacity: .75;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
