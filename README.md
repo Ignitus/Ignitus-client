@@ -8,58 +8,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
-
-
-
-## Client-Side
-Written in universal JavaScript
-
-* react
-* redux
-* travis-ci
-* heroku
-* prop-types
-* redux-thunk
-* docker-container
-* redux-sagas
-* flow
-* reselect
-* jest-tests
-* istanbul
-* ignitus-rest-api
-* heroku-pipeline
-* airbnb-eslint
-* react-router-v4
-* bootstrap4
-* enzyme-testing
-* service-worker-precache
-* sass
-* lazy-loading(React-lodable)
-* PWA (Progressive Web Application)
-
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
-
-
-## Bots
-* Netlify
-* dependabot
-* welcomebot
-* labelsbot
-
-## Server-Side
-* Node.js
-* JWT
-* Mocha
-* Mongoose
-* MongoDB
-* Docker
-* Redis
-* TRAVIS CI
-* CodeCov
-* GraphQL Caching
-* TypeScript
-
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+
+
+[![](https://imgur.com/1pa8uwS.png)](https://github.com/Ignitus/Tools)
+
 
 ## About Ignitus
 
