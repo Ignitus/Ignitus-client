@@ -109,11 +109,6 @@ Please check the contribution guide. [contributionGuide](https://github.com/Igni
 ---|---|---|---|---
 [Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda) | [Apoorv Taneja](https://github.com/plxity)
 
-
-### License [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_shield)
-
-MIT © IGNITUS
-
-
+##
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_large)
