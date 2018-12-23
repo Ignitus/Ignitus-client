@@ -11,7 +11,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
 
-[![](https://imgur.com/1pa8uwS.png)](https://github.com/Ignitus/Tools)
+[![Ignitus TechStack](https://imgur.com/1pa8uwS.png)](https://github.com/Ignitus/Tools)
 
 
 ## About Ignitus
@@ -93,21 +93,9 @@ Ignitus Quora -
 Please check the contribution guide. [contributionGuide](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
 
 
-## Ignitus Client-Side Web Application Contributors
+## Contributors
 
-[![Paarmita Bhargava](https://github.com/Paarmita.png?size=100)](https://github.com/Paarmita) | [![Bill Hefty](https://github.com/bhefty.png?size=100)](https://github.com/bhefty) | [![Brian Fernando ](https://github.com/BrianCortes.png?size=100)](https://github.com/BrianCortes) | [![Amit Mangotra](https://github.com/amitmangotra.png?size=100)](https://github.com/amitmangotra) | [![Fabricio Augusto](https://github.com/fabricionaweb.png?size=100)](https://github.com/fabricionaweb) | [![My Trang Hong](https://github.com/meyfleur.png?size=100)](https://github.com/meyfleur)
----|---|---|---|---|---
-[Paarmita Bhargava](https://github.com/Paarmita) | [Bill Hefty](https://github.com/bhefty) | [Brian Fernando](https://github.com/BrianCortes) | [Amit Mangotra](https://github.com/amitmangotra) | [Fabricio Augusto](https://github.com/fabricionaweb) | [My Trang Hong](https://github.com/meyfleur)
-
-
-[![Sid Bentifraouine](https://github.com/sidbentifraouine.png?size=100)](https://github.com/sidbentifraouine) | [![Abhinav Keshav](https://github.com/shoutoutloud.png?size=100)](https://github.com/shoutoutloud) | [![Trevor Kirpaul](https://github.com/trevorkirpaul.png?size=100)](https://github.com/trevorkirpaul) | [![Tucker Blackwell](https://github.com/trblackw.png?size=100)](https://github.com/trblackw) | [![Nirmal Kumar](https://github.com/nirmalks.png?size=100)](https://github.com/nirmalks) | [![Martin Hofmann](https://github.com/Martskin.png?size=100)](https://github.com/Martskin)
----|---|---|---|---|---
-[Sid Bentifraouine](https://github.com/sidbentifraouine) | [Abhinav Keshav](https://github.com/shoutoutloud) | [Trevor Kirpaul](https://github.com/trevorkirpaul) | [Tucker Blackwell](https://github.com/trblackw) | [Nirmal Kumar K](https://github.com/nirmalks) | [Martin Hofmann](https://github.com/Martskin)
-
-
-[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |	[![paperlambda](https://github.com/paperlambda.png?size=100)](https://github.com/paperlambda) |	[![Apoorv Taneja](https://github.com/plxity.png?size=100)](https://github.com/plxity)
----|---|---|---|---
-[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda) | [Apoorv Taneja](https://github.com/plxity)
+[![Contributors](https://imgur.com/uDEb2rY)](http://www.ignitus.org/aboutus)
 
 ##
 
