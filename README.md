@@ -27,7 +27,6 @@ You can check out this [YouTube Channel](https://www.youtube.com/channel/UCW2BmT
 
 We are organizing the following programs on a global scale where students can participate remotely to improve their skills and get real-world software development experience-
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 ## Ignitus Scholar
 
@@ -87,14 +86,11 @@ Ignitus Quora -
 
 ##
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
-
 ![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
-![alt tag](https://cdn-images-1.medium.com/max/800/1*jxFIFA8WI8TkMmdbOorOsA.png)
 
-
-For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
+## Contributing
+Please check the contribution guide. [contributionGuide](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
 
 
 ## Ignitus Client-Side Web Application Contributors
@@ -113,20 +109,6 @@ For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignit
 ---|---|---|---|---
 [Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda) | [Apoorv Taneja](https://github.com/plxity)
 
-* Thank You All For Your Support!!
-
-#
-
-### Give this Project a Star :star:
-
-If you liked working on this project, please share this project as much 
-as you can and star this project to help as many people in open source as you can.
-
-
-:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
-
-
-#
 
 ### License [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_shield)
 
