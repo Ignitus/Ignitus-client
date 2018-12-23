@@ -1,4 +1,5 @@
-![alt tag](https://imgur.com/b0y65se.gif)
+
+<img src="https://imgur.com/b0y65se.gif" width="300">
 
 
 <a href="https://www.patreon.com/teamignitus">
@@ -11,7 +12,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 
 
-[![Ignitus TechStack](https://imgur.com/1pa8uwS.png)](https://github.com/Ignitus/Tools)
+<a href="https://github.com/Ignitus/Tools"><img src="https://imgur.com/1pa8uwS.png" width="500"></a>
 
 
 ## About Ignitus
@@ -94,8 +95,7 @@ Please check the contribution guide. [contributionGuide](https://github.com/Igni
 
 
 ## Contributors
-
-[![Contributors](https://imgur.com/uDEb2rY.png)](http://www.ignitus.org/aboutus)
+<a href="http://www.ignitus.org/aboutus"><img src="https://imgur.com/uDEb2rY.png" width="500"></a>
 
 ##
 
