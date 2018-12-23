@@ -95,7 +95,7 @@ Please check the contribution guide. [contributionGuide](https://github.com/Igni
 
 ## Contributors
 
-[![Contributors](https://imgur.com/uDEb2rY)](http://www.ignitus.org/aboutus)
+[![Contributors](https://imgur.com/uDEb2rY.png)](http://www.ignitus.org/aboutus)
 
 ##
 
