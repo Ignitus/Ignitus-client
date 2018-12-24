@@ -57,12 +57,12 @@ const About = () => (
                                 Princeton, Georgia Tech, SUNY, Harvard, Oxford,
                                 UCB, UCLA, USC etc.
                             </p>
-                          <p>
-                                Team Ignitus boasts of a dedicated workforce
-                                from Boston, Miami, Pittsburgh, Madrid, Houston,
-                                Munich, Princeton, Los Angeles, Vancouver and
-                                different parts of India
-                            </p>
+                            <p>
+                                  Team Ignitus boasts of a dedicated workforce
+                                  from Boston, Miami, Pittsburgh, Madrid, Houston,
+                                  Munich, Princeton, Los Angeles, Vancouver and
+                                  different parts of India
+                              </p>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ import { logo } from './Constants';
 // resolved
 
 const Footer = () => (
-  <footer className="footer-bg text-white mt-4">
+  <footer className="footer-bg text-white mt-4" id="footer-bg-id">
     <div className="container text-center text-md-left">
       <div className="row">
         <hr className="clearfix w-100 d-md-none" />
