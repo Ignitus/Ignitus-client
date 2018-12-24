@@ -34,13 +34,63 @@
 }
 
 .intro {
- background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 37.25%, $ignite-color-white 36.55% 100%);
+ background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 36.9%, $ignite-color-white 36% 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-	font-size: $ignite-font-size-xxl + 15px;
-	letter-spacing: 3px;
-	padding-top: 7%;
+	font-size: $ignite-font-size-xxl + 18px;
+	letter-spacing: 4px;
+	padding-top: 6%;
 }
+
+.intro__content {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 50px;
+}
+
+.intro__content--upper {
+	font-size: $ignite-font-size-md + 8px;
+
+	max-width: 60%;
+	padding: 110px 90px 45px 90px;
+}
+
+.intro__content--lower {
+	display: flex;
+	justify-content: center;
+	font-size: $ignite-font-size-md;
+
+	img {
+		margin-left: 75px;
+	}
+}
+
+.content--lower__signup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	a button {
+		margin-top: 30px;
+		width: 100%;
+		padding: 8px 15px;
+
+		background-color: $ignite-text-color-brand !important;
+		color: $ignite-color-white !important;
+
+		&:hover {
+			background-color: $ignite-color-white !important;
+			color: $ignite-text-color-brand !important;
+		}
+	}
+}
+
+.bold-txt {
+	font-weight: $ignite-font-weight-bold;
+}
+
 .border {
   border: $ignite-border-default;
 }
