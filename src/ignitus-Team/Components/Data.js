@@ -4,7 +4,7 @@ export const AVATARS = [
 {
         title:"Ayush Pareek",
         img: t.Ayush,
-        description: "Founder, CEO", 
+        description: "Founder, CEO",
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
         angellist: "https://www.facebook.com/Ignitus.org/"
 
@@ -16,7 +16,7 @@ export const AVATARS = [
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
         angellist: "https://www.facebook.com/Ignitus.org/"
       },
-      { 
+      {
         title:"Divyanshu Rawat",
         img: t.Divyanshu,
         description:"Co-founder, CTO" ,
@@ -97,7 +97,7 @@ export const CONTRIBUTORS_DATA = [
         title:"Bill Hefty",
         img: t.Bill,
       },
-      { 
+      {
         title:"Brian Fernando",
         img: t.Brian,
       },
@@ -138,6 +138,3 @@ export const CONTRIBUTORS_DATA = [
         img: t.Ikhnaton,
       }
       ];
-
-
-
