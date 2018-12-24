@@ -10,9 +10,11 @@ const GetStarted = () => (
       using Ignitus to share their knowledge, work together, and get amazing
       opportunites.
     </div>
-    <button className="btn btn-secondary button-get-started" type="button">
-      Sign-Up
-    </button>
+    <Link to="/Signup">
+      <button className="btn btn-secondary button-get-started" type="button">
+        Sign-Up
+      </button>
+    </Link>
   </div>
 );
 

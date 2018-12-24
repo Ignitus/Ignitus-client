@@ -14,6 +14,7 @@ import LoginProfessor from "../ignitus-ProfessorLogin/loadables";
 import SignupProfessor from "../ignitus-ProfessorSignUp";
 import LoginStudent from "../ignitus-StudentLogin";
 import SignupStudent from "../ignitus-StudentSignUp";
+import Signup from "../ignitus-SignUp/Components/Signup";
 
 import loader from "../ignitus-Assets/Images/loader.gif";
 import Loadable from "react-loadable";
@@ -71,6 +72,7 @@ export const PublicRoutes = props => {
           path="/signup/student"
           component={SignupStudent.containers.Signup}
         />
+        <Route path="/Signup" component={Signup} />
         <Route
           path="/"
           component={Notfound}
