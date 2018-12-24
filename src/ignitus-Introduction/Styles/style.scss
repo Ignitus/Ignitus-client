@@ -25,25 +25,22 @@
   margin-bottom: 50px;
 }
 
-.box {
-	background: transparent;
+.intro__wrapper {
+	background: url('https://storage.googleapis.com/ignitus/Assets/split-blue-background.png') no-repeat;
+	background-size: 70%;
+	background-position: top right;
+
+	height: 1200px;
 }
 
-.ignitus-bg {
-	border: 1px solid red;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 65vw 100vh 0;
-	border-color: transparent #007bff transparent transparent;
-
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	z-index: -9001;
+.intro {
+ background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 37.25%, $ignite-color-white 36.55% 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+	font-size: $ignite-font-size-xxl + 15px;
+	letter-spacing: 3px;
+	padding-top: 7%;
 }
-
 .border {
   border: $ignite-border-default;
 }

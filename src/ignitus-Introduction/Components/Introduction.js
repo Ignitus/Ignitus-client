@@ -6,10 +6,9 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import resume from '../../ignitus-Assets/Images/resume.png';
 
 const Introduction = () => (
-  <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5 box" >
-      <div className="ignitus-bg"></div>
-      
-      <div className="intro text-center">Welcome to Ignitus</div>
+  <div className="intro__wrapper" >
+
+      <h1 className="intro text-center">Welcome to Ignitus</h1>
 
       <div className="intro__content">
         <div className="intro__content--upper">
