@@ -32,6 +32,9 @@
 
 	height: 1200px;
 
+	position: relative;
+	z-index: -2;
+
 	@media (max-width: 751px) {
 		& {
 			margin-bottom: 150px;
@@ -97,8 +100,13 @@
 
 .intro__torch {
 	position: absolute;
-	top: 130px;
-	right: 110px;
+	top: 1%;
+	right: 3%;
+
+	height: auto;
+	width: 22%;
+
+	z-index: -1;
 }
 
 .intro__content {
