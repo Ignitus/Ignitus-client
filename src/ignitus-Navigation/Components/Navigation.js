@@ -60,52 +60,30 @@ const Navigation = () => (
             Join
           </a>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item">
           <a
-            className="nav-link dropdown-toggle"
+            className="nav-link"
+            rel="noopener noreferrer"
+            target="_blank"
             href="#"
-            id="navbarDropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
           >
-            Sign in
+          Signin
           </a>
-          <div
-            className="dropdown-menu"
-            aria-labelledby="navbarDropdownMenuLink"
-          >
-            <Link to="/login/student">
-              <span className="dropdown-item">Student</span>
-            </Link>
-            <Link to="/login/professor">
-              <span className="dropdown-item">Professor</span>
-            </Link>
-          </div>
+          
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item">
           <a
-            className="nav-link dropdown-toggle"
+            className="nav-link"
+            rel="noopener noreferrer"
+            target="_blank"
             href="#"
-            id="navbarDropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
           >
-            Sign up
+          Signup
           </a>
-          <div
-            className="dropdown-menu dropdown-menu-right"
-            aria-labelledby="navbarDropdownMenuLink"
-          >
-            <Link to="/signup/student">
-              <span className="dropdown-item">Student</span>
-            </Link>
-            <Link to="/signup/professor">
-              <span className="dropdown-item">Professor</span>
-            </Link>
-          </div>
+          
         </li>
+        
+        
       </ul>
     </div>
   </nav>
