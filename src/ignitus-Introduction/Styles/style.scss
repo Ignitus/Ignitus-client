@@ -31,15 +31,74 @@
 	background-position: top right;
 
 	height: 1200px;
+
+	@media (max-width: 751px) {
+		& {
+			margin-bottom: 150px;
+			height: 100%;
+		}
+	}
+
+	@media (max-width: 568px) {
+		& {
+			margin-bottom: 0px;
+		}
+	}
 }
 
 .intro {
- background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 36.9%, $ignite-color-white 36% 100%);
+ background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 36.9%, $ignite-color-white 36.9% 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 	font-size: $ignite-font-size-xxl + 18px;
 	letter-spacing: 4px;
 	padding-top: 6%;
+
+	@media (max-width: 1145px) {
+		& {
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38%, $ignite-color-white 38% 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	@media (max-width: 892px) {
+		& {
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 39%, $ignite-color-white 39% 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	@media (max-width: 800px) {
+		& {
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 45%, $ignite-color-white 45% 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	@media (max-width: 682px) {
+		& {
+			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 46.5%, $ignite-color-white 46.5% 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	@media (max-width: 568px) {
+		& {
+			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 50.25%, $ignite-color-white 50% 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+}
+
+.intro__torch {
+	position: absolute;
+	top: 130px;
+	right: 110px;
 }
 
 .intro__content {
@@ -54,12 +113,55 @@
 
 	max-width: 60%;
 	padding: 110px 90px 45px 90px;
+
+
+	@media (max-width: 751px) {
+		& {
+			font-size: $ignite-font-size-md;
+			max-width: 100%;
+			padding: inherit 0 inherit 0;
+		}
+	}
 }
 
 .intro__content--lower {
 	display: flex;
 	justify-content: center;
 	font-size: $ignite-font-size-md;
+
+	@media (max-width: 945px) {
+		& {
+			flex-direction: column;
+			align-items: center;
+
+			max-width: 90%;
+			text-align: center;
+
+			margin-left: 15px;
+
+			img {
+				margin-top: 25px;
+			}
+		}
+
+		@media (max-width: 751px) {
+			& {
+				flex-direction: column-reverse;
+				img {
+					margin: 0 auto;
+					display: block;
+				}
+			}
+		}
+
+		@media (max-width: 568px) {
+			& {
+				img {
+					display: none;
+				}
+			}
+		}
+	}
 
 	img {
 		margin-left: 75px;
