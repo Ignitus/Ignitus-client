@@ -8,9 +8,9 @@ const {
 
 function* getContributorsData() {
   try {
-    // const { data } = yield call(api.getContributorsData);
+    const { data } = yield call(api.getContributorsData);
 
-    const data = [{
+    const dat = [{
       avatar_url: "https://avatars3.githubusercontent.com/u/13464678?v=4",
       contributions: 190,
       events_url: "https://api.github.com/users/divyanshu-rawat/events{/privacy}",

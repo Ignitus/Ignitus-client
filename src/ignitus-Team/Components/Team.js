@@ -4,6 +4,7 @@ import "../Styles/style.scss";
 import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
 import { withErrorBoundary } from "../../ignitus-Internals";
 import loader from "../../ignitus-Assets/Images/loader.gif";
+import shortid from "shortid";
 
 class Team extends React.Component {
   constructor(props) {
@@ -28,19 +29,15 @@ class Team extends React.Component {
     }
 
     const contributorsHTML = presets.map(item => (
-      <div
-        key={item.id}
-        className="col-3 col-sm-3 col-md-2 avatar-wrapper text-center p-2"
+      <a
+        key={shortid.generate()}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={item.html_url}
+        className="Contributor"
       >
-        <div className="p-3">
-          <img
-            className="rounded-circle mw-100 w-75"
-            src={item.avatar_url}
-            alt={`avatar ${item.login}`}
-          />
-          <div className="title-name mt-2">{item.login}</div>
-        </div>
-      </div>
+        <img src={item.avatar_url} width="100%" alt={`avatar ${item.login}`} />
+      </a>
     ));
 
     return (
@@ -52,8 +49,8 @@ class Team extends React.Component {
               <div className="studentsResearchers">
                 This project was made possible by these contributors
               </div>
-              <div className="Team">
-                <div className="row team_row">{contributorsHTML}</div>
+              <div className="box-model">
+                <div className="Contributors m-top">{contributorsHTML}</div>
               </div>
             </div>
           </div>
@@ -64,3 +61,4 @@ class Team extends React.Component {
 }
 
 export default withErrorBoundary(Team);
+
