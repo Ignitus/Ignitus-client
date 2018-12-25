@@ -4,7 +4,7 @@ import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import torch from '../../ignitus-Assets/Images/ignitus-torch.png';
 
-import resume from '../../ignitus-Assets/Images/resume.png';
+import resume from '../../ignitus-Assets/Images/Resume.png';
 
 const Introduction = () => (
   <div className="intro__wrapper" >
