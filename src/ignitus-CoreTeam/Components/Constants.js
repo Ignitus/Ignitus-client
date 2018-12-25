@@ -7,7 +7,6 @@ export const Rajvardhan = 'https://storage.googleapis.com/ignitus/Team/rajvardha
 export const Hafsa    	= 'https://storage.googleapis.com/ignitus/Team/Hafsa.jpeg'
 export const Desire  	= 'https://storage.googleapis.com/ignitus/Team/Desire.png'
 
-
 export const Avatar1    = 'https://storage.googleapis.com/ignitus/Team/avatar-bertha.png'
 export const Avatar2    = 'https://storage.googleapis.com/ignitus/Team/avatar-eugene.png'
 export const Avatar3    = 'https://storage.googleapis.com/ignitus/Team/avatar-george.png'

@@ -8,9 +8,6 @@ import loader from "../../ignitus-Assets/Images/loader.gif";
 class Team extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      contributorsData: []
-    };
   }
 
   componentDidMount() {
@@ -30,22 +27,6 @@ class Team extends React.Component {
       );
     }
 
-    const teamHTML = AVATARS.map(item => (
-      <div
-        key={item.title}
-        className="col-6 col-sm-4 col-md-3 avatar-wrapper text-center p-3"
-      >
-        <div className="avatar bg-white p-3" id="team-avatar-card">
-          <img
-            className="rounded-circle mw-100 w-75"
-            src={item.img}
-            alt={`avatar ${item.name}`}
-          />
-          <div className="title-name mt-2">{item.title}</div>
-          <div className="title-description">{item.description}</div>
-        </div>
-      </div>
-    ));
     const contributorsHTML = presets.map(item => (
       <div
         key={item.id}
@@ -64,17 +45,6 @@ class Team extends React.Component {
 
     return (
       <div>
-        <div className="team-wrapper container my-5 py-5">
-          <div className="row">
-            <div className="col">
-              <div className="title text-center mb-3">Our Team</div>
-              <div className="Team">
-                <div className="row team_row">{teamHTML}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="team-wrapper container my-5 py-5">
           <div className="row">
             <div className="col">

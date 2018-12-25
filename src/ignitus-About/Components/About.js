@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import '../Styles/style.scss';
 
 import Team from '../../ignitus-Team';
+import CoreTeam from '../../ignitus-CoreTeam';
+
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 const About = () => (
@@ -67,6 +69,7 @@ const About = () => (
                     </div>
                 </div>
             </div>
+          <CoreTeam.components.CoreTeam />
           <Team.containers.TeamContainer />
         </div>
     </Fragment>
