@@ -57,6 +57,9 @@
 	letter-spacing: 4px;
 	padding-top: 6%;
 
+	position: relative;
+	z-index: 3;
+
 	@media (max-width: 1145px) {
 		& {
 			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38%, $ignite-color-white 38% 100%);
