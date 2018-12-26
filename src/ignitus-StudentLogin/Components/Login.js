@@ -4,8 +4,8 @@ import { Redirect, Route } from "react-router-dom";
 import { withErrorBoundary } from "../../ignitus-Internals";
 
 import loader from "../../ignitus-Assets/Images/loader.gif";
-import loginImg from "../../ignitus-Assets/Images/login.png";
-import { logo } from "./Constants";
+import studentLogin  from '../../ignitus-Assets/Images/studentAuth.svg'
+import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import "../Styles/style.scss";
 
 class Login extends Component {
@@ -51,17 +51,24 @@ class Login extends Component {
     if (success) return <Redirect to="/dashboard" />;
 
     return (
-      <div className="container-custom col-lg-8  p-5">
-        <div className="row shadow">
+      <div className="col-lg-12 container-bg">
+      <div className="col-lg-8 container-custom  p-5">
+        <div className="row shadow border-rad">
           <div className="col-md-6 p-0 container-image">
-            <img className="img-fluid img-login d-block" src={loginImg} />
+            <img className="img-fluid img-login d-block" src={studentLogin} />
             <div className="text-below-image text-center">
               <p className="mb-5">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
+               <p>
+                <a href="/login/professor" className="text-center linkform">
+                  {' '}
+                  I am a Professor
+                </a>
+              </p>
             </div>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-6 container-form">
             <div className="my-4">
               <img className="img-fluid img mx-auto d-block" src={logo} />
             </div>
@@ -70,8 +77,8 @@ class Login extends Component {
               <div className="px-4">
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fa fa-envelope-o fa-fw" />
+                    <span className="input-group-text span-bg">
+                      <i className="fa fa-envelope-o fa-fw envelope-color" />
                     </span>
                   </div>
 
@@ -90,8 +97,8 @@ class Login extends Component {
 
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fa fa-key fa-fw" />
+                    <span className="input-group-text  span-bg">
+                      <i className="fa fa-key fa-fw key-color" />
                     </span>
                   </div>
                   <input
@@ -110,7 +117,7 @@ class Login extends Component {
 
               <div className="text-center mb-3 mt-3">
                 <button
-                  className="btn btn-success btn-rounded px-3 py-2"
+                  className="btn btn-success btn-rounded button-bg px-3 py-2"
                   onClick={this.handleSubmit}
                 >
                   Log in
@@ -122,7 +129,7 @@ class Login extends Component {
               </div>
 
               <div className="mb-4">
-                <button className="btn btn-primary btn-rounded mx-auto btn-block">
+                <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                   <i className="fa fa-linkedin mr-3" />
                   Linked-in
                 </button>
@@ -148,6 +155,7 @@ class Login extends Component {
             <strong>Please!</strong> fill the form!
           </div>
         )}
+      </div>
       </div>
     );
   }

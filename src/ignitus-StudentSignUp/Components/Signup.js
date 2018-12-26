@@ -60,7 +60,7 @@ class Signup extends React.Component {
           </div>
           <div className="col-md-6 container-form">
             <div className="my-4">
-              <img className="img-fluid _img mx-auto d-block" src={logo} alt="logo" />
+              <img className="img-fluid img mx-auto d-block" src={logo} alt="logo" />
             </div>
             <form >
               <div className="px-4">
@@ -117,7 +117,7 @@ class Signup extends React.Component {
                     Sign up
                   </button>
                 </div>
-                <div className="_or-seperator">
+                <div className="or-seperator">
                   <i className="text-black-50">or sign up with</i>
                 </div>
                 <div className="mb-4">
