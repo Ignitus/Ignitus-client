@@ -51,19 +51,19 @@ class Login extends Component {
     if (success) return <Redirect to="/dashboard" />;
 
     return (
-      <div className="_container-custom container p-5">
+      <div className="container-custom col-lg-8  p-5">
         <div className="row shadow">
           <div className="col-md-6 p-0 container-image">
-            <img className="img-fluid _img-login d-block" src={loginImg} />
+            <img className="img-fluid img-login d-block" src={loginImg} />
             <div className="text-below-image text-center">
               <p className="mb-5">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
             </div>
           </div>
 
-          <div className="col-md-6  _container-form ">
+          <div className="col-md-6">
             <div className="my-4">
-              <img className="img-fluid _img mx-auto d-block" src={logo} />
+              <img className="img-fluid img mx-auto d-block" src={logo} />
             </div>
 
             <form>
@@ -117,7 +117,7 @@ class Login extends Component {
                 </button>
               </div>
 
-              <div className="_or-seperator">
+              <div className="or-seperator">
                 <i className="text-black-50">or log in with</i>
               </div>
 
@@ -130,7 +130,7 @@ class Login extends Component {
               <div className="text-center mb-3 mt-3">
                 <div>
                   Don't have an account?{" "}
-                  <a href="/signup/student" className="text-center _link">
+                  <a href="/signup/student" className="text-center linkform">
                     {" "}
                     Sign Up
                   </a>
