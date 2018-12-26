@@ -3,6 +3,19 @@
 
 nav {
   background-color: $ignite-color-gray-12;
+
+  button {
+    .fa-bars {
+      position: relative;
+      z-index: 5;
+      color: $ignite-color-blue-20;
+      font-size: $ignite-font-size-md + 6px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .navbar {
@@ -17,6 +30,10 @@ nav {
   color: $ignite-color-blue-20;
   font-weight: $ignite-font-weight-bold;
   font-size: $ignite-font-size-xs;
+
+  &:hover {
+    color: $ignite-color-blue-36;
+  }
 }
 
 @media (min-width: 992px) {
@@ -44,7 +61,12 @@ nav {
       .navbar-nav {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+      }
+    }
+
+    @media(max-width: 1232px) {
+      .nav li a {
+        font-size: 12px;
       }
     }
   }
@@ -73,5 +95,11 @@ nav {
     border: 1px solid $ignite-background-color-white;
     padding: 10px inherit;
     border-radius: 12px;
+  }
+
+  .nav {
+      justify-content: space-around;
+      flex-wrap: nowrap !important;
+      width: 65% !important;
   }
 }
