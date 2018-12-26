@@ -1,0 +1,22 @@
+
+@media (min-width: 992px) {
+  nav {
+    .navbar-collapse {
+      flex-grow: 0;
+      justify-content: flex-end;
+
+      position: absolute;
+      right: 0;
+      padding-right: 3%;
+
+      .nav-item {
+        margin-right: 40px;
+
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: red;
+}

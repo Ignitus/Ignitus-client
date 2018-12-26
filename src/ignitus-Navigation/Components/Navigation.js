@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { logo } from './Constants';
+import '../Styles/style.scss';
 
 
 const Navigation = () => (
-  <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav className="navbar fixed-top navbar-expand-lg transparent">
     <HashLink className="navbar-brand" to="/#">
       <img src={logo} width="40" height="40" alt="logo" />
     </HashLink>
@@ -48,8 +49,7 @@ const Navigation = () => (
             </span>
           </Link>
         </li>
-      </ul>
-      <ul className="nav navbar-nav navbar-right ml-md-auto ">
+
         <li className="nav-item">
           <a
             className="nav-link"
