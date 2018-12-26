@@ -1,11 +1,10 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
 
-.intro {
-	font-size: $ignite-font-size-xl;
-  font-weight: $ignite-font-weight-medium;
-  margin-top: 30px;
+.content-container {
+	margin-top: 0 !important;
 }
+
 .ignitus {
 	font-size: $ignite-font-size-xxl;
   font-weight: $ignite-font-weight-bold;
@@ -50,19 +49,25 @@
 }
 
 .intro {
- background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 36.9%, $ignite-color-white 36.9% 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+	 background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38.75%, $ignite-color-white 38.75% 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-size: $ignite-font-size-xxl + 18px;
+  font-weight: $ignite-font-weight-medium;
 	letter-spacing: 4px;
-	padding-top: 6%;
 
+	margin-top: 66px;
+	padding-top: 10%;
 	position: relative;
 	z-index: 3;
 
+	@media (min-width: 992px) {
+		margin-top: 0;
+	}
+
 	@media (max-width: 1145px) {
 		& {
-			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38%, $ignite-color-white 38% 100%);
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 40%, $ignite-color-white 40% 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -70,7 +75,7 @@
 
 	@media (max-width: 892px) {
 		& {
-			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 39%, $ignite-color-white 39% 100%);
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 41%, $ignite-color-white 41% 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -78,7 +83,7 @@
 
 	@media (max-width: 800px) {
 		& {
-			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 45%, $ignite-color-white 45% 100%);
+			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 46.5%, $ignite-color-white 46.5% 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -86,7 +91,7 @@
 
 	@media (max-width: 682px) {
 		& {
-			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 46.5%, $ignite-color-white 46.5% 100%);
+			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 49%, $ignite-color-white 49% 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -94,7 +99,7 @@
 
 	@media (max-width: 568px) {
 		& {
-			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 50.25%, $ignite-color-white 50% 100%);
+			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 51%, $ignite-color-white 51% 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}

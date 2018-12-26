@@ -1,22 +1,77 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-tokens.scss';
+
+nav {
+  background-color: $ignite-color-gray-12;
+}
+
+.navbar {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9001;
+}
+
+.nav li a {
+  color: $ignite-color-blue-20;
+  font-weight: $ignite-font-weight-bold;
+  font-size: $ignite-font-size-xs;
+}
 
 @media (min-width: 992px) {
   nav {
+    background-color: transparent;
+
     .navbar-collapse {
+      width: 100%;
       flex-grow: 0;
       justify-content: flex-end;
 
       position: absolute;
       right: 0;
-      padding-right: 3%;
+      padding-right: 2%;
 
       .nav-item {
-        margin-right: 40px;
+        margin-right: 3%;
+        padding: 0;
 
+        .nav-link {
+          padding: 0.25rem 1rem;
+        }
+      }
+
+      .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
-}
 
-.nav-link {
-  color: red;
+  .nav li a {
+    color: $ignite-background-color-white;
+  }
+
+  #signup {
+    background-color: $ignite-background-color-white;
+
+    a {
+      color: $ignite-color-blue-20;
+    }
+  }
+
+  #signin:hover {
+    background-color: $ignite-background-color-white;
+
+    a {
+      color: $ignite-color-blue-20;
+    }
+  }
+
+  .dropdown {
+    border: 1px solid $ignite-background-color-white;
+    padding: 10px inherit;
+    border-radius: 12px;
+  }
 }

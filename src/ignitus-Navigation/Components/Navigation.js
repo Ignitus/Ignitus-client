@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { logo } from './Constants';
+import logo from '../../ignitus-Assets/Images/nav-logo.svg';
 import '../Styles/style.scss';
 
 
 const Navigation = () => (
-  <nav className="navbar fixed-top navbar-expand-lg transparent">
+
+  <nav className="navbar navbar-expand-lg">
     <HashLink className="navbar-brand" to="/#">
       <img src={logo} width="40" height="40" alt="logo" />
     </HashLink>
@@ -60,7 +61,7 @@ const Navigation = () => (
             Join
           </a>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown"  id="signin">
           <a
             className="nav-link dropdown-toggle"
             href="#"
@@ -83,7 +84,7 @@ const Navigation = () => (
             </Link>
           </div>
         </li>
-        <li className="nav-item dropdown">
+        <li className="nav-item dropdown" id="signup">
           <a
             className="nav-link dropdown-toggle"
             href="#"
