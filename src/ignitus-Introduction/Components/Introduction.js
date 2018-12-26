@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
-import torch from '../../ignitus-Assets/Images/ignitus-torch.png';
+import torch from '../../ignitus-Assets/Images/torch.svg';
 
-import resume from '../../ignitus-Assets/Images/Resume.png';
+import resume from '../../ignitus-Assets/Images/Resume.svg';
 
 const Introduction = () => (
   <div className="intro__wrapper" >
