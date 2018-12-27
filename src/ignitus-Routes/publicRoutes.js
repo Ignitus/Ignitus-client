@@ -39,7 +39,7 @@ const AboutUs = Loadable({
 export const PublicRoutes = props => {
   return (
     <React.Fragment>
-      <Navigation.components.Navigation />
+      <Navigation.components.Navigation id={35} />
       <Switch>
         <Route
           exact

@@ -19,7 +19,7 @@ nav {
 }
 
 .navbar {
-  position: absolute !important;
+  position: fixed !important;
   width: 100%;
   top: 0;
   left: 0;
@@ -32,20 +32,18 @@ nav {
   font-size: $ignite-font-size-xs;
 
   &:hover {
-    color: $ignite-color-blue-36;
+    color: $ignite-color-yellow;
   }
 }
 
 @media (min-width: 992px) {
   nav {
-    background-color: transparent;
-
     .navbar-collapse {
       width: 100%;
       flex-grow: 0;
       justify-content: flex-end;
 
-      position: absolute;
+      position: fixed;
       right: 0;
       padding-right: 2%;
 
@@ -73,6 +71,7 @@ nav {
 
   .nav li a {
     color: $ignite-background-color-white;
+    transition: color 300ms ease-in;
   }
 
   #signup {
@@ -84,10 +83,8 @@ nav {
   }
 
   #signin:hover {
-    background-color: $ignite-background-color-white;
-
     a {
-      color: $ignite-color-blue-20;
+      color: $ignite-background-color-white;
     }
   }
 
@@ -101,5 +98,35 @@ nav {
       justify-content: space-around;
       flex-wrap: nowrap !important;
       width: 65% !important;
+  }
+
+  .transparent {
+    background-color: transparent;
+    transition: background-color 300ms ease-in;
+  }
+
+  .content-container .whitenav {
+    background-color: white;
+
+   -webkit-box-shadow: 0 8px 6px -6px $ignite-color-neutral-22;
+   -moz-box-shadow: 0 8px 6px -6px $ignite-color-neutral-22;
+    box-shadow: 0 8px 6px -6px $ignite-color-neutral-22;
+
+    transition: background-color 700ms;
+
+    li a {
+      color: $ignite-color-blue-20;
+      transition: color 700ms;
+
+      &:hover {
+        color: $ignite-color-yellow;
+      }
+    }
+
+    #signin:hover, #signup:hover {
+      a {
+        color: $ignite-color-yellow;
+      }
+    }
   }
 }
