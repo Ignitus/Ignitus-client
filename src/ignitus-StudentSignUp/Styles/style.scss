@@ -1,27 +1,71 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
 
-._container-custom {
+.container-custom {
     max-width: 800px;
     margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-._img {
+.img {
 	width: 150px;
 	height: 150px;
 }
 
-._or-seperator {
+.border-rad{
+    border-radius: 15px;
+}
+
+.or-seperator {
     margin: 20px 0 10px;
     text-align: center;
     border-top: 1px solid $ignite-color-neutral-80;
 }
-._or-seperator i {
+
+.envelope-color{
+    color: white;
+}
+.key-color{
+    color: white;
+}
+
+.span-bg{
+    background: #010071 !important;
+    border-radius: 10px 0px 0px 10px !important;
+    border: 1px solid #010071 !important;
+}
+
+.or-seperator i {
     padding: 0 10px;
     background: $ignite-color-white;
     position: relative;
     top: -11px;
     z-index: 1;
+}
+
+.password-border{
+    border-radius: 0px 10px 10px 0px !important;
+}
+
+.email-border{
+    border-radius: 0px 10px 10px 0px !important;
+}
+
+.container-form{
+    background:white;
+    border: 1px solid white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.button-bg{
+    background: #010071 !important;
+    border-color: #010071 !important;
+    border-radius: 10px !important;
+}
+
+.button-bg:hover{
+    background:#060591 !important;
 }
 
 .loader{
@@ -32,13 +76,16 @@
     height: 50vw;
 }
 
-._img-login {
+.img-login {
     flex-basis: 57%;
+    margin: 9%;
 }
 
 .text-below-image {
     background-color: $ignite-color-blue-97;
     flex-basis: 43%;
+    border: 1px solid #fac76f;
+    border-radius: 0px 0px 0px 15px;
 }
 
 .text-below-image {
@@ -59,17 +106,36 @@
 .container-image {
     display: flex;
     flex-direction: column;
+    background:$ignite-color-blue-97;
+    border: 1px solid #fac76f;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.btn-linkedin{
+    background: #010071 !important;
+    border-color: #010071 !important;
+    border-radius: 10px !important;
+}
+
+.btn-linkedin:hover{
+    background:#060591 !important;
+}
+
+.container-bg{
+    background: #000066;
 }
 
 .margin-Top {
     margin-top: 15px !important;
 }
 
-._linkform {
+.linkform {
     text-decoration: none;
+    color: #010071;
+    font-weight: bolder;
 
     &:hover{
       text-decoration: underline !important;
-      color: $ignite-color-white;
+      color:#060591;
     }
 }

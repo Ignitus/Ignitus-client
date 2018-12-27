@@ -42,7 +42,7 @@
 .carousel--tile {
   @include tile-position;
 
-  background-color: $ignite-color-blue-20;
+  background-color: #4c4596;
   height: 300px;
   width: 90%;
   border-radius: 12px;
@@ -50,7 +50,7 @@
 
   @media (max-width: 1125px) {
     & {
-      background-color: $ignite-color-blue-36;
+      background-color: #4c4596;
       height: 350px;
     }
   }
@@ -58,7 +58,7 @@
   .carousel__slides {
     @include tile-position;
 
-    background-color: $ignite-color-blue-36;
+    background-color: #a17bfd;
     height: 350px;
     width: 87%;
     border-radius: 12px;
@@ -73,11 +73,11 @@
   border-radius: 12px;
   margin: 70px 40px 0 50px;
 
-  background-color: $ignite-color-blue-bg;
+  background-color: #2c2d67;
 
   @media (max-width: 1125px) {
     & {
-      background-color: $ignite-color-blue-20;
+      background-color:#2c2d67;
       height: 300px;
     }
   }
@@ -98,7 +98,7 @@
   box-sizing: border-box;
   box-shadow: 0 0 30px 4px rgba(#888888, 0.76);
 
-  width: 100%;
+  width: 80%;
   height: 400px;
 
   background-color: white;

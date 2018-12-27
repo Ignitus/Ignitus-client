@@ -52,7 +52,7 @@
   &.button-get-started {
   	margin: 50px 0;
   	background-color: $ignite-color-white;
-  	color: rgb(46, 14, 184);
+  	color: $ignite-color-blue-20;
   	text-decoration: none;
 		font-weight: $ignite-font-weight-semibold;
 
@@ -61,8 +61,8 @@
 		border-radius: 22px;
 
     &:hover {
-    	color: $ignite-color-white;
-    	background-color: $ignite-color-neutral-22;
+    	color: $ignite-color-blue-20;
+    	background-color: $ignite-color-yellow;
     }
 
 		&:focus {

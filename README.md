@@ -1,4 +1,5 @@
-![alt tag](https://avatars0.githubusercontent.com/u/39058097?s=200&v=4)
+
+<img src="https://imgur.com/b0y65se.gif" width="300">
 
 
 <a href="https://www.patreon.com/teamignitus">
@@ -8,58 +9,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
-
-
-
-## Client-Side
-Written in universal JavaScript
-
-* react
-* redux
-* travis-ci
-* heroku
-* prop-types
-* redux-thunk
-* docker-container
-* redux-sagas
-* flow
-* reselect
-* jest-tests
-* istanbul
-* ignitus-rest-api
-* heroku-pipeline
-* airbnb-eslint
-* react-router-v4
-* bootstrap4
-* enzyme-testing
-* service-worker-precache
-* sass
-* lazy-loading(React-lodable)
-* PWA (Progressive Web Application)
-
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com)
-
-
-## Bots
-* Netlify
-* dependabot
-* welcomebot
-* labelsbot
-
-## Server-Side
-* Node.js
-* JWT
-* Mocha
-* Mongoose
-* MongoDB
-* Docker
-* Redis
-* TRAVIS CI
-* CodeCov
-* GraphQL Caching
-* TypeScript
-
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+
+
+<a href="https://github.com/Ignitus/Tools"><img src="https://imgur.com/1pa8uwS.png" width="500"></a>
+
 
 ## About Ignitus
 
@@ -74,7 +28,6 @@ You can check out this [YouTube Channel](https://www.youtube.com/channel/UCW2BmT
 
 We are organizing the following programs on a global scale where students can participate remotely to improve their skills and get real-world software development experience-
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 ## Ignitus Scholar
 
@@ -134,51 +87,16 @@ Ignitus Quora -
 
 ##
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
-
 ![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
-![alt tag](https://cdn-images-1.medium.com/max/800/1*jxFIFA8WI8TkMmdbOorOsA.png)
+
+## Contributing
+Please check the [contributionGuide](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
 
 
-For Installation kindly refer [CONTRIBUTION-GUIDELINES](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
+## Contributors
+<a href="http://www.ignitus.org/aboutus"><img src="https://imgur.com/uDEb2rY.png" width="500"></a>
 
-
-## Ignitus Client-Side Web Application Contributors
-
-[![Paarmita Bhargava](https://github.com/Paarmita.png?size=100)](https://github.com/Paarmita) | [![Bill Hefty](https://github.com/bhefty.png?size=100)](https://github.com/bhefty) | [![Brian Fernando ](https://github.com/BrianCortes.png?size=100)](https://github.com/BrianCortes) | [![Amit Mangotra](https://github.com/amitmangotra.png?size=100)](https://github.com/amitmangotra) | [![Fabricio Augusto](https://github.com/fabricionaweb.png?size=100)](https://github.com/fabricionaweb) | [![My Trang Hong](https://github.com/meyfleur.png?size=100)](https://github.com/meyfleur)
----|---|---|---|---|---
-[Paarmita Bhargava](https://github.com/Paarmita) | [Bill Hefty](https://github.com/bhefty) | [Brian Fernando](https://github.com/BrianCortes) | [Amit Mangotra](https://github.com/amitmangotra) | [Fabricio Augusto](https://github.com/fabricionaweb) | [My Trang Hong](https://github.com/meyfleur)
-
-
-[![Sid Bentifraouine](https://github.com/sidbentifraouine.png?size=100)](https://github.com/sidbentifraouine) | [![Abhinav Keshav](https://github.com/shoutoutloud.png?size=100)](https://github.com/shoutoutloud) | [![Trevor Kirpaul](https://github.com/trevorkirpaul.png?size=100)](https://github.com/trevorkirpaul) | [![Tucker Blackwell](https://github.com/trblackw.png?size=100)](https://github.com/trblackw) | [![Nirmal Kumar](https://github.com/nirmalks.png?size=100)](https://github.com/nirmalks) | [![Martin Hofmann](https://github.com/Martskin.png?size=100)](https://github.com/Martskin)
----|---|---|---|---|---
-[Sid Bentifraouine](https://github.com/sidbentifraouine) | [Abhinav Keshav](https://github.com/shoutoutloud) | [Trevor Kirpaul](https://github.com/trevorkirpaul) | [Tucker Blackwell](https://github.com/trblackw) | [Nirmal Kumar K](https://github.com/nirmalks) | [Martin Hofmann](https://github.com/Martskin)
-
-
-[![Debasish Sahoo](https://github.com/debck.png?size=100)](https://github.com/debck) | [![Rupesh Krishna Jha](https://github.com/Rupeshiya.png?size=100)](https://github.com/Rupeshiya) | [![Afreen Rahman](https://github.com/afreen23.png?size=100)](https://github.com/afreen23) |	[![paperlambda](https://github.com/paperlambda.png?size=100)](https://github.com/paperlambda) |	[![Apoorv Taneja](https://github.com/plxity.png?size=100)](https://github.com/plxity)
----|---|---|---|---
-[Debasish Sahoo](https://github.com/debck) | [Rupesh Krishna Jha](https://github.com/Rupeshiya) |	[Afreen Rahman](https://github.com/afreen23) | [paperlambda](https://github.com/paperlambda) | [Apoorv Taneja](https://github.com/plxity)
-
-* Thank You All For Your Support!!
-
-#
-
-### Give this Project a Star :star:
-
-If you liked working on this project, please share this project as much 
-as you can and star this project to help as many people in open source as you can.
-
-
-:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
-
-
-#
-
-### License [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_shield)
-
-MIT © IGNITUS
-
-
+##
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_large)

@@ -4,7 +4,6 @@ import { HashLink } from 'react-router-hash-link';
 import logo from '../../ignitus-Assets/Images/nav-logo.svg';
 import '../Styles/style.scss';
 
-
 class Navigation extends React.Component {
   constructor() {
     super();
