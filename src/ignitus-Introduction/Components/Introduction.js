@@ -22,7 +22,7 @@ const Introduction = () => (
             <p>Ingnite your resume and get the <span className="bold-txt">best global <br />
                 opportunities</span> and skyrocekt your career</p>
             <Link to="/Signup">
-              <button className="btn btn-secondary button-get-started">
+              <button className="btn button-intro">
                 Sign Up
               </button>
             </Link>

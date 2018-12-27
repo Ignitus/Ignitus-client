@@ -105,7 +105,7 @@ class Navigation extends React.Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Sign in
+                Signin
               </a>
               <div
                 className="dropdown-menu"
@@ -128,7 +128,7 @@ class Navigation extends React.Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Sign up
+                Signup
               </a>
               <div
                 className="dropdown-menu dropdown-menu-right"
