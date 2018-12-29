@@ -39,6 +39,19 @@ class Navigation extends React.Component {
     });
   }
 
+  componentDidUpdate(){
+    const baseURL = 'http://localhost:3000/';
+
+    if(window.location.href == baseURL + 'login/student' || window.location.href == baseURL + 'signup/student'){
+       if(this.state.navScrolled === false) {
+          this.setState({
+            navScrolled: true,
+            displayClass: 'whitenav'
+          });
+        }
+    }
+  }
+
   render() {
     return(
       <nav className={"navbar navbar-expand-lg " + this.state.displayClass}>

@@ -75,17 +75,11 @@ nav {
   }
 
   #signup {
-    background-color: $ignite-background-color-white;
-
-    a {
-      color: $ignite-color-blue-20;
-    }
+    border: none !important;
   }
 
-  #signin:hover {
-    a {
-      color: $ignite-background-color-white;
-    }
+  #signin{
+    border: none !important;
   }
 
   .dropdown {
