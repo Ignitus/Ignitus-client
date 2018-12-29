@@ -29,7 +29,6 @@ class Navigation extends React.Component {
       } else {
 
         if(this.state.navScrolled === false) {
-          console.log('test')
           this.setState({
             navScrolled: true,
             displayClass: 'whitenav'
