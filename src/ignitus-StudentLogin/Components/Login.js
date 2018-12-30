@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Redirect, Route } from "react-router-dom";
+import { Redirect, Route, Link } from "react-router-dom";
 import { withErrorBoundary } from "../../ignitus-Internals";
 
 import loader from "../../ignitus-Assets/Images/loader.gif";
@@ -60,10 +60,10 @@ class Login extends Component {
               <p className="mb-5">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
                <p>
-                <a href="/login/professor" className="text-center linkform">
+                <Link to="/login/professor" className="text-center linkform">
                   {' '}
-                  I am a Professor
-                </a>
+                   I am a Professor
+                </Link>
               </p>
             </div>
           </div>
@@ -125,7 +125,7 @@ class Login extends Component {
               </div>
 
               <div className="or-seperator">
-                <i className="text-black-50">or log in with</i>
+                <i className="text-black-50">or</i>
               </div>
 
               <div className="mb-4">

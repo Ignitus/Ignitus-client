@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import logo from '../../ignitus-Assets/Images/nav-logo.svg';
-import '../Styles/style.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import logo from "../../ignitus-Assets/Images/nav-logo.svg";
+import blackLogo from '../../ignitus-Assets/Images/black-logo.svg'
+import "../Styles/style.scss";
 
 class Navigation extends React.Component {
   constructor() {
@@ -10,40 +11,45 @@ class Navigation extends React.Component {
 
     this.state = {
       navScrolled: false,
-      displayClass: 'transparent'
-    }
+      displayClass: "transparent",
+      dynamicLogo: blackLogo,
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', () => {
-
-      if(window.scrollY < 20) {
-
-        if(this.state.navScrolled === true) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 20) {
+        if (this.state.navScrolled === true) {
           this.setState({
             navScrolled: false,
-            displayClass: 'transparent'
+            displayClass: "transparent",
+            dynamicLogo: blackLogo,
           });
         }
-
       } else {
-
-        if(this.state.navScrolled === false) {
+        if (this.state.navScrolled === false) {
           this.setState({
             navScrolled: true,
-            displayClass: 'whitenav'
+            displayClass: "whitenav",
+            dynamicLogo: logo,
           });
         }
-
       }
     });
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.navScrolled !== this.state.navScrolled) {
+      return true;
+    }
+    return false;
+  }
+
   render() {
-    return(
+    return (
       <nav className={"navbar navbar-expand-lg " + this.state.displayClass}>
         <HashLink className="navbar-brand" to="/#">
-          <img src={logo} width="40" height="40" alt="logo" />
+          <img src={this.state.dynamicLogo} width="40" height="40" alt="logo" />
         </HashLink>
         <button
           className="navbar-toggler"
@@ -54,16 +60,14 @@ class Navigation extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fa fa-bars"></i>
+          <i className="fa fa-bars" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav navbar-nav">
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                  Home
-                  {' '}
-                  <span className="sr-only">(current)</span>
+                  Home <span className="sr-only">(current)</span>
                 </span>
               </HashLink>
             </li>
@@ -95,7 +99,7 @@ class Navigation extends React.Component {
                 Join
               </a>
             </li>
-            <li className="nav-item dropdown"  id="signin">
+            <li className="nav-item dropdown" id="signin">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"

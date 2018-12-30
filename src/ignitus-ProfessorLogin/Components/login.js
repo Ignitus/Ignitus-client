@@ -1,87 +1,109 @@
-import React from 'react';
-import { logo } from './Constants';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import React, { Component } from "react";
+import _ from "lodash";
+import { Redirect, Route, Link } from "react-router-dom";
+import { withErrorBoundary } from "../../ignitus-Internals";
 
-import '../Styles/style.scss';
+import professorSignup  from '../../ignitus-Assets/Images/professorAuth.svg'
+import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
+import "../Styles/style.scss";
 
-const Login = () => (
-  <div className="container-fluid">
-    <div className="row">
-      <div className="container mt-5 col-xs-6">
-        <div className="my-5">
-          <img className="img-fluid _img mx-auto d-block" src={logo} alt="Ignitus" />
-        </div>
-        <form>
-          <div className="_login-form mx-auto">
-            <div className="input-group form-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text">
-                  <i className="fa fa-envelope-o fa-fw" />
-                </span>
-              </div>
-              <input
-                type="text"
-                id="email"
-                className="form-control"
-                placeholder="Email"
-              />
-            </div>
-            <div className="input-group form-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text">
-                  <i className="fa fa-key fa-fw" />
-                </span>
-              </div>
-              <input
-                type="password"
-                id="pass"
-                className="form-control"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div className="input-group form-group">
-              <div className="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="gridCheck1"
-                />
-                <label className="form-check-label" htmlFor="gridCheck1">
-                    Remember Me
-                </label>
-              </div>
-            </div>
-            <div className="text-center mb-3 mt-3">
-              <button type="submit" className="btn btn-success btn-rounded px-3 py-2">
-                Sign in
-              </button>
-            </div>
-            <div className="_or-seperator">
-              <i className="text-black-50">or sign in with</i>
-            </div>
-            <div className="mb-4">
-              <button className="btn btn-primary btn-rounded mx-auto btn-block">
-                <i className="fa fa-linkedin mr-3" />
-                Linked-in
-              </button>
-            </div>
-            <div className="text-center mb-3 mt-3">
-              <div>
-                  Don't have an account?
-                {' '}
-                <a href="/signup/professor" className="text-center _link">
+class Login extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="col-lg-12 container-bg">
+      <div className="col-lg-8 container-custom  p-5">
+        <div className="row shadow border-rad">
+          <div className="col-md-6 p-0 container-image">
+            <img className="img-fluid img-login d-block" src={professorSignup} />
+            <div className="text-below-image text-center">
+              <p className="mb-5">Let's get started</p>
+              <p>Skyrocket your career with best global opportunities</p>
+               <p>
+                <Link to="/login/student" className="text-center linkform">
                   {' '}
-                    Sign Up
-                </a>
-              </div>
+                  I am a Student
+                </Link>
+              </p>
             </div>
           </div>
-        </form>
+
+          <div className="col-md-6 container-form">
+            <div className="my-4">
+              <img className="img-fluid img mx-auto d-block" src={logo} />
+            </div>
+
+            <form>
+              <div className="px-4">
+                <div className="input-group form-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text span-bg">
+                      <i className="fa fa-envelope-o fa-fw envelope-color" />
+                    </span>
+                  </div>
+
+                  <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    className="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div className="input-group form-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text  span-bg">
+                      <i className="fa fa-key fa-fw key-color" />
+                    </span>
+                  </div>
+                  <input
+                    name="password"
+                    type="password"
+                    id="pass"
+                    className="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+
+              <div className="text-center mb-3 mt-3">
+                <button
+                  className="btn btn-success btn-rounded button-bg px-3 py-2"
+                >
+                  Log in
+                </button>
+              </div>
+
+              <div className="or-seperator">
+                <i className="text-black-50">or</i>
+              </div>
+
+              <div className="mb-4">
+                <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                  <i className="fa fa-linkedin mr-3" />
+                  LinkedIn
+                </button>
+              </div>
+              <div className="text-center mb-3 mt-3">
+                <div>
+                  Don't have an account?{" "}
+                  <a href="/signup/professor" className="text-center linkform">
+                    {" "}
+                    Sign Up
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div className="col-xs-4" />
-    </div>
-  </div>
-);
+      </div>
+    );
+  }
+}
 
 export default withErrorBoundary(Login);

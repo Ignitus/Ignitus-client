@@ -2,7 +2,7 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 
 nav {
-  background-color: $ignite-color-gray-12;
+  // background-color: $ignite-color-gray-12;
 
   button {
     .fa-bars {
@@ -16,6 +16,15 @@ nav {
       outline: none;
     }
   }
+}
+
+.darkblue-background{
+  background: #000066 !important;
+}
+
+.transparent-background {
+  background-color: transparent;
+  transition: background-color 300ms ease-in;
 }
 
 .navbar {
@@ -75,17 +84,11 @@ nav {
   }
 
   #signup {
-    background-color: $ignite-background-color-white;
-
-    a {
-      color: $ignite-color-blue-20;
-    }
+    border: none !important;
   }
 
-  #signin:hover {
-    a {
-      color: $ignite-background-color-white;
-    }
+  #signin{
+    border: none !important;
   }
 
   .dropdown {
@@ -98,11 +101,6 @@ nav {
       justify-content: space-around;
       flex-wrap: nowrap !important;
       width: 65% !important;
-  }
-
-  .transparent {
-    background-color: transparent;
-    transition: background-color 300ms ease-in;
   }
 
   .content-container .whitenav {
