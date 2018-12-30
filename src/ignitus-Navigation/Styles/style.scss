@@ -2,7 +2,7 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 
 nav {
-  background-color: $ignite-color-gray-12;
+  // background-color: $ignite-color-gray-12;
 
   button {
     .fa-bars {
@@ -16,6 +16,15 @@ nav {
       outline: none;
     }
   }
+}
+
+.darkblue-background{
+  background: #000066 !important;
+}
+
+.transparent-background {
+  background-color: transparent;
+  transition: background-color 300ms ease-in;
 }
 
 .navbar {
@@ -92,11 +101,6 @@ nav {
       justify-content: space-around;
       flex-wrap: nowrap !important;
       width: 65% !important;
-  }
-
-  .transparent {
-    background-color: transparent;
-    transition: background-color 300ms ease-in;
   }
 
   .content-container .whitenav {

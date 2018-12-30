@@ -10,7 +10,7 @@ import Testimonial from "../ignitus-Testimonial";
 import CardLayout from "../ignitus-WhatWeDo";
 import Partner from "../ignitus-Partners";
 
-import LoginProfessor from "../ignitus-ProfessorLogin/loadables";
+import LoginProfessor from "../ignitus-ProfessorLogin";
 import SignupProfessor from "../ignitus-ProfessorSignUp";
 import LoginStudent from "../ignitus-StudentLogin";
 import SignupStudent from "../ignitus-StudentSignUp";

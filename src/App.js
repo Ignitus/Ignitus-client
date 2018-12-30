@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import {withErrorBoundary} from './ignitus-Internals';
 import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes';
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
-
 import loader from './ignitus-Assets/Images/loader.gif';
 import './App.scss';
 

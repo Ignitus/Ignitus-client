@@ -118,7 +118,7 @@ class Signup extends React.Component {
                   </button>
                 </div>
                 <div className="or-seperator">
-                  <i className="text-black-50">or sign up with</i>
+                  <i className="text-black-50">or</i>
                 </div>
                 <div className="mb-4">
                   <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">

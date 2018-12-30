@@ -4,11 +4,11 @@ import loader from '../../ignitus-Assets/Images/loader.gif';
 
 // [@INFO] Loading component can put in global UI component
 const Loading = () =>
-                     <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
-                        <div className="loader">
-                          <img src={loader} alt="Loading..." />
-                        </div>
-                      </div>;
+ <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
+    <div className="loader">
+      <img src={loader} alt="Loading..." />
+    </div>
+  </div>;
 
 
 export const Login = Loadable({
