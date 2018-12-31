@@ -98,10 +98,10 @@ class Signup extends React.Component {
                   </button>
                 </div>
                 <div className="text-center">
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <Link to="/login/professor" className="text-center linkform">
                   {' '}
-                   Sign In
+                   Log In
                   </Link>                  
               </div>
               </div>
