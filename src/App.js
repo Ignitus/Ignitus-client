@@ -10,24 +10,24 @@ import './App.scss';
 class App extends Component {
   constructor() {
     super();
-    this.state = { isLoading: true };
+    // this.state = { isLoading: true };
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ isLoading: false }), 2000);
+    // setTimeout(() => this.setState({ isLoading: false }), 2000);
   }
 
   render() {
-    const { state: { isLoading } } = this;
-    if (isLoading) {
-      return (
-        <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
-          <div className="loader">
-            <img src={loader} alt="Loading..." />
-          </div>
-        </div>
-      );
-    }
+    // const { state: { isLoading } } = this;
+    // if (isLoading) {
+    //   return (
+    //     <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
+    //       <div className="loader">
+    //         <img src={loader} alt="Loading..." />
+    //       </div>
+    //     </div>
+    //   );
+    // }
     return (
       <div className="content-container">
         <Switch>

@@ -99,51 +99,21 @@ class Navigation extends React.Component {
                 Join
               </a>
             </li>
-            <li className="nav-item dropdown" id="signin">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Sign in
-              </a>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <Link to="/login/student">
-                  <span className="dropdown-item">Student</span>
-                </Link>
-                <Link to="/login/professor">
-                  <span className="dropdown-item">Professor</span>
-                </Link>
-              </div>
+
+             <li className="nav-item">
+              <Link to="/Login">
+                <span className="nav-link" href="/Login">
+                  Sign in
+                </span>
+              </Link>
             </li>
-            <li className="nav-item dropdown" id="signup">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Sign up
-              </a>
-              <div
-                className="dropdown-menu dropdown-menu-right"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <Link to="/signup/student">
-                  <span className="dropdown-item">Student</span>
-                </Link>
-                <Link to="/signup/professor">
-                  <span className="dropdown-item">Professor</span>
-                </Link>
-              </div>
+
+             <li className="nav-item">
+              <Link to="/Signup">
+                <span className="nav-link" href="/Signup">
+                  Sign up
+                </span>
+              </Link>
             </li>
           </ul>
         </div>
