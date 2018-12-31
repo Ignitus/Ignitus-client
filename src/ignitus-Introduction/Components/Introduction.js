@@ -19,8 +19,8 @@ const Introduction = () => (
 
         <div className="intro__content--lower">
           <div className="content--lower__signup">
-            <p>Ingnite your resume and get the <span className="bold-txt">best global <br />
-                opportunities</span> and skyrocekt your career</p>
+            <p>Ignite your resume and get the <span className="bold-txt">best global <br />
+                opportunities</span> and Skyrocketing your career</p>
             <Link to="/Signup">
               <button className="btn btn-secondary button-get-started">
                 Sign Up
