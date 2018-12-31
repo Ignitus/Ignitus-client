@@ -2,12 +2,17 @@
 @import './src/shared/styles/ignitus-components-common.scss';
 
 .m-top{
-	margin-top: 12%;
+	margin-top: 8%;
+}
+
+.login-signup{
+    color: white;
+    text-align: center;
 }
 
 .common-auth-ui-css{
 
-    min-height: 450px !important;
+    min-height: 420px !important;
     text-align: center;
     border-radius: 20px;
     box-shadow: rgb(255, 255, 255) 6px 6px 1px;
