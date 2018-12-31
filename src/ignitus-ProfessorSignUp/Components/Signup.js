@@ -2,6 +2,7 @@ import React from 'react';
 import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
+import { Link } from "react-router-dom";
 import professorSignUp  from '../../ignitus-Assets/Images/professorAuth.svg'
 import { withErrorBoundary } from '../../ignitus-Internals';
 
@@ -97,11 +98,11 @@ class Signup extends React.Component {
                   </button>
                 </div>
                 <div className="text-center">
-                  <p>Already have an account? <a href="/login/professor" className="linkform">
-                    {' '}
-                    Sign In
-                  </a></p>
-                  
+                  Don't have an account?{" "}
+                  <Link to="/login/professor" className="text-center linkform">
+                  {' '}
+                   Sign In
+                  </Link>                  
               </div>
               </div>
             </form>

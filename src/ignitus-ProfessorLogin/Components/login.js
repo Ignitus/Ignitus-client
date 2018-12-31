@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Redirect, Route, Link } from "react-router-dom";
 import { withErrorBoundary } from "../../ignitus-Internals";
-
+import { Link } from "react-router-dom";
 import professorSignup  from '../../ignitus-Assets/Images/professorAuth.svg'
 import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import "../Styles/style.scss";
@@ -91,10 +90,10 @@ class Login extends Component {
               <div className="text-center mb-3 mt-3">
                 <div>
                   Don't have an account?{" "}
-                  <a href="/signup/professor" className="text-center linkform">
-                    {" "}
-                    Sign Up
-                  </a>
+                  <Link to="/signup/professor" className="text-center linkform">
+                  {' '}
+                   Sign Up
+                  </Link>
                 </div>
               </div>
             </form>

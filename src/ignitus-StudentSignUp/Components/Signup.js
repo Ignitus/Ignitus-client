@@ -3,6 +3,7 @@ import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import studentSignUp  from '../../ignitus-Assets/Images/studentAuth.svg'
+import { Link } from "react-router-dom";
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 import _ from 'lodash';
@@ -127,11 +128,13 @@ class Signup extends React.Component {
                   </button>
                 </div>
                 <div className="text-center">
-                  <p>Already have an account? <a href="/login/student" className="linkform">
-                    {' '}
-                    Sign In
-                  </a></p>
-                  
+                  <div>
+                  Don't have an account?{" "}
+                  <Link to="/login/student" className="text-center linkform">
+                  {' '}
+                   Log In
+                  </Link>
+                </div>
               </div>
               </div>
             </form>
