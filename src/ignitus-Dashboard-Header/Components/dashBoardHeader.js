@@ -15,7 +15,12 @@ class dashBoardHeader extends React.Component {
 
   logout() {
     localStorage.clear();
+    this.props.logUserOut();
     this.setState({ redirect: true });
+  }
+
+  componentDidMount(){
+    console.log('this',this);
   }
 
   render() {

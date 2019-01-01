@@ -1,14 +1,17 @@
 import * as t from "./actionTypes";
 
-const studentLoginReducer = (state = {}, action) => {
+const studentLoginReducer = (state =  { isFetching: false, message: '', success: false}, action) => {
   switch (action.type) {
     case t.LOG_IN_RESPONSE:
       return Object.assign({}, state, { isFetching: false }, action.data);
       break;
 
     case t.LOG_IN_REQUEST:
-      return Object.assign({}, state, { isFetching: true });
+      return Object.assign({}, state, { isFetching: true, message: 'Processing...', success: false }, );
       break;
+
+    case t.LOG_USER_OUT:
+      return { isFetching: false, message: '', success: false };
 
     default:
       return state;

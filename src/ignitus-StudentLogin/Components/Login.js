@@ -11,7 +11,7 @@ import "../Styles/style.scss";
 class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = { email: "", password: "", emptymessage: false, success:false };
+    this.state = { email: "", password: "", emptymessage: false };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -22,18 +22,18 @@ class Login extends Component {
       state: { email, password }
     } = this;
 
-    if (_.isEmpty(email) || _.isEmpty(password)) {
-      this.setState({ emptymessage: true });
-      return;
+    if (!_.isEmpty(email) && !_.isEmpty(password)) {
+      this.props.logInRequest(email, password);
+      this.setState({ email: "", password: "", emptymessage: false });
     }
-
-    this.props.logInRequest(email, password);
-    this.setState({ email: "", password: "", emptymessage: false, success:true });
+    else{
+        this.setState({ emptymessage: true });
+    }
   }
 
   render() {
-    const { isFetching, message } = this.props.studentLoginData;
-    const { success } = this.state
+    console.log('msg', this.props.studentLoginData)
+    const { isFetching, message, success } = this.props.studentLoginData;
     const {
       state: { emptymessage }
     } = this;
@@ -147,12 +147,21 @@ class Login extends Component {
           </div>
         </div>
 
+        {!_.isEmpty(message) && (
+          <div className="alert alert-danger alert-dismissible margin-Top">
+            <button type="button" className="close" data-dismiss="alert">
+              &times;
+            </button>
+            <strong>{message}</strong>
+          </div>
+        )}
+
         {emptymessage && (
           <div className="alert alert-danger alert-dismissible margin-Top">
             <button type="button" className="close" data-dismiss="alert">
               &times;
             </button>
-            <strong>Please!</strong> fill the form!
+            <strong>Please fill the form to proceed!</strong>
           </div>
         )}
       </div>

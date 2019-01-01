@@ -10,7 +10,7 @@ import dashBoardHeader from '../ignitus-Dashboard-Header'
 export const ProtectedRoutes = (props) => {
 	return(
 		<div>
-      <dashBoardHeader.components.dashBoardHeader />
+      <dashBoardHeader.containers.dashboardHeaderContainer />
 			 <Switch>
 			   <Route
             exact
