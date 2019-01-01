@@ -13,3 +13,8 @@ export const logInResponse = data => {
   if (!_.isObject(data)) throw new Error(`data should be object: ` + data);
   return { type: t.LOG_IN_RESPONSE, data };
 };
+
+export const logUserOut = data => {
+	console.log('called');
+  return { type: t.LOG_USER_OUT };
+};
