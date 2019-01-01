@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import _ from "lodash";
 import { Redirect, Route } from "react-router-dom";
+import logo from "../../ignitus-Assets/Images/nav-logo.svg"
+import { HashLink } from "react-router-hash-link";
 import { withErrorBoundary } from "../../ignitus-Internals";
 
 class dashBoardHeader extends React.Component {
@@ -34,10 +36,10 @@ class dashBoardHeader extends React.Component {
       email = JSON.parse(localStorage.getItem("data")).email;
     }
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+      <nav className="navbar navbar-expand-lg whitenav">
+        <HashLink className="navbar-brand" to="/#">
+          <img src={logo} width="40" height="40" alt="logo" />
+        </HashLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -47,19 +49,26 @@ class dashBoardHeader extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon" />
+          <i className="fa fa-bars" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav  mr-auto">
+          <ul className="nav navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
+              <HashLink smooth to="/#">
+                <span className="nav-link">
+                  Home <span className="sr-only">(current)</span>
+                </span>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
+              <HashLink smooth to="/#what-we-do">
+                <span className="nav-link">What we provide?</span>
+              </HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink smooth to="/#contributors">
+                <span className="nav-link">Contributors</span>
+              </HashLink>
             </li>
             <li className="nav-item">
               <Link to="/aboutus">
@@ -73,9 +82,7 @@ class dashBoardHeader extends React.Component {
                 Welcome {email}
               </a>
             </li>
-          </ul>
-          <ul className="navbar-nav">
-            <li className="nav-item">
+              <li className="nav-item">
               <a className="nav-link" href="#" onClick={this.logout}>
                 Logout
               </a>
