@@ -9,7 +9,8 @@ class Dashboard extends React.Component{
     return(
     <div>
         <div className ="container marginTop">
-          <Alert type = "success" message = "Success!"/>
+          <h4>Welcome to Ignitus 👋</h4>
+    	  <p>Website Under Maintenance !! 🚀</p>
         </div>
     </div>
     )
