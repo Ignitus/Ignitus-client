@@ -52,10 +52,10 @@ class Signup extends React.Component {
               <p className="mb-5 ">Let's get started</p>
               <p>Skyrocket your career with best global opportunities</p>
               <p>
-                <a href="/signup/professor" className="text-center linkform">
+                <Link to="/signup/professor" className="text-center linkform">
                   {' '}
-                  I am a Professor
-                </a>
+                   I am a Professor
+                </Link>
               </p>
             </div>
           </div>
