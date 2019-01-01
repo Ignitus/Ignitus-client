@@ -89,6 +89,7 @@ Ignitus Quora -
 
 ![alt tag](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKBXCpPP1MBgHqU5ClSorPUrpWZ_MhhjqVhk2QRonTWba8zWi)
 ![alt tag](http://i1.wp.com/seanshadmand.com/wp-content/uploads/2015/02/heroku-logo.jpg?resize=248%2C225)
+![alt tag](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
 
 ## Contributing
 Please check the [contributionGuide](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
