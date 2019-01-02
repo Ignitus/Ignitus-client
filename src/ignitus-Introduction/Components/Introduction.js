@@ -2,13 +2,11 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
-import torch from '../../ignitus-Assets/Images/torch.svg';
-
-import resume from '../../ignitus-Assets/Images/Resume.svg';
+import * as t from './Constants';
 
 const Introduction = () => (
   <div className="intro__wrapper" >
-      <img className="intro__torch" src={torch} alt="Ignitus Torch" />
+      <img className="intro__torch" src={t.torch} alt="Ignitus Torch" />
       <h1 className="intro text-center">Welcome to Ignitus</h1>
 
       <div className="intro__content">
@@ -27,7 +25,7 @@ const Introduction = () => (
               </button>
             </Link>
           </div>
-          <img className="img-fluid" src={resume} alt="resume" />
+          <img className="img-fluid" src={t.resume} alt="resume" />
         </div>
       </div>
 

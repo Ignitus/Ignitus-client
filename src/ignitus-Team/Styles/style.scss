@@ -18,8 +18,8 @@
 
 .box-model .Contributors.m-top .Contributor img {
   border-radius: 50%;
-  border: 4px solid #17b8be;
-  box-shadow: 0 0 0 #17b8be;
+  border: 4px solid #000066;
+  box-shadow: 0 0 0 #000066;
   transition: border 0.5s, box-shadow 0.5s;
 }
 
@@ -50,7 +50,7 @@
 .box-model .Contributors.m-top .Contributor:hover img {
   border-radius: 50%;
   border: 4px solid #fff;
-  box-shadow: 0 0 20px #17b8be;
+  box-shadow: 0 0 20px #000066;
 }
 
 .Contributors {

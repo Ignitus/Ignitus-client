@@ -1,9 +1,7 @@
 import React from 'react';
-import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
-import loginImg from '../../ignitus-Assets/Images/login.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import { Link } from "react-router-dom";
-import professorSignUp  from '../../ignitus-Assets/Images/professorAuth.svg'
+import * as t from './Constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 import _ from 'lodash';
@@ -22,21 +20,21 @@ class Signup extends React.Component {
       <div className="col-lg-8 container-custom p-5">
         <div className="row shadow border-rad">
           <div className="col-md-6 p-0 container-image">
-            <img className="img-fluid img-login d-block" src={professorSignUp} alt="login" />
+            <img className="img-fluid img-login d-block" src={t.professorAuth} alt="login" />
             <div className="text-below-image text-center">
               <p className="mb-5 ">Let's get started</p>
-              <p>Skyrocket your career with best global opportunities</p>
+              <p>Help providing opportunities for your students</p>
               <p>
-                <Link to="/signup/student" className="text-center linkform">
+                <a href="/signup/student" className="text-center linkform">
                   {' '}
-                   I am a Student
-                </Link>
+                  I am a Student
+                </a>
               </p>
             </div>
           </div>
           <div className="col-md-6 container-form">
             <div className="my-4">
-              <img className="img-fluid img mx-auto d-block" src={logo} alt="logo" />
+              <img className="img-fluid img mx-auto d-block" src={t.logo} alt="logo" />
             </div>
             <form >
               <div className="px-4">
@@ -85,7 +83,7 @@ class Signup extends React.Component {
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <button className="btn btn-success button-bg btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
-                    Sign up
+                    Sign up as Professor
                   </button>
                 </div>
                 <div className="or-seperator">
@@ -98,10 +96,10 @@ class Signup extends React.Component {
                   </button>
                 </div>
                 <div className="text-center">
-                  Already have an account?{" "}
+                  Don't have an account?{" "}
                   <Link to="/login/professor" className="text-center linkform">
                   {' '}
-                   Log In
+                   Sign In
                   </Link>                  
               </div>
               </div>
