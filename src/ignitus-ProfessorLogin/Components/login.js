@@ -3,7 +3,6 @@ import _ from "lodash";
 import { withErrorBoundary } from "../../ignitus-Internals";
 import { Link } from "react-router-dom";
 import * as t from './Constants';
-import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import "../Styles/style.scss";
 
 class Login extends Component {
@@ -32,7 +31,7 @@ class Login extends Component {
 
           <div className="col-md-6 container-form">
             <div className="my-4">
-              <img className="img-fluid img mx-auto d-block" src={logo} />
+              <img className="img-fluid img mx-auto d-block" src={t.logo} />
             </div>
 
             <form>

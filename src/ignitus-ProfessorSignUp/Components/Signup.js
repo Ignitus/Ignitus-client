@@ -1,5 +1,4 @@
 import React from 'react';
-import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import { Link } from "react-router-dom";
 import * as t from './Constants';
@@ -35,7 +34,7 @@ class Signup extends React.Component {
           </div>
           <div className="col-md-6 container-form">
             <div className="my-4">
-              <img className="img-fluid mx-auto d-block" src={logo} alt="logo" />
+              <img className="img-fluid img mx-auto d-block" src={t.logo} alt="logo" />
             </div>
             <form >
               <div className="px-4">
@@ -50,21 +49,6 @@ class Signup extends React.Component {
                     id="email"
                     className="form-control email-border"
                     placeholder="Email"
-                    required
-
-                  />
-                </div>
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text span-bg">
-                      <i className="fa fa-people fa-fw people-color" />
-                    </span>
-                  </div>
-                  <input
-                    type="text"
-                    id="username"
-                    className="form-control email-border"
-                    placeholder="Username"
                     required
 
                   />
