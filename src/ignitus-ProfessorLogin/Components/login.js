@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import _ from "lodash";
 import { withErrorBoundary } from "../../ignitus-Internals";
 import { Link } from "react-router-dom";
-import professorSignup  from '../../ignitus-Assets/Images/professorAuth.svg'
+import * as t from './Constants';
 import logo  from '../../ignitus-Assets/Images/ignitus-logo.png';
 import "../Styles/style.scss";
 
@@ -17,10 +17,10 @@ class Login extends Component {
       <div className="col-lg-8 container-custom  p-5">
         <div className="row shadow border-rad">
           <div className="col-md-6 p-0 container-image">
-            <img className="img-fluid img-login d-block" src={professorSignup} />
+            <img className="img-fluid img-login d-block" src={t.professorAuth} />
             <div className="text-below-image text-center">
               <p className="mb-5">Let's get started</p>
-              <p>Skyrocket your career with best global opportunities</p>
+              <p>Help providing opportunities for your students</p>
                <p>
                 <Link to="/login/student" className="text-center linkform">
                   {' '}
@@ -73,7 +73,7 @@ class Login extends Component {
                 <button
                   className="btn btn-success btn-rounded button-bg px-3 py-2"
                 >
-                  Log in
+                  Log in as Professor
                 </button>
               </div>
 
@@ -92,7 +92,7 @@ class Login extends Component {
                   Don't have an account?{" "}
                   <Link to="/signup/professor" className="text-center linkform">
                   {' '}
-                   Sign Up
+                   Sign Up 
                   </Link>
                 </div>
               </div>

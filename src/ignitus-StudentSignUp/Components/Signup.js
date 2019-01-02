@@ -115,7 +115,7 @@ class Signup extends React.Component {
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <button className="btn btn-success button-bg btn-rounded px-3 py-2" onClick = {this.handleSubmit}>
-                    Sign up
+                    Sign up as Student
                   </button>
                 </div>
                 <div className="or-seperator">

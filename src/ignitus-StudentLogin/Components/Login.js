@@ -120,7 +120,7 @@ class Login extends Component {
                   className="btn btn-success btn-rounded button-bg px-3 py-2"
                   onClick={this.handleSubmit}
                 >
-                  Log in
+                  Sign in as Student
                 </button>
               </div>
 

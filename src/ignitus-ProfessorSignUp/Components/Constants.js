@@ -1,2 +1,9 @@
 export const logo 					= 'https://storage.googleapis.com/ignitus/IgnitusLogos/Black_logo.png'
-export const professor_signup 		= 'https://storage.googleapis.com/ignitus/Assets/professor-signup.png'
+export const professor_login 		= 'https://storage.googleapis.com/ignitus/Assets/professors-blue.png'
+export const professorAuth   = 'https://storage.googleapis.com/ignitus/Assets/professorAuth.svg'
+
+
+
+
+
+
