@@ -98,6 +98,4 @@ Please check the [contributionGuide](https://github.com/Ignitus/Ignitus-Client-S
 ## Contributors
 <a href="http://www.ignitus.org/aboutus"><img src="https://imgur.com/uDEb2rY.png" width="500"></a>
 
-##
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_large)
+## [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FIgnitus%2FIgnitus-Client-Side-Development?ref=badge_large)
