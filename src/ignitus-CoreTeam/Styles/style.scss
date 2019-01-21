@@ -24,7 +24,22 @@
 }
 
 #team-avatar-card:hover {
-    transform: scale(1.2);
+    transform: scale(1.6);
     transition-duration: 500ms;
     cursor: pointer;
+    z-index: 9999;
+    position: relative;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-sm-icon-color{
+    color: black;
 }
