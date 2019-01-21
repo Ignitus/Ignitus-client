@@ -24,11 +24,11 @@
 }
 
 #team-avatar-card:hover {
-    transform: scale(1.6);
+    transform: scale(1.2);
     transition-duration: 500ms;
     cursor: pointer;
-    z-index: 9999;
-    position: relative;
+    position: absolute;
+    z-index: 100;
 }
 
 .display-none{

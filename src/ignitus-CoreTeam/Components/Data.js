@@ -35,7 +35,7 @@ export const AVATARS = [
         img: t.Paarmita,
         description:"Product Designer" ,
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
-        facebook: "https://www.facebook.com/Ignitus.org/"
+        angellist: "https://angel.co/ignitus-2"
 
       },
       {
@@ -50,7 +50,7 @@ export const AVATARS = [
         img: t.Rajvardhan,
         description:"Ignitus Scholar Lead" ,
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
-        facebook: "https://www.facebook.com/Ignitus.org/"
+        angellist: "https://angel.co/ignitus-2"
 
       },
       {
@@ -58,7 +58,7 @@ export const AVATARS = [
         img: t.Hafsa,
         description:"UI/UX Designer" ,
         linkedin: "https://www.linkedin.com/company/igniteus?trk=ppro_cprof",
-        facebook: "https://www.facebook.com/Ignitus.org/"
+        angellist: "https://angel.co/ignitus-2"
 
       }
       ];
