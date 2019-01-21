@@ -44,9 +44,8 @@ class CoreTeam extends React.Component {
           <div className="title-name mt-2">{item.title}</div>
           <div className="title-description">{item.description}</div>
           <div id={`member-${index}`} class="display-none">
-            {item.facebook && <a href={item.facebook} className="team-sm-icon-color"><i class="fa fa-facebook-square"></i></a>}
+            {(item.facebook || item.angellist) && <a href={item.facebook} className="team-sm-icon-color"><i class="fa fa-facebook-square"></i></a>}
             {item.linkedin && <a href={item.linkedin} className="team-sm-icon-color"><i class="fa fa-linkedin-square"></i></a>}
-            {item.angellist && <a href={item.angelist} className="team-sm-icon-color"><i class="fa fa-angellist"></i></a>}
           </div>
           
         </div>
