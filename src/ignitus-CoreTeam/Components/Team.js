@@ -8,16 +8,34 @@ import loader from "../../ignitus-Assets/Images/loader.gif";
 class CoreTeam extends React.Component {
   constructor(props) {
     super(props);
+    this.getSocialMediaIcons = this.getSocialMediaIcons.bind(this);
+    this.hideSocialMediaIcons = this.hideSocialMediaIcons.bind(this);
+  }
+
+  getSocialMediaIcons = (index) => {
+    let cardItem = document.getElementById(`member-${index}`);
+    cardItem.classList.remove("display-none")
+    cardItem.classList.add("display-flex");
+  }
+
+  hideSocialMediaIcons = (index) => {
+    let cardItem = document.getElementById(`member-${index}`);
+    cardItem.classList.remove("display-flex")
+    cardItem.classList.add("display-none");
   }
 
   render() {
-
-    const teamHTML = AVATARS.map(item => (
+    const teamHTML = AVATARS.map((item, index) => (
       <div
         key={item.title}
         className="col-6 col-sm-4 col-md-3 avatar-wrapper text-center p-3"
       >
-        <div className="avatar bg-white p-3" id="team-avatar-card">
+        <div 
+          className="avatar bg-white p-3" 
+          id="team-avatar-card" 
+          onMouseOver={(e) => this.getSocialMediaIcons(index)}
+          onMouseOut={e => this.hideSocialMediaIcons(index)}
+        >
           <img
             className="rounded-circle mw-100 w-75"
             src={item.img}
@@ -25,6 +43,11 @@ class CoreTeam extends React.Component {
           />
           <div className="title-name mt-2">{item.title}</div>
           <div className="title-description">{item.description}</div>
+          <div id={`member-${index}`} class="display-none">
+            {item.linkedin && <a href={item.linkedin} className="team-sm-icon-color"><i class="fa fa-linkedin-square"></i></a>}
+            {item.angellist && <a href={item.angellist} className="team-sm-icon-color"><i class="fa fa-angellist"></i></a>}
+          </div>
+          
         </div>
       </div>
     ));

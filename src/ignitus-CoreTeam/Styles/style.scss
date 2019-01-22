@@ -27,4 +27,19 @@
     transform: scale(1.2);
     transition-duration: 500ms;
     cursor: pointer;
+    position: absolute;
+    z-index: 100;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-sm-icon-color{
+    color: black;
 }
