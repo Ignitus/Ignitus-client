@@ -19,7 +19,7 @@ const CardLayout = () => {
     <section id="what-we-do">
       <div className="mt-2">
         <div>
-          <h1 className="text-center my-5 ignitus-color">
+          <h1 className="text-center ignitus-color">
             What we provide?
           </h1>
         </div>
