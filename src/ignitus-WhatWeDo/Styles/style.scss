@@ -5,9 +5,6 @@
   font-weight: $ignite-font-weight-normal;
   font-size: $ignite-font-size-lg;
   color: $ignite-text-color-heading;
-  margin-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .card-shadow {
@@ -25,4 +22,12 @@
 
 .flatten-text {
   text-align: center;
+}
+
+.provide-card-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }

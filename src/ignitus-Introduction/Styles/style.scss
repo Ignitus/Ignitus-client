@@ -28,15 +28,18 @@
 	background: url('https://storage.googleapis.com/ignitus/Assets/split-blue-background.png') no-repeat;
 	background-size: 70%;
 	background-position: top right;
-
-	height: 1200px;
-
+	height: 1125px;
 	position: relative;
 	z-index: 0;
 
+	@media (max-width: 945px){
+		& {
+			height: 1200px;
+		}
+	}
+
 	@media (max-width: 751px) {
 		& {
-			margin-bottom: 150px;
 			height: 100%;
 		}
 	}
