@@ -17,6 +17,7 @@
 
 .cardHeight {
   height: 135px;
+  border-radius: 16px !important;
 }
 
 
@@ -30,4 +31,14 @@
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.desc_card{
+  font-size: $ignite-font-size-sm;
+  font-weight: $ignite-font-weight-light;
+  text-align: -webkit-center;
+}
+
+.card{
+    border-radius: 16px !important;
 }

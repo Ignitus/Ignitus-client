@@ -94,7 +94,7 @@ class Navigation extends React.Component {
                 className="nav-link"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://bit.ly/2NwWLhp"
+                href="https://bit.ly/2SaYXMO"
               >
                 Join
               </a>
