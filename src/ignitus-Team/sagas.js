@@ -8,7 +8,7 @@ const {
 
 function* getContributorsData() {
   try {
-    const { data } = yield call(api.getContributorsData);
+    const data  = yield call(api.getContributorsData);
     yield put({ type: t.SET_CONTRIBUTORS_DATA, data });
   } catch (e) {
     console.log(e.message);
