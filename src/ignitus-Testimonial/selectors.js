@@ -8,4 +8,3 @@ export const makeSelectTestimonialData = () => createSelector(selectTestimonialS
   }
   return [];
 });
-

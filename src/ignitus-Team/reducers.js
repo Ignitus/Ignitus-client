@@ -1,4 +1,4 @@
-import * as t from "./actionTypes";
+import * as t from './actionTypes';
 
 const initialState = { presets: [], isFetching: false };
 

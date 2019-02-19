@@ -1,1 +1,1 @@
-export const NAME    = 'testimonialReducer';
+export const NAME = 'testimonialReducer';

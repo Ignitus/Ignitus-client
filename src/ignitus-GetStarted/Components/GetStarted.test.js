@@ -4,9 +4,8 @@ import '../Styles/style.scss';
 import Foo from './GetStarted';
 
 describe('GetStarted', () => {
-	test('Renders Sign Up button', () => {
+  test('Renders Sign Up button', () => {
     const wrapper = shallow(<Foo />);
     expect(wrapper.find('.btn-md _button')).toBeDefined();
   });
 });
- 

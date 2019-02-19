@@ -1,10 +1,10 @@
-import React from "react";
-import "../Styles/style.scss";
+import React from 'react';
+import '../Styles/style.scss';
 
-import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
-import { withErrorBoundary } from "../../ignitus-Internals";
-import loader from "../../ignitus-Assets/Images/loader.gif";
-import shortid from "shortid";
+import shortid from 'shortid';
+import { AVATARS, CONTRIBUTORS_DATA } from './Data';
+import { withErrorBoundary } from '../../ignitus-Internals';
+import loader from '../../ignitus-Assets/Images/loader.gif';
 
 class Team extends React.Component {
   constructor(props) {
@@ -61,4 +61,3 @@ class Team extends React.Component {
 }
 
 export default withErrorBoundary(Team);
-

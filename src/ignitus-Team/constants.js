@@ -1,1 +1,1 @@
-export const NAME    = 'contributorsReducer';
+export const NAME = 'contributorsReducer';

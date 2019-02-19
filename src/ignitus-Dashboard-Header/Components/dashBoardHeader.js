@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import _ from "lodash";
-import { Redirect, Route } from "react-router-dom";
-import logo from "../../ignitus-Assets/Images/nav-logo.svg"
-import { HashLink } from "react-router-hash-link";
-import { withErrorBoundary } from "../../ignitus-Internals";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import _ from 'lodash';
+import { Redirect, Route } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import logo from '../../ignitus-Assets/Images/nav-logo.svg';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 class dashBoardHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      redirect: false
+      redirect: false,
     };
     this.logout = this.logout.bind(this);
   }
@@ -21,8 +21,8 @@ class dashBoardHeader extends React.Component {
     this.setState({ redirect: true });
   }
 
-  componentDidMount(){
-    console.log('this',this);
+  componentDidMount() {
+    console.log('this', this);
   }
 
   render() {
@@ -30,10 +30,10 @@ class dashBoardHeader extends React.Component {
       return <Redirect to="/" />;
     }
 
-    let email = "";
-    if (localStorage.getItem("data")) {
-      console.log(localStorage.getItem("data"));
-      email = JSON.parse(localStorage.getItem("data")).email;
+    let email = '';
+    if (localStorage.getItem('data')) {
+      console.log(localStorage.getItem('data'));
+      email = JSON.parse(localStorage.getItem('data')).email;
     }
     return (
       <nav className="navbar navbar-expand-lg whitenav">
@@ -56,7 +56,9 @@ class dashBoardHeader extends React.Component {
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                  Home <span className="sr-only">(current)</span>
+                  Home
+                  {' '}
+                  <span className="sr-only">(current)</span>
                 </span>
               </HashLink>
             </li>
@@ -79,10 +81,12 @@ class dashBoardHeader extends React.Component {
             </li>
             <li className="nav-item">
               <a className="nav-link disabled" href="#">
-                Welcome {email}
+                Welcome
+                {' '}
+                {email}
               </a>
             </li>
-              <li className="nav-item">
+            <li className="nav-item">
               <a className="nav-link" href="#" onClick={this.logout}>
                 Logout
               </a>

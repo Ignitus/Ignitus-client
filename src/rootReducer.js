@@ -6,8 +6,8 @@ import contributors from './ignitus-Team';
 
 
 export default combineReducers({
-	[testimonial.constants.NAME]  : testimonial.reducer,
-	[studentSignUp.constants.NAME]: studentSignUp.reducer,
-	[studentLogin.constants.NAME] : studentLogin.reducer,
-	[contributors.constants.NAME] : contributors.reducer
+  [testimonial.constants.NAME]: testimonial.reducer,
+  [studentSignUp.constants.NAME]: studentSignUp.reducer,
+  [studentLogin.constants.NAME]: studentLogin.reducer,
+  [contributors.constants.NAME]: contributors.reducer,
 });

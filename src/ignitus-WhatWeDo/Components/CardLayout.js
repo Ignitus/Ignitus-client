@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import { data } from './Data'
+import { data } from './Data';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 

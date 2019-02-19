@@ -2,8 +2,8 @@
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Team } from '../Components';
 import { createStructuredSelector } from 'reselect';
+import { Team } from '../Components';
 
 import { getContributorsData } from '../actions';
 import { makeSelectContributorsData } from '../selectors';

@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import {withErrorBoundary} from '../../ignitus-Internals'
+import { withErrorBoundary } from '../../ignitus-Internals';
 import { logo } from './Constants';
 
 

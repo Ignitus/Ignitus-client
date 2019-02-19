@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func,
+  string, number, shape, func,
 } from 'prop-types';
 import shortid from 'shortid';
 import { withErrorBoundary } from '../../ignitus-Internals';
@@ -21,25 +21,25 @@ const CarouselIndicator = ({ index, activeIndex, onClick }) => (
 );
 
 const CarouselSlide = ({ activeIndex, slide, index }) => (
-    <li
-      className={
+  <li
+    className={
         index === activeIndex
-          ? "carousel__slide carousel__slide--active "
-          : "carousel__slide"
+          ? 'carousel__slide carousel__slide--active '
+          : 'carousel__slide'
       }
-    >
-      <div className="carousel-slide__content">{slide.content}</div>
+  >
+    <div className="carousel-slide__content">{slide.content}</div>
 
-      <div className="author-source-container">
-        <small className="carousel-slide__source">
-          <div>
-            <strong className="carousel-slide__author">{slide.author}</strong>
-          </div>
-          {slide.source}
-        </small>
-      </div>
-    </li>
-  );
+    <div className="author-source-container">
+      <small className="carousel-slide__source">
+        <div>
+          <strong className="carousel-slide__author">{slide.author}</strong>
+        </div>
+        {slide.source}
+      </small>
+    </div>
+  </li>
+);
 
 // consider refactoring to use button
 
@@ -54,14 +54,14 @@ const CarouselLeftArrow = ({ onClick }) => (
 );
 
 const CarouselRightArrow = ({ onClick }) => (
-    <a
-      href="#"
-      className="carousel__arrow carousel__arrow--right padding-on-right"
-      onClick={onClick}
-    >
-      <i className="fa fa-2x fa-angle-right" />
-    </a>
-  );
+  <a
+    href="#"
+    className="carousel__arrow carousel__arrow--right padding-on-right"
+    onClick={onClick}
+  >
+    <i className="fa fa-2x fa-angle-right" />
+  </a>
+);
 
 // Carousel wrapper component
 class Testimonial extends Component {
@@ -173,11 +173,11 @@ class Testimonial extends Component {
                 {this.props.testimonialData.length > 0
                   ? this.props.testimonialData.map((slide, index) => (
                     <CarouselSlide
-                        key={shortid.generate()}
-                        index={index}
-                        activeIndex={activeIndex}
-                        slide={slide}
-                      />
+                      key={shortid.generate()}
+                      index={index}
+                      activeIndex={activeIndex}
+                      slide={slide}
+                    />
                   ))
                   : null}
               </ul>

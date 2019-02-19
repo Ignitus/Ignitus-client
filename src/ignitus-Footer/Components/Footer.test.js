@@ -9,5 +9,3 @@ describe('Footer', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
- 
