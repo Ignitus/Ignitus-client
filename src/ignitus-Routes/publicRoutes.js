@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Navigation from "../ignitus-Navigation";
 import Footer from "../ignitus-Footer";

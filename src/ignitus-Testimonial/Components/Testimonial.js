@@ -157,7 +157,7 @@ class Testimonial extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    const { goToPrevSlide, goToSlide, goToNextSlide } = this;
+    const { goToPrevSlide, goToNextSlide } = this;
 
     return (
       <div>

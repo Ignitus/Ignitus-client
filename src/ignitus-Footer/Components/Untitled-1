@@ -1,0 +1,452 @@
+
+//charge 
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Footer/Components/Constants.js
+  1:1   error  Prefer default export     import/prefer-default-export
+  1:20  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Footer/Components/Footer.js
+  5:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Footer/Components/Footer.test.js
+  4:8  error  'logo' is defined but never used  no-unused-vars
+  6:1  error  'describe' is not defined         no-undef
+  7:3  error  'test' is not defined             no-undef
+  9:5  error  'expect' is not defined           no-undef
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Footer/Components/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Footer/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/actions.js
+  2:20  error  Unable to resolve path to module '../ActionTypes'       import/no-unresolved
+  4:1   error  Prefer default export                                   import/prefer-default-export
+  4:14  error  Identifier 'set_testimonial_data' is not in camel case  camelcase
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/actionTypes.js
+  2:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/Components/GetStarted.js
+  4:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/Components/GetStarted.test.js
+  6:1  error  'describe' is not defined  no-undef
+  7:3  error  'test' is not defined      no-undef
+  9:5  error  'expect' is not defined    no-undef
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/Components/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/constants.js
+  1:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/Containers/getstartedContainer.js
+  5:25  error  Unable to resolve path to module '../../Components/Testimonial'  import/no-unresolved
+  6:10  error  Identifier 'set_testimonial_data' is not in camel case           camelcase
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/reducers.js
+  4:29  error  'state' is assigned a value but never used      no-unused-vars
+  7:7   error  Unexpected lexical declaration in case block    no-case-declarations
+  7:13  error  'state' is already declared in the upper scope  no-shadow
+  7:21  error  'state' was used before it was defined          no-use-before-define
+  9:7   error  Unreachable code                                no-unreachable
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-GetStarted/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Helpers/ScrollToTopOnMount.js
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Helpers/validate.js
+   4:3   error  The body of a for-in should be wrapped in an if statement to filter unwanted properties from the prototype                                                             guard-for-in
+   4:3   error  for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array  no-restricted-syntax
+   6:2   error  Mixed spaces and tabs                                                                                                                                                  no-mixed-spaces-and-tabs
+   6:8   error  Unexpected tab character                                                                                                                                               no-tabs
+   6:47  error  'minLengthValidator' was used before it was defined                                                                                                                    no-use-before-define
+   8:47  error  'requiredValidator' was used before it was defined                                                                                                                     no-use-before-define
+  10:44  error  'emailValidator' was used before it was defined                                                                                                                        no-use-before-define
+  12:2   error  Mixed spaces and tabs                                                                                                                                                  no-mixed-spaces-and-tabs
+  12:8   error  Unexpected tab character                                                                                                                                               no-tabs
+  43:24  error  Unnecessary escape character: \[                                                                                                                                       no-useless-escape
+  43:49  error  Unnecessary escape character: \[                                                                                                                                       no-useless-escape
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Internals/index.js
+  5:9  error  Parsing error: Unexpected token =
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/actions.js
+  2:20  error  Unable to resolve path to module '../ActionTypes'       import/no-unresolved
+  4:1   error  Prefer default export                                   import/prefer-default-export
+  4:14  error  Identifier 'set_testimonial_data' is not in camel case  camelcase
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/actionTypes.js
+  2:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/Components/Constants.js
+  1:22  error  Unexpected tab character  no-tabs
+  2:21  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/Components/index.js
+  3:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/Components/Introduction.js
+   4:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+  36:13  error  Missing an explicit type attribute for button                                        react/button-has-type
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/constants.js
+  1:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/reducers.js
+  4:29  error  'state' is assigned a value but never used      no-unused-vars
+  7:7   error  Unexpected lexical declaration in case block    no-case-declarations
+  7:13  error  'state' is already declared in the upper scope  no-shadow
+  7:21  error  'state' was used before it was defined          no-use-before-define
+  9:7   error  Unreachable code                                no-unreachable
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Introduction/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/Components/Constants.js
+  1:1   error  Prefer default export     import/prefer-default-export
+  1:20  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/Components/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/Components/Navigation.js
+  22:13  error  Must use destructuring state assignment  react/destructuring-assignment
+  29:18  error  Must use destructuring state assignment  react/destructuring-assignment
+  40:35  error  Must use destructuring state assignment  react/destructuring-assignment
+  48:50  error  Must use destructuring state assignment  react/destructuring-assignment
+  50:21  error  Must use destructuring state assignment  react/destructuring-assignment
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/Components/Navigation.test.js
+  1:8   error  'React' is defined but never used    no-unused-vars
+  2:10  error  'shallow' is defined but never used  no-unused-vars
+  3:8   error  'logo' is defined but never used     no-unused-vars
+  4:8   error  'Foo' is defined but never used      no-unused-vars
+  7:1   error  'describe' is not defined            no-undef
+  8:3   error  'test' is not defined                no-undef
+  9:5   error  'expect' is not defined              no-undef
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/constants.js
+  1:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Navigation/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Partners/Components/index.js
+  1:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Partners/Components/Partners.js
+  3:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Partners/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorLogin/Components/Constants.js
+  1:20  error  Unexpected tab character  no-tabs
+  2:27  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorLogin/Components/index.js
+  1:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorLogin/Components/loadable.js
+  15:17  error  Parsing error: Unexpected token import
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorLogin/Components/login.js
+   2:8   error  '_' is defined but never used                                                                              no-unused-vars
+   4:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)                        import/named
+   8:1   error  Component should be written as a pure function                                                             react/prefer-stateless-function
+   9:3   error  Useless constructor                                                                                        no-useless-constructor
+  19:15  error  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  21:40  error  HTML entities must be escaped                                                                              react/no-unescaped-entities
+  34:17  error  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  72:19  error  Missing an explicit type attribute for button                                                              react/button-has-type
+  84:19  error  Missing an explicit type attribute for button                                                              react/button-has-type
+  91:22  error  HTML entities must be escaped                                                                              react/no-unescaped-entities
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorLogin/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorSignUp/Components/Constants.js
+  1:20  error  Unexpected tab character  no-tabs
+  2:27  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorSignUp/Components/index.js
+  1:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorSignUp/Components/Signup.js
+   3:8   error  '_' is defined but never used                                                        no-unused-vars
+   4:8   error  'loader' is defined but never used                                                   no-unused-vars
+   6:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+  13:20  error  Unused state field: 'emptymessage'                                                   react/no-unused-state
+  13:41  error  Unused state field: 'equalmessage'                                                   react/no-unused-state
+  16:15  error  Expected 'this' to be used by class method 'handleSubmit'                            class-methods-use-this
+  16:16  error  'e' is defined but never used                                                        no-unused-vars
+  26:41  error  HTML entities must be escaped                                                        react/no-unescaped-entities
+  85:21  error  Missing an explicit type attribute for button                                        react/button-has-type
+  93:21  error  Missing an explicit type attribute for button                                        react/button-has-type
+  99:22  error  HTML entities must be escaped                                                        react/no-unescaped-entities
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-ProfessorSignUp/sagas.js
+  1:34  error  Unexpected empty generator function 'sagas'  no-empty-function
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Routes/notFound.js
+   2:17  error  'Component' is defined but never used  no-unused-vars
+   6:1   error  Prefer default export                  import/prefer-default-export
+   6:25  error  'props' is defined but never used      no-unused-vars
+  12:2   error  Unexpected tab character               no-tabs
+  16:2   error  Unexpected tab character               no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Routes/privateRoute.js
+   1:17  error  'Component' is defined but never used               no-unused-vars
+   4:1   error  Component should be written as a pure function      react/prefer-stateless-function
+   5:3   error  Useless constructor                                 no-useless-constructor
+  10:11  error  'Component' is already declared in the upper scope  no-shadow
+  10:23  error  Must use destructuring props assignment             react/destructuring-assignment
+  13:17  error  'props' is defined but never used                   no-unused-vars
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Routes/protectedRoutes.js
+   2:17  error  'Component' is defined but never used  no-unused-vars
+  10:1   error  Prefer default export                  import/prefer-default-export
+  10:32  error  'props' is defined but never used      no-unused-vars
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Routes/publicRoutes.js
+  36:17  error  Parsing error: Unexpected token import
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/actions.js
+  16:28  error    'data' is defined but never used  no-unused-vars
+  17:3   warning  Unexpected console statement      no-console
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/Components/Constants.js
+  1:20  error  Unexpected tab character  no-tabs
+  2:27  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/Components/index.js
+  1:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/Components/Login.js
+    3:20  error    'Route' is defined but never used                                                                          no-unused-vars
+    4:35  error    Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)                        import/named
+   24:7   error    Must use destructuring props assignment                                                                    react/destructuring-assignment
+   24:18  error    'logInRequest' is missing in props validation                                                              react/prop-types
+   32:5   warning  Unexpected console statement                                                                               no-console
+   32:24  error    Must use destructuring props assignment                                                                    react/destructuring-assignment
+   32:35  error    'studentLoginData' is missing in props validation                                                          react/prop-types
+   33:13  error    'studentLoginData.isFetching' is missing in props validation                                               react/prop-types
+   33:25  error    'studentLoginData.message' is missing in props validation                                                  react/prop-types
+   33:34  error    'studentLoginData.success' is missing in props validation                                                  react/prop-types
+   33:46  error    Must use destructuring props assignment                                                                    react/destructuring-assignment
+   42:13  error    img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+   55:15  error    img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+   57:40  error    HTML entities must be escaped                                                                              react/no-unescaped-entities
+   70:17  error    img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+   88:30  error    Must use destructuring state assignment                                                                    react/destructuring-assignment
+  107:30  error    Must use destructuring state assignment                                                                    react/destructuring-assignment
+  116:19  error    Missing an explicit type attribute for button                                                              react/button-has-type
+  129:19  error    Missing an explicit type attribute for button                                                              react/button-has-type
+  136:22  error    HTML entities must be escaped                                                                              react/no-unescaped-entities
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/constants.js
+  3:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/Containers/index.js
+  3:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/reducers.js
+   7:7  error  Unreachable code  no-unreachable
+  11:7  error  Unreachable code  no-unreachable
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentLogin/selectors.js
+  10:2  error  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  10:4  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/Components/Constants.js
+  1:20  error  Unexpected tab character  no-tabs
+  2:27  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/Components/index.js
+  1:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/Components/Signup.js
+    6:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)                        import/named
+   32:5   error  Must use destructuring props assignment                                                                    react/destructuring-assignment
+   32:16  error  'signUpRequest' is missing in props validation                                                             react/prop-types
+   39:13  error  'studentSignUpData.isFetching' is missing in props validation                                              react/prop-types
+   39:25  error  'studentSignUpData.success' is missing in props validation                                                 react/prop-types
+   39:34  error  'studentSignUpData.message' is missing in props validation                                                 react/prop-types
+   39:46  error  Must use destructuring props assignment                                                                    react/destructuring-assignment
+   39:57  error  'studentSignUpData' is missing in props validation                                                         react/prop-types
+   44:35  error  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+   55:41  error  HTML entities must be escaped                                                                              react/no-unescaped-entities
+   83:30  error  Must use destructuring state assignment                                                                    react/destructuring-assignment
+   99:30  error  Must use destructuring state assignment                                                                    react/destructuring-assignment
+  115:30  error  Must use destructuring state assignment                                                                    react/destructuring-assignment
+  120:21  error  Missing an explicit type attribute for button                                                              react/button-has-type
+  128:21  error  Missing an explicit type attribute for button                                                              react/button-has-type
+  156:20  error  Expected '===' and instead saw '=='                                                                        eqeqeq
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/constants.js
+  2:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/Containers/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/reducers.js
+   9:7  error  Unreachable code  no-unreachable
+  13:7  error  Unreachable code  no-unreachable
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-StudentSignUp/selectors.js
+  9:2  error  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+  9:4  error  Unexpected tab character  no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/actions.js
+  7:2  error  Unexpected tab character  no-tabs
+  7:2  error  Mixed spaces and tabs     no-mixed-spaces-and-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/Components/Data.js
+  3:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/Components/index.js
+  3:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/Components/Team.js
+   5:10  error  'AVATARS' is defined but never used                                                                        no-unused-vars
+   5:19  error  CONTRIBUTORS_DATA not found in './Data'                                                                    import/named
+   5:19  error  'CONTRIBUTORS_DATA' is defined but never used                                                              no-unused-vars
+   6:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)                        import/named
+  10:3   error  Useless constructor                                                                                        no-useless-constructor
+  15:5   error  Must use destructuring props assignment                                                                    react/destructuring-assignment
+  15:16  error  'getContributorsData' is missing in props validation                                                       react/prop-types
+  19:13  error  'contributorsData.presets' is missing in props validation                                                  react/prop-types
+  19:22  error  'contributorsData.isFetching' is missing in props validation                                               react/prop-types
+  19:37  error  Must use destructuring props assignment                                                                    react/destructuring-assignment
+  19:48  error  'contributorsData' is missing in props validation                                                          react/prop-types
+  25:13  error  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/constants.js
+  1:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/Containers/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/reducers.js
+   8:14  error  'setContributorsData' was used before it was defined  no-use-before-define
+   9:7   error  Unreachable code                                      no-unreachable
+  12:14  error  'getContributorsData' was used before it was defined  no-use-before-define
+  13:7   error  Unreachable code                                      no-unreachable
+  24:30  error  'state' is defined but never used                     no-unused-vars
+  24:37  error  'action' is defined but never used                    no-unused-vars
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/sagas.js
+  14:5  warning  Unexpected console statement  no-console
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Team/selectors.js
+   8:1  error  Line 8 exceeds the maximum line length of 100  max-len
+  10:2  error  Mixed spaces and tabs                          no-mixed-spaces-and-tabs
+  10:4  error  Unexpected tab character                       no-tabs
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/actions.js
+  4:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/Components/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/Components/Testimonial.js
+    6:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)                                                                                                                           import/named
+   10:50  error  'onClick' is missing in props validation                                                                                                                                                                      react/prop-types
+   12:5   error  Static HTML elements with event handlers require a role                                                                                                                                                       jsx-a11y/no-static-element-interactions
+   12:5   error  Visible, non-interactive elements with click handlers must have at least one keyboard listener                                                                                                                jsx-a11y/click-events-have-key-events
+   12:5   error  Anchor used as a button. Anchors are primarily expected to navigate. Use the button element instead. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+   12:5   error  Anchors must have content and the content must be accessible by a screen reader                                                                                                                               jsx-a11y/anchor-has-content
+   47:3   error  Anchor used as a button. Anchors are primarily expected to navigate. Use the button element instead. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+   57:3   error  Anchor used as a button. Anchors are primarily expected to navigate. Use the button element instead. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+   92:35  error  Must use destructuring state assignment                                                                                                                                                                       react/destructuring-assignment
+  103:5   error  Must use destructuring props assignment                                                                                                                                                                       react/destructuring-assignment
+  103:16  error  'getTestimonialData' is missing in props validation                                                                                                                                                           react/prop-types
+  107:13  error  'testimonialData' is missing in props validation                                                                                                                                                              react/prop-types
+  110:11  error  Must use destructuring state assignment                                                                                                                                                                       react/destructuring-assignment
+  114:36  error  Use callback in setState when referencing the previous state                                                                                                                                                  react/no-access-state-in-setstate
+  114:36  error  Must use destructuring state assignment                                                                                                                                                                       react/destructuring-assignment
+  160:28  error  'goToSlide' is assigned a value but never used                                                                                                                                                                no-unused-vars
+  173:18  error  Must use destructuring props assignment                                                                                                                                                                       react/destructuring-assignment
+  173:45  error  'testimonialData.length' is missing in props validation                                                                                                                                                       react/prop-types
+  174:21  error  Must use destructuring props assignment                                                                                                                                                                       react/destructuring-assignment
+  174:48  error  'testimonialData.map' is missing in props validation                                                                                                                                                          react/prop-types
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/constants.js
+  1:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/Containers/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/reducers.js
+  7:7  error  Unexpected lexical declaration in case block  no-case-declarations
+  9:7  error  Unreachable code                              no-unreachable
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/sagas.js
+  15:5  warning  Unexpected console statement  no-console
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/selectors.js
+  5:1  error  Line 5 exceeds the maximum line length of 100  max-len
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-Testimonial/selectors.test.js
+   6:1  error  'describe' is not defined  no-undef
+   7:3  error  'describe' is not defined  no-undef
+   8:5  error  'test' is not defined      no-undef
+  14:7  error  'expect' is not defined    no-undef
+  18:3  error  'describe' is not defined  no-undef
+  20:5  error  'test' is not defined      no-undef
+  32:7  error  'expect' is not defined    no-undef
+  35:5  error  'test' is not defined      no-undef
+  40:7  error  'expect' is not defined    no-undef
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-WhatWeDo/Components/CardLayout.js
+   5:35  error  Parse errors in imported module '../../ignitus-Internals': Unexpected token = (5:9)  import/named
+  11:12  error  Do not use Array index in keys                                                       react/no-array-index-key
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-WhatWeDo/Components/CardLayout.test.js
+  4:8  error  'Card' is defined but never used  no-unused-vars
+  6:1  error  'describe' is not defined         no-undef
+  7:3  error  'test' is not defined             no-undef
+  9:5  error  'expect' is not defined           no-undef
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-WhatWeDo/Components/Data/index.js
+  4:1  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/ignitus-WhatWeDo/Components/index.js
+  2:10  error  Prefer default export  import/prefer-default-export
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/registerServiceWorker.js
+   58:11  warning  Unexpected console statement                                 no-console
+   60:11  warning  Unexpected console statement                                 no-console
+   63:9   warning  Unexpected console statement                                 no-console
+   66:7   error    Assignment to property of function parameter 'registration'  no-param-reassign
+   75:15  warning  Unexpected console statement                                 no-console
+   80:15  warning  Unexpected console statement                                 no-console
+   87:7   warning  Unexpected console statement                                 no-console
+  112:7   warning  Unexpected console statement                                 no-console
+  139:11  warning  Unexpected console statement                                 no-console
+
+/home/megha/ignitus/Ignitus-Client-Side-Development/src/setupTests.js
+  3:1   error  'jest-localstorage-mock' should be listed in the project's dependencies, not devDependencies   import/no-extraneous-dependencies
+  4:16  error  'enzyme' should be listed in the project's dependencies, not devDependencies                   import/no-extraneous-dependencies
+  5:23  error  'enzyme-adapter-react-16' should be listed in the project's dependencies, not devDependencies  import/no-extraneous-dependencies
+
+✖ 326 problems (312 errors, 14 warnings)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! ignitus-client-side-development@0.1.0 lint: `eslint ./src`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the ignitus-client-side-development@0.1.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/megha/.npm/_logs/2019-02-19T19_33_05_565Z-debug.log
+
+megha@random ~/ignitus/Ignitus-Client-Side-Development [eslint-fix]
+± %                                                                                                      !5572
+charge nai

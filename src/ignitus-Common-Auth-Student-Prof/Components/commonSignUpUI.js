@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _ from 'lodash';
-import { Redirect, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-import loader from '../../ignitus-Assets/Images/loader.gif';
 import * as t from './Constants';
-import logo from '../../ignitus-Assets/Images/ignitus-logo.png';
 import '../Styles/style.scss';
 
 const commonSignUpUI = () => (
@@ -21,14 +19,14 @@ const commonSignUpUI = () => (
           <div className=" col-lg-5 col-md-5 ml-lg-5 ml-md-4 col-sm-5 p-0 common-auth-ui-css">
             <p className="mb-5 text-center common-ui-text">Student</p>
             <Link to="/signup/student" className="">
-              <img className="img-fluid" src={t.studentAuth} />
+              <img alt="Student sign up" className="img-fluid" src={t.studentAuth} />
             </Link>
           </div>
 
           <div className="col-lg-5 col-md-5 ml-lg-4  ml-md-4 col-sm-5 ml-sm-4  p-0 common-auth-ui-css">
             <p className="mb-5 text-center common-ui-text">Professor</p>
             <Link to="/signup/professor" className="">
-              <img className="img-fluid" src={t.professorAuth} />
+              <img alt="Professor sign up" className="img-fluid" src={t.professorAuth} />
             </Link>
           </div>
         </div>

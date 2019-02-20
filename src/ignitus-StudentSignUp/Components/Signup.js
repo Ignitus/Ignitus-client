@@ -117,7 +117,7 @@ class Signup extends React.Component {
                     />
                   </div>
                   <div className="text-center mb-3 mt-3">
-                    <button className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={this.handleSubmit}>
+                    <button type="submit" className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={this.handleSubmit}>
                     Sign up as Student
                     </button>
                   </div>
@@ -125,7 +125,7 @@ class Signup extends React.Component {
                     <i className="text-black-50">or</i>
                   </div>
                   <div className="mb-4">
-                    <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                    <button type="submit" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                       <i className="fa fa-linkedin mr-3" />
                     Linkedin
                     </button>

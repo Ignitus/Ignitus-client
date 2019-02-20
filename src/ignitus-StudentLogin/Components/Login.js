@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { Redirect, Route, Link } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import * as t from './Constants';
 import loader from '../../ignitus-Assets/Images/loader.gif';
@@ -52,7 +52,7 @@ class Login extends Component {
         <div className="col-lg-8 container-custom  p-5">
           <div className="row shadow border-rad">
             <div className="col-md-6 p-0 container-image">
-              <img className="img-fluid img-login d-block" src={t.studentAuth} />
+              <img className="img-fluid img-login d-block" src={t.studentAuth} alt="skyrocket" />
               <div className="text-below-image text-center">
                 <p className="mb-5">Let's get started</p>
                 <p>Skyrocket your career with best global opportunities</p>
@@ -67,7 +67,7 @@ class Login extends Component {
 
             <div className="col-md-6 container-form">
               <div className="my-4">
-                <img className="img-fluid img mx-auto d-block" src={t.logo} />
+                <img className="img-fluid img mx-auto d-block" src={t.logo} alt="" />
               </div>
 
               <form>

@@ -1,1 +1,1 @@
-export const logo 		= 'https://storage.googleapis.com/ignitus/IgnitusLogos/white_logo.png';
+export const logo = 'https://storage.googleapis.com/ignitus/IgnitusLogos/white_logo.png';

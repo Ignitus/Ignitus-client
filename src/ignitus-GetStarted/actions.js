@@ -1,4 +1,4 @@
 
-import * as t from '../ActionTypes';
+import * as t from './actionTypes';
 
 export const set_testimonial_data = data => ({ type: t.SET_TESTIMONIAL_DATA, data });

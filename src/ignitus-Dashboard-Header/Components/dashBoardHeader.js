@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import _ from 'lodash';
-import { Redirect, Route } from 'react-router-dom';
+
+
+import { Redirect, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../ignitus-Assets/Images/nav-logo.svg';
 import { withErrorBoundary } from '../../ignitus-Internals';
@@ -21,20 +21,17 @@ class dashBoardHeader extends React.Component {
     this.setState({ redirect: true });
   }
 
-  componentDidMount() {
-    console.log('this', this);
-  }
 
   render() {
-    if (this.state.redirect) {
+    const { redirect } = this.state;
+    if (redirect) {
       return <Redirect to="/" />;
     }
 
-    let email = '';
-    if (localStorage.getItem('data')) {
-      console.log(localStorage.getItem('data'));
-      email = JSON.parse(localStorage.getItem('data')).email;
-    }
+    const data = localStorage.getItem('data');
+
+    const email = data ? JSON.parse(data).email : '';
+
     return (
       <nav className="navbar navbar-expand-lg whitenav">
         <HashLink className="navbar-brand" to="/#">
@@ -80,11 +77,11 @@ class dashBoardHeader extends React.Component {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">
+              < className="nav-link disabled" href="#">
                 Welcome
                 {' '}
                 {email}
-              </a>
+              </>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" onClick={this.logout}>

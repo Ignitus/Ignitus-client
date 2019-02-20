@@ -1,7 +1,3 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import logo from './Constants';
-import Foo from './Navigation';
 
 
 describe('Navigation', () => {

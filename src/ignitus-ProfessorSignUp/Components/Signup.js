@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
-import loader from '../../ignitus-Assets/Images/loader.gif';
+
 import * as t from './Constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
@@ -12,8 +12,6 @@ class Signup extends React.Component {
     super(props);
     this.state = { emptymessage: false, equalmessage: false };
   }
-
-  handleSubmit(e) {}
 
   render() {
     return (

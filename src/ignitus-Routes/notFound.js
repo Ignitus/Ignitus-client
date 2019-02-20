@@ -1,9 +1,9 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import './Styles/style.scss';
 import { Link } from 'react-router-dom';
 
-export const Notfound = props => (
+export default const Notfound = props => (
   <div className="container-404">
     <div className="content">
       <p>404</p>

@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/style.scss';
 
 import shortid from 'shortid';
-import { AVATARS, CONTRIBUTORS_DATA } from './Data';
+
 import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 
