@@ -13,8 +13,7 @@ const Footer = () => (
     <div className="container text-center text-md-left">
       <div className="row">
         <hr className="clearfix w-100 d-md-none" />
-
-        <div className="col-md-2 mx-auto">
+        <div className="col-6 col-md-2 mx-auto">
           <h5 className="mt-3 mb-4 heading">Features</h5>
           <ul className="list-unstyled">
             <li>
@@ -40,7 +39,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col-md-2 mx-auto">
+        <div className="col-6 col-md-2 mx-auto">
           <h5 className="mt-3 mb-4 heading">Community</h5>
           <ul className="list-unstyled">
             <li>
@@ -76,7 +75,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col-md-2 mx-auto pd-left">
+        <div className="col-12 col-md-2 mx-auto pd-left">
           <ul className="list-unstyled">
             <li>
               <img src={logo} className="img-responsive img-css" alt="logo" />
@@ -84,7 +83,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="col-md-2 mx-auto">
+        <div className="col-6 col-md-2 mx-auto">
           <h5 className=" mt-3 mb-4 heading">Company</h5>
           <ul className="list-unstyled">
             <li>
@@ -119,8 +118,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-
-        <div className="col-md-2 mx-auto">
+        <div className="col-6 col-md-2 mx-auto">
           <h5 className=" mt-3 mb-4 heading">Links</h5>
           <ul className="list-unstyled">
             <li>
@@ -145,6 +143,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
+        <hr className="clearfix w-100 d-md-none" />
       </div>
     </div>
 
