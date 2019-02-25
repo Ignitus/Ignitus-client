@@ -59,7 +59,7 @@ Ignitus [Facebook](https://www.facebook.com/Ignitus.org/).
 
 Ignitus [Medium](https://medium.com/ignitus/ignitus-connecting-students-with-opportunities-61f08e19861c).
 
-Link to Join Ignitus [Slack](https://goo.gl/YW2Ajr) Channel.
+Link to Join Ignitus [Slack](https://bit.ly/2SaYXMO) Channel.
 
 If you want to help Ignitus as an Intern please follow the [Link](https://angel.co/ignitus-2/jobs)
 
