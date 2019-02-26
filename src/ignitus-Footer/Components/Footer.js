@@ -21,7 +21,6 @@ class Footer extends Component{
   // hideUnhide function toggles the LIST of LINKS in Footer in MOBILE view
   // On every Click we're changing values from true to false and vice versa
   hideUnhide(toToggle){
-    console.log(toToggle);
     if(toToggle==="featuresToggle"){
       this.setState({featuresToggle: !this.state.featuresToggle});
     }
