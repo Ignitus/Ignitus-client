@@ -38,3 +38,34 @@
 #footer-bg-id {
 	margin-top: 0 !important;
 }
+
+@media only screen and (max-width : 767px) {
+	.nav-accordion {
+		.navigation {
+			h5 {
+				cursor: pointer;
+				&:after {
+					content: " +";
+					float: center;
+				}
+			}
+		}
+		ul {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 1s ease-out;
+		}
+		.navigation.open {
+			h5 {
+				&:after {
+					content: " -";
+				}
+			}
+			ul {
+				height: auto;
+				max-height: 500px;
+				transition: max-height 1s ease-in !important;
+			}
+		}
+	}
+}
