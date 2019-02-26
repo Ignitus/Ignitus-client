@@ -42,6 +42,7 @@ class Footer extends Component{
         <div className="container text-center text-md-left">
           <div className="row">
             <hr className="clearfix w-100 d-md-none" />
+
             <div className="col-md-2 mx-auto nav-accordion">
               <div className={this.state.featuresToggle=== true ? "navigation":"navigation open"}>
                 <h5 className="mt-3 mb-4 heading" onClick={()=>this.hideUnhide("featuresToggle")}>Features</h5>
@@ -153,6 +154,7 @@ class Footer extends Component{
                 </ul>
               </div>
             </div>
+            
             <div className="col-md-2 mx-auto nav-accordion">
               <div className={this.state.liknkToggle=== true ? "navigation":"navigation open"}>
                 <h5 className=" mt-3 mb-4 heading" onClick={()=>this.hideUnhide("liknkToggle")}>Links</h5>
