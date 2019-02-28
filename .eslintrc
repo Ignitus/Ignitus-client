@@ -7,8 +7,24 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx"]
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*test.js", "setupTests.js"
+      ],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 }

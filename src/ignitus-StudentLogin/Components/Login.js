@@ -29,7 +29,6 @@ class Login extends Component {
   }
 
   render() {
-    console.log('msg', this.props.studentLoginData);
     const { isFetching, message, success } = this.props.studentLoginData;
     const {
       state: { emptymessage },

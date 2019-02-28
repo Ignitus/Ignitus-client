@@ -13,7 +13,4 @@ export const logInResponse = (data) => {
   return { type: t.LOG_IN_RESPONSE, data };
 };
 
-export const logUserOut = (data) => {
-  console.log('called');
-  return { type: t.LOG_USER_OUT };
-};
+export const logUserOut = data => ({ type: t.LOG_USER_OUT });

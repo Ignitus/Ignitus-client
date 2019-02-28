@@ -8,12 +8,8 @@ const {
 } = effects;
 
 function* getTestimonialData() {
-  try {
-    const { data } = yield call(api.getTestimonialData);
-    yield put({ type: t.SET_TESTIMONIAL_DATA, data });
-  } catch (e) {
-    console.log(e.message);
-  }
+  const { data } = yield call(api.getTestimonialData);
+  yield put({ type: t.SET_TESTIMONIAL_DATA, data });
 }
 
 function* actionWatcher() {
