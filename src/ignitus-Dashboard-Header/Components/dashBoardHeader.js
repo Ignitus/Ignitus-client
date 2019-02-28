@@ -77,11 +77,11 @@ class dashBoardHeader extends React.Component {
               </Link>
             </li>
             <li className="nav-item">
-              < className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="#">
                 Welcome
                 {' '}
                 {email}
-              </>
+              </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#" onClick={this.logout}>

@@ -5,7 +5,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import * as t from './Constants';
 import '../Styles/style.scss';
 
-export default  class Login extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
   }

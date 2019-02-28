@@ -3,7 +3,7 @@ import React from 'react';
 import './Styles/style.scss';
 import { Link } from 'react-router-dom';
 
-export default const Notfound = props => (
+const Notfound = props => (
   <div className="container-404">
     <div className="content">
       <p>404</p>
@@ -19,3 +19,5 @@ export default const Notfound = props => (
     </div>
   </div>
 );
+
+export default Notfound;
