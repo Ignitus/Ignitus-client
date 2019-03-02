@@ -139,3 +139,18 @@
       color:#060591;
     }
 }
+
+.alert {
+    text-align: center;
+    border-radius: 10px;
+    font-weight: lighter !important;
+}
+.alert-danger {
+    background-color: rgb(238, 21, 14);
+    color: white;
+}
+
+.alert-success {
+    background-color: green;
+    color: white;
+}

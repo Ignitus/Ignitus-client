@@ -10,8 +10,11 @@ import '../Styles/style.scss';
 class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', emptymessage: false };
+    this.state = {
+      email: '', password: '', emptymessage: false, invalidEmail: false,
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
   handleSubmit(e) {
@@ -21,18 +24,29 @@ class Login extends Component {
       state: { email, password },
     } = this;
 
-    if (!_.isEmpty(email) && !_.isEmpty(password)) {
-      this.props.logInRequest(email, password);
-      this.setState({ email: '', password: '', emptymessage: false });
-    } else {
+    if (_.isEmpty(email) || _.isEmpty(password)) {
       this.setState({ emptymessage: true });
+      return;
     }
+
+    if (typeof email !== 'undefined') {
+      const lastAtPos = email.lastIndexOf('@');
+      const lastDotPos = email.lastIndexOf('.');
+
+      if (!(lastAtPos < lastDotPos && lastAtPos > 0 && email.indexOf('@@') === -1 && lastDotPos > 2 && (email.length - lastDotPos) > 2)) {
+        this.setState({ invalidEmail: true });
+        return;
+      }
+    }
+
+    this.props.logInRequest(email, password);
+    this.setState({ email: '', password: '', emptymessage: false });
   }
 
   render() {
     const { isFetching, message, success } = this.props.studentLoginData;
     const {
-      state: { emptymessage },
+      state: { emptymessage, invalidEmail },
     } = this;
 
     if (isFetching) {
@@ -49,7 +63,7 @@ class Login extends Component {
 
     return (
       <div className="col-lg-12 container-bg">
-        <div className="col-lg-8 container-custom  p-5">
+        <div className="col-lg-8 container-custom p-5">
           <div className="row shadow border-rad">
             <div className="col-md-6 p-0 container-image">
               <img alt="Student auth" className="img-fluid img-login d-block" src={t.studentAuth} />
@@ -64,21 +78,28 @@ class Login extends Component {
                 </p>
               </div>
             </div>
-
             <div className="col-md-6 container-form">
               <div className="my-4">
-                <img alt="logo" className="img-fluid img mx-auto d-block" src={t.logo} />
+                <img className="img-fluid img mx-auto d-block" src={t.logo} />
               </div>
-
+              {!_.isEmpty(message) && (
+              <div className="alert alert-danger margin-Top">
+                <strong>{message}</strong>
+              </div>
+              )}
+              {emptymessage && (
+              <div className="alert alert-danger margin-Top">
+                <strong>Please fill the form to proceed!</strong>
+              </div>
+              )}
               <form>
                 <div className="px-4">
-                  <div className="input-group form-group">
+                  <div className="input-group form-group mb-2">
                     <div className="input-group-prepend">
                       <span className="input-group-text span-bg">
                         <i className="fa fa-envelope-o fa-fw envelope-color" />
                       </span>
                     </div>
-
                     <input
                       name="email"
                       type="email"
@@ -89,10 +110,15 @@ class Login extends Component {
                       onChange={(e) => {
                         this.setState({ email: e.target.value });
                       }}
+                      required
                     />
                   </div>
-
-                  <div className="input-group form-group">
+                  {invalidEmail && (
+                  <div className="text-danger small mb-2">
+                    <strong>Please </strong>{' '}input a valid mail!
+                  </div>
+                  )}
+                  <div className="input-group form-group mb-2">
                     <div className="input-group-prepend">
                       <span className="input-group-text  span-bg">
                         <i className="fa fa-key fa-fw key-color" />
@@ -108,26 +134,23 @@ class Login extends Component {
                       onChange={(e) => {
                         this.setState({ password: e.target.value });
                       }}
+                      required
                     />
                   </div>
                 </div>
-
                 <div className="text-center mb-3 mt-3">
                   <button
-                    type="button"
                     className="btn btn-success btn-rounded button-bg px-3 py-2"
                     onClick={this.handleSubmit}
                   >
                   Sign in as Student
                   </button>
                 </div>
-
                 <div className="or-seperator">
                   <i className="text-black-50">or</i>
                 </div>
-
                 <div className="mb-4">
-                  <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                  <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                     <i className="fa fa-linkedin mr-3" />
                   Linked-in
                   </button>
@@ -145,24 +168,6 @@ class Login extends Component {
               </form>
             </div>
           </div>
-
-          {!_.isEmpty(message) && (
-          <div className="alert alert-danger alert-dismissible margin-Top">
-            <button type="button" className="close" data-dismiss="alert">
-              &times;
-            </button>
-            <strong>{message}</strong>
-          </div>
-          )}
-
-          {emptymessage && (
-          <div className="alert alert-danger alert-dismissible margin-Top">
-            <button type="button" className="close" data-dismiss="alert">
-              &times;
-            </button>
-            <strong>Please fill the form to proceed!</strong>
-          </div>
-          )}
         </div>
       </div>
     );
