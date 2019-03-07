@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Redirect, Route, Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 import { withErrorBoundary } from "../../ignitus-Internals";
 import * as t from './Constants';
 import loader from "../../ignitus-Assets/Images/loader.gif";
@@ -167,5 +168,14 @@ class Login extends Component {
     );
   }
 }
+
+Login.propTypes = {
+  logInRequest: PropTypes.func.isRequired,
+  studentLoginData: PropTypes.shape({
+    isFetching: PropTypes.bool.isRequired,
+    message: PropTypes.string.isRequired,
+    success: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 export default withErrorBoundary(Login);

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import "../Styles/style.scss";
 
 import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
@@ -59,6 +60,18 @@ class Team extends React.Component {
     );
   }
 }
+
+Team.propTypes = {
+  getContributorsData: PropTypes.func.isRequired,
+  contributorsData: PropTypes.shape({
+    presets: PropTypes.arrayOf(PropTypes.shape({
+      html_url: PropTypes.string.isRequired,
+      avatar_url: PropTypes.string.isRequired,
+      login: PropTypes.string.isRequired,
+    })).isRequired,
+    isFetching: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 export default withErrorBoundary(Team);
 
