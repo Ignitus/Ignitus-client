@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 import * as t from './Constants';
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ class Signup extends React.Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    
+
     const {state:{email,password,confirmPassword}} = this
     if(_.isEmpty(email) || _.isEmpty(password) || _.isEmpty(confirmPassword)){
         this.setState({emptymessage: true})
@@ -162,5 +163,14 @@ class Signup extends React.Component {
     );
   }
 }
+
+Signup.propTypes = {
+  signUpRequest: PropTypes.func.isRequired,
+  studentSignUpData: PropTypes.shape({
+    isFetching: PropTypes.bool,
+    success: PropTypes.bool,
+    message: PropTypes.string,
+  }).isRequired,
+};
 
 export default withErrorBoundary(Signup);

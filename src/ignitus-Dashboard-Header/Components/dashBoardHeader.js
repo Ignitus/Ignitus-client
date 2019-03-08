@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import _ from "lodash";
 import { Redirect, Route } from "react-router-dom";
+import PropTypes from 'prop-types';
 import logo from "../../ignitus-Assets/Images/nav-logo.svg"
 import { HashLink } from "react-router-hash-link";
 import { withErrorBoundary } from "../../ignitus-Internals";
@@ -93,5 +94,9 @@ class dashBoardHeader extends React.Component {
     );
   }
 }
+
+dashBoardHeader.propTypes = {
+  logUserOut: PropTypes.func.isRequired,
+};
 
 export default withErrorBoundary(dashBoardHeader);

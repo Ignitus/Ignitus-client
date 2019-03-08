@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {
- string, number, shape, func,
+ string, number, shape, func, arrayOf,
 } from 'prop-types';
 import shortid from 'shortid';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 import '../Styles/style.scss';
+import { arrayOfDeffered } from 'redux-saga/utils';
 
 const CarouselIndicator = ({ index, activeIndex, onClick }) => (
   <li>
@@ -195,6 +196,7 @@ class Testimonial extends Component {
 CarouselIndicator.propTypes = {
   index: number.isRequired,
   activeIndex: number.isRequired,
+  onClick: func.isRequired,
 };
 
 CarouselSlide.propTypes = {
@@ -213,6 +215,15 @@ CarouselLeftArrow.propTypes = {
 
 CarouselRightArrow.propTypes = {
   onClick: func.isRequired,
+};
+
+Testimonial.propTypes = {
+  getTestimonialData: func.isRequired,
+  testimonialData: arrayOf(shape({
+    content: string.isRequired,
+    author: string.isRequired,
+    source: string.isRequired,
+  })).isRequired,
 };
 
 export default withErrorBoundary(Testimonial);
