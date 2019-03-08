@@ -4,6 +4,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import DashBoardProfileSection from '../../ignitus-Dashboard-Profile-Section';
 import DashboardSidebar from '../../ignitus-Dashboard-Sidebar';
 import DashboardWritePost from '../../ignitus-Dashboard-Write-Post';
+import DashboardViewPost from '../../ignitus-Dashboard-View-Post';
 import DashboardChatlist from '../../ignitus-Dashboard-Chatlist';
 import DashboardMenuItems from '../../ignitus-Student-Dashboard-MenuItems';
 
@@ -18,6 +19,7 @@ class Dashboard extends React.Component {
         </div>
         <div className="center-section">
           <DashboardWritePost.components.dashBoardWritePost />
+          <DashboardViewPost.components.dashBoardViewPost />
         </div>  
         <div>
           <DashboardMenuItems.components.dashboardMenuItems />

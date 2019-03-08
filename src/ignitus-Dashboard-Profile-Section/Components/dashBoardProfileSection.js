@@ -13,7 +13,7 @@ class dashBoardProfileSection extends React.Component {
 
     return (
       <div className="card-profile-container">
-        <div className="d-flex p-4">
+        <div className="d-flex p-2 pt-4">
           <div>
             <img className="m-1 profile-avatar" alt="card" src={data.ProfileAvatar} />
           </div>
@@ -22,7 +22,7 @@ class dashBoardProfileSection extends React.Component {
               Sophia Carter
           </h3>
             <h5 className="profile-font profile-name-tagline">Literature Student</h5>
-            <button className="btn btn-success btn-rounded button-bg px-3 py-2">
+            <button className="btn btn-success btn-rounded button-bg p-2">
               View Profile
           </button>
           </div>
