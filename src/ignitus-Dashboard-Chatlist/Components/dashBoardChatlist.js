@@ -10,7 +10,7 @@ class dashBoardChatlist extends React.Component {
   render() {
     
     return (
-      <div><p>Chat list</p></div>
+      <div className="mb-0"><p>Chat list</p></div>
     );
   }
 }

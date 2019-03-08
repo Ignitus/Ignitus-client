@@ -1,16 +1,32 @@
 import React from "react";
+import '../Styles/style.scss';
 import { withErrorBoundary } from "../../ignitus-Internals";
 
 class dashBoardWritePost extends React.Component {
   constructor(props) {
     super(props);
-    
+
   }
 
   render() {
-    
+
     return (
-      <div><p>Write post section</p></div>
+      <div class="write-post-container mx-4">
+        <textarea placeholder="Share an article poll, document, video, photo or idea.
+        Use @ to mention someone."></textarea>
+        <div className="post-icons mx-3 my-4">
+        <ul>
+        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        </ul>
+        </div>
+        <button className="btn btn-success btn-rounded button-bg p-1 px-4 mx-3 my-4 float-right">
+          <span className="btn-font">Post</span>
+        </button>
+      </div>
     );
   }
 }

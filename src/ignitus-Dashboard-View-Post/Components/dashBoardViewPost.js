@@ -10,7 +10,7 @@ class dashBoardViewPost extends React.Component {
   render() {
     
     return (
-      <div><p>View post section</p></div>
+      <div className="m-5"><p>View post section</p></div>
     );
   }
 }
