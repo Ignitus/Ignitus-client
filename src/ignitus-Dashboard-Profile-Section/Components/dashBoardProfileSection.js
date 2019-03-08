@@ -27,7 +27,8 @@ class dashBoardProfileSection extends React.Component {
           </button>
           </div>
         </div>
-        <p className="text-dark profile-name-tagline p-3"><span className="round-turnin-icon"></span>21 students and 11 professors are tracking your progress</p>
+        <p className="text-dark profile-name-tagline p-3"><i class="fa fa-bookmark round-turnin-icon"></i>
+          21 students and 11 professors are tracking your progress</p>
       </div>
     );
   }
