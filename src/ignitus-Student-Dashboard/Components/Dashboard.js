@@ -20,8 +20,8 @@ class Dashboard extends React.Component {
           <DashboardWritePost.components.dashBoardWritePost />
         </div>  
         <div>
-          <DashboardChatlist.components.dashBoardChatlist />
           <DashboardMenuItems.components.dashboardMenuItems />
+          <DashboardChatlist.components.dashBoardChatlist />
         </div>
       </div>
     )
