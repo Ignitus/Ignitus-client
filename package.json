@@ -47,7 +47,7 @@
     "docz:build": "docz build"
   },
   "devDependencies": {
-    "docz": "^0.12.9",
+    "docz": "^0.13.7",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "flow-bin": "^0.82.0",
