@@ -1,7 +1,7 @@
-import React from 'react'
-import * as data from './Constants'
-import '../Styles/style.scss'
-import { withErrorBoundary } from '../../ignitus-Internals'
+import React from 'react';
+import * as data from './Constants';
+import '../Styles/style.scss';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 class dashBoardProfileSection extends React.Component {
     constructor(props) {
