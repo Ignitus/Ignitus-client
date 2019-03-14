@@ -11,7 +11,7 @@ class dashBoardWritePost extends React.Component {
   render() {
 
     return (
-      <div class="write-post-container mx-4">
+      <div class="write-post-container">
         <textarea placeholder="Share an article poll, document, video, photo or idea.
         Use @ to mention someone."></textarea>
         <div className="post-icons mx-3 my-4">
