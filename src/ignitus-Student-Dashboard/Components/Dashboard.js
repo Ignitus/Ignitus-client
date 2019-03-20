@@ -21,7 +21,7 @@ class Dashboard extends React.Component {
           <DashboardWritePost.components.dashBoardWritePost />
           <DashboardViewPost.components.dashBoardViewPost />
         </div>  
-        <div>
+        <div className="right-section">
           <DashboardMenuItems.components.dashboardMenuItems />
           <DashboardChatlist.components.dashBoardChatlist />
         </div>

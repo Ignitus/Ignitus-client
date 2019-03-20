@@ -16,7 +16,7 @@ class dashBoardWritePost extends React.Component {
         Use @ to mention someone."></textarea>
         <div className="post-icons mx-3 my-4">
         <ul>
-        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i class="material-icons">bookmark</i></li>
         <li><i class="fa fa-folder" aria-hidden="true"></i></li>
         <li><i class="fa fa-folder" aria-hidden="true"></i></li>
         <li><i class="fa fa-folder" aria-hidden="true"></i></li>

@@ -1,24 +1,35 @@
-import React from "react";
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { withErrorBoundary } from '../../ignitus-Internals';
-import { CardActions, Typography, CardContent, IconButton } from '@material-ui/core';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import {
+  CardActions,
+  Typography,
+  CardContent,
+  IconButton,
+} from '@material-ui/core';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import RoomIcon from '@material-ui/icons/Room';
 import ShareIcon from '@material-ui/icons/Share';
 import AddCircle from '@material-ui/icons/AddCircle';
 import Card from '@material-ui/core/Card';
+import Fab from '@material-ui/core/Fab';
 import Avatar from '@material-ui/core/Avatar';
+import { withErrorBoundary } from '../../ignitus-Internals';
 import * as Data from './Constants';
 import '../../shared/styles/ignitus-tokens.scss';
 import '../Styles/style.scss';
 
 const styles = theme => ({
   card: {
-    width: '528px',
+    width: '548px',
     height: '113px',
     display: 'flex',
-    margin: '58px 40px',
+    margin: '15px auto',
+    padding: '10px',
     borderRadius: '16px',
-
+    '&:hover': {
+      transform: 'scale(1.1)',
+      transitionDuration: '500ms',
+    },
   },
   media: {
     height: 0,
@@ -75,44 +86,98 @@ const styles = theme => ({
     marginLeft: '5px',
   },
   viewPostIcon: {
-    width: '5px',
-    height: '5px',
+    height: '3px',
     color: '#000066',
+  },
+  font14: {
+    fontSize: '14px',
+  },
+  fab: {
+    margin: '0px auto',
+    backgroundColor: '#000066',
+    color: '#ffffff',
+    textTransform: 'none',
+    fontSize: 12,
+    '&:hover': {
+      backgroundColor: '#ffffff',
+      color: '#000066',
+    },
+  },
+  viewPostContainer: {
+    textAlign: 'left',
+    margin: '48px auto',
+  },
+  viewPostAction: {
+    display: 'flex',
+    flexDirection: 'column',
+    fontSize: '14px',
+  },
+  cardContent: {
+    padding: '10px',
+  },
+  center: {
+    textAlign: 'center',
   },
 });
 
 class dashBoardViewPost extends React.Component {
   constructor(props) {
     super(props);
-
   }
+
 
   render() {
     const { classes } = this.props;
     return (
-      <Card className={classes.card}>
-        <Avatar alt="Bertha" src={Data.Avatar1} className={classes.bigAvatar} />
-        <CardContent>
-          <Typography component="p">
-            <span className={classes.postTitle}>Patricia M. Lane</span> <span className={classes.postTitleText}>has posted an internship</span>
-          </Typography>
-          <Typography component="p" className={classes.profilePara}>
-            Sales and marketing team member<br/>
-            Urban International<br/> Spain
-          </Typography>
-        </CardContent>
-        <CardActions className="view-post-action">
-          <IconButton aria-label="Add to favorites" className={classes.viewPostIcon}>
-            <FavoriteIcon /> <span className={classes.viewPostIconLink}>Like</span>
-          </IconButton>
-          <IconButton aria-label="Add circle" className={classes.viewPostIcon}>
-            <AddCircle /> <span className={classes.viewPostIconLink}>Save</span>
-          </IconButton>
-          <IconButton aria-label="Share" className={classes.viewPostIcon}>
-            <ShareIcon /> <span className={classes.viewPostIconLink}>Share</span>
-          </IconButton>
-        </CardActions>
-      </Card>
+      <div className={classes.viewPostContainer}>
+        <div className={classes.center}><Fab variant="extended" aria-label="Edit" size="medium" className={classes.fab}>
+          New Posts
+        </Fab></div>
+        {Data.viewPostData.map(post => {
+          return (<Card className={classes.card} id="card-1">
+            <Avatar alt="Bertha" src={post.avatar} className={classes.bigAvatar} />
+            <CardContent className={classes.cardContent}>
+              <Typography component="p">
+                <span className={classes.postTitle}>{post.name}</span>
+                <span className={classes.postTitleText}>{post.content}</span>
+              </Typography>
+              <Typography component="p" className={classes.profilePara}>
+                {post.role}<br />
+                {post.company}<br />
+                {(post.otherInfo) &&
+                  <div>
+                    <RoomIcon className={classes.font14} />
+                    {post.otherInfo}
+                  </div>
+                }
+            </Typography>
+            </CardContent>
+            <CardActions className="viewPostAction">
+              <ul>
+                <li>
+                  <IconButton aria-label="Add to favorites" className={classes.viewPostIcon}>
+                    <FavoriteBorderIcon className={classes.font14} />
+                    <span className={classes.viewPostIconLink}>Like</span>
+                  </IconButton>
+                </li>
+                <li>
+                  <IconButton aria-label="Add circle" className={classes.viewPostIcon}>
+                    <AddCircle className={classes.font14} />
+                    <span className={classes.viewPostIconLink}>Save</span>
+                  </IconButton>
+                </li>
+                <li>
+                  <IconButton aria-label="Share" className={classes.viewPostIcon}>
+                    <ShareIcon className={classes.font14} />
+                    <span className={classes.viewPostIconLink}>Share</span>
+                  </IconButton>
+                </li>
+              </ul>
+            </CardActions>
+          </Card>)
+        })
+        }
+      </div>
     );
   }
 }
