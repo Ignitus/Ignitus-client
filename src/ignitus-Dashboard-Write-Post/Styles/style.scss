@@ -4,12 +4,13 @@
     background-color: $ignite-color-white;
     width: 528px;
     height: 138px;
-    border: 1px solid black;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
     border-radius: 16px;
     margin: 20px 40px;
     textarea{
         width: 100%;
+        font-size: 12px;
+        padding: 20px;
     }
 }
 
@@ -33,4 +34,9 @@
             color: $ignite-color-blue-bg;
         }
     }
+}
+
+.write-post-icons{
+    font-size: 15px;
+    margin: 5px auto;
 }

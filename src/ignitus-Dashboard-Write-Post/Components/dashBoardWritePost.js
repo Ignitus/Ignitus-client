@@ -11,19 +11,19 @@ class dashBoardWritePost extends React.Component {
   render() {
 
     return (
-      <div class="write-post-container">
+      <div className="write-post-container">
         <textarea placeholder="Share an article poll, document, video, photo or idea.
         Use @ to mention someone."></textarea>
-        <div className="post-icons mx-3 my-4">
+        <div className="post-icons mx-3 mb-1">
         <ul>
-        <li><i class="material-icons">bookmark</i></li>
-        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
-        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
-        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
-        <li><i class="fa fa-folder" aria-hidden="true"></i></li>
+        <li><i className="material-icons write-post-icons">library_books</i></li>
+        <li><i className="material-icons write-post-icons">poll</i></li>
+        <li><i className="material-icons write-post-icons">picture_as_pdf</i></li>
+        <li><i className="material-icons write-post-icons">video_library</i></li>
+        <li><i className="material-icons write-post-icons">photo_camera</i></li>
         </ul>
         </div>
-        <button className="btn btn-success btn-rounded button-bg p-1 px-4 mx-3 my-4 float-right">
+        <button className="btn btn-success btn-rounded button-bg p-1 px-4 mx-3 mb-1 float-right">
           <span className="btn-font">Post</span>
         </button>
       </div>
