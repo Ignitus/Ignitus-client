@@ -22,24 +22,25 @@ const styles = {
     /* shadow */
     boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
     borderRadius: '16px',
+    margin: '48px auto auto 0px',
   },
   menuItem: {
-    fontFamily: 'Raleway',
-    fontSize: '14px',
     padding: '5px 10px',
-    fontWeight: 'bold',
     '&:hover': {
       cursor: 'pointer',
-      backgroundColor: '#C4C4C4',
+      backgroundColor: '#E0E0E0',
     },
   },
   root: {
     color: '#000066',
-    padding: '5px 2px',
+    padding: '5px 1px',
   },
   primary: {
     color: '#000066',
     padding: '5px 2px',
+    fontFamily: 'Raleway',
+    fontWeight: 'bold',
+    fontSize: '14px',
   },
 };
 
