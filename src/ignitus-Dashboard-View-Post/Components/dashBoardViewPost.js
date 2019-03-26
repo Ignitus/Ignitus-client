@@ -1,22 +1,22 @@
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import React from 'react'
+import { withStyles } from '@material-ui/core/styles'
 import {
   CardActions,
   Typography,
   CardContent,
   IconButton,
-} from '@material-ui/core';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import RoomIcon from '@material-ui/icons/Room';
-import ShareIcon from '@material-ui/icons/Share';
-import AddCircle from '@material-ui/icons/AddCircle';
-import Card from '@material-ui/core/Card';
-import Fab from '@material-ui/core/Fab';
-import Avatar from '@material-ui/core/Avatar';
-import { withErrorBoundary } from '../../ignitus-Internals';
-import * as Data from './Constants';
-import '../../shared/styles/ignitus-tokens.scss';
-import '../Styles/style.scss';
+} from '@material-ui/core'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+import RoomIcon from '@material-ui/icons/Room'
+import ShareIcon from '@material-ui/icons/Share'
+import AddCircle from '@material-ui/icons/AddCircle'
+import Card from '@material-ui/core/Card'
+import Fab from '@material-ui/core/Fab'
+import Avatar from '@material-ui/core/Avatar'
+import { withErrorBoundary } from '../../ignitus-Internals'
+import * as Data from './Constants'
+import '../../shared/styles/ignitus-tokens.scss'
+import '../Styles/style.scss'
 
 const styles = theme => ({
   card: {
@@ -118,68 +118,105 @@ const styles = theme => ({
   center: {
     textAlign: 'center',
   },
-});
+})
 
-class dashBoardViewPost extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-
-  render() {
-    const { classes } = this.props;
-    return (
-      <div className={classes.viewPostContainer}>
-        <div className={classes.center}><Fab variant="extended" aria-label="Edit" size="medium" className={classes.fab}>
+const dashBoardViewPost = (props) => {
+  const { classes } = props;
+  return (
+    <div className={classes.viewPostContainer}>
+      <div className={classes.center}>
+        <Fab
+          variant="extended"
+          aria-label="Edit"
+          size="medium"
+          className={classes.fab}
+        >
           New Posts
-        </Fab></div>
-        {Data.viewPostData.map(post => {
-          return (<Card className={classes.card} id="card-1">
-            <Avatar alt="Bertha" src={post.avatar} className={classes.bigAvatar} />
+        </Fab>
+      </div>
+      {Data.viewPostData.map(post => {
+        return (
+          <Card className={classes.card} id="card-1">
+            <Avatar
+              alt="Bertha"
+              src={post.avatar}
+              className={classes.bigAvatar}
+            />
             <CardContent className={classes.cardContent}>
               <Typography component="p">
-                <span className={classes.postTitle}>{post.name}</span>
-                <span className={classes.postTitleText}>{post.content}</span>
+                <span className={classes.postTitle}>
+                  {post.name}
+                </span>
+                <span className={classes.postTitleText}>
+                  {post.content}
+                </span>
               </Typography>
-              <Typography component="p" className={classes.profilePara}>
-                {post.role}<br />
-                {post.company}<br />
-                {(post.otherInfo) &&
+              <Typography
+                component="p"
+                className={classes.profilePara}
+              >
+                {post.role}
+                <br />
+                {post.company}
+                <br />
+                {post.otherInfo && (
                   <div>
                     <RoomIcon className={classes.font14} />
                     {post.otherInfo}
                   </div>
-                }
-            </Typography>
+                )}
+              </Typography>
             </CardContent>
             <CardActions className="viewPostAction">
               <ul>
                 <li>
-                  <IconButton aria-label="Add to favorites" className={classes.viewPostIcon}>
-                    <FavoriteBorderIcon className={classes.font14} />
-                    <span className={classes.viewPostIconLink}>Like</span>
+                  <IconButton
+                    aria-label="Add to favorites"
+                    className={classes.viewPostIcon}
+                  >
+                    <FavoriteBorderIcon
+                      className={classes.font14}
+                    />
+                    <span
+                      className={classes.viewPostIconLink}
+                    >
+                      Like
+                                        </span>
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton aria-label="Add circle" className={classes.viewPostIcon}>
+                  <IconButton
+                    aria-label="Add circle"
+                    className={classes.viewPostIcon}
+                  >
                     <AddCircle className={classes.font14} />
-                    <span className={classes.viewPostIconLink}>Save</span>
+                    <span
+                      className={classes.viewPostIconLink}
+                    >
+                      Save
+                                        </span>
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton aria-label="Share" className={classes.viewPostIcon}>
+                  <IconButton
+                    aria-label="Share"
+                    className={classes.viewPostIcon}
+                  >
                     <ShareIcon className={classes.font14} />
-                    <span className={classes.viewPostIconLink}>Share</span>
+                    <span
+                      className={classes.viewPostIconLink}
+                    >
+                      Share
+                    </span>
                   </IconButton>
                 </li>
               </ul>
             </CardActions>
-          </Card>)
-        })
-        }
-      </div>
-    );
-  }
+          </Card>
+        )
+      })}
+    </div>
+  )
 }
 
-export default withErrorBoundary(withStyles(styles)(dashBoardViewPost));
+export default withErrorBoundary(withStyles(styles)(dashBoardViewPost))

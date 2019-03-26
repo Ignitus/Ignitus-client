@@ -9,13 +9,17 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ChatUsers from './Constants';
 
 const styles = () => ({
   card: {
     position: 'fixed',
     width: '273px',
-    maxHeight: '344px',
+    maxHeight: '544px',
+    height: '48px',
     bottom: '0px',
     background: '#FFFFFF',
     boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
@@ -50,38 +54,66 @@ const styles = () => ({
     backgroundColor: 'green',
     borderRadius: '50%',
   },
-})
+});
 
-const dashBoardChatlist = (props) => {
-  const { classes } = props;
-  return (
-    <Card className={classes.card}>
-      <CardHeader
-        title="Chat List"
-        classes={{
-          title: classes.chatListTitle,
-          root: classes.chatListHeader,
-        }}
-      />
-      <CardContent>
-        <List className={classes.listContainer}>
-          {ChatUsers.map((user) => {
-            return (
-              <ListItem className={classes.listItemContainer}>
-                <Avatar
-                  alt={user.name}
-                  src={user.avatar}
-                  className={classes.bigAvatar}
-                />
-                <ListItemText primary={user.name} />
-                <div className={classes.onlineContainer} />
-              </ListItem>
-            )
-          })}
-        </List>
-      </CardContent>
-    </Card>
-  );
+class dashBoardChatlist extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expandedChatList: false,
+    };
+    this.chatListExpand = this.chatListExpand.bind(this);
+    this.chatListShrink = this.chatListShrink.bind(this);
+  }
+
+  chatListExpand(){
+    this.setState({expandedChatList: true});
+    document.getElementById('chatList').style.height = '544px';
+  }
+
+  chatListShrink(){
+    this.setState({expandedChatList: false});
+    document.getElementById('chatList').style.height = '48px';
+  }
+
+  render() {
+    const { classes } = this.props;
+    const { expandedChatList } = this.state;
+    return (
+      <Card className={classes.card} id="chatList">
+        <CardHeader
+          title="Chat List"
+          classes={{
+            title: classes.chatListTitle,
+            root: classes.chatListHeader,
+          }}
+          action={
+            <IconButton>
+              {!expandedChatList && <ExpandLessIcon className={classes.chatListTitle} onClick={this.chatListExpand}/>}
+              {expandedChatList && <ExpandMoreIcon className={classes.chatListTitle} onClick={this.chatListShrink}/>}
+            </IconButton>
+          }
+        />
+        <CardContent>
+          <List className={classes.listContainer}>
+            {ChatUsers.map((user) => {
+              return (
+                <ListItem className={classes.listItemContainer}>
+                  <Avatar
+                    alt={user.name}
+                    src={user.avatar}
+                    className={classes.bigAvatar}
+                  />
+                  <ListItemText primary={user.name} />
+                  <div className={classes.onlineContainer} />
+                </ListItem>
+              )
+            })}
+          </List>
+        </CardContent>
+      </Card>
+    );
+  }
 };
 
 dashBoardChatlist.propTypes = {

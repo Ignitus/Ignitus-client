@@ -44,59 +44,53 @@ const styles = {
   },
 };
 
-class dashboardSidebar extends React.Component {
-  constructor(props) {
-    super(props);
+const dashboardSidebar = (props) => {
+  const { classes } = props;
+  return (
+    <Card className={classes.card}>
+      <CardContent>
+        <List>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <ArchiveIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="Saved" />
+          </ListItem>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <FavoriteIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="Liked" />
+          </ListItem>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <LaunchIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="Applied" />
+          </ListItem>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <GroupAddIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="My Network" />
+          </ListItem>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <SupervisorAccountIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="My Mentors" />
+          </ListItem>
+          <ListItem classes={{ root: classes.menuItem }}>
+            <ListItemIcon classes={{ root: classes.root }}>
+              <SendIcon />
+            </ListItemIcon>
+            <ListItemText classes={{ primary: classes.primary }} primary="Message" />
+          </ListItem>
+        </List>
+      </CardContent>
+    </Card>
+  );
+}
 
-  }
 
-  render() {
-    const { classes } = this.props;
-    return (
-      <Card className={classes.card}>
-        <CardContent>
-          <List>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <ArchiveIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="Saved" />
-            </ListItem>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <FavoriteIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="Liked" />
-            </ListItem>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <LaunchIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="Applied" />
-            </ListItem>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <GroupAddIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="My Network" />
-            </ListItem>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <SupervisorAccountIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="My Mentors" />
-            </ListItem>
-            <ListItem classes={{root: classes.menuItem }}>
-              <ListItemIcon classes={{root: classes.root}}>
-                <SendIcon />
-              </ListItemIcon>
-              <ListItemText classes={{primary: classes.primary }} primary="Message" />
-            </ListItem>
-          </List>
-        </CardContent>
-      </Card>
-        );
-      }
-    }
-    
-    export default withErrorBoundary(withStyles(styles)(dashboardSidebar));
+export default withErrorBoundary(withStyles(styles)(dashboardSidebar));
