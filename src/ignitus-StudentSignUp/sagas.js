@@ -10,7 +10,7 @@ const {
 } = effects;
 
 function* signUp(action) {
-  const {email, password} = action;
+  const { email, password } = action;
 
   try {
     const { data } = yield call(api.signUp, email, password);

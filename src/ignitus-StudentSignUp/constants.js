@@ -1,2 +1,2 @@
 
-export const NAME    = 'studentSignUpReducer';
+export const NAME = 'studentSignUpReducer';

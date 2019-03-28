@@ -1,10 +1,10 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import {withErrorBoundary} from './ignitus-Internals';
+import { withErrorBoundary } from './ignitus-Internals';
 import { ProtectedRoutes } from './ignitus-Routes/protectedRoutes';
 import { PublicRoutes } from './ignitus-Routes/publicRoutes';
-import loader from './ignitus-Assets/Images/loader.gif';
+import loader from './ignitus-Assets/Images/loader2.gif';
 import './App.scss';
 
 class App extends Component {

@@ -1,50 +1,49 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import {withErrorBoundary} from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../ignitus-Internals';
 import { logo } from './Constants';
 
-
-// resolved
-class Footer extends Component{
-  constructor(props){
+class Footer extends Component {
+  constructor(props) {
     super(props);
     this.state = {
       featuresToggle: true,
       communityToggle: true,
       companyToggle: true,
-      liknkToggle: true
-    }
+      liknkToggle: true,
+    };
     this.hideUnhide = this.hideUnhide.bind(this);
   }
+
   // hideUnhide function toggles the LIST of LINKS in Footer in MOBILE view
   // On every Click we're changing values from true to false and vice versa
-  hideUnhide(toToggle){
-    if(toToggle==="featuresToggle"){
-      this.setState({featuresToggle: !this.state.featuresToggle});
+  hideUnhide(toToggle) {
+    if (toToggle === 'featuresToggle') {
+      this.setState({ featuresToggle: !this.state.featuresToggle });
     }
-    if(toToggle==="communityToggle"){
-      this.setState({communityToggle: !this.state.communityToggle});
+    if (toToggle === 'communityToggle') {
+      this.setState({ communityToggle: !this.state.communityToggle });
     }
-    if(toToggle==="companyToggle"){
-      this.setState({companyToggle: !this.state.companyToggle});
+    if (toToggle === 'companyToggle') {
+      this.setState({ companyToggle: !this.state.companyToggle });
     }
-    if(toToggle==="liknkToggle"){
-      this.setState({liknkToggle: !this.state.liknkToggle});
+    if (toToggle === 'liknkToggle') {
+      this.setState({ liknkToggle: !this.state.liknkToggle });
     }
-    };
+  }
 
-  render(){
-    return(
+  render() {
+    return (
       <footer className="footer-bg text-white mt-4" id="footer-bg-id">
         <div className="container text-center text-md-left">
           <div className="row">
             <hr className="clearfix w-100 d-md-none" />
 
             <div className="col-md-2 mx-auto nav-accordion">
-              <div className={this.state.featuresToggle=== true ? "navigation":"navigation open"}>
-                <h5 className="mt-3 mb-4 heading" onClick={()=>this.hideUnhide("featuresToggle")}>Features</h5>
+              <div className={this.state.featuresToggle === true ? 'navigation' : 'navigation open'}>
+                <h5 className="mt-3 mb-4 heading" onClick={() => this.hideUnhide('featuresToggle')}>Features</h5>
                 <ul className="list-unstyled hidden">
                   <li>
                     <a className="link" href="#!">
@@ -71,8 +70,8 @@ class Footer extends Component{
             </div>
 
             <div className="col-md-2 mx-auto nav-accordion">
-              <div className={this.state.communityToggle=== true ? "navigation":"navigation open"}>
-                <h5 className="mt-3 mb-4 heading" onClick={()=>this.hideUnhide("communityToggle")}>Community</h5>
+              <div className={this.state.communityToggle === true ? 'navigation' : 'navigation open'}>
+                <h5 className="mt-3 mb-4 heading" onClick={() => this.hideUnhide('communityToggle')}>Community</h5>
                 <ul className="list-unstyled">
                   <li>
                     <a className="link" href="#!">
@@ -117,8 +116,8 @@ class Footer extends Component{
             </div>
 
             <div className="col-md-2 mx-auto nav-accordion">
-              <div className={this.state.companyToggle=== true ? "navigation":"navigation open"}>
-                <h5 className=" mt-3 mb-4 heading" onClick={()=>this.hideUnhide("companyToggle")}>Company</h5>
+              <div className={this.state.companyToggle === true ? 'navigation' : 'navigation open'}>
+                <h5 className=" mt-3 mb-4 heading" onClick={() => this.hideUnhide('companyToggle')}>Company</h5>
                 <ul className="list-unstyled">
                   <li>
                     <a
@@ -153,10 +152,10 @@ class Footer extends Component{
                 </ul>
               </div>
             </div>
-            
+
             <div className="col-md-2 mx-auto nav-accordion">
-              <div className={this.state.liknkToggle=== true ? "navigation":"navigation open"}>
-                <h5 className=" mt-3 mb-4 heading" onClick={()=>this.hideUnhide("liknkToggle")}>Links</h5>
+              <div className={this.state.liknkToggle === true ? 'navigation' : 'navigation open'}>
+                <h5 className=" mt-3 mb-4 heading" onClick={() => this.hideUnhide('liknkToggle')}>Links</h5>
                 <ul className="list-unstyled">
                   <li>
                     <HashLink to="/#!">

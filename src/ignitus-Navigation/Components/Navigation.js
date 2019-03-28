@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import logo from "../../ignitus-Assets/Images/nav-logo.svg";
-import blackLogo from '../../ignitus-Assets/Images/black-logo.svg'
-import "../Styles/style.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import logo from '../../ignitus-Assets/Images/nav-logo.svg';
+import blackLogo from '../../ignitus-Assets/Images/black-logo.svg';
+import '../Styles/style.scss';
 
 class Navigation extends React.Component {
   constructor() {
@@ -11,34 +11,32 @@ class Navigation extends React.Component {
 
     this.state = {
       navScrolled: false,
-      displayClass: "transparent",
+      displayClass: 'transparent',
       dynamicLogo: blackLogo,
     };
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY < 20) {
         if (this.state.navScrolled === true) {
           this.setState({
             navScrolled: false,
-            displayClass: "transparent",
+            displayClass: 'transparent',
             dynamicLogo: blackLogo,
           });
         }
-      } else {
-        if (this.state.navScrolled === false) {
-          this.setState({
-            navScrolled: true,
-            displayClass: "whitenav",
-            dynamicLogo: logo,
-          });
-        }
+      } else if (this.state.navScrolled === false) {
+        this.setState({
+          navScrolled: true,
+          displayClass: 'whitenav',
+          dynamicLogo: logo,
+        });
       }
     });
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(_nextProps, nextState) {
     if (nextState.navScrolled !== this.state.navScrolled) {
       return true;
     }
@@ -47,7 +45,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <nav className={"navbar navbar-expand-lg " + this.state.displayClass}>
+      <nav className={`navbar navbar-expand-lg ${this.state.displayClass}`}>
         <HashLink className="navbar-brand" to="/#">
           <img src={this.state.dynamicLogo} width="40" height="40" alt="logo" />
         </HashLink>
@@ -67,7 +65,9 @@ class Navigation extends React.Component {
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                  Home <span className="sr-only">(current)</span>
+                  Home
+                  {' '}
+                  <span className="sr-only">(current)</span>
                 </span>
               </HashLink>
             </li>
@@ -100,7 +100,7 @@ class Navigation extends React.Component {
               </a>
             </li>
 
-             <li className="nav-item">
+            <li className="nav-item">
               <Link to="/Login">
                 <span className="nav-link" href="/Login">
                   Sign in
@@ -108,7 +108,7 @@ class Navigation extends React.Component {
               </Link>
             </li>
 
-             <li className="nav-item">
+            <li className="nav-item">
               <Link to="/Signup">
                 <span className="nav-link" href="/Signup">
                   Sign up

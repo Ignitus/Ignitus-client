@@ -1,9 +1,7 @@
 import React from "react";
 import "../Styles/style.scss";
-
-import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
+import { AVATARS } from "./Data";
 import { withErrorBoundary } from "../../ignitus-Internals";
-import loader from "../../ignitus-Assets/Images/loader.gif";
 
 class CoreTeam extends React.Component {
   constructor(props) {

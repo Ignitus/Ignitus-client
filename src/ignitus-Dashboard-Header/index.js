@@ -4,6 +4,5 @@ import * as containers from './Containers';
 
 export default {
   components,
-  containers
+  containers,
 };
-

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Navigation from "../ignitus-Navigation";
 import Footer from "../ignitus-Footer";
@@ -17,7 +17,7 @@ import SignupStudent from "../ignitus-StudentSignUp";
 import commonLoginUI from "../ignitus-Common-Auth-Student-Prof/Components/commonLoginUI";
 import commonSignUpUI from "../ignitus-Common-Auth-Student-Prof/Components/commonSignUpUI";
 
-import loader from "../ignitus-Assets/Images/loader.gif";
+import loader from "../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
 
 import {Notfound} from './notFound';

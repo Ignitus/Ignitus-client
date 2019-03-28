@@ -3,28 +3,28 @@ import '../Styles/style.scss';
 
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-import ScrollToTopOnMount from "../../ignitus-Helpers/ScrollToTopOnMount"
+import ScrollToTopOnMount from '../../ignitus-Helpers/ScrollToTopOnMount';
 
 
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 const About = () => (
   <Fragment>
-      <ScrollToTopOnMount />
-      <div className="about-wrapper pt-5">
-          <div className="container">
-              <div className="row">
-                  <div className="col-md">
-                      <img
-                          className="mw-100 p-5"
-                          src="https://storage.googleapis.com/ignitus/Assets/about-us.png"
-                          alt="aboutus"
-                        />
-                    </div>
-                  <div className="col-md about bg-white p-4">
-                      <div className="title text-center mb-3">About Us</div>
-                      <div className="intro-text">
-                          <p>
+    <ScrollToTopOnMount />
+    <div className="about-wrapper pt-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-md">
+            <img
+              className="mw-100 p-5"
+              src="https://storage.googleapis.com/ignitus/Assets/about-us.png"
+              alt="aboutus"
+            />
+          </div>
+          <div className="col-md about bg-white p-4">
+            <div className="title text-center mb-3">About Us</div>
+            <div className="intro-text">
+              <p>
                                 Ignitus (A Non-Profit Organization for the
                                 welfare of student community) that helps
                                 students and professionals get handpicked
@@ -32,16 +32,16 @@ const About = () => (
                                 internships, for free! The students participate
                                 in projects and training programs supervised by
                                 our experts.
-                            </p>
-                          <p>
+              </p>
+              <p>
                                 Our only goal is Skyrocketing a students career
                                 by providing best global opportunities. The
                                 platform has got exponential growth after
                                 successful internship completion by the
                                 associated students with researchers from SAIL
                                 (Stanford AI Lab) and Oxford University.
-                            </p>
-                          <p>
+              </p>
+              <p>
                                 Ignitus is working with a non-profit
                                 (GirlsScript Foundation), Woo-Tech which is
                                 committed to bringing together multiple such
@@ -52,8 +52,8 @@ const About = () => (
                                 women at Woo-Tech and GirlScript India and
                                 Program Manager of Systers, LEAN IN INDIA , MIT
                                 Media Lab.
-                            </p>
-                          <p>
+              </p>
+              <p>
                                 Ignitus scholar consists of 200+ applicants who
                                 have worked at Deep Learning Divison
                                 Mercedes-Benz, Harvard Innovation Labs, UC
@@ -61,21 +61,21 @@ const About = () => (
                                 Students, Researchers of Stanford, MIT,
                                 Princeton, Georgia Tech, SUNY, Harvard, Oxford,
                                 UCB, UCLA, USC etc.
-                            </p>
-                            <p>
+              </p>
+              <p>
                                   Team Ignitus boasts of a dedicated workforce
                                   from Boston, Miami, Pittsburgh, Madrid, Houston,
                                   Munich, Princeton, Los Angeles, Vancouver and
                                   different parts of India
-                              </p>
-                        </div>
-                    </div>
-                </div>
+              </p>
             </div>
-          <CoreTeam.components.CoreTeam />
-          <Team.containers.TeamContainer />
+          </div>
         </div>
-    </Fragment>
+      </div>
+      <CoreTeam.components.CoreTeam />
+      <Team.containers.TeamContainer />
+    </div>
+  </Fragment>
 );
 
 export default withErrorBoundary(About);

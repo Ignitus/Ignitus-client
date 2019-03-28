@@ -1,16 +1,12 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import "../Styles/style.scss";
+import '../Styles/style.scss';
 
-import { AVATARS, CONTRIBUTORS_DATA } from "./Data";
-import { withErrorBoundary } from "../../ignitus-Internals";
-import loader from "../../ignitus-Assets/Images/loader.gif";
-import shortid from "shortid";
+import shortid from 'shortid';
+import { withErrorBoundary } from '../../ignitus-Internals';
+import loader from '../../ignitus-Assets/Images/loader2.gif';
 
 class Team extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.props.getContributorsData();
@@ -23,7 +19,7 @@ class Team extends React.Component {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
           <div className="loader">
-            <img src={loader} />
+            <img alt="loader" src={loader} />
           </div>
         </div>
       );
@@ -74,4 +70,3 @@ Team.propTypes = {
 };
 
 export default withErrorBoundary(Team);
-

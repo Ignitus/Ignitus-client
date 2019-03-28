@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../Styles/style.scss";
-import { withErrorBoundary } from "../../ignitus-Internals";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../Styles/style.scss';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 const GetStarted = () => (
   <div className="started--container">
