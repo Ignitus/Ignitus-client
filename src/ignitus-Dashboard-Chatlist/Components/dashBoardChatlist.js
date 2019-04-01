@@ -51,7 +51,7 @@ const styles = () => ({
   onlineContainer: {
     width: '10px',
     height: '10px',
-    backgroundColor: 'green',
+    backgroundColor: '#219653',
     borderRadius: '50%',
   },
 });
@@ -63,18 +63,20 @@ class dashBoardChatlist extends React.Component {
       expandedChatList: false,
     };
     this.chatListExpand = this.chatListExpand.bind(this);
-    this.chatListShrink = this.chatListShrink.bind(this);
   }
 
   chatListExpand(){
-    this.setState({expandedChatList: true});
-    document.getElementById('chatList').style.height = '544px';
+    let { expandedChatList } = this.state;
+    expandedChatList = !expandedChatList;
+    this.setState({expandedChatList});
+    if(expandedChatList){
+      document.getElementById('chatList').style.height = '544px';
+    }
+    else{
+      document.getElementById('chatList').style.height = '48px';
+    }
   }
 
-  chatListShrink(){
-    this.setState({expandedChatList: false});
-    document.getElementById('chatList').style.height = '48px';
-  }
 
   render() {
     const { classes } = this.props;
@@ -88,17 +90,17 @@ class dashBoardChatlist extends React.Component {
             root: classes.chatListHeader,
           }}
           action={
-            <IconButton>
-              {!expandedChatList && <ExpandLessIcon className={classes.chatListTitle} onClick={this.chatListExpand}/>}
-              {expandedChatList && <ExpandMoreIcon className={classes.chatListTitle} onClick={this.chatListShrink}/>}
-            </IconButton>
+              <IconButton onClick={this.chatListExpand}>
+                {!expandedChatList && <ExpandLessIcon className={classes.chatListTitle}/>}
+                {expandedChatList && <ExpandMoreIcon className={classes.chatListTitle} />}
+              </IconButton>
           }
         />
         <CardContent>
           <List className={classes.listContainer}>
             {ChatUsers.map((user) => {
               return (
-                <ListItem className={classes.listItemContainer}>
+                <ListItem className={classes.listItemContainer} key={user.id}>
                   <Avatar
                     alt={user.name}
                     src={user.avatar}

@@ -9,6 +9,7 @@ export const Avatar8 = 'https://storage.googleapis.com/ignitus/Team/avatar-rober
 
 export const viewPostData = [
   {
+    id: 1,
     avatar: Avatar5,
     name: 'Patricia M. Lane',
     content: ' has posted an internship',
@@ -17,6 +18,7 @@ export const viewPostData = [
     otherInfo: 'Spain',
   },
   {
+    id: 2,
     avatar: Avatar4,
     name: 'David Johnson',
     content: ' has posted an publication',
@@ -25,6 +27,7 @@ export const viewPostData = [
     otherInfo: '',
   },
   {
+    id: 3,
     avatar: Avatar5,
     name: 'Scholarship and Grants',
     content: '',
@@ -33,6 +36,7 @@ export const viewPostData = [
     otherInfo: '',
   },
   {
+    id: 4,
     avatar: Avatar4,
     name: 'Donald Kunkel',
     content: ' has posted an publication',

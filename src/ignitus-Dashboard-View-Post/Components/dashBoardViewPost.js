@@ -1,22 +1,22 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
 import {
   CardActions,
   Typography,
   CardContent,
   IconButton,
-} from '@material-ui/core'
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import RoomIcon from '@material-ui/icons/Room'
-import ShareIcon from '@material-ui/icons/Share'
-import AddCircle from '@material-ui/icons/AddCircle'
-import Card from '@material-ui/core/Card'
-import Fab from '@material-ui/core/Fab'
-import Avatar from '@material-ui/core/Avatar'
-import { withErrorBoundary } from '../../ignitus-Internals'
-import * as Data from './Constants'
-import '../../shared/styles/ignitus-tokens.scss'
-import '../Styles/style.scss'
+} from '@material-ui/core';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import RoomIcon from '@material-ui/icons/Room';
+import ShareIcon from '@material-ui/icons/Share';
+import AddCircle from '@material-ui/icons/AddCircle';
+import Card from '@material-ui/core/Card';
+import Fab from '@material-ui/core/Fab';
+import Avatar from '@material-ui/core/Avatar';
+import { withErrorBoundary } from '../../ignitus-Internals';
+import * as Data from './Constants';
+import '../../shared/styles/ignitus-tokens.scss';
+import '../Styles/style.scss';
 
 const styles = theme => ({
   card: {
@@ -111,6 +111,8 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     fontSize: '14px',
+    marginRight: '5px',
+
   },
   cardContent: {
     padding: '10px',
@@ -136,7 +138,7 @@ const dashBoardViewPost = (props) => {
       </div>
       {Data.viewPostData.map(post => {
         return (
-          <Card className={classes.card} id="card-1">
+          <Card className={classes.card} key={`card-${post.id}`} id="card-1">
             <Avatar
               alt="Bertha"
               src={post.avatar}
@@ -151,61 +153,41 @@ const dashBoardViewPost = (props) => {
                   {post.content}
                 </span>
               </Typography>
-              <Typography
-                component="p"
-                className={classes.profilePara}
-              >
+              <Typography component="p" className={classes.profilePara}>
                 {post.role}
                 <br />
                 {post.company}
                 <br />
-                {post.otherInfo && (
-                  <div>
-                    <RoomIcon className={classes.font14} />
-                    {post.otherInfo}
-                  </div>
-                )}
               </Typography>
+              <div>
+                <Typography component="p">
+                  {post.otherInfo &&  <RoomIcon className={classes.font14} /> }
+                  {post.otherInfo && post.otherInfo }
+                </Typography>
+              </div>
             </CardContent>
-            <CardActions className="viewPostAction">
+            <CardActions className={classes.viewPostAction}>
               <ul>
                 <li>
-                  <IconButton
-                    aria-label="Add to favorites"
-                    className={classes.viewPostIcon}
-                  >
-                    <FavoriteBorderIcon
-                      className={classes.font14}
-                    />
-                    <span
-                      className={classes.viewPostIconLink}
-                    >
+                  <IconButton aria-label="Add to favorites" className={classes.viewPostIcon}>
+                    <FavoriteBorderIcon className={classes.font14} />
+                    <span className={classes.viewPostIconLink}>
                       Like
-                                        </span>
+                    </span>
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton
-                    aria-label="Add circle"
-                    className={classes.viewPostIcon}
-                  >
+                  <IconButton aria-label="Add circle" className={classes.viewPostIcon}>
                     <AddCircle className={classes.font14} />
-                    <span
-                      className={classes.viewPostIconLink}
-                    >
+                    <span className={classes.viewPostIconLink}>
                       Save
-                                        </span>
+                    </span>
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton
-                    aria-label="Share"
-                    className={classes.viewPostIcon}
-                  >
+                  <IconButton aria-label="Share" className={classes.viewPostIcon}>
                     <ShareIcon className={classes.font14} />
-                    <span
-                      className={classes.viewPostIconLink}
-                    >
+                    <span className={classes.viewPostIconLink}>
                       Share
                     </span>
                   </IconButton>

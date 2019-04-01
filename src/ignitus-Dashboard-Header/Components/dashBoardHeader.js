@@ -11,16 +11,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = theme => ({
   root: {
@@ -70,6 +66,7 @@ const styles = theme => ({
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
+      justifyContent: 'space-around',
     },
   },
   sectionMobile: {
@@ -78,6 +75,46 @@ const styles = theme => ({
       display: 'none',
     },
   },
+  onlineContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    margin: '10px',
+  },
+  onlineLogo: {
+    width: '10px',
+    height: '10px',
+    backgroundColor: '#219653',
+    borderRadius: '50%',
+  },
+  onlineText: {
+    margin: '0px',
+    padding: '10px'
+  },
+  statusListItem: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: '10px',
+    '&:hover':{
+      backgroundColor: '#000066',
+      cursor: 'pointer',
+      color: '#F7F7F7',
+    }
+  },
+  dropDownContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  divDropDown: {
+    background: '#FFFFFF',
+    width: '98.37px',
+    border: '0.25px solid #BBBBBB',
+    boxSizing: 'border-box',
+    borderRadius: '16px 0px 16px 16px',
+  },
+  search: {
+    alignSelf: 'center'
+  }
 });
 
 class dashBoardHeader extends React.Component {
@@ -155,13 +192,29 @@ class dashBoardHeader extends React.Component {
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
+                        <div className={classes.loginContainer}>
+                          <div className={classes.onlineContainer}>
+                            <div className={classes.onlineLogo} />   
+                            <p className={classes.onlineText}>Online</p>
+                            <IconButton>
+                              <ExpandMoreIcon onClick={this.loginDropdown}/>
+                            </IconButton>
+                          </div>
+                          <div className={classes.divDropDown}>
+                            <ul>
+                              <li value="online" className={classes.statusListItem}><div className={classes.onlineContainer}/>Online</li>
+                              <li value="away" className={classes.statusListItem}>Away</li>
+                              <li value="offline" className={classes.statusListItem}>Offline</li>
+                            </ul>
+                        </div>
+                        </div>
                         <div className={classes.search}>
                             <InputBase
-                                placeholder="Search…"
-                                classes={{
-                                    root: classes.inputRoot,
-                                    input: classes.inputInput,
-                                }}
+                              placeholder="Search…"
+                              classes={{
+                                  root: classes.inputRoot,
+                                  input: classes.inputInput,
+                              }}
                             />
                         </div>
                         <IconButton color="inherit">
@@ -189,8 +242,7 @@ class dashBoardHeader extends React.Component {
                         <IconButton
                             aria-haspopup="true"
                             onClick={this.handleMobileMenuOpen}
-                            color="inherit"
-                        >
+                            color="inherit">
                             <MoreIcon />
                         </IconButton>
                     </div>
