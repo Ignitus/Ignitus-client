@@ -16,6 +16,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import NativeSelect from '@material-ui/core/NativeSelect';
+import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = theme => ({
@@ -47,7 +49,7 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit,
     paddingRight: theme.spacing.unit,
     paddingBottom: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit * 10,
+    paddingLeft: theme.spacing.unit,
     background: '#FFFFFF',
     border: '1px solid #000066',
     boxSizing: 'border-box',
@@ -80,16 +82,7 @@ const styles = theme => ({
     alignItems: 'center',
     margin: '10px',
   },
-  onlineLogo: {
-    width: '10px',
-    height: '10px',
-    backgroundColor: '#219653',
-    borderRadius: '50%',
-  },
-  onlineText: {
-    margin: '0px',
-    padding: '10px'
-  },
+  
   statusListItem: {
     display: 'flex',
     flexDirection: 'row',
@@ -101,10 +94,12 @@ const styles = theme => ({
       color: '#F7F7F7',
     }
   },
+
   dropDownContainer: {
     display: 'flex',
     flexDirection: 'column',
   },
+
   divDropDown: {
     background: '#FFFFFF',
     width: '98.37px',
@@ -112,9 +107,33 @@ const styles = theme => ({
     boxSizing: 'border-box',
     borderRadius: '16px 0px 16px 16px',
   },
+
   search: {
     alignSelf: 'center'
-  }
+  },
+
+  loginContainer: {
+
+    '&:before': {
+      borderBottom: 'none'
+    }
+  },
+
+  button: {
+    margin: theme.spacing.unit,
+    width: '145px',
+    backgroundColor: '#000066',
+    borderRadius: '9px',
+    color: '#FFFFFF',
+    fontFamily: 'Raleway',
+    textAlign: 'center',
+    fontSize: '16px',
+    textTransform: 'none'
+  },
+
+  rightIcon: {
+    marginLeft: theme.spacing.unit,
+  },
 });
 
 class dashBoardHeader extends React.Component {
@@ -192,22 +211,11 @@ class dashBoardHeader extends React.Component {
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <div className={classes.loginContainer}>
-                          <div className={classes.onlineContainer}>
-                            <div className={classes.onlineLogo} />   
-                            <p className={classes.onlineText}>Online</p>
-                            <IconButton>
-                              <ExpandMoreIcon onClick={this.loginDropdown}/>
-                            </IconButton>
-                          </div>
-                          <div className={classes.divDropDown}>
-                            <ul>
-                              <li value="online" className={classes.statusListItem}><div className={classes.onlineContainer}/>Online</li>
-                              <li value="away" className={classes.statusListItem}>Away</li>
-                              <li value="offline" className={classes.statusListItem}>Offline</li>
-                            </ul>
-                        </div>
-                        </div>
+                        <NativeSelect className={classes.loginContainer}>
+                          <option value="online" selected>Online</option>
+                          <option value="away">Away</option>
+                          <option value="offline">Offline</option>
+                        </NativeSelect>
                         <div className={classes.search}>
                             <InputBase
                               placeholder="Search…"
@@ -246,6 +254,10 @@ class dashBoardHeader extends React.Component {
                             <MoreIcon />
                         </IconButton>
                     </div>
+                    <Button variant="contained" className={classes.button}>
+                      Sophia
+                      <ExpandMoreIcon className={classes.rightIcon} />
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>
