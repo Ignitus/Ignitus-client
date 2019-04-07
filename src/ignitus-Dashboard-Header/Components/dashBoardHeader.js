@@ -19,6 +19,8 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 const styles = theme => ({
   root: {
@@ -40,7 +42,7 @@ const styles = theme => ({
     paddingLeft: '10px',
     paddingRight: '10px',
   },
-  
+
   inputRoot: {
     color: 'inherit',
     width: '100%',
@@ -82,13 +84,13 @@ const styles = theme => ({
     alignItems: 'center',
     margin: '10px',
   },
-  
+
   statusListItem: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: '10px',
-    '&:hover':{
+    '&:hover': {
       backgroundColor: '#000066',
       cursor: 'pointer',
       color: '#F7F7F7',
@@ -113,7 +115,6 @@ const styles = theme => ({
   },
 
   loginContainer: {
-
     '&:before': {
       borderBottom: 'none'
     }
@@ -122,18 +123,51 @@ const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
     width: '145px',
+    lineHeight: '1',
     backgroundColor: '#000066',
     borderRadius: '9px',
     color: '#FFFFFF',
     fontFamily: 'Raleway',
     textAlign: 'center',
     fontSize: '16px',
-    textTransform: 'none'
+    textTransform: 'none',
+    '&:hover': {
+      backgroundColor: '#000066',
+      color: '#FFFFFF',
+    }
   },
 
   rightIcon: {
     marginLeft: theme.spacing.unit,
   },
+
+  nameDropDown: {
+    width: '156px',
+    background: '#FFFFFF',
+    border: '0.25px solid #BBBBBB',
+    boxSizing: 'border-box',
+    borderRadius: '16px 0px 16px 16px',
+    left: 'inherit',
+    textAlign: 'center',
+  },
+  nameListItem: {
+    borderBottom: '0.25px solid #BBBBBB',
+    padding: '10px',
+    '&:hover': {
+      background: '#000066',
+      color: '#FFFFFF'
+    }
+  },
+  nameLastListItem: {
+    padding: '10px',
+    '&:hover': {
+      background: '#000066',
+      color: '#FFFFFF'
+    }
+  },
+  toolbarContainer: {
+    alignItems: 'flex-start'
+  }
 });
 
 class dashBoardHeader extends React.Component {
@@ -144,8 +178,10 @@ class dashBoardHeader extends React.Component {
 
       anchorEl: null,
       mobileMoreAnchorEl: null,
+      nameDropDownDisplay: false
     };
     this.logout = this.logout.bind(this);
+    this.nameDropDownDisplay = this.nameDropDownDisplay.bind(this);
   }
 
   componentDidMount() {
@@ -156,111 +192,120 @@ class dashBoardHeader extends React.Component {
     localStorage.clear();
     this.props.logUserOut();
     this.setState({ redirect: true });
-  }
+  };
 
 
-  handleProfileMenuOpen = event => {
+  handleProfileMenuOpen(event) {
     this.setState({ anchorEl: event.currentTarget });
   };
 
-  handleMenuClose = () => {
+  handleMenuClose() {
     this.setState({ anchorEl: null });
     this.handleMobileMenuClose();
   };
 
-  handleMobileMenuOpen = event => {
+  handleMobileMenuOpen(event) {
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
 
-  handleMobileMenuClose = () => {
+  handleMobileMenuClose() {
     this.setState({ mobileMoreAnchorEl: null });
   };
 
+  nameDropDownDisplay() {
+    let { nameDropDownDisplay } = this.state;
+    this.setState({ nameDropDownDisplay: !nameDropDownDisplay });
+  }
+
   render() {
-    if (this.state.redirect) {
-        return <Redirect to="/" />
+    let { redirect } = this.state;
+    if (redirect) {
+      return <Redirect to="/" />
     }
 
-
-    let email = ''
     const { classes } = this.props;
-    const { anchorEl, mobileMoreAnchorEl } = this.state;
-
-    if (localStorage.getItem('data')) {
-        console.log(localStorage.getItem('data'))
-        email = JSON.parse(localStorage.getItem('data')).email
-    }
+    const { anchorEl, mobileMoreAnchorEl, nameDropDownDisplay } = this.state;
 
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
     return (
 
-        <div className={classes.root}>
-            <AppBar className={classes.appbarContainer}>
-                <Toolbar>
-                    
-                    <HashLink className="navbar-brand" to="/#">
-                        <img src={logo} width="40" height="40" alt="logo" />
-                    </HashLink>
-                    <Typography className={classes.title} variant="h6">
-                        Home
-                    </Typography>
-                    <Typography className={classes.title} variant="h6">
-                        Internships
-                    </Typography>
-                    <div className={classes.grow} />
-                    <div className={classes.sectionDesktop}>
-                        <NativeSelect className={classes.loginContainer}>
-                          <option value="online" selected>Online</option>
-                          <option value="away">Away</option>
-                          <option value="offline">Offline</option>
-                        </NativeSelect>
-                        <div className={classes.search}>
-                            <InputBase
-                              placeholder="Search…"
-                              classes={{
-                                  root: classes.inputRoot,
-                                  input: classes.inputInput,
-                              }}
-                            />
-                        </div>
-                        <IconButton color="inherit">
-                            <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton color="inherit">
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
-                            </Badge>
-                        </IconButton>
-                        <IconButton
-                            aria-owns={
-                                isMenuOpen ? 'material-appbar' : undefined
-                            }
-                            aria-haspopup="true"
-                            onClick={this.handleProfileMenuOpen}
-                            color="inherit"
-                        >
-                            <AccountCircle />
-                        </IconButton>
-                    </div>
-                    <div className={classes.sectionMobile}>
-                        <IconButton
-                            aria-haspopup="true"
-                            onClick={this.handleMobileMenuOpen}
-                            color="inherit">
-                            <MoreIcon />
-                        </IconButton>
-                    </div>
-                    <Button variant="contained" className={classes.button}>
-                      Sophia
+      <div className={classes.root}>
+        <AppBar className={classes.appbarContainer}>
+          <Toolbar className={classes.toolbarContainer}>
+            <HashLink className="navbar-brand" to="/#">
+              <img src={logo} width="40" height="40" alt="logo" />
+            </HashLink>
+            <Typography className={classes.title} variant="h6">
+              Home
+                  </Typography>
+            <Typography className={classes.title} variant="h6">
+              Internships
+                  </Typography>
+            <div className={classes.grow} />
+            <div className={classes.sectionDesktop}>
+              <NativeSelect className={classes.loginContainer}>
+                <option value="online">Online</option>
+                <option value="away">Away</option>
+                <option value="offline">Offline</option>
+              </NativeSelect>
+              <div className={classes.search}>
+                <InputBase
+                  placeholder="Search…"
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput,
+                  }}
+                />
+              </div>
+              <IconButton color="inherit">
+                <Badge badgeContent={4} color="secondary">
+                  <MailIcon />
+                </Badge>
+              </IconButton>
+              <IconButton color="inherit">
+                <Badge badgeContent={17} color="secondary">
+                  <NotificationsIcon />
+                </Badge>
+              </IconButton>
+              <IconButton
+                aria-owns={
+                  isMenuOpen ? 'material-appbar' : undefined
+                }
+                aria-haspopup="true"
+                onClick={this.handleProfileMenuOpen}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
+            </div>
+            <div className={classes.sectionMobile}>
+              <IconButton
+                aria-haspopup="true"
+                onClick={this.handleMobileMenuOpen}
+                color="inherit">
+                <MoreIcon />
+              </IconButton>
+            </div>
+            <div className={classes.dropDownContainer}>
+              <Button variant="contained" className={classes.button} onClick={this.nameDropDownDisplay}>
+                Sophia
                       <ExpandMoreIcon className={classes.rightIcon} />
-                    </Button>
-                </Toolbar>
-            </AppBar>
-        </div>
+              </Button>
+              {nameDropDownDisplay && <div>
+                <ul className={classes.nameDropDown}>
+                  <li className={classes.nameListItem}>Dashboard</li>
+                  <li className={classes.nameListItem}>Profile</li>
+                  <li className={classes.nameListItem}>Settings</li>
+                  <li className={classes.nameListItem}>Privacy Policy</li>
+                  <li className={classes.nameLastListItem}>Logout</li>
+                </ul>
+              </div>}
+            </div>
+          </Toolbar>
+        </AppBar>
+      </div>
     )
   }
 }
