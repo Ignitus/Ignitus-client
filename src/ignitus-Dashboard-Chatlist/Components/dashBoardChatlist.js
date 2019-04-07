@@ -109,7 +109,7 @@ class dashBoardChatlist extends React.Component {
                   <ListItemText primary={user.name} />
                   <div className={classes.onlineContainer} />
                 </ListItem>
-              )
+              );
             })}
           </List>
         </CardContent>

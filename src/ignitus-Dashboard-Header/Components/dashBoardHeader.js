@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link, Redirect, Route } from 'react-router-dom';
+import {  Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../ignitus-Assets/Images/nav-logo.svg';
-import { withErrorBoundary } from '../../ignitus-Internals';
 import _ from 'lodash';
-
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -18,19 +15,24 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Avatar from '@material-ui/core/Avatar';
+import ListItemText from '@material-ui/core/ListItemText';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import SearchUsers from '../constants';
+import logo from '../../ignitus-Assets/Images/nav-logo.svg';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 const styles = theme => ({
   root: {
-    width: '100%'
+    width: '100%',
   },
   appbarContainer: {
     color: '#000066',
     backgroundColor: 'transparent',
     boxShadow: 'none',
-    display: 'flex'
+    display: 'flex',
   },
   title: {
     fontFamily: 'Raleway',
@@ -48,26 +50,26 @@ const styles = theme => ({
     width: '100%',
   },
   inputInput: {
-    paddingTop: theme.spacing.unit,
-    paddingRight: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit,
+    margin: '5px',
+    padding: '5px',
     background: '#FFFFFF',
     border: '1px solid #000066',
     boxSizing: 'border-box',
     borderRadius: '9px',
     transition: theme.transitions.create('width'),
-    width: '209px',
+    width: '220px',
     height: '30px',
+    alignItems: 'flex-start',
     [theme.breakpoints.up('md')]: {
       width: 200,
-    }
+    },
   },
   grow: {
     flexGrow: 1,
   },
   sectionDesktop: {
     display: 'none',
+    alignItems: 'flex-start',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
       justifyContent: 'space-around',
@@ -94,7 +96,7 @@ const styles = theme => ({
       backgroundColor: '#000066',
       cursor: 'pointer',
       color: '#F7F7F7',
-    }
+    },
   },
 
   dropDownContainer: {
@@ -110,14 +112,10 @@ const styles = theme => ({
     borderRadius: '16px 0px 16px 16px',
   },
 
-  search: {
-    alignSelf: 'center'
-  },
-
   loginContainer: {
     '&:before': {
-      borderBottom: 'none'
-    }
+      borderBottom: 'none',
+    },
   },
 
   button: {
@@ -134,7 +132,7 @@ const styles = theme => ({
     '&:hover': {
       backgroundColor: '#000066',
       color: '#FFFFFF',
-    }
+    },
   },
 
   rightIcon: {
@@ -155,19 +153,33 @@ const styles = theme => ({
     padding: '10px',
     '&:hover': {
       background: '#000066',
-      color: '#FFFFFF'
-    }
+      color: '#FFFFFF',
+    },
   },
   nameLastListItem: {
     padding: '10px',
     '&:hover': {
       background: '#000066',
-      color: '#FFFFFF'
-    }
+      color: '#FFFFFF',
+    },
   },
   toolbarContainer: {
-    alignItems: 'flex-start'
-  }
+    alignItems: 'flex-start',
+  },
+  searchContainer: {
+    width: '220px',
+    boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
+    height: '250px',
+    overflow: 'scroll',
+    borderRadius: '0px 16px 16px 16px',
+    background: '#FFFFFF',
+    color: '#000066',
+  },
+  searchItems: {
+    '&:hover': {
+      cursor: 'pointer',
+    },
+  },
 });
 
 class dashBoardHeader extends React.Component {
@@ -178,10 +190,12 @@ class dashBoardHeader extends React.Component {
 
       anchorEl: null,
       mobileMoreAnchorEl: null,
-      nameDropDownDisplay: false
+      nameDropDownDisplay: false,
+      searchwords: false,
     };
     this.logout = this.logout.bind(this);
     this.nameDropDownDisplay = this.nameDropDownDisplay.bind(this);
+    this.searchHandler = this.searchHandler.bind(this);
   }
 
   componentDidMount() {
@@ -192,25 +206,25 @@ class dashBoardHeader extends React.Component {
     localStorage.clear();
     this.props.logUserOut();
     this.setState({ redirect: true });
-  };
+  }
 
 
   handleProfileMenuOpen(event) {
     this.setState({ anchorEl: event.currentTarget });
-  };
+  }
 
   handleMenuClose() {
     this.setState({ anchorEl: null });
     this.handleMobileMenuClose();
-  };
+  }
 
   handleMobileMenuOpen(event) {
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
-  };
+  }
 
   handleMobileMenuClose() {
     this.setState({ mobileMoreAnchorEl: null });
-  };
+  }
 
   nameDropDownDisplay() {
     let { nameDropDownDisplay } = this.state;
@@ -218,19 +232,22 @@ class dashBoardHeader extends React.Component {
   }
 
   render() {
-    let { redirect } = this.state;
-    if (redirect) {
+    if (this.state.redirect) {
       return <Redirect to="/" />
     }
 
     const { classes } = this.props;
-    const { anchorEl, mobileMoreAnchorEl, nameDropDownDisplay } = this.state;
+    const { anchorEl, mobileMoreAnchorEl, nameDropDownDisplay, searchwords } = this.state;
+
+    if (localStorage.getItem('data')) {
+      console.log(localStorage.getItem('data'));
+      email = JSON.parse(localStorage.getItem('data')).email;
+    }
 
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
     return (
-
       <div className={classes.root}>
         <AppBar className={classes.appbarContainer}>
           <Toolbar className={classes.toolbarContainer}>
@@ -239,10 +256,10 @@ class dashBoardHeader extends React.Component {
             </HashLink>
             <Typography className={classes.title} variant="h6">
               Home
-                  </Typography>
+            </Typography>
             <Typography className={classes.title} variant="h6">
               Internships
-                  </Typography>
+            </Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <NativeSelect className={classes.loginContainer}>
@@ -257,7 +274,24 @@ class dashBoardHeader extends React.Component {
                     root: classes.inputRoot,
                     input: classes.inputInput,
                   }}
+                  onClick={this.searchHandler}
                 />
+                {searchwords &&
+                  <List className={classes.searchContainer}>
+                    {SearchUsers.map((user) => {
+                      return (
+                        <ListItem className={classes.searchItems} key={user.id}>
+                          <Avatar
+                            alt={user.name}
+                            src={user.avatar}
+                            className={classes.bigAvatar}
+                          />
+                          <ListItemText primary={user.name} className={classes.searchItems} />
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                }
               </div>
               <IconButton color="inherit">
                 <Badge badgeContent={4} color="secondary">
