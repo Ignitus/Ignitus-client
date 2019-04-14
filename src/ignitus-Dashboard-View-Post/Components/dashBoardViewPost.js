@@ -52,6 +52,7 @@ const styles = theme => ({
     width: '72px',
     height: '70px',
     margin: '5px 10px',
+    flex: 1,
   },
   postTitle: {
     fontFamily: 'Raleway',
@@ -88,6 +89,10 @@ const styles = theme => ({
   viewPostIcon: {
     height: '3px',
     color: '#000066',
+    '&:hover': {
+      backgroundColor: 'transparent',
+      cursor: 'pointer',
+    },
   },
   font14: {
     fontSize: '14px',
@@ -112,15 +117,17 @@ const styles = theme => ({
     flexDirection: 'column',
     fontSize: '14px',
     marginRight: '5px',
+    flex: 1,
 
   },
   cardContent: {
     padding: '10px',
+    flex: 4,
   },
   center: {
     textAlign: 'center',
   },
-})
+});
 
 const dashBoardViewPost = (props) => {
   const { classes } = props;
@@ -136,7 +143,7 @@ const dashBoardViewPost = (props) => {
           New Posts
         </Fab>
       </div>
-      {Data.viewPostData.map(post => {
+      {Data.viewPostData.map((post) => {
         return (
           <Card className={classes.card} key={`card-${post.id}`} id="card-1">
             <Avatar
@@ -198,7 +205,7 @@ const dashBoardViewPost = (props) => {
         )
       })}
     </div>
-  )
-}
+  );
+};
 
-export default withErrorBoundary(withStyles(styles)(dashBoardViewPost))
+export default withErrorBoundary(withStyles(styles)(dashBoardViewPost));
