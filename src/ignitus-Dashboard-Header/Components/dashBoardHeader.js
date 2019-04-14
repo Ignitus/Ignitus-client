@@ -2,7 +2,7 @@ import React from 'react';
 import {  Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
-import _ from 'lodash';
+import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -234,7 +234,13 @@ class dashBoardHeader extends React.Component {
     this.setState({ nameDropDownDisplay: !nameDropDownDisplay });
   }
 
+  searchHandler(){
+    let { searchwords } = this.state;
+    this.setState({searchwords: !searchwords});
+  }
+
   render() {
+    let email = '';
     if (this.state.redirect) {
       return <Redirect to="/" />
     }
@@ -336,7 +342,7 @@ class dashBoardHeader extends React.Component {
                   <li className={classes.nameListItem}>Profile</li>
                   <li className={classes.nameListItem}>Settings</li>
                   <li className={classes.nameListItem}>Privacy Policy</li>
-                  <li className={classes.nameLastListItem}>Logout</li>
+                  <li className={classes.nameLastListItem} onClick={this.logout}>Logout</li>
                 </ul>
               </div>}
             </div>
@@ -352,4 +358,4 @@ dashBoardHeader.propTypes = {
   logUserOut: PropTypes.func.isRequired,
 };
 
-export default withErrorBoundary(withStyles(styles)(dashBoardHeader))
+export default withErrorBoundary(withStyles(styles)(dashBoardHeader));
