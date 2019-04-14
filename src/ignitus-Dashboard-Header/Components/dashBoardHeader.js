@@ -48,6 +48,7 @@ const styles = theme => ({
   inputRoot: {
     color: 'inherit',
     width: '100%',
+    padding: '5px',
   },
   inputInput: {
     margin: '5px',
@@ -113,6 +114,8 @@ const styles = theme => ({
   },
 
   loginContainer: {
+    paddingRight: '10px',
+    paddingTop: '5px',
     '&:before': {
       borderBottom: 'none',
     },
