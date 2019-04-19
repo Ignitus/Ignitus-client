@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import { Notfound } from './notFound';
 import PrivateRoute from './privateRoute';
-import Dashboard from '../ignitus-Dashboard';
+import Dashboard from '../ignitus-Student-Dashboard';
 import dashBoardHeader from '../ignitus-Dashboard-Header';
 
 export const ProtectedRoutes = () => (
