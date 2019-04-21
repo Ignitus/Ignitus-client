@@ -128,3 +128,10 @@ nav {
     }
   }
 }
+
+@media (max-width: 1199.98px) { 
+  nav {
+    background-color: white;
+    box-shadow: 0 8px 6px -6px #343a40;
+  }  
+ }
