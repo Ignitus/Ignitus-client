@@ -3,15 +3,11 @@
 
 nav {
   // background-color: $ignite-color-gray-12;
-
+ 
   button {
-    .fa-bars {
-      position: relative;
-      z-index: 5;
-      color: $ignite-color-blue-20;
-      font-size: $ignite-font-size-md + 6px;
-    }
-
+   
+    position: relative;
+    
     &:focus {
       outline: none;
     }
@@ -135,3 +131,67 @@ nav {
     box-shadow: 0 8px 6px -6px #343a40;
   }  
  }
+
+ .navbar-toggler {
+	&:focus, &:active {
+		outline: 0;
+		position: relative;
+  }
+  
+	span {
+		display: block;
+    height: 3px;
+		width: 25px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		left: 0;
+		opacity: 1;
+		position: relative;
+		z-index: 5;
+    background-color: $ignite-color-blue-20;
+    
+		&:nth-child(1), &:nth-child(3) {
+			-webkit-transition: transform .35s ease-in-out;
+			-moz-transition: transform .35s ease-in-out;
+			-o-transition: transform .35s ease-in-out;
+			transition: transform .35s ease-in-out;
+    }
+    
+  }
+  
+	&:not(.collapsed) {
+		span {
+			&:nth-child(1) {
+				position: absolute;
+				left: 12px;
+				top: 10px;
+				-webkit-transform: rotate(135deg);
+				-moz-transform: rotate(135deg);
+				-o-transform: rotate(135deg);
+				transform: rotate(135deg);
+				opacity: 0.9;
+      }
+      
+			&:nth-child(2) {
+				height: 12px;
+				visibility: hidden;
+				background-color: transparent;
+      }
+      
+			&:nth-child(3) {
+				position: absolute;
+				left: 12px;
+				top: 10px;
+				-webkit-transform: rotate(-135deg);
+				-moz-transform: rotate(-135deg);
+				-o-transform: rotate(-135deg);
+				transform: rotate(-135deg);
+				opacity: 0.9;
+			}
+		}
+	}
+}
