@@ -6,6 +6,10 @@ import * as t from './Constants';
 import '../Styles/style.scss';
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showPassword: false };
+  }
   render() {
     return (
       <div className="col-lg-12 container-bg">
@@ -56,11 +60,19 @@ class Login extends Component {
                     </div>
                     <input
                       name="password"
-                      type="password"
+                      type={this.state.showPassword?"text":"password"}
                       id="pass"
                       className="form-control"
                       placeholder="Password"
                     />
+                    <div class="input-group-append">
+                      <span class="input-group-text password-visiblity-icon" onClick={(e) => {
+                        this.setState({ showPassword: !this.state.showPassword });
+                      }}>
+                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
+                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                      </span>
+                   </div>                    
                   </div>
                 </div>
 

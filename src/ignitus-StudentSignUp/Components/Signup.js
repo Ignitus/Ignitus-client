@@ -12,7 +12,7 @@ class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '', password: '', confirmPassword: '', emptymessage: false, equalmessage: false, invalidEmail: false,
+      email: '', password: '', confirmPassword: '', emptymessage: false, equalmessage: false, invalidEmail: false, showPassword: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -135,14 +135,22 @@ input a valid mail!
                       </span>
                     </div>
                     <input
-                      type="password"
+                      type={this.state.showPassword?"text":"password"}
                       id="pass"
-                      className="form-control password-border"
+                      className="form-control"
                       placeholder="Password"
                       required
                       value={this.state.password}
                       onChange={(e) => { this.setState({ password: e.target.value }); }}
                     />
+                    <div class="input-group-append">
+                      <span class="input-group-text password-visiblity-icon password-border" onClick={(e) => {
+                        this.setState({ showPassword: !this.state.showPassword });
+                      }}>
+                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
+                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                      </span>
+                    </div>                    
                   </div>
                   <div className="input-group form-group mb-2">
                     <div className="input-group-prepend">
@@ -151,7 +159,7 @@ input a valid mail!
                       </span>
                     </div>
                     <input
-                      type="password"
+                      type={this.state.showPassword?"text":"password"}
                       id="confirmPass"
                       className="form-control password-border"
                       placeholder="Confirm Password"
