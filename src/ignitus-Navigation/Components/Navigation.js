@@ -50,7 +50,7 @@ class Navigation extends React.Component {
           <img src={this.state.dynamicLogo} width="40" height="40" alt="logo" />
         </HashLink>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler collapsed"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -58,7 +58,9 @@ class Navigation extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fa fa-bars" />
+          <span> </span>
+          <span> </span>
+          <span> </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav navbar-nav">
