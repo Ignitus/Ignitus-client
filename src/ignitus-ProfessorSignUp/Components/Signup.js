@@ -7,7 +7,7 @@ import '../Styles/style.scss';
 class Signup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { emptymessage: false, equalmessage: false };
+    this.state = { emptymessage: false, equalmessage: false, showPassword: false };
   }
 
   render() {
@@ -55,12 +55,20 @@ class Signup extends React.Component {
                       </span>
                     </div>
                     <input
-                      type="password"
+                      type={this.state.showPassword?"text":"password"}
                       id="pass"
-                      className="form-control password-border"
+                      className="form-control"
                       placeholder="Password"
                       required
                     />
+                    <div class="input-group-append">
+                      <span class="input-group-text password-visiblity-icon password-border" onClick={(e) => {
+                        this.setState({ showPassword: !this.state.showPassword });
+                      }}>
+                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
+                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                      </span>
+                    </div>                     
                   </div>
                   <div className="input-group form-group">
                     <div className="input-group-prepend">
@@ -69,7 +77,7 @@ class Signup extends React.Component {
                       </span>
                     </div>
                     <input
-                      type="password"
+                      type={this.state.showPassword?"text":"password"}
                       id="confirmPass"
                       className="form-control password-border"
                       placeholder="Confirm Password"
