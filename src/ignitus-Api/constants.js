@@ -7,3 +7,7 @@ export const STUDENT_SIGN_IN = `${BASE_URL}/login`;
 export const FRONTEND_CONTRIBUTOR_API = 'https://api.github.com/repos/Ignitus/Ignitus-Client-Side-Development/contributors';
 
 export const BACKEND_CONTRIBUTOR_API = 'https://api.github.com/repos/Ignitus/Ignitus-rest-api/contributors';
+
+export const CONTRIBUTORS_STORE = 'contributors';
+export const TESTIMONIALS_STORE = 'testimonials';
+export const COND_HEADERS_STORE = 'cond-headers';
