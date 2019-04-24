@@ -1,0 +1,26 @@
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.sidebar-container{
+    width: 221px;
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    ul{
+
+
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.sidebar-font{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    color: $ignite-color-blue-bg;
+}

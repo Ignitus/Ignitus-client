@@ -1,0 +1,42 @@
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.write-post-container{
+    background-color: $ignite-color-white;
+    width: 528px;
+    height: 138px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+    border-radius: 16px;
+    margin: 0px 40px;
+    textarea{
+        width: 100%;
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+
+.btn-font{
+    font-size: 12px;       
+}
+
+.post-icons{
+    position: absolute;
+    width: 219px;
+    height: 26px;
+    background: #E0E0E0;
+    border-radius: 16px;
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        
+        li{
+            list-style-type: none;
+            color: $ignite-color-blue-bg;
+        }
+    }
+}
+
+.write-post-icons{
+    font-size: 15px;
+    margin: 5px auto;
+}

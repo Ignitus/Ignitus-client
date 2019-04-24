@@ -1,0 +1,42 @@
+@import './src/shared/styles/ignitus-tokens.scss';
+
+.card-profile-container{
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 276px;
+}
+
+.profile-avatar{
+    width: 89px;
+    height: 89px;
+    border-radius: 5px;
+}
+
+.profile-font{
+    font-family: Raleway;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    color: $ignite-color-blue-bg;
+}
+
+.profile-name-bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-name-tagline{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.round-turnin-icon{
+    margin: 5px;
+    color: $ignite-color-blue-bg;
+}
+
+.btn-font{
+    font-size: 12px;
+}
