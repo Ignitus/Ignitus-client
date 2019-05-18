@@ -8,27 +8,27 @@
   }
   .testimonial-wrapper {
     margin: 1em;
-    padding: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
     .left-arrow {
       margin-right: 2em;
+      margin-left: 2em;
     }
 
     .right-arrow {
       margin-left: 2em;
-      margin-right: 2em;
     }
 
     .carousel-content {
       width: 70%;
-      padding: 2em;
+      padding: 1em;
 
       .testimonial-text {
         font-size: 1em;
         font-style: italic;
         font-weight: 200;
+        text-align: center;
       }
 
       .name {
@@ -58,8 +58,4 @@
   background: black;
   color: white;
   cursor: pointer;
-}
-
-.border {
-  border: 1px solid red;
 }
