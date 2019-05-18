@@ -46,7 +46,7 @@ class Testimonial extends Component {
   }*/
 
   componentWillUnmount() {
-    // clearInterval(this.interval);
+    clearInterval(this.interval);
   }
 
   nextTestimonial() {
@@ -77,41 +77,42 @@ class Testimonial extends Component {
 
   getData() {
     this.props.getTestimonialData();
+    this.interval = setInterval(this.nextTestimonial, 2000);
   }
 
-  render() {
-    const { testimonialData } = this.props;
-    console.log('ddd ', testimonialData);
-    return (
-      <div className='testimonial'>
-        <div className="testimonials-title title">Testimonials</div>
-        <div className='testimonial-wrapper'>
 
-          <div className='left-arrow arrow' onClick={this.prevTestimonial}>
-            <i className="fa fa-arrow-left"></i>
-          </div>
-          {this.props.testimonialData.length > 0 && <div className='carousel-content'>
-            <p className='testimonial-text'>{testimonialData[this.state.currentIndex].content}</p>
-            <p className='name'>{testimonialData[this.state.currentIndex].author}</p>
-            <p className='designation'>{testimonialData[this.state.currentIndex].source}</p>
-          </div>}
-          <div className='right-arrow arrow' onClick={this.nextTestimonial}>
-            <i className="fa fa-arrow-right"></i>
+    render() {
+      const { testimonialData } = this.props;
+      return (
+        <div className='testimonial'>
+          <div className="testimonials-title title">Testimonials</div>
+          <div className='testimonial-wrapper'>
+
+            <div className='left-arrow arrow' onClick={this.prevTestimonial}>
+              <i className="fa fa-arrow-left"></i>
+            </div>
+            {this.props.testimonialData.length > 0 && <div className='carousel-content'>
+              <p className='testimonial-text'>{testimonialData[this.state.currentIndex].content}</p>
+              <p className='name'>{testimonialData[this.state.currentIndex].author}</p>
+              <p className='designation'>{testimonialData[this.state.currentIndex].source}</p>
+            </div>}
+            <div className='right-arrow arrow' onClick={this.nextTestimonial}>
+              <i className="fa fa-arrow-right"></i>
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
-}
 
 
-Testimonial.propTypes = {
-  getTestimonialData: func.isRequired,
-  testimonialData: arrayOf(shape({
-    content: string.isRequired,
-    author: string.isRequired,
-    source: string.isRequired,
-  })).isRequired,
-};
+  Testimonial.propTypes = {
+    getTestimonialData: func.isRequired,
+    testimonialData: arrayOf(shape({
+      content: string.isRequired,
+      author: string.isRequired,
+      source: string.isRequired,
+    })).isRequired,
+  };
 
-export default withErrorBoundary(Testimonial);
+  export default withErrorBoundary(Testimonial);
