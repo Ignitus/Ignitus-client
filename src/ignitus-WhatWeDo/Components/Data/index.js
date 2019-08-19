@@ -6,7 +6,7 @@ export const data = [
     picture: t.INTERNSHIP,
     title: 'Internships',
     description:
-        "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected desinations.",
+        "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected destinations.",
   },
   {
     picture: t.COURSES,
