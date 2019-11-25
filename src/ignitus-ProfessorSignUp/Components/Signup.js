@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as t from './Constants';
@@ -7,10 +9,12 @@ import '../Styles/style.scss';
 class Signup extends React.Component {
   constructor(props) {
     super(props);
+    // eslint-disable-next-line react/no-unused-state
     this.state = { emptymessage: false, equalmessage: false, showPassword: false };
   }
 
   render() {
+    const { state: { showPassword } } = this;
     return (
       <div className="col-lg-12 container-bg">
         <div className="col-lg-8 container-custom p-5">
@@ -18,12 +22,12 @@ class Signup extends React.Component {
             <div className="col-md-6 p-0 container-image">
               <img className="img-fluid img-login d-block" src={t.professorAuth} alt="login" />
               <div className="text-below-image text-center">
-                <p className="mb-5 ">Let's get started</p>
+                <p className="mb-5 ">Let&apos;s get started</p>
                 <p>Help providing opportunities for your students</p>
                 <p>
                   <a href="/signup/student" className="text-center linkform">
                     {' '}
-                  I am a Student
+                    I am a Student
                   </a>
                 </p>
               </div>
@@ -55,20 +59,23 @@ class Signup extends React.Component {
                       </span>
                     </div>
                     <input
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="pass"
                       className="form-control"
                       placeholder="Password"
                       required
                     />
-                    <div class="input-group-append">
-                      <span class="input-group-text password-visiblity-icon password-border" onClick={(e) => {
-                        this.setState({ showPassword: !this.state.showPassword });
-                      }}>
-                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
-                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                    <div className="input-group-append">
+                      <span
+                        className="input-group-text password-visiblity-icon password-border"
+                        onClick={() => {
+                          this.setState({ showPassword: !showPassword });
+                        }}
+                      >
+                        {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
+                        {showPassword && <i className="fa fa-eye" aria-hidden="true" />}
                       </span>
-                    </div>                     
+                    </div>
                   </div>
                   <div className="input-group form-group">
                     <div className="input-group-prepend">
@@ -77,7 +84,7 @@ class Signup extends React.Component {
                       </span>
                     </div>
                     <input
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="confirmPass"
                       className="form-control password-border"
                       placeholder="Confirm Password"
@@ -86,7 +93,7 @@ class Signup extends React.Component {
                   </div>
                   <div className="text-center mb-3 mt-3">
                     <button type="button" className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={this.handleSubmit}>
-                    Sign up as Professor
+                      Sign up as Professor
                     </button>
                   </div>
                   <div className="or-seperator">
@@ -95,15 +102,15 @@ class Signup extends React.Component {
                   <div className="mb-4">
                     <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                       <i className="fa fa-linkedin mr-3" />
-                    Linkedin
+                      Linkedin
                     </button>
                   </div>
                   <div className="text-center">
-                  Don't have an account?
+                    Don&apos;t have an account?
                     {' '}
                     <Link to="/login/professor" className="text-center linkform">
                       {' '}
-                   Sign In
+                      Sign In
                     </Link>
                   </div>
                 </div>

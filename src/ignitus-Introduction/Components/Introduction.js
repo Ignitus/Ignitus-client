@@ -11,34 +11,32 @@ const Introduction = () => (
 
     <div className="intro__content">
       <div className="intro__content--upper">
-          Get handpicked top-quality global research
+        Get handpicked top-quality global research
         {' '}
         <br />
-          and industrial internships, for
+        and industrial internships, for
         {' '}
         <span className="bold-txt">free</span>
-!
+        !
       </div>
 
       <div className="intro__content--lower">
         <div className="content--lower__signup">
           <p>
-Ignite your resume and get the
+            Ignite your resume and get the
             {' '}
             <span className="bold-txt">
-best global
+              best global
               {' '}
               <br />
-                opportunities
-
+              opportunities
             </span>
             {' '}
-and Skyrocketing your career
-
+            and Skyrocketing your career
           </p>
           <Link to="/Signup">
-            <button className="btn btn-secondary button-get-started">
-                Sign Up
+            <button type="button" className="btn btn-secondary button-get-started">
+              Sign Up
             </button>
           </Link>
         </div>

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,7 +12,9 @@ class Login extends Component {
     super(props);
     this.state = { showPassword: false };
   }
+
   render() {
+    const { state: { showPassword } } = this;
     return (
       <div className="col-lg-12 container-bg">
         <div className="col-lg-8 container-custom  p-5">
@@ -18,12 +22,12 @@ class Login extends Component {
             <div className="col-md-6 p-0 container-image">
               <img alt="Professor Auth" className="img-fluid img-login d-block" src={t.professorAuth} />
               <div className="text-below-image text-center">
-                <p className="mb-5">Let's get started</p>
+                <p className="mb-5">Let&apos;s get started</p>
                 <p>Help providing opportunities for your students</p>
                 <p>
                   <Link to="/login/student" className="text-center linkform">
                     {' '}
-                  I am a Student
+                    I am a Student
                   </Link>
                 </p>
               </div>
@@ -60,19 +64,22 @@ class Login extends Component {
                     </div>
                     <input
                       name="password"
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="pass"
                       className="form-control"
                       placeholder="Password"
                     />
-                    <div class="input-group-append">
-                      <span class="input-group-text password-visiblity-icon" onClick={(e) => {
-                        this.setState({ showPassword: !this.state.showPassword });
-                      }}>
-                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
-                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                    <div className="input-group-append">
+                      <span
+                        className="input-group-text password-visiblity-icon"
+                        onClick={() => {
+                          this.setState({ showPassword: !showPassword });
+                        }}
+                      >
+                        {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
+                        {showPassword && <i className="fa fa-eye" aria-hidden="true" />}
                       </span>
-                   </div>                    
+                    </div>
                   </div>
                 </div>
 
@@ -81,7 +88,7 @@ class Login extends Component {
                     type="button"
                     className="btn btn-success btn-rounded button-bg px-3 py-2"
                   >
-                  Log in as Professor
+                    Log in as Professor
                   </button>
                 </div>
 
@@ -92,16 +99,16 @@ class Login extends Component {
                 <div className="mb-4">
                   <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                     <i className="fa fa-linkedin mr-3" />
-                  LinkedIn
+                    LinkedIn
                   </button>
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <div>
-                  Don't have an account?
+                    Don&apos;t have an account?
                     {' '}
                     <Link to="/signup/professor" className="text-center linkform">
                       {' '}
-                   Sign Up
+                      Sign Up
                     </Link>
                   </div>
                 </div>

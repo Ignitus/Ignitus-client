@@ -1,12 +1,14 @@
 import React from 'react';
 import '../Styles/style.scss';
 import { withStyles } from '@material-ui/core/styles';
-import { withErrorBoundary } from '../../ignitus-Internals';
+
 import Card from '@material-ui/core/Card';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
+
+import { withErrorBoundary } from '../../ignitus-Internals';
 import * as data from './Constants';
 
 const styles = () => ({
@@ -59,14 +61,15 @@ const styles = () => ({
 });
 
 const dashBoardProfileSection = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { classes } = props;
   return (
     <Card className={classes.card}>
       <div className="d-flex p-2 pt-4">
         <Avatar
-            alt="Sophia"
-            src={data.ProfileAvatar}
-            className={classes.bigAvatar}
+          alt="Sophia"
+          src={data.ProfileAvatar}
+          className={classes.bigAvatar}
         />
         <div className="ml-3">
           <Typography component="h3" className={classes.profileName}>

@@ -17,16 +17,17 @@ class Navigation extends React.Component {
   }
 
   componentDidMount() {
+    const { state: { navScrolled } } = this;
     window.addEventListener('scroll', () => {
       if (window.scrollY < 20) {
-        if (this.state.navScrolled === true) {
+        if (navScrolled === true) {
           this.setState({
             navScrolled: false,
             displayClass: 'transparent',
             dynamicLogo: blackLogo,
           });
         }
-      } else if (this.state.navScrolled === false) {
+      } else if (navScrolled === false) {
         this.setState({
           navScrolled: true,
           displayClass: 'whitenav',
@@ -37,17 +38,19 @@ class Navigation extends React.Component {
   }
 
   shouldComponentUpdate(_nextProps, nextState) {
-    if (nextState.navScrolled !== this.state.navScrolled) {
+    const { state: { navScrolled } } = this;
+    if (nextState.navScrolled !== navScrolled) {
       return true;
     }
     return false;
   }
 
   render() {
+    const { state: { displayClass, dynamicLogo } } = this;
     return (
-      <nav className={`navbar navbar-expand-lg ${this.state.displayClass}`}>
+      <nav className={`navbar navbar-expand-lg ${displayClass}`}>
         <HashLink className="navbar-brand" to="/#">
-          <img src={this.state.dynamicLogo} width="40" height="40" alt="logo" />
+          <img src={dynamicLogo} width="40" height="40" alt="logo" />
         </HashLink>
         <button
           className="navbar-toggler collapsed"
@@ -58,9 +61,9 @@ class Navigation extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span> </span>
-          <span> </span>
-          <span> </span>
+          <span />
+          <span />
+          <span />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav navbar-nav">

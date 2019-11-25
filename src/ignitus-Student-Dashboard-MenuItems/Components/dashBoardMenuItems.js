@@ -44,23 +44,21 @@ const styles = {
 
 // this.props.classes => {classes}
 // eslint-disable-next-line react/prop-types
-function dashboardMenuItems({ classes }) {
-  return (
-    <Card className={classes.card}>
-      <CardContent>
-        <Typography component="p" className={classes.linkContainer}>
-          <a className={classes.menuLink}>About</a>
-          <a className={classes.menuLink}>Privacy</a>
-          <a className={classes.menuLink}>Careers</a>
-          <a className={classes.menuLink}>Help Center</a>
-          <a className={classes.menuLink}>Terms & Conditions</a>
-        </Typography>
-        <Typography component="p" className={classes.footer}>
+const dashboardMenuItems = ({ classes }) => (
+  <Card className={classes.card}>
+    <CardContent>
+      <Typography component="p" className={classes.linkContainer}>
+        <a className={classes.menuLink}>About</a>
+        <a className={classes.menuLink}>Privacy</a>
+        <a className={classes.menuLink}>Careers</a>
+        <a className={classes.menuLink}>Help Center</a>
+        <a className={classes.menuLink}>Terms & Conditions</a>
+      </Typography>
+      <Typography component="p" className={classes.footer}>
           &#169; Ignitus 2018
-        </Typography>
-      </CardContent>
-    </Card>
-  );
-}
+      </Typography>
+    </CardContent>
+  </Card>
+);
 
 export default withErrorBoundary(withStyles(styles)(dashboardMenuItems));

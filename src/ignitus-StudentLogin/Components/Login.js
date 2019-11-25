@@ -72,7 +72,7 @@ class Login extends Component {
             <div className="col-md-6 p-0 container-image">
               <img alt="Student auth" className="img-fluid img-login d-block" src={t.studentAuth} />
               <div className="text-below-image text-center">
-                <p className="mb-5">Let's get started</p>
+                <p className="mb-5">Let&apos;s get started</p>
                 <p>Skyrocket your career with best global opportunities</p>
                 <p>
                   <Link to="/login/professor" className="text-center linkform">
@@ -179,7 +179,7 @@ input a valid mail!
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <div>
-                    Don't have an account?
+                    Don&apos;t have an account?
                     {' '}
                     <Link to="/signup/student" className="text-center linkform">
                       {' '}

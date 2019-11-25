@@ -72,7 +72,7 @@ class Signup extends React.Component {
             <div className="col-md-6 p-0 container-image">
               <img className="img-fluid img-login d-block" src={t.studentAuth} alt="login" />
               <div className="text-below-image text-center">
-                <p className="mb-5 ">Let's get started</p>
+                <p className="mb-5 ">Let&apos;s get started</p>
                 <p>Skyrocket your career with best global opportunities</p>
                 <p>
                   <Link to="/signup/professor" className="text-center linkform">

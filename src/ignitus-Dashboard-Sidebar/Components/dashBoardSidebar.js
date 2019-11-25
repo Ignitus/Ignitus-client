@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from "../../ignitus-Internals";
+
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -14,6 +14,7 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import SendIcon from '@material-ui/icons/Send';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 const styles = {
   card: {
@@ -45,6 +46,7 @@ const styles = {
 };
 
 const dashboardSidebar = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { classes } = props;
   return (
     <Card className={classes.card}>
@@ -90,7 +92,7 @@ const dashboardSidebar = (props) => {
       </CardContent>
     </Card>
   );
-}
+};
 
 
 export default withErrorBoundary(withStyles(styles)(dashboardSidebar));

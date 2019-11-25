@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
-import { data } from './Data'
+import { data } from './Data';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 
 const CardLayout = () => {
-  const html = [...data].map((x, key) => (
+  const html = [...data].map(x => (
     <Card
-      key={key}
+      key={x.title}
       image={x.picture}
       title={x.title}
       description={x.description}
