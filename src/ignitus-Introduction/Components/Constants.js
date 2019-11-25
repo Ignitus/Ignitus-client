@@ -1,2 +1,2 @@
-export const resume = 'https://storage.googleapis.com/ignitus/Assets/Resume.svg';
-export const torch = 'https://storage.googleapis.com/ignitus/Assets/torch.svg';
+export const resume = 'https://storage.cloud.google.com/ignitus_assets/ig-assets/Assets_Resume.svg';
+export const torch = 'https://storage.cloud.google.com/ignitus_assets/ig-assets/Assets_torch.svg';
