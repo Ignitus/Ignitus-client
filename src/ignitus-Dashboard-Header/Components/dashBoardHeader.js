@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -190,9 +192,7 @@ class dashBoardHeader extends React.Component {
     super(props);
     this.state = {
       redirect: false,
-
       anchorEl: null,
-      mobileMoreAnchorEl: null,
       nameDropDownDisplay: false,
       searchwords: false,
     };
@@ -201,12 +201,9 @@ class dashBoardHeader extends React.Component {
     this.searchHandler = this.searchHandler.bind(this);
   }
 
-  componentDidMount() {
-    console.log('this', this);
-  }
-
   logout() {
     localStorage.clear();
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.logUserOut();
     this.setState({ redirect: true });
   }
@@ -221,14 +218,6 @@ class dashBoardHeader extends React.Component {
     this.handleMobileMenuClose();
   }
 
-  handleMobileMenuOpen(event) {
-    this.setState({ mobileMoreAnchorEl: event.currentTarget });
-  }
-
-  handleMobileMenuClose() {
-    this.setState({ mobileMoreAnchorEl: null });
-  }
-
   nameDropDownDisplay() {
     const { nameDropDownDisplay } = this.state;
     this.setState({ nameDropDownDisplay: !nameDropDownDisplay });
@@ -240,23 +229,18 @@ class dashBoardHeader extends React.Component {
   }
 
   render() {
-    let email = '';
-    if (this.state.redirect) {
+    const { state: { redirect } } = this;
+    if (redirect) {
       return <Redirect to="/" />;
     }
 
-    const { classes } = this.props;
+    // eslint-disable-next-line react/prop-types
+    const { props: { classes } } = this;
     const {
- anchorEl, mobileMoreAnchorEl, nameDropDownDisplay, searchwords 
-} = this.state;
-
-    if (localStorage.getItem('data')) {
-      console.log(localStorage.getItem('data'));
-      email = JSON.parse(localStorage.getItem('data')).email;
-    }
+      anchorEl, nameDropDownDisplay, searchwords,
+    } = this.state;
 
     const isMenuOpen = Boolean(anchorEl);
-    const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
     return (
       <div className={classes.root}>
@@ -288,8 +272,9 @@ class dashBoardHeader extends React.Component {
                   onClick={this.searchHandler}
                 />
                 {searchwords
-                  && <List className={classes.searchContainer}>
-                    {SearchUsers.map((user) => (
+                  && (
+                    <List className={classes.searchContainer}>
+                      {SearchUsers.map(user => (
                         <ListItem className={classes.searchItems} key={user.id}>
                           <Avatar
                             alt={user.name}
@@ -299,7 +284,8 @@ class dashBoardHeader extends React.Component {
                           <ListItemText primary={user.name} className={classes.searchItems} />
                         </ListItem>
                       ))}
-                  </List>
+                    </List>
+                  )
                 }
               </div>
               <IconButton color="inherit">
@@ -338,16 +324,16 @@ class dashBoardHeader extends React.Component {
                 <ExpandMoreIcon className={classes.rightIcon} />
               </Button>
               {nameDropDownDisplay && (
-<div>
-                <ul className={classes.nameDropDown}>
-                  <li className={classes.nameListItem}>Dashboard</li>
-                  <li className={classes.nameListItem}>Profile</li>
-                  <li className={classes.nameListItem}>Settings</li>
-                  <li className={classes.nameListItem}>Privacy Policy</li>
-                  <li className={classes.nameLastListItem} onClick={this.logout}>Logout</li>
-                </ul>
-              </div>
-)}
+                <div>
+                  <ul className={classes.nameDropDown}>
+                    <li className={classes.nameListItem}>Dashboard</li>
+                    <li className={classes.nameListItem}>Profile</li>
+                    <li className={classes.nameListItem}>Settings</li>
+                    <li className={classes.nameListItem}>Privacy Policy</li>
+                    <li className={classes.nameLastListItem} onClick={this.logout}>Logout</li>
+                  </ul>
+                </div>
+              )}
             </div>
           </Toolbar>
         </AppBar>

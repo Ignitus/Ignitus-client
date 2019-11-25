@@ -1,10 +1,11 @@
-import React from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from "../../ignitus-Internals";
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { withErrorBoundary } from '../../ignitus-Internals';
 
 const styles = {
   card: {
@@ -41,32 +42,25 @@ const styles = {
   },
 };
 
-
-class dashboardMenuItems extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-  render() {
-    const { classes } = this.props;
-    return (
-      <Card className={classes.card}>
-        <CardContent>
-          <Typography component="p" className={classes.linkContainer}>
-            <a className={classes.menuLink}>About</a>
-            <a className={classes.menuLink}>Privacy</a>
-            <a className={classes.menuLink}>Careers</a>
-            <a className={classes.menuLink}>Help Center</a>
-            <a className={classes.menuLink}>Terms & Conditions</a>
-          </Typography>
-          <Typography component="p" className={classes.footer}>
-            &#169; Ignitus 2018
+// this.props.classes => {classes}
+// eslint-disable-next-line react/prop-types
+function dashboardMenuItems({ classes }) {
+  return (
+    <Card className={classes.card}>
+      <CardContent>
+        <Typography component="p" className={classes.linkContainer}>
+          <a className={classes.menuLink}>About</a>
+          <a className={classes.menuLink}>Privacy</a>
+          <a className={classes.menuLink}>Careers</a>
+          <a className={classes.menuLink}>Help Center</a>
+          <a className={classes.menuLink}>Terms & Conditions</a>
         </Typography>
-        </CardContent>
-      </Card>
-    );
-  }
+        <Typography component="p" className={classes.footer}>
+          &#169; Ignitus 2018
+        </Typography>
+      </CardContent>
+    </Card>
+  );
 }
 
 export default withErrorBoundary(withStyles(styles)(dashboardMenuItems));
