@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import * as t from './Constants';
 
 export const AVATARS = [

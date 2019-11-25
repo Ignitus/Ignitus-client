@@ -25,7 +25,7 @@ const About = () => (
             <div className="title text-center mb-3">About Us</div>
             <div className="intro-text">
               {t.IgnitusIntro.map(x => (
-                <p>{x.title}</p>
+                <p key={x.title}>{x.title}</p>
               ))}
             </div>
           </div>

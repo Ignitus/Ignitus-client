@@ -7,13 +7,13 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 
 class Team extends React.Component {
-
   componentDidMount() {
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.getContributorsData();
   }
 
   render() {
-    const { presets, isFetching } = this.props.contributorsData;
+    const { contributorsData: { presets, isFetching } } = this.props;
 
     if (isFetching) {
       return (

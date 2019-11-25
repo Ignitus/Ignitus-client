@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
 import AppBar from '@material-ui/core/AppBar';
@@ -230,23 +230,25 @@ class dashBoardHeader extends React.Component {
   }
 
   nameDropDownDisplay() {
-    let { nameDropDownDisplay } = this.state;
+    const { nameDropDownDisplay } = this.state;
     this.setState({ nameDropDownDisplay: !nameDropDownDisplay });
   }
 
-  searchHandler(){
-    let { searchwords } = this.state;
-    this.setState({searchwords: !searchwords});
+  searchHandler() {
+    const { searchwords } = this.state;
+    this.setState({ searchwords: !searchwords });
   }
 
   render() {
     let email = '';
     if (this.state.redirect) {
-      return <Redirect to="/" />
+      return <Redirect to="/" />;
     }
 
     const { classes } = this.props;
-    const { anchorEl, mobileMoreAnchorEl, nameDropDownDisplay, searchwords } = this.state;
+    const {
+ anchorEl, mobileMoreAnchorEl, nameDropDownDisplay, searchwords 
+} = this.state;
 
     if (localStorage.getItem('data')) {
       console.log(localStorage.getItem('data'));
@@ -285,10 +287,9 @@ class dashBoardHeader extends React.Component {
                   }}
                   onClick={this.searchHandler}
                 />
-                {searchwords &&
-                  <List className={classes.searchContainer}>
-                    {SearchUsers.map((user) => {
-                      return (
+                {searchwords
+                  && <List className={classes.searchContainer}>
+                    {SearchUsers.map((user) => (
                         <ListItem className={classes.searchItems} key={user.id}>
                           <Avatar
                             alt={user.name}
@@ -297,8 +298,7 @@ class dashBoardHeader extends React.Component {
                           />
                           <ListItemText primary={user.name} className={classes.searchItems} />
                         </ListItem>
-                      );
-                    })}
+                      ))}
                   </List>
                 }
               </div>
@@ -327,16 +327,18 @@ class dashBoardHeader extends React.Component {
               <IconButton
                 aria-haspopup="true"
                 onClick={this.handleMobileMenuOpen}
-                color="inherit">
+                color="inherit"
+              >
                 <MoreIcon />
               </IconButton>
             </div>
             <div className={classes.dropDownContainer}>
               <Button variant="contained" className={classes.button} onClick={this.nameDropDownDisplay}>
                 Sophia
-                      <ExpandMoreIcon className={classes.rightIcon} />
+                <ExpandMoreIcon className={classes.rightIcon} />
               </Button>
-              {nameDropDownDisplay && <div>
+              {nameDropDownDisplay && (
+<div>
                 <ul className={classes.nameDropDown}>
                   <li className={classes.nameListItem}>Dashboard</li>
                   <li className={classes.nameListItem}>Profile</li>
@@ -344,12 +346,13 @@ class dashBoardHeader extends React.Component {
                   <li className={classes.nameListItem}>Privacy Policy</li>
                   <li className={classes.nameLastListItem} onClick={this.logout}>Logout</li>
                 </ul>
-              </div>}
+              </div>
+)}
             </div>
           </Toolbar>
         </AppBar>
       </div>
-    )
+    );
   }
 }
 
