@@ -1,8 +1,10 @@
+/* eslint-disable import/no-extraneous-dependencies */
 
 
-require('jest-localstorage-mock');
-const Enzyme = require('enzyme');
-const EnzymeAdapter = require('enzyme-adapter-react-16');
+import 'jest-localstorage-mock';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { configure } from 'enzyme';
+import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 // Setup enzyme's react adapter
-Enzyme.configure({ adapter: new EnzymeAdapter() });
+configure({ adapter: new EnzymeAdapter() });

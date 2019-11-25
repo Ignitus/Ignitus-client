@@ -122,7 +122,7 @@ class Login extends Component {
                     <div className="text-danger small mb-2">
                       <strong>Please </strong>
                       {' '}
-input a valid mail!
+                          input a valid mail!
                     </div>
                   )}
                   <div className="input-group form-group mb-2">
