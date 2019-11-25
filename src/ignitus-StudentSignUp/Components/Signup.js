@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -12,7 +14,7 @@ class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '', password: '', confirmPassword: '', emptymessage: false, equalmessage: false, invalidEmail: false, showPassword: false
+      email: '', password: '', confirmPassword: '', emptymessage: false, equalmessage: false, invalidEmail: false, showPassword: false,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -41,6 +43,7 @@ class Signup extends React.Component {
       return;
     }
 
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.signUpRequest(email, password);
     this.setState({
       email: '', password: '', confirmPassword: '', emptymessage: false, equalmessage: false,
@@ -48,8 +51,13 @@ class Signup extends React.Component {
   }
 
   render() {
-    const { isFetching, success, message } = this.props.studentSignUpData;
-    const { state: { emptymessage, equalmessage, invalidEmail } } = this;
+    const { props: { studentSignUpData: { isFetching, success, message } } } = this;
+    const {
+      state: {
+        emptymessage, email, equalmessage, invalidEmail, showPassword, password, confirmPassword,
+      },
+    } = this;
+
     if (isFetching) {
       return (
         <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
@@ -69,7 +77,7 @@ class Signup extends React.Component {
                 <p>
                   <Link to="/signup/professor" className="text-center linkform">
                     {' '}
-                   I am a Professor
+                    I am a Professor
                   </Link>
                 </p>
               </div>
@@ -80,25 +88,25 @@ class Signup extends React.Component {
               </div>
 
               {success && (
-              <div className="alert alert-success margin-Top">
-                <strong>Success!</strong>
-                {' '}
-Please confirm your email address!
-              </div>
+                <div className="alert alert-success margin-Top">
+                  <strong>Success!</strong>
+                  {' '}
+                  Please confirm your email address!
+                </div>
               )}
 
               {success === false && (
-              <div className="alert alert-danger margin-Top">
-                {message}
-              </div>
+                <div className="alert alert-danger margin-Top">
+                  {message}
+                </div>
               )}
 
               {emptymessage && (
-              <div className="alert alert-danger margin-Top">
-                <strong>Please!</strong>
-                {' '}
-fill the form!
-              </div>
+                <div className="alert alert-danger margin-Top">
+                  <strong>Please!</strong>
+                  {' '}
+                  fill the form!
+                </div>
               )}
 
               <form>
@@ -115,17 +123,17 @@ fill the form!
                       className="form-control email-border"
                       placeholder="Email"
                       required
-                      value={this.state.email}
+                      value={email}
                       onChange={(e) => { this.setState({ email: e.target.value }); }}
                     />
                   </div>
 
                   {invalidEmail && (
-                  <div className="text-danger small mb-1">
-                    <strong>Please </strong>
-                    {' '}
-input a valid mail!
-                  </div>
+                    <div className="text-danger small mb-1">
+                      <strong>Please </strong>
+                      {' '}
+                      input a valid mail!
+                    </div>
                   )}
 
                   <div className="input-group form-group mb-2">
@@ -135,22 +143,25 @@ input a valid mail!
                       </span>
                     </div>
                     <input
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="pass"
                       className="form-control"
                       placeholder="Password"
                       required
-                      value={this.state.password}
+                      value={password}
                       onChange={(e) => { this.setState({ password: e.target.value }); }}
                     />
-                    <div class="input-group-append">
-                      <span class="input-group-text password-visiblity-icon password-border" onClick={(e) => {
-                        this.setState({ showPassword: !this.state.showPassword });
-                      }}>
-                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
-                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                    <div className="input-group-append">
+                      <span
+                        className="input-group-text password-visiblity-icon password-border"
+                        onClick={() => {
+                          this.setState({ showPassword: !showPassword });
+                        }}
+                      >
+                        {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
+                        {showPassword && <i className="fa fa-eye" aria-hidden="true" />}
                       </span>
-                    </div>                    
+                    </div>
                   </div>
                   <div className="input-group form-group mb-2">
                     <div className="input-group-prepend">
@@ -159,45 +170,45 @@ input a valid mail!
                       </span>
                     </div>
                     <input
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="confirmPass"
                       className="form-control password-border"
                       placeholder="Confirm Password"
                       required
-                      value={this.state.confirmPassword}
+                      value={confirmPassword}
                       onChange={(e) => { this.setState({ confirmPassword: e.target.value }); }}
                     />
                   </div>
 
                   {equalmessage && (
-                  <div className="text-danger small mb-1">
-                    <strong>Password </strong>
-                    {' '}
-does not match the confirm password.!
-                  </div>
+                    <div className="text-danger small mb-1">
+                      <strong>Password </strong>
+                      {' '}
+                      does not match the confirm password.!
+                    </div>
                   )}
 
                   <div className="text-center mb-3 mt-3">
-                    <button className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={this.handleSubmit}>
-                    Sign up as Student
+                    <button type="button" className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={this.handleSubmit}>
+                      Sign up as Student
                     </button>
                   </div>
                   <div className="or-seperator">
                     <i className="text-black-50">or</i>
                   </div>
                   <div className="mb-4">
-                    <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                    <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                       <i className="fa fa-linkedin mr-3" />
-                    Linkedin
+                      Linkedin
                     </button>
                   </div>
                   <div className="text-center">
                     <div>
-                  Already have an account?
+                      Already have an account?
                       {' '}
                       <Link to="/login/student" className="text-center linkform">
                         {' '}
-                   Log In
+                        Log In
                       </Link>
                     </div>
                   </div>

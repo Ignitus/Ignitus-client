@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { Component } from 'react';
 import _ from 'lodash';
 import { Redirect, Link } from 'react-router-dom';
@@ -11,10 +13,9 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '', password: '', emptymessage: false, invalidEmail: false, showPassword: false
+      email: '', password: '', emptymessage: false, invalidEmail: false, showPassword: false,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    
   }
 
   handleSubmit(e) {
@@ -39,14 +40,17 @@ class Login extends Component {
       }
     }
 
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.logInRequest(email, password);
     this.setState({ email: '', password: '', emptymessage: false });
   }
 
   render() {
-    const { isFetching, message, success } = this.props.studentLoginData;
+    const { props: { studentLoginData: { isFetching, message, success } } } = this;
     const {
-      state: { emptymessage, invalidEmail },
+      state: {
+        emptymessage, invalidEmail, showPassword, password,
+      },
     } = this;
 
     if (isFetching) {
@@ -73,24 +77,24 @@ class Login extends Component {
                 <p>
                   <Link to="/login/professor" className="text-center linkform">
                     {' '}
-                   I am a Professor
+                    I am a Professor
                   </Link>
                 </p>
               </div>
             </div>
             <div className="col-md-6 container-form">
               <div className="my-4">
-                <img className="img-fluid img mx-auto d-block" src={t.logo} />
+                <img className="img-fluid img mx-auto d-block" src={t.logo} alt="Ignitus Logo" />
               </div>
               {!_.isEmpty(message) && (
-              <div className="alert alert-danger margin-Top">
-                <strong>{message}</strong>
-              </div>
+                <div className="alert alert-danger margin-Top">
+                  <strong>{message}</strong>
+                </div>
               )}
               {emptymessage && (
-              <div className="alert alert-danger margin-Top">
-                <strong>Please fill the form to proceed!</strong>
-              </div>
+                <div className="alert alert-danger margin-Top">
+                  <strong>Please fill the form to proceed!</strong>
+                </div>
               )}
               <form>
                 <div className="px-4">
@@ -106,6 +110,7 @@ class Login extends Component {
                       id="email"
                       className="form-control"
                       placeholder="Email"
+                      // eslint-disable-next-line react/destructuring-assignment
                       value={this.state.email}
                       onChange={(e) => {
                         this.setState({ email: e.target.value });
@@ -114,9 +119,11 @@ class Login extends Component {
                     />
                   </div>
                   {invalidEmail && (
-                  <div className="text-danger small mb-2">
-                    <strong>Please </strong>{' '}input a valid mail!
-                  </div>
+                    <div className="text-danger small mb-2">
+                      <strong>Please </strong>
+                      {' '}
+input a valid mail!
+                    </div>
                   )}
                   <div className="input-group form-group mb-2">
                     <div className="input-group-prepend">
@@ -126,50 +133,57 @@ class Login extends Component {
                     </div>
                     <input
                       name="password"
-                      type={this.state.showPassword?"text":"password"}
+                      type={showPassword ? 'text' : 'password'}
                       id="pass"
                       className="form-control"
                       placeholder="Password"
-                      value={this.state.password}
+                      value={password}
                       onChange={(e) => {
                         this.setState({ password: e.target.value });
                       }}
                       required
                     />
-                    <div class="input-group-append">
-                      <span class="input-group-text password-visiblity-icon" onClick={(e) => {
-                        this.setState({ showPassword: !this.state.showPassword });
-                      }}>
-                        {!this.state.showPassword&&<i class="fa fa-eye-slash" aria-hidden="true"></i>}
-                        {this.state.showPassword&&<i class="fa fa-eye" aria-hidden="true"></i>}
+                    <div className="input-group-append">
+                      <span
+                        className="input-group-text password-visiblity-icon"
+                        onClick={() => {
+                          this.setState({ showPassword: !showPassword });
+                        }}
+                      >
+                        {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
+                        {showPassword && <i className="fa fa-eye" aria-hidden="true" />}
                       </span>
                     </div>
                   </div>
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <button
+                    type="button"
                     className="btn btn-success btn-rounded button-bg px-3 py-2"
                     onClick={this.handleSubmit}
                   >
-                  Sign in as Student
+                    Sign in as Student
                   </button>
                 </div>
                 <div className="or-seperator">
                   <i className="text-black-50">or</i>
                 </div>
                 <div className="mb-4">
-                  <button className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                  <button
+                    type="button"
+                    className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block"
+                  >
                     <i className="fa fa-linkedin mr-3" />
-                  Linked-in
+                    Linked-in
                   </button>
                 </div>
                 <div className="text-center mb-3 mt-3">
                   <div>
-                  Don't have an account?
+                    Don't have an account?
                     {' '}
                     <Link to="/signup/student" className="text-center linkform">
                       {' '}
-                   Sign Up
+                      Sign Up
                     </Link>
                   </div>
                 </div>
