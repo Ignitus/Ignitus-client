@@ -35,8 +35,8 @@ const Partner = () => {
           {' '}
           <i className="fa fa-heart heart" />
           {' '}
-by following
-          Organizations ...
+          by following
+                    Organizations ...
         </div>
       </div>
 
