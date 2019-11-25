@@ -1,6 +1,6 @@
 import * as t from './Constants';
 
-export const AVATARS = [
+const AVATARS = [
   {
     title: 'Ayush Pareek',
     img: t.Ayush,
@@ -62,3 +62,4 @@ export const AVATARS = [
 
   },
 ];
+export default AVATARS;
