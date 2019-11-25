@@ -7,6 +7,7 @@ import PrivateRoute from './privateRoute';
 import Dashboard from '../ignitus-Student-Dashboard';
 import dashBoardHeader from '../ignitus-Dashboard-Header';
 
+// eslint-disable-next-line import/prefer-default-export
 export const ProtectedRoutes = () => (
   <div>
     <dashBoardHeader.containers.dashboardHeaderContainer />
