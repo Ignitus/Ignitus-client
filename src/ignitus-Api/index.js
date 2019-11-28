@@ -1,3 +1,5 @@
+/* eslint-disable no-inner-declarations */
+/* eslint-disable no-plusplus */
 
 import axios from 'axios';
 import * as t from './constants';
@@ -74,22 +76,24 @@ export async function getContributorsData() {
       const data = Array.from(new Set(resp[0].data.concat(resp[1].data)));
 
       const result = [];
-      async function filterdata(){
-      for (let i = 0; i < data.length; i++) {
-        for (let j = i+1; j < data.length; j++) {
-          if(data[i].id===data[j].id)
-            {data[i].contributions+=data[j].contributions;
-            data[j].contributions=0;}
+
+      async function filterdata() {
+        for (let i = 0; i < data.length; i++) {
+          for (let j = i + 1; j < data.length; j++) {
+            if (data[i].id === data[j].id) {
+              data[i].contributions += data[j].contributions;
+              data[j].contributions = 0;
+            }
+          }
+        }
+
+        for (let i = 0; i < data.length; i++) {
+          if (data[i].contributions) { result.push(data[i]); }
         }
       }
 
-      for (let i = 0; i < data.length; i++)
-        if(data[i].contributions)
-          result.push(data[i]);
-      }
-      
       await filterdata();
-      await DBHelper.updateDataInDB(t.CONTRIBUTORS_STORE,result);
+      await DBHelper.updateDataInDB(t.CONTRIBUTORS_STORE, result);
       return result;
     }
     return await DBHelper.getDataFromDB(t.CONTRIBUTORS_STORE);
