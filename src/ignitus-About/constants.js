@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 // eslint-disable-next-line import/prefer-default-export
-export const aboutImg = 'https://storage.cloud.google.com/ignitus_assets/ig-assets/Assets_about-us.png?folder&organizationId';
+export const aboutImg = 'https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_about-us.png';
 
 export const IgnitusIntro = [
   { title: 'Ignitus (A Non-Profit Organization for the welfare of student community) that helps students and professionals get handpicked top- quality global research and industrial internships, for free! The students participate in projects and training programs supervised by our experts.' },
