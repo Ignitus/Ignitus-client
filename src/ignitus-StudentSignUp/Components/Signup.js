@@ -51,7 +51,7 @@ class Signup extends React.Component {
   }
 
   render() {
-    const { props: { studentSignUpData: { isFetching, success, message } } } = this;
+    const { props: { studentSignUpData: { isFetching, success, msg } } } = this;
     const {
       state: {
         emptymessage, email, equalmessage, invalidEmail, showPassword, password, confirmPassword,
@@ -91,13 +91,13 @@ class Signup extends React.Component {
                 <div className="alert alert-success margin-Top">
                   <strong>Success!</strong>
                   {' '}
-                  Please confirm your email address!
+                  Please login!.
                 </div>
               )}
 
               {success === false && (
                 <div className="alert alert-danger margin-Top">
-                  {message}
+                  {msg}
                 </div>
               )}
 
@@ -227,7 +227,7 @@ Signup.propTypes = {
   studentSignUpData: PropTypes.shape({
     isFetching: PropTypes.bool,
     success: PropTypes.bool,
-    message: PropTypes.string,
+    msg: PropTypes.string,
   }).isRequired,
 };
 
