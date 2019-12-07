@@ -17,7 +17,7 @@
 
 ## Integrations
 
-**Static Analysis** 
+> Static Analysis 
 
 
 [![DeepScan grade](https://deepscan.io/api/teams/6382/projects/8387/branches/98498/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=6382&pid=8387&bid=98498)
