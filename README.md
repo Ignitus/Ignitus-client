@@ -2,8 +2,6 @@
 <img src="https://imgur.com/b0y65se.gif" width="300">
 
 
-[![DeepScan grade](https://deepscan.io/api/teams/6382/projects/8387/branches/98498/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=6382&pid=8387&bid=98498)
-
 <a href="https://www.patreon.com/teamignitus">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
@@ -15,6 +13,14 @@
 
 
 <a href="https://github.com/Ignitus/Tools"><img src="https://imgur.com/1pa8uwS.png" width="500"></a>
+
+
+## Integrations
+
+**Static Analysis** 
+
+
+[![DeepScan grade](https://deepscan.io/api/teams/6382/projects/8387/branches/98498/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=6382&pid=8387&bid=98498)
 
 
 ## About Ignitus
