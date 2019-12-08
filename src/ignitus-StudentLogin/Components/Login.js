@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { Component } from 'react';
-import _ from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import { Redirect, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withErrorBoundary } from '../../ignitus-Internals';
@@ -25,7 +25,7 @@ class Login extends Component {
       state: { email, password },
     } = this;
 
-    if (_.isEmpty(email) || _.isEmpty(password)) {
+    if (isEmpty(email) || isEmpty(password)) {
       this.setState({ emptymessage: true });
       return;
     }
@@ -86,7 +86,7 @@ class Login extends Component {
               <div className="my-4">
                 <img className="img-fluid img mx-auto d-block" src={t.logo} alt="Ignitus Logo" />
               </div>
-              {!_.isEmpty(message) && (
+              {!isEmpty(message) && (
                 <div className="alert alert-danger margin-Top">
                   <strong>{message}</strong>
                 </div>

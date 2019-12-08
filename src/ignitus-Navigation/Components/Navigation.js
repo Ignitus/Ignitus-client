@@ -17,36 +17,49 @@ class Navigation extends React.Component {
   }
 
   componentDidMount() {
-    const { state: { navScrolled } } = this;
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < 20) {
-        if (navScrolled === true) {
-          this.setState({
-            navScrolled: false,
-            displayClass: 'transparent',
-            dynamicLogo: blackLogo,
-          });
-        }
-      } else if (navScrolled === false) {
-        this.setState({
-          navScrolled: true,
-          displayClass: 'whitenav',
-          dynamicLogo: logo,
-        });
-      }
-    });
+    window.addEventListener('scroll', this.scrollFn);
   }
 
+
   shouldComponentUpdate(_nextProps, nextState) {
-    const { state: { navScrolled } } = this;
+    const {
+      state: { navScrolled },
+    } = this;
     if (nextState.navScrolled !== navScrolled) {
       return true;
     }
     return false;
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollFn);
+  }
+
+  scrollFn() {
+    const {
+      state: { navScrolled },
+    } = this;
+    if (window.scrollY < 20) {
+      if (navScrolled === true) {
+        this.setState({
+          navScrolled: false,
+          displayClass: 'transparent',
+          dynamicLogo: blackLogo,
+        });
+      }
+    } else if (navScrolled === false) {
+      this.setState({
+        navScrolled: true,
+        displayClass: 'whitenav',
+        dynamicLogo: logo,
+      });
+    }
+  }
+
   render() {
-    const { state: { displayClass, dynamicLogo } } = this;
+    const {
+      state: { displayClass, dynamicLogo },
+    } = this;
     return (
       <nav className={`navbar navbar-expand-lg ${displayClass}`}>
         <HashLink className="navbar-brand" to="/#">
@@ -70,7 +83,7 @@ class Navigation extends React.Component {
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                  Home
+                    Home
                   {' '}
                   <span className="sr-only">(current)</span>
                 </span>
@@ -78,7 +91,9 @@ class Navigation extends React.Component {
             </li>
             <li className="nav-item">
               <HashLink smooth to="/#what-we-do">
-                <span className="nav-link">What we provide?</span>
+                <span className="nav-link">
+                  What we provide?
+                </span>
               </HashLink>
             </li>
             <li className="nav-item">
@@ -89,7 +104,7 @@ class Navigation extends React.Component {
             <li className="nav-item">
               <Link to="/aboutus">
                 <span className="nav-link" href="/aboutus">
-                  About
+                    About
                 </span>
               </Link>
             </li>
