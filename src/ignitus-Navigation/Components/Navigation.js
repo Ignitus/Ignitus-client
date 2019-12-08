@@ -12,18 +12,20 @@ class Navigation extends React.Component {
     super();
 
     this.state = {
-      navScrolled : false,
-      displayClass : 'transparent',
-      dynamicLogo : blackLogo,
+      navScrolled: false,
+      displayClass: 'transparent',
+      dynamicLogo: blackLogo,
     };
     this.scrollFn = this.scrollFn.bind(this);
   }
 
-  componentDidMount() { window.addEventListener('scroll', this.scrollFn); }
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollFn);
+  }
 
   shouldComponentUpdate(_nextProps, nextState) {
     const {
-      state : {navScrolled},
+      state: {navScrolled},
     } = this;
     if (nextState.navScrolled !== navScrolled) {
       return true;
@@ -37,28 +39,28 @@ class Navigation extends React.Component {
 
   scrollFn() {
     const {
-      state : {navScrolled},
+      state: {navScrolled},
     } = this;
     if (window.scrollY < 20) {
       if (navScrolled === true) {
         this.setState({
-          navScrolled : false,
-          displayClass : 'transparent',
-          dynamicLogo : blackLogo,
+          navScrolled: false,
+          displayClass: 'transparent',
+          dynamicLogo: blackLogo,
         });
       }
     } else if (navScrolled === false) {
       this.setState({
-        navScrolled : true,
-        displayClass : 'whitenav',
-        dynamicLogo : logo,
+        navScrolled: true,
+        displayClass: 'whitenav',
+        dynamicLogo: logo,
       });
     }
   }
 
   render() {
     const {
-      state : {displayClass, dynamicLogo},
+      state: {displayClass, dynamicLogo},
     } = this;
     return (
       <nav className={`navbar navbar-expand-lg ${displayClass}`}>
@@ -83,9 +85,7 @@ class Navigation extends React.Component {
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                  Home
-                  {' '}
-                  <span className="sr-only">(current)</span>
+                  Home <span className="sr-only">(current)</span>
                 </span>
               </HashLink>
             </li>
