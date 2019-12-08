@@ -14,12 +14,12 @@ class Navigation extends React.Component {
       displayClass: 'transparent',
       dynamicLogo: blackLogo,
     };
+    this.scrollFn = this.scrollFn.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollFn);
   }
-
 
   shouldComponentUpdate(_nextProps, nextState) {
     const {
@@ -83,7 +83,7 @@ class Navigation extends React.Component {
             <li className="nav-item active">
               <HashLink smooth to="/#">
                 <span className="nav-link">
-                    Home
+                  Home
                   {' '}
                   <span className="sr-only">(current)</span>
                 </span>
@@ -91,9 +91,7 @@ class Navigation extends React.Component {
             </li>
             <li className="nav-item">
               <HashLink smooth to="/#what-we-do">
-                <span className="nav-link">
-                  What we provide?
-                </span>
+                <span className="nav-link">What we provide?</span>
               </HashLink>
             </li>
             <li className="nav-item">
@@ -104,7 +102,7 @@ class Navigation extends React.Component {
             <li className="nav-item">
               <Link to="/aboutus">
                 <span className="nav-link" href="/aboutus">
-                    About
+                  About
                 </span>
               </Link>
             </li>
