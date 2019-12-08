@@ -3,7 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import _ from 'lodash';
+import isEmpty from 'lodash/isEmpty';
+import isEqual from 'lodash/isEqual';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 import * as t from './Constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
@@ -23,7 +24,7 @@ class Signup extends React.Component {
     e.preventDefault();
 
     const { state: { email, password, confirmPassword } } = this;
-    if (_.isEmpty(email) || _.isEmpty(password) || _.isEmpty(confirmPassword)) {
+    if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       this.setState({ emptymessage: true });
       return;
     }
@@ -38,7 +39,7 @@ class Signup extends React.Component {
       }
     }
 
-    if (!_.isEqual(password, confirmPassword)) {
+    if (!isEqual(password, confirmPassword)) {
       this.setState({ equalmessage: true, emptymessage: false });
       return;
     }

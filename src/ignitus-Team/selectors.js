@@ -1,13 +1,12 @@
+/* eslint-disable max-len */
 
 
 import { createSelector } from 'reselect';
-import _ from 'lodash';
+import isObject from 'lodash/isObject';
 
 export const selectContributorsState = state => state.contributorsReducer;
 
 export const makeSelectContributorsData = () => createSelector(selectContributorsState, (substate) => {
-  if(_.isObject(substate))
-    return substate
-    
+  if (isObject(substate)) { return substate; }
   return [];
 });

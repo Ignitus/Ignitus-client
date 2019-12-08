@@ -3,14 +3,12 @@ import '../Styles/style.scss';
 
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-import ScrollToTopOnMount from '../../ignitus-Helpers/ScrollToTopOnMount';
 
 import * as t from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 const About = () => (
   <Fragment>
-    <ScrollToTopOnMount />
     <div className="about-wrapper pt-5">
       <div className="container">
         <div className="row">
