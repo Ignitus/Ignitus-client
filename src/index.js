@@ -16,20 +16,21 @@ import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import rootSaga from './rootSagas';
 
-Sentry.init({dsn : process.env.DSN});
+Sentry.init({dsn: process.env.DSN});
 
 const sagaMiddleware = createSagaMiddleware();
 
-const store = createStore(
-    rootReducer,
-    applyMiddleware(sagaMiddleware, logger),
-);
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware, logger));
 
 sagaMiddleware.run(rootSaga);
 
-ReactDOM.render((<Provider store = {store}><BrowserRouter><App />
-                 </BrowserRouter>
-  </Provider>),
-                document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root'),
+);
 
 registerServiceWorker();
