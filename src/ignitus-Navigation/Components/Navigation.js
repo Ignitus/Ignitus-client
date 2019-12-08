@@ -17,27 +17,9 @@ class Navigation extends React.Component {
   }
 
   componentDidMount() {
-    const {
-      state: { navScrolled },
-    } = this;
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < 20) {
-        if (navScrolled === true) {
-          this.setState({
-            navScrolled: false,
-            displayClass: 'transparent',
-            dynamicLogo: blackLogo,
-          });
-        }
-      } else if (navScrolled === false) {
-        this.setState({
-          navScrolled: true,
-          displayClass: 'whitenav',
-          dynamicLogo: logo,
-        });
-      }
-    });
+    window.addEventListener('scroll', this.scrollFn);
   }
+
 
   shouldComponentUpdate(_nextProps, nextState) {
     const {
@@ -50,7 +32,28 @@ class Navigation extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll');
+    window.removeEventListener('scroll', this.scrollFn);
+  }
+
+  scrollFn() {
+    const {
+      state: { navScrolled },
+    } = this;
+    if (window.scrollY < 20) {
+      if (navScrolled === true) {
+        this.setState({
+          navScrolled: false,
+          displayClass: 'transparent',
+          dynamicLogo: blackLogo,
+        });
+      }
+    } else if (navScrolled === false) {
+      this.setState({
+        navScrolled: true,
+        displayClass: 'whitenav',
+        dynamicLogo: logo,
+      });
+    }
   }
 
   render() {
@@ -101,7 +104,7 @@ class Navigation extends React.Component {
             <li className="nav-item">
               <Link to="/aboutus">
                 <span className="nav-link" href="/aboutus">
-                  About
+                    About
                 </span>
               </Link>
             </li>
