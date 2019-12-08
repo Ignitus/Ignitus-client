@@ -1,29 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import logo from '../../ignitus-Assets/Images/nav-logo.svg';
-import blackLogo from '../../ignitus-Assets/Images/black-logo.svg';
 import '../Styles/style.scss';
+
+import React from 'react';
+import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
+
+import blackLogo from '../../ignitus-Assets/Images/black-logo.svg';
+import logo from '../../ignitus-Assets/Images/nav-logo.svg';
 
 class Navigation extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      navScrolled: false,
-      displayClass: 'transparent',
-      dynamicLogo: blackLogo,
+      navScrolled : false,
+      displayClass : 'transparent',
+      dynamicLogo : blackLogo,
     };
     this.scrollFn = this.scrollFn.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.scrollFn);
-  }
+  componentDidMount() { window.addEventListener('scroll', this.scrollFn); }
 
   shouldComponentUpdate(_nextProps, nextState) {
     const {
-      state: { navScrolled },
+      state : {navScrolled},
     } = this;
     if (nextState.navScrolled !== navScrolled) {
       return true;
@@ -37,28 +37,28 @@ class Navigation extends React.Component {
 
   scrollFn() {
     const {
-      state: { navScrolled },
+      state : {navScrolled},
     } = this;
     if (window.scrollY < 20) {
       if (navScrolled === true) {
         this.setState({
-          navScrolled: false,
-          displayClass: 'transparent',
-          dynamicLogo: blackLogo,
+          navScrolled : false,
+          displayClass : 'transparent',
+          dynamicLogo : blackLogo,
         });
       }
     } else if (navScrolled === false) {
       this.setState({
-        navScrolled: true,
-        displayClass: 'whitenav',
-        dynamicLogo: logo,
+        navScrolled : true,
+        displayClass : 'whitenav',
+        dynamicLogo : logo,
       });
     }
   }
 
   render() {
     const {
-      state: { displayClass, dynamicLogo },
+      state : {displayClass, dynamicLogo},
     } = this;
     return (
       <nav className={`navbar navbar-expand-lg ${displayClass}`}>
