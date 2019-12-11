@@ -9,25 +9,29 @@ import {withErrorBoundary} from '../../ignitus-Internals';
 
 // eslint-disable-next-line react/prop-types
 const PureTeam = ({contributors}) => (
-    <div><div className = "team-wrapper container my-5 py-5">
-    <div className = "row"><div className = "col">
-    <div className = "title text-center mb-3">Our Contributors<
-        /div>
+  <div>
+    <div className="team-wrapper container my-5 py-5">
+      <div className="row">
+        <div className="col">
+          <div className="title text-center mb-3">Our Contributors</div>
           <div className="studentsResearchers">
             This project was made possible by these contributors.
           </div>
-    <div className = "box-model"><div className = "Contributors m-top">{
-        contributors}</div>
-          </div></div>
-      </div></div>
-  </div>);
+          <div className="box-model">
+            <div className="Contributors m-top">{contributors}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 const Team = ({getContributorsData, contributorsData}) => {
   useEffect(() => {
     getContributorsData();
   }, []);
 
-  const { presets, isFetching } = contributorsData;
+  const {presets, isFetching} = contributorsData;
 
   if (isFetching) {
     return (
@@ -67,6 +71,5 @@ Team.propTypes = {
     isFetching: PropTypes.bool.isRequired,
   }).isRequired,
 };
-
 
 export default withErrorBoundary(Team);
