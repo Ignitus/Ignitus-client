@@ -16,7 +16,7 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './shared/styles/ignitus-base.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-Sentry.init({ dsn: process.env.DSN });
+// Sentry.init({ dsn: process.env.DSN });
 
 const sagaMiddleware = createSagaMiddleware();
 
