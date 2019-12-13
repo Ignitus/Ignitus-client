@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import '../Styles/style.scss';
 
+import PropTypes from 'prop-types';
+import React, {useEffect} from 'react';
 import shortid from 'shortid';
-import { withErrorBoundary } from '../../ignitus-Internals';
+
 import loader from '../../ignitus-Assets/Images/loader2.gif';
+import {withErrorBoundary} from '../../ignitus-Internals';
 
 // eslint-disable-next-line react/prop-types
-const PureTeam = ({ contributors }) => (
+const PureTeam = ({contributors}) => (
   <div>
     <div className="team-wrapper container my-5 py-5">
       <div className="row">
@@ -25,12 +26,12 @@ const PureTeam = ({ contributors }) => (
   </div>
 );
 
-const Team = ({ getContributorsData, contributorsData }) => {
+const Team = ({getContributorsData, contributorsData}) => {
   useEffect(() => {
     getContributorsData();
   }, []);
 
-  const { presets, isFetching } = contributorsData;
+  const {presets, isFetching} = contributorsData;
 
   if (isFetching) {
     return (
@@ -70,6 +71,5 @@ Team.propTypes = {
     isFetching: PropTypes.bool.isRequired,
   }).isRequired,
 };
-
 
 export default withErrorBoundary(Team);
