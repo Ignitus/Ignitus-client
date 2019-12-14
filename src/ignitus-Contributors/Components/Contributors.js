@@ -1,43 +1,31 @@
 import React from 'react';
 import '../Styles/style.scss';
-import * as t from './Constants';
+import { Data } from './Constants';
 
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-const Contributors = () => {
-  const array = [t.UCB, t.STANFORD, t.CMU, t.HARVARD, t.MIT, t.OXFORD, t.PRINCETON, t.YALE];
-  const html = array.map(logo => (
-    <div
-      className="col-lg-4 col-md-4 col-sm-6 col-12"
-      key={logo}
-    >
-      <div className="card mt-4 shadow contributor-card">
-        <div className="card-img-top logoCss centered-image d-flex align-middle">
-          <img src={logo} alt="logo" />
-        </div>
-      </div>
-    </div>
-  ));
-
-  return (
-    <section id="contributors">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-center mt-4">
+const Contributors = () => (
+  <section>
+    <div className="contributors">
+      <section className="contributors-top-section">
         <div className="contributor">Contributors</div>
         <div className="studentsResearchers">
           Made with
-          {' '}
           <i className="fa fa-heart heart" />
-          {' '}
-          by Students,
-          Researchers and Alumni of ...
+          by Students, Researchers and Alumni of ...
         </div>
-      </div>
-
-      <div className="container">
-        <div className="row card_row">{html}</div>
-      </div>
-    </section>
-  );
-};
+      </section>
+      <section className="contributors-bottom-section">
+        <div className="contributors-bottom-section-row">
+          {Data.map(logo => (
+            <div className="contributors-card">
+              <img src={logo} alt="logo"/>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+);
 
 export default withErrorBoundary(Contributors);

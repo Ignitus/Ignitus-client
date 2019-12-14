@@ -1,9 +1,12 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
+// @import styled from '@emotion/styled';
 
-.logoCss {
-  margin-top: 3%;
-  margin-bottom: 4%;
+.contributors-top-section {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
 }
 
 .heart {
@@ -13,7 +16,6 @@
 .studentsResearchers {
   font-size: $ignite-font-size-sm;
   font-weight: $ignite-font-weight-light;
-  text-align: -webkit-center;
 }
 
 .contributor {
@@ -22,31 +24,88 @@
   color: $ignite-color-blue-bg;
 }
 
-.centered-image {
-  vertical-align:middle;
-  text-align:center;
-  justify-content: center;
-  align-items: center;
-}
+.contributors-bottom-section {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+};
 
-.card {
-  .logoCss {
-    /* Prevent different heights for each logos */
-    height: 100px;
-    img {
-      max-width: 100%;
-      height: 75%;
-      object-fit: cover;
-    }
+.contributors-bottom-section-row {
+  margin-right: 88px;
+  margin-left: 88px;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+};
+
+.contributors-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0.5em;
+  padding: 0.3em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  height: 100px;
+
+  img {
+    max-width: 100%;
+    height: 75%;
+    object-fit: contain;
+    padding: 0.3em;
+  }
+};
+
+@media (min-width: 576px){
+  .contributors-card {
+    flex: 0 0 43%;
+    max-width: 43%;
   }
 }
 
-.contributor-card {
-  border-radius: 16px !important;
-  border-width: 0px !important;
+@media (min-width: 768px){
+  .contributors-card {
+    flex: 0 0 28.33333%;
+    max-width: 28.33333%;
+  }
 }
 
-.card_row {
-    margin-right: 88px !important;
-    margin-left: 88px !important;
+@media (min-width: 992px){
+  .contributors-card {
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
+  }
 }
+
+
+@media (min-width: 576px){
+  .contributors-bottom-section {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px){
+  .contributors-bottom-section {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px){
+  .contributors-bottom-section {
+    max-width: 960px;
+  } 
+}
+
+@media (min-width: 1200px){
+  .contributors-bottom-section {
+      max-width: 1140px;
+  }
+}
+
+
+
+

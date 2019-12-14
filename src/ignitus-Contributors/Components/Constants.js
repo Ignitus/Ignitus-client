@@ -6,3 +6,5 @@ export const MIT = 'https://storage.googleapis.com/ignitus_assets/ig-university-
 export const OXFORD = 'https://storage.googleapis.com/ignitus_assets/ig-university-logo/universityLogos_oxfordLogo.png';
 export const PRINCETON = 'https://storage.googleapis.com/ignitus_assets/ig-university-logo/universityLogos_princetonLogo.png';
 export const YALE = 'https://storage.googleapis.com/ignitus_assets/ig-university-logo/universityLogos_yaleLogo.png';
+
+export const Data = [UCB, STANFORD, CMU, HARVARD, MIT, OXFORD, PRINCETON, YALE];
