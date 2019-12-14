@@ -72,7 +72,7 @@ class CoreTeam extends React.Component {
             <div className="col">
               <div className="title text-center mb-3">
                 Our Team
-                            </div>
+              </div>
               <div className="Team">
                 <div className="row team_row">{teamHTML}</div>
               </div>

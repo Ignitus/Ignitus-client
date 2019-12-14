@@ -2,6 +2,12 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 // @import styled from '@emotion/styled';
 
+
+.contributors {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
 .contributors-top-section {
   display: flex; /* establish flex container */
   flex-direction: column; /* make main axis vertical */
