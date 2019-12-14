@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
   margin: 1em 0 2em 0;
 `;
 
+export const Icon = styled.span`
+  i { color: ${C.Red};}
+`;
+
 export const TopSection = styled.section`
   display: flex;
   flex-direction: column;

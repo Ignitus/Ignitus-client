@@ -13,7 +13,7 @@ export const PureContributors = ({ data, type, paragraph }) => (
           Supported with
           &nbsp;
           {' '}
-          <i className="fa fa-heart heart" />
+          <S.Icon><i className="fa fa-heart heart" /></S.Icon>
           {' '}
           &nbsp;
           { paragraph }
