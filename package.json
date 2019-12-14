@@ -10,6 +10,8 @@
     "url": "https://github.com/Ignitus/Ignitus-Client-Side-Development"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "@sentry/browser": "^5.10.1",
@@ -34,7 +36,7 @@
     "react-redux": "^7.0.2",
     "react-router-dom": "^4.4.0-beta.6",
     "react-router-hash-link": "^1.2.0",
-    "react-scripts": "2.0.5",
+    "react-scripts": "^3.3.0",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
