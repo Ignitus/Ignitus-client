@@ -40,7 +40,6 @@
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "shortid": "^2.2.13"
   },
   "scripts": {
     "start": "react-scripts start",
