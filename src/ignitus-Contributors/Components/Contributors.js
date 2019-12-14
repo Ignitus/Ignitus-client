@@ -1,16 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import '../Styles/style.scss';
 import { Data } from './Constants';
-
 import { withErrorBoundary } from '../../ignitus-Internals';
+import * as S from '../Styles';
 
 export const PureContributors = ({ data, type, paragraph }) => (
   <section>
-    <div className="contributors">
-      <section className="contributors-top-section">
-        <div className="contributor">{ type }</div>
-        <div className="studentsResearchers">
+    <S.Wrapper>
+      <S.TopSection>
+        <S.Title>{ type }</S.Title>
+        <S.Paragraph>
           Supported with
           &nbsp;
           {' '}
@@ -18,18 +17,18 @@ export const PureContributors = ({ data, type, paragraph }) => (
           {' '}
           &nbsp;
           { paragraph }
-        </div>
-      </section>
-      <section className="contributors-bottom-section">
-        <div className="contributors-bottom-section-row">
+        </S.Paragraph>
+      </S.TopSection>
+      <S.BottomSection>
+        <S.BottomRow>
           {data.map(logo => (
-            <div className="contributors-card" key={logo}>
+            <S.Card key={logo}>
               <img src={logo} alt="logo" />
-            </div>
+            </S.Card>
           ))}
-        </div>
-      </section>
-    </div>
+        </S.BottomRow>
+      </S.BottomSection>
+    </S.Wrapper>
   </section>
 );
 
