@@ -12,7 +12,7 @@ import '../Styles/style.scss';
 const Login = ({ logInRequest, studentLoginData }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [emptymessage, setEmptyMessage] = useState(false);
+  const [emptyMessage, setEmptyMessage] = useState(false);
   const [invalidEmail, setInvalidEmail] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -96,7 +96,7 @@ const Login = ({ logInRequest, studentLoginData }) => {
                 <strong>{message}</strong>
               </div>
             )}
-            {emptymessage && (
+            {emptyMessage && (
               <div className="alert alert-danger margin-Top">
                 <strong>Please fill the form to proceed!</strong>
               </div>
