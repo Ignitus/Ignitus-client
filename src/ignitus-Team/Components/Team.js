@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../Styles/style.scss';
 
-import shortid from 'shortid';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 
@@ -44,7 +43,7 @@ const Team = ({ getContributorsData, contributorsData }) => {
 
   const contributors = presets.map(item => (
     <a
-      key={shortid.generate()}
+      key={item.id}
       target="_blank"
       rel="noopener noreferrer"
       href={item.html_url}
