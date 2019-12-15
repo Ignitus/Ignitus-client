@@ -21,7 +21,7 @@ export const ProtectedRoutes = () => (
           </div>
         )}
       />
-      <PrivateRoute path="/dashboard" component={Dashboard.components.Dashboard} />
+      <PrivateRoute path="/dashboard" Component={Dashboard.components.Dashboard} />
     </Switch>
   </div>
 );

@@ -15,6 +15,14 @@
 <a href="https://github.com/Ignitus/Tools"><img src="https://imgur.com/1pa8uwS.png" width="500"></a>
 
 
+## Integrations
+
+> Static Analysis 
+
+
+[![DeepScan grade](https://deepscan.io/api/teams/6382/projects/8386/branches/98497/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=6382&pid=8386&bid=98497)
+
+
 ## About Ignitus
 
 I’d like to introduce you to Ignitus (A Non-Profit Organization for the welfare of student community ) that helps students and professionals get handpicked top-quality global research and industrial internships, for free! The students participate in projects and training programs supervised by our experts.

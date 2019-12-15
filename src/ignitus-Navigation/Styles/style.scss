@@ -125,12 +125,12 @@ nav {
   }
 }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 992px) { 
   nav {
     background-color: white;
     box-shadow: 0 8px 6px -6px #343a40;
   }  
- }
+}
 
  .navbar-toggler {
 	&:focus, &:active {
