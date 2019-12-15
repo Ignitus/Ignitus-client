@@ -2,33 +2,35 @@ import React from 'react';
 import Card from './Card';
 import { data } from './Data';
 import '../Styles/style.scss';
+import * as S from '../Styles';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
-
-const CardLayout = () => {
-  const html = [...data].map(x => (
-    <Card
-      key={x.title}
-      image={x.picture}
-      title={x.title}
-      description={x.description}
-    />
-  ));
-
-  return (
-    <section id="what-we-do">
-      <div className="mt-2">
-        <div>
-          <h1 className="text-center ignitus-color">
-            What we provide?
-          </h1>
-        </div>
-        <div className="col-xs-12 col-md-12 col-sm-12 col-xs-12 mt-5 mx-40">
-          <div className="provide-card-row">{html}</div>
-        </div>
-      </div>
-    </section>
-  );
-};
+const CardLayout = () => (
+  <S.Wrapper id="what-we-do">
+    <S.TopSection>
+      <S.Title>What we provide?</S.Title>
+      <S.Paragraph>
+        Guidance &nbsp;
+        {' '}
+        <S.Icon>
+          <i className="fa fa-graduation-cap" />
+        </S.Icon>
+        {' '}
+        &nbsp; in well researched and goal-oriented courses, getting Internships
+        etc
+      </S.Paragraph>
+    </S.TopSection>
+    <S.CardWrapper>
+      {[...data].map(x => (
+        <Card
+          key={x.title}
+          image={x.picture}
+          title={x.title}
+          description={x.description}
+        />
+      ))}
+    </S.CardWrapper>
+  </S.Wrapper>
+);
 
 export default withErrorBoundary(CardLayout);

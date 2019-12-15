@@ -5,7 +5,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import * as S from '../Styles';
 
 export const PureContributors = ({ data, type, paragraph }) => (
-  <section>
+  <section id="contributors">
     <S.Wrapper>
       <S.TopSection>
         <S.Title>{ type }</S.Title>

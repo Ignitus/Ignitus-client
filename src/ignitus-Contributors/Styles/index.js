@@ -7,7 +7,7 @@ const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 export const Wrapper = styled.div`
-  margin: 1em 0 2em 0;
+  margin: 1em;
 `;
 
 export const Icon = styled.span`
@@ -51,7 +51,7 @@ export const BottomSection = styled.section`
 `;
 
 export const BottomRow = styled.div`
-  margin: 16px 88px 0 88px;
+  margin: 16px 90px;
   display: flex;
   flex-wrap: wrap;
 `;
