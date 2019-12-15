@@ -1,8 +1,11 @@
 import '../Styles/style.scss';
+import React, { useEffect } from 'react';
+import {
+  string, shape, func, arrayOf, bool,
+} from 'prop-types';
 
 import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
-import { withErrorBoundary } from '../../ignitus-Internals';
 
 // eslint-disable-next-line react/prop-types
 const PureTeam = ({ contributors }) => (
@@ -56,16 +59,16 @@ const Team = ({ getContributorsData, contributorsData }) => {
 };
 
 Team.propTypes = {
-  getContributorsData: PropTypes.func.isRequired,
-  contributorsData: PropTypes.shape({
-    presets: PropTypes.arrayOf(
-      PropTypes.shape({
-        html_url: PropTypes.string.isRequired,
-        avatar_url: PropTypes.string.isRequired,
-        login: PropTypes.string.isRequired,
+  getContributorsData: func.isRequired,
+  contributorsData: shape({
+    presets: arrayOf(
+      shape({
+        html_url: string.isRequired,
+        avatar_url: string.isRequired,
+        login: string.isRequired,
       }),
     ).isRequired,
-    isFetching: PropTypes.bool.isRequired,
+    isFetching: bool.isRequired,
   }).isRequired,
 };
 
