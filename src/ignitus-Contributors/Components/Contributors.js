@@ -3,13 +3,14 @@ import React from 'react';
 import { Data } from './Constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import * as S from '../Styles';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 export const PureContributors = ({ data, type, paragraph }) => (
   <section id="contributors">
-    <S.Wrapper>
-      <S.TopSection>
-        <S.Title>{ type }</S.Title>
-        <S.Paragraph>
+    <T.Wrapper>
+      <T.TopSection>
+        <T.Title>{ type }</T.Title>
+        <T.Paragraph>
           Supported with
           &nbsp;
           {' '}
@@ -17,18 +18,18 @@ export const PureContributors = ({ data, type, paragraph }) => (
           {' '}
           &nbsp;
           { paragraph }
-        </S.Paragraph>
-      </S.TopSection>
-      <S.BottomSection>
+        </T.Paragraph>
+      </T.TopSection>
+      <T.BottomSection>
         <S.BottomRow>
           {data.map(logo => (
             <S.Card key={logo}>
-              <img src={logo} alt="logo" />
+              <S.CardPicture src={logo} alt="logo" />
             </S.Card>
           ))}
         </S.BottomRow>
-      </S.BottomSection>
-    </S.Wrapper>
+      </T.BottomSection>
+    </T.Wrapper>
   </section>
 );
 

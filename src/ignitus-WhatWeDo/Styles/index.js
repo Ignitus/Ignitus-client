@@ -3,37 +3,47 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
 
-
-export const Wrapper = styled.div`
-  margin: 1em;
-`;
+const breakpoints = [576, 768, 992, 1200];
+const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 export const Icon = styled.span`
   i { color: ${C.IgnitusBlue};}
 `;
 
-export const TopSection = styled.section`
+export const Card = styled.div`
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0.5em;
+  padding: 0.3em;
   display: flex;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: ${C.White};;
+
+  ${mq[0]} {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+  ${mq[1]} {
+    flex: 0 0 45.33333%;
+    max-width: 45.33333%;
+  }
+  ${mq[2]} {
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
+  }
 `;
 
-export const CardWrapper = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 24px;
+export const CardPicture = styled.img`
+  max-width: 100%;
+  height: 75%;
+  object-fit: contain;
+  padding: 0.3em;
+  margin-bottom: 2em;
 `;
 
-export const Title = styled.h3`
-  font-weight: ${F.Normal};;
-  color: ${C.IgnitusBlue};
-`;
-
-export const Paragraph = styled.p`
+export const CardText = styled.p`
   font-size: ${F.SM};
-  font-weight: ${F.Light};
 `;

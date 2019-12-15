@@ -7,7 +7,7 @@ import Contributors from "../ignitus-Contributors";
 import GetStarted from "../ignitus-GetStarted";
 import Introduction from "../ignitus-Introduction";
 import Testimonial from "../ignitus-Testimonial";
-import CardLayout from "../ignitus-WhatWeDo";
+import WhatWeProvide from "../ignitus-WhatWeDo";
 import Partner from "../ignitus-Partners";
 
 import LoginProfessor from "../ignitus-ProfessorLogin";
@@ -48,7 +48,7 @@ export const PublicRoutes = props => {
           render={() => (
             <div className="content">
               <Introduction.components.Introduction />
-              <CardLayout.components.CardLayout />
+              <WhatWeProvide.components.WhatWeProvide />
               <Contributors.components.Contributors />
               <Partner.components.Partner />
               <Testimonial.containers.TestimonialContainer />
