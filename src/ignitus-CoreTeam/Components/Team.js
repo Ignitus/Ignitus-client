@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import '../Styles/style.scss';
-import AVATARS from './Data';
+import { Data } from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 
 const PureCoreTeam = ({ team }) => (
@@ -36,7 +36,7 @@ const CoreTeam = () => {
     cardItem.classList.add('display-none');
   };
 
-  const team = AVATARS.map((item, index) => (
+  const team = Data.map((item, index) => (
     <div
       key={item.title}
       className="col-6 col-sm-4 col-md-3 avatar-wrapper text-center p-3"

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
-import { Data } from './Constants';
+import { Data } from '../constants';
 import { PureContributors } from '../../ignitus-Contributors/Components/Contributors';
 
 const Partner = () => (

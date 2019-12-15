@@ -1,6 +1,4 @@
 import React from 'react';
-
-import '../Styles/style.scss';
 import * as S from '../Styles';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 import { withErrorBoundary } from '../../ignitus-Internals';
