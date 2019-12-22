@@ -1,15 +1,20 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import isEmpty from 'lodash/isEmpty';
+import PropTypes from 'prop-types';
 import * as t from './Constants';
 import loader from '../../../ignitus-Assets/Images/loader2.gif';
 import { withErrorBoundary } from '../../../ignitus-Internals';
 
-const Login = ({ loginType, tagline, handleSubmit, logInData, state, setState }) => {
-  const { email, password, emptyMessage, invalidEmail, showPassword } = state;
+const Login = ({
+  loginType, tagline, handleSubmit, logInData, state, setState,
+}) => {
+  const {
+    email, password, emptyMessage, invalidEmail, showPassword,
+  } = state;
 
-  let isStudent = loginType === "Student";
-  let { isFetching, message, success } = logInData;
+  const isStudent = loginType === 'Student';
+  const { isFetching, message, success } = logInData;
 
   if (isFetching) {
     return (
@@ -177,6 +182,25 @@ const Login = ({ loginType, tagline, handleSubmit, logInData, state, setState })
       </div>
     </div>
   );
+};
+
+Login.propTypes = {
+  loginType: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  logInData: PropTypes.shape({
+    isFetching: PropTypes.bool.isRequired,
+    message: PropTypes.string.isRequired,
+    success: PropTypes.bool.isRequired,
+  }).isRequired,
+  state: PropTypes.shape({
+    email: PropTypes.string.isRequired,
+    password: PropTypes.string.isRequired,
+    emptyMessage: PropTypes.bool.isRequired,
+    invalidEmail: PropTypes.bool.isRequired,
+    showPassword: PropTypes.bool.isRequired,
+  }).isRequired,
+  setState: PropTypes.func.isRequired,
 };
 
 export default withErrorBoundary(Login);
