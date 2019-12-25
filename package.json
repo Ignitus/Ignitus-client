@@ -35,7 +35,7 @@
     "react-router-dom": "^4.4.0-beta.6",
     "react-router-hash-link": "^1.2.0",
     "react-scripts": "2.0.5",
-    "redux": "^4.0.1",
+    "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.3.0",
