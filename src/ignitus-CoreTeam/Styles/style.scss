@@ -16,11 +16,11 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   min-height: 14rem;
-}
-
-.team_row {
-  margin-right: 7% !important;
-  margin-left: 7% !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
 }
 
 #team-avatar-card:hover {
@@ -44,12 +44,35 @@
   color: black;
 }
 
-.teamSection {
-
-}
-
 .teamWrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 12rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15em;
+  max-width: 1046px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card {
+  margin: 0.5em 0.5em;
+  @media only screen and (min-width: 576px) {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  @media only screen and (min-width: 768px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    flex: 0 0 23%;
+    max-width: 23%;
+  }
+}
+
+.rounded-img {
+  border-radius: 100%;
+  width: 7em;
 }
