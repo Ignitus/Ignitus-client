@@ -2,73 +2,44 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
-import '../Styles/style.scss';
-import AVATARS from './Data';
+import { Data } from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
+import * as S from '../Styles';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 const PureCoreTeam = ({ team }) => (
-  <div>
-    <div className="team-wrapper container my-5 py-5">
-      <div className="row">
-        <div className="col">
-          <div className="title text-center mb-3">
-          Our Team
-          </div>
-          <div className="Team">
-            <div className="row team_row">{team}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <S.PureCoreTeam>
+    <T.Title> Our Team </T.Title>
+    <S.TeamContainer>{team}</S.TeamContainer>
+  </S.PureCoreTeam>
 );
 
-const CoreTeam = () => {
-  const getSocialMediaIcons = (index) => {
-    const cardItem = document.getElementById(`member-${index}`);
-    cardItem.classList.remove('display-none');
-    cardItem.classList.add('display-flex');
-  };
-
-  const hideSocialMediaIcons = (index) => {
-    const cardItem = document.getElementById(`member-${index}`);
-    cardItem.classList.remove('display-flex');
-    cardItem.classList.add('display-none');
-  };
-
-  const team = AVATARS.map((item, index) => (
-    <div
-      key={item.title}
-      className="col-6 col-sm-4 col-md-3 avatar-wrapper text-center p-3"
+const TeamItem = ({ item }) => {
+  const [value, setValue] = React.useState(false);
+  return (
+    <S.TeamCard
+      onMouseOver={() => setValue(true)}
+      onMouseOut={() => setValue(false)}
     >
-      <div
-        className="avatar bg-white p-3"
-        id="team-avatar-card"
-        onMouseOver={() => getSocialMediaIcons(index)}
-        onMouseOut={() => hideSocialMediaIcons(index)}
-      >
-        <img
-          className="rounded-circle mw-100 w-75"
-          src={item.img}
-          alt={`avatar ${item.name}`}
-        />
-        <div className="title-name mt-2">{item.title}</div>
-        <div className="title-description">{item.description}</div>
-        <div id={`member-${index}`} className="display-none">
-          {item.linkedin && (
-            <a href={item.linkedin} className="team-sm-icon-color">
-              <i className="fa fa-linkedin-square" />
-            </a>
-          )}
-          {item.angellist && (
-            <a href={item.angellist} className="team-sm-icon-color">
-              <i className="fa fa-angellist" />
-            </a>
-          )}
-        </div>
-      </div>
-    </div>
-  ));
+      <S.Section>
+        <S.TeamItemImg src={item.img} alt={`avatar ${item.name}`} />
+        <S.TeamItemTitle>{item.title}</S.TeamItemTitle>
+        <T.Paragraph>{item.description}</T.Paragraph>
+        <S.LinkWrapper toggle={value}>
+          <T.Link href={item.linkedin} color="black">
+            <i className="fa fa-linkedin-square" />
+          </T.Link>
+          <T.Link href={item.angellist} color="black">
+            <i className="fa fa-angellist" />
+          </T.Link>
+        </S.LinkWrapper>
+      </S.Section>
+    </S.TeamCard>
+  );
+};
+
+const CoreTeam = () => {
+  const team = Data.map(item => <TeamItem item={item} />);
   return <PureCoreTeam team={team} />;
 };
 

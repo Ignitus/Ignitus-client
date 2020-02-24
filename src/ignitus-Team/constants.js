@@ -1,1 +1,2 @@
-export const NAME    = 'contributorsReducer';
+// eslint-disable-next-line import/prefer-default-export
+export const NAME = 'contributorsReducer';

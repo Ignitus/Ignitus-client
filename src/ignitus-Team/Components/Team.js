@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable jsx-a11y/accessible-emoji */
 import '../Styles/style.scss';
+import React, { useEffect } from 'react';
+import {
+  string, shape, func, arrayOf, bool,
+} from 'prop-types';
 
 import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
@@ -12,10 +15,10 @@ const PureTeam = ({ contributors }) => (
       <div className="row">
         <div className="col">
           <div className="title text-center mb-3">Our Contributors</div>
-          <div className="studentsResearchers">
-            This project was made possible by these contributors.
+          <div className="studentsResearchers text-center">
+            This project was made possible by these contributors. 🎉 🎨
           </div>
-          <div className="box-model">
+          <div className="box-model mt-4">
             <div className="Contributors m-top">{contributors}</div>
           </div>
         </div>
@@ -57,18 +60,17 @@ const Team = ({ getContributorsData, contributorsData }) => {
 };
 
 Team.propTypes = {
-  getContributorsData: PropTypes.func.isRequired,
-  contributorsData: PropTypes.shape({
-    presets: PropTypes.arrayOf(
-      PropTypes.shape({
-        html_url: PropTypes.string.isRequired,
-        avatar_url: PropTypes.string.isRequired,
-        login: PropTypes.string.isRequired,
+  getContributorsData: func.isRequired,
+  contributorsData: shape({
+    presets: arrayOf(
+      shape({
+        html_url: string.isRequired,
+        avatar_url: string.isRequired,
+        login: string.isRequired,
       }),
     ).isRequired,
-    isFetching: PropTypes.bool.isRequired,
+    isFetching: bool.isRequired,
   }).isRequired,
 };
-
 
 export default withErrorBoundary(Team);

@@ -1,43 +1,40 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import '../Styles/style.scss';
-import * as t from './Constants';
-
+import { Data } from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
+import * as S from '../Styles';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
-const Contributors = () => {
-  const array = [t.UCB, t.STANFORD, t.CMU, t.HARVARD, t.MIT, t.OXFORD, t.PRINCETON, t.YALE];
-  const html = array.map(logo => (
-    <div
-      className="col-lg-4 col-md-4 col-sm-6 col-12"
-      key={logo}
-    >
-      <div className="card mt-4 shadow contributor-card">
-        <div className="card-img-top logoCss centered-image d-flex align-middle">
-          <img src={logo} alt="logo" />
-        </div>
-      </div>
-    </div>
-  ));
-
-  return (
-    <section id="contributors">
-      <div className="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-center mt-4">
-        <div className="contributor">Contributors</div>
-        <div className="studentsResearchers">
-          Made with
+export const PureContributors = ({ data, type, paragraph }) => (
+  <section id="contributors">
+    <T.Wrapper>
+      <T.TopSection>
+        <T.Title>{ type }</T.Title>
+        <T.Paragraph>
+          Supported with
+          &nbsp;
           {' '}
-          <i className="fa fa-heart heart" />
+          <S.Icon><i className="fa fa-heart heart" /></S.Icon>
           {' '}
-          by Students,
-          Researchers and Alumni of ...
-        </div>
-      </div>
+          &nbsp;
+          { paragraph }
+        </T.Paragraph>
+      </T.TopSection>
+      <T.BottomSection>
+        <S.BottomRow>
+          {data.map(logo => (
+            <S.Card key={logo}>
+              <S.CardPicture src={logo} alt="logo" />
+            </S.Card>
+          ))}
+        </S.BottomRow>
+      </T.BottomSection>
+    </T.Wrapper>
+  </section>
+);
 
-      <div className="container">
-        <div className="row card_row">{html}</div>
-      </div>
-    </section>
-  );
-};
+const Contributors = () => (
+  <PureContributors data={Data} type="Contributors" paragraph="by Students, Researchers and Alumni of ..." />
+);
 
 export default withErrorBoundary(Contributors);
