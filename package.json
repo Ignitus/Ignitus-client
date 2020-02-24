@@ -60,6 +60,7 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "flow-bin": "^0.97.0",
     "flow-typed": "^2.5.1",
+    "husky": "^1.0.0-rc.13",
     "istanbul": "^1.0.0-alpha.2",
     "jest-cli": "^24.7.1",
     "jest-localstorage-mock": "^2.2.0",
@@ -75,6 +76,7 @@
       "html"
     ]
   },
+  "husky": { "hooks": { "pre-commit": "CI=true react-scripts test" } },
   "browserslist": [
     ">0.2%",
     "not dead",
