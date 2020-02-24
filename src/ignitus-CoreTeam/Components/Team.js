@@ -8,18 +8,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 
 const PureCoreTeam = ({ team }) => (
   <div>
-    <div className="team-wrapper container my-5 py-5">
-      <div className="row">
-        <div className="col">
-          <div className="title text-center mb-3">
-          Our Team
-          </div>
-          <div className="Team">
-            <div className="row team_row">{team}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className="teamWrapper">{team}</div>
   </div>
 );
 

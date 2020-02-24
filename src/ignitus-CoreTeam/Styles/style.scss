@@ -2,44 +2,54 @@
 @import './src/shared/styles/ignitus-tokens.scss';
 
 .title-name {
-    font-weight: $ignite-font-weight-medium;
-    font-size: $ignite-font-size-sm;
+  font-weight: $ignite-font-weight-medium;
+  font-size: $ignite-font-size-sm;
 }
 
 .title-position {
-    font-weight: $ignite-font-weight-light;
-    font-size: $ignite-font-size-xs;
-    color: $ignite-color-neutral-60;
+  font-weight: $ignite-font-weight-light;
+  font-size: $ignite-font-size-xs;
+  color: $ignite-color-neutral-60;
 }
 
 .avatar {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    min-height: 14rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  min-height: 14rem;
 }
 
 .team_row {
-    margin-right: 7% !important;
-    margin-left: 7% !important;
+  margin-right: 7% !important;
+  margin-left: 7% !important;
 }
 
 #team-avatar-card:hover {
-    transform: scale(1.05);
-    transition-duration: 1000ms;
-    cursor: pointer;
-    position: absolute;
-    z-index: 100;
+  transform: scale(1.05);
+  transition-duration: 1000ms;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
 }
 
-.display-none{
-    display: none;
+.display-none {
+  display: none;
 }
 
-.display-flex{
-    display: flex;
-    justify-content: space-evenly;
+.display-flex {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.team-sm-icon-color{
-    color: black;
+.team-sm-icon-color {
+  color: black;
+}
+
+.teamSection {
+
+}
+
+.teamWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 12rem;
 }
