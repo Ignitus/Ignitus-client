@@ -18,13 +18,17 @@ export const TeamItemTitle = styled.h6`
   font-size: ${F.SM};
 `;
 
-export const LinkWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-`;
+styled.a(props => ({ color: props.color }));
+
+export const LinkWrapper = styled.div(
+  {
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  props => ({ display: props.toggle ? 'flex' : 'none' }),
+);
 
 export const PureCoreTeam = styled.div`
   margin-top: 10em;
@@ -48,7 +52,7 @@ export const TeamItemImg = styled.img`
   width: 7em;
 `;
 
-export const TeamCard = styled.div`
+export const Section = styled.div`
   border-radius: 16px;
   min-height: 14rem;
   display: flex;
@@ -58,6 +62,10 @@ export const TeamCard = styled.div`
   padding: 1em;
   margin: 0.5em 0.5em;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+`;
+
+export const TeamCard = styled.div`
+  cursor: pointer;
   ${mq[0]} {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
@@ -69,5 +77,10 @@ export const TeamCard = styled.div`
   ${mq[2]} {
     flex: 0 0 23%;
     max-width: 23%;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    transition: .5s;
   }
 `;
