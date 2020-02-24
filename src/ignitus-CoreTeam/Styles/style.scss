@@ -12,16 +12,6 @@
   color: $ignite-color-neutral-60;
 }
 
-.avatar {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
-  min-height: 14rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
 
 #team-avatar-card:hover {
   transform: scale(1.05);
@@ -42,17 +32,6 @@
 
 .team-sm-icon-color {
   color: black;
-}
-
-.teamWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 15em;
-  max-width: 1046px;
-  align-items: center;
-  justify-content: center;
 }
 
 .team-card {

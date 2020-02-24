@@ -6,14 +6,16 @@ const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 export const Title = styled.h3`
-font-weight: ${F.Normal};;
-color: ${C.IgnitusBlue};
+  font-weight: ${F.Normal};
+  color: ${C.IgnitusBlue};
 `;
 
 export const Paragraph = styled.p`
-font-size: ${F.SM};
-font-weight: ${F.Light};
+  font-size: ${F.SM};
+  font-weight: ${F.Light};
 `;
+
+export const Link = styled.a(props => ({ color: props.color }));
 
 /* Shared between partners & contirbutors component. */
 
