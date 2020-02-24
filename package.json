@@ -47,7 +47,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
     "lint": "eslint ./src",
-    "test": "react-scripts test --env=jsdom --coverage",
+    "test": "react-scripts test --env=jsdom --coverage --watchAll",
     "eject": "react-scripts eject",
     "flow": "flow",
     "test:update": "npm test --updateSnapshot",
@@ -76,11 +76,7 @@
       "html"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run test"
-    }
-  },
+  "husky": { "hooks": { "pre-commit": "CI=true react-scripts test" } },
   "browserslist": [
     ">0.2%",
     "not dead",
