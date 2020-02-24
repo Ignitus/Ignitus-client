@@ -76,7 +76,7 @@
       "html"
     ]
   },
-  "husky": { "hooks": { "pre-commit": "CI=true react-scripts test" } },
+  "husky": { "hooks": { "pre-commit": "CI=false react-scripts test" } },
   "browserslist": [
     ">0.2%",
     "not dead",
