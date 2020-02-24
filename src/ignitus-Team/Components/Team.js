@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import '../Styles/style.scss';
 import React, { useEffect } from 'react';
 import {
@@ -14,10 +15,10 @@ const PureTeam = ({ contributors }) => (
       <div className="row">
         <div className="col">
           <div className="title text-center mb-3">Our Contributors</div>
-          <div className="studentsResearchers">
-            This project was made possible by these contributors.
+          <div className="studentsResearchers text-center">
+            This project was made possible by these contributors. 🎉 🎨
           </div>
-          <div className="box-model">
+          <div className="box-model mt-4">
             <div className="Contributors m-top">{contributors}</div>
           </div>
         </div>
