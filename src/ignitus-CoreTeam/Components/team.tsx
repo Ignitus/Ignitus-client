@@ -8,14 +8,15 @@ import * as S from '../Styles';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 import {coreTeam} from '../constants';
 
-const PureCoreTeam = ({ team }: any) => (
+const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>
     <T.Title> Our Team </T.Title>
     <S.TeamContainer>{team}</S.TeamContainer>
   </S.PureCoreTeam>
 );
 
-const TeamItem = ({title, img, description, linkedin, angellist}: any) => {
+const TeamItem = ({item}: any) => {
+  const {title, img, description, linkedin, angellist} = item;
   const [value, setValue] = React.useState(false);
   return (
     <S.TeamCard
@@ -40,7 +41,7 @@ const TeamItem = ({title, img, description, linkedin, angellist}: any) => {
 };
 
 const CoreTeam = () => {
-  const team = Data.map((item: any) => <TeamItem item={item} />);
+  const team = Data.map((item: coreTeam) => <TeamItem item={item} />);
   return <PureCoreTeam team={team} />;
 };
 
