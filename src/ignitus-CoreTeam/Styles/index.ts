@@ -3,6 +3,11 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
 
+
+type LinkWrapperProps = {
+	toggle: boolean;
+};
+
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
@@ -20,7 +25,7 @@ export const TeamItemTitle = styled.h6`
 
 styled.a(props => ({ color: props.color }));
 
-export const LinkWrapper = styled.div(
+export const LinkWrapper = styled.div<LinkWrapperProps>(
   {
     flexDirection: 'row',
     width: '100%',

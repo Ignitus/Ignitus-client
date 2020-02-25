@@ -2,19 +2,20 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
-import { Data } from '../constants';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import {Data} from '../constants';
+import {withErrorBoundary} from '../../ignitus-Internals';
 import * as S from '../Styles';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
+import {coreTeam} from '../constants';
 
-const PureCoreTeam = ({ team }) => (
+const PureCoreTeam = ({ team }: any) => (
   <S.PureCoreTeam>
     <T.Title> Our Team </T.Title>
     <S.TeamContainer>{team}</S.TeamContainer>
   </S.PureCoreTeam>
 );
 
-const TeamItem = ({ item }) => {
+const TeamItem = ({title, img, description, linkedin, angellist}: any) => {
   const [value, setValue] = React.useState(false);
   return (
     <S.TeamCard
@@ -22,14 +23,14 @@ const TeamItem = ({ item }) => {
       onMouseOut={() => setValue(false)}
     >
       <S.Section>
-        <S.TeamItemImg src={item.img} alt={`avatar ${item.name}`} />
-        <S.TeamItemTitle>{item.title}</S.TeamItemTitle>
-        <T.Paragraph>{item.description}</T.Paragraph>
+        <S.TeamItemImg src={img} alt={`avatar ${title}`} />
+        <S.TeamItemTitle>{title}</S.TeamItemTitle>
+        <T.Paragraph>{description}</T.Paragraph>
         <S.LinkWrapper toggle={value}>
-          <T.Link href={item.linkedin} color="black">
+          <T.Link href={linkedin} color="black">
             <i className="fa fa-linkedin-square" />
           </T.Link>
-          <T.Link href={item.angellist} color="black">
+          <T.Link href={angellist} color="black">
             <i className="fa fa-angellist" />
           </T.Link>
         </S.LinkWrapper>
@@ -39,7 +40,7 @@ const TeamItem = ({ item }) => {
 };
 
 const CoreTeam = () => {
-  const team = Data.map(item => <TeamItem item={item} />);
+  const team = Data.map((item: any) => <TeamItem item={item} />);
   return <PureCoreTeam team={team} />;
 };
 
