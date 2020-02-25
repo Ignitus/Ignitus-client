@@ -9,3 +9,4 @@ export const PRINCETON: string = 'https://storage.googleapis.com/ignitus_assets/
 export const YALE: string = 'https://storage.googleapis.com/ignitus_assets/ig-university-logo/universityLogos_yaleLogo.png';
 
 export const Data: string[] = [UCB, STANFORD, CMU, HARVARD, MIT, OXFORD, PRINCETON, YALE];
+

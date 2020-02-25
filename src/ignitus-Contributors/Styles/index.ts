@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
-const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+const breakpoints: number[] = [576, 768, 992, 1200];
+const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 export const Icon = styled.span`
   i { color: ${C.Red};}

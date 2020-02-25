@@ -1,11 +1,17 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Data } from '../constants.ts';
+import { Data } from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import * as S from '../Styles';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
-export const PureContributors = ({ data, type, paragraph }) => (
+interface Props {
+  data: any;
+  type: string,
+  paragraph: string,
+}
+
+export const PureContributors = ({ data, type, paragraph }: Props) => (
   <section id="contributors">
     <T.Wrapper>
       <T.TopSection>
@@ -22,7 +28,7 @@ export const PureContributors = ({ data, type, paragraph }) => (
       </T.TopSection>
       <T.BottomSection>
         <S.BottomRow>
-          {data.map(logo => (
+          {data.map((logo:string) => (
             <S.Card key={logo}>
               <S.CardPicture src={logo} alt="logo" />
             </S.Card>
