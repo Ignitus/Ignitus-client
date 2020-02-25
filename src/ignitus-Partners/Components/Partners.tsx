@@ -1,5 +1,5 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import { Data } from '../constants';
 import { PureContributors } from '../../ignitus-Contributors/Components/Contributors';

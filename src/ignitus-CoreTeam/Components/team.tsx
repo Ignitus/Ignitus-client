@@ -16,7 +16,7 @@ const PureCoreTeam = ({team}: any) => (
 );
 
 const TeamItem = ({item}: any) => {
-  const {title, img, description, linkedin, angellist} = item;
+  const {title, img, description, linkedin, angellist}:coreTeam  = item;
   const [value, setValue] = React.useState(false);
   return (
     <S.TeamCard
