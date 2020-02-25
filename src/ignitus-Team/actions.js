@@ -2,7 +2,7 @@
 /* useful for keeping your bundle size small. */
 import every from 'lodash/every';
 import isObject from 'lodash/isObject';
-import * as t from './actionTypes';
+import * as t from './actionTypes.ts';
 
 export const getContributorsData = () => (
   { type: t.GET_CONTRIBUTORS_DATA }
