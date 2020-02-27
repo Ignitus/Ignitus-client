@@ -1,6 +1,6 @@
 import * as actions from './actions';
 import * as components from './Components';
-import * as constants from './constants.ts';
+import * as constants from './constants';
 import * as containers from './Containers';
 import reducer from './reducers';
 import * as sagas from './sagas';

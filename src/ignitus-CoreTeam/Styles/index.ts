@@ -69,7 +69,10 @@ export const TeamItemImg = styled.img`
 `;
 
 export const TeamCard = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
   padding: 1em;
   margin: 0.5em 0.5em;

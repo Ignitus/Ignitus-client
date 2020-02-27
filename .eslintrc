@@ -4,7 +4,9 @@
     "browser": true,
     "jest": true
   },
-  
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
