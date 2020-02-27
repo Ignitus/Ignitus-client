@@ -3,9 +3,8 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
 
-
 type LinkWrapperProps = {
-	toggle: boolean;
+  toggle: boolean;
 };
 
 const breakpoints = [576, 768, 992, 1200];
@@ -23,7 +22,7 @@ export const TeamItemTitle = styled.h6`
   font-size: ${F.SM};
 `;
 
-styled.a(props => ({ color: props.color }));
+styled.a(props => ({color: props.color}));
 
 export const LinkWrapper = styled.div<LinkWrapperProps>(
   {
@@ -32,7 +31,7 @@ export const LinkWrapper = styled.div<LinkWrapperProps>(
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
-  props => ({ display: props.toggle ? 'flex' : 'none' }),
+  props => ({display: props.toggle ? 'flex' : 'none'}),
 );
 
 export const PureCoreTeam = styled.div`
@@ -48,44 +47,60 @@ export const TeamContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 2em auto 0em auto;
-  max-width: 1046px;
+  padding: 0 15px;
+  margin: 2em auto 0 auto;
+  width: 100%;
+  ${mq[0]} {
+    max-width: 540px;
+  }
+  ${mq[1]} {
+    max-width: 720px;
+  }
+  ${mq[2]} {
+    max-width: 960px;
+  }
+  ${mq[3]} {
+    max-width: 1140px;
+  }
 `;
 
 export const TeamItemImg = styled.img`
   border-radius: 100%;
-  width: 7em;
-`;
-
-export const Section = styled.div`
-  border-radius: 16px;
-  min-height: 14rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  margin: 0.5em 0.5em;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 6em;
 `;
 
 export const TeamCard = styled.div`
+  text-align: center;
+  border-radius: 16px;
+  padding: 1em;
+  margin: 0.5em 0.5em;
+  min-height: 3em;
+  min-width: 3em;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  height: 100%;
+`;
+
+export const TeamCardContainer = styled.div`
   cursor: pointer;
+  margin-top: 2em;
+  height: 15em;
+  flex: 0 0 35%;
+  max-width: 35%;
   ${mq[0]} {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   ${mq[1]} {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 26%;
+    max-width: 26%;
   }
   ${mq[2]} {
-    flex: 0 0 23%;
-    max-width: 23%;
+    flex: 0 0 22%;
+    max-width: 22%;
   }
 
   &:hover {
     transform: scale(1.01);
-    transition: .5s;
+    transition: 0.5s;
   }
 `;

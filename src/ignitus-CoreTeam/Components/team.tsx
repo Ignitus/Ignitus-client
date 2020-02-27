@@ -19,11 +19,11 @@ const TeamItem = ({item}: any) => {
   const {title, img, description, linkedin, angellist}:coreTeam  = item;
   const [value, setValue] = React.useState(false);
   return (
-    <S.TeamCard
+    <S.TeamCardContainer
       onMouseOver={() => setValue(true)}
       onMouseOut={() => setValue(false)}
     >
-      <S.Section>
+      <S.TeamCard>
         <S.TeamItemImg src={img} alt={`avatar ${title}`} />
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
         <T.Paragraph>{description}</T.Paragraph>
@@ -35,8 +35,8 @@ const TeamItem = ({item}: any) => {
             <i className="fa fa-angellist" />
           </T.Link>
         </S.LinkWrapper>
-      </S.Section>
-    </S.TeamCard>
+      </S.TeamCard>
+    </S.TeamCardContainer>
   );
 };
 

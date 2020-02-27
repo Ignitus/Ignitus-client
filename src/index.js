@@ -1,7 +1,3 @@
-import '../node_modules/font-awesome/css/font-awesome.min.css';
-import './shared/styles/ignitus-base.scss';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
 import * as Sentry from '@sentry/browser';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -11,6 +7,9 @@ import { applyMiddleware, createStore } from 'redux';
 import { logger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import './shared/styles/ignitus-base.scss';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';

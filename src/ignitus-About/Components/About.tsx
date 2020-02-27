@@ -1,28 +1,26 @@
 import React, { Fragment } from 'react';
-import '../Styles/style.scss';
-
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-
-import * as t from '../constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
+import * as t from '../constants';
+import '../Styles/style.scss';
 
 const About = () => (
   <Fragment>
-    <div className="about-wrapper pt-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-md">
+    <div className="about-wrapper">
+      <div className="about-container">
+        <div className="about-row">
+          <div className="about-img">
             <img
               className="mw-100 p-5"
               src={t.aboutImg}
               alt="aboutus"
             />
           </div>
-          <div className="col-md about bg-white p-4">
+          <div className="about-text-wrapper">
             <div className="title text-center mb-3">About Us</div>
             <div className="intro-text">
-              {t.IgnitusIntro.map(x => (
+              {t.IgnitusIntro.map((x: any) => (
                 <p key={x.title}>{x.title}</p>
               ))}
             </div>
