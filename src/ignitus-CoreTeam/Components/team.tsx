@@ -41,7 +41,7 @@ const TeamItem = ({item}: any) => {
 };
 
 const CoreTeam = () => {
-  const team = Data.map((item: coreTeam) => <TeamItem item={item} />);
+  const team = Data.map((item: coreTeam) => <TeamItem key={item.title} item={item} />);
   return <PureCoreTeam team={team} />;
 };
 

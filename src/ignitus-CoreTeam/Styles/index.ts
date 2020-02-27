@@ -48,7 +48,6 @@ export const TeamContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-  margin: 2em auto 0 auto;
   width: 100%;
   ${mq[0]} {
     max-width: 540px;

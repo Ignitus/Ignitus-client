@@ -1,35 +1,32 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import {withErrorBoundary} from '../../ignitus-Internals';
 import * as t from '../constants';
-import '../Styles/style.scss';
+import * as S from '../Styles';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 const About = () => (
   <Fragment>
-    <div className="about-wrapper">
-      <div className="about-container">
-        <div className="about-row">
-          <div className="about-img">
-            <img
-              className="mw-100 p-5"
-              src={t.aboutImg}
-              alt="aboutus"
-            />
-          </div>
-          <div className="about-text-wrapper">
-            <div className="title text-center mb-3">About Us</div>
-            <div className="intro-text">
+    <S.AboutSection>
+      <S.AboutContainer>
+        <S.TopSection>
+          <S.PictureContainer>
+            <S.Img src={t.aboutImg} alt="aboutus" />
+          </S.PictureContainer>
+          <S.ContentContainer>
+            <S.Title> About Us</S.Title>
+            <S.ParagraphContainer>
               {t.IgnitusIntro.map((x: any) => (
-                <p key={x.title}>{x.title}</p>
+                <T.Paragraph key={x.title}>{x.title}</T.Paragraph>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
+            </S.ParagraphContainer>
+          </S.ContentContainer>
+        </S.TopSection>
+      </S.AboutContainer>
       <CoreTeam.components.CoreTeam />
       <Team.containers.TeamContainer />
-    </div>
+    </S.AboutSection>
   </Fragment>
 );
 
