@@ -99,7 +99,7 @@ export const TeamCardContainer = styled.div`
   }
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
     transition: 0.5s;
   }
 `;
