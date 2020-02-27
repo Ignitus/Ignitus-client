@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import '../Styles/style.scss';
 import React, { useEffect } from 'react';
-import {
-  string, shape, func, arrayOf, bool,
-} from 'prop-types';
 
 import { withErrorBoundary } from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
@@ -58,19 +55,4 @@ const Team = ({ getContributorsData, contributorsData }) => {
 
   return <PureTeam contributors={contributors} />;
 };
-
-Team.propTypes = {
-  getContributorsData: func.isRequired,
-  contributorsData: shape({
-    presets: arrayOf(
-      shape({
-        html_url: string.isRequired,
-        avatar_url: string.isRequired,
-        login: string.isRequired,
-      }),
-    ).isRequired,
-    isFetching: bool.isRequired,
-  }).isRequired,
-};
-
 export default withErrorBoundary(Team);
