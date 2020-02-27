@@ -1,5 +1,3 @@
-
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { createStructuredSelector } from 'reselect';
@@ -12,5 +10,5 @@ const mapStateToProps = createStructuredSelector({
   contributorsData: makeSelectContributorsData(),
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({ getContributorsData }, dispatch);
+const mapDispatchToProps = (dispatch: any) => bindActionCreators({ getContributorsData }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(Team);
