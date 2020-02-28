@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 export const GithubContributorsContainer = styled(T.Container)`
