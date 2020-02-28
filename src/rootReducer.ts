@@ -5,9 +5,12 @@ import studentLogin from './ignitus-StudentLogin';
 import contributors from './ignitus-Team';
 
 
-export default combineReducers({
+const rootReducer = combineReducers({
   [testimonial.constants.NAME]: testimonial.reducer,
   [studentSignUp.constants.NAME]: studentSignUp.reducer,
   [studentLogin.constants.NAME]: studentLogin.reducer,
   [contributors.constants.NAME]: contributors.reducer,
 });
+
+export type rootState = ReturnType<typeof rootReducer>;
+export default rootReducer;

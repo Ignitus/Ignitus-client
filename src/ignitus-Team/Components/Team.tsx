@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import '../Styles/style.scss';
-import React, { useEffect } from 'react';
-
-import { withErrorBoundary } from '../../ignitus-Internals';
+import React, {useEffect} from 'react';
+import {withErrorBoundary} from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
+import {TeamPropType, GitHubDataType} from '../types';
 
-// eslint-disable-next-line react/prop-types
-const PureTeam = ({ contributors }) => (
+const PureTeam = ({contributors}: any) => (
   <div>
     <div className="team-wrapper container my-5 py-5">
       <div className="row">
@@ -24,12 +23,13 @@ const PureTeam = ({ contributors }) => (
   </div>
 );
 
-const Team = ({ getContributorsData, contributorsData }) => {
+const Team = ({
+  getContributorsData,
+  contributorsData: {presets, isFetching},
+}: TeamPropType) => {
   useEffect(() => {
     getContributorsData();
   }, []);
-
-  const { presets, isFetching } = contributorsData;
 
   if (isFetching) {
     return (
@@ -41,7 +41,7 @@ const Team = ({ getContributorsData, contributorsData }) => {
     );
   }
 
-  const contributors = presets.map(item => (
+  const contributors = presets.map((item: GitHubDataType) => (
     <a
       key={item.id}
       target="_blank"

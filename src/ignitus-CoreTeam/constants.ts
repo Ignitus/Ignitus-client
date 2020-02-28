@@ -1,13 +1,5 @@
 // eslint-disable-next-line import/prefer-default-export
-
-export interface coreTeam {
-  title: string;
-  img: string;
-  description: string;
-  linkedin: string;
-  angellist: string;
-}
-
+import { coreTeam } from "./types";
 export const Data: coreTeam[] = [
   {
     title: 'Ayush Pareek',

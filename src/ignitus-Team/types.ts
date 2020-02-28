@@ -1,3 +1,5 @@
+import { getContributorsData } from "./actions";
+
 export type TeamActionType = {
   type: string;
   data?: any;
@@ -27,6 +29,11 @@ export type GitHubDataType = {
 };
 
 export type TeamReducerReturnType = {
-  presets: GitHubDataType[] | [];
+  presets: GitHubDataType[];
   isFetching: boolean;
 };
+
+export type TeamPropType = {
+  getContributorsData: typeof getContributorsData,
+  contributorsData: TeamReducerReturnType
+}
