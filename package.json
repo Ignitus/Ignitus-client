@@ -21,10 +21,11 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "codecov": "^3.3.0",
+    "font-awesome": "^4.7.0",
     "idb": "^4.0.3",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "popper.js": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
@@ -40,8 +41,7 @@
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "typescript": "^3.8.2",
-    "font-awesome": "^4.7.0"
+    "typescript": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
