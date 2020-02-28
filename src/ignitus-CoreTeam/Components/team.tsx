@@ -28,12 +28,12 @@ const TeamItem = ({
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
         <T.Paragraph>{description}</T.Paragraph>
         <S.LinkWrapper toggle={value}>
-          <T.Link href={linkedin} color="black">
+          <S.Link href={linkedin} color="black">
             <i className="fa fa-linkedin-square" />
-          </T.Link>
-          <T.Link href={angellist} color="black">
+          </S.Link>
+          <S.Link href={angellist} color="black">
             <i className="fa fa-angellist" />
-          </T.Link>
+          </S.Link>
         </S.LinkWrapper>
       </S.TeamCard>
     </S.TeamCardContainer>

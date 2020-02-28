@@ -1,26 +1,26 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import '../Styles/style.scss';
+// import '../Styles/style.scss';
 import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 import {TeamPropType, GitHubDataType} from '../types';
+import * as S from '../Styles';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 const PureTeam = ({contributors}: any) => (
-  <div>
-    <div className="team-wrapper container my-5 py-5">
-      <div className="row">
-        <div className="col">
-          <div className="title text-center mb-3">Our Contributors</div>
-          <div className="studentsResearchers text-center">
-            This project was made possible by these contributors. 🎉 🎨
-          </div>
-          <div className="box-model mt-4">
-            <div className="Contributors m-top">{contributors}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <S.Section>
+    <S.GithubContributorsContainer>
+      <S.TitleWrapper>
+        <T.Title> Our Contributors </T.Title>
+        <T.Paragraph>
+          This project was made possible by these contributors. 🎉 🎨
+        </T.Paragraph>
+      </S.TitleWrapper>
+      <S.GithubContributors>
+        <div className="Contributors">{contributors}</div>
+      </S.GithubContributors>
+    </S.GithubContributorsContainer>
+  </S.Section>
 );
 
 const Team = ({
@@ -42,15 +42,19 @@ const Team = ({
   }
 
   const contributors = presets.map((item: GitHubDataType) => (
-    <a
+    <T.Link
       key={item.id}
       target="_blank"
       rel="noopener noreferrer"
       href={item.html_url}
       className="Contributor"
     >
-      <img src={item.avatar_url} width="100%" alt={`avatar ${item.login}`} />
-    </a>
+      <T.Avatar
+        src={item.avatar_url}
+        width="100%"
+        alt={`avatar ${item.login}`}
+      />
+    </T.Link>
   ));
 
   return <PureTeam contributors={contributors} />;

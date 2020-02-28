@@ -2,10 +2,14 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
+import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 type LinkWrapperProps = {
   toggle: boolean;
 };
+type TeamItemTitleProps = {
+  color: string;
+}
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
@@ -42,25 +46,12 @@ export const PureCoreTeam = styled.div`
   align-items: center;
 `;
 
-export const TeamContainer = styled.div`
+export const TeamContainer = styled(T.Container)`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-  width: 100%;
-  ${mq[0]} {
-    max-width: 540px;
-  }
-  ${mq[1]} {
-    max-width: 720px;
-  }
-  ${mq[2]} {
-    max-width: 960px;
-  }
-  ${mq[3]} {
-    max-width: 1140px;
-  }
 `;
 
 export const TeamItemImg = styled.img`
@@ -106,3 +97,6 @@ export const TeamCardContainer = styled.div`
     transition: 0.5s;
   }
 `;
+
+
+export const Link = styled(T.Link)<TeamItemTitleProps>(props => ({ color: props.color }));
