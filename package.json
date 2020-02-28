@@ -49,7 +49,6 @@
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "flow": "flow",
     "test:update": "npm test --updateSnapshot",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
@@ -69,8 +68,6 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "flow-bin": "^0.97.0",
-    "flow-typed": "^2.5.1",
     "husky": "^1.0.0-rc.13",
     "istanbul": "^1.0.0-alpha.2",
     "jest-cli": "^24.7.1",
