@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-// import '../Styles/style.scss';
 import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
@@ -12,12 +11,12 @@ const PureTeam = ({contributors}: any) => (
     <S.GithubContributorsContainer>
       <S.TitleWrapper>
         <T.Title> Our Contributors </T.Title>
-        <T.Paragraph>
+        <S.Paragraph>
           This project was made possible by these contributors. 🎉 🎨
-        </T.Paragraph>
+        </S.Paragraph>
       </S.TitleWrapper>
       <S.GithubContributors>
-        <div className="Contributors">{contributors}</div>
+        <S.Contributors>{contributors}</S.Contributors>
       </S.GithubContributors>
     </S.GithubContributorsContainer>
   </S.Section>
@@ -33,28 +32,25 @@ const Team = ({
 
   if (isFetching) {
     return (
-      <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto">
-        <div className="loader">
-          <img alt="loader" src={loader} />
-        </div>
-      </div>
+      <S.Loader>
+        <img alt="loader" src={loader} />
+      </S.Loader>
     );
   }
 
   const contributors = presets.map((item: GitHubDataType) => (
-    <T.Link
+    <S.Link
       key={item.id}
       target="_blank"
       rel="noopener noreferrer"
       href={item.html_url}
-      className="Contributor"
     >
-      <T.Avatar
+      <S.Avatar
         src={item.avatar_url}
         width="100%"
         alt={`avatar ${item.login}`}
       />
-    </T.Link>
+    </S.Link>
   ));
 
   return <PureTeam contributors={contributors} />;

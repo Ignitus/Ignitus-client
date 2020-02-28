@@ -40,8 +40,9 @@ export const TopSection = styled.section`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-right: -15px;
-  margin-left: -15px;
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `;
 
 export const PictureContainer = styled.section`
@@ -63,6 +64,6 @@ export const ContentContainer = styled.section`
 
 export const Title = styled(T.Title)`
   text-align: center;
-`
+`;
 
 export const ParagraphContainer = styled.div``;

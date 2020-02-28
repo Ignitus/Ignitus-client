@@ -9,7 +9,7 @@ type LinkWrapperProps = {
 };
 type TeamItemTitleProps = {
   color: string;
-}
+};
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
@@ -65,6 +65,7 @@ export const TeamCard = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 16px;
+  text-align: center;
   padding: 1em;
   margin: 0.5em 0.5em;
   min-height: 3em;
@@ -75,10 +76,15 @@ export const TeamCard = styled.div`
 
 export const TeamCardContainer = styled.div`
   cursor: pointer;
-  margin-top: 2em;
+  margin-top: 0.5em;
   height: 15em;
   flex: 0 0 35%;
   max-width: 35%;
+
+  @media (max-width: 420px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   ${mq[0]} {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
@@ -98,5 +104,6 @@ export const TeamCardContainer = styled.div`
   }
 `;
 
-
-export const Link = styled(T.Link)<TeamItemTitleProps>(props => ({ color: props.color }));
+export const Link = styled(T.Link)<TeamItemTitleProps>(props => ({
+  color: props.color,
+}));

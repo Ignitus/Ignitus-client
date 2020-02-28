@@ -13,7 +13,7 @@ export const Data: coreTeam[] = [
     title: 'Afelio Padilla',
     img:
       'https://storage.googleapis.com/ignitus_assets/ig-team/Team_afelio.jpeg',
-    description: 'COO',
+    description: 'Chief Operating Officer',
     linkedin: 'https://www.linkedin.com/in/afelio/',
     angellist: 'https://angel.co/ignitus-2',
   },
