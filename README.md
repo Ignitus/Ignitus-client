@@ -43,7 +43,7 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 
 ### Database.
 - [MongoDB](https://www.mongodb.com/) - The database for modern applications.
-- [Rdis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
+- [Redis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
 
 ### Dependencies 
 - [Sentry](https://sentry.io/welcome/) -  Application Monitoring and Error Tracking Software.
