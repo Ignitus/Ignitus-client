@@ -34,21 +34,33 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [Netlify](https://www.netlify.com/) - Netlify builds, deploys 🚀 and hosts your front-end.
 - [Husky](https://github.com/typicode/husky) - Git hooks made easy 🐶 woof!
 - [Heroku](https://www.heroku.com/) - Heroku is a cloud platform as a service supporting several programming languages.
-- [Docker](https://www.docker.com/) - Empowering App Development for Developers
+- [Docker](https://www.docker.com/) - Empowering App Development for Developers.
+- [Istanbul](https://istanbul.js.org/) - JavaScript test coverage tool.
 
 ### Testing.
 - [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework. 🔨
 - [Enzyme](https://enzymejs.github.io/enzyme/) - JavaScript Testing utilities for React.
 
+### Database.
+- [MongoDB](https://www.mongodb.com/) - The database for modern applications.
+- [Redis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
+
+### Dependencies 
+- [Sentry](https://sentry.io/welcome/) -  Application Monitoring and Error Tracking Software.
+- [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
+- [React Loadable](https://github.com/jamiebuilds/react-loadable) - A HOC for loading components with promises.
+- [IDB](https://www.npmjs.com/package/idb) - IndexedDB with usability.
+- [Font Awesome](https://fontawesome.com/) - Font Awesome is a font and icon toolkit based on CSS and LESS.
+- [Lodash](https://lodash.com/) - A JavaScript utility library delivering consistency, modularity.
+- [React Router](https://www.npmjs.com/package/react-router) - Router for react applications.
+
 ### Additional tools.
 - [Prettier](https://prettier.io) - Prettier is an opinionated code formatter.
 - [ESlint](https://enzymejs.github.io/enzyme/) - Find and fix problems in your JavaScript code.
 
-### Database.
-- [MongoDB](https://www.mongodb.com/) - The database for modern applications.
-- [Rdis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
 
 ### Deprecated Stack 🧨 (We are migrating from this stack => TS, Emotion)
+- [SAAS](https://sass-lang.com/) - Syntactically Awesome Style Sheets.
 - [BootStrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - JS UI Framework.
 - [Material UI](https://material-ui.com/) - React components for faster and easier web development.
 - [Prop-Types](https://www.npmjs.com/package/prop-types) - Runtime type checking for React props and similar objects.
