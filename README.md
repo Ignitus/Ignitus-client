@@ -23,7 +23,7 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps.
 - [Redux-Sagas](https://redux-saga.js.org/) - An alternative side effect model for Redux apps.
 - [Reselect](https://github.com/reduxjs/reselect) - Selector library for Redux.
-- [Emotion](https://emotion.sh/docs/styled) - Emotion is a library designed for writing css styles with JavaScript. 
+- [Emotion](https://emotion.sh/docs/styled) - Emotion is a library designed for writing css styles with JavaScript. 🎨
 
 #### CI/CD.
 
