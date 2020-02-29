@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import isEmpty from 'lodash/isEmpty';
@@ -130,8 +133,8 @@ const Login = ({
                       onClick={() => {
                         setState({
                           ...state,
-                          showPassword: !state.showPassword
-                        })
+                          showPassword: !state.showPassword,
+                        });
                       }}
                     >
                       {!showPassword && (
