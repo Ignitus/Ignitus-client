@@ -32,15 +32,22 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [CodeCov](https://codecov.io/) - Improves your code review workflow and quality.
 - [Netlify](https://www.netlify.com/) - Netlify builds, deploys 🚀 and hosts your front-end.
 - [Husky](https://github.com/typicode/husky) - Git hooks made easy 🐶 woof!
+- [Heroku](https://www.heroku.com/) - Heroku is a cloud platform as a service supporting several programming languages.
+- [Docker](https://www.docker.com/) - Empowering App Development for Developers
 
 ### Testing.
 - [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework. 🔨
 - [Enzyme](https://enzymejs.github.io/enzyme/) - JavaScript Testing utilities for React.
 
+### Additional tools.
+- [Prettier](https://prettier.io) - Prettier is an opinionated code formatter.
+- [https://eslint.org/](https://enzymejs.github.io/enzyme/) - Find and fix problems in your JavaScript code.
+
 ### Deprecated Stack 🧨 (We are migrating from this stack => TS, Emotion)
 - [BootStrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - JS UI Framework.
 - [Material UI](https://material-ui.com/) - React components for faster and easier web development.
 - [Prop-Types](https://www.npmjs.com/package/prop-types) - Runtime type checking for React props and similar objects.
+
 
 ## Contributing
 Please check the [Contribution Guidelines](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
