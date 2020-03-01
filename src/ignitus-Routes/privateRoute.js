@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
