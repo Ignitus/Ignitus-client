@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable prefer-destructuring */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
@@ -20,9 +19,11 @@ class dashBoardHeader extends React.Component {
   }
 
   logout() {
+    const {
+      props: { logUserOut },
+    } = this;
     localStorage.clear();
-    // eslint-disable-next-line react/destructuring-assignment
-    this.props.logUserOut();
+    logUserOut();
     this.setState({ redirect: true });
   }
 
@@ -35,7 +36,7 @@ class dashBoardHeader extends React.Component {
     }
     let email = '';
     if (localStorage.getItem('data')) {
-      email = JSON.parse(localStorage.getItem('data')).email;
+      ({ email } = JSON.parse(localStorage.getItem('data')));
     }
     return (
       <React.Fragment>
@@ -59,9 +60,9 @@ class dashBoardHeader extends React.Component {
               <li className="nav-item active">
                 <HashLink smooth to="/#">
                   <span className="nav-link">
-                    Home
-                    {' '}
-                    <span className="sr-only">(current)</span>
+                    Home 
+{' '}
+<span className="sr-only">(current)</span>
                   </span>
                 </HashLink>
               </li>
@@ -84,9 +85,9 @@ class dashBoardHeader extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link disabled" href="#">
-                  Welcome
-                  {' '}
-                  {email}
+                  Welcome 
+{' '}
+{email}
                 </a>
               </li>
               <li className="nav-item">
