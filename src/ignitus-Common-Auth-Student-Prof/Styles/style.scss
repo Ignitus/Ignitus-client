@@ -1,49 +1,50 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-components-common.scss';
 
-.m-top{
-	margin-top: 8%;
+.m-top {
+  margin-top: 8%;
 }
 
-.login-signup{
-    color: white;
-    text-align: center;
+.login-signup {
+  color: white;
+  text-align: center;
 }
 
-.common-auth-ui-css{
+.common-auth-ui-css {
+  min-height: 375px !important;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgb(255, 255, 255) 6px 6px 1px;
+  cursor: pointer;
+  // min-width: 320px;
+  background-color: #fac76f;
 
-    min-height: 375px !important;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: rgb(255, 255, 255) 6px 6px 1px;
+  &:hover {
+    transform: scale(1.1);
+    // transform: rotateY(360deg);
+    transition-duration: 500ms;
     cursor: pointer;
-    // min-width: 320px;
-    background-color: #fac76f;
+  }
 
-    &:hover{
-    	transform: scale(1.1);
-    	// transform: rotateY(360deg);
-	    transition-duration: 500ms;
-	    cursor: pointer;
-    }
-    @media only screen and (max-width: 575px) {
-      min-height: 15em !important;
-      box-shadow: none;
-      max-width: 150px;
-      margin: 0 auto;
-    }
-    @media only screen and (max-width: 375px) {
-      margin: 0;
-      margin-left: 20px;
-    }
+  @media only screen and (max-width: 575px) {
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 150px;
+    min-height: 15em !important;
+  }
+
+  @media only screen and (max-width: 375px) {
+    margin: 0;
+    margin-left: 20px;
+  }
 }
-.box-container{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
+.box-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
 }
-.common-ui-text{
-    font-weight: bold;
-    color: white;
-    margin-top: 10px;
+.common-ui-text {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
 }
