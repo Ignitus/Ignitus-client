@@ -26,10 +26,21 @@
 	    transition-duration: 500ms;
 	    cursor: pointer;
     }
+    @media only screen and (max-width: 575px) {
+      min-height: 15em !important;
+      box-shadow: none;
+      max-width: 150px;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 375px) {
+      margin: 0;
+      margin-left: 20px;
+    }
 }
 .box-container{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 150px;
 }
 .common-ui-text{
     font-weight: bold;
