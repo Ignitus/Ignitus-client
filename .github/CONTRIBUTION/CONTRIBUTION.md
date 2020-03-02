@@ -14,21 +14,19 @@
 
 * Clone or download the repo. into any fresh temporary folder.
 
-    ``` git clone https://github.com/Ignitus/Ignitus-Client-Side-Development.git ```
+    ``` git clone https://github.com/Ignitus/Ignitus-client.git ```
 
 * Cd into that root folder you just cloned locally.
 
-    ``` cd Ignitus-Client-Side-Development ```
+    ``` cd Ignitus-client ```
 
 * Open terminal in the current folder and to install all dependencies type.
 
     ``` npm install ```
 
 * Now typing
-
     ``` npm start ```
-
-* will start a server ! on http://localhost:3000
+will start a server on http://localhost:3000
 
 ## Setup Via Docker
 
@@ -36,7 +34,7 @@
  
 ## Linting
 
- * ``` npm run lint ```	* ``` npm run lint ```
+ * ``` npm run lint ```
  
 ## Fix Lint Warnings
 
