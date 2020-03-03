@@ -39,7 +39,7 @@ export const LinkWrapper = styled.div<LinkWrapperProps>(
 );
 
 export const PureCoreTeam = styled.div`
-  margin-top: 10em;
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
