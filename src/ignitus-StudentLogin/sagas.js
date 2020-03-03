@@ -4,7 +4,7 @@ import * as a from './actions';
 import * as api from '../ignitus-Api';
 
 const {
- call, put, takeLatest, all 
+ call, put, takeLatest, all,
 } = effects;
 
 function* signIn(action) {
@@ -12,7 +12,7 @@ function* signIn(action) {
   try {
     const { data } = yield call(api.signIn, email, password);
     localStorage.setItem('authenticated', true);
-    localStorage.setItem('data', JSON.stringify(data.userInfo.clientData));
+    localStorage.setItem('data', JSON.stringify(data.data.clientData));
 
     yield put(a.logInResponse(data));
   } catch (e) {
