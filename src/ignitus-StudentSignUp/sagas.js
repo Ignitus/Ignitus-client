@@ -10,10 +10,10 @@ const {
 } = effects;
 
 function* signUp(action) {
-  const { email, password } = action;
+  const { username, email, password } = action;
 
   try {
-    const { data } = yield call(api.signUp, email, password);
+    const { data } = yield call(api.signUp, username, email, password);
     yield put(a.signUpResponse(data));
   } catch (e) {
     yield put(a.signUpResponse(e.response.data));

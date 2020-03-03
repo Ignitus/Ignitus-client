@@ -22,8 +22,8 @@ export async function getTestimonialData() {
   }
 }
 
-export function signUp(email, password) {
-  return axios.post(t.STUDENT_SIGN_UP, { email, password });
+export function signUp(username, email, password) {
+  return axios.post(t.STUDENT_SIGN_UP, {username, email, password });
 }
 
 export function signIn(email, password) {

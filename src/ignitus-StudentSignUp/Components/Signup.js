@@ -13,6 +13,7 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import '../Styles/style.scss';
 
 const Signup = ({ signUpRequest, studentSignUpData }) => {
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -20,6 +21,7 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
 
   const [emptyMessage, setEmptyMessage] = useState(false);
   const [invalidEmail, setInvalidEmail] = useState(false);
+  const [invalidUsername, setInvalidUsername] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const { isFetching, msg, success } = studentSignUpData;
@@ -27,9 +29,15 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
+    if (isEmpty(username) || isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       setEmptyMessage(true);
       return;
+    }
+
+    if(!username.match(/^[a-z0-9_-]{3,15}$/))
+    {
+       setInvalidUsername(true);
+       return;
     }
 
     if (typeof email !== 'undefined') {
@@ -49,7 +57,8 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
     }
 
     // eslint-disable-next-line react/destructuring-assignment
-    signUpRequest(email, password);
+    signUpRequest(username, email, password);
+    setUsername('');
     setEmail('');
     setPassword('');
     setConfirmPassword('');
@@ -111,6 +120,32 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
 
             <form>
               <div className="px-4">
+
+              <div className="input-group form-group mb-2">
+                <div className="input-group-prepend">
+                  <span className="input-group-text span-bg">
+                    <i className="fa fa-user-o fa-fw text-white" />
+                  </span>
+                </div>
+                <input
+                  type="username"
+                  id="username"
+                  className="form-control username-border"
+                  placeholder="Username"
+                  required
+                  value={username}
+                  onChange={e => setUsername(e.target.value)}
+                />
+              </div>
+
+              {invalidUsername && (
+              <div className="text-danger small mb-1">
+                <strong>Please </strong>
+                {' '}
+                    input a valid username!
+              </div>
+              )}
+
                 <div className="input-group form-group mb-2">
                   <div className="input-group-prepend">
                     <span className="input-group-text span-bg">
