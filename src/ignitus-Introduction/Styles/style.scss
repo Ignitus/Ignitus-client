@@ -1,6 +1,8 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
 
+// rem units change based on 1rem:16px
+
 .content-container {
 	margin-top: 0 !important;
 }
@@ -8,103 +10,109 @@
 .ignitus {
 	font-size: $ignite-font-size-xxl;
   font-weight: $ignite-font-weight-bold;
-  margin-top: 15px;
+  margin-top: 1rem;
   color: $ignite-text-color-brand;
 }
 
 .tagline {
 	font-size: $ignite-font-size-lg;
   font-weight: $ignite-font-weight-normal;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 1.56rem;
+  margin-bottom: 2.5rem;
 }
 .content {
   font-size: $ignite-font-size-md;
   font-weight: $ignite-font-weight-light;
-  margin-bottom: 50px;
+  margin-bottom: 3.12rem;
 }
 
 .intro__wrapper {
 	background: url('https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_split-blue-background.png') no-repeat;
 	background-size: 70%;
 	background-position: top right;
-	height: 1080px;
+	height: 67.5rem;
 	position: relative;
 	z-index: 0;
 
-	@media (max-width: 945px){
+	@media (max-width: 59rem){
 		& {
-			height: 1200px;
+			height: 75rem;
 		}
 	}
 
-	@media (max-width: 751px) {
+	@media (max-width: 46.93rem) {
 		& {
 			height: 100%;
 		}
 	}
 
-	@media (max-width: 568px) {
+	@media (max-width: 25.5rem) {
 		& {
-			margin-bottom: 0px;
+			margin-bottom: 0;
 		}
 	}
 }
 
 .intro {
-	 background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38.75%, $ignite-color-white 38.75% 100%);
+	background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 38.75%, $ignite-color-white 38.75% 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 	font-size: $ignite-font-size-xxl + 18px;
   font-weight: $ignite-font-weight-medium;
 	letter-spacing: 4px;
 
-	margin-top: 66px;
+	margin-top: 4.12rem;
 	padding-top: 10%;
 	position: relative;
 	z-index: 3;
 
-	@media (min-width: 992px) {
+	@media (min-width: 62rem) {
 		margin-top: 0;
 	}
 
-	@media (max-width: 1145px) {
+	@media (max-width: 71.56rem) {
 		& {
 			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 40%, $ignite-color-white 40% 100%);
 			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 		}
 	}
 
-	@media (max-width: 892px) {
+	@media (max-width: 55.75rem) {
 		& {
 			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 41%, $ignite-color-white 41% 100%);
 			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 		}
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 50rem) {
 		& {
 			background: -webkit-linear-gradient( 45deg, $ignite-color-blue-20 46.5%, $ignite-color-white 46.5% 100%);
 			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 		}
 	}
 
-	@media (max-width: 682px) {
+	@media (max-width: 42.62rem) {
 		& {
 			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 49%, $ignite-color-white 49% 100%);
 			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 		}
 	}
 
-	@media (max-width: 568px) {
+	@media (max-width: 35.5rem) {
 		& {
 			background: -webkit-linear-gradient( 42deg, $ignite-color-blue-20 51%, $ignite-color-white 51% 100%);
 			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 		}
 	}
 }
@@ -124,17 +132,17 @@
 	display: flex;
 	flex-direction: column;
 
-	margin-top: 50px;
+	margin-top: 3.12rem;
 }
 
 .intro__content--upper {
 	font-size: $ignite-font-size-md + 8px;
 
 	max-width: 60%;
-	padding: 110px 90px 45px 90px;
+	padding: 6.8rem 5.62rem 2.81rem 5.26rem;
 
 
-	@media (max-width: 751px) {
+	@media (max-width: 47rem) {
 		& {
 			font-size: $ignite-font-size-md;
 			max-width: 100%;
@@ -148,7 +156,7 @@
 	justify-content: center;
 	font-size: $ignite-font-size-md;
 
-	@media (max-width: 945px) {
+	@media (max-width: 59rem) {
 		& {
 			flex-direction: column;
 			align-items: center;
@@ -156,14 +164,14 @@
 			max-width: 90%;
 			text-align: center;
 
-			margin-left: 15px;
+			margin-left: 0.9rem;
 
 			img {
-				margin-top: 25px;
+				margin-top: 1.5rem;
 			}
 		}
 
-		@media (max-width: 751px) {
+		@media (max-width: 47rem) {
 			& {
 				flex-direction: column-reverse;
 				img {
@@ -173,7 +181,7 @@
 			}
 		}
 
-		@media (max-width: 568px) {
+		@media (max-width: 35.5rem) {
 			& {
 				img {
 					display: none;
@@ -183,7 +191,7 @@
 	}
 
 	img {
-		margin-left: 75px;
+		margin-left: 12.5rem;
 	}
 }
 
@@ -194,9 +202,9 @@
 	justify-content: center;
 
 	a button {
-		margin-top: 30px;
+		margin-top: 1.8rem;
 		width: 100%;
-		padding: 8px 15px;
+		padding: 0.5rem 0.9rem;
 
 		background-color: $ignite-text-color-brand !important;
 		color: $ignite-color-white !important;
