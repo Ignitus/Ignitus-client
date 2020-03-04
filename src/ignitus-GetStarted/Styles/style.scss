@@ -1,9 +1,11 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
 
+// rem units change based on 1rem:16px
+
 .content-container {
 	.content {
-	  margin-bottom: 0px;
+	  margin-bottom: 0;
 	}
 }
 
@@ -11,18 +13,18 @@
 	background-color: #006;
 
 	width: 100%;
-	height: 350px;
-	margin: 100px 0 0 0;
-	padding: 50px 0 100px 0;
+	height: 21.8rem;
+	margin-top: 6.25rem ;
+	padding: 3.12rem 0 6.25rem 0;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 
-	@media (max-width: 816px) {
+	@media (max-width: 51rem) {
 		& {
-			padding-bottom: 0px;
+			padding-bottom: 0;
 		}
 	}
 }
@@ -33,15 +35,15 @@
 	color: $ignite-color-white;
 	text-align: center;
 
-	max-width: 975px;
+	max-width: 61rem;
 
-	@media (max-width: 816px) {
+	@media (max-width: 51rem) {
 		& {
-			padding: 0 25px;
+			padding: 0 1.56rem;
 		}
 	}
 
-	@media (max-width: 462px) {
+	@media (max-width: 28.8rem) {
 		& {
 			font-size: $ignite-font-size-sm !important;
 		}
@@ -50,15 +52,15 @@
 
 .btn {
   &.button-get-started {
-  	margin: 50px 0;
+  	margin: 3.12rem 0;
   	background-color: $ignite-color-white;
   	color: $ignite-color-blue-20;
   	text-decoration: none;
 		font-weight: $ignite-font-weight-semibold;
 
-		min-width: 145px;
+		min-width: 9rem;
 
-		border-radius: 22px;
+		border-radius: 1.3rem;
 
     &:hover {
     	color: $ignite-color-blue-20 !important;
@@ -66,7 +68,10 @@
     	text-decoration: none;
     }
 
-		&:focus {
-		}
+    // empty ruleset
+
+		// &:focus {
+    // }
+    
   }
 }
