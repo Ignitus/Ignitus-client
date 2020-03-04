@@ -1,24 +1,22 @@
 // import ignitus token variables
-@import "./src/shared/styles/ignitus-components-common.scss";
+@import "./src/shared/styles/ignitus-components-common";
 
-:root {
-  --background-color: #fac76f;
-  --white-color: #ffffff;
-}
+$background-color: #fac76f;
+$white-color: #ffffff;
 
 .m-top {
   margin-top: 8%;
 }
 
 .login-signup {
-  color: var(--white-color);
+  color: $white-color;
   text-align: center;
 }
 
 .common-auth-ui-css {
-  background-color: var(--background-color);
+  background-color: $background-color;
   border-radius: 20px;
-  box-shadow: var(--white-color) 6px 6px 1px;
+  box-shadow: $white-color 6px 6px 1px;
   cursor: pointer;
   min-height: 375px;
   text-align: center;
@@ -51,7 +49,7 @@
 }
 
 .common-ui-text {
-  color: var(--white-color);
+  color: $white-color;
   font-weight: bold;
   margin-top: 10px;
 }
