@@ -6,21 +6,21 @@ import '../Styles/style.scss';
 
 const commonLoginUI = () => (
   <div className="col-lg-12 col-sm-12 col-md-12 col-12 container-bg">
-    <div className="p-5">
-      <div className="col-lg-7 col-md-8 col-sm-12 col-8 box-container">
+    <div className="p-0 p-sm-5 pt-5">
+      <div className="col-lg-7 col-md-8 col-sm-12 col-12 mt-5 box-container">
         <div className="login-signup m-top">
           <h3> Sign In </h3>
           <p> Who are you? </p>
         </div>
-        <div className="row mt-4">
-          <div className=" col-lg-5 col-md-5 ml-lg-5 ml-md-4 col-sm-5 p-0 common-auth-ui-css">
+        <div className="row mt-5">
+          <div className=" col-lg-5 col-md-5 ml-lg-5 ml-md-4 col-sm-5 col p-0 h-50 common-auth-ui-css">
             <p className="mb-5 text-center common-ui-text">Student</p>
             <Link to="/login/student">
               <img alt="Student auth" className="img-fluid" src={t.studentAuth} />
             </Link>
           </div>
 
-          <div className="col-lg-5 col-md-5 ml-lg-4  ml-md-4 col-sm-5 ml-sm-4  p-0 common-auth-ui-css">
+          <div className="col-lg-5 col-md-5 ml-lg-4  ml-md-4 col-sm-5 ml-sm-4 col p-0 common-auth-ui-css">
             <p className="mb-5 text-center common-ui-text">Professor</p>
             <Link to="/login/professor">
               <img alt="Professor auth" className="img-fluid" src={t.professorAuth} />
