@@ -1,4 +1,4 @@
-# Contributing
+### Contributing
 
 1. Create your **branch**: ```git checkout -b my-new-feature```
 
@@ -10,32 +10,37 @@
 
 5. **Enjoy!**
 
-## Setup locally
+### Setup locally
 
-* Clone or download the repo. into any fresh temporary folder.
+1. Fork the repository.
+
+    ``` https://github.com/your_username/Ignitus-client.git ```
+
+2. Clone the repository.
 
     ``` git clone https://github.com/Ignitus/Ignitus-client.git ```
 
-* Cd into that root folder you just cloned locally.
+3. Cd into that root folder you just cloned locally.
 
     ``` cd Ignitus-client ```
 
-* Open terminal in the current folder and to install all dependencies type.
+4. Open terminal in the current folder and to install all dependencies type.
 
     ``` npm install ```
 
-* Now typing
+5. Now typing
     ``` npm start ```
-will start a server on http://localhost:3000
+    
+6. Navigate to http://localhost:3000
 
-## Setup Via Docker
+### Setup Via Docker
 
-* Run ```docker-compose up```
+Run ```docker-compose up```
  
-## Linting
+### Tools
 
- * ``` npm run lint ```
+A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript.
+
+ ``` npm run lint ```
  
-## Fix Lint Warnings
-
- * ``` ./node_modules/.bin/eslint src --fix ```
+ ``` npm run lint:fix ```
