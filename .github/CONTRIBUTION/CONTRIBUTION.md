@@ -1,4 +1,4 @@
-### Contributing
+### Contributing.
 
 1. Create your **branch**: ```git checkout -b my-new-feature```
 
@@ -10,7 +10,7 @@
 
 5. **Enjoy!**
 
-### Setup locally
+### Setup locally.
 
 1. Fork the repository.
 
@@ -33,11 +33,11 @@
     
 6. Navigate to http://localhost:3000
 
-### Setup Via Docker
+### Docker Setup.
 
 Run ```docker-compose up```
  
-### Tools
+### Tools.
 
 A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript.
 
