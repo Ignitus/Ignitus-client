@@ -4,8 +4,8 @@
 // rem units change based on 1rem:16px
 
 .link {
-	color: $ignite-color-white;
-	font-size: $ignite-font-size-sm;
+  color: $ignite-color-white;
+  font-size: $ignite-font-size-sm;
 
   &:hover {
     color: $ignite-color-yellow;
@@ -19,10 +19,10 @@
 }
 
 .img-css {
-	width: 6.25rem; 
-	height: 6.25rem;
-	align-self: center;
-	margin: 3.12rem 1.25rem;
+  align-self: center;
+  height: 6rem;
+  margin: 3rem 1rem;
+  width: 6rem;
 }
 
 .social-icon {
@@ -30,7 +30,7 @@
 }
 
 .pd-left {
-	padding-left: 1.37rem;
+  padding-left: 1.5rem;
 }
 
 .footer-bg {
@@ -41,7 +41,7 @@
 	margin-top: 0 !important;
 }
 
-@media only screen and (max-width : 47.9rem) { //767
+@media only screen and (max-width : 767px) {
 	.nav-accordion {
 		.navigation {
 			h5 {
@@ -56,7 +56,7 @@
 		.navigation.open {
 			ul {
 				height: auto;
-				max-height: 31.25rem;
+				max-height: 31.5rem;
 				transition: max-height 1s ease-in !important;
 			}
 		}
