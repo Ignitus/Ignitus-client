@@ -25,10 +25,10 @@ class Signup extends React.Component {
                 <p className="mb-5 ">Let&apos;s get started</p>
                 <p>Help providing opportunities for your students</p>
                 <p>
-                  <a href="/signup/student" className="text-center linkform">
-                    {' '}
+                  <Link to="/signup/student" className="text-center linkform">
+                  {' '}
                     I am a Student
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
