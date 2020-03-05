@@ -10,21 +10,19 @@
 }
 
 .started--container {
-	background-color: #006;
+  background-color: #006;
+  width: 100%;
+  height: 22rem;
+  margin-top: 6.5rem;
+  padding: 3rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-	width: 100%;
-	height: 21.8rem;
-	margin-top: 6.25rem ;
-	padding: 3.12rem 0 6.25rem 0;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-
-	@media (max-width: 51rem) {
+	@media (max-width: 816px) {
 		& {
-			padding-bottom: 0;
+		  padding-bottom: 0;
 		}
 	}
 }
@@ -34,16 +32,15 @@
   font-weight: $ignite-font-weight-normal;
 	color: $ignite-color-white;
 	text-align: center;
+  max-width: 61rem;
 
-	max-width: 61rem;
-
-	@media (max-width: 51rem) {
+	@media (max-width: 816px) {
 		& {
-			padding: 0 1.56rem;
+			padding: 0 1.5rem;
 		}
 	}
 
-	@media (max-width: 28.8rem) {
+	@media (max-width: 462px) {
 		& {
 			font-size: $ignite-font-size-sm !important;
 		}
@@ -52,26 +49,18 @@
 
 .btn {
   &.button-get-started {
-  	margin: 3.12rem 0;
-  	background-color: $ignite-color-white;
-  	color: $ignite-color-blue-20;
-  	text-decoration: none;
-		font-weight: $ignite-font-weight-semibold;
-
-		min-width: 9rem;
-
-		border-radius: 1.3rem;
-
+    background-color: $ignite-color-white;
+    border-radius: 1.5rem;
+    color: $ignite-color-blue-20;
+    font-weight: $ignite-font-weight-semibold;
+    margin: 3rem 0;
+    min-width: 9rem;
+    text-decoration: none;
+    
     &:hover {
     	color: $ignite-color-blue-20 !important;
     	background-color: $ignite-color-yellow;
     	text-decoration: none;
     }
-
-    // empty ruleset
-
-		// &:focus {
-    // }
-    
   }
 }
