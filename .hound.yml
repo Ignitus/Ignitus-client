@@ -5,3 +5,7 @@ eslint:
 javscript:
   enabled: true
   config_file: .jshintrc
+
+  tslint:
+  enabled: true
+  config_file: tsconfig.json
