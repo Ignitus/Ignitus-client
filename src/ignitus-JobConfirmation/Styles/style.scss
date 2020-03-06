@@ -6,7 +6,7 @@
   background-color: #000066;
 }
 .inner-div{
-  padding: 0 30px;
+  padding: 20px 30px;
   font-size: 14px !important;
 }
 .inner-div{
@@ -113,8 +113,123 @@
 .job-content ul li{
   margin: 5px 0;
 }
+.note{
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  font-weight: 600;
+}
 
 // Job Info
+.job-joining-details h5{
+  margin: 0;
+}
+.job-info{
+  padding-bottom: 1em;
+  border-bottom: 1px solid #777777;
+  margin-bottom: 2em;
+}
 .job-info-heading{
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #000666;
+  margin-bottom: 2em;
+
+}
+
+//Form Successful completion card
+.card-outer{
+  position: fixed;
+  background-color: rgba(0,0,0,0.2);
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.card-body{
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 25px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cancelBtn{
+  color: #777777;
+  text-align: right;
+
+}
+.cancelBtn i{
+  cursor: pointer;
+}
+.card-content{
+  text-align: center;
+  color: #000666;
+}
+.card-content {
+  h3{
+    font-weight: 700;
+  }
+  p{
+    margin: 2em 0;
+  }
+}
+.card-links{
+  padding: 30px 10px;
+  position: relative;
+}
+.card-links>div{
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 100px;
+  color:#fff;
+  margin: 0 1em;
+  position: relative;
+  font-size: 1em;
+}
+.social-link i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.fb{
+  background-color: #4e71a8;
   
+}
+.twitter{
+  background-color: #1da1f2;
+}
+.linkedIn{
+  background-color: #04689b;
+}
+
+@media screen and (max-width:"576px")
+{
+    .job-details-outer{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .job-joining-details, .job-detailed-description{
+      flex: 1 1 100%;
+      padding: 10px 0;
+      max-width: 100%;
+    }
+    .inner-div{
+      padding: 0;
+    }
+}
+@media screen and (max-width:"756px"){
+  .job-description{
+    padding: 20px;
+  }
 }
