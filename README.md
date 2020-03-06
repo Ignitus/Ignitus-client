@@ -12,6 +12,9 @@
 
 
 ## About Ignitus
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dda064202e9848deae5c2884aef0ad0f)](https://app.codacy.com/gh/Ignitus/Ignitus-client?utm_source=github.com&utm_medium=referral&utm_content=Ignitus/Ignitus-client&utm_campaign=Badge_Grade_Dashboard)
+
 https://github.com/Ignitus/Ignitus-client/wiki/About 
 
 ## Built with
