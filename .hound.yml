@@ -6,6 +6,6 @@ javscript:
   enabled: true
   config_file: .jshintrc
 
-  tslint:
+tslint:
   enabled: true
   config_file: tsconfig.json
