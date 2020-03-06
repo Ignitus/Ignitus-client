@@ -1,0 +1,120 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-components-common.scss';
+
+.outer-div-1{
+  margin: 0;
+  background-color: #000066;
+}
+.inner-div{
+  padding: 0 30px;
+  font-size: 14px !important;
+}
+.inner-div{
+  h5,h6{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #000666;
+  }
+  p{
+    color: #777777;
+  }
+}
+
+.job-heading{
+  padding-top: 6em;
+  padding-bottom: 3em;
+  color: #fff;
+  text-align: center;
+}
+.job-title{
+  text-transform: capitalize;
+  margin: 1em 0;
+}
+.job-btn button{
+  padding: 10px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #fff;
+    color: #000333;
+    font-weight: bold;
+}
+
+// Job Content
+.outer-div-2{
+  background-color: #f7f7f7;
+}
+.job-description{
+    padding: 20px 100px;
+
+}
+.all-job{
+  margin: 1em 0;
+}
+.all-job button{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding-left: 40px;
+  display: inline-flex;
+  justify-content: center;
+}
+.back-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+}
+.back-icon { 
+  i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+}
+.all-job p{
+  margin: 0;
+}
+.job-details-outer{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 1em;
+}
+.job-detailed-description{
+    flex: 1 1 70%;  
+    max-width: 70%;
+    padding-right: 4em;
+}
+.job-joining-details{
+  flex: 1 1 30%; 
+  max-width: 30%;
+  padding-left: 3em;
+}
+.job-content{
+  margin-bottom: 15px;
+}
+.job-content h5{
+  margin-bottom: 2em;
+}
+.job-content p, .job-content ul{
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.job-content ul h6{
+  font-weight: normal !important ;
+  margin: 0;
+  color:#777777 !important;
+}
+.job-content ul p{
+  margin: 0;
+}
+.job-content ul li{
+  margin: 5px 0;
+}
+
+// Job Info
+.job-info-heading{
+  
+}
