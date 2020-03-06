@@ -1,57 +1,66 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-components-common.scss';
-
-.outer-div-1{
+$base-color: #000066;
+$description-color: #777777;
+$white-bg : #fff;
+$fb-color: #4e71a8;
+$twitter-color: #1da1f2;
+$linkedIn-color: #04689b;
+.outer-div-1 {
   margin: 0;
-  background-color: #000066;
+  background-color: $base-color;
 }
-.inner-div{
+.inner-div {
   padding: 20px 30px;
   font-size: 14px !important;
 }
-.inner-div{
-  h5,h6{
+.inner-div {
+  h5 , h6 {
     font-size: 14px !important;
     font-weight: 700 !important;
-    color: #000666;
+    color: $base-color;
   }
-  p{
-    color: #777777;
+  p {
+    color: $description-color;
   }
 }
 
-.job-heading{
+.job-heading {
   padding-top: 6em;
   padding-bottom: 3em;
-  color: #fff;
+  color: $white-bg;
   text-align: center;
 }
-.job-title{
+
+.job-title {
   text-transform: capitalize;
   margin: 1em 0;
 }
-.job-btn button{
+.job-btn button {
   padding: 10px 25px;
-    border: none;
-    font-size: 18px;
-    border-radius: 10px;
-    background: #fff;
-    color: #000333;
-    font-weight: bold;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  background: $white-bg;
+  color: $base-color;
+  font-weight: bold;
 }
 
 // Job Content
-.outer-div-2{
+
+.outer-div-2 {
   background-color: #f7f7f7;
 }
-.job-description{
-    padding: 20px 100px;
 
+.job-description {
+  padding: 20px 100px;
 }
-.all-job{
+
+.all-job {
   margin: 1em 0;
 }
-.all-job button{
+
+.all-job button {
   background-color: transparent;
   border: none;
   position: relative;
@@ -59,177 +68,219 @@
   display: inline-flex;
   justify-content: center;
 }
-.back-icon{
+
+.back-icon {
   position: absolute;
   left: 0;
   top: 0;
   width: 40px;
   height: 100%;
 }
+
 .back-icon { 
-  i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  i {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
   }
 }
-.all-job p{
+
+.all-job p {
   margin: 0;
 }
-.job-details-outer{
-    display: flex;
-    margin-left: 40px;
-    margin-top: 2em;
+
+.job-details-outer {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 2em;
 }
-.job-detailed-description{
-    flex: 1 1 70%;  
-    max-width: 70%;
-    padding-right: 4em;
+
+.job-detailed-description {
+  flex: 1 1 70%;  
+  max-width: 70%;
+  padding-right: 4em;
 }
-.job-joining-details{
+
+.job-joining-details {
   flex: 1 1 30%; 
   max-width: 30%;
   padding-left: 3em;
 }
-.job-content{
+
+.job-content {
   margin-bottom: 15px;
 }
-.job-content h5{
-  margin-bottom: 2em;
+
+.job-content {
+	
+	h5 {
+		margin-bottom: 2em;
+	}
+
+	p , ul {
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+
+	ul {
+		li {
+			margin: 5px 0;
+		}
+
+		h6 {
+			font-weight: normal !important ;
+			margin: 0;
+			color:$description-color !important;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
 }
-.job-content p, .job-content ul{
-  margin-top: 0;
-  margin-bottom: 2em;
-}
-.job-content ul h6{
-  font-weight: normal !important ;
-  margin: 0;
-  color:#777777 !important;
-}
-.job-content ul p{
-  margin: 0;
-}
-.job-content ul li{
-  margin: 5px 0;
-}
-.note{
+
+.note {
   font-size: 1.2rem;
   color: #4d4d4d;
   font-weight: 600;
 }
 
 // Job Info
-.job-joining-details h5{
+
+.job-joining-details h5 {
   margin: 0;
 }
-.job-info{
+
+.job-info {
   padding-bottom: 1em;
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid $description-color;
   margin-bottom: 2em;
 }
-.job-info-heading{
+
+.job-info-heading {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #000666;
+  color: $base-color;
   margin-bottom: 2em;
 
 }
 
 //Form Successful completion card
-.card-outer{
-  position: fixed;
+
+.card-outer {
+	position: fixed;
   background-color: rgba(0,0,0,0.2);
   top:0;
   left: 0;
   height: 100vh;
   width: 100vw;
 }
-.card-body{
+
+.card-body {
   position: absolute;
   width: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   padding: 25px 30px;
-  background-color: #fff;
+  background-color: $white-bg;
   border-radius: 10px;
 }
-.cancelBtn{
-  color: #777777;
-  text-align: right;
 
+.cancelBtn {
+  color: $description-color;
+  text-align: right;
 }
-.cancelBtn i{
+
+.cancelBtn i {
   cursor: pointer;
 }
-.card-content{
-  text-align: center;
-  color: #000666;
-}
+
 .card-content {
-  h3{
-    font-weight: 700;
-  }
-  p{
-    margin: 2em 0;
-  }
+  text-align: center;
+  color: $base-color;
 }
-.card-links{
+
+.card-content {
+  h3 {
+    font-weight: 700;
+	}
+	
+  p {
+    margin: 2em 0;
+	}
+	
+}
+
+.card-links {
   padding: 30px 10px;
   position: relative;
 }
-.card-links>div{
+
+.card-links > div {
   position: absolute;
   top:0;
   left: 50%;
   transform: translateX(-50%);
 }
-.social-link{
+
+.social-link {
   display: inline-block;
   width: 50px;
   height: 50px;
   cursor: pointer;
   border-radius: 100px;
-  color:#fff;
+  color: $white-bg;
   margin: 0 1em;
   position: relative;
   font-size: 1em;
 }
-.social-link i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+
+.social-link {
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	  transform: translate(-50%,-50%);
+	}
 }
-.fb{
-  background-color: #4e71a8;
-  
+
+.fb {
+  background-color: $fb-color;
 }
-.twitter{
-  background-color: #1da1f2;
+
+.twitter {
+  background-color: $twitter-color;
 }
-.linkedIn{
-  background-color: #04689b;
+
+.linkedIn {
+  background-color: $linkedIn-color;
 }
 
 @media screen and (max-width:"576px")
 {
-    .job-details-outer{
+  .job-details-outer {
       justify-content: center;
       flex-wrap: wrap;
-    }
-    .job-joining-details, .job-detailed-description{
+		}
+		
+  .job-joining-details, .job-detailed-description {
       flex: 1 1 100%;
       padding: 10px 0;
       max-width: 100%;
-    }
-    .inner-div{
+		}
+		
+  .inner-div {
       padding: 0;
-    }
+		}
+		
 }
-@media screen and (max-width:"756px"){
-  .job-description{
+
+@media screen and (max-width:"756px")
+{
+  .job-description {
     padding: 20px;
-  }
+	}
+	
 }
