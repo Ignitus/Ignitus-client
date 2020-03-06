@@ -6,6 +6,7 @@
 import React from 'react';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import '../Styles/style.scss'
+
 class JobConfirmation extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,6 @@ class JobConfirmation extends React.Component {
 
     return (
       <div className="outer-container">
-
         <div className="outer-div-1">
           <div className="inner-div">
             <div className="job-heading">
@@ -25,7 +25,7 @@ class JobConfirmation extends React.Component {
                 Product Design
           </h2>
               <div className="job-btn">
-                <button type="button" onClick={()=> this.setState({apply:true})}>Apply</button>
+                <button type="button" onClick={() => this.setState({ apply: true })}>Apply</button>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ class JobConfirmation extends React.Component {
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <p>We can't wait to meet you.</p>
+                      <p>We can't wait to meet you.</p>
                     </div>
                     <h4 className="note">Please note that all the applications must be filled by form.</h4>
                   </div>
@@ -105,7 +105,7 @@ class JobConfirmation extends React.Component {
                         Contract
                   </h5>
                       <p>
-                       Internship
+                        Internship
                   </p>
                     </div>
                     <div>
@@ -126,12 +126,12 @@ class JobConfirmation extends React.Component {
                     </div>
                   </div>
                   <div className="job-contact">
-                  <h4 className="job-info-heading">
+                    <h4 className="job-info-heading">
                       Contact
                     </h4>
                     <div>
                       <h5>
-                       Recruiter
+                        Recruiter
                     </h5>
                       <p>
                         Name
@@ -139,7 +139,7 @@ class JobConfirmation extends React.Component {
                     </div>
                     <div>
                       <h5>
-                       Email
+                        Email
                     </h5>
                       <p>
                         abc@xyz.com
@@ -152,30 +152,30 @@ class JobConfirmation extends React.Component {
             </div>
           </div>
         </div>
-        {this.state.apply && 
-        <div className="card-outer">
-          <div className="card-body">
-            <div className="card-content">
-              <div className="cancelBtn"><i onClick={()=> this.setState({apply:false})} className="fa fa-times"></i></div>
-              <h3>Thank you for your application!</h3>
-              <p>Its been great to see that you are interest in joining Ignitus.Your application has been received</p>
-              <div className="card-links">
-                <div>
-                <div className="social-link fb">
-                <i className="fab fa-facebook-f"></i>
-                                </div>
-                <div className="social-link twitter">
-                  <i className="fab fa-twitter"></i>
-                </div>
-                <div className="social-link linkedIn">
-                  <i className="fab fa-linkedin"></i>
-                </div>
+        {this.state.apply &&
+          <div className="card-outer">
+            <div className="card-body">
+              <div className="card-content">
+                <div className="cancelBtn"><i onClick={() => this.setState({ apply: false })} className="fa fa-times"></i></div>
+                <h3>Thank you for your application!</h3>
+                <p>Its been great to see that you are interest in joining Ignitus.Your application has been received</p>
+                <div className="card-links">
+                  <div>
+                    <div className="social-link fb">
+                      <i className="fab fa-facebook-f"></i>
+                    </div>
+                    <div className="social-link twitter">
+                      <i className="fab fa-twitter"></i>
+                    </div>
+                    <div className="social-link linkedIn">
+                      <i className="fab fa-linkedin"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-    }
+        }
       </div>
     );
   }
