@@ -3,9 +3,10 @@
 $base-color: #000066;
 $description-color: #777777;
 $white-bg : #fff;
+$main-color: #f7f7f7;
 $fb-color: #4e71a8;
 $twitter-color: #1da1f2;
-$linkedIn-color: #04689b;
+$linkedin-color: #04689b;
 .outer-div-1 {
   margin: 0;
   background-color: $base-color;
@@ -15,7 +16,8 @@ $linkedIn-color: #04689b;
   font-size: 14px !important;
 }
 .inner-div {
-  h5 , h6 {
+	h5,
+	h6 {
     font-size: 14px !important;
     font-weight: 700 !important;
     color: $base-color;
@@ -49,7 +51,7 @@ $linkedIn-color: #04689b;
 // Job Content
 
 .outer-div-2 {
-  background-color: #f7f7f7;
+  background-color: $main-color;
 }
 
 .job-description {
@@ -58,31 +60,27 @@ $linkedIn-color: #04689b;
 
 .all-job {
   margin: 1em 0;
-}
-
-.all-job button {
-  background-color: transparent;
+	button {
+	background-color: transparent;
   border: none;
   position: relative;
   padding-left: 40px;
   display: inline-flex;
   justify-content: center;
-}
-
-.back-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 100%;
+	}
 }
 
 .back-icon { 
-  i {
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%,-50%);
+	left: 0;
+	position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+	i {
+	left: 50%;
+	position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
   }
 }
 
@@ -113,29 +111,25 @@ $linkedIn-color: #04689b;
 }
 
 .job-content {
-	
 	h5 {
-		margin-bottom: 2em;
+	margin-bottom: 2em;
 	}
-
-	p , ul {
-		margin-top: 0;
-		margin-bottom: 2em;
+	p,
+	ul {
+	margin-top: 0;
+	margin-bottom: 2em;
 	}
-
 	ul {
 		li {
-			margin: 5px 0;
+		margin: 5px 0;
 		}
-
 		h6 {
-			font-weight: normal !important ;
-			margin: 0;
-			color:$description-color !important;
+		font-weight: normal !important ;
+		margin: 0;
+		color:$description-color !important;
 		}
-
 		p {
-			margin: 0;
+		margin: 0;
 		}
 	}
 }
@@ -163,38 +157,22 @@ $linkedIn-color: #04689b;
   font-weight: 800;
   color: $base-color;
   margin-bottom: 2em;
-
 }
 
 //Form Successful completion card
 
 .card-outer {
-	position: fixed;
-  background-color: rgba(0,0,0,0.2);
-  top:0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+	position: relative;
+	padding: 10px 0 3em 0;
+	background-color: $main-color;
 }
 
 .card-body {
-  position: absolute;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+	width: 70%;
+	margin: 0 auto;
   padding: 25px 30px;
   background-color: $white-bg;
   border-radius: 10px;
-}
-
-.cancelBtn {
-  color: $description-color;
-  text-align: right;
-}
-
-.cancelBtn i {
-  cursor: pointer;
 }
 
 .card-content {
@@ -204,13 +182,11 @@ $linkedIn-color: #04689b;
 
 .card-content {
   h3 {
-    font-weight: 700;
+  font-weight: 700;
 	}
-	
   p {
-    margin: 2em 0;
+  margin: 2em 0;
 	}
-	
 }
 
 .card-links {
@@ -234,15 +210,12 @@ $linkedIn-color: #04689b;
   color: $white-bg;
   margin: 0 1em;
   position: relative;
-  font-size: 1em;
-}
-
-.social-link {
-  i {
+	font-size: 1em;
+	i {
+		left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-	  transform: translate(-50%,-50%);
+	  transform: translate(-50%, -50%);
 	}
 }
 
@@ -254,27 +227,25 @@ $linkedIn-color: #04689b;
   background-color: $twitter-color;
 }
 
-.linkedIn {
-  background-color: $linkedIn-color;
+.linkedin {
+  background-color: $linkedin-color;
 }
 
 @media screen and (max-width:"576px")
 {
   .job-details-outer {
-      justify-content: center;
-      flex-wrap: wrap;
+		flex-wrap: wrap;
+    justify-content: center;
 		}
-		
-  .job-joining-details, .job-detailed-description {
-      flex: 1 1 100%;
-      padding: 10px 0;
-      max-width: 100%;
+	.job-joining-details, 
+	.job-detailed-description {
+    flex: 1 1 100%;
+    padding: 10px 0;
+    max-width: 100%;
 		}
-		
   .inner-div {
-      padding: 0;
+    padding: 0;
 		}
-		
 }
 
 @media screen and (max-width:"756px")
@@ -282,5 +253,4 @@ $linkedIn-color: #04689b;
   .job-description {
     padding: 20px;
 	}
-	
 }

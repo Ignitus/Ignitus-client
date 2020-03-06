@@ -3,13 +3,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React , {useState} from 'react';
-import {withErrorBoundary} from '../../ignitus-Internals';
+import React from 'react';
+import {withErrorBoundary } from '../../ignitus-Internals';
 import '../Styles/style.scss';
 
 const JobConfirmation = () => {
-		const [apply,setApplyJob] = useState(false);
-    return (
+  return (
       <div className="outer-container">
         <div className="outer-div-1">
           <div className="inner-div">
@@ -18,7 +17,6 @@ const JobConfirmation = () => {
               <div className="job-btn">
                 <button
                   type="button"
-                  onClick={() => setApplyJob(true)}
                 >
                   Apply
                 </button>
@@ -95,7 +93,7 @@ const JobConfirmation = () => {
                         non proident, sunt in culpa qui officia deserunt mollit
                         anim id est laborum.
                       </p>
-                      <p>We can't wait to meet you.</p>
+                      <p>We can&apos;t wait to meet you.</p>
                     </div>
                     <h4 className="note">
                       Please note that all the applications must be filled by
@@ -139,16 +137,9 @@ const JobConfirmation = () => {
             </div>
           </div>
         </div>
-        {apply && (
           <div className="card-outer">
             <div className="card-body">
               <div className="card-content">
-                <div className="cancelBtn">
-                  <i
-                    onClick={() => setApplyJob(false)}
-                    className="fa fa-times"
-                  />
-                </div>
                 <h3>Thank you for your application!</h3>
                 <p>
                   Its been great to see that you are interest in joining
@@ -157,22 +148,21 @@ const JobConfirmation = () => {
                 <div className="card-links">
                   <div>
                     <div className="social-link fb">
-                      <i className="fab fa-facebook-f" />
+                      <i className="fa fa-facebook-f" />
                     </div>
                     <div className="social-link twitter">
-                      <i className="fab fa-twitter" />
+                      <i className="fa fa-twitter" />
                     </div>
-                    <div className="social-link linkedIn">
-                      <i className="fab fa-linkedin" />
+                    <div className="social-link linkedin">
+                      <i className="fa fa-linkedin" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        )}
       </div>
-    );
-}
+  );
+};
 
 export default withErrorBoundary(JobConfirmation);
