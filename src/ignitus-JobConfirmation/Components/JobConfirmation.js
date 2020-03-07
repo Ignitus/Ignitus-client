@@ -145,7 +145,7 @@ const JobConfirmation = () => (
               <div className="social-link twitter">
                 <i className="fa fa-twitter" />
               </div>
-							<div className="social-link reddit">
+              <div className="social-link reddit">
                 <i className="fa fa-reddit-alien" />
               </div>
               <div className="social-link linkedin">
