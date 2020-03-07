@@ -14,11 +14,7 @@ const JobConfirmation = () => (
 				<div className="job-heading">
 					<h2 className="job-title">Product Design</h2>
 					<div className="job-btn">
-						<button
-							type="button"
-						>
-							Apply
-                </button>
+						<button type="button">Apply</button>
 					</div>
 				</div>
 			</div>
@@ -39,15 +35,15 @@ const JobConfirmation = () => (
 							<div className="job-content">
 								<h5>Where Your Expertise is needed</h5>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna
-									aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-									ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									Duis aute irure dolor in reprehenderit in voluptate velit
-									esse cillum dolore eu fugiat nulla pariatur. Excepteur
-									sint occaecat cupidatat non proident, sunt in culpa qui
-									officia deserunt mollit anim id est laborum.
-                    </p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
 								<div className="job-content">
 									<h5>What we are Looking for</h5>
 									<ul>
@@ -68,36 +64,33 @@ const JobConfirmation = () => (
 								<div className="job-content">
 									<h5>Perks of Work</h5>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore
-										magna aliqua. Ut enim ad minim veniam, quis nostrud
-										exercitation ullamco laboris nisi ut aliquip ex ea
-										commodo consequat. Duis aute irure dolor in
-										reprehenderit in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-										non proident, sunt in culpa qui officia deserunt mollit
-										anim id est laborum.
-                      </p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
 								</div>
 								<div className="job-content">
 									<h5>About Ignitus</h5>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore
-										magna aliqua. Ut enim ad minim veniam, quis nostrud
-										exercitation ullamco laboris nisi ut aliquip ex ea
-										commodo consequat. Duis aute irure dolor in
-										reprehenderit in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-										non proident, sunt in culpa qui officia deserunt mollit
-										anim id est laborum.
-                      </p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
 									<p>We can&apos;t wait to meet you.</p>
 								</div>
 								<h4 className="note">
-									Please note that all the applications must be filled by
-									form.
-                    </h4>
+									Please note that all the applications must be filled by form.
+                </h4>
 							</div>
 						</div>
 						<div className="job-joining-details">
@@ -141,9 +134,9 @@ const JobConfirmation = () => (
 				<div className="card-content">
 					<h3>Thank you for your application!</h3>
 					<p>
-						Its been great to see that you are interest in joining
-						Ignitus.Your application has been received
-                </p>
+						Its been great to see that you are interest in joining Ignitus.Your
+            application has been received
+          </p>
 					<div className="card-links">
 						<div>
 							<div className="social-link fb">
