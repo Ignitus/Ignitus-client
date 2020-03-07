@@ -13,7 +13,7 @@ function* signUp(action) {
   const { email, password } = action;
 
   try {
-    const { data } = yield call(api.signUp, email, password);
+    const { data } = yield call(api.studentSignUp, email, password);
     yield put(a.signUpResponse(data));
   } catch (e) {
     yield put(a.signUpResponse(e.response.data));

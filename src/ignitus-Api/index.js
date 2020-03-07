@@ -22,12 +22,20 @@ export async function getTestimonialData() {
   }
 }
 
-export function signUp(email, password) {
+export function studentSignUp(email, password) {
   return axios.post(t.STUDENT_SIGN_UP, { email, password });
 }
 
-export function signIn(email, password) {
+export function studentSignIn(email, password) {
   return axios.post(t.STUDENT_SIGN_IN, { email, password });
+}
+
+export function professorSignUp(email, password) {
+  return axios.post(t.PROFESSOR_SIGN_UP, { email, password });
+}
+
+export function professorSignIn(email, password) {
+  return axios.post(t.PROFESSOR_SIGN_IN, { email, password });
 }
 
 async function getHeaders(name) {

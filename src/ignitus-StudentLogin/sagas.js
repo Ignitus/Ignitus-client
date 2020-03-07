@@ -10,7 +10,7 @@ const {
 function* signIn(action) {
   const { email, password } = action;
   try {
-    const { data } = yield call(api.signIn, email, password);
+    const { data } = yield call(api.studentSignIn, email, password);
     localStorage.setItem('authenticated', true);
     localStorage.setItem('data', JSON.stringify(data.data.clientData));
 
