@@ -7,6 +7,7 @@ $main-color: #f7f7f7;
 $fb-color: #4e71a8;
 $twitter-color: #1da1f2;
 $linkedin-color: #04689b;
+$reddit-color: #ff5706;
 .outer-div-1 {
   margin: 0;
   background-color: $base-color;
@@ -38,6 +39,7 @@ $linkedin-color: #04689b;
   text-transform: capitalize;
   margin: 1em 0;
 }
+
 .job-btn button {
   padding: 10px 25px;
   border: none;
@@ -61,12 +63,12 @@ $linkedin-color: #04689b;
 .all-job {
   margin: 1em 0;
   button {
-  background-color: transparent;
-  border: none;
-  position: relative;
-  padding-left: 40px;
-  display: inline-flex;
-  justify-content: center;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding-left: 40px;
+    display: inline-flex;
+    justify-content: center;
   }
 }
 
@@ -77,10 +79,10 @@ $linkedin-color: #04689b;
   width: 40px;
   height: 100%;
   i {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -111,25 +113,26 @@ $linkedin-color: #04689b;
 }
 
 .job-content {
+
   h5 {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
   }
   p,
   ul {
-  margin-top: 0;
-  margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
   ul {
     li {
-    margin: 5px 0;
+      margin: 5px 0;
     }
     h6 {
-    font-weight: normal !important;
-    margin: 0;
-    color:$description-color !important;
+      font-weight: normal !important;
+      margin: 0;
+      color:$description-color !important;
     }
     p {
-    margin: 0;
+      margin: 0;
     }
   }
 }
@@ -182,23 +185,11 @@ $linkedin-color: #04689b;
 
 .card-content {
   h3 {
-  font-weight: 700;
+    font-weight: 700;
   }
   p {
-  margin: 2em 0;
+    margin: 2em 0;
   }
-}
-
-.card-links {
-  padding: 30px 10px;
-  position: relative;
-}
-
-.card-links > div {
-  position: absolute;
-  top:0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .social-link {
@@ -231,6 +222,10 @@ $linkedin-color: #04689b;
   background-color: $linkedin-color;
 }
 
+.reddit {
+  background-color: $reddit-color;
+}
+
 @media screen and (max-width:"576px")
 {
   .job-details-outer {
@@ -246,6 +241,9 @@ $linkedin-color: #04689b;
   .inner-div {
     padding: 0;
     }
+  .card-body {
+    width: 80%;
+  }  
 }
 
 @media screen and (max-width:"756px")
