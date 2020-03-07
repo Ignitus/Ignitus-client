@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
+import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -12,6 +13,17 @@ export const GithubContributorsContainer = styled(T.Container)`
 
 export const TitleWrapper = styled(T.flexibleColDiv)``;
 export const Section = styled(T.flexibleColDiv)``;
+
+export const GithubContributorsNumber = styled.div`
+	font-size: 1.7rem;
+	margin: 10px 0 20px 0;
+	padding: 0 4rem;
+	color: ${C.IgnitusBlue};
+	i {	
+		font-size: 1rem;
+		margin-right: 3px;
+	}
+`;
 
 export const GithubContributors = styled.div`
   max-width: 80rem;
@@ -66,4 +78,12 @@ export const Avatar = styled(T.Avatar)`
 
 export const Loader = styled(T.flexibleColDiv)`
   margin: 3em;
+`;
+
+export const GithubContributorsLink = styled(T.Link)`
+	display: block;
+	padding: 0.5rem 3rem;
+	font-weight: 300;
+	text-align: right;
+	color: ${C.IgnitusBlue};
 `;
