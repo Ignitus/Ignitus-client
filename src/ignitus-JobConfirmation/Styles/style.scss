@@ -16,8 +16,8 @@ $linkedin-color: #04689b;
   font-size: 14px !important;
 }
 .inner-div {
-	h5,
-	h6 {
+  h5,
+  h6 {
     font-size: 14px !important;
     font-weight: 700 !important;
     color: $base-color;
@@ -60,25 +60,25 @@ $linkedin-color: #04689b;
 
 .all-job {
   margin: 1em 0;
-	button {
-	background-color: transparent;
+  button {
+  background-color: transparent;
   border: none;
   position: relative;
   padding-left: 40px;
   display: inline-flex;
   justify-content: center;
-	}
+  }
 }
 
-.back-icon { 
-	left: 0;
-	position: absolute;
+.back-icon {
+  left: 0;
+  position: absolute;
   top: 0;
   width: 40px;
   height: 100%;
-	i {
-	left: 50%;
-	position: absolute;
+  i {
+  left: 50%;
+  position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
   }
@@ -95,13 +95,13 @@ $linkedin-color: #04689b;
 }
 
 .job-detailed-description {
-  flex: 1 1 70%;  
+  flex: 1 1 70%;
   max-width: 70%;
   padding-right: 4em;
 }
 
 .job-joining-details {
-  flex: 1 1 30%; 
+  flex: 1 1 30%;
   max-width: 30%;
   padding-left: 3em;
 }
@@ -111,27 +111,27 @@ $linkedin-color: #04689b;
 }
 
 .job-content {
-	h5 {
-	margin-bottom: 2em;
-	}
-	p,
-	ul {
-	margin-top: 0;
-	margin-bottom: 2em;
-	}
-	ul {
-		li {
-		margin: 5px 0;
-		}
-		h6 {
-		font-weight: normal !important ;
-		margin: 0;
-		color:$description-color !important;
-		}
-		p {
-		margin: 0;
-		}
-	}
+  h5 {
+  margin-bottom: 2em;
+  }
+  p,
+  ul {
+  margin-top: 0;
+  margin-bottom: 2em;
+  }
+  ul {
+    li {
+    margin: 5px 0;
+    }
+    h6 {
+    font-weight: normal !important;
+    margin: 0;
+    color:$description-color !important;
+    }
+    p {
+    margin: 0;
+    }
+  }
 }
 
 .note {
@@ -162,14 +162,14 @@ $linkedin-color: #04689b;
 //Form Successful completion card
 
 .card-outer {
-	position: relative;
-	padding: 10px 0 3em 0;
-	background-color: $main-color;
+  position: relative;
+  padding: 10px 0 3em 0;
+  background-color: $main-color;
 }
 
 .card-body {
-	width: 70%;
-	margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
   padding: 25px 30px;
   background-color: $white-bg;
   border-radius: 10px;
@@ -183,10 +183,10 @@ $linkedin-color: #04689b;
 .card-content {
   h3 {
   font-weight: 700;
-	}
+  }
   p {
   margin: 2em 0;
-	}
+  }
 }
 
 .card-links {
@@ -210,13 +210,13 @@ $linkedin-color: #04689b;
   color: $white-bg;
   margin: 0 1em;
   position: relative;
-	font-size: 1em;
-	i {
-		left: 50%;
+  font-size: 1em;
+  i {
+    left: 50%;
     position: absolute;
     top: 50%;
-	  transform: translate(-50%, -50%);
-	}
+    transform: translate(-50%, -50%);
+  }
 }
 
 .fb {
@@ -234,23 +234,23 @@ $linkedin-color: #04689b;
 @media screen and (max-width:"576px")
 {
   .job-details-outer {
-		flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-		}
-	.job-joining-details, 
-	.job-detailed-description {
+    }
+  .job-joining-details,
+  .job-detailed-description {
     flex: 1 1 100%;
     padding: 10px 0;
     max-width: 100%;
-		}
+    }
   .inner-div {
     padding: 0;
-		}
+    }
 }
 
 @media screen and (max-width:"756px")
 {
   .job-description {
     padding: 20px;
-	}
+  }
 }
