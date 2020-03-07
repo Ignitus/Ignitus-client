@@ -15,14 +15,14 @@ export const TitleWrapper = styled(T.flexibleColDiv)``;
 export const Section = styled(T.flexibleColDiv)``;
 
 export const GithubContributorsNumber = styled.div`
-	font-size: 1.7rem;
-	margin: 10px 0 20px 0;
-	padding: 0 4rem;
-	color: ${C.IgnitusBlue};
-	i {	
-		font-size: 1rem;
-		margin-right: 3px;
-	}
+  font-size: 1.7rem;
+  margin: 10px 0 20px 0;
+  padding: 0 4rem;
+  color: ${C.IgnitusBlue};
+  i {
+    font-size: 1rem;
+    margin-right: 3px;
+  }
 `;
 
 export const GithubContributors = styled.div`
@@ -81,9 +81,9 @@ export const Loader = styled(T.flexibleColDiv)`
 `;
 
 export const GithubContributorsLink = styled(T.Link)`
-	display: block;
-	padding: 0.5rem 3rem;
-	font-weight: 300;
-	text-align: right;
-	color: ${C.IgnitusBlue};
+  display: block;
+  padding: 0.5rem 3rem;
+  font-weight: 300;
+  text-align: right;
+  color: ${C.IgnitusBlue};
 `;
