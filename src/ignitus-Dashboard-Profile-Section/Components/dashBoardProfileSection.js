@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 import { withStyles } from '@material-ui/core/styles';
-
+//import * as PropTypes from 'prop-types'
 import Card from '@material-ui/core/Card';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
@@ -18,21 +18,45 @@ const styles = () => ({
     boxShadow: '0px 3px 6px rgba(0, 0, 0, 0.1)',
     borderRadius: '16px',
     width: '276px',
+    position: 'absolute',
+    height: '230px',
+    left: '92px',
+    top: '116px',
+
   },
   bigAvatar: {
     width: '89px',
     height: '89px',
     borderRadius: '5px',
     padding: '10px',
+    left: '110px',
+    top: '146px',
+    //background: 'url(PROFILE USER AVATAR.png)',
   },
   icon: {
     color: '#000066',
     margin: '5px',
+    position: 'absolute',
+    width: '24px',
+    height: '24px',
+    left: '105px',
+    top: '272px',
+    //background: 'url(round-turned_in-24px.png)',
   },
   progress: {
     fontFamily: 'Raleway',
-    fontWeight: '500',
+   // fontWeight: '500',
     fontSize: '14px',
+    position: 'absolute',
+    width: '220px',
+    height: '33px',
+    left: '138px',
+    top: '275px',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
+    lineHeight: '16px',
+    color: '#3D3D3D',
+    
   },
   profileName: {
     fontFamily: 'Raleway',
@@ -40,6 +64,13 @@ const styles = () => ({
     color: '#000066',
     fontSize: '18px',
     fontWeight: 'bold',
+    position: 'absolute',
+    width: '132px',
+    height: '22px',
+    left: '211px',
+    top: '146px',
+    fontStyle: 'normal',
+    lineHeight: '21px',
   },
   profileTag: {
     fontFamily: 'Raleway',
@@ -49,6 +80,14 @@ const styles = () => ({
     fontWeight: 500,
     paddingTop: '5px',
     paddingBottom: '5px',
+    position: 'absolute',
+    width: '103px',
+    height: '29px',
+    left: '218px',
+    top: '175',
+    fontStyle: 'normal',
+    lineHeight: '14px',
+
   },
   button: {
     background: '#000066',
@@ -57,11 +96,17 @@ const styles = () => ({
     fontSize: '12px',
     fontWeight: 500,
     textTransform: 'none',
+    position: 'absolute',
+    width: '111px',
+    height: '34px',
+    left: '218',
+    top: '201px', 
   },
 });
 
 const dashBoardProfileSection = (props) => {
-  // eslint-disable-next-line react/prop-types
+  //eslint-disable-next-line react/prop-types
+ 
   const { classes } = props;
   return (
     <Card className={classes.card}>
