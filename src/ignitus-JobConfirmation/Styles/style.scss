@@ -1,0 +1,244 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-components-common.scss';
+$base-color: #000066;
+$description-color: #777777;
+$white-bg: #fff;
+$main-color: #f7f7f7;
+$fb-color: #4e71a8;
+$twitter-color: #1da1f2;
+$linkedin-color: #04689b;
+$reddit-color: #ff5706;
+.outer-div-1 {
+  margin: 0;
+  background-color: $base-color;
+}
+.inner-div {
+  padding: 20px 30px;
+  font-size: 14px;
+}
+.inner-div {
+  h5 {
+    color: $base-color;
+  }
+  h6 {
+    color: $base-color;
+  }
+  p {
+    color: $description-color;
+  }
+}
+
+.job-heading {
+  padding-top: 6em;
+  padding-bottom: 3em;
+  color: $white-bg;
+  text-align: center;
+}
+
+.job-title {
+  text-transform: capitalize;
+  margin: 1em 0;
+}
+
+.job-btn button {
+  padding: 5px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  background: $white-bg;
+  color: $base-color;
+  font-weight: bold;
+}
+
+.outer-div-2 {
+  background-color: $main-color;
+}
+
+.job-description {
+  padding: 20px 100px;
+}
+
+.all-job {
+  margin: 1em 0;
+  button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding-left: 40px;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+.back-icon {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  i {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.all-job p {
+  margin: 0;
+}
+
+.job-details-outer {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 2em;
+}
+
+.job-detailed-description {
+  flex: 1 1 70%;
+  max-width: 70%;
+  padding-right: 4em;
+}
+
+.job-joining-details {
+  flex: 1 1 30%;
+  max-width: 30%;
+  padding-left: 3em;
+}
+
+.job-info-heading-container {
+  margin-bottom: 1em;
+}
+
+.job-content {
+  h5 {
+    margin-bottom: 1em;
+  }
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  ul {
+    li {
+      margin: 5px 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.note {
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+// Job Info
+
+.job-joining-details h5 {
+  margin: 0;
+}
+
+.job-info {
+  padding-bottom: 1em;
+  border-bottom: 1px solid $description-color;
+  margin-bottom: 2em;
+}
+
+.job-info-heading {
+  color: $base-color;
+  margin-bottom: 2em;
+}
+
+//Form Successful completion card
+
+.card-outer {
+  position: relative;
+  padding: 10px 0 3em 0;
+  background-color: $main-color;
+}
+
+.card-body {
+  width: 72.5%;
+  margin: 0 auto;
+  padding: 25px 30px;
+  background-color: $white-bg;
+  border-radius: 10px;
+}
+
+.card-content {
+  text-align: center;
+  color: $base-color;
+}
+
+.card-content {
+  h3 {
+    font-weight: 700;
+  }
+  p {
+    margin: 2em 0;
+  }
+}
+
+.social-link {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 100px;
+  color: $white-bg;
+  margin: 0 1em;
+  position: relative;
+  font-size: 1em;
+  i {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.fb {
+  background-color: $fb-color;
+}
+
+.twitter {
+  background-color: $twitter-color;
+}
+
+.linkedin {
+  background-color: $linkedin-color;
+}
+
+.reddit {
+  background-color: $reddit-color;
+}
+
+@media screen and (max-width: '576px') {
+  .job-details-outer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .job-joining-details,
+  .job-detailed-description {
+    flex: 1 1 100%;
+    padding: 10px 0;
+    max-width: 100%;
+  }
+  .inner-div {
+    padding: 0;
+  }
+  .card-body {
+    width: 80%;
+  }
+  .job-details-outer {
+    margin: 20px;
+    margin-bottom: 0;
+  }
+}

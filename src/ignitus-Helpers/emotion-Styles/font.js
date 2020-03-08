@@ -13,7 +13,7 @@ export const ExtraBold = 900;
 /* Font sizes */
 export const XS = '14px';
 export const SM = '16px';
-export const MD = '22px';
-export const LG = '36px';
-export const XL = '50px';
-export const XXL = '60px';
+export const MD = '18px';
+export const LG = '22px';
+export const XL = '28px';
+export const XXL = '32px';
