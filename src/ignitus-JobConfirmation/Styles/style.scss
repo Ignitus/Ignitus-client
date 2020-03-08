@@ -2,7 +2,7 @@
 @import './src/shared/styles/ignitus-components-common.scss';
 $base-color: #000066;
 $description-color: #777777;
-$white-bg : #fff;
+$white-bg: #fff;
 $main-color: #f7f7f7;
 $fb-color: #4e71a8;
 $twitter-color: #1da1f2;
@@ -14,13 +14,13 @@ $reddit-color: #ff5706;
 }
 .inner-div {
   padding: 20px 30px;
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .inner-div {
-  h5,
+  h5 {
+    color: $base-color;
+  }
   h6 {
-    font-size: 14px !important;
-    font-weight: 700 !important;
     color: $base-color;
   }
   p {
@@ -41,7 +41,7 @@ $reddit-color: #ff5706;
 }
 
 .job-btn button {
-  padding: 10px 25px;
+  padding: 5px 20px;
   border: none;
   font-size: 18px;
   border-radius: 10px;
@@ -49,8 +49,6 @@ $reddit-color: #ff5706;
   color: $base-color;
   font-weight: bold;
 }
-
-// Job Content
 
 .outer-div-2 {
   background-color: $main-color;
@@ -82,7 +80,7 @@ $reddit-color: #ff5706;
     left: 50%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -108,14 +106,13 @@ $reddit-color: #ff5706;
   padding-left: 3em;
 }
 
-.job-content {
-  margin-bottom: 15px;
+.job-info-heading-container {
+  margin-bottom: 1em;
 }
 
 .job-content {
-
   h5 {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   p,
   ul {
@@ -125,11 +122,6 @@ $reddit-color: #ff5706;
   ul {
     li {
       margin: 5px 0;
-    }
-    h6 {
-      font-weight: normal !important;
-      margin: 0;
-      color:$description-color !important;
     }
     p {
       margin: 0;
@@ -156,8 +148,6 @@ $reddit-color: #ff5706;
 }
 
 .job-info-heading {
-  font-size: 1.05rem;
-  font-weight: 800;
   color: $base-color;
   margin-bottom: 2em;
 }
@@ -194,8 +184,8 @@ $reddit-color: #ff5706;
 
 .social-link {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   border-radius: 100px;
   color: $white-bg;
@@ -208,6 +198,10 @@ $reddit-color: #ff5706;
     top: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.social-link:hover {
+  transform: scale(1.2);
 }
 
 .fb {
@@ -226,33 +220,25 @@ $reddit-color: #ff5706;
   background-color: $reddit-color;
 }
 
-@media screen and (max-width:"576px")
-{
+@media screen and (max-width: '576px') {
   .job-details-outer {
     flex-wrap: wrap;
     justify-content: center;
-    }
+  }
   .job-joining-details,
   .job-detailed-description {
     flex: 1 1 100%;
     padding: 10px 0;
     max-width: 100%;
-    }
+  }
   .inner-div {
     padding: 0;
-    }
+  }
   .card-body {
     width: 80%;
   }
   .job-details-outer {
     margin: 20px;
     margin-bottom: 0;
-  }  
-}
-
-@media screen and (max-width:"756px")
-{
-  .job-description {
-    padding: 20px;
   }
 }

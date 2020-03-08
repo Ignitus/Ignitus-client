@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import {withErrorBoundary} from '../../ignitus-Internals';
 import '../Styles/style.scss';
 
 const JobConfirmation = () => (
@@ -48,15 +48,15 @@ const JobConfirmation = () => (
                   <h5>What we are Looking for</h5>
                   <ul>
                     <li>
-                      <h6>Must have -</h6>
+                      <p>Must have -</p>
                       <p>Description of skill set</p>
                     </li>
                     <li>
-                      <h6>Must have -</h6>
+                      <p>Must have -</p>
                       <p>Description of skill set</p>
                     </li>
                     <li>
-                      <h6>Must have -</h6>
+                      <p>Must have -</p>
                       <p>Description of skill set</p>
                     </li>
                   </ul>
@@ -95,32 +95,36 @@ const JobConfirmation = () => (
             </div>
             <div className="job-joining-details">
               <div className="job-info">
-                <h4 className="job-info-heading">Job Info</h4>
+                <div className="job-info-heading-container">
+                  <h5 className="job-info-heading">Job Info</h5>
+                </div>
                 <div>
-                  <h5>Location</h5>
+                  <h6>Location</h6>
                   <p>Pitsburg , New Jersy</p>
                 </div>
                 <div>
-                  <h5>Contract</h5>
+                  <h6>Contract</h6>
                   <p>Internship</p>
                 </div>
                 <div>
-                  <h5>Job Category</h5>
+                  <h6>Job Category</h6>
                   <p>Designer</p>
                 </div>
                 <div>
-                  <h5>Experience Level</h5>
+                  <h6>Experience Level</h6>
                   <p>Beginner, Intermediate, Proficient</p>
                 </div>
               </div>
               <div className="job-contact">
-                <h4 className="job-info-heading">Contact</h4>
+                <div className="job-info-heading-container">
+                  <h5 className="job-info-heading">Contact</h5>
+                </div>
                 <div>
-                  <h5>Recruiter</h5>
+                  <h6>Recruiter</h6>
                   <p>Name</p>
                 </div>
                 <div>
-                  <h5>Email</h5>
+                  <h6>Email</h6>
                   <p>abc@xyz.com</p>
                 </div>
               </div>
