@@ -43,7 +43,7 @@ const Team = ({
     );
   }
 
-  const contributors = presets.map((item: GitHubDataType, index: number) => (
+  const contributors = presets.map((item: GitHubDataType) => (
     <S.Link
       key={item.id}
       target="_blank"
