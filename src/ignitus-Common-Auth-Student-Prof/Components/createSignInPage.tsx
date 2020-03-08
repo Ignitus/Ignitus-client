@@ -4,14 +4,14 @@ import { withErrorBoundary } from '../../ignitus-Internals';
 import * as t from './constants';
 import '../Styles/style.scss';
 
-interface SignInConfig {
+interface Props {
   title: string;
   studentRoute: string;
   professorRoute: string;
 }
 
-function createSignInPage(config: SignInConfig): React.ComponentType {
-  const {title, studentRoute, professorRoute} = config;
+function commonLoginRegister(props: Props): React.ComponentType {
+  const {title, studentRoute, professorRoute} = props;
 
   const SignInPage = () => (
     <div className="col-lg-12 col-sm-12 col-md-12 col-12 container-bg">
@@ -48,18 +48,16 @@ function createSignInPage(config: SignInConfig): React.ComponentType {
     </div>
   );
 
-  SignInPage.displayName = 'SignInPage';
-
   return withErrorBoundary(SignInPage);
 }
 
-export const CommonLoginUI = createSignInPage({
+export const CommonLoginUI = commonLoginRegister({
   title: 'Sign In',
   studentRoute: '/login/student',
   professorRoute: '/login/professor',
 });
 
-export const CommonSignUpUI = createSignInPage({
+export const CommonSignUpUI = commonLoginRegister({
   title: 'Sign Up',
   studentRoute: '/signup/student',
   professorRoute: '/signup/professor',
