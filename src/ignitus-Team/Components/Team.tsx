@@ -4,7 +4,6 @@ import {withErrorBoundary} from '../../ignitus-Internals';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
-import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
