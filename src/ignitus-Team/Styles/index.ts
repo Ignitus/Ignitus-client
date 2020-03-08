@@ -14,15 +14,11 @@ export const GithubContributorsContainer = styled(T.Container)`
 export const TitleWrapper = styled(T.flexibleColDiv)``;
 export const Section = styled(T.flexibleColDiv)``;
 
-export const GithubContributorsNumber = styled.div`
-  font-size: 1.7rem;
-  margin: 10px 0 20px 0;
-  padding: 0 4rem;
-  color: ${C.IgnitusBlue};
+export const GithubContributorsTitle = styled(T.Title)`
   i {
-    font-size: 1rem;
-    margin-right: 3px;
-  }
+	font-size: 1.2rem;
+	margin-right: 3px;
+}
 `;
 
 export const GithubContributors = styled.div`

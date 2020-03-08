@@ -10,15 +10,19 @@ const PureTeam = ({contributors}: any) => (
   <S.Section>
     <S.GithubContributorsContainer>
       <S.TitleWrapper>
-        <T.Title> Our Contributors </T.Title>
+        <S.GithubContributorsTitle>
+          <i className="fa fa-plus" />
+          14 Contributors
+        </S.GithubContributorsTitle>
         <S.Paragraph>
           This project was made possible by these contributors. 🎉 🎨
         </S.Paragraph>
       </S.TitleWrapper>
       <S.GithubContributors>
-				<S.GithubContributorsNumber><i className="fa fa-plus"></i>14 Contributors</S.GithubContributorsNumber>
         <S.Contributors>{contributors}</S.Contributors>
-				<S.GithubContributorsLink href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">View All on Github <i className="fa fa-chevron-right"></i></S.GithubContributorsLink>
+        <S.GithubContributorsLink href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
+          View All on Github <i className="fa fa-chevron-right" />
+        </S.GithubContributorsLink>
       </S.GithubContributors>
     </S.GithubContributorsContainer>
   </S.Section>
@@ -40,10 +44,8 @@ const Team = ({
     );
   }
 
-  const contributors = presets.map((item: GitHubDataType,index: number) => {
-		if (index < 14)
-    return ( 
-		<S.Link
+  const contributors = presets.map((item: GitHubDataType, index: number) => (
+    <S.Link
       key={item.id}
       target="_blank"
       rel="noopener noreferrer"
@@ -54,8 +56,8 @@ const Team = ({
         width="100%"
         alt={`avatar ${item.login}`}
       />
-    </S.Link>)
-	});
+    </S.Link>
+  ));
 
   return <PureTeam contributors={contributors} />;
 };
