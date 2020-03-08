@@ -16,8 +16,8 @@ export const Section = styled(T.flexibleColDiv)``;
 
 export const GithubContributorsTitle = styled(T.Title)`
   i {
-	font-size: 1.2rem;
-	margin-right: 3px;
+  font-size: 1.2rem;
+  margin-right: 3px;
 }
 `;
 
