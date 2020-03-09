@@ -3,8 +3,8 @@
 
 .navigator {
   position: absolute;
-  width: 221px;
-  height: 276px;
+  width: 220px;
+  height: 320px;
   left: 75px;
   top: 145px;
   background: $ignite-color-white;
@@ -20,6 +20,10 @@
 }
 svg {
   margin-right: 25px;
+}
+
+svg g rect {
+  fill: $ignite-color-blue-bg;
 }
 
 .option:hover {

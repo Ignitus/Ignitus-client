@@ -24,16 +24,16 @@
 }
 
 .envelope-color {
-  color: white;
+  color: #ffffff;
 }
 .key-color {
-  color: white;
+  color: #ffffff;
 }
 
 .span-bg {
-  background: #010071 !important;
-  // border-radius: 10px 0px 0px 10px !important;
-  border: 1px solid #010071 !important;
+  background: #010071;
+  // border-radius: 10px 0px 0px 10px ;
+  border: 1px solid #010071;
 }
 
 .or-seperator i {
@@ -45,27 +45,27 @@
 }
 
 .password-border {
-  border-radius: 0px 10px 10px 0px !important;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .email-border {
-  border-radius: 0px 10px 10px 0px !important;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .container-form {
-  background: white;
-  border: 1px solid white;
+  background: #ffffff;
+  border: 1px solid #ffffff;
   // border-radius: 0px 15px 15px 0px;
 }
 
 .button-bg {
-  background: #010071 !important;
-  border-color: #010071 !important;
-  border-radius: 10px !important;
+  background: #010071;
+  border-color: #010071;
+  border-radius: 10px;
 }
 
 .button-bg:hover {
-  background: #060591 !important;
+  background: #060591;
 }
 
 .loader {
@@ -110,13 +110,13 @@
 }
 
 .btn-linkedin {
-  background: #010071 !important;
-  border-color: #010071 !important;
-  border-radius: 10px !important;
+  background: #010071;
+  border-color: #010071;
+  border-radius: 10px;
 }
 
 .btn-linkedin:hover {
-  background: #060591 !important;
+  background: #060591;
 }
 
 .container-bg {
@@ -124,7 +124,7 @@
 }
 
 .margin-Top {
-  margin-top: 15px !important;
+  margin-top: 15px;
 }
 
 .linkform {
@@ -133,7 +133,7 @@
   font-weight: bolder;
 
   &:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
     color: #060591;
   }
 }
@@ -141,16 +141,16 @@
 .alert {
   text-align: center;
   border-radius: 10px;
-  font-weight: lighter !important;
+  font-weight: lighter;
 }
 .alert-danger {
   background-color: rgb(238, 21, 14);
-  color: white;
+  color: #ffffff;
 }
 
 .alert-success {
-  background-color: green;
-  color: white;
+  background-color: #008000;
+  color: #ffffff;
 }
 
 .password-visiblity-icon {
