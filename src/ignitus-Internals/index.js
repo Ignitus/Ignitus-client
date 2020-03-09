@@ -24,7 +24,7 @@ export class ErrorBoundary extends React.Component {
     if (errorInfo) {
       return (
         <div className="container">
-          <h2>Something went wrong.</h2>
+          <h3 style={{textAlign: 'center', marginTop: '40px', color: 'red', fontWeight: 'bold', textTransform: 'uppercase'}}>Something went wrong!</h3>
           <details style={{ whiteSpace: 'pre-wrap' }}>
             {error && error.toString()}
             <br />
