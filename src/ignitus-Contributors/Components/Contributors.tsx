@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Data } from '../constants';
-import { withErrorBoundary } from '../../ignitus-Shared/Components/ErrorBoundary';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
 import * as S from '../Styles';
-import * as T from '../../ignitus-Shared/Components/emotion-Styles/shared';
+import * as T from '../../ignitus-Shared/Components/emotionStyles/shared';
 
 interface Props {
   data: any;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../ignitus-Shared/Components/ErrorBoundary';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
 
 const GetStarted = () => (
   <div className="started--container">

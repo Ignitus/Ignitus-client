@@ -7,7 +7,7 @@ import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
 import * as t from './Constants';
 import loader from '../../../ignitus-Assets/Images/loader2.gif';
-import { withErrorBoundary } from '../ErrorBoundary';
+import { withErrorBoundary } from '../errorBoundary';
 
 const Login = ({
   loginType, tagline, handleSubmit, logInData, state, setState,
