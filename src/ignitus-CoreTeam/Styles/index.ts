@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 type LinkWrapperProps = {
   toggle: boolean;
@@ -54,7 +55,7 @@ export const TeamContainer = styled(T.Container)`
   padding: 0 15px;
 `;
 
-export const TeamItemImg = styled.img`
+export const TeamItemImg = styled(LazyLoadImage)`
   border-radius: 100%;
   width: 6em;
 `;

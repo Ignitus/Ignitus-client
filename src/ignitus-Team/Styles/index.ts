@@ -33,7 +33,7 @@ export const Contributors = styled.div`
 `;
 
 export const Paragraph = styled(T.Paragraph)`
-      text-align: center;Ì
+      text-align: center;
 `;
 
 export const Link = styled(T.Link)`

@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as t from './Constants';
 import { withErrorBoundary } from '../../ignitus-Internals';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import '../Styles/style.scss';
 
 class Signup extends React.Component {
@@ -20,7 +21,7 @@ class Signup extends React.Component {
         <div className="col-lg-8 container-custom p-5">
           <div className="row shadow border-rad">
             <div className="col-md-6 p-0 container-image">
-              <img className="img-fluid img-login d-block" src={t.professorAuth} alt="login" />
+              <LazyLoadImage className="img-fluid img-login d-block" src={t.professorAuth} alt="login" />
               <div className="text-below-image text-center">
                 <p className="mb-5 ">Let&apos;s get started</p>
                 <p>Help providing opportunities for your students</p>
@@ -34,7 +35,7 @@ class Signup extends React.Component {
             </div>
             <div className="col-md-6 container-form">
               <div className="my-4">
-                <img className="img-fluid img mx-auto d-block" src={t.logo} alt="logo" />
+                <LazyLoadImage className="img-fluid img mx-auto d-block" src={t.logo} alt="logo" />
               </div>
               <form>
                 <div className="px-4">

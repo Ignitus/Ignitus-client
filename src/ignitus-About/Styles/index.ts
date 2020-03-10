@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 const breakpoints: number[] = [576, 768, 992, 1200];
 const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
@@ -49,7 +50,7 @@ export const PictureContainer = styled.section`
   flex: 1;
 `;
 
-export const Img = styled.img`
+export const Img = styled(LazyLoadImage)`
   max-width: 100%;
   padding: 3rem;
 `;

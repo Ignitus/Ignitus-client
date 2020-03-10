@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import * as t from './Constants';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Introduction = () => (
   <div className="intro__wrapper">
@@ -40,7 +41,7 @@ const Introduction = () => (
             </button>
           </Link>
         </div>
-        <img className="img-fluid" src={t.resume} alt="resume" />
+        <LazyLoadImage  className="img-fluid" src={t.resume} alt="resume" />
       </div>
     </div>
 

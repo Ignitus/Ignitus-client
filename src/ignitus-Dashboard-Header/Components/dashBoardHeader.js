@@ -8,6 +8,7 @@ import { Redirect, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../ignitus-Assets/Images/nav-logo.svg';
 import { withErrorBoundary } from '../../ignitus-Internals';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class dashBoardHeader extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class dashBoardHeader extends React.Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg whitenav">
           <HashLink className="navbar-brand" to="/#">
-            <img src={logo} width="40" height="40" alt="logo" />
+            <LazyLoadImage src={logo} width="40" height="40" alt="logo" />
           </HashLink>
           <button
             className="navbar-toggler"

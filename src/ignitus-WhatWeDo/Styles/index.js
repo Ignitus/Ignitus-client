@@ -2,6 +2,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Helpers/emotion-Styles/colors';
 import * as F from '../../ignitus-Helpers/emotion-Styles/font';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
@@ -36,7 +37,7 @@ export const Card = styled.div`
   }
 `;
 
-export const CardPicture = styled.img`
+export const CardPicture = styled(LazyLoadImage)`
   max-width: 100%;
   height: 75%;
   object-fit: contain;

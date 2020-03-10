@@ -7,6 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { withErrorBoundary } from '../../ignitus-Internals';
 import { logo } from './Constants';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PureFooter = ({
   hideUnhide, featuresToggle, communityToggle, companyToggle, linkToggle,
@@ -103,7 +104,7 @@ const PureFooter = ({
         <div className="col-md-2 mx-auto pd-left">
           <ul className="list-unstyled">
             <li>
-              <img src={logo} className="img-responsive img-css" alt="logo" />
+                <LazyLoadImage  src={logo} className="img-responsive img-css" alt="logo" />
             </li>
           </ul>
         </div>
