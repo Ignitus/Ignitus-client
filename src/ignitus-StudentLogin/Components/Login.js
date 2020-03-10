@@ -4,9 +4,9 @@
 import React, { useState } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
-import { withErrorBoundary } from '../../ignitus-Internals';
-import SharedLogin from '../../shared/Components/Login/Login';
-import { statePayload } from '../../shared/Components/Login/Constants';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
+import SharedLogin from '../../ignitus-Shared/Components/Login/Login';
+import { statePayload } from '../../ignitus-Shared/Components/Login/Constants';
 
 const Login = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(statePayload);

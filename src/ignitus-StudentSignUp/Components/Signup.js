@@ -8,7 +8,7 @@ import isEmpty from 'lodash/isEmpty';
 import isEqual from 'lodash/isEqual';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 import * as t from './Constants';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
 
 import '../Styles/style.scss';
 
