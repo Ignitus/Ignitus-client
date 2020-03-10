@@ -60,6 +60,9 @@ $reddit-color: #ff5706;
 
 .all-job {
   margin: 1em 0;
+  p {
+    margin: 0;
+  }
   button {
     background-color: transparent;
     border: none;
@@ -76,16 +79,13 @@ $reddit-color: #ff5706;
   top: 0;
   width: 40px;
   height: 100%;
+  
   i {
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.all-job p {
-  margin: 0;
 }
 
 .job-details-outer {
@@ -120,8 +120,8 @@ $reddit-color: #ff5706;
 
   p,
   ul {
-    margin-top: 0;
     margin-bottom: 2em;
+    margin-top: 0;
   }
 
   ul {
@@ -159,37 +159,36 @@ $reddit-color: #ff5706;
 }
 
 .card-body {
-  width: 72.5%;
-  margin: 0 auto;
-  padding: 25px 30px;
   background-color: $white-bg;
   border-radius: 10px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  width: 72.5%;
 }
 
 .card-content {
-  text-align: center;
   color: $base-color;
-}
+  text-align: center;
 
-.card-content {
   h3 {
     font-weight: 700;
   }
+
   p {
     margin: 2em 0;
   }
 }
 
 .social-link {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
   border-radius: 100px;
   color: $white-bg;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block;
+  height: 35px;
   margin: 0 1em;
   position: relative;
-  font-size: 1em;
+  width: 35px;
 
   i {
     left: 50%;
@@ -224,6 +223,7 @@ $reddit-color: #ff5706;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .job-joining-details,
   .job-detailed-description {
     flex: 1 1 100%;
