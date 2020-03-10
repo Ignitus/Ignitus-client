@@ -18,7 +18,7 @@ const defaultOptions =
       <div className="container-404">
       <div className="content">
         <p ><b>Oops!</b></p>
-        <p>We can&apos;t seem to  find the page you were looking for.</p>
+        <p>We can&apos;t seem to  find the page you were looking for&nbsp;</p>
         <p>
           Please check your URL or return&nbsp;
           <Link to="/">
