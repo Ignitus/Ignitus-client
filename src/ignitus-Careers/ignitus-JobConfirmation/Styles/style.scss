@@ -1,5 +1,5 @@
 // import ignitus token variables
-@import './src/shared/styles/ignitus-components-common.scss';
+@import './src/ignitus-shared/styles/ignitus-components-common';
 $base-color: #000066;
 $description-color: #777777;
 $white-bg: #fff;
@@ -8,46 +8,49 @@ $fb-color: #4e71a8;
 $twitter-color: #1da1f2;
 $linkedin-color: #04689b;
 $reddit-color: #ff5706;
+
 .outer-div-1 {
-  margin: 0;
   background-color: $base-color;
+  margin: 0;
 }
+
 .inner-div {
-  padding: 20px 30px;
   font-size: 14px;
-}
-.inner-div {
+  padding: 20px 30px;
+
   h5 {
     color: $base-color;
   }
+
   h6 {
     color: $base-color;
   }
+
   p {
     color: $description-color;
   }
 }
 
 .job-heading {
+  color: $white-bg;
   padding-top: 6em;
   padding-bottom: 3em;
-  color: $white-bg;
   text-align: center;
 }
 
 .job-title {
-  text-transform: capitalize;
   margin: 1em 0;
+  text-transform: capitalize;
 }
 
 .job-btn button {
-  padding: 5px 20px;
-  border: none;
-  font-size: 18px;
-  border-radius: 10px;
   background: $white-bg;
+  border: 0;
+  border-radius: 10px;
   color: $base-color;
+  font-size: 18px;
   font-weight: bold;
+  padding: 5px 20px;
 }
 
 .outer-div-2 {
@@ -60,32 +63,33 @@ $reddit-color: #ff5706;
 
 .all-job {
   margin: 1em 0;
+
+  p {
+    margin: 0;
+  }
   button {
     background-color: transparent;
-    border: none;
-    position: relative;
-    padding-left: 40px;
+    border: 0;
     display: inline-flex;
     justify-content: center;
+    padding-left: 40px;
+    position: relative;
   }
 }
 
 .back-icon {
+  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 40px;
-  height: 100%;
+
   i {
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.all-job p {
-  margin: 0;
 }
 
 .job-details-outer {
@@ -104,6 +108,10 @@ $reddit-color: #ff5706;
   flex: 1 1 30%;
   max-width: 30%;
   padding-left: 3em;
+
+  h5 {
+    margin: 0;
+  }
 }
 
 .job-info-heading-container {
@@ -114,15 +122,18 @@ $reddit-color: #ff5706;
   h5 {
     margin-bottom: 1em;
   }
+
   p,
   ul {
-    margin-top: 0;
     margin-bottom: 2em;
+    margin-top: 0;
   }
+
   ul {
     li {
       margin: 5px 0;
     }
+
     p {
       margin: 0;
     }
@@ -135,16 +146,10 @@ $reddit-color: #ff5706;
   font-weight: 600;
 }
 
-// Job Info
-
-.job-joining-details h5 {
-  margin: 0;
-}
-
 .job-info {
-  padding-bottom: 1em;
   border-bottom: 1px solid $description-color;
   margin-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .job-info-heading {
@@ -152,46 +157,44 @@ $reddit-color: #ff5706;
   margin-bottom: 2em;
 }
 
-//Form Successful completion card
-
 .card-outer {
-  position: relative;
-  padding: 10px 0 3em 0;
   background-color: $main-color;
+  padding: 10px 0 3em 0;
+  position: relative;
 }
 
 .card-body {
-  width: 72.5%;
-  margin: 0 auto;
-  padding: 25px 30px;
   background-color: $white-bg;
   border-radius: 10px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  width: 72.5%;
 }
 
 .card-content {
-  text-align: center;
   color: $base-color;
-}
+  text-align: center;
 
-.card-content {
   h3 {
     font-weight: 700;
   }
+
   p {
     margin: 2em 0;
   }
 }
 
 .social-link {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
   border-radius: 100px;
   color: $white-bg;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  height: 35px;
   margin: 0 1em;
   position: relative;
-  font-size: 1em;
+  width: 35px;
+
   i {
     left: 50%;
     position: absolute;
@@ -225,18 +228,22 @@ $reddit-color: #ff5706;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .job-joining-details,
   .job-detailed-description {
     flex: 1 1 100%;
-    padding: 10px 0;
     max-width: 100%;
+    padding: 10px 0;
   }
+
   .inner-div {
     padding: 0;
   }
+
   .card-body {
     width: 80%;
   }
+
   .job-details-outer {
     margin: 20px;
     margin-bottom: 0;

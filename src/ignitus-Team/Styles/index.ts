@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
+import * as T from '../../ignitus-Shared/Components/emotionStyles/shared';
+import * as C from '../../ignitus-Shared/Components/emotionStyles/colors';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -12,6 +13,13 @@ export const GithubContributorsContainer = styled(T.Container)`
 
 export const TitleWrapper = styled(T.flexibleColDiv)``;
 export const Section = styled(T.flexibleColDiv)``;
+
+export const GithubContributorsTitle = styled(T.Title)`
+  i {
+  font-size: 1.2rem;
+  margin-right: 3px;
+}
+`;
 
 export const GithubContributors = styled.div`
   max-width: 80rem;
@@ -66,4 +74,12 @@ export const Avatar = styled(T.Avatar)`
 
 export const Loader = styled(T.flexibleColDiv)`
   margin: 3em;
+`;
+
+export const GithubContributorsLink = styled(T.Link)`
+  display: block;
+  padding: 0.5rem 3rem;
+  font-weight: 300;
+  text-align: right;
+  color: ${C.IgnitusBlue};
 `;

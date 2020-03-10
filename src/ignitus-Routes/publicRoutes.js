@@ -21,7 +21,7 @@ import loader from "../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
 
 import {Notfound} from './notFound';
-import JobConfirmation  from "../ignitus-JobConfirmation";
+import JobConfirmation  from "../ignitus-Careers/ignitus-JobConfirmation";
 
 // RouteBased CodeSplitting.
 
