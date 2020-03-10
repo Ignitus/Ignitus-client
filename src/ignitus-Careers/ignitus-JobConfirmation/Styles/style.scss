@@ -1,5 +1,5 @@
 // import ignitus token variables
-@import './src/ignitus-shared/styles/ignitus-components-common.scss';
+@import './src/ignitus-shared/styles/ignitus-components-common';
 $base-color: #000066;
 $description-color: #777777;
 $white-bg: #fff;
@@ -10,8 +10,8 @@ $linkedin-color: #04689b;
 $reddit-color: #ff5706;
 
 .outer-div-1 {
-  margin: 0;
   background-color: $base-color;
+  margin: 0;
 }
 
 .inner-div {
@@ -72,8 +72,8 @@ $reddit-color: #ff5706;
     border: 0;
     display: inline-flex;
     justify-content: center;
-    position: relative;
     padding-left: 40px;
+    position: relative;
   }
 }
 
@@ -83,6 +83,7 @@ $reddit-color: #ff5706;
   position: absolute;
   top: 0;
   width: 40px;
+
   i {
     left: 50%;
     position: absolute;
@@ -104,12 +105,13 @@ $reddit-color: #ff5706;
 }
 
 .job-joining-details {
-  h5 {
-    margin: 0;
-  }
   flex: 1 1 30%;
   max-width: 30%;
   padding-left: 3em;
+
+  h5 {
+    margin: 0;
+  }
 }
 
 .job-info-heading-container {
