@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as t from './Constants';
-import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/ErrorBoundary';
 import '../Styles/style.scss';
 
 class Signup extends React.Component {

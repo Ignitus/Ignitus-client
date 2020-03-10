@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
 import React, { useState } from 'react';
-import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
-import { statePayload } from '../../shared/Components/Login/Constants';
-import SharedLogin from '../../shared/Components/Login/Login';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/ErrorBoundary';
+import { statePayload } from '../../ignitus-Shared/Components/Login/Constants';
+import SharedLogin from '../../ignitus-Shared/Components/Login/Login';
 
 const Login = ({ logInRequest, professorLogInData }) => {
   // dummy values

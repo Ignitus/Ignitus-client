@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../Styles';
-import * as T from '../../shared/Components/emotion-Styles/shared';
-import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
+import * as T from '../../ignitus-Shared/Components/emotion-Styles/shared';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/ErrorBoundary';
 import { data } from '../constants';
 
 const WhatWeProvide = () => (
