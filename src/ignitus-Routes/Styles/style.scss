@@ -1,14 +1,11 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-tokens.scss';
-
-
 .container-404 {
     min-height: 60vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-items: auto;
-    
     .animation
     {
       width: 500px;
@@ -18,7 +15,6 @@
       margin: 130px;
       
     }
-
     .content {
         width: 70vw;
         color: $ignite-color-blue-bg;
@@ -28,8 +24,7 @@
         color: {
           
         };
-    
-        p {
+      p {
             // color: blue;
             color: rgb(10, 33, 151);
             font-size: 25px;
@@ -43,9 +38,4 @@
             }
         }
     }
-}
-.lottie
-{
-     width: 400;
-     margin: '0 auto'
 }
