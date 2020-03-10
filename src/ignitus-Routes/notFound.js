@@ -1,4 +1,4 @@
-import React , { Component }from 'react';
+import React from 'react';
 import './Styles/style.scss';
 import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie'
