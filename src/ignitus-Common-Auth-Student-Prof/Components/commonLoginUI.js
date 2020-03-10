@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 import * as t from './Constants';
 import '../Styles/style.scss';
 

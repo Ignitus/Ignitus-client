@@ -3,9 +3,9 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import {Data} from '../constants';
-import {withErrorBoundary} from '../../ignitus-Internals';
+import {withErrorBoundary} from '../../shared/Components/ErrorBoundary';
 import * as S from '../Styles';
-import * as T from '../../ignitus-Helpers/emotion-Styles/shared';
+import * as T from '../../shared/Components/emotion-Styles/shared';
 import {coreTeam, TeamItemProps} from '../types';
 
 const PureCoreTeam = ({team}: any) => (

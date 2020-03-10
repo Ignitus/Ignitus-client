@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
 import React, { useState } from 'react';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 import { statePayload } from '../../shared/Components/Login/Constants';
 import SharedLogin from '../../shared/Components/Login/Login';
 

@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 import SharedLogin from '../../shared/Components/Login/Login';
 import { statePayload } from '../../shared/Components/Login/Constants';
 

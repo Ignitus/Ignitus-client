@@ -4,7 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 
 const Dashboard = () => {
   let email = '';

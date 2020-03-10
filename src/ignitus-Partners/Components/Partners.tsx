@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 import { Data } from '../constants';
 import { PureContributors } from '../../ignitus-Contributors/Components/Contributors';
 

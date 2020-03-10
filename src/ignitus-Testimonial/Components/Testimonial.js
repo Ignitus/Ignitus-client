@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import {
   string, shape, func, arrayOf,
 } from 'prop-types';
-import { withErrorBoundary } from '../../ignitus-Internals';
+import { withErrorBoundary } from '../../shared/Components/ErrorBoundary';
 
 import '../Styles/style.scss';
 
