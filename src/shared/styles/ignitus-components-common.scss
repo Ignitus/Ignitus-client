@@ -24,10 +24,10 @@
 }
 
 .envelope-color {
-  color: #ffffff;
+  color: $ignite-color-white;
 }
 .key-color {
-  color: #ffffff;
+  color: $ignite-color-white;
 }
 
 .span-bg {
@@ -37,24 +37,24 @@
 }
 
 .or-seperator i {
-  padding: 0 10px;
   background: $ignite-color-white;
+  padding: 0 10px;
   position: relative;
   top: -11px;
   z-index: 1;
 }
 
 .password-border {
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
 }
 
 .email-border {
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
 }
 
 .container-form {
-  background: #ffffff;
-  border: 1px solid #ffffff;
+  background: $ignite-color-white;
+  border: 1px solid $ignite-color-white;
   // border-radius: 0px 15px 15px 0px;
 }
 
@@ -84,7 +84,7 @@
 .text-below-image {
   background-color: $ignite-color-blue-97;
   flex-basis: 43%;
-  border: 1px solid #fac76f;
+  border: 1px solid $ignite-color-blue-97;
   // border-radius: 0px 0px 0px 15px;
 }
 
@@ -102,10 +102,10 @@
 }
 
 .container-image {
-  display: flex;
-  flex-direction: column;
   background: $ignite-color-blue-97;
   border: 1px solid #fac76f;
+  display: flex;
+  flex-direction: column;
   // border-radius: 15px 0px 0px 15px;
 }
 
@@ -145,12 +145,12 @@
 }
 .alert-danger {
   background-color: rgb(238, 21, 14);
-  color: #ffffff;
+  color: $ignite-color-white;
 }
 
 .alert-success {
-  background-color: #008000;
-  color: #ffffff;
+  background-color: $ignite-color-green;
+  color: $ignite-color-white;
 }
 
 .password-visiblity-icon {
