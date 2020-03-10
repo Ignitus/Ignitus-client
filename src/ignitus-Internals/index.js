@@ -24,15 +24,21 @@ export class ErrorBoundary extends React.Component {
     if (errorInfo) {
       return (
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginTop: '40px', color: '#000066' }} >
+          <h2 style={{ 
+            textAlign: 'center', marginTop: '40px', color: '#000066' 
+        }}>
             Unable to load the contributors!
           </h2>
-          <h5 style={{ textAlign: 'center', marginTop: '20px' }} >
+          <h5 style={{ 
+            textAlign: 'center', marginTop: '20px' 
+            }}>
             This can happen if you are not connected to internet or if and underlying
             <br />
             system or component is not available
           </h5>
-          <details style={{ whiteSpace: 'pre-wrap', textAlign: 'center', fontSize: '15px', marginBottom: '20px', paddingLeft: '210px', paddingRight: '210px' }} >
+          <details style={{ 
+            whiteSpace: 'pre-wrap', textAlign: 'center', fontSize: '15px', marginBottom: '20px', paddingLeft: '210px', paddingRight: '210px' 
+            }}>
             {error && error.toString()}
             <br />
             {errorInfo.componentStack}
