@@ -8,46 +8,49 @@ $fb-color: #4e71a8;
 $twitter-color: #1da1f2;
 $linkedin-color: #04689b;
 $reddit-color: #ff5706;
+
 .outer-div-1 {
   margin: 0;
   background-color: $base-color;
 }
+
 .inner-div {
-  padding: 20px 30px;
   font-size: 14px;
-}
-.inner-div {
+  padding: 20px 30px;
+
   h5 {
     color: $base-color;
   }
+
   h6 {
     color: $base-color;
   }
+
   p {
     color: $description-color;
   }
 }
 
 .job-heading {
+  color: $white-bg;
   padding-top: 6em;
   padding-bottom: 3em;
-  color: $white-bg;
   text-align: center;
 }
 
 .job-title {
-  text-transform: capitalize;
   margin: 1em 0;
+  text-transform: capitalize;
 }
 
 .job-btn button {
-  padding: 5px 20px;
-  border: none;
-  font-size: 18px;
-  border-radius: 10px;
   background: $white-bg;
+  border: 0;
+  border-radius: 10px;
   color: $base-color;
+  font-size: 18px;
   font-weight: bold;
+  padding: 5px 20px;
 }
 
 .outer-div-2 {
@@ -60,26 +63,26 @@ $reddit-color: #ff5706;
 
 .all-job {
   margin: 1em 0;
+
   p {
     margin: 0;
   }
   button {
     background-color: transparent;
-    border: none;
-    position: relative;
-    padding-left: 40px;
+    border: 0;
     display: inline-flex;
     justify-content: center;
+    position: relative;
+    padding-left: 40px;
   }
 }
 
 .back-icon {
+  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 40px;
-  height: 100%;
-  
   i {
     left: 50%;
     position: absolute;
@@ -183,8 +186,8 @@ $reddit-color: #ff5706;
   border-radius: 100px;
   color: $white-bg;
   cursor: pointer;
-  font-size: 1em;
   display: inline-block;
+  font-size: 1em;
   height: 35px;
   margin: 0 1em;
   position: relative;
