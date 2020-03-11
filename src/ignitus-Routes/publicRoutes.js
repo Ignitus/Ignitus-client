@@ -10,10 +10,10 @@ import Testimonial from "../ignitus-Testimonial";
 import WhatWeProvide from "../ignitus-WhatWeDo";
 import Partner from "../ignitus-Partners";
 
-import LoginProfessor from "../ignitus-ProfessorLogin";
-import SignupProfessor from "../ignitus-ProfessorSignUp";
-import LoginStudent from "../ignitus-StudentLogin";
-import SignupStudent from "../ignitus-StudentSignUp";
+import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";
+import SignupProfessor from "../ignitus-Authentication/ignitus-ProfessorSignUp";
+import LoginStudent from "../ignitus-Authentication/ignitus-StudentLogin";
+import SignupStudent from "../ignitus-Authentication/ignitus-StudentSignUp";
 import { CommonLoginUI, CommonSignUpUI } from "../ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
 
 import loader from "../ignitus-Assets/Images/loader2.gif";
