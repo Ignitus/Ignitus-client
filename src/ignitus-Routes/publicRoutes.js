@@ -7,7 +7,7 @@ import Contributors from "../ignitus-HomePage/ignitus-Contributors";
 import GetStarted from "../ignitus-HomePage/ignitus-GetStarted";
 import Introduction from "../ignitus-HomePage/ignitus-Introduction";
 import Testimonial from "../ignitus-HomePage/ignitus-Testimonial";
-import WhatWeProvide from "../ignitus-WhatWeDo";
+import WhatWeProvide from "../ignitus-HomePage/ignitus-WhatWeDo";
 import Partner from "../ignitus-HomePage/ignitus-Partners";
 
 import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";

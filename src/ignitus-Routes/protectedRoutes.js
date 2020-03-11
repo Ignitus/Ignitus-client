@@ -5,8 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import { Notfound } from './notFound';
 import PrivateRoute from './privateRoute';
-import Dashboard from '../ignitus-Student-Dashboard';
-import dashBoardHeader from '../ignitus-Dashboard-Header';
+import Dashboard from '../ignitus-Dashboard/ignitus-Student-Dashboard';
+import dashBoardHeader from '../ignitus-Dashboard/ignitus-Dashboard-Header';
 
 // eslint-disable-next-line import/prefer-default-export
 export const ProtectedRoutes = () => (

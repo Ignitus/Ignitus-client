@@ -3,8 +3,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
-import SideNavigation from '../../ignitus-Shared/Components/Dashboard/SideNavigation';
+import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
+import SideNavigation from '../../../ignitus-Shared/Components/Dashboard/SideNavigation';
 
 const Dashboard = () => {
   let email = '';
