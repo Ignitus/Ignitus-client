@@ -48,3 +48,4 @@ A pluggable and configurable linter tool for identifying and reporting on patter
  ``` npm run lint:fix ```
  
  
+**IMP:** Please don't commit your ```package-lock.json``` until & unless you are not adding a new package.
