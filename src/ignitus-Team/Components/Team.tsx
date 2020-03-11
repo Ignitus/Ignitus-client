@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useEffect} from 'react';
-import {withErrorBoundary} from '../../ignitus-Internals';
+import {withErrorBoundary} from '../../ignitus-Shared/Components/errorBoundary';
 import loader from '../../ignitus-Assets/Images/loader2.gif';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
