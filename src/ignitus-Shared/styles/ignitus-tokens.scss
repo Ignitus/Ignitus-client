@@ -1,0 +1,89 @@
+//Shared Ignitus design tokens/reusable variables
+//namespaced as 'ignite-'.
+
+//Colors
+// The number at the end of the color variable names are derived
+// from the 'l' lightness from the color's HSL value
+
+// black/white
+$ignite-color-white: #ffffff;
+$ignite-color-gray-10: #e0e0e0;
+$ignite-color-gray-12: #c4c4c4;
+$ignite-color-gray-15: #9c9c9c;
+$ignite-color-gray-18: #4d4d4d;
+$ignite-color-gray-20: #3d3d3d;
+$ignite-color-black-20: #2d2d2d;
+$ignite-color-black: #000000;
+
+// neutral
+$ignite-color-neutral-6: #111111;
+$ignite-color-neutral-22: #343a40;
+$ignite-color-neutral-50: #808080;
+$ignite-color-neutral-53: #888888;
+$ignite-color-neutral-60: #999999;
+$ignite-color-neutral-80: #cccccc;
+$ignite-color-neutral-85: #d9d9d9;
+$ignite-color-neutral-95: #f3f3f2;
+$ignite-color-neutral-97: #f7f7f7;
+
+// blue
+$ignite-color-blue-20: #000e8c;
+$ignite-color-blue-36: #0275b6;
+$ignite-color-blue-24: #192b65;
+$ignite-color-blue-97: #fac76f;
+$ignite-color-blue-bg: #000066;
+
+// red
+$ignite-color-red-47: #c52e32;
+$ignite-color-red-50: #ff4444;
+
+// green
+$ignite-color-green: #008000;
+$ignite-color-green-40: #28a745;
+
+//yellow
+$ignite-color-yellow: #f9bf64;
+
+//Abstract color values to meaningful, semantic names
+// background colors
+$ignite-background-color-white: $ignite-color-white;
+$ignite-background-color-light: $ignite-color-neutral-97;
+$ignite-body-background: #e5e5e5;
+
+//secondary background
+$ignite-background-color-secondary: $ignite-color-yellow;
+
+// text colors
+$ignite-text-color-default: $ignite-color-black-20;
+$ignite-text-color-brand: $ignite-color-blue-bg;
+$ignite-text-color-heading: $ignite-color-blue-20;
+
+//notification colors
+$ignite-notification: $ignite-color-red-50;
+
+// border colors
+$ignite-border-color-default: $ignite-color-black;
+
+// border
+$ignite-border-default: 1px solid $ignite-border-color-default;
+
+//Font
+// font family
+$ignite-font-family-default: 'Raleway', sans-serif;
+$ignite-font-family-secondry: 'Open Sans', sans-serif;
+
+// font weight
+$ignite-font-weight-light: 300;
+$ignite-font-weight-normal: 400;
+$ignite-font-weight-medium: 500;
+$ignite-font-weight-semibold: 600;
+$ignite-font-weight-bold: 700;
+$ignite-font-weight-extra-bold: 800;
+
+// font size
+$ignite-font-size-xs: 14px;
+$ignite-font-size-sm: 16px;
+$ignite-font-size-md: 22px;
+$ignite-font-size-lg: 36px;
+$ignite-font-size-xl: 50px;
+$ignite-font-size-xxl: 60px;
