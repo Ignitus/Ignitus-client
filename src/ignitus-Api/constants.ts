@@ -6,7 +6,7 @@ export const STUDENT_SIGN_IN = `${BASE_URL}/login`;
 
 export const FRONTEND_CONTRIBUTOR_API = 'https://api.github.com/repos/Ignitus/Ignitus-Client-Side-Development/contributors?per_page=14';
 
-export const BACKEND_CONTRIBUTOR_API = 'https://api.github.com/repos/Ignitus/Ignitus-rest-api/contributors';
+export const BACKEND_CONTRIBUTOR_API = 'https://api.github.com/repos/Ignitus/Ignitus-rest-api/';
 
 export const CONTRIBUTORS_STORE = 'contributors';
 export const TESTIMONIALS_STORE = 'testimonials';
