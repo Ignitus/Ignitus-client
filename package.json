@@ -1,6 +1,6 @@
 {
   "name": "ignitus-client-side-development",
-  "version": "3.0.0",
+  "version": "5.0.0",
   "private": true,
   "engines": {
     "node": "8.16.2"
