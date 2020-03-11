@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
@@ -26,7 +27,7 @@ class Signup extends React.Component {
                 <p>Help providing opportunities for your students</p>
                 <p>
                   <Link to="/signup/student" className="text-center linkform">
-                  {' '}
+                    {' '}
                     I am a Student
                   </Link>
                 </p>

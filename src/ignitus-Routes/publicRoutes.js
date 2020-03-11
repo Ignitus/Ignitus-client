@@ -14,7 +14,7 @@ import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";
 import SignupProfessor from "../ignitus-Authentication/ignitus-ProfessorSignUp";
 import LoginStudent from "../ignitus-Authentication/ignitus-StudentLogin";
 import SignupStudent from "../ignitus-Authentication/ignitus-StudentSignUp";
-import { CommonLoginUI, CommonSignUpUI } from "../ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
+import { CommonLoginUI, CommonSignUpUI } from "../ignitus-Authentication/ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
 
 import loader from "../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
@@ -75,6 +75,7 @@ export const PublicRoutes = props => {
         />
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
+        <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
         <Route
           path="/"
           component={Notfound}

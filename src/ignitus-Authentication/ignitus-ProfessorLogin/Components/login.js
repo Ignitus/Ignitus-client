@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
@@ -6,21 +7,17 @@ import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBound
 import { statePayload } from '../../../ignitus-Shared/Components/Login/Constants';
 import SharedLogin from '../../../ignitus-Shared/Components/Login/Login';
 
-const Login = ({ logInRequest, professorLogInData }) => {
-  // dummy values
-  logInRequest = () => {};
-  professorLogInData = {
+const Login = () => {
+  // Dummy Implementation.
+  const professorLogInData = {
     isFetching: false,
     message: '',
     success: false,
   };
-  // remove above dummy values once implemented
-
   const [state, setState] = useState(statePayload);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // professor login logic here
   };
 
   return (
