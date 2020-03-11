@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import testimonial from './ignitus-Testimonial';
+import testimonial from './ignitus-HomePage/ignitus-Testimonial';
 import studentSignUp from './ignitus-Authentication/ignitus-StudentSignUp';
 import studentLogin from './ignitus-Authentication/ignitus-StudentLogin';
 import contributors from './ignitus-Team';
