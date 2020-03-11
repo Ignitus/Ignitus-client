@@ -33,7 +33,7 @@ export class ErrorBoundary extends React.Component {
             <br />
             system or component is not available
           </h5>
-          <details style={{ whiteSpace: 'pre-wrap', fontSize: '15px', marginBottom: '4em', marginRight: '530px', marginLeft: '220px'}}>
+          <details style={{ whiteSpace: 'pre-wrap', fontSize: '15px', marginBottom: '4em', marginRight: '530px', marginLeft: '220px' }}>
             {error && error.toString()}
             <br />
             {errorInfo.componentStack}
