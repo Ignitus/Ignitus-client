@@ -3,13 +3,13 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import '../Styles/style.scss';
-import {withErrorBoundary} from '../../ignitus-Internals';
-import SideNavigation from '../../shared/Components/Dashboard/SideNavigation';
+import { withErrorBoundary } from '../../ignitus-Shared/Components/errorBoundary';
+import SideNavigation from '../../ignitus-Shared/Components/Dashboard/SideNavigation';
 
 const Dashboard = () => {
   let email = '';
   if (localStorage.getItem('data')) {
-    ({email} = JSON.parse(localStorage.getItem('data')));
+    ({ email } = JSON.parse(localStorage.getItem('data')));
   }
   return (
     <div className="container marginTop dashboard-container">
@@ -17,7 +17,9 @@ const Dashboard = () => {
         <SideNavigation />
       </div>
       <div className="left-section">
-        Hello {email}
+        Hello
+        {' '}
+        { email }
         👋
       </div>
     </div>

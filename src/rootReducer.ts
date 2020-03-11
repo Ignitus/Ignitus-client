@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import testimonial from './ignitus-Testimonial';
-import studentSignUp from './ignitus-StudentSignUp';
-import studentLogin from './ignitus-StudentLogin';
+import studentSignUp from './ignitus-Authentication/ignitus-StudentSignUp';
+import studentLogin from './ignitus-Authentication/ignitus-StudentLogin';
 import contributors from './ignitus-Team';
 
 
