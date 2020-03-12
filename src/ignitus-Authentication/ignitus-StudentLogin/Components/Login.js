@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
-import SharedLogin from '../../../ignitus-Shared/Components/AuthenticationComponents/Login/Login';
-import { statePayload } from '../../../ignitus-Shared/Components/AuthenticationComponents/Login/Constants';
+import SharedLogin from '../../../ignitus-Shared/Components/ignitus-AuthenticationComponents/Login/Login';
+import { statePayload } from '../../../ignitus-Shared/Components/ignitus-AuthenticationComponents/Login/Constants';
 
 const Login = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(statePayload);

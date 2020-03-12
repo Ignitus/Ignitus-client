@@ -4,12 +4,12 @@
 import React from 'react';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
-import SideNavigation from '../../../ignitus-Shared/Components/DashBoardComponents/DashboardSideNavigation/SideNavigation';
+import SideNavigation from '../../../ignitus-Shared/Components/ignitus-DashBoardComponents/DashboardSideNavigation/SideNavigation';
 
 const Dashboard = () => {
   let email = '';
   if (localStorage.getItem('data')) {
-    ({ email } = JSON.parse(localStorage.getItem('data')));
+    ({ email } = JSON.parse(localStorage.ge0tItem('data')));
   }
   return (
     <div className="container marginTop dashboard-container">
