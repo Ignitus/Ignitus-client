@@ -3,10 +3,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Notfound } from './notFound';
-import PrivateRoute from './privateRoute';
-import Dashboard from '../ignitus-Dashboard/ignitus-Student-Dashboard';
-import dashBoardHeader from '../ignitus-Dashboard/ignitus-Dashboard-Header';
+import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
+import PrivateRoute from '../privateRoutes';
+import Dashboard from '../../ignitus-Dashboard/ignitus-Student-Dashboard';
+import dashBoardHeader from '../../ignitus-Dashboard/ignitus-Dashboard-Header';
 
 // eslint-disable-next-line import/prefer-default-export
 export const ProtectedRoutes = () => (
