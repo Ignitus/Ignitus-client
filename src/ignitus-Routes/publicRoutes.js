@@ -33,7 +33,7 @@ const Loading = () => (
 );
 
 const AboutUs = Loadable({
-  loader: () => import("../ignitus-About/Components/About"),
+  loader: () => import("../ignitus-AboutPage/ignitus-About/Components/About"),
   loading: Loading
 });
 

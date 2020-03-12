@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react';
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-import {withErrorBoundary} from '../../ignitus-Shared/Components/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared/Components/errorBoundary';
 import * as t from '../constants';
 import * as S from '../Styles';
-import * as T from '../../ignitus-Shared/Components/emotionStyles/shared';
+import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
 
 const About = () => (
   <Fragment>
