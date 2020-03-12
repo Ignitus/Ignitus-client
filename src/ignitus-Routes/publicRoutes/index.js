@@ -19,7 +19,7 @@ import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/igni
 import loader from "../../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
 
-import { Notfound } from '../../ignitus-Shared/Components/NotFoundComponent/notFound';
+import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 
 // RouteBased CodeSplitting.
