@@ -9,7 +9,7 @@ import SideNavigation from '../../../ignitus-Shared/Components/ignitus-DashBoard
 const Dashboard = () => {
   let email = '';
   if (localStorage.getItem('data')) {
-    ({ email } = JSON.parse(localStorage.ge0tItem('data')));
+    ({ email } = JSON.parse(localStorage.getItem('data')));
   }
   return (
     <div className="container marginTop dashboard-container">
