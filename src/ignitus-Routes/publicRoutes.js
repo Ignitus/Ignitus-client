@@ -3,12 +3,12 @@ import { Switch, Route } from "react-router-dom";
 import Navigation from "../ignitus-Navigation";
 import Footer from "../ignitus-Footer";
 
-import Contributors from "../ignitus-Contributors";
-import GetStarted from "../ignitus-GetStarted";
-import Introduction from "../ignitus-Introduction";
-import Testimonial from "../ignitus-Testimonial";
-import WhatWeProvide from "../ignitus-WhatWeDo";
-import Partner from "../ignitus-Partners";
+import Contributors from "../ignitus-HomePage/ignitus-Contributors";
+import GetStarted from "../ignitus-HomePage/ignitus-GetStarted";
+import Introduction from "../ignitus-HomePage/ignitus-Introduction";
+import Testimonial from "../ignitus-HomePage/ignitus-Testimonial";
+import WhatWeProvide from "../ignitus-HomePage/ignitus-WhatWeDo";
+import Partner from "../ignitus-HomePage/ignitus-Partners";
 
 import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";
 import SignupProfessor from "../ignitus-Authentication/ignitus-ProfessorSignUp";
@@ -33,7 +33,7 @@ const Loading = () => (
 );
 
 const AboutUs = Loadable({
-  loader: () => import("../ignitus-About/Components/About"),
+  loader: () => import("../ignitus-AboutPage/ignitus-About/Components/About"),
   loading: Loading
 });
 
