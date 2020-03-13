@@ -4,28 +4,17 @@
     min-height: 60vh;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: auto;
-    .animation
-    {
-      width: 500px;
-      height: 400px;
-      justify-content: center;
-      align-items: center;
-      margin: 130px;
-      
-    }
+
     .content {
         width: 70vw;
         color: $ignite-color-blue-bg;
-        justify-content: center;
-        align-items: center;
-        margin: 130px;
-      p {
-            // color: blue;
-            color: rgb(10, 33, 151);
-            font-size: 25px;
-          a {
+    
+        p {
+            color: blue;
+    
+            a {
                 color: inherit;
                 text-decoration: underline;
             }
