@@ -1,8 +1,6 @@
 ### Contributing.
 
-**IMP:** Please create a new branch from ```develop``` not from ```master```, and also create a pull request to ```develop``` not to ```master```. 
-
-1. Create your **branch**: ```git checkout -b my-new-feature```
+ 1. Create your **branch**: ```git checkout -b my-new-feature```
 
 2. **Commit** your changes: ```git commit -m 'Add some feature'```
 
@@ -48,4 +46,8 @@ A pluggable and configurable linter tool for identifying and reporting on patter
  ``` npm run lint:fix ```
  
  
-**IMP:** Please don't commit your ```package-lock.json``` until & unless you are not adding a new package.
+**IMP:** 
+
+* Please don't commit your ```package-lock.json``` until & unless you are not adding a new package.
+* Please create a new branch from ```develop``` not from ```master```, and also create a pull request to ```develop``` not to ```master```.
+* If you get any err similar to this ``` Node Sass could not find a binding for your current environment. ``` try switching node version to      ``` v8.16.2 ```.
