@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -43,13 +44,13 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
         {testimonialData.length > 0 && (
           <div className="carousel-content">
             <p className="testimonial-text">
-              {testimonialData[currentIndex].content}
+              {testimonialData[currentIndex].description}
             </p>
             <p className="name">
               {testimonialData[currentIndex].author}
             </p>
             <p className="designation">
-              {testimonialData[currentIndex].source}
+              {testimonialData[currentIndex].authorDesignation}
             </p>
           </div>
         )}
