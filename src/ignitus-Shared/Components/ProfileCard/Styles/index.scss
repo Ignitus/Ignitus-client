@@ -1,3 +1,6 @@
+$base-color: #000066;
+$white-bg: #fff;
+
 .list-item {
   padding: 2em 1em;
   display: flex;
@@ -5,7 +8,7 @@
   box-shadow: 0 2px 5px 5px rgba(0,0,0,0.1);
   border-radius: 10px;
   position: relative;
-  background-color: #fff;
+  background-color: $white-bg;
   color: #000066;
 }
 
@@ -42,7 +45,7 @@
 }
 
 .profile-details-heading {
-  color: #000066;
+  color: $base-color;
   font-weight: 700;
 }
 
@@ -76,7 +79,7 @@
     color: #000066;
     font-size: 2.5em;
     right: 0;
-    background-color: #fff;
+    background-color: $white-bg;
  }
 }
 
@@ -84,7 +87,7 @@
   text-align: left;
   margin: 1em 0;
   i {
-    color: #000066;
+    color: $base-color;
     font-size: 2em;
     margin: 0 2em 0 0;
   }
@@ -123,7 +126,7 @@
 }
 
 .custom-dropdown-btn {
-  color: #000066;
+  color: $base-color;
   width: fit-content;
   display: inline-block;
   cursor: pointer;
@@ -145,19 +148,20 @@
   left: 0;
   border-radius: 10px 0 10px 0;
   box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
-  background-color: #fff;
-  color: #000066;
+  background-color: $white-bg;
+  color: $base-color;
   display: none;
   &:hover {
     display: block;
   }
   li {
-    width: 200px;
-    padding: 0.5em 1em;
+		padding: 0.5em 1em;
     font-size: 14px;
+		width: 200px;
+		
     &:hover {
-      color: #fff;
-      background-color: #000066;
+      color: $white-bg;
+      background-color: $base-color;
       cursor: pointer;
     }
   }

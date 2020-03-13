@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
-import {withErrorBoundary} from '../errorBoundary';
-// import loader from '../../ignitus-Assets/Images/loader2.gif';
-// import * as S from './Styles';
+import { withErrorBoundary } from '../errorBoundary';
 import './Styles/index.scss';
 import DropDownButton from './DropDownButton';
 
@@ -16,14 +14,14 @@ export const SocialIcons = () => (
 );
 
 export const ProfileCard = () => (
-  <ul style={{margin: '150px 60px'}}>
+  <ul style={ { margin: '150px 60px' } }>
     <li className="list-item">
       <div className="profile-details">
         <div className="avatar-div">
           <img
             className="profile-avatar"
             src={require('./dummy_image.png')}
-            alt="image"
+            alt="profile-avatar"
           />
         </div>
         <div className="description">
