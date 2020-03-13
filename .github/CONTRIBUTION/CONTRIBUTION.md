@@ -16,11 +16,11 @@
 
 1. Fork the repository.
 
-    ``` https://github.com/your_username/Ignitus-client.git ```
+    ``` https://github.com/Ignitus/Ignitus-client.git ```
 
 2. Clone the repository.
 
-    ``` git clone https://github.com/Ignitus/Ignitus-client.git ```
+    ``` git clone https://github.com/your_username/Ignitus-client.git ```
 
 3. Cd into that root folder you just cloned locally.
 
