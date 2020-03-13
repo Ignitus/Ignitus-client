@@ -1,141 +1,164 @@
 .list-item {
-	padding: 2em 1em;
-	display: flex;
-	flex-wrap: wrap;
-	box-shadow: 0 2px 5px 5px rgba(0,0,0,0.1);
-	border-radius: 10px;
-	position: relative;
-	background-color: #fff;
-	color: #000066;
+  padding: 2em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  color: #000066;
 }
-.profile-details {
-	padding-left: 150px;
-	padding-top: 20px;
-	flex-basis: 50%;
-	max-width: 50%;
-	position: relative;
-	p,
-	h6 {
-		color: #000066;
-	}
-}
-.avatar-div {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	margin-right: 20px;
-	width: 150px;
-}
-.profile-avatar{
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 120px;
-	height: 120px;
-	object-fit: cover;
-	border-radius: 10px;
-}
-.profile-details-heading {
-	color: #000066;
-	font-weight: 700;
-}
-.description{
-	margin-left: 15px;
-}
-.profile-contact{
-	flex-basis: 50%;
-	padding-left: 30px;
-}
-.contact-mode {
-	color: #000066;
-}
-.track-person {
- position: absolute;
- right: 20px;
- top: 0;
- padding: 5px;
- p {
-	 padding-right: 40px;
-	 vertical-align: middle;
- }
- .fa {
-	position: absolute;
-	top: 0; 
-	color: #000066;
-	font-size: 2.5em;
-	right: 0;
-	background-color: #fff;
 
+.profile-details {
+  padding-left: 150px;
+  padding-top: 20px;
+  flex-basis: 50%;
+  max-width: 50%;
+  position: relative;
+  p,
+  h6 {
+    color: #000066;
+  }
+}
+
+.avatar-div {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-right: 20px;
+  width: 150px;
+}
+
+.profile-avatar {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-details-heading {
+  color: #000066;
+  font-weight: 700;
+}
+
+.description {
+  margin-left: 15px;
+}
+
+.profile-contact {
+  flex-basis: 50%;
+  padding-left: 30px;
+}
+
+.contact-mode {
+  color: #000066;
+}
+
+.track-person {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 5px;
+  
+  p {
+    padding-right: 40px;
+    vertical-align: middle;
+   }
+
+  .fa {
+    position: absolute;
+    top: 0; 
+    color: #000066;
+    font-size: 2.5em;
+    right: 0;
+    background-color: #fff;
  }
 }
+
 .card-links{
-	text-align: left;
-	margin: 1em 0;
-	i {
-		color: #000066;
-		font-size: 2em;
-		margin: 0 2em 0 0;
-	}
+  text-align: left;
+  margin: 1em 0;
+  i {
+    color: #000066;
+    font-size: 2em;
+    margin: 0 2em 0 0;
+  }
 }
+
 .text-icon{
-	padding-left: 20px;
-	position: relative;
-	vertical-align: bottom;
-	span {
-	 display: inline-block;
-	 width: 20px;
-	 left: 0;
-	 position: absolute;
-	 top: 0;
-	 height: 100%;
-	 i {
-		 left: 0;
-		 position: absolute;
-		 top: 0;
-		 font-size: 1.2em;	
-		 font-weight: 500;
-		}
-	}
+  padding-left: 20px;
+  position: relative;
+  vertical-align: bottom;
+  span {
+    display: inline-block;
+    width: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    i {
+      left: 0;
+      position: absolute;
+      top: 0;
+      font-size: 1.2em;	
+      font-weight: 500;
+      }
+  }
 }
+
 .contact-modes{
-	font-size: 1em;
-	font-weight: 400;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 // Dropdown Button
+
 .btn-outer {
-	position: relative;
+  position: relative;
 }
+
 .custom-dropdown-btn {
-	border: none;
-	background-color: transparent;
-	color: #000066;
-	transition: all 0.4s;
-	&:hover {
-		font-weight: 400;
-		.dropdown-menu {
-			display: block;
-		}
-	}
+  color: #000066;
+  width: fit-content;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: all 0.4s;
+  &:hover {
+    font-weight: 400;
+  
+    .custom-dropdown-menu {
+      display: block;
+    }
+  }
 }
+
 .custom-dropdown-menu {
-	z-index: 3;
-	position: absolute;
-	top: 20px;
-	left: 0;
-	border-radius: 10px 0 10px;
-	background-color: #fff;
-	color: #000066;
-	li {
-		width: 200px;
-		padding: 0.5em 1em;
-		font-size: 14px;
-		&:hover {
-			color: #fff;
-			background-color: #000066;
-			cursor: pointer;
-		}
-	}
+  z-index: 3;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border-radius: 10px 0 10px 0;
+  box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
+  background-color: #fff;
+  color: #000066;
+  display: none;
+  &:hover {
+    display: block;
+  }
+  li {
+    width: 200px;
+    padding: 0.5em 1em;
+    font-size: 14px;
+    &:hover {
+      color: #fff;
+      background-color: #000066;
+      cursor: pointer;
+    }
+  }
 }

@@ -6,13 +6,13 @@ import './Styles/index.scss'
 
 export const DropDownButton = () => (
 	<div className="btn-outer">
-	<button className="custom-dropdown-btn"> More ..
-	</button>
+	<div className="custom-dropdown-btn"> More ..
 	<ul className ="custom-dropdown-menu">
 		<li>Ask For Recommendation</li>
 		<li>Share Profile</li>
 		<li>Block</li>
 	</ul>
+	</div>
 	</div>
 )
 export default withErrorBoundary(DropDownButton);
