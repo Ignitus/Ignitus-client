@@ -158,51 +158,52 @@ input{
   line-height: 1.8vw;
 }
 
-.email_confirmed {
+.email-confirmed {
   background: #000066;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 9px;
   max-width: 100%;
   width: 15vw;
   height: 3vw;
 }
 
-.no_email {
-  background: #FFFFFF;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+.no-email {
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 9px;
   margin-left: 2.5vw;
   width: 18vw;
   height: 3vw;
 }
-.email_confirmed_text {
+
+.email-confirmed-text {
+  color: #ffffff;
   font-family: Raleway;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5vw;
   line-height: 1vw;
-  color: #FFFFFF;
 }
 
-.no_email_text {
+.no-email-text {
+  color: #000066;
   font-family: Raleway;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5vw;
   line-height: 1vw;
-  color: #000066
 }
 
 .display-block {
-  margin: auto;
   display: table;
-  margin-top: 2vw;
+  margin: auto;
   margin-bottom: 2vw;
+  margin-top: 2vw;
 }
 
 .get-started {
   background: #000066;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   height: 3vw;
   width: 12vw;
