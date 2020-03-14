@@ -8,7 +8,7 @@ import { logger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import './shared/styles/ignitus-base.scss';
+import './ignitus-Shared/styles/ignitus-base.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';

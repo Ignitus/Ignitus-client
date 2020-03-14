@@ -1,6 +1,6 @@
 ### Contributing.
 
-1. Create your **branch**: ```git checkout -b my-new-feature```
+ 1. Create your **branch**: ```git checkout -b my-new-feature```
 
 2. **Commit** your changes: ```git commit -m 'Add some feature'```
 
@@ -14,11 +14,11 @@
 
 1. Fork the repository.
 
-    ``` https://github.com/your_username/Ignitus-client.git ```
+    ``` https://github.com/Ignitus/Ignitus-client.git ```
 
 2. Clone the repository.
 
-    ``` git clone https://github.com/Ignitus/Ignitus-client.git ```
+    ``` git clone https://github.com/your_username/Ignitus-client.git ```
 
 3. Cd into that root folder you just cloned locally.
 
@@ -44,3 +44,10 @@ A pluggable and configurable linter tool for identifying and reporting on patter
  ``` npm run lint ```
  
  ``` npm run lint:fix ```
+ 
+ 
+**IMP:** 
+
+* Please don't commit your ```package-lock.json``` until & unless you are not adding a new package.
+* Please create a new branch from ```develop``` not from ```master```, and also create a pull request to ```develop``` not to ```master```.
+* If you get any err similar to this ``` Node Sass could not find a binding for your current environment. ``` try switching node version to      ``` v8.16.2 ```.
