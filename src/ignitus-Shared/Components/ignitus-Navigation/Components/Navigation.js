@@ -1,16 +1,15 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../../../ignitus-Assets/Images/nav-logo.svg';
-import blackLogo from '../../../../ignitus-Assets/Images/black-logo.svg';
 import '../Styles/style.scss';
 
 
-const PureNavigation = ({ displayClass, dynamicLogo }) => (
-  <nav className={`navbar navbar-expand-lg ${displayClass}`}>
+const PureNavigation = () => (
+  <nav className={`navbar navbar-expand-lg whitenav`}>
     <HashLink className="navbar-brand" to="/#">
-      <img src={dynamicLogo} width="40" height="40" alt="logo" />
+      <img src={logo} width="40" height="40" alt="logo" />
     </HashLink>
     <button
       className="navbar-toggler collapsed"
@@ -87,32 +86,7 @@ const PureNavigation = ({ displayClass, dynamicLogo }) => (
 
 
 const Navigation = () => {
-  const [navScrolled, setNavScrolled] = useState(false);
-  const [displayClass, setDisplayClass] = useState('transparent');
-  const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
-
-  useEffect(() => {
-    const scrollFn = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY < 20) {
-        if (navScrolled === true) {
-          setNavScrolled(false);
-          setDisplayClass('transparent');
-          setDynamicLogo(blackLogo);
-        }
-      } else if (navScrolled === false) {
-        setNavScrolled(true);
-        setDisplayClass('whitenav');
-        setDynamicLogo(logo);
-      }
-    };
-    window.addEventListener('scroll', scrollFn, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', scrollFn);
-    };
-  }, [navScrolled]);
-
-  return <PureNavigation displayClass={displayClass} dynamicLogo={dynamicLogo} />;
+ return <PureNavigation/>;
 };
 
 export default React.memo(Navigation);
