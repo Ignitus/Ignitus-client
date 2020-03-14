@@ -15,7 +15,6 @@ const Login = ({
   const {
     email, password, emptyMessage, invalidEmail, showPassword,
   } = state;
-
   const isStudent = loginType === 'Student';
   const { isFetching, message, success } = logInData;
 
