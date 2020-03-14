@@ -13,6 +13,7 @@
   line-height: 1vw;
   color: #000066;
 }
+
 .progress-bar-signup {
   padding-left: 15vw;
   padding-top: 4vw;
@@ -38,6 +39,7 @@
   width: 100%;
   height: 30vw;
 }
+
 .country {
   font-family: Raleway;
   font-style: normal;
@@ -62,11 +64,13 @@
   padding-left: 1vw;
   font-size: 1vw;
 }
+
 .image_map {
   width: 50%;
   padding: 1vw;
   margin-left: 2vw;
 }
+
 div.image_map>img {
   margin-left: -16vw;
   margin-top: -7vw;
@@ -77,6 +81,7 @@ div.image_map>img {
   background: #000066;
   border-radius: 38px;
 }
+
 .save {
   font-family: Raleway;
   font-style: normal;
@@ -85,6 +90,7 @@ div.image_map>img {
   line-height: 1vw;
   color: white;
 }
+
 .skip {
   font-family: Raleway;
   font-style: normal;
@@ -113,42 +119,37 @@ option {
   font-size: 2.5vw;
 }
 
-.checkboxes{
+.checkboxes {
   padding-top: 50px;
   padding-left: 200px;
   width: 50%;
 }
 
-.group17{
+.group17 {
   width:50%;
 }
 
-.cbox{
+.cbox {
   padding: 1% 20%;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-
-/* secondary text color */
-
-color: #4D4D4D;
+  color: #4D4D4D;
 }
 
-.flex-interest{
+.flex-interest {
   display: flex;
   padding: 80px 0;
 }
 
-
-input{
+input {
   background: #C4C4C4;
   border-radius: 5px;
   width: 22px;
   height: 22px;
   border-radius: 4px;
-  
 }
 
 #content5 {
