@@ -46,4 +46,5 @@ const Introduction = () => (
 
   </div>
 );
+
 export default withErrorBoundary(Introduction);
