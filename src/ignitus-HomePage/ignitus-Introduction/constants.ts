@@ -1,1 +1,2 @@
-export const API_URL = 'https://ignitusrestapi.herokuapp.com/testimonials';
+export const RESUME: string = 'https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_Resume.svg';
+export const TORCH: string = 'https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_torch.svg';
