@@ -1,15 +1,16 @@
 $base-color: #000066;
 $white-bg: #fff;
+$link-color: #939393;
 
 .list-item {
   padding: 2em 1em;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0 2px 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: relative;
   background-color: $white-bg;
-  color: #000066;
+  color: $base-color;
 }
 
 .profile-details {
@@ -18,10 +19,6 @@ $white-bg: #fff;
   flex-basis: 50%;
   max-width: 50%;
   position: relative;
-  p,
-  h6 {
-    color: #000066;
-  }
 }
 
 .avatar-div {
@@ -44,22 +41,19 @@ $white-bg: #fff;
   border-radius: 10px;
 }
 
+.description {
+  margin-left: 15px;
+}
+
 .profile-details-heading {
   color: $base-color;
   font-weight: 700;
 }
 
-.description {
-  margin-left: 15px;
-}
-
 .profile-contact {
   flex-basis: 50%;
+  max-width: 50%;
   padding-left: 30px;
-}
-
-.contact-mode {
-  color: #000066;
 }
 
 .track-person {
@@ -83,20 +77,21 @@ $white-bg: #fff;
  }
 }
 
-.card-links{
+.card-links {
   text-align: left;
   margin: 1em 0;
   i {
     color: $base-color;
     font-size: 2em;
-    margin: 0 2em 0 0;
+    margin-right: 1em;
   }
 }
 
-.text-icon{
+.text-icon {
   padding-left: 20px;
   position: relative;
   vertical-align: bottom;
+  
   span {
     display: inline-block;
     width: 20px;
@@ -104,12 +99,13 @@ $white-bg: #fff;
     position: absolute;
     top: 0;
     height: 100%;
+    
     i {
+      font-size: 1.2em;
+      font-weight: 500;
       left: 0;
       position: absolute;
       top: 0;
-      font-size: 1.2em;	
-      font-weight: 500;
       }
   }
 }
@@ -126,15 +122,15 @@ $white-bg: #fff;
 }
 
 .custom-dropdown-btn {
-  color: $base-color;
-  width: fit-content;
-  display: inline-block;
+  color: $link-color;
+  font-weight: bold;
   cursor: pointer;
+  display: inline-block;
   padding: 10px 0;
   transition: all 0.4s;
+  width: fit-content;
+
   &:hover {
-    font-weight: 400;
-  
     .custom-dropdown-menu {
       display: block;
     }
@@ -151,18 +147,77 @@ $white-bg: #fff;
   background-color: $white-bg;
   color: $base-color;
   display: none;
+  font-weight: 400;
+
   &:hover {
     display: block;
   }
   li {
-		padding: 0.5em 1em;
+    padding: 0.5em 1em;
     font-size: 14px;
-		width: 200px;
-		
+    width: 200px;
+    
     &:hover {
       color: $white-bg;
       background-color: $base-color;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: "768px")
+{
+  .list-item {
+    justify-content: center;
+  }
+
+  .profile-details,
+  .profile-contact {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+
+  .profile-contact {
+    padding: 0;
+  }
+
+  .card-links,
+  .contact-modes {
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .card-links {
+    i {
+      margin: 0 0 0 1em;
+    }
+  }
+}
+
+@media screen and (max-width: "576px")
+{
+  .avatar-div {
+    position: relative;
+    margin: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .profile-details {
+    display: flex;
+    margin: 20px 0;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .description {
+    flex-basis: 50%;
+    max-width: 50%;
+    .text-icon {
+      width: max-content;
+      margin: 10px auto;
     }
   }
 }
