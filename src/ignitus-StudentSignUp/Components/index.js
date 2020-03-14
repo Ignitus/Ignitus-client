@@ -1,2 +1,2 @@
 // eslint-disable-next-line import/prefer-default-export
-export { default as Signup } from './Signup';
+export { default as Signup } from './Profile';
