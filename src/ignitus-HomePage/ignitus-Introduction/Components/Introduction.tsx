@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
-import * as t from './Constants';
+import * as t from '../constants';
 
 const Introduction = () => (
   <div className="intro__wrapper">
-    <img className="intro__torch" src={t.torch} alt="Ignitus Torch" />
+    <img className="intro__torch" src={t.TORCH} alt="Ignitus Torch" />
     <h1 className="intro text-center">Welcome to Ignitus</h1>
 
     <div className="intro__content">
@@ -40,10 +40,11 @@ const Introduction = () => (
             </button>
           </Link>
         </div>
-        <img className="img-fluid" src={t.resume} alt="resume" />
+        <img className="img-fluid" src={t.RESUME} alt="resume" />
       </div>
     </div>
 
   </div>
 );
+
 export default withErrorBoundary(Introduction);
