@@ -22,7 +22,7 @@ import Loadable from "react-loadable";
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 
-import { UIkit } from "../../ignitus-UserInterfaceKit";
+import { UIkit } from "../../ignitus-UserInterfaceKit/Components";
 
 // RouteBased CodeSplitting.
 
