@@ -10,7 +10,6 @@ import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/a
 import {Paragraph} from '../../ignitus-DesignSystem/shared';
 
 const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
 
 export const OpportunityList = styled(flexibleColDiv)`
   padding: 2rem;
@@ -63,12 +62,17 @@ export const ImageDescriptionContainer = styled(flexibleRowDiv)`
 
 export const ImageContainer = styled(flexibleRowDiv)`
   flex: 1;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 5;
+  padding-left: 1rem;
 `;
 
 export const OpportunityDescriptionBtnContainer = styled.div`
