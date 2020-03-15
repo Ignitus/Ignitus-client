@@ -6,7 +6,7 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../../ignitus-Assets/Images/nav-logo.svg';
+import logo from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Images/ignitusBlueLogo.svg';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 class dashBoardHeader extends React.Component {
