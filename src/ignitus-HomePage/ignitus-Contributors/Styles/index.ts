@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/colors';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 const breakpoints: number[] = [576, 768, 992, 1200];
 const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);

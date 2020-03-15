@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navigation from "../../ignitus-Shared/Components/ignitus-Navigation";
-import Footer from "../../ignitus-Shared/Components/ignitus-Footer";
+import Navigation from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation";
+import Footer from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer";
 
 import Contributors from "../../ignitus-HomePage/ignitus-Contributors";
 import GetStarted from "../../ignitus-HomePage/ignitus-GetStarted";
@@ -16,11 +16,13 @@ import LoginStudent from "../../ignitus-Authentication/ignitus-StudentLogin";
 import SignupStudent from "../../ignitus-Authentication/ignitus-StudentSignUp";
 import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
 
-import loader from "../../ignitus-Assets/Images/loader2.gif";
+import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from "react-loadable";
 
-import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
+
+import { UIkit } from "../../ignitus-UserInterfaceKit";
 
 // RouteBased CodeSplitting.
 
@@ -76,6 +78,7 @@ export const PublicRoutes = props => {
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
+        <Route path="/UIkit" component={UIkit} />
         <Route
           path="/"
           component={Notfound}
