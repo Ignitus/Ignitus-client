@@ -2,92 +2,56 @@ $base-color: #000066;
 $white-bg: #fff;
 $link-color: #939393;
 
-.list-item {
-  padding: 2em 1em;
+.cardOuter {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  position: relative;
+  flex-direction: row;
+  padding: 20px;
+  margin: 200px 30px;
+  justify-content: center;
   background-color: $white-bg;
   color: $base-color;
-}
-
-.profile-details {
-  padding-left: 150px;
-  padding-top: 20px;
-  flex-basis: 50%;
-  max-width: 50%;
   position: relative;
+  border-radius: 15px;
 }
 
-.avatar-div {
-  left: 0;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  margin-right: 20px;
-  width: 150px;
+.cardMain {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.profile-avatar {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+.cardImage {
+  flex-basis: 30%;
+  padding: 0 2em;
 
-.description {
-  margin-left: 15px;
-}
-
-.profile-details-heading {
-  color: $base-color;
-  font-weight: 700;
-}
-
-.profile-contact {
-  flex-basis: 50%;
-  max-width: 50%;
-  padding-left: 30px;
-}
-
-.track-person {
-  position: absolute;
-  right: 20px;
-  top: 0;
-  padding: 5px;
-  
-  p {
-    padding-right: 40px;
-    vertical-align: middle;
-   }
-
-  .fa {
-    position: absolute;
-    top: 0; 
-    color: #000066;
-    font-size: 2.5em;
-    right: 0;
-    background-color: $white-bg;
- }
-}
-
-.card-links {
-  text-align: left;
-  margin: 1em 0;
-  i {
-    color: $base-color;
-    font-size: 2em;
-    margin-right: 1em;
+  img {
+    height: 150px;
+    border-radius: 10px;
   }
 }
 
-.text-icon {
+.cardInfo {
+  flex-basis: 70%;
+}
+
+.cardContact {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+.cardLinks {
+  flex-basis: 100%;
+}
+
+.contactInfo {
+  flex-basis: 100%;
+}
+
+.textIcon {
   padding-left: 20px;
   position: relative;
   vertical-align: bottom;
@@ -110,10 +74,36 @@ $link-color: #939393;
   }
 }
 
-.contact-modes{
-  font-size: 1em;
-  font-weight: 400;
+.card-links {
+  text-align: left;
+  margin: 1em 0;
+  i {
+    color: $base-color;
+    font-size: 2em;
+    margin-right: 1em;
+  }
 }
+
+.trackPerson {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 5px;
+  
+  p {
+    padding-right: 40px;
+    vertical-align: middle;
+   }
+
+  .fa {
+    position: absolute;
+    top: -5px; 
+    color: #000066;
+    font-size: 2.5em;
+    right: 0;
+ }
+}
+
 
 // Dropdown Button
 
@@ -131,6 +121,7 @@ $link-color: #939393;
   width: fit-content;
 
   &:hover {
+
     .custom-dropdown-menu {
       display: block;
     }
@@ -142,7 +133,7 @@ $link-color: #939393;
   position: absolute;
   top: 30px;
   left: 0;
-  border-radius: 10px 0 10px 0;
+  border-radius: 10px 0 10px 10px;
   box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
   background-color: $white-bg;
   color: $base-color;
@@ -152,11 +143,21 @@ $link-color: #939393;
   &:hover {
     display: block;
   }
+  
   li {
     padding: 0.5em 1em;
     font-size: 14px;
     width: 200px;
     
+    &:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
     &:hover {
       color: $white-bg;
       background-color: $base-color;
@@ -165,59 +166,25 @@ $link-color: #939393;
   }
 }
 
-@media screen and (max-width: "768px")
-{
-  .list-item {
-    justify-content: center;
-  }
-
-  .profile-details,
-  .profile-contact {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin: 5px 0;
-  }
-
-  .profile-contact {
-    padding: 0;
-  }
-
-  .card-links,
-  .contact-modes {
-    width: fit-content;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .card-links {
-    i {
-      margin: 0 0 0 1em;
-    }
-  }
-}
 
 @media screen and (max-width: "576px")
 {
-  .avatar-div {
-    position: relative;
-    margin: 0;
-    flex-basis: 50%;
-    max-width: 50%;
+  .cardMain {
+    flex-basis: 100%;
+    margin-top: 1.1em;
   }
 
-  .profile-details {
-    display: flex;
-    margin: 20px 0;
-    text-align: center;
-    padding-left: 0;
+  .cardContact {
+    flex-basis: 60%;
+    align-items: center;
+    margin-top: 10px;
   }
 
-  .description {
-    flex-basis: 50%;
-    max-width: 50%;
-    .text-icon {
-      width: max-content;
-      margin: 10px auto;
+  .card-links {
+
+    i {
+      margin-left: 1em;
+      margin-right: 0;
     }
   }
 }
