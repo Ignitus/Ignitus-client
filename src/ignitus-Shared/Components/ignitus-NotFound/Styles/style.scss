@@ -1,26 +1,207 @@
 // import ignitus token variables
 @import './src/ignitus-Shared/styles/ignitus-tokens';
+.ani-main 
+{
+  background:  $ignite-color-neutral-95;
+  font-family: $ignite-font-family-default;
+  width: 10px; 
+}
+
+.head {
+  display: block;
+  position: relative;
+  width: 200px;
+  margin: 10% auto 0;
+  -webkit-animation: shvr 0.2s infinite;
+  animation: shvr 0.2s infinite;
+  height: 100%;
+}
+.head::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  border-radius: 50%;
+  box-shadow: 125px 0 0 white;
+  -webkit-animation: eye 2.5s infinite;
+  animation: eye 2.5s infinite;
+}
+
+.meta {
+  position: relative;
+  display: inline-block;
+  background: $ignite-color-blue-20;
+  width: 75px;
+  height: 80px;
+  border-radius: 50% 50% 50% 50%/45px 45px 45% 45%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.meta::after {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid $ignite-color-blue-20;
+  width: 70px;
+  height: 50px;
+  left: 0px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+.meta::before {
+  bottom: auto;
+  top: -100px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0;
+}
+.meta:nth-of-type(2) {
+  float: right;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.meta:nth-of-type(2)::after {
+  left: 5px;
+}
+.meta:nth-of-type(3) {
+  display: none;
+}
+
+.ani-body {
+  margin-top: 100px;
+  text-align: center;
+  font-family: $ignite-font-family-default;
+  color: $ignite-color-blue-20;
+  justify-content: center;
+  width: 100%;
+}
+
+.ani-body::before {
+  content: 'Got lost? How......?  Ahhhh...!';
+  color: $ignite-color-blue-20;
+  width: 120px;
+  font-family: $ignite-font-family-default;
+  font-size: 30px;
+  overflow:hidden;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-animation: text-show 2s infinite steps(3);
+  animation: text-show 2s infinite steps(3);
+}
+
+@-webkit-keyframes eye {
+  0% ,30% , 55%, 90% , 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10%, 25% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+  }
+  65% {
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0);
+  }
+  80% {
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0);
+  }
+}
+@keyframes eye {
+  0% ,30% , 55%, 90% , 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  10%, 25% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+  }
+  65% {
+    -webkit-transform: translate(-20px, 0);
+    transform: translate(-20px, 0);
+  }
+  80% {
+    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0);
+  }
+}
+@-webkit-keyframes shvr {
+  0% {
+    -webkit-transform: translate(1px, 1em);
+    transform: translate(1px, 1em);
+  }
+  50% {
+    -webkit-transform: translate(0, 1em);
+    transform: translate(0, 1em);
+  }
+  100% {
+    -webkit-transform: translate(-1px, 1em);
+    transform: translate(-1px, 1em);
+  }
+}
+@keyframes shvr {
+  0% {
+    -webkit-transform: translate(1px, 1em);
+    transform: translate(1px, 1em);
+  }
+  50% {
+    -webkit-transform: translate(0, 1em);
+    transform: translate(0, 1em);
+  }
+  100% {
+    -webkit-transform: translate(-1px, 1em);
+    transform: translate(-1px, 1em);
+  }
+}
+@-webkit-keyframes text-show {
+  to {
+    text-indent: -373px;
+  }
+}
+@keyframes text-show {
+  to {
+    text-indent: -373px;
+  }
+}
+.link_404{			 
+color: #fff!important;
+  padding: 10px 20px;
+  background: $ignite-color-blue-20;
+  margin: 20px 0;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}  
 
 .container-404 {
     min-height: 60vh;
-    width: 100%;
-    display: flex;
+    padding: 20px;
+    display:inline;
     justify-content: center;
     align-items: center;
-
+    font-weight: $ignite-font-weight-semibold;
+    text-align: center;
     .content {
-        width: 70vw;
         color: $ignite-color-blue-bg;
-    
+        margin-left: 218px;
+        justify-content: center;
+        font-size: 22px;
+        display: inline;
+        text-align: center;
         p {
-            color: blue;
-    
+            color: $ignite-color-blue-20;
             a {
                 color: inherit;
-                text-decoration: underline;
+                display: inline-block;
+                text-align: center;
+                justify-content: center;
+                
             }
-            a:active, a:hover, a:visited {
-                color: inherit;
+            a:active, a:hover, a:visited 
+            {
+              color: inherit;
             }
         }
     }
