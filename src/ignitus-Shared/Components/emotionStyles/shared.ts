@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import * as C from './Atoms/colors';
-import * as F from './Atoms/fonts';
+import * as C from './ignitus-Atoms/colors';
+import * as F from './ignitus-Atoms/fonts';
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);

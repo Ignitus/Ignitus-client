@@ -1,8 +1,8 @@
 
 import styled from '@emotion/styled';
-import * as A from '../emotionStyles/Atoms/atoms';
-import * as C from '../emotionStyles/Atoms/colors';
-import * as F from '../emotionStyles/Atoms/fonts';
+import * as A from '../emotionStyles/ignitus-Atoms/atoms';
+import * as C from '../emotionStyles/ignitus-Atoms/colors';
+import * as F from '../emotionStyles/ignitus-Atoms/fonts';
 
 export const UIKitContainer = styled.div`
   padding: 5em;

@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/Atoms/colors';
+import * as C from '../../../ignitus-Shared/Components/emotionStyles/ignitus-Atoms/colors';
 import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
 
 const breakpoints: number[] = [576, 768, 992, 1200];

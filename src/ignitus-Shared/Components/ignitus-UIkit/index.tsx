@@ -1,5 +1,5 @@
 import React from 'react';
-import * as A from '../emotionStyles/Atoms/atoms';
+import * as A from '../emotionStyles/ignitus-Atoms/atoms';
 import * as K from './styles';
 
 
