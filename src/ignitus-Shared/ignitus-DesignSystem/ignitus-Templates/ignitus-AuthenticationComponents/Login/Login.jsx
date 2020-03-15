@@ -6,7 +6,7 @@ import { Redirect, Link } from 'react-router-dom';
 import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
 import * as t from './Constants';
-import loader from '../../../ignitus-Assets/Images/ignitusLoader.gif';
+import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 const Login = ({
