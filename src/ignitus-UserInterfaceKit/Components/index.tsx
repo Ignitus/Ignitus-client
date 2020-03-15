@@ -8,6 +8,8 @@ export const UIkit = () => (
       <K.Heading1> Ignitus UIKit </K.Heading1>
       <K.Heading2> Atoms </K.Heading2>
       <K.Heading4> Colors </K.Heading4>
+      <K.Heading4> Icons </K.Heading4>
+      <K.Twitter></K.Twitter>
       <K.Heading4> Typography </K.Heading4>
       <A.Heading1> Heading1 </A.Heading1>
       <A.Heading2> Heading2 </A.Heading2>
@@ -48,6 +50,7 @@ export const UIkit = () => (
       <K.Heading4> Forms </K.Heading4>
       <K.Heading4> Filter with tags </K.Heading4>
       <K.Heading4> Posts Cards with different formats </K.Heading4>
+      
     </K.UIKitContainer>
   </React.Fragment>
 );

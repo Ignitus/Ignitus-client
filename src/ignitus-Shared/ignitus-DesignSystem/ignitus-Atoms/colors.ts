@@ -11,3 +11,4 @@ export const Grey2: string = '#C4C4C4';
 export const Red: string = '#FF4444';
 export const Green: string = '#219653';
 export const OtherBlue: string = '#7272F4';
+export const TwitterIconColor: string = ' #1dcaff';
