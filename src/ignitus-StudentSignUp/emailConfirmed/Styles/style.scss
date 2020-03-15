@@ -1,0 +1,24 @@
+// import ignitus token variables
+@import './src/shared/styles/ignitus-components-common.scss';
+@import '../../profile/Styles/style.scss';
+@import '../../email/Styles/style.scss';
+
+.emailConfirm {
+  height: 43rem;
+  background-color: white;
+}
+
+.newsletter > img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.getStarted {
+  background: #000066;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  height: 2rem;
+  width: 10rem;
+  margin-top: 1.6rem;
+}
