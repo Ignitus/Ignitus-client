@@ -1,6 +1,5 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {HTMLAttributes} from 'react';
-import {TwitterIconColor} from '../../../ignitus-Atoms/colors';
 
 type Props = HTMLAttributes<SVGElement>;
 

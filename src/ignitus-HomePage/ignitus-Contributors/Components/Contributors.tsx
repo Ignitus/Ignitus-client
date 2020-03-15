@@ -18,12 +18,10 @@ export const PureContributors = ({ data, type, paragraph }: Props) => (
         <T.Title>{ type }</T.Title>
         <T.Paragraph>
           Supported with
-          &nbsp;
           {' '}
-          <S.Icon><i className="fa fa-heart heart" /></S.Icon>
+          <S.Icon><S.Heart/></S.Icon>
           {' '}
-          &nbsp;
-          { paragraph }
+          {paragraph}
         </T.Paragraph>
       </T.TopSection>
       <T.BottomSection>
