@@ -86,4 +86,11 @@ export const flexibleColDiv = styled.div`
   justify-content: center;
 `;
 
+export const flexibleRowDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
 /* Shared between partners & contirbutors component. */
