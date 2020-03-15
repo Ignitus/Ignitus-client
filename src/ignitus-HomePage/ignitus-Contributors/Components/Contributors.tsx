@@ -3,7 +3,7 @@ import React from 'react';
 import { Data } from '../constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
 import * as S from '../Styles';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as T from '../../../ignitus-Shared/Components/ignitus-DesignSystem/shared';
 
 interface Props {
   data: any;

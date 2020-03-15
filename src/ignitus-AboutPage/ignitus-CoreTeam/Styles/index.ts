@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/ignitus-Atoms/colors';
-import * as F from '../../../ignitus-Shared/Components/emotionStyles/ignitus-Atoms/fonts';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as C from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import * as T from '../../../ignitus-Shared/Components/ignitus-DesignSystem/shared';
 
 type LinkWrapperProps = {
   toggle: boolean;

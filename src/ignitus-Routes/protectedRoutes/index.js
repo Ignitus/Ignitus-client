@@ -3,7 +3,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
+import { Notfound } from '../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
 import PrivateRoute from '../privateRoutes';
 import Dashboard from '../../ignitus-Dashboard/ignitus-Student-Dashboard';
 import dashBoardHeader from '../../ignitus-Dashboard/ignitus-Dashboard-Header';

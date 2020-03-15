@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/ignitus-Atoms/colors';
+import * as T from '../../../ignitus-Shared/Components/ignitus-DesignSystem/shared';
+import * as C from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../Styles';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as T from '../../../ignitus-Shared/Components/ignitus-DesignSystem/shared';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
 import { data } from '../constants';
 
