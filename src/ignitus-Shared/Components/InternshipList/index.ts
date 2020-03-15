@@ -1,15 +1,14 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-DesignSystem/ignitus-Atoms/atoms';
 import * as C from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
-import {
+import { 
   flexibleColDiv,
   flexibleRowDiv,
-} from '../../ignitus-DesignSystem/shared';
-import {Normal, MD} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
+ } from '../../ignitus-DesignSystem/shared';
+import { Normal, MD} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
 import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
-import {Paragraph} from '../../ignitus-DesignSystem/shared';
+import { Paragraph } from '../../ignitus-DesignSystem/shared';
 
-const breakpoints = [576, 768, 992, 1200];
 
 export const OpportunityList = styled(flexibleColDiv)`
   padding: 2rem;
