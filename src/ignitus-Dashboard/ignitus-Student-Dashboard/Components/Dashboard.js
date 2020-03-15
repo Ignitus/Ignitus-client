@@ -4,7 +4,7 @@
 import React from 'react';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
-import SideNavigation from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Templates/DashboardSideNavigation/SideNavigation';
+import SideNavigation from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Templates/ignitus-DashboardSideNavigation/SideNavigation';
 
 const Dashboard = () => {
   let email = '';

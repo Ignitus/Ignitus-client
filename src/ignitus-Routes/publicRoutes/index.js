@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navigation from "../../ignitus-Shared/Components/ignitus-Navigation";
+import Navigation from "../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation";
 import Footer from "../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer";
 
 import Contributors from "../../ignitus-HomePage/ignitus-Contributors";

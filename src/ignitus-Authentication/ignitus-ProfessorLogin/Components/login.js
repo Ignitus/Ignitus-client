@@ -4,8 +4,8 @@
 
 import React, { useState } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
-import { statePayload } from '../../../ignitus-Shared/Components/ignitus-AuthenticationComponents/Login/Constants';
-import SharedLogin from '../../../ignitus-Shared/Components/ignitus-AuthenticationComponents/Login/Login';
+import { statePayload } from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Constants';
+import SharedLogin from '../../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
 
 const Login = () => {
   // Dummy Implementation.
