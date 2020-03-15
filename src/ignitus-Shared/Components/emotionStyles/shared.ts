@@ -10,6 +10,11 @@ export const Title = styled.h3`
   color: ${C.IgnitusBlue};
 `;
 
+export const SubTitle = styled.h3`
+  font-size: 1.2em;
+  font-weight: 500;
+`
+
 export const Paragraph = styled.p`
   font-size: ${F.SM};
   font-weight: ${F.Light};
