@@ -7,7 +7,6 @@ import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingCo
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {coreTeam, TeamItemProps} from '../types';
-import {AngelList} from '../../../ignitus-UserInterfaceKit/styles';
 
 const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>

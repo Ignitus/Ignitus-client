@@ -10,7 +10,7 @@ const PureTeam = ({contributors}: any) => (
     <S.GithubContributorsContainer>
       <S.TitleWrapper>
         <S.GithubContributorsTitle>
-          <i className="fa fa-plus" />
+          <S.Plus />
           {contributors.length} Contributors
         </S.GithubContributorsTitle>
         <S.Paragraph>

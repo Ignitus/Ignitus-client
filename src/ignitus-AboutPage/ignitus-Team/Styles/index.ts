@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import PlusIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -82,4 +83,9 @@ export const GithubContributorsLink = styled(T.Link)`
   font-weight: 300;
   text-align: right;
   color: ${C.IgnitusBlue};
+`;
+
+export const Plus = styled(PlusIcon)`
+  height: 1.2rem;
+  fill: ${C.IgnitusBlue};
 `;
