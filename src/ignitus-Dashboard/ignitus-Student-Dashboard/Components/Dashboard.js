@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import '../Styles/style.scss';
-import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import SideNavigation from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-DashboardSideNavigation/SideNavigation';
 
 const Dashboard = () => {

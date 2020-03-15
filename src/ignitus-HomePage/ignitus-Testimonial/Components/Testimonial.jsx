@@ -1,10 +1,8 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState, useEffect } from 'react';
-import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 import '../Styles/style.scss';
 

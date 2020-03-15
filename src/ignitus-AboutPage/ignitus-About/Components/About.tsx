@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Team from '../../ignitus-Team';
 import CoreTeam from '../../ignitus-CoreTeam';
-import {withErrorBoundary} from '../../../ignitus-Shared/Components/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as t from '../constants';
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';

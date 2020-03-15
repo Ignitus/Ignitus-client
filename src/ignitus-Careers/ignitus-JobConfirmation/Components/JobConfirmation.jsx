@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-filename-extension */
+
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 
 const JobConfirmation = () => (
