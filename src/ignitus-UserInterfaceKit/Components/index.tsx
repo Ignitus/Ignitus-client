@@ -10,6 +10,7 @@ export const UIkit = () => (
       <K.Heading4> Colors </K.Heading4>
       <K.Heading4> Icons </K.Heading4>
       <K.Twitter></K.Twitter>
+      <K.LinkedIn></K.LinkedIn>
       <K.Heading4> Typography </K.Heading4>
       <A.Heading1> Heading1 </A.Heading1>
       <A.Heading2> Heading2 </A.Heading2>

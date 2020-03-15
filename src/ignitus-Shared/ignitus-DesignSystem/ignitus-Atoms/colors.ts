@@ -12,3 +12,4 @@ export const Red: string = '#FF4444';
 export const Green: string = '#219653';
 export const OtherBlue: string = '#7272F4';
 export const TwitterIconColor: string = ' #1dcaff';
+export const LinkedinIconColor: string = '#2867B2';

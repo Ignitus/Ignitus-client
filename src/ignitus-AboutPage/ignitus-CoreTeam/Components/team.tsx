@@ -7,6 +7,7 @@ import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingCo
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {coreTeam, TeamItemProps} from '../types';
+import {AngelList} from '../../../ignitus-UserInterfaceKit/styles';
 
 const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>
@@ -29,10 +30,10 @@ const TeamItem = ({
         <T.Paragraph>{description}</T.Paragraph>
         <S.LinkWrapper toggle={value}>
           <S.Link href={linkedin} color="black">
-            <i className="fa fa-linkedin-square" />
+            <S.LinkedIn />
           </S.Link>
           <S.Link href={angellist} color="black">
-            <i className="fa fa-angellist" />
+            <S.AngelList />
           </S.Link>
         </S.LinkWrapper>
       </S.TeamCard>

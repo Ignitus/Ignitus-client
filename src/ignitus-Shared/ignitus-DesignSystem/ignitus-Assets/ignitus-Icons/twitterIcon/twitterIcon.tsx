@@ -21,3 +21,5 @@ const TwitterIcon = ({title = 'Twitter Icon', ...rest }: Props) => {
 };
 
 export default TwitterIcon;
+
+/* SVG Credits goes to font-awesome : https://fontawesome.com/license */
