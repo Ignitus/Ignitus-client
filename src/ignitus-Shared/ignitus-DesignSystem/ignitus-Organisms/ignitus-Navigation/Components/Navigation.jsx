@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../../../../../ignitus-Assets/Images/nav-logo.svg';
-import blackLogo from '../../../../../../ignitus-Assets/Images/black-logo.svg';
+import logo from '../../../../../ignitus-Assets/Images/nav-logo.svg';
+import blackLogo from '../../../../../ignitus-Assets/Images/black-logo.svg';
 import '../Styles/style.scss';
 
 

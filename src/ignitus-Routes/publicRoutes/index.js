@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navigation from "../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation";
-import Footer from "../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer";
+import Navigation from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation";
+import Footer from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer";
 
 import Contributors from "../../ignitus-HomePage/ignitus-Contributors";
 import GetStarted from "../../ignitus-HomePage/ignitus-GetStarted";
@@ -19,10 +19,10 @@ import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/igni
 import loader from "../../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
 
-import { Notfound } from '../../ignitus-Shared/Components/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 
-import { UIkit } from "../../ignitus-Shared/Components/ignitus-UIkit";
+import { UIkit } from "../../ignitus-UserInterfaceKit";
 
 // RouteBased CodeSplitting.
 

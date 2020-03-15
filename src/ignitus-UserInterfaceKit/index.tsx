@@ -1,5 +1,5 @@
 import React from 'react';
-import * as A from '../ignitus-DesignSystem/ignitus-Atoms/atoms';
+import * as A from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import * as K from './styles';
 
 
