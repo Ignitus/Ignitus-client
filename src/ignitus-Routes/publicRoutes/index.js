@@ -21,7 +21,7 @@ import Loadable from "react-loadable";
 
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
-import InternshipList from "../../ignitus-Shared/Components/InternshipList/InternshipList"
+import OpportunityList from "../../ignitus-Shared/Components/InternshipList/OppurtunityList"
 
 import { UIkit } from "../../ignitus-UserInterfaceKit/Components";
 
@@ -79,7 +79,7 @@ export const PublicRoutes = props => {
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
-				<Route path="/internshipList" component={InternshipList} />
+				<Route path="/internshipList" component={OpportunityList} />
         <Route path="/UIkit" component={UIkit} />
         <Route
           path="/"

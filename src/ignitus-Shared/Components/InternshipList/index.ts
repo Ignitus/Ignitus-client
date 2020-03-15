@@ -5,18 +5,19 @@ import {
   flexibleColDiv,
   flexibleRowDiv,
 } from '../../ignitus-DesignSystem/shared';
-import {Normal} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {Normal, MD} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
+import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
+import {Paragraph} from '../../ignitus-DesignSystem/shared';
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
 
-export const ContainerList = styled(flexibleColDiv)`
-  border: 2px solid black;
+export const OpportunityList = styled(flexibleColDiv)`
   padding: 2rem;
   margin-top: 100px;
 `;
 
-export const InternshipContainer = styled(flexibleRowDiv)`
+export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   background-color: ${C.White};
@@ -36,9 +37,24 @@ export const DateContainer = styled(T.Heading6)`
   font-weight: ${Normal};
 `;
 
-export const BtnContainer = styled(flexibleColDiv)`
-  border: 2px solid blue;
-  flex: 1;
+export const BtnContainer = styled(flexibleRowDiv)`
+  padding: 5px 10px;
+  border: 2px solid ${C.IgnitusBlue};
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+export const BtnContainerText = styled(Paragraph)`
+  font-size: ${MD};
+  font-weight: ${Normal};
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: ${C.IgnitusBlue};
+`;
+
+export const BtnContainerIcon = styled(ApplyIcon)`
+  height: 1.5rem;
+  fill: ${C.IgnitusBlue};
 `;
 
 export const ImageDescriptionContainer = styled(flexibleRowDiv)`
@@ -55,14 +71,35 @@ export const DescriptionContainer = styled.div`
   flex: 5;
 `;
 
-export const OppurtunityTitle = styled(T.Heading3)``;
-
-export const OppurtunitySubTitle = styled(T.Heading4)`
-  font-weight: ${Normal};
-  color: ${C.Grey1};
+export const OpportunityDescriptionBtnContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-export const OppurtunityDescription = styled(T.Heading5)`
+export const OpportunityDescription = styled(T.Heading5)`
   font-weight: ${Normal};
-  color: ${C.GreyText};
+  color: ${C.Black};
+`;
+
+export const OpportunityDateTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const OpportunityTitle = styled(T.Heading3)`
+  flex: 1;
+`;
+
+export const OpportunityData = styled(T.Heading6)`
+  color: ${C.Grey1};
+  font-weight: ${Normal};
+  flex: 1;
+  text-align: end;
+`;
+
+export const OpportunitySubTitle = styled(T.Heading4)`
+  font-weight: ${Normal};
+  color: ${C.Grey1};
 `;
