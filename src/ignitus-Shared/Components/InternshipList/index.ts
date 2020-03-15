@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import * as T from '../emotionStyles/shared';
-import * as C from '../emotionStyles/colors';
+import * as T from '../../ignitus-DesignSystem/ignitus-Atoms/atoms';
+import * as C from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
@@ -74,9 +74,9 @@ export const InternshipTitleDiv = styled.div`
   flex-direction: row;
 `;
 
-export const InternshipTitle = styled(T.Title)`
+export const InternshipTitle = styled(T.Heading1)`
   flex-basis: 50%;
-  color: ${C.orange};
+  color: ${C.SecondaryColor};
 `;
 
 export const DateInfo = styled(T.Paragraph)`
@@ -85,7 +85,7 @@ export const DateInfo = styled(T.Paragraph)`
   text-align: end;
 `;
 
-export const SubHeading = styled(T.SubTitle)`
+export const SubHeading = styled(T.Heading4)`
   flex-basis: 100%;
   color: ${C.IgnitusBlue};
 `;

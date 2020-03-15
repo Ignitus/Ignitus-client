@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Data } from '../constants';
-import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as S from '../Styles';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 interface Props {
   data: any;
@@ -18,12 +18,10 @@ export const PureContributors = ({ data, type, paragraph }: Props) => (
         <T.Title>{ type }</T.Title>
         <T.Paragraph>
           Supported with
-          &nbsp;
           {' '}
-          <S.Icon><i className="fa fa-heart heart" /></S.Icon>
+          <S.Icon><S.Heart/></S.Icon>
           {' '}
-          &nbsp;
-          { paragraph }
+          {paragraph}
         </T.Paragraph>
       </T.TopSection>
       <T.BottomSection>
