@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import '../Styles/style.scss';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import { withErrorBoundary } from '../../errorBoundary';
+import { withErrorBoundary } from '../../../../errorBoundary';
 import { logo } from './Constants';
 
 const PureFooter = ({
