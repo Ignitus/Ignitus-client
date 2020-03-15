@@ -1,0 +1,106 @@
+@import '../../styles/ignitus-components-common.scss';
+@import '../../styles/ignitus-tokens.scss';
+
+.rectangle {
+  position: absolute;
+width: 276px;
+height: 121px;
+left: 1072px;
+top: 116px;
+background: $ignite-background-color-white;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+}
+
+.link{
+  height: 17px;
+  top: 144px;
+  font-family: $ignite-font-family-default;;
+  font-style: normal;
+  font-weight: $ignite-font-weight-normal;
+  font-size: $ignite-font-size-xs;
+  line-height: 16px;
+  
+}
+
+
+#about{
+  width: 22px;
+  left: 1102px;
+  padding: 10px 30px;
+  color: $ignite-color-gray-20;
+}
+
+.ss{
+  padding: 28px 0px 15px 30px;
+  padding: 28px 0px 15px 30px;
+}
+
+#privacy{
+  width: 56px;
+  left: 1175px;
+  padding: 10px 30px;
+  
+  color: $ignite-color-gray-20;
+  /* identical to box height */
+  
+  
+  
+}
+
+#careers{
+  width: 56px;
+  height: 17px;
+  padding: 10px 30px;
+  color: $ignite-color-gray-20;
+  
+}
+
+.helpcenter{
+  width: 85px;
+  height: 17px;
+  left: 1092px;
+  top: 176px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  padding: 28px 204px 76px 30px;
+  
+  color: #3D3D3D;
+}
+
+.terms{
+  width: 135px;
+  height: 17px;
+  left: 1202px;
+  top: 176px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  padding: 28px 204px 76px 30px;
+  color: #3D3D3D;
+
+}
+
+.igintus{
+width: 99px;
+left: 1157px;
+top: 207px;
+
+font-family: $ignite-font-family-default;
+font-style: normal;
+font-weight: normal;
+font-size: $ignite-font-size-xs;
+line-height: 16px;
+padding: 28px 204px 76px 30px;
+color: $ignite-color-blue-bg;
+}
