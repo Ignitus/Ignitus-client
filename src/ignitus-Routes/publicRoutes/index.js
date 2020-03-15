@@ -21,6 +21,7 @@ import Loadable from "react-loadable";
 
 import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
+import InternshipList from "../../ignitus-Shared/Components/InternshipList/InternshipList"
 
 // RouteBased CodeSplitting.
 
@@ -76,6 +77,7 @@ export const PublicRoutes = props => {
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
+				<Route path="/internshipList" component={InternshipList} />
         <Route
           path="/"
           component={Notfound}

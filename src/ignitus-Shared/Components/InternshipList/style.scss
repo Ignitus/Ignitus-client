@@ -1,0 +1,54 @@
+.internship-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.internship-description {
+  padding-left: 110px;
+  padding-top: 10px;
+  position: relative;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 150px;
+}
+
+.description-inner {
+  margin-left: 20px;
+}
+
+.internship-image {
+  width: 110px;
+  height: 110px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: grey;
+}
+
+.internship-opportunity {
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width:"576px")
+{
+  .internship-description {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+
+  .internship-opportunity {
+    position: relative;
+    flex-basis: 100%;
+    width: 100%;
+    margin-left: 20px;
+    height: 30px;
+  }
+
+}
