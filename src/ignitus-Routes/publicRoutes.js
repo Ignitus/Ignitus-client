@@ -76,7 +76,7 @@ export const PublicRoutes = props => {
         />
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
-        <Route path="/sub" component={SiteUnderBuild} />
+        <Route path="/underBuild" component={SiteUnderBuild} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
         <Route
           path="/"

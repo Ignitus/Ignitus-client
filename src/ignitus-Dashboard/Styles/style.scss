@@ -2,20 +2,20 @@
 @import "./src/ignitus-Shared/styles/ignitus-tokens";
 
 .banner {
-  // background-color: $ignite-color-neutral-97;
-  padding-bottom: 10px;
+  padding-bottom: 2rem;
   padding-top: 6rem;
   width: 100%;
 }
-.bannerImg {
+
+.banner-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.maintenanceHeading {
+
+.maintenance-heading {
   color: $ignite-color-blue-bg;
-  font-family: $ignite-font-family-default;
-  font-size: 48px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 500;
   margin: 0;
@@ -24,10 +24,10 @@
   line-height: 56px;
   text-align: center;
 }
-.maintenanceText {
+
+.maintenance-text {
   color: $ignite-color-blue-bg;
-  font-family: $ignite-font-family-default;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
