@@ -5,9 +5,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import * as S from '../styles';
-import { withErrorBoundary } from '../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-const Opportunity = () => (
+export const Opportunity = () => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
@@ -45,10 +45,7 @@ const Opportunity = () => (
 const OpportunityList = () => (
   <S.OpportunityList>
     <Opportunity />
-    <Opportunity />
-    <Opportunity />
   </S.OpportunityList>
 );
-
 
 export default withErrorBoundary(OpportunityList);
