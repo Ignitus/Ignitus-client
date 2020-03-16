@@ -188,3 +188,19 @@ $link-color: #939393;
     }
   }
 }
+
+@media screen and (max-width:"400px") {
+  .cardImage {
+    flex-basis: 20%;
+    
+    img {
+      height: 100px;
+      padding: 0 1em;
+
+    }
+    
+   .cardMain {
+     flex-basis: 80%;
+   } 
+  }
+}
