@@ -13,9 +13,7 @@ import '../Styles/style.scss';
 const emailConfirmed = () => {
   return (
     <div className="emailConfirm">
-      <div className="progressBarSignup">
-        <img src={progress} alt="progress-bar" />
-      </div>
+      <img className="progressBarSignup" src={progress} alt="progress-bar" />
       <div className="newsletter">
         <img src={newsletter} alt="newsletter" />
       </div>

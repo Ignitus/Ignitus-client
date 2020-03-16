@@ -12,9 +12,7 @@ import '../Styles/style.scss';
 const email = () => {
   return (
     <div className="email">
-      <div className="progressBarSignup">
-        <img src={progress} alt="progress-bar" />
-      </div>
+      <img className="progressBarSignup" src={progress} alt="progress-bar" />
       <div className="newsletter">
         <img src={newsletter} alt="newsletter" />
       </div>
@@ -24,7 +22,7 @@ const email = () => {
       </p>
       <div className="emailConfirmContainer">
         <button className="emailConfirmed">
-          <Link to="/signup/email_confirmed" className="emailConfirmedText">
+          <Link to="/signup/emailConfirmed" className="emailConfirmedText">
             Email confirmed
           </Link>
         </button>

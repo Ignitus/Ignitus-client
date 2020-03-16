@@ -14,9 +14,9 @@ import LoginProfessor from '../ignitus-ProfessorLogin';
 import SignupProfessor from '../ignitus-ProfessorSignUp';
 import LoginStudent from '../ignitus-StudentLogin';
 import SignupStudent from '../ignitus-StudentSignUp';
-import Interest from '../ignitus-StudentSignUp/interest/Components/interest';
-import Email from '../ignitus-StudentSignUp/email/Components/email';
-import EmailConfirmed
+import interest from '../ignitus-StudentSignUp/interest/Components/interest';
+import email from '../ignitus-StudentSignUp/email/Components/email';
+import emailConfirmed
   from '../ignitus-StudentSignUp/emailConfirmed/Components/emailConfirmed';
 import commonLoginUI
   from '../ignitus-Common-Auth-Student-Prof/Components/commonLoginUI';
@@ -79,9 +79,9 @@ export const PublicRoutes = props => {
           path="/signup/student"
           component={SignupStudent.containers.Signup}
         />
-        <Route path="/signup/interest" component={Interest} />
-        <Route path="/signup/email" component={Email} />
-        <Route path="/signup/email_confirmed" component={EmailConfirmed} />
+        <Route path="/signup/interest" component={interest} />
+        <Route path="/signup/email" component={email} />
+        <Route path="/signup/emailConfirmed" component={emailConfirmed} />
         <Route path="/Signup" component={commonSignUpUI} />
         <Route path="/Login" component={commonLoginUI} />
         <Route path="/" component={Notfound} />

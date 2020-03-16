@@ -12,9 +12,7 @@ import '../Styles/style.scss';
 const interest = () => {
   return (
     <div className="interest">
-      <div className="progressBarSignup">
-        <img src={progress} alt="progress-bar" />
-      </div>
+      <img className="progressBarSignup" src={progress} alt="progress-bar" />
       <p className="welcome">What are you interested in?</p>
       <p className="paragraph">
         This will customize your experience

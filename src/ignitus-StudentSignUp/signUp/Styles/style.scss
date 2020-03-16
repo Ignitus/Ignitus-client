@@ -1,7 +1,7 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-components-common.scss';
 
-.profile {
+.signUp {
   height: 55rem;
   background-color: white;
 }
@@ -26,6 +26,7 @@
   max-width: 100%;
   max-height: 100%;
   display: block;
+  margin: auto;
 }
 
 .paragragh {
@@ -71,12 +72,8 @@
 }
 
 .profileImageMap {
-  width: 50%;
+  width: 40rem;
   padding: 0.8rem;
-  margin-left: 1.6rem;
-}
-
-div.profileImageMap > img {
   margin-left: -16rem;
   margin-top: -5.5rem;
 }
