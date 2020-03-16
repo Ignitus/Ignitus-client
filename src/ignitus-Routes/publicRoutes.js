@@ -21,6 +21,7 @@ import Loadable from "react-loadable";
 
 import {Notfound} from './notFound';
 import JobConfirmation  from "../ignitus-Careers/ignitus-JobConfirmation";
+import { SiteUnderBuild } from '../ignitus-Dashboard/Components/SiteUnderBuild';
 
 // RouteBased CodeSplitting.
 
@@ -75,6 +76,7 @@ export const PublicRoutes = props => {
         />
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
+        <Route path="/sub" component={SiteUnderBuild} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
         <Route
           path="/"

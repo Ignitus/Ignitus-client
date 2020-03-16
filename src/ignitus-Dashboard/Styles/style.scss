@@ -1,28 +1,36 @@
 // import ignitus token variables
-@import './src/ignitus-Shared/styles/ignitus-tokens';
+@import "./src/ignitus-Shared/styles/ignitus-tokens";
 
-.banner{
-  margin-top: 12vh;
-  margin-bottom: 10px;
-  padding-top: 10px;
+.banner {
+  // background-color: $ignite-color-neutral-97;
+  padding-bottom: 10px;
+  padding-top: 6rem;
   width: 100%;
-  background-color: $ignite-color-neutral-97;
 }
-.maintenanceHeading{
-  margin: 0;
-  font-family: Raleway;
+.bannerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.maintenanceHeading {
+  color: $ignite-color-blue-bg;
+  font-family: $ignite-font-family-default;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
-  color: $ignite-color-blue-bg;
-}
-.maintenanceText{
   margin: 0;
-  font-family: Raleway;
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  line-height: 56px;
+  text-align: center;
+}
+.maintenanceText {
+  color: $ignite-color-blue-bg;
+  font-family: $ignite-font-family-default;
+  font-size: 24px;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
   line-height: 28px;
-  color: $ignite-color-blue-bg;
+  margin: 0;
+  text-align: center;
 }
