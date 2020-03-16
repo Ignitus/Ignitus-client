@@ -1,0 +1,28 @@
+// import ignitus token variables
+@import './src/ignitus-Shared/styles/ignitus-tokens';
+
+.banner{
+  margin-top: 12vh;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  background-color: $ignite-color-neutral-97;
+}
+.maintenanceHeading{
+  margin: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: $ignite-color-blue-bg;
+}
+.maintenanceText{
+  margin: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: $ignite-color-blue-bg;
+}
