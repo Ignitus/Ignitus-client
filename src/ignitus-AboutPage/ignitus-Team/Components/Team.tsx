@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useEffect} from 'react';
-import {withErrorBoundary} from '../../../ignitus-Shared/Components/errorBoundary';
-import loader from '../../../ignitus-Assets/Images/loader2.gif';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
 
@@ -10,7 +10,7 @@ const PureTeam = ({contributors}: any) => (
     <S.GithubContributorsContainer>
       <S.TitleWrapper>
         <S.GithubContributorsTitle>
-          <i className="fa fa-plus" />
+          <S.Plus />
           {contributors.length} Contributors
         </S.GithubContributorsTitle>
         <S.Paragraph>
@@ -20,7 +20,7 @@ const PureTeam = ({contributors}: any) => (
       <S.GithubContributors>
         <S.Contributors>{contributors}</S.Contributors>
         <S.GithubContributorsLink href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
-          View All on Github <i className="fa fa-chevron-right" />
+          View All <S.Chevron />
         </S.GithubContributorsLink>
       </S.GithubContributors>
     </S.GithubContributorsContainer>

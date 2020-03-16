@@ -6,7 +6,9 @@ import * as t from './constants';
 import * as DBHelper from './dbhelper';
 
 if (sessionStorage.getItem('jwtToken')) {
-  axios.defaults.headers.common['access-token'] = sessionStorage.getItem('jwtToken');
+  axios.defaults.headers.common['access-token'] = sessionStorage.getItem(
+    'jwtToken',
+  );
 }
 
 export async function getTestimonialData() {
@@ -23,27 +25,22 @@ export async function getTestimonialData() {
 }
 
 export function signUp(email, password) {
-  return axios.post(t.STUDENT_SIGN_UP, { email, password });
+  return axios.post(t.STUDENT_SIGN_UP, { email, password, userType: 'student' });
 }
 
 export function signIn(email, password) {
-  return axios.post(t.STUDENT_SIGN_IN, { email, password });
+  return axios.post(t.STUDENT_SIGN_IN, { email, password, userType: 'student' });
 }
 
 async function getHeaders(name) {
-  const item = await DBHelper.getItemFromDB(
-    t.COND_HEADERS_STORE,
-    name,
-  );
+  const item = await DBHelper.getItemFromDB(t.COND_HEADERS_STORE, name);
 
   if (item) {
     return {
       headers: {
         'If-None-Match': item.etag,
       },
-      validateStatus: status => (
-        status >= 200 && status < 300
-      ) || status === 304,
+      validateStatus: status => (status >= 200 && status < 300) || status === 304,
     };
   }
   return {};
@@ -65,13 +62,16 @@ export async function getContributorsData() {
         return data;
       }
 
-      await DBHelper.updateDataInDB(t.COND_HEADERS_STORE, [{
-        name: 'gh-frontend-contrib',
-        etag: resp[0].headers.etag,
-      }, {
-        name: 'gh-backend-contrib',
-        etag: resp[1].headers.etag,
-      }]);
+      await DBHelper.updateDataInDB(t.COND_HEADERS_STORE, [
+        {
+          name: 'gh-frontend-contrib',
+          etag: resp[0].headers.etag,
+        },
+        {
+          name: 'gh-backend-contrib',
+          etag: resp[1].headers.etag,
+        },
+      ]);
 
       const data = Array.from(new Set(resp[0].data.concat(resp[1].data)));
 
@@ -88,7 +88,9 @@ export async function getContributorsData() {
         }
 
         for (let i = 0; i < data.length; i++) {
-          if (data[i].contributions) { result.push(data[i]); }
+          if (data[i].contributions) {
+            result.push(data[i]);
+          }
         }
       }
 

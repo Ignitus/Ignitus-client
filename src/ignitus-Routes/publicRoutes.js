@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navigation from "../ignitus-Navigation";
-import Footer from "../ignitus-Footer";
+import Navigation from "../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components";
+import Footer from "../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components";
 
 import Contributors from "../ignitus-HomePage/ignitus-Contributors";
 import GetStarted from "../ignitus-HomePage/ignitus-GetStarted";
@@ -10,18 +10,16 @@ import Testimonial from "../ignitus-HomePage/ignitus-Testimonial";
 import WhatWeProvide from "../ignitus-HomePage/ignitus-WhatWeDo";
 import Partner from "../ignitus-HomePage/ignitus-Partners";
 
-import SideNavigation from "../ignitus-Shared/Components"; //check this
-
 import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";
 import SignupProfessor from "../ignitus-Authentication/ignitus-ProfessorSignUp";
 import LoginStudent from "../ignitus-Authentication/ignitus-StudentLogin";
 import SignupStudent from "../ignitus-Authentication/ignitus-StudentSignUp";
 import { CommonLoginUI, CommonSignUpUI } from "../ignitus-Authentication/ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
 
-import loader from "../ignitus-Assets/Images/loader2.gif";
+import loader from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from "react-loadable";
 
-import {Notfound} from './notFound';
+import { Notfound } from "../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound"
 import JobConfirmation  from "../ignitus-Careers/ignitus-JobConfirmation";
 
 // RouteBased CodeSplitting.
@@ -75,13 +73,6 @@ export const PublicRoutes = props => {
           path="/signup/student"
           component={SignupStudent.containers.Signup}
         />
-
-        {/* check this */}
-        <Route
-          path="/sidenav/navigation"
-          component={SideNavigation.settings.SideNavigation}
-        />
-
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
