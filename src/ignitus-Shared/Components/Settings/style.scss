@@ -1,0 +1,35 @@
+@import '../../styles/ignitus-components-common.scss';
+@import '../../styles/ignitus-tokens.scss';
+
+.navigator {
+  position: absolute;
+  width: 194px;
+  height: 330px;
+  left: 89px;
+  top: 129px;
+  background: $ignite-color-white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px 0;
+}
+.option {
+  font-size: 16px;
+  font-weight: bold;
+  color: $ignite-color-blue-bg;
+  padding: 10px 30px;
+}
+svg {
+  margin-right: 25px;
+}
+
+svg g rect {
+  fill: $ignite-color-blue-bg;
+}
+
+.option:hover {
+  background-color: $ignite-color-blue-bg;
+  color: $ignite-color-white;
+}
+.option:hover svg g rect {
+  fill: $ignite-color-white;
+}

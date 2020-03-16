@@ -10,6 +10,8 @@ import Testimonial from "../ignitus-HomePage/ignitus-Testimonial";
 import WhatWeProvide from "../ignitus-HomePage/ignitus-WhatWeDo";
 import Partner from "../ignitus-HomePage/ignitus-Partners";
 
+import SideNavigation from "../ignitus-Shared/Components"; //check this
+
 import LoginProfessor from "../ignitus-Authentication/ignitus-ProfessorLogin";
 import SignupProfessor from "../ignitus-Authentication/ignitus-ProfessorSignUp";
 import LoginStudent from "../ignitus-Authentication/ignitus-StudentLogin";
@@ -73,6 +75,13 @@ export const PublicRoutes = props => {
           path="/signup/student"
           component={SignupStudent.containers.Signup}
         />
+
+        {/* check this */}
+        <Route
+          path="/sidenav/navigation"
+          component={SideNavigation.settings.SideNavigation}
+        />
+
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
