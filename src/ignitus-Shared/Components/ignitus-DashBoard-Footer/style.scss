@@ -3,104 +3,89 @@
 
 .rectangle {
   position: absolute;
-width: 276px;
-height: 121px;
-left: 1072px;
-top: 116px;
-background: $ignite-background-color-white;
-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-border-radius: 16px;
+  width: 276px;
+  height: 121px;
+  left: 1072px;
+  top: 116px;
+  background: $ignite-background-color-white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
 }
 
-.link{
-  height: 17px;
-  top: 144px;
-  font-family: $ignite-font-family-default;;
-  font-style: normal;
+.link {
+  font-family: $ignite-font-family-default;
   font-weight: $ignite-font-weight-normal;
-  font-size: $ignite-font-size-xs;
   line-height: 16px;
-  
+  font-style: normal;
+  display: table-cell;
 }
 
+.top-row {
+  display: table;
+}
 
-#about{
-  width: 22px;
-  left: 1102px;
-  padding: 10px 30px;
+a {
   color: $ignite-color-gray-20;
 }
 
-.ss{
-  padding: 28px 0px 15px 30px;
-  padding: 28px 0px 15px 30px;
+a:hover{
+  color: $ignite-color-blue-bg;
+}
+
+#about{
+  height: 17px;
+  top: 144px;
+  width: 22px;
+  left: 1102px;
+  padding: 28px 28px 10px 30px;
+  font-size: 14px;
 }
 
 #privacy{
+  height: 17px;
+  top: 144px;
   width: 56px;
   left: 1175px;
-  padding: 10px 30px;
-  
-  color: $ignite-color-gray-20;
-  /* identical to box height */
-  
-  
-  
+  padding: 28px 26px 10px 10px;
+  font-size: 14px;
 }
 
 #careers{
+  height: 17px;
+  top: 144px;
   width: 56px;
   height: 17px;
-  padding: 10px 30px;
-  color: $ignite-color-gray-20;
-  
+  padding: 28px 35px 10px 10px;
+  font-size: 14px;
 }
 
-.helpcenter{
+#helpcenter{
   width: 85px;
   height: 17px;
   left: 1092px;
   top: 176px;
-  
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
+  padding: 7px 20px 10px 20px;
   font-size: 14px;
-  line-height: 16px;
-  /* identical to box height */
-  padding: 28px 204px 76px 30px;
-  
-  color: #3D3D3D;
+  white-space: nowrap;
 }
 
-.terms{
+#terms{
   width: 135px;
   height: 17px;
   left: 1202px;
   top: 176px;
-  
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
+  padding: 7px 40px 10px 20px;
   font-size: 14px;
-  line-height: 16px;
-  /* identical to box height */
-  
-  padding: 28px 204px 76px 30px;
-  color: #3D3D3D;
-
+  white-space: nowrap;
 }
 
-.igintus{
-width: 99px;
-left: 1157px;
-top: 207px;
-
-font-family: $ignite-font-family-default;
-font-style: normal;
-font-weight: normal;
-font-size: $ignite-font-size-xs;
-line-height: 16px;
-padding: 28px 204px 76px 30px;
-color: $ignite-color-blue-bg;
+#ignitus{
+  width: 99px;
+  height: 17px;
+  left: 1157px;
+  top: 207px;
+  font-size: $ignite-font-size-xs;
+  padding: 5px 35px 76px 90px;
+  white-space: nowrap;
+  color: #000066;
 }
