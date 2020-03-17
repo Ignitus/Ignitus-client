@@ -5,9 +5,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import * as S from '../styles';
-import { withErrorBoundary } from '../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-const Opportunity = () => (
+export const Opportunity = () => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
@@ -32,23 +32,24 @@ const Opportunity = () => (
             We are looking for a Python engineer to join our SEO team in Munich
             and drive organic user acquisition of Ignitus.
           </S.OpportunityDescription>
-          <S.BtnContainer>
-            <S.BtnContainerIcon />
-            <S.BtnContainerText>Apply</S.BtnContainerText>
-          </S.BtnContainer>
+          <BtnWithIcon />
         </S.OpportunityDescriptionBtnContainer>
       </S.DescriptionContainer>
     </S.ImageDescriptionContainer>
   </S.OpportunityContainer>
 );
 
+const BtnWithIcon = () => (
+  <S.BtnContainer>
+    <S.BtnContainerIcon />
+    <S.BtnContainerText>Apply</S.BtnContainerText>
+  </S.BtnContainer>
+);
+
 const OpportunityList = () => (
   <S.OpportunityList>
     <Opportunity />
-    <Opportunity />
-    <Opportunity />
   </S.OpportunityList>
 );
-
 
 export default withErrorBoundary(OpportunityList);
