@@ -101,11 +101,8 @@ export const Eyes = styled.div`
 `;
 
 export const AnimationText = styled.p`
-  margin-top: 100px;
+  margin-top: 5rem;
   text-align: center;
-  color: ${C.IgnitusBlue};
-  justify-content: center;
-  width: 100%;
 
   &::before {
     content: 'Got lost? How......?  Ahhhh...!';
@@ -120,22 +117,12 @@ export const AnimationText = styled.p`
 `;
 
 export const MessageContainer = styled.div`
-  min-height: 60vh;
-  padding: 20px;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  font-weight: ${C.IgnitusBlue};
   text-align: center;
+  margin-bottom: 6rem;
 `;
 
 export const Message = styled.p`
   color: ${C.IgnitusBlue};
-  margin-left: 218px;
-  justify-content: center;
-  font-size: 22px;
-  display: inline;
-  text-align: center;
 `;
 
 export const StyledParagraph = styled(Paragraph)``;
