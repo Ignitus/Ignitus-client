@@ -23,13 +23,11 @@ const interest = () => {
         <div className="checkboxes">
           <label className="cbox">
             <input type="checkbox" name="Oppurtunities" value="yes" />
-            {' '}
             Oppurtunities
           </label>
           <br />
           <label className="cbox">
             <input type="checkbox" name="Build-Network" value="yes" />
-            {' '}
             Build Network
           </label>
           <br />
@@ -39,14 +37,15 @@ const interest = () => {
           <br />
           <label className="cbox">
             <input type="checkbox" name="all-of-these" value="yes" />
-            {' '}
             All of these
           </label>
           <br />
         </div>
-        <div className="interestsImage">
-          <img src={interestsImage} alt="interests-image" />
-        </div>
+        <img
+          className="interestsImage"
+          src={interestsImage}
+          alt="interests-image"
+        />
       </div>
       <div className="text-center">
         <button className="saveButton">

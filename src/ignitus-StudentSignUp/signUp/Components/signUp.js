@@ -9,7 +9,7 @@ import {withErrorBoundary} from '../../../ignitus-Internals';
 
 import '../Styles/style.scss';
 
-const profile = () => {
+const signUp = () => {
   return (
     <div className="signUp">
       <img className="progressBarSignup" src={progress} alt="progress-bar" />
@@ -43,7 +43,7 @@ const profile = () => {
             <option value="timezone">Time Zone</option>
           </select>
         </form>
-        <img className="profileImageMap" src={imageMap} alt="image-map" />
+        <img className="profileImageMap" src={imageMap} alt="map" />
       </div>
       <div className="text-center">
         <button className="saveButton">
@@ -57,4 +57,4 @@ const profile = () => {
   );
 };
 
-export default withErrorBoundary (profile);
+export default withErrorBoundary (signUp);

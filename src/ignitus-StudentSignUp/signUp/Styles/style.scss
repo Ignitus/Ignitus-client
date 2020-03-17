@@ -1,5 +1,5 @@
 // import ignitus token variables
-@import './src/shared/styles/ignitus-components-common.scss';
+@import './src/shared/styles/ignitus-components-common';
 
 .signUp {
   height: 55rem;
@@ -8,7 +8,7 @@
 
 .welcome {
   width: 100%;
-  height: 57px;
+  height: 3rem;
   text-align: center;
   margin-top: 4rem;
   font-family: Raleway;
