@@ -19,7 +19,7 @@ import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/igni
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from "react-loadable";
 
-import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound';
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 import { UIkit } from "../../ignitus-UserInterfaceKit/Components";
 
