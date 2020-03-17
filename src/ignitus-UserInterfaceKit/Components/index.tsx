@@ -2,8 +2,8 @@ import React from 'react';
 import * as A from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import * as K from '../styles';
 import UserSettingsSideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-UserSettingsSideNavigation/Components';
-import { Opportunity } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
-
+import {Opportunity} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
+import SideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-DashboardSideNavigation/SideNavigation';
 
 export const UIkit = () => (
   <React.Fragment>
@@ -47,6 +47,7 @@ export const UIkit = () => (
       <K.Heading4> Footer </K.Heading4>
       <K.Heading4> Sidebars </K.Heading4>
       <UserSettingsSideNavigation />
+      <SideNavigation />
       <K.Heading4> Opportunity list </K.Heading4>
       <Opportunity />
       <K.Heading4> Forms </K.Heading4>

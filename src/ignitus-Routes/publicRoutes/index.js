@@ -14,7 +14,7 @@ import LoginProfessor from "../../ignitus-Authentication/ignitus-ProfessorLogin"
 import SignupProfessor from "../../ignitus-Authentication/ignitus-ProfessorSignUp";
 import LoginStudent from "../../ignitus-Authentication/ignitus-StudentLogin";
 import SignupStudent from "../../ignitus-Authentication/ignitus-StudentSignUp";
-import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/ignitus-Common-Auth-Student-Prof/Components/commonLoginRegister";
+import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/ignitus-CommonAuthentication/Components/commonLoginRegister";
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from "react-loadable";

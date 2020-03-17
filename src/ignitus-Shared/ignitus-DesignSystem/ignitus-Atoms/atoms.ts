@@ -53,6 +53,7 @@ export const Paragraph = styled.p`
   font-size: ${F.SM};
   font-weight: ${F.Normal};
   color: ${C.GreyText};
+  margin: 0;
 `;
 
 export const Separator = styled.hr`
@@ -65,7 +66,6 @@ export const Separator = styled.hr`
   border-width: 1px;
   color: ${C.Grey1};
 `;
-
 
 export const Button = styled.button`
   border-radius: 5px;
@@ -83,7 +83,8 @@ export const PrimaryButton = styled(Button)<InputProps>`
   color: ${C.White};
   font-size: ${F.MD};
   font-weight: ${F.Normal};
-  background-color: ${props => props.primary ? colors['ignitusBlue'] : 'null'};
+  background-color: ${props =>
+    props.primary ? colors['ignitusBlue'] : 'null'};
   border: none;
   &:hover,
   &:focus {
@@ -117,12 +118,12 @@ export const GreyButton = styled(Button)`
 `;
 
 export const Card = styled.a`
-    display: block;
-    height: auto;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    background-color: ${C.White};
+  display: block;
+  height: auto;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  background-color: ${C.White};
 `;
 
 /* Shared between partners & contributors component. */
