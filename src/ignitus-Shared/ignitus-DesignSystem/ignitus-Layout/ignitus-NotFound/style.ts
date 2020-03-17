@@ -2,7 +2,8 @@ import styled from '@emotion/styled';
 import {keyframes} from '@emotion/core';
 import * as C from '../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../ignitus-Atoms/fonts';
-import {Paragraph} from '../../ignitus-Atoms/atoms';
+import {Link} from 'react-router-dom';
+import {Paragraph, PrimaryButton} from '../../ignitus-Atoms/atoms';
 
 export const eye = keyframes`
   0% ,30% , 55%, 90% , 100% {
@@ -123,6 +124,19 @@ export const MessageContainer = styled.div`
 
 export const Message = styled.p`
   color: ${C.IgnitusBlue};
+`;
+
+export const StyledPrimaryBtn = styled(PrimaryButton)`
+  a {
+    color: ${C.White};
+  }
+  &:hover {
+    color: ${C.IgnitusBlue};
+    a {
+      color: ${C.IgnitusBlue};
+      text-decoration: none;
+    }
+  }
 `;
 
 export const StyledParagraph = styled(Paragraph)``;

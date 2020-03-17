@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import * as S from '../style';
-import {PrimaryButton} from '../../../ignitus-Atoms/atoms';
 
 export const Notfound = () => (
   <React.Fragment>
@@ -17,7 +16,9 @@ export const Notfound = () => (
           The page you are looking for is not available! 🔨
         </S.StyledParagraph>
       </S.Message>
-      <PrimaryButton primary>Home Page</PrimaryButton>
+      <S.StyledPrimaryBtn primary>
+        <Link to="/"> Home Page </Link>
+      </S.StyledPrimaryBtn>
     </S.MessageContainer>
   </React.Fragment>
 );
