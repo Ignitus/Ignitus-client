@@ -1,13 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
 import * as S from '../styles';
-import underConstruction from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/underContruction.png';
+import underConstruction from '../../../ignitus-Assets/ignitus-Images/img-Png/underContruction.png';
 import {
   Heading3,
   Paragraph,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+} from '../../../ignitus-Atoms/atoms';
 
-export const websiteUnderConstruction = () => (
+export const WebsiteUnderConstruction = () => (
   <S.Container>
     <S.Img src={underConstruction} alt="Site Under Build" />
     <S.TextContainer>

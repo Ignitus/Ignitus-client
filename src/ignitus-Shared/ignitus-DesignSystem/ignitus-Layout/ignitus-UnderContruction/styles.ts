@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import {
   Heading3,
   flexibleColDiv,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+} from '../../ignitus-Atoms/atoms';
 
 export const Container = styled(flexibleColDiv)`
   margin-top: 6rem;

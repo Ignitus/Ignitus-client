@@ -60,9 +60,9 @@ class dashBoardHeader extends React.Component {
               <li className="nav-item active">
                 <HashLink smooth to="/#">
                   <span className="nav-link">
-                    Home 
-{' '}
-<span className="sr-only">(current)</span>
+                    Home
+                    {' '}
+                    <span className="sr-only">(current)</span>
                   </span>
                 </HashLink>
               </li>
@@ -85,9 +85,7 @@ class dashBoardHeader extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link disabled" href="#">
-                  Welcome 
-{' '}
-{email}
+                  {email}
                 </a>
               </li>
               <li className="nav-item">

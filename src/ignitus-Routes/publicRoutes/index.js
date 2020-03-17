@@ -22,7 +22,7 @@ import Loadable from "react-loadable";
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 import { UIkit } from "../../ignitus-UserInterfaceKit/Components";
-import { websiteUnderConstruction } from "../../ignitus-Dashboard/ignitus-UnderContruction/Components";
+import { WebsiteUnderConstruction } from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components";
 
 // RouteBased CodeSplitting.
 
@@ -79,7 +79,6 @@ export const PublicRoutes = props => {
         <Route path="/Login" component={CommonLoginUI} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
         <Route path="/UIkit" component={UIkit} />
-        <Route path="/under" component={websiteUnderConstruction} />
         <Route
           path="/"
           component={Notfound}
