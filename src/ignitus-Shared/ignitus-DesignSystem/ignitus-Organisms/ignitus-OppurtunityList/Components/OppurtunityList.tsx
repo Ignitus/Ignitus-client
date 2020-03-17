@@ -32,14 +32,18 @@ export const Opportunity = () => (
             We are looking for a Python engineer to join our SEO team in Munich
             and drive organic user acquisition of Ignitus.
           </S.OpportunityDescription>
-          <S.BtnContainer>
-            <S.BtnContainerIcon />
-            <S.BtnContainerText>Apply</S.BtnContainerText>
-          </S.BtnContainer>
+          <BtnWithIcon />
         </S.OpportunityDescriptionBtnContainer>
       </S.DescriptionContainer>
     </S.ImageDescriptionContainer>
   </S.OpportunityContainer>
+);
+
+const BtnWithIcon = () => (
+  <S.BtnContainer>
+    <S.BtnContainerIcon />
+    <S.BtnContainerText>Apply</S.BtnContainerText>
+  </S.BtnContainer>
 );
 
 const OpportunityList = () => (
