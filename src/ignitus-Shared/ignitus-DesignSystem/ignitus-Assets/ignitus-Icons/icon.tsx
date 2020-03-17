@@ -7,6 +7,10 @@ import PlusIcon from './plusIcon/plusIcon';
 import ApplyIcon from './applyIcon/applyIcon';
 import HeartIcon from './heartIcon/heartIcon';
 import {AppIcon} from '../../../types/iconsTypes/enums';
+import MessageIcon from './messageIcon/messageIcon';
+import SaveIcon from './saveIcon/saveIcon';
+import NetworkIcon from './networkIcon';
+import MentorsIcon from './mentorsIcon/mentorsIcon';
 
 type Props = {
   name: AppIcon;
@@ -34,6 +38,18 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.TwitterIcon:
       return <TwitterIcon {...rest} />;
+
+    case AppIcon.MessageIcon:
+      return <MessageIcon {...rest} />;
+
+    case AppIcon.SaveIcon:
+      return <SaveIcon {...rest} />;
+
+    case AppIcon.NetworkIcon:
+      return <NetworkIcon {...rest} />;
+
+    case AppIcon.MentorsIcon:
+      return <MentorsIcon {...rest} />;
   }
 };
 
