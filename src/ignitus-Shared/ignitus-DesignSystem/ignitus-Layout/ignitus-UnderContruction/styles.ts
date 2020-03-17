@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import {
-  Heading3,
   flexibleColDiv,
 } from '../../ignitus-Atoms/atoms';
 
