@@ -3,8 +3,7 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import LinkedInIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkedInIcon/linkedInIcon';
-import AngelListIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon/angelListIcon';
+import Icon from "../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/icon";
 
 type LinkWrapperProps = {
   toggle: boolean;
@@ -15,12 +14,6 @@ type TeamItemTitleProps = {
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
-
-export const Icon = styled.span`
-  i {
-    color: ${C.Red};
-  }
-`;
 
 export const TeamItemTitle = styled.h6`
   margin-top: 1rem;
@@ -106,7 +99,7 @@ export const TeamCardContainer = styled.div`
   }
 `;
 
-export const LinkedIn = styled(LinkedInIcon)`
+export const LinkedIn = styled(Icon)`
   height: 1.2rem;
   fill: ${C.Black};
   &:hover {
@@ -114,7 +107,7 @@ export const LinkedIn = styled(LinkedInIcon)`
   }
 `;
 
-export const AngelList = styled(AngelListIcon)`
+export const AngelList = styled(Icon)`
   height: 1.2rem;
   fill: ${C.Black};
   &:hover {
