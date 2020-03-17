@@ -7,13 +7,13 @@ const bannerImage = require('../../ignitus-Assets/Images/siteUnderBuild.png');
 
 export const SiteUnderBuild = () => (
   <div className="banner">
-    <img src={bannerImage} className="banner-img" alt="Site Under Build" />
+    <img src={bannerImage} className="bannerImg" alt="Site Under Build" />
     <div>
-      <p className="maintenance-heading">Our site is under maintenance</p>
-      <p className="maintenance-text">
+      <p className="maintenanceHeading">Our site is under maintenance</p>
+      <p className="maintenanceText">
         We&apos;re working on making better experiences for you.
       </p>
-      <p className="maintenance-text">
+      <p className="maintenanceText">
         We should be back shortly. Thank you for the patience.
       </p>
     </div>
