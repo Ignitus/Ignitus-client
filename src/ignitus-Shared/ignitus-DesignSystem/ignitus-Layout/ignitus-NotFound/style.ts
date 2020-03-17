@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 import {keyframes} from '@emotion/core';
 import * as C from '../../ignitus-Atoms/colors';
-import {MD, Normal} from '../../ignitus-Atoms/fonts';
-import {Link} from 'react-router-dom';
+import {SM} from '../../ignitus-Atoms/fonts';
 import {Paragraph, PrimaryButton} from '../../ignitus-Atoms/atoms';
 
 export const eye = keyframes`
@@ -66,7 +65,7 @@ export const Eyes = styled.div`
   background: ${C.IgnitusBlue};
   width: 75px;
   height: 80px;
-  border-radius: 50% 50% 50% 50%/45px 45px 45% 45%;
+  border-radius: 50%;
   transform: rotate(45deg);
 
   &::after {
@@ -139,4 +138,9 @@ export const StyledPrimaryBtn = styled(PrimaryButton)`
   }
 `;
 
-export const StyledParagraph = styled(Paragraph)``;
+export const StyledParagraph = styled(Paragraph)`
+  color: ${C.IgnitusBlue};
+  font-size: ${SM};
+`;
+
+/* Animation Credit goes to  https://codepen.io/paarmita/pen/pqVzZL */
