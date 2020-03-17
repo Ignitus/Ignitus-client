@@ -3,7 +3,7 @@ import * as A from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atom
 import * as K from '../styles';
 import UserSettingsSideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-UserSettingsSideNavigation/Components';
 import {Opportunity} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
-import SideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-DashboardSideNavigation/SideNavigation';
+import SideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-DashboardSideNavigation';
 
 export const UIkit = () => (
   <React.Fragment>

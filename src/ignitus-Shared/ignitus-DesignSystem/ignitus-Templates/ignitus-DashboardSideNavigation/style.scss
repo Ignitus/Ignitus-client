@@ -2,16 +2,10 @@
 @import '../../../styles/ignitus-tokens.scss';
 
 .navigator {
-  position: absolute;
-  width: 220px;
-  height: 320px;
-  left: 75px;
-  top: 145px;
   background: $ignite-color-white;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  padding: 20px 0;
-
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 12rem;
 }
 .option {
   font-size: 16px;
