@@ -2,42 +2,42 @@
 @import './src/shared/styles/ignitus-components-common';
 
 .signUp {
-  height: 55rem;
   background-color: white;
+  height: 55rem;
 }
 
 .welcome {
-  width: 100%;
-  height: 3rem;
-  text-align: center;
-  margin-top: 4rem;
+  color: #000066;
   font-family: Raleway;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
+  height: 3rem;
   line-height: 1rem;
-  color: #000066;
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
 }
 
 .progressBarSignup {
-  padding-left: 10rem;
-  padding-top: 4rem;
-  padding-right: 10rem;
-  max-width: 100%;
-  max-height: 100%;
   display: block;
   margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 4rem;
 }
 
 .paragragh {
-  text-align: center;
-  width: 100%;
+  color: #2d2d2d;
   font-family: Raleway;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.5rem;
   line-height: 1rem;
-  color: #2d2d2d;
+  text-align: center;
+  width: 100%;
 }
 
 .infoContainer {

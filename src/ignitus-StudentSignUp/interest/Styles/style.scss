@@ -1,10 +1,10 @@
 // import ignitus token variables
 @import './src/shared/styles/ignitus-components-common.scss';
-@import '../../signUp/Styles/style.scss';
+@import '../../signUp/Styles/style';
 
 .interest {
-  height: 65rem;
   background-color: white;
+  height: 65rem;
 }
 
 .interestsImage {
@@ -13,21 +13,21 @@
 }
 
 .cbox {
-  padding: 0.4rem 2rem;
+  color: #4d4d4d;
   font-family: Raleway;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.6rem;
   line-height: 1.5rem;
-  color: #4d4d4d;
+  padding: 0.4rem 2rem;
 }
 
 .checkboxContainer {
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem 0;
   justify-content: center;
-  align-content: center;
+  padding: 5rem 0;
 }
 
 input {
