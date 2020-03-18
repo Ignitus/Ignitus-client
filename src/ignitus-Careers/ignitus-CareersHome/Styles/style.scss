@@ -1,0 +1,14 @@
+@import './src/ignitus-Shared/styles/ignitus-components-common';
+$base-color: #000066;
+$description-color: #777777;
+$white-bg: #fff;
+$main-color: #f7f7f7;
+$fb-color: #4e71a8;
+$twitter-color: #1da1f2;
+$linkedin-color: #04689b;
+$reddit-color: #ff5706;
+
+.outer-div-1 {
+  background-color: $base-color;
+  margin: 0;
+}

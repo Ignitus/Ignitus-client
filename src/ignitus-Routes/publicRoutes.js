@@ -20,7 +20,8 @@ import loader from "../ignitus-Assets/Images/loader2.gif";
 import Loadable from "react-loadable";
 
 import {Notfound} from './notFound';
-import JobConfirmation  from "../ignitus-Careers/ignitus-JobConfirmation";
+import CareersHome from "../ignitus-Careers/ignitus-CareersHome";
+import JobConfirmation from "../ignitus-Careers/ignitus-JobConfirmation";
 
 // RouteBased CodeSplitting.
 
@@ -75,6 +76,7 @@ export const PublicRoutes = props => {
         />
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
+        <Route path="/CareersHome" component={CareersHome.components.CareersHome} />
         <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
         <Route
           path="/"

@@ -132,14 +132,11 @@ const PureFooter = ({
                 </a>
               </li>
               <li>
-                <a
-                  className="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://angel.co/ignitus-2/jobs"
-                >
+              <Link to="/CareersHome">
+                <span className="link" href="/CareersHome">
                   Careers
-                </a>
+                </span>
+              </Link>
               </li>
               <li>
                 <a
