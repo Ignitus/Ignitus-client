@@ -9,6 +9,7 @@ const MessageIcon = ({title = 'MessageIcon', ...rest}: Props) => {
       aria-label={title}
       aria-hidden="true"
       data-icon="messageIcon"
+      viewBox="0 0 24 24"
       {...rest}
     >
       <title>{title}</title>

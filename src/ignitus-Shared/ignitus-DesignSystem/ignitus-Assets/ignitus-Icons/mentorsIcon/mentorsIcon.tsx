@@ -9,6 +9,7 @@ const MentorsIcon = ({title = 'MentorsIcon', ...rest}: Props) => {
       aria-label={title}
       aria-hidden="true"
       data-icon="mentorsIcon"
+      viewBox="0 0 24 24"
       {...rest}
     >
       <title>{title}</title>

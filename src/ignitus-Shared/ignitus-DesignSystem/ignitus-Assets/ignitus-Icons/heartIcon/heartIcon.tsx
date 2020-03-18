@@ -5,15 +5,15 @@ type Props = HTMLAttributes<SVGElement>;
 const HeartIcon = ({title = 'HeartIcon', ...rest}: Props) => {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       aria-label={title}
       aria-hidden="true"
-      data-icon="heart"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512"
+      data-icon="networkIcon"
+      viewBox="0 0 24 24"
       {...rest}
     >
-      <title>{title}</title>
-      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8a31.35 31.35 0 0045.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M13.35 20.13a2 2 0 01-2.69-.01l-.11-.1C5.3 15.27 1.87 12.16 2 8.28c.06-1.7.93-3.33 2.34-4.29A5.8 5.8 0 0112 5.09a5.78 5.78 0 017.66-1.1A5.46 5.46 0 0122 8.28c.14 3.88-3.3 6.99-8.55 11.76l-.1.09z" />
     </svg>
   );
 };

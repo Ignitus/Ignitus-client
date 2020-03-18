@@ -9,6 +9,7 @@ const SaveIcon = ({title = 'SaveIcon', ...rest}: Props) => {
       aria-label={title}
       aria-hidden="true"
       data-icon="saveIcon"
+      viewBox="0 0 24 24"
       {...rest}
     >
       <title>{title}</title>

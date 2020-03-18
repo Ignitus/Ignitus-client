@@ -9,6 +9,7 @@ const NetworkIcon = ({title = 'NetworkIcon', ...rest}: Props) => {
       aria-label={title}
       aria-hidden="true"
       data-icon="networkIcon"
+      viewBox="0 0 24 24"
       {...rest}
     >
       <title>{title}</title>
