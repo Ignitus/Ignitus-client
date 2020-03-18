@@ -42,3 +42,8 @@ export const LinkedIn = styled(LinkedInIcon)`
 export const AngelList = styled(AngelListIcon)`
   height: 3rem;
 `;
+
+export const NavigationWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;

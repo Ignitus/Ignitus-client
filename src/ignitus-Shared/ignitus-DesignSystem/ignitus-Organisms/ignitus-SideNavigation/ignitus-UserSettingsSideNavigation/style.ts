@@ -23,7 +23,7 @@ export const Layer = styled.div<Props>`
   cursor: pointer;
   font-size: ${MD};
   font-weight: ${Normal};
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: ${props => (props.marginTop ? '0.5rem' : 'none')};
   margin-bottom: ${props => (props.marginBottom ? '0.5rem' : 'none')};
   text-align: center;

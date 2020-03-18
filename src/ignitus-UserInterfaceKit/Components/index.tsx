@@ -46,9 +46,11 @@ export const UIkit = () => (
       <K.Heading4> Navigations </K.Heading4>
       <K.Heading4> Footer </K.Heading4>
       <K.Heading4> Sidebars </K.Heading4>
-      <UserSettingsSideNavigation />
-      
-      <SideNavigation />
+      <K.NavigationWrapper>
+        <UserSettingsSideNavigation />
+        <SideNavigation />
+      </K.NavigationWrapper>
+
       <K.Heading4> Opportunity list </K.Heading4>
       <Opportunity />
       <K.Heading4> Forms </K.Heading4>
