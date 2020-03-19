@@ -8,16 +8,14 @@ type props = {
   marginBottom?: boolean;
 };
 
-export default function UserSettingsSideNavigation() {
+export default function MessageSideNavigation() {
   return (
-    <S.SettingsContainer>
-      <Layer text="General" marginTop={true} />
-      <Layer text="Password" />
-      <Layer text="Messaging" />
-      <Layer text="Notification" />
-      <Layer text="Blocked Users" />
-      <Layer text="Privacy" border={false} marginBottom={true} />
-    </S.SettingsContainer>
+    <S.MessageContainer>
+      <Layer text="Direct Messages" marginTop={true} />
+      <Layer text="Mentors" />
+      <Layer text="Organizations" />
+      <Layer text="Groups" border={false} marginBottom={true} />
+    </S.MessageContainer>
   );
 }
 

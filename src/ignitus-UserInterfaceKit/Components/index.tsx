@@ -1,9 +1,11 @@
 import React from 'react';
 import * as A from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import * as Button from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-Buttons/Components/index';
 import * as K from '../styles';
 import UserSettingsSideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 import {Opportunity} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
 import SideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
+import MessageSideNavigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
 
 export const UIkit = () => (
   <React.Fragment>
@@ -13,7 +15,6 @@ export const UIkit = () => (
       <K.Heading4> Colors </K.Heading4>
       <K.Heading4> Icons </K.Heading4>
       <K.Twitter />
-      <K.LinkedIn />
       <K.Heading4> Typography </K.Heading4>
       <A.Heading1> Heading1 </A.Heading1>
       <A.Heading2> Heading2 </A.Heading2>
@@ -32,11 +33,37 @@ export const UIkit = () => (
       <K.Heading4> Separator </K.Heading4>
       <A.Separator />
       <K.Heading4> Progress bar </K.Heading4>
+      {/* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */}
       <K.Heading4> Buttons </K.Heading4>
-      <A.PrimaryButton primary> Primary Button </A.PrimaryButton>
-      <A.SecondaryButton> Secondary Button </A.SecondaryButton>
-      <A.GreyButton> Grey Button </A.GreyButton>
-
+      <Button.PrimaryButton> Primary Button </Button.PrimaryButton>
+      <Button.SecondaryButton> Secondary Button </Button.SecondaryButton>
+      <Button.GreyButton> Grey Button </Button.GreyButton>
+      <Button.OrangeButton> Orange Button </Button.OrangeButton>
+      <Button.WhiteButton> White Button </Button.WhiteButton>
+      <K.Heading6> Medium Sized Buttons </K.Heading6>
+      <Button.MediumPrimaryButton> Medium Primary Button </Button.MediumPrimaryButton>
+      <K.Heading6> Small Sized Buttons </K.Heading6>
+      <Button.SmallPrimaryButton> Small Primary Button </Button.SmallPrimaryButton>
+      <K.Heading6> Button States </K.Heading6>
+      <Button.DisabledButton> Disabled State </Button.DisabledButton>
+      <Button.DangerButton> Danger State </Button.DangerButton>
+      <Button.YellowButton> Yellow Button </Button.YellowButton>
+      <Button.GreenButton> Green Button </Button.GreenButton>
+      <K.Heading6> Text Button </K.Heading6>
+      <Button.TextButton> Text Button </Button.TextButton>
+      <Button.TextButtonUnderline> Text Button </Button.TextButtonUnderline>
+      <K.Heading6> Styled Buttons </K.Heading6>
+      <Button.StyledButtonBottomRight> Styled Button Bottom Right </Button.StyledButtonBottomRight>
+      <Button.StyledButtonTopLeft> Styled Button Top Left </Button.StyledButtonTopLeft>
+      <K.Heading6> Rounded Button </K.Heading6>
+      <Button.RoundedPrimaryButton> Rounded Primary Button </Button.RoundedPrimaryButton>
+      <K.Heading6> Social Buttons </K.Heading6>
+      <K.Heading6> Button with Icons </K.Heading6>
+      <K.Heading6> Floating Action Button </K.Heading6>
+      <K.Heading6> Icon with text link</K.Heading6>
+      <K.Heading6> Icon Button</K.Heading6>
+      <K.Heading6> Text link</K.Heading6>
+      <Button.TextButtonUnderline> Text Link </Button.TextButtonUnderline>
       <K.Heading2> Molecules </K.Heading2>
       <K.Heading4> Input field with buttons </K.Heading4>
       <K.Heading4> Overlay </K.Heading4>
@@ -49,8 +76,8 @@ export const UIkit = () => (
       <K.NavigationWrapper>
         <UserSettingsSideNavigation />
         <SideNavigation />
+        <MessageSideNavigation />
       </K.NavigationWrapper>
-
       <K.Heading4> Opportunity list </K.Heading4>
       <Opportunity />
       <K.Heading4> Forms </K.Heading4>
@@ -59,7 +86,6 @@ export const UIkit = () => (
       <K.Heading2> Templates </K.Heading2>
       <K.Heading4> Profile side section </K.Heading4>
       <K.Heading4> Forms </K.Heading4>
-      <K.Heading4> Filter with tags </K.Heading4>
       <K.Heading4> Posts Cards with different formats </K.Heading4>
     </K.UIKitContainer>
   </React.Fragment>
