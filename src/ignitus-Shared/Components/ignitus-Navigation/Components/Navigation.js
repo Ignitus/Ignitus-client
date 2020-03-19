@@ -46,8 +46,7 @@ const PureNavigation = ({ displayClass, dynamicLogo }) => (
             <span className="nav-link">Contributors</span>
           </HashLink>
         </li>
-        <li className="nav-item transparent">
-          
+        <li className="nav-item">
           <Link to="/aboutus">
             <span className="nav-link" href="/aboutus">
                   About
@@ -99,8 +98,7 @@ const Navigation = () => {
         if (navScrolled === true) {
           setNavScrolled(false);
           setDisplayClass('whitenav');
-          setDynamicLogo(blackLogo);
-          
+          setDynamicLogo(blackLogo); 
         }
       } else if (navScrolled === false) {
         setNavScrolled(true);
