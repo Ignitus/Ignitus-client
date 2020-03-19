@@ -46,7 +46,8 @@ const PureNavigation = ({ displayClass, dynamicLogo }) => (
             <span className="nav-link">Contributors</span>
           </HashLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item transparent">
+          
           <Link to="/aboutus">
             <span className="nav-link" href="/aboutus">
                   About
@@ -88,7 +89,7 @@ const PureNavigation = ({ displayClass, dynamicLogo }) => (
 
 const Navigation = () => {
   const [navScrolled, setNavScrolled] = useState(false);
-  const [displayClass, setDisplayClass] = useState('transparent');
+  const [displayClass, setDisplayClass] = useState('whitenav');
   const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
 
   useEffect(() => {
@@ -97,8 +98,9 @@ const Navigation = () => {
       if (currentScrollY < 20) {
         if (navScrolled === true) {
           setNavScrolled(false);
-          setDisplayClass('transparent');
+          setDisplayClass('whitenav');
           setDynamicLogo(blackLogo);
+          
         }
       } else if (navScrolled === false) {
         setNavScrolled(true);
