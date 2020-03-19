@@ -1,10 +1,8 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prefer-stateless-function
 
 const PrivateRoute = ({ Component }) => (
   <Route

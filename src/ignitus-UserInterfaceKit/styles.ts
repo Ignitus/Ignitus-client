@@ -24,6 +24,11 @@ export const Heading4 = styled(A.Heading4)`
   color: ${C.GreyText};
 `;
 
+export const Heading6 = styled(A.Heading6)`
+  margin: 10px 0;
+  color: ${C.GreyText};
+`;
+
 export const Card = styled(A.Card)`
   width: 60%;
 `;
@@ -45,5 +50,5 @@ export const AngelList = styled(AngelListIcon)`
 
 export const NavigationWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 `;

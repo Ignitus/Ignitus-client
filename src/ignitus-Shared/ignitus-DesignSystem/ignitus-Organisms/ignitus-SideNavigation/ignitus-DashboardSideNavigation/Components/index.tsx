@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import * as S from '../style';
 import {AppIcon} from '../../../../../types/iconsTypes/enums';
