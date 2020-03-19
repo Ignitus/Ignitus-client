@@ -1,7 +1,7 @@
 @import '../../styles/ignitus-components-common.scss';
 @import '../../styles/ignitus-tokens.scss';
 
-.hodo {
+.rectangle {
   position: absolute;
   height: 121px;
   width: 276px;
@@ -10,6 +10,7 @@
   background: $ignite-background-color-white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+  padding: 10px;
 }
 
 .column {
@@ -26,6 +27,7 @@ a {
   font-style: normal;
   font-size: 14px;
   color: $ignite-color-gray-20;
+  padding: 5px;
 }
 
 a:hover {

@@ -4,7 +4,7 @@ import './style.scss';
 
 export default function dashboardFooter() {
   return (
-    <div className="hodo">
+    <div className="rectangle">
       <div className='column'>
         <div className='columnOne'>
           <a href=''> About </a>
