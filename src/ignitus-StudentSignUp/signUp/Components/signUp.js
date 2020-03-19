@@ -4,7 +4,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import progress from '../../../ignitus-Assets/Images/progressPage1.png';
-import imageMap from '../../../ignitus-Assets/Images/profileImageMap1.png';
+import imageMap from '../../../ignitus-Assets/Images/profileImageMap.png';
 import {withErrorBoundary} from '../../../ignitus-Internals';
 
 import '../Styles/style.scss';
