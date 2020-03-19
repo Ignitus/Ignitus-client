@@ -4,7 +4,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import progress from '../../../ignitus-Assets/Images/progressPage1.png';
-import imageMap from '../../../ignitus-Assets/Images/profileImageMap.png';
+import imageMap from '../../../ignitus-Assets/Images/profileImageMap1.png';
 import {withErrorBoundary} from '../../../ignitus-Internals';
 
 import '../Styles/style.scss';
@@ -13,15 +13,14 @@ const signUp = () => (
   <div className="signUp">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <p className="welcome">Welcome, Sophia</p>
-    <p className="paragragh">
+    <p className="paragraph">
       Let’s start with your profile. This will get you successful on Ignitus
     </p>
-    <br />
-    <p className="paragragh">
+    <p className="paragraph">
       Confirm your own location and time zone to make communication easier!{' '}
     </p>
     <div className="infoContainer">
-      <form>
+      <form className="dropdownContainer">
         <label className="labelDropdown">Country/Region</label>
         <br />
         <select className="dropdown" value="Select country">

@@ -15,7 +15,7 @@ const emailConfirmed = () => (
     <div className="newsletter">
       <img src={newsletter} alt="newsletter" />
     </div>
-    <p className="confirmParagraph">Your email has been confirmed</p>
+    <p className="welcome">Your email has been confirmed</p>
     <p className="paragraph">Your verified email is sophia.crater@gmail.com</p>
     <div className="text-center">
       <button className="getStarted">

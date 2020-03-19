@@ -4,7 +4,7 @@
 
 .email {
   background-color: white;
-  height: 48rem;
+  height: 52rem;
 }
 
 .newsletter > img {
@@ -13,48 +13,28 @@
   max-width: 100%;
 }
 
-.confirmParagraph {
-  color: #000066;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 600;
-  height: 57px;
-  line-height: 1rem;
-  text-align: center;
-  margin-top: 4rem;
-  width: 100%;
+.emailConfirmContainer {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
-.paragraph {
-  color: #2d2d2d;
-  font-family: Raleway;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.6rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  text-align: center;
-  width: 100%;
+.emailConfirmContainer > button {
+  border-radius: 9px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  height: 2.5rem;
+  margin: 0.5rem;
+  width: 12rem;
 }
 
 .emailConfirmed {
   background: #000066;
-  border-radius: 9px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  height: 2.5rem;
-  max-width: 100%;
-  width: 12rem;
 }
 
 .noEmail {
   background: #ffffff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 9px;
-  margin-left: 2rem;
-  width: 12rem;
-  height: 2.5rem;
 }
 
 .emailConfirmedText {
@@ -73,11 +53,4 @@
   font-style: normal;
   font-weight: bold;
   line-height: 0.8rem;
-}
-
-.emailConfirmContainer {
-  display: table;
-  margin: auto;
-  margin-bottom: 1.6rem;
-  margin-top: 1.6rem;
 }

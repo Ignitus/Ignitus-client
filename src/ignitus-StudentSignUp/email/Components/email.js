@@ -15,11 +15,13 @@ const email = () => (
     <div className="newsletter">
       <img src={newsletter} alt="newsletter" />
     </div>
-    <p className="confirmParagraph">Let’s confirm your email</p>
+    <p className="welcome">Let’s confirm your email</p>
     <p className="paragraph">
       We recommend to confirm your email address to recieve further
-      communication. Click the link we sent to sofia.carter@gmail.com to confirm
-      you email
+      communication.
+    </p>
+    <p className="paragraph">
+      Click the link we sent to sofia.carter@gmail.com to confirm you email
     </p>
     <div className="emailConfirmContainer">
       <button className="emailConfirmed">

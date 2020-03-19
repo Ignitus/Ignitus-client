@@ -13,9 +13,8 @@ const interest = () => (
   <div className="interest">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <p className="welcome">What are you interested in?</p>
+    <p className="paragraph">This will customize your experience</p>
     <p className="paragraph">
-      This will customize your experience
-      <br />
       This will help you to discover right people and opportunities
     </p>
     <div className="checkboxContainer">
@@ -40,11 +39,7 @@ const interest = () => (
         </label>
         <br />
       </div>
-      <img
-        className="interestsImage"
-        src={interestsImage}
-        alt="interests-image"
-      />
+      <img className="interestsImage" src={interestsImage} alt="interests" />
     </div>
     <div className="text-center">
       <button className="saveButton">
