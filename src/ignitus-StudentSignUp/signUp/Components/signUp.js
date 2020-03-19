@@ -24,26 +24,20 @@ const signUp = () => (
       <form>
         <label className="labelDropdown">Country/Region</label>
         <br />
-        <select className="dropdown">
-          <option value="Select country" selected>
-            Select country
-          </option>
+        <select className="dropdown" value="Select country">
+          <option value="Select country">Select country</option>
           <option value="country">Country</option>
         </select>
         <label className="labelDropdown">Province</label>
         <br />
-        <select className="dropdown">
-          <option value="Select province" selected>
-            Select province
-          </option>
+        <select className="dropdown" value="Select province">
+          <option value="Select province">Select province</option>
           <option value="province">Province</option>
         </select>
         <label className="labelDropdown">Time zone</label>
         <br />
-        <select className="dropdown">
-          <option value="Select timezone" selected>
-            Select timezone
-          </option>
+        <select className="dropdown" alue="Select timezone">
+          <option value="Select timezone">Select timezone</option>
           <option value="timezone">Time Zone</option>
         </select>
       </form>

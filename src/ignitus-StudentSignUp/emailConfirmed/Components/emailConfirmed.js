@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import progress from '../../../ignitus-Assets/Images/progressPage6.png';
 import newsletter from '../../../ignitus-Assets/Images/newsletterAcceptIcon.png';
