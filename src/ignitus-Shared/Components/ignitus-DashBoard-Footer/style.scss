@@ -1,10 +1,10 @@
 @import '../../styles/ignitus-components-common.scss';
 @import '../../styles/ignitus-tokens.scss';
 
-.rectangle {
+.hodo {
   position: absolute;
-  width: 276px;
   height: 121px;
+  width: 276px;
   left: 1072px;
   top: 116px;
   background: $ignite-background-color-white;
@@ -12,80 +12,36 @@
   border-radius: 16px;
 }
 
-.link {
-  font-family: $ignite-font-family-default;
-  font-weight: $ignite-font-weight-normal;
+.column {
   line-height: 16px;
-  font-style: normal;
-  display: table-cell;
-}
-
-.top-row {
-  display: table;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-between;
 }
 
 a {
+  font-family: $ignite-font-family-default;
+  font-weight: $ignite-font-weight-normal;
+  font-style: normal;
+  font-size: 14px;
   color: $ignite-color-gray-20;
 }
 
-a:hover{
+a:hover {
   color: $ignite-color-blue-bg;
 }
 
-#about{
-  height: 17px;
-  top: 144px;
-  width: 22px;
-  left: 1102px;
-  padding: 28px 28px 10px 30px;
-  font-size: 14px;
+.columnOne {
+  padding:10px;
 }
 
-#privacy{
-  height: 17px;
-  top: 144px;
-  width: 56px;
-  left: 1175px;
-  padding: 28px 26px 10px 10px;
-  font-size: 14px;
+.columnTwo {
+  padding: 8px;
 }
 
-#careers{
-  height: 17px;
-  top: 144px;
-  width: 56px;
-  height: 17px;
-  padding: 28px 35px 10px 10px;
+.columnThree {
   font-size: 14px;
-}
-
-#helpcenter{
-  width: 85px;
-  height: 17px;
-  left: 1092px;
-  top: 176px;
-  padding: 7px 20px 10px 20px;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-#terms{
-  width: 135px;
-  height: 17px;
-  left: 1202px;
-  top: 176px;
-  padding: 7px 40px 10px 20px;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-#ignitus{
-  width: 99px;
-  height: 17px;
-  left: 1157px;
-  top: 207px;
-  font-size: $ignite-font-size-xs;
-  padding: 5px 35px 76px 90px;
-  white-space: nowrap;
-  color: #000066;
+  color: $ignite-color-blue-bg;
+  padding: 8px;
 }

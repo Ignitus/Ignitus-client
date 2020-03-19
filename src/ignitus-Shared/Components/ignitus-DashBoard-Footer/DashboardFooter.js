@@ -2,46 +2,26 @@
 import React from 'react';
 import './style.scss';
 
-export default function Footer() {
+export default function dashboardFooter() {
   return (
-    <div className="rectangle">
-      <div className='top-row'>
-        <div className='link' id='about'>
-          <a href=''>
-            About
-          </a>
+    <div className="hodo">
+      <div className='column'>
+        <div className='columnOne'>
+          <a href=''> About </a>
+          <a href=''> Privacy </a>
+          <a href=''> Careers </a>
         </div>
 
-        <div className='link' id='privacy'>
-          <a href=''>
-            Privacy
-          </a>
+        <div className='columnTwo'>
+          <a href=''> Help Center </a>
+          <a href=''> Terms & Conditions </a>
         </div>
 
-        <div className='link' id='careers'>
-          <a href=''>
-            Careers
-          </a>
-        </div>
-      </div>
-
-      <div className='bottom-row'>
-        <div className='link' id='helpcenter'>
-          <a href=''>
-            Help Center
-        </a>
+        <div className='columnThree'>
+          © Ignitus 2018
         </div>
 
-        <div className='link' id='terms'>
-          <a href=''>
-            Terms & Conditions
-        </a>
-        </div>
-      </div>
-
-      <div className='link' id='ignitus'>
-        © Ignitus 2018
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }

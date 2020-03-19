@@ -5,7 +5,7 @@ import React from 'react';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../../ignitus-Shared/Components/errorBoundary';
 import SideNavigation from '../../../ignitus-Shared/Components/ignitus-DashBoardComponents/DashboardSideNavigation/SideNavigation';
-import Footer from '../../../ignitus-Shared/Components/ignitus-DashBoard-Footer/DashboardFooter'
+import Footer from '../../../ignitus-Shared/Components/ignitus-DashBoard-Footer/dashboardFooter';
 
 const Dashboard = () => {
   let email = '';
@@ -16,7 +16,7 @@ const Dashboard = () => {
     <div className="container marginTop dashboard-container">
       <div className="right-section">
         <SideNavigation />
-        <Footer/>
+        <Footer />
       </div>
       <div className="left-section">
         Hello
