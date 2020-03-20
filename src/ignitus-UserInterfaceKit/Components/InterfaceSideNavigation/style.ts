@@ -22,23 +22,20 @@ export const Heading = styled(Heading3)`
 export const UnorderedList = styled.ul<ArrowProps>`
   list-style: none;
   display: ${props => (props.isexpanded ? 'block' : 'none')};
+
+  a {
+    text-decoration: none;
+    color: ${C.GreyText};
+  }
 `;
 
 export const ListItem = styled.li`
   padding: 0.5rem;
   cursor: pointer;
 
-  a {
-    text-decoration: none;
-    color: ${C.GreyText};
-  }
-
   &:hover {
     background: ${C.IgnitusBlue};
     color: ${C.White};
-    a {
-      color: ${C.White};
-    }
   }
 `;
 

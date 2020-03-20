@@ -14,10 +14,10 @@ export const UIkit = () => (
       <KitSideNavigation />
     </K.SideNavigationContainer>
     <K.UIKitContainer>
-      <K.Heading1> Ignitus UIKit </K.Heading1>
-      <K.Heading2> Atoms </K.Heading2>
+      <K.StyledHeading1> Ignitus UIKit </K.StyledHeading1>
+      <K.StyledHeading2> Atoms </K.StyledHeading2>
       
-      <K.Heading4> Typography </K.Heading4>
+      <K.StyledHeading4> Typography </K.StyledHeading4>
       <A.Heading1> Heading1 </A.Heading1>
       <A.Heading2> Heading2 </A.Heading2>
       <A.Heading3> Heading3 </A.Heading3>
@@ -26,19 +26,19 @@ export const UIkit = () => (
       <A.Heading6> Heading6 </A.Heading6>
       <A.Paragraph> Paragraph </A.Paragraph>
       
-      <K.Heading4> Card </K.Heading4>
+      <K.StyledHeading4> Card </K.StyledHeading4>
       <K.Card> Card </K.Card>
-      <K.Heading4> Separator </K.Heading4>
+      <K.StyledHeading4> Separator </K.StyledHeading4>
       <A.Separator />
      
       
-      <K.Heading6> Text link</K.Heading6>
+      <K.StyledHeading6> Text link</K.StyledHeading6>
       <Button.TextButtonUnderline> Text Link </Button.TextButtonUnderline>
      
 
-      <K.Heading2> Organisms </K.Heading2>
+      <K.StyledHeading2> Organisms </K.StyledHeading2>
      
-      <K.Heading4> Opportunity list </K.Heading4>
+      <K.StyledHeading4> Opportunity list </K.StyledHeading4>
       <Opportunity />
       
     </K.UIKitContainer>

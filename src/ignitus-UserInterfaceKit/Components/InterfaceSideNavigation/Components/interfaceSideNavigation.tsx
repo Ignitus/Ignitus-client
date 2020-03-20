@@ -44,9 +44,10 @@ const NavigationLayers = ({edges}: any) => {
 const UnorderedList = ({isexpanded, menuItem}) => (
   <S.UnorderedList isexpanded={isexpanded}>
     {menuItem.node.children.map(({title, route}) => (
-      <S.ListItem key={title}>
-        <Link to={route}>{title}</Link>
-      </S.ListItem>
+      <Link to={route}>
+        {' '}
+        <S.ListItem key={title}>{title}</S.ListItem>
+      </Link>
     ))}
   </S.UnorderedList>
 );

@@ -9,8 +9,7 @@ import AngelListIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-
 export const UIKitContainer = styled.div`
   /* display: none; */
 `;
-export const SideNavigationContainer = styled.div`
-`;
+export const SideNavigationContainer = styled.div``;
 
 export const Container = styled.div`
   display: flex;
@@ -19,21 +18,21 @@ export const Container = styled.div`
   margin-top: 4rem;
 `;
 
-export const Heading1 = styled(A.Heading1)`
+export const StyledHeading1 = styled(A.Heading1)`
   text-align: center;
 `;
 
-export const Heading2 = styled(A.Heading2)`
+export const StyledHeading2 = styled(A.Heading2)`
   margin: 20px 0;
   font-weight: ${F.Medium};
 `;
 
-export const Heading4 = styled(A.Heading4)`
+export const StyledHeading4 = styled(A.Heading4)`
   margin: 20px 0;
   color: ${C.GreyText};
 `;
 
-export const Heading6 = styled(A.Heading6)`
+export const StyledHeading6 = styled(A.Heading6)`
   margin: 10px 0;
   color: ${C.GreyText};
 `;
