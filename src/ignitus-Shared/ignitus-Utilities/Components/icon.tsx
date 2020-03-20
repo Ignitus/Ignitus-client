@@ -11,6 +11,8 @@ import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons
 import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
 import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
 import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon/mentorsIcon';
+import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown/keyBoardArrowDown';
+import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
 
 type Props = {
   name: AppIcon;
@@ -50,6 +52,12 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.MentorsIcon:
       return <MentorsIcon {...rest} />;
+
+    case AppIcon.KeyBoardArrowDown:
+      return <KeyBoardArrowDown {...rest} />;
+
+    case AppIcon.KeyBoardArrowRight:
+      return <KeyBoardArrowRight {...rest} />;
   }
 };
 

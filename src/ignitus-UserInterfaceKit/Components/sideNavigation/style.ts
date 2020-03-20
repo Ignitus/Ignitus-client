@@ -11,6 +11,7 @@ export const NavigationContainer = styled.nav`
 export const Heading = styled(Heading3)`
   color: ${C.White};
   margin-bottom: 0;
+  margin-top: 1rem;
 `;
 
 export const UnorderedList = styled.ul`
@@ -20,4 +21,5 @@ export const UnorderedList = styled.ul`
 export const ListItem = styled.li`
   color: ${C.White};
   padding: 0.5rem;
+  cursor: pointer;
 `;

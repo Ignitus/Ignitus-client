@@ -10,4 +10,6 @@ export enum AppIcon {
   MessageIcon = 'MessageIcon',
   NetworkIcon = 'NetworkIcon',
   MentorsIcon = 'MentorsIcon',
+  KeyBoardArrowDown = 'KeyBoardArrowDown',
+  KeyBoardArrowRight = 'KeyBoardArrowRight',
 }
