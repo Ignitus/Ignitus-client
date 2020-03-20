@@ -11,11 +11,11 @@ type ArrowProps = {
 export const NavigationContainer = styled.nav`
   width: 15rem;
   padding: 2rem;
-  background: black;
+  background: ${C.GreyLight};
 `;
 
-export const Heading = styled(Heading3)`
-  color: ${C.White};
+export const Heading = styled(Heading3)<ArrowProps>`
+  color: ${props => (props.isExpanded ? C.IgnitusBlue : C.Black)};
   margin-bottom: 0;
 `;
 
@@ -25,14 +25,14 @@ export const UnorderedList = styled.ul<ArrowProps>`
 `;
 
 export const ListItem = styled.li`
-  color: ${C.White};
+  color: ${C.Black};
   padding: 0.5rem;
   cursor: pointer;
 `;
 
 export const Arrow = styled(Icon)<ArrowProps>`
   height: 2rem;
-  fill: ${C.White};
+  fill: ${props => (props.isExpanded ? C.IgnitusBlue : C.Black)};
   transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 `;

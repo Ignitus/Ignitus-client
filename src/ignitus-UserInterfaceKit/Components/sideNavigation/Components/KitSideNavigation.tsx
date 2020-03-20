@@ -28,7 +28,7 @@ const NavigationLayers = ({edges}: any) => {
     <React.Fragment>
       <S.HeadingArrowContainer onClick={toogleIsExpanded}>
         {' '}
-        <S.Heading>{menuItem.node.title}</S.Heading>{' '}
+        <S.Heading isExpanded={isExpanded}>{menuItem.node.title}</S.Heading>{' '}
         <S.Arrow name={AppIcon.KeyBoardArrowRight} isExpanded={isExpanded} />
       </S.HeadingArrowContainer>
 
