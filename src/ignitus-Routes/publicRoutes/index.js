@@ -1,27 +1,31 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Navigation from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation";
-import Footer from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer";
+import React from 'react';
+import {Switch, Route} from 'react-router-dom';
+import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
+import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
-import Contributors from "../../ignitus-HomePage/ignitus-Contributors";
-import GetStarted from "../../ignitus-HomePage/ignitus-GetStarted";
-import Introduction from "../../ignitus-HomePage/ignitus-Introduction";
-import Testimonial from "../../ignitus-HomePage/ignitus-Testimonial";
-import WhatWeProvide from "../../ignitus-HomePage/ignitus-WhatWeDo";
-import Partner from "../../ignitus-HomePage/ignitus-Partners";
+import Contributors from '../../ignitus-HomePage/ignitus-Contributors';
+import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
+import Introduction from '../../ignitus-HomePage/ignitus-Introduction';
+import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
+import WhatWeProvide from '../../ignitus-HomePage/ignitus-WhatWeDo';
+import Partner from '../../ignitus-HomePage/ignitus-Partners';
 
-import LoginProfessor from "../../ignitus-Authentication/ignitus-ProfessorLogin";
-import SignupProfessor from "../../ignitus-Authentication/ignitus-ProfessorSignUp";
-import LoginStudent from "../../ignitus-Authentication/ignitus-StudentLogin";
-import SignupStudent from "../../ignitus-Authentication/ignitus-StudentSignUp";
-import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/ignitus-CommonAuthentication/Components/commonLoginRegister";
+import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
+import SignupProfessor from '../../ignitus-Authentication/ignitus-ProfessorSignUp';
+import LoginStudent from '../../ignitus-Authentication/ignitus-StudentLogin';
+import SignupStudent from '../../ignitus-Authentication/ignitus-StudentSignUp';
+import {
+  CommonLoginUI,
+  CommonSignUpUI,
+} from '../../ignitus-Authentication/ignitus-CommonAuthentication/Components/commonLoginRegister';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import Loadable from "react-loadable";
+import Loadable from 'react-loadable';
 
-import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
-import { UIkit } from "../../ignitus-UserInterfaceKit/Components/userInterfaceKit";
+import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
+import {UIkit} from '../../ignitus-UserInterfaceKit/Components/userInterfaceKit';
+import {Buttons} from '../../ignitus-UserInterfaceKit/Components/Buttons/Components';
 
 // RouteBased CodeSplitting.
 
@@ -34,11 +38,12 @@ const Loading = () => (
 );
 
 const AboutUs = Loadable({
-  loader: () => import("../../ignitus-AboutPage/ignitus-About/Components/About"),
-  loading: Loading
+  loader: () =>
+    import('../../ignitus-AboutPage/ignitus-About/Components/About'),
+  loading: Loading,
 });
 
-export const PublicRoutes = props => {
+export const PublicRoutes = () => {
   return (
     <React.Fragment>
       <Navigation.components.Navigation id={35} />
@@ -76,12 +81,13 @@ export const PublicRoutes = props => {
         />
         <Route path="/Signup" component={CommonSignUpUI} />
         <Route path="/Login" component={CommonLoginUI} />
-        <Route path="/jobConfirmation" component={JobConfirmation.components.JobConfirmation} />
-        <Route path="/UIkit" component={UIkit} />
         <Route
-          path="/"
-          component={Notfound}
+          path="/jobConfirmation"
+          component={JobConfirmation.components.JobConfirmation}
         />
+        <Route path="/buttons" component={Buttons} />
+        <Route path="/UIkit" component={UIkit} />
+        <Route path="/" component={Notfound} />
       </Switch>
       <Footer.components.Footer />
     </React.Fragment>
