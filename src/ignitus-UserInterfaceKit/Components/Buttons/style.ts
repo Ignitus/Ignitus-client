@@ -2,6 +2,39 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
+const getPadding = (props: BtnSizeProps) => {
+  if (props.medium) {
+    return '8px 20px';
+  } else if (props.small) {
+    return '4px 15px';
+  } else {
+    return '16px 32px';
+  }
+};
+
+const getFontSizes = (props: BtnSizeProps) => {
+  if (props.medium) {
+    return F.SM;
+  } else if (props.small) {
+    return F.XS;
+  } else {
+    return F.MD;
+  }
+};
+
+const getRadius = (props: BtnSizeProps) => {
+  if (props.medium || props.small) {
+    return '3px';
+  } else {
+    return '5px';
+  }
+};
+
+type BtnSizeProps = {
+  medium?: boolean;
+  small?: boolean;
+};
+
 export const ButtonsContainer = styled.div`
   padding: 3rem;
 `;
@@ -25,9 +58,12 @@ export const Button = styled.button`
   }
 `;
 
-export const PrimaryButton = styled(Button)`
+export const PrimaryButton = styled(Button)<BtnSizeProps>`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
   &:hover,
   &:focus {
     background-color: ${C.SecondaryColor};
@@ -35,10 +71,13 @@ export const PrimaryButton = styled(Button)`
   }
 `;
 
-export const SecondaryButton = styled(Button)`
+export const SecondaryButton = styled(Button)<BtnSizeProps>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   border: 2px solid ${C.IgnitusBlue};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
 `;
 
 export const WhiteButton = styled(Button)`
@@ -67,7 +106,7 @@ export const DisabledButton = styled(Button)`
   color: ${C.GreySecondaryText};
   background-color: ${C.GreyLight};
   border: none;
-  cursor: default;
+  cursor: not-allowed;
 `;
 
 export const DangerButton = styled(Button)`
@@ -135,16 +174,4 @@ export const StyledButtonTopLeft = styled(Button)`
 
 export const RoundedPrimaryButton = styled(PrimaryButton)`
   border-radius: 30px;
-`;
-
-export const MediumPrimaryButton = styled(PrimaryButton)`
-  padding: 8px 20px;
-  font-size: ${F.SM};
-  border-radius: 3px;
-`;
-
-export const SmallPrimaryButton = styled(PrimaryButton)`
-  padding: 4px 15px;
-  font-size: ${F.XS};
-  border-radius: 3px;
 `;
