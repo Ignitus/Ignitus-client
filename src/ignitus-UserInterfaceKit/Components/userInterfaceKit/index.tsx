@@ -38,49 +38,6 @@ export const UIkit = () => (
       <A.Separator />
       <K.Heading4> Progress bar </K.Heading4>
       {/* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */}
-      <K.Heading4> Buttons </K.Heading4>
-      <Button.PrimaryButton> Primary Button </Button.PrimaryButton>
-      <Button.SecondaryButton> Secondary Button </Button.SecondaryButton>
-      <Button.GreyButton> Grey Button </Button.GreyButton>
-      <Button.OrangeButton> Orange Button </Button.OrangeButton>
-      <Button.WhiteButton> White Button </Button.WhiteButton>
-      <K.Heading6> Medium Sized Buttons </K.Heading6>
-      <Button.MediumPrimaryButton>
-        {' '}
-        Medium Primary Button{' '}
-      </Button.MediumPrimaryButton>
-      <K.Heading6> Small Sized Buttons </K.Heading6>
-      <Button.SmallPrimaryButton>
-        {' '}
-        Small Primary Button{' '}
-      </Button.SmallPrimaryButton>
-      <K.Heading6> Button States </K.Heading6>
-      <Button.DisabledButton> Disabled State </Button.DisabledButton>
-      <Button.DangerButton> Danger State </Button.DangerButton>
-      <Button.YellowButton> Yellow Button </Button.YellowButton>
-      <Button.GreenButton> Green Button </Button.GreenButton>
-      <K.Heading6> Text Button </K.Heading6>
-      <Button.TextButton> Text Button </Button.TextButton>
-      <Button.TextButtonUnderline> Text Button </Button.TextButtonUnderline>
-      <K.Heading6> Styled Buttons </K.Heading6>
-      <Button.StyledButtonBottomRight>
-        {' '}
-        Styled Button Bottom Right{' '}
-      </Button.StyledButtonBottomRight>
-      <Button.StyledButtonTopLeft>
-        {' '}
-        Styled Button Top Left{' '}
-      </Button.StyledButtonTopLeft>
-      <K.Heading6> Rounded Button </K.Heading6>
-      <Button.RoundedPrimaryButton>
-        {' '}
-        Rounded Primary Button{' '}
-      </Button.RoundedPrimaryButton>
-      <K.Heading6> Social Buttons </K.Heading6>
-      <K.Heading6> Button with Icons </K.Heading6>
-      <K.Heading6> Floating Action Button </K.Heading6>
-      <K.Heading6> Icon with text link</K.Heading6>
-      <K.Heading6> Icon Button</K.Heading6>
       <K.Heading6> Text link</K.Heading6>
       <Button.TextButtonUnderline> Text Link </Button.TextButtonUnderline>
       <K.Heading2> Molecules </K.Heading2>

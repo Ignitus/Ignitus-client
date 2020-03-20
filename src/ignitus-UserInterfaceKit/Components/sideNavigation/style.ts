@@ -14,8 +14,8 @@ export const NavigationContainer = styled.nav`
   background: ${C.GreyLight};
 `;
 
-export const Heading = styled(Heading3)<ArrowProps>`
-  color: ${props => (props.isExpanded ? C.IgnitusBlue : C.Black)};
+export const Heading = styled(Heading3)`
+  color: ${C.IgnitusBlue};
   margin-bottom: 0;
 `;
 
@@ -25,14 +25,26 @@ export const UnorderedList = styled.ul<ArrowProps>`
 `;
 
 export const ListItem = styled.li`
-  color: ${C.Black};
   padding: 0.5rem;
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: ${C.GreyText};
+  }
+
+  &:hover {
+    background: ${C.IgnitusBlue};
+    color: ${C.White};
+    a {
+      color: ${C.White};
+    }
+  }
 `;
 
 export const Arrow = styled(Icon)<ArrowProps>`
   height: 2rem;
-  fill: ${props => (props.isExpanded ? C.IgnitusBlue : C.Black)};
+  fill: ${C.IgnitusBlue};
   transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 `;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import * as S from '../style';
 import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/enums';
 import useToggle from '../../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
@@ -28,7 +29,7 @@ const NavigationLayers = ({edges}: any) => {
     <React.Fragment>
       <S.HeadingArrowContainer onClick={toogleIsExpanded}>
         {' '}
-        <S.Heading isExpanded={isExpanded}>{menuItem.node.title}</S.Heading>{' '}
+        <S.Heading>{menuItem.node.title}</S.Heading>{' '}
         <S.Arrow name={AppIcon.KeyBoardArrowRight} isExpanded={isExpanded} />
       </S.HeadingArrowContainer>
 
@@ -42,8 +43,10 @@ const NavigationLayers = ({edges}: any) => {
 
 const UnorderedList = ({isExpanded, menuItem}) => (
   <S.UnorderedList isExpanded={isExpanded}>
-    {menuItem.node.children.map(({title}) => (
-      <S.ListItem>{title}</S.ListItem>
+    {menuItem.node.children.map(({title, route}) => (
+      <S.ListItem>
+        <Link to={route}>{title}</Link>
+      </S.ListItem>
     ))}
   </S.UnorderedList>
 );

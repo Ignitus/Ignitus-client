@@ -39,7 +39,7 @@ export const atomsEdges: Edges[] = [
         },
         {
           title: 'Buttons',
-          route: null,
+          route: '/interface/buttons',
         },
         {
           title: 'Toggles',
