@@ -26,9 +26,9 @@ export const PrimaryButton = styled(Button)`
   background-color: ${C.IgnitusBlue};
   &:hover,
   &:focus {
-  background-color: ${C.SecondaryColor};
-  color: ${C.IgnitusBlue};
-}
+    background-color: ${C.SecondaryColor};
+    color: ${C.IgnitusBlue};
+  }
 `;
 
 export const SecondaryButton = styled(Button)`
@@ -40,7 +40,6 @@ export const SecondaryButton = styled(Button)`
 export const WhiteButton = styled(Button)`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
-  &:hover,
 `;
 
 export const GreyButton = styled(Button)`
@@ -85,7 +84,6 @@ export const YellowButton = styled(Button)`
   border: none;
 `;
 
-
 export const TextButton = styled(Button)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
@@ -96,7 +94,6 @@ export const TextButton = styled(Button)`
     color: ${C.IgnitusBlue};
   }
 `;
-
 
 export const TextButtonUnderline = styled(Button)`
   color: ${C.IgnitusBlue};
@@ -110,27 +107,26 @@ export const TextButtonUnderline = styled(Button)`
   }
 `;
 
-
 export const StyledButtonBottomRight = styled(Button)`
-color: ${C.White};
-background-color: ${C.IgnitusBlue};
-border-radius: 0px 30px;
-&:hover,
-&:focus {
-  background-color: ${C.SecondaryColor};
-  color: ${C.IgnitusBlue};
-}
+  color: ${C.White};
+  background-color: ${C.IgnitusBlue};
+  border-radius: 0px 30px;
+  &:hover,
+  &:focus {
+    background-color: ${C.SecondaryColor};
+    color: ${C.IgnitusBlue};
+  }
 `;
 
 export const StyledButtonTopLeft = styled(Button)`
-color: ${C.White};
-background-color: ${C.IgnitusBlue};
-border-radius: 30px 0px;
-&:hover,
-&:focus {
-  background-color: ${C.SecondaryColor};
-  color: ${C.IgnitusBlue};
-}
+  color: ${C.White};
+  background-color: ${C.IgnitusBlue};
+  border-radius: 30px 0px;
+  &:hover,
+  &:focus {
+    background-color: ${C.SecondaryColor};
+    color: ${C.IgnitusBlue};
+  }
 `;
 
 export const RoundedPrimaryButton = styled(PrimaryButton)`
@@ -141,12 +137,10 @@ export const MediumPrimaryButton = styled(PrimaryButton)`
   padding: 8px 20px;
   font-size: ${F.SM};
   border-radius: 3px;
-}
 `;
 
 export const SmallPrimaryButton = styled(PrimaryButton)`
   padding: 4px 15px;
   font-size: ${F.XS};
   border-radius: 3px;
-}
 `;

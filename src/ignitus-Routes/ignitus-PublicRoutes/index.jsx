@@ -85,7 +85,6 @@ export const PublicRoutes = () => {
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
-        <Route path="/UIkit" component={UIkit} />
         <Route path="/" component={Notfound} />
       </Switch>
       <Footer.components.Footer />
