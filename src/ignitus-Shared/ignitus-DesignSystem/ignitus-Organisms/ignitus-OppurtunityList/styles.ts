@@ -12,7 +12,6 @@ import { Paragraph } from '../../shared';
 
 export const OpportunityList = styled(flexibleColDiv)`
   padding: 2rem;
-  margin-top: 100px;
 `;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
