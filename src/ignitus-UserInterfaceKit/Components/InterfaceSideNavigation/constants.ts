@@ -11,7 +11,7 @@ export const atomsEdges: Edges[] = [
         },
         {
           title: 'Icons',
-          route: null,
+          route: '/interface/icons',
         },
         {
           title: 'Typography',
