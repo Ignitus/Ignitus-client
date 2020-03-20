@@ -27,7 +27,7 @@
     "node-sass": "^4.13.1",
     "popper.js": "^1.15.0",
     "prop-types": "^15.6.2",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-alerts-component": "^1.1.0",
     "react-dom": "^16.8.6",
     "react-loadable": "^5.5.0",
