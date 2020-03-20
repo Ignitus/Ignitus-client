@@ -16,7 +16,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 22rem;
+  margin-top: 4rem;
 `;
 
 export const Heading1 = styled(A.Heading1)`

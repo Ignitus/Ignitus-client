@@ -1,9 +1,14 @@
 import React from 'react';
 import * as S from './style';
+import {Heading2} from '../userInterfaceKit/styles';
 
 class KitSideNavigation extends React.Component {
   render() {
-    return <S.NavigationContainer> </S.NavigationContainer>;
+    return (
+      <S.NavigationContainer>
+        <S.Heading> Atoms</S.Heading>
+      </S.NavigationContainer>
+    );
   }
 }
 
