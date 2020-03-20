@@ -10,7 +10,7 @@ type props = {
   name: AppIcon;
 };
 
-export default function UserSettingsSideNavigation() {
+export default function DashboardNavigation() {
   return (
     <S.SettingsContainer>
       <Layer text="Saved" marginTop={true} name={AppIcon.SaveIcon} />

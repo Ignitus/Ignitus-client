@@ -11,7 +11,7 @@ import {
   organismsEdges,
 } from '../constants';
 
-const KitSideNavigation = () => {
+const interfaceSideNavigation = () => {
   return (
     <S.NavigationContainer>
       <NavigationLayers edges={atomsEdges} />
@@ -51,4 +51,4 @@ const UnorderedList = ({isExpanded, menuItem}) => (
   </S.UnorderedList>
 );
 
-export default KitSideNavigation;
+export default interfaceSideNavigation;

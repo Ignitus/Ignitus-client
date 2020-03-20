@@ -14,6 +14,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   border-radius: 16px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   width: 12rem;
+  height: 22rem;
 `;
 
 export const Layer = styled.div<Props>`

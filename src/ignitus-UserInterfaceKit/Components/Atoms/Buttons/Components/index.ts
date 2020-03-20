@@ -1,1 +1,1 @@
-export {default as Buttons} from './interfaceButtons';
+export {default as interfaceButttons} from './interfaceButtons';

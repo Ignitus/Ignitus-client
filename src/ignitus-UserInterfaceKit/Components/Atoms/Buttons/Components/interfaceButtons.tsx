@@ -4,7 +4,7 @@ import {ButtonsContainer} from '../style';
 import * as Button from '../style';
 import {Heading2, Heading6} from '../../../userInterfaceKit/styles';
 
-const Buttons = () => (
+const interfaceButttons = () => (
   <ButtonsContainer>
     <Heading2> Buttons </Heading2>
     <Button.PrimaryButton> Primary Button </Button.PrimaryButton>
@@ -61,4 +61,4 @@ const Buttons = () => (
   </ButtonsContainer>
 );
 
-export default Buttons;
+export default interfaceButttons;

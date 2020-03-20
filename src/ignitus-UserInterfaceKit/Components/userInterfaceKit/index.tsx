@@ -6,7 +6,7 @@ import UserSettingsSideNavigation from '../../../ignitus-Shared/ignitus-DesignSy
 import {Opportunity} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
 import SideNavigation from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 import MessageSideNavigation from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
-import KitSideNavigation from '../KitSideNavigation/Components/KitSideNavigation';
+import KitSideNavigation from '../InterfaceSideNavigation/Components/interfaceSideNavigation';
 
 export const UIkit = () => (
   <K.Container>

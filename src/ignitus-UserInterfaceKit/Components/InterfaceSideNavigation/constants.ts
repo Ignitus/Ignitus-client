@@ -75,11 +75,11 @@ export const organismsEdges = [
       children: [
         {
           title: 'Navigation',
-          route: '/interface/navigation',
+          route: null,
         },
         {
           title: 'Side Navigation',
-          route: null,
+          route: '/interface/navigation',
         },
         {
           title: 'Footer',
