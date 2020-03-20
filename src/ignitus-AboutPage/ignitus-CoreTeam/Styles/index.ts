@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import Icon from "../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/icon";
+import Icon from "../../../ignitus-Shared/ignitus-Utilities/Components/icon";
 
 type LinkWrapperProps = {
   toggle: boolean;

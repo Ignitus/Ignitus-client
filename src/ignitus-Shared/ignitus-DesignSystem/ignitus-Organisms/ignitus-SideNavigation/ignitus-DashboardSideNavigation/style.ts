@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Atoms/colors';
 import {flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
-import Icon from '../../../ignitus-Assets/ignitus-Icons/icon';
+import Icon from '../../../../ignitus-Utilities/Components/icon';
 
 type Props = {
   border: boolean;
