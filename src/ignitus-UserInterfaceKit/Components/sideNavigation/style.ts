@@ -4,6 +4,10 @@ import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/c
 import Icon from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
+type ArrowProps = {
+  isExpanded: boolean;
+};
+
 export const NavigationContainer = styled.nav`
   width: 15rem;
   padding: 2rem;
@@ -15,8 +19,9 @@ export const Heading = styled(Heading3)`
   margin-bottom: 0;
 `;
 
-export const UnorderedList = styled.ul`
+export const UnorderedList = styled.ul<ArrowProps>`
   list-style: none;
+  display: ${props => (props.isExpanded ? 'block' : 'none')};
 `;
 
 export const ListItem = styled.li`
@@ -25,13 +30,15 @@ export const ListItem = styled.li`
   cursor: pointer;
 `;
 
-export const Arrow = styled(Icon)`
+export const Arrow = styled(Icon)<ArrowProps>`
   height: 2rem;
   fill: ${C.White};
-  cursor: pointer;
+  transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
+  transition: transform 200ms ease-in-out;
 `;
 
 export const HeadingArrowContainer = styled(flexibleRowDiv)`
   margin-top: 1rem;
   justify-content: unset;
+  cursor: pointer;
 `;

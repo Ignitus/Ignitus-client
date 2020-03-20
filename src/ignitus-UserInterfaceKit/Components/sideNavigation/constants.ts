@@ -1,4 +1,4 @@
-export const edges = [
+export const atomsEdges = [
   {
     node: {
       title: 'Atoms',
@@ -46,7 +46,9 @@ export const edges = [
       ],
     },
   },
+];
 
+export const moleculesEdges = [
   {
     node: {
       title: 'Molecules',
@@ -62,7 +64,9 @@ export const edges = [
       ],
     },
   },
+];
 
+export const organismsEdges = [
   {
     node: {
       title: 'Organisms',
@@ -94,7 +98,9 @@ export const edges = [
       ],
     },
   },
+];
 
+export const templatesEdges = [
   {
     node: {
       title: 'Templates',
@@ -118,7 +124,9 @@ export const edges = [
       ],
     },
   },
+];
 
+export const layoutEdges = [
   {
     node: {
       title: 'Layouts',
