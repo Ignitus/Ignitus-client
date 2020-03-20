@@ -16,10 +16,16 @@ const Buttons = () => (
     <Heading6> Medium Size Buttons </Heading6>
     <Button.PrimaryButton medium> Medium Primary Button </Button.PrimaryButton>
     <Button.SecondaryButton medium> Secondary Button </Button.SecondaryButton>
+    <Button.GreyButton medium> Grey Button </Button.GreyButton>
+    <Button.OrangeButton medium> Orange Button </Button.OrangeButton>
+    <Button.WhiteButton medium> White Button </Button.WhiteButton>
     <hr />
     <Heading6> Small Size Buttons </Heading6>
     <Button.PrimaryButton small> Small Primary Button </Button.PrimaryButton>
     <Button.SecondaryButton small> Secondary Button </Button.SecondaryButton>
+    <Button.GreyButton small> Grey Button </Button.GreyButton>
+    <Button.OrangeButton small> Orange Button </Button.OrangeButton>
+    <Button.WhiteButton small> White Button </Button.WhiteButton>
     <hr />
     <Heading6> Button States </Heading6>
     <Button.DisabledButton disabled> Disabled State </Button.DisabledButton>
