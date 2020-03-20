@@ -24,27 +24,27 @@ const interfaceSideNavigation = () => {
 };
 
 const NavigationLayers = ({edges}: any) => {
-  const [isExpanded, toogleIsExpanded] = useToggle(true);
+  const [isexpanded, toogleisexpanded] = useToggle(true);
   const navigation = edges.map(menuItem => (
-    <React.Fragment>
-      <S.HeadingArrowContainer onClick={toogleIsExpanded}>
+    <React.Fragment key={menuItem.node.title}>
+      <S.HeadingArrowContainer onClick={toogleisexpanded}>
         {' '}
         <S.Heading>{menuItem.node.title}</S.Heading>{' '}
-        <S.Arrow name={AppIcon.KeyBoardArrowRight} isExpanded={isExpanded} />
+        <S.Arrow name={AppIcon.KeyBoardArrowRight} isexpanded={isexpanded} />
       </S.HeadingArrowContainer>
 
       {menuItem.node.children ? (
-        <UnorderedList isExpanded={isExpanded} menuItem={menuItem} />
+        <UnorderedList isexpanded={isexpanded} menuItem={menuItem} />
       ) : null}
     </React.Fragment>
   ));
   return navigation;
 };
 
-const UnorderedList = ({isExpanded, menuItem}) => (
-  <S.UnorderedList isExpanded={isExpanded}>
+const UnorderedList = ({isexpanded, menuItem}) => (
+  <S.UnorderedList isexpanded={isexpanded}>
     {menuItem.node.children.map(({title, route}) => (
-      <S.ListItem>
+      <S.ListItem key={title}>
         <Link to={route}>{title}</Link>
       </S.ListItem>
     ))}

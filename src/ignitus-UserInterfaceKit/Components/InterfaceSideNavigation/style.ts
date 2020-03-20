@@ -5,7 +5,7 @@ import Icon from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 type ArrowProps = {
-  isExpanded: boolean;
+  isexpanded: boolean;
 };
 
 export const NavigationContainer = styled.nav`
@@ -21,7 +21,7 @@ export const Heading = styled(Heading3)`
 
 export const UnorderedList = styled.ul<ArrowProps>`
   list-style: none;
-  display: ${props => (props.isExpanded ? 'block' : 'none')};
+  display: ${props => (props.isexpanded ? 'block' : 'none')};
 `;
 
 export const ListItem = styled.li`
@@ -45,7 +45,7 @@ export const ListItem = styled.li`
 export const Arrow = styled(Icon)<ArrowProps>`
   height: 2rem;
   fill: ${C.IgnitusBlue};
-  transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
+  transform: ${props => (props.isexpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 `;
 

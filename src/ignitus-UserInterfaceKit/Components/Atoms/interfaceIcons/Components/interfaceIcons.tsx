@@ -5,7 +5,7 @@ import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/enums';
 
 const interfaceIcons = () => (
   <I.IconsContainer>
-    <Heading2>Social Icons ☘️</Heading2>
+    <Heading2>Social Icons 🎨</Heading2>
     <I.StyledIcon name={AppIcon.LinkedInIcon} />
     <I.StyledIcon name={AppIcon.AngelListIcon} />
     <I.StyledIcon name={AppIcon.TwitterIcon} />

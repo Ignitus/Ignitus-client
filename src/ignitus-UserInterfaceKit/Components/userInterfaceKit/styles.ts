@@ -7,7 +7,7 @@ import LinkedInIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-A
 import AngelListIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon/angelListIcon';
 
 export const UIKitContainer = styled.div`
-  display: none;
+  /* display: none; */
 `;
 export const SideNavigationContainer = styled.div`
 `;

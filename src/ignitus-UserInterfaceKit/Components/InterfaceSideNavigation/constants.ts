@@ -7,7 +7,7 @@ export const atomsEdges: Edges[] = [
       children: [
         {
           title: 'Colors',
-          route: null,
+          route: '/interface/colors',
         },
         {
           title: 'Icons',
@@ -15,27 +15,39 @@ export const atomsEdges: Edges[] = [
         },
         {
           title: 'Typography',
-          route: null,
+          route: '/interface/typography',
         },
         {
           title: 'Input Fields',
-          route: null,
+          route: '/interface/inputFields',
+        },
+        {
+          title: 'Checkboxes',
+          route: '/interface/checkboxes',
+        },
+        {
+          title: 'Radio Buttons',
+          route: '/interface/radioButtons',
+        },
+        {
+          title: 'Dropdowns',
+          route: '/interface/dropdowns',
         },
         {
           title: 'Card',
-          route: null,
+          route: '/interface/cards',
         },
         {
-          title: 'tags',
-          route: null,
+          title: 'Tags',
+          route: '/interface/tags',
         },
         {
           title: 'Separator',
-          route: null,
+          route: '/interface/seperators',
         },
         {
           title: 'Progress bar',
-          route: null,
+          route: '/interface/progressBars',
         },
         {
           title: 'Buttons',
@@ -43,7 +55,11 @@ export const atomsEdges: Edges[] = [
         },
         {
           title: 'Toggles',
-          route: null,
+          route: '/interface/toggles',
+        },
+        {
+          title: 'Text Links',
+          route: '/interface/textLink',
         },
       ],
     },
@@ -57,11 +73,11 @@ export const moleculesEdges = [
       children: [
         {
           title: 'Input with Buttons',
-          route: null,
+          route: '/interface/inputButtons',
         },
         {
           title: 'Overlay',
-          route: null,
+          route: '/interface/overlay',
         },
       ],
     },
@@ -75,27 +91,19 @@ export const organismsEdges = [
       children: [
         {
           title: 'Navigation',
-          route: null,
+          route: '/interface/checkboxes',
         },
         {
           title: 'Side Navigation',
-          route: '/interface/navigation',
+          route: '/interface/sideNavigation',
         },
         {
           title: 'Footer',
-          route: null,
-        },
-        {
-          title: 'SideBars',
-          route: null,
+          route: '/interface/footer',
         },
         {
           title: 'Card Layouts',
-          route: null,
-        },
-        {
-          title: 'Forms',
-          route: null,
+          route: '/interface/cardLayout',
         },
       ],
     },
@@ -109,19 +117,23 @@ export const templatesEdges = [
       children: [
         {
           title: 'Forms',
-          route: null,
+          route: '/interface/forms',
         },
         {
           title: 'Filters',
-          route: null,
+          route: '/interface/filters',
         },
         {
           title: 'Profile Side Section',
-          route: null,
+          route: '/interface/profileSideSection',
         },
         {
           title: 'Authentication Forms',
-          route: null,
+          route: '/interface/authForms',
+        },
+        {
+          title: 'Post Layouts',
+          route: '/interface/postLayout',
         },
       ],
     },
@@ -135,11 +147,11 @@ export const layoutEdges = [
       children: [
         {
           title: 'Not Found',
-          route: null,
+          route: '/interface/notFound',
         },
         {
           title: 'Under Construction',
-          route: null,
+          route: '/interface/underConstruction',
         },
       ],
     },

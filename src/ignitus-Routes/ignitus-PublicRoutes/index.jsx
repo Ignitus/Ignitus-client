@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
 import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
@@ -22,10 +22,10 @@ import {
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
 
-import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-import {UIkit} from '../../ignitus-UserInterfaceKit/Components/userInterfaceKit';
-import {Buttons} from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
+import { UIkit } from '../../ignitus-UserInterfaceKit/Components/userInterfaceKit';
+import { Buttons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
 
 // RouteBased CodeSplitting.
 
@@ -84,6 +84,10 @@ export const PublicRoutes = () => {
         <Route
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
+        />
+        <Route
+          path="/uikit"
+          component={UIkit}
         />
         <Route path="/" component={Notfound} />
       </Switch>

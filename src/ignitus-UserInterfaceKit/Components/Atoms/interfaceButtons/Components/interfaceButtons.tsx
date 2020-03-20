@@ -4,6 +4,7 @@ import {ButtonsContainer} from '../style';
 import * as Button from '../style';
 import {Heading2, Heading6} from '../../../userInterfaceKit/styles';
 
+{/* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */}
 const interfaceButttons = () => (
   <ButtonsContainer>
     <Heading2> Buttons </Heading2>

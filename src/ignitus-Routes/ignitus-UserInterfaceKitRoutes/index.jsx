@@ -29,7 +29,7 @@ const UserInterfaceKitRoutes = () => (
         component={interfaceButttons}
       />
       <Route
-        path="/interface/navigation"
+        path="/interface/sideNavigation"
         component={interfaceNavigation}
       />
       <Route
