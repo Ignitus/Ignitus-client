@@ -1,4 +1,6 @@
-export const atomsEdges = [
+import {Edges} from './types';
+
+export const atomsEdges: Edges[] = [
   {
     node: {
       title: 'Atoms',
