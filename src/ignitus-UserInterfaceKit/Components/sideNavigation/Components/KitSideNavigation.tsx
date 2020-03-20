@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import * as S from '../style';
 import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/enums';
+import useToggle from '../../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
 import {
   moleculesEdges,
   atomsEdges,
@@ -22,14 +23,10 @@ const KitSideNavigation = () => {
 };
 
 const NavigationLayers = ({edges}: any) => {
-  const [isExpanded, toogleIsExpanded] = useState(false);
+  const [isExpanded, toogleIsExpanded] = useToggle(true);
   const navigation = edges.map(menuItem => (
     <React.Fragment>
-      <S.HeadingArrowContainer
-        onClick={() => {
-          toogleIsExpanded(!isExpanded);
-        }}
-      >
+      <S.HeadingArrowContainer onClick={toogleIsExpanded}>
         {' '}
         <S.Heading>{menuItem.node.title}</S.Heading>{' '}
         <S.Arrow name={AppIcon.KeyBoardArrowRight} isExpanded={isExpanded} />
