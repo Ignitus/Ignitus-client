@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
   BtnSizeProps,
   getRadius,
   getFontSizes,
   getPadding,
-} from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/emotionHelpers';
+} from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const ButtonsContainer = styled.div`
   padding: 3rem;

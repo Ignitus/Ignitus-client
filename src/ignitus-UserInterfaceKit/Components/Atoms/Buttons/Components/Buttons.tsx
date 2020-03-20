@@ -2,7 +2,7 @@ import React from 'react';
 import {ButtonsContainer} from '../style';
 
 import * as Button from '../style';
-import {Heading2, Heading6} from '../../userInterfaceKit/styles';
+import {Heading2, Heading6} from '../../../userInterfaceKit/styles';
 
 const Buttons = () => (
   <ButtonsContainer>

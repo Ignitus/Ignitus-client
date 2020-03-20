@@ -11,9 +11,6 @@ import {
   organismsEdges,
 } from '../constants';
 
-
-
-
 const KitSideNavigation = () => {
   return (
     <S.NavigationContainer>
