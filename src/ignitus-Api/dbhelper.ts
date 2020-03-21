@@ -1,15 +1,13 @@
-import { openDB } from 'idb';
-
+import {openDB} from 'idb';
 import * as t from './constants';
 
-const DB_NAME = 'ignitus';
-const version = 1;
+const DB_NAME: string = 'ignitus';
+const version: number = 1;
 
 const createDB = new Promise(async (resolve, reject) => {
   try {
     const dbPromise = await openDB(DB_NAME, version, {
-      // eslint-disable-next-line no-unused-vars
-      upgrade(db, oldVersion, newVersion, transaction) {
+      upgrade(db, oldVersion) {
         // eslint-disable-next-line default-case
         switch (oldVersion) {
           case 0:
@@ -35,7 +33,7 @@ const createDB = new Promise(async (resolve, reject) => {
 
 export async function updateDataInDB(storeName, array) {
   try {
-    const db = await createDB;
+    const db: any = await createDB;
     const tx = db.transaction(storeName, 'readwrite');
     const store = tx.objectStore(storeName);
     await store.clear();
@@ -48,7 +46,7 @@ export async function updateDataInDB(storeName, array) {
 
 export async function getDataFromDB(storeName) {
   try {
-    const db = await createDB;
+    const db: any = await createDB;
     const tx = db.transaction(storeName);
     const store = tx.objectStore(storeName);
     const data = await store.getAll();
@@ -60,7 +58,7 @@ export async function getDataFromDB(storeName) {
 
 export async function getItemFromDB(storeName, key) {
   try {
-    const db = await createDB;
+    const db: any = await createDB;
     const tx = db.transaction(storeName);
     const store = tx.objectStore(storeName);
     return await store.get(key);
