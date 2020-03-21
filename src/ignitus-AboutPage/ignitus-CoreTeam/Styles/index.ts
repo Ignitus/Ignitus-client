@@ -1,8 +1,9 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/colors';
-import * as F from '../../../ignitus-Shared/Components/emotionStyles/font';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import Icon from "../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/icon";
 
 type LinkWrapperProps = {
   toggle: boolean;
@@ -13,12 +14,6 @@ type TeamItemTitleProps = {
 
 const breakpoints = [576, 768, 992, 1200];
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
-
-export const Icon = styled.span`
-  i {
-    color: ${C.Red};
-  }
-`;
 
 export const TeamItemTitle = styled.h6`
   margin-top: 1rem;
@@ -103,6 +98,23 @@ export const TeamCardContainer = styled.div`
     transition: 0.5s;
   }
 `;
+
+export const LinkedIn = styled(Icon)`
+  height: 1.2rem;
+  fill: ${C.Black};
+  &:hover {
+    fill: ${C.LinkedinIconColor};
+  }
+`;
+
+export const AngelList = styled(Icon)`
+  height: 1.2rem;
+  fill: ${C.Black};
+  &:hover {
+    fill: ${C.GreyText};
+  }
+`;
+
 
 export const Link = styled(T.Link)<TeamItemTitleProps>(props => ({
   color: props.color,

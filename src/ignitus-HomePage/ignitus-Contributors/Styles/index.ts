@@ -1,7 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/Components/emotionStyles/colors';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
+import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import HeartIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
 
 const breakpoints: number[] = [576, 768, 992, 1200];
 const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
@@ -46,4 +47,9 @@ export const CardPicture = styled.img`
   height: 75%;
   object-fit: contain;
   padding: 0.3em;
+`;
+
+export const Heart = styled(HeartIcon)`
+  height: 1rem;
+  fill: ${C.Red};
 `;

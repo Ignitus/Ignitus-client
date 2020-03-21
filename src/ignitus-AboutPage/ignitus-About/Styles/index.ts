@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
-import * as F from '../../../ignitus-Shared/Components/emotionStyles/font';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 const breakpoints: number[] = [576, 768, 992, 1200];
 const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
