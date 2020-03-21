@@ -93,4 +93,19 @@ export const flexibleRowDiv = styled.div`
   justify-content: center;
 `;
 
+export const ParagraphIcon = styled.p`
+	color: ${C.IgnitusBlue};
+	padding-left: 2em;
+	position: relative;
+	width: 100%;
+	text-align: left;
+	i,
+	svg {
+		left:0;
+		position: absolute;
+		top: 0;
+		font-size: 1em;
+	}
+`
+
 /* Shared between partners & contirbutors component. */

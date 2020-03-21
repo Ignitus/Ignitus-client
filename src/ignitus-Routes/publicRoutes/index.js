@@ -19,8 +19,8 @@ import { CommonLoginUI, CommonSignUpUI } from "../../ignitus-Authentication/igni
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from "react-loadable";
 
-import ProfileCard from "../../ignitus-Shared/Components/ProfileCard"
-import { Notfound } from '../../ignitus-Shared/Components/ignitus-NotFound';
+import ProfileCard from "../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/ProfileCard.jsx"
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation  from "../../ignitus-Careers/ignitus-JobConfirmation";
 import { UIkit } from "../../ignitus-UserInterfaceKit/Components";
 
