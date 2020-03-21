@@ -88,4 +88,4 @@ export const flexibleColDiv = styled.div`
   justify-content: center;
 `;
 
-/* Shared between partners & contirbutors component. */
+/* Shared between partners & contributors component. */
