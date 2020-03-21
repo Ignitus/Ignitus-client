@@ -6,7 +6,7 @@ import {Data} from '../constants';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {coreTeam, TeamItemProps} from '../types';
+import {Team, TeamItemProps} from '../types';
 import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/enums';
 
 const PureCoreTeam = ({team}: any) => (
@@ -42,7 +42,7 @@ const TeamItem = ({
 };
 
 const CoreTeam = () => {
-  const team = Data.map((item: coreTeam) => {
+  const team = Data.map((item: Team) => {
     return <TeamItem key={item.title} item={item} />;
   });
   return <PureCoreTeam team={team} />;
