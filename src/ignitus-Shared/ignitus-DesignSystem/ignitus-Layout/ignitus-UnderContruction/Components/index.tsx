@@ -5,7 +5,7 @@ import underConstruction from '../../../ignitus-Assets/ignitus-Images/img-Png/un
 import {
   Heading3,
   Paragraph,
-} from '../../../ignitus-Atoms/atoms';
+} from '../../../ignitus-Atoms/typography';
 
 export const WebsiteUnderConstruction = () => (
   <S.Container>

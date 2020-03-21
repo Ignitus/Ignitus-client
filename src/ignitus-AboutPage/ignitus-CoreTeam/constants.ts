@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/prefer-default-export
-import { coreTeam } from "./types";
-export const Data: coreTeam[] = [
+import { Team } from "./types";
+export const Data: Team[] = [
   {
     title: 'Ayush Pareek',
     img:

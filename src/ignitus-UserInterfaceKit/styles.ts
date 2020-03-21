@@ -1,51 +1,25 @@
 import styled from '@emotion/styled';
-import * as A from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
-import * as C from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import TwitterIcon from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/twitterIcon/twitterIcon';
-import LinkedInIcon from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkedInIcon/linkedInIcon';
-import AngelListIcon from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon/angelListIcon';
+import * as A from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {GreyText} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {Medium} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
-export const UIKitContainer = styled.div`
-  padding: 5em;
-`;
-
-export const Heading1 = styled(A.Heading1)`
+export const StyledHeading1 = styled(A.Heading1)`
   text-align: center;
 `;
 
-export const Heading2 = styled(A.Heading2)`
+export const StyledHeading2 = styled(A.Heading2)`
   margin: 20px 0;
-  font-weight: ${F.Medium};
+  font-weight: ${Medium};
 `;
 
-export const Heading4 = styled(A.Heading4)`
+export const StyledHeading4 = styled(A.Heading4)`
   margin: 20px 0;
-  color: ${C.GreyText};
+  color: ${GreyText};
 `;
 
-export const Heading6 = styled(A.Heading6)`
+export const StyledHeading6 = styled(A.Heading6)`
   margin: 10px 0;
-  color: ${C.GreyText};
-`;
-
-export const Card = styled(A.Card)`
-  width: 60%;
-`;
-
-export const Twitter = styled(TwitterIcon)`
-  height: 3rem;
-  &:hover {
-    fill: red;
-  }
-`;
-
-export const LinkedIn = styled(LinkedInIcon)`
-  height: 3rem;
-`;
-
-export const AngelList = styled(AngelListIcon)`
-  height: 3rem;
+  color: ${GreyText};
 `;
 
 export const NavigationWrapper = styled.div`

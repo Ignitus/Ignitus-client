@@ -26,6 +26,8 @@ const Layer = ({
   marginBottom = false,
 }: props) => (
   <S.Layer border={border} marginTop={marginTop} marginBottom={marginBottom}>
-    {text}
+    {text} <Notification />
   </S.Layer>
 );
+
+const Notification = () => <S.Notification>4</S.Notification>;
