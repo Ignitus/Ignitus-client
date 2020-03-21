@@ -51,3 +51,10 @@ export const HeadingArrowContainer = styled(flexibleRowDiv)`
   justify-content: unset;
   cursor: pointer;
 `;
+
+export const StyledLogo = styled(Icon)`
+  height: 3rem;
+  path {
+    fill: ${C.IgnitusBlue};
+  }
+`;

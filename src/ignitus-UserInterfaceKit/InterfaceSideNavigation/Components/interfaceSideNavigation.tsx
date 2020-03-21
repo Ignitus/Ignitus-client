@@ -14,6 +14,10 @@ import {
 const interfaceSideNavigation = () => {
   return (
     <S.NavigationContainer>
+      <Link to="/">
+        <S.StyledLogo name={AppIcon.IgnitusFullLogo} />
+      </Link>
+
       <NavigationLayers edges={atomsEdges} />
       <NavigationLayers edges={organismsEdges} />
       <NavigationLayers edges={moleculesEdges} />

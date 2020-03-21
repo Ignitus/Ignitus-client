@@ -13,6 +13,7 @@ import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons
 import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon/mentorsIcon';
 import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown/keyBoardArrowDown';
 import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
+import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
 
 type Props = {
   name: AppIcon;
@@ -58,6 +59,9 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.KeyBoardArrowRight:
       return <KeyBoardArrowRight {...rest} />;
+
+    case AppIcon.IgnitusFullLogo:
+      return <IgnitusFullLogo {...rest} />;
   }
 };
 
