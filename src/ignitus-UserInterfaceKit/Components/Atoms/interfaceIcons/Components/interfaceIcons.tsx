@@ -1,6 +1,6 @@
 import React from 'react';
 import * as I from '../styles';
-import {StyledHeading2} from '../../../userInterfaceKit/styles';
+import {StyledHeading2} from '../../../../styles';
 import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/enums';
 
 const interfaceIcons = () => (

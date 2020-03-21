@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledHeading2} from '../../../userInterfaceKit/styles';
+import {StyledHeading2} from '../../../../styles';
 import {Notfound} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components/index';
 import { NotFoundContainer } from '../style';
 

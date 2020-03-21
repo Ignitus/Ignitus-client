@@ -2,14 +2,16 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import { KitSideNavigation } from '../../ignitus-UserInterfaceKit/Components/InterfaceSideNavigation/Components';
+import { KitSideNavigation } from '../../ignitus-UserInterfaceKit/InterfaceSideNavigation/Components';
 import { interfaceButttons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
-import { interfaceNavigation } from '../../ignitus-UserInterfaceKit/Components/Organisms/Navigation/Components';
+import { interfaceNavigation } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceNavigation/Components';
 import { interfaceIcons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceIcons/Components';
 import { interfaceTypography } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceTypography/Components';
 import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceCards/Components';
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
+import { WebsiteUnderConstruction } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components';
+import { Separator } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 
 
 const Container = styled.div`
@@ -51,10 +53,6 @@ const UserInterfaceKitRoutes = () => (
       <Route
         path="/interface/cardLayout"
         component={interfaceCardLayout}
-      />
-      <Route
-        path="/interface/notFound"
-        component={interfaceNotFound}
       />
     </Switch>
   </Container>

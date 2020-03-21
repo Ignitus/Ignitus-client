@@ -1,6 +1,6 @@
 import React from 'react';
 import * as T from '../styles';
-import {StyledHeading2} from '../../../userInterfaceKit/styles';
+import {StyledHeading2} from '../../../../styles';
 import {TypographyContainer} from '../styles';
 import {
   Heading1,

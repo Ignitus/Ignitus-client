@@ -2,7 +2,7 @@ import React from 'react';
 import {ButtonsContainer} from '../style';
 
 import * as Button from '../style';
-import {StyledHeading2, StyledHeading6} from '../../../userInterfaceKit/styles';
+import {StyledHeading2, StyledHeading6} from '../../../../styles';
 
 {
   /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as T from '../styles';
-import {StyledHeading2} from '../../../userInterfaceKit/styles';
+import {StyledHeading2} from '../../../../styles';
 import {CardsContainer} from '../styles';
 import {Card} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 

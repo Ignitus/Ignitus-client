@@ -24,8 +24,6 @@ import Loadable from 'react-loadable';
 
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-import { UIkit } from '../../ignitus-UserInterfaceKit/Components/userInterfaceKit';
-import { Buttons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
 
 // RouteBased CodeSplitting.
 
@@ -84,10 +82,6 @@ export const PublicRoutes = () => {
         <Route
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
-        />
-        <Route
-          path="/uikit"
-          component={UIkit}
         />
         <Route path="/" component={Notfound} />
       </Switch>

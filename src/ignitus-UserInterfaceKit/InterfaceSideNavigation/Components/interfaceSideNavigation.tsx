@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import * as S from '../style';
-import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/enums';
-import useToggle from '../../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
+import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/enums';
+import useToggle from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
 import {
   moleculesEdges,
   atomsEdges,
@@ -44,9 +44,9 @@ const NavigationLayers = ({edges}: any) => {
 const UnorderedList = ({isexpanded, menuItem}) => (
   <S.UnorderedList isexpanded={isexpanded}>
     {menuItem.node.children.map(({title, route}) => (
-      <Link to={route}>
+      <Link to={route} key={title}>
         {' '}
-        <S.ListItem key={title}>{title}</S.ListItem>
+        <S.ListItem>{title}</S.ListItem>
       </Link>
     ))}
   </S.UnorderedList>
