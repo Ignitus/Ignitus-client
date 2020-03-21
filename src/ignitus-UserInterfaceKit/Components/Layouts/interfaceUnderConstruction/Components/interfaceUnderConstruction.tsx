@@ -1,15 +1,18 @@
 import React from 'react';
 import {StyledHeading2} from '../../../../styles';
 import {Notfound} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components/index';
-import {UnderConstructionContainer} from '../style';
+import {UnderConstructionContainer, Container} from '../style';
 import {WebsiteUnderConstruction} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components/index';
 
 const interfaceUnderConstruction = () => (
-  <UnderConstructionContainer>
+  <Container>
     <StyledHeading2>UnderConstruction ★</StyledHeading2>
     <hr />
-    <WebsiteUnderConstruction />
-  </UnderConstructionContainer>
+
+    <UnderConstructionContainer>
+      <WebsiteUnderConstruction />
+    </UnderConstructionContainer>
+  </Container>
 );
 
 export default interfaceUnderConstruction;
