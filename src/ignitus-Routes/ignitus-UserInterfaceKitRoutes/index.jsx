@@ -10,6 +10,7 @@ import { interfaceTypography } from '../../ignitus-UserInterfaceKit/Components/A
 import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceCards/Components';
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
+import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
 
 
 const Container = styled.div`
@@ -55,6 +56,10 @@ const UserInterfaceKitRoutes = () => (
       <Route
         path="/interface/notFound"
         component={interfaceNotFound}
+      />
+      <Route
+        path="/interface/underConstruction"
+        component={interfaceUnderConstruction}
       />
     </Switch>
   </Container>
