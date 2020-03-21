@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
 import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
@@ -17,12 +17,12 @@ import SignupStudent from '../../ignitus-Authentication/ignitus-StudentSignUp';
 import {
   CommonLoginUI,
   CommonSignUpUI,
-} from '../../ignitus-Authentication/ignitus-CommonAuthentication/Components/commonLoginRegister';
+} from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
 
-import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 
 // RouteBased CodeSplitting.
@@ -36,14 +36,15 @@ const Loading = () => (
 );
 
 const AboutUs = Loadable({
-  loader: () => import('../../ignitus-AboutPage/ignitus-About/Components/About'),
+  loader: () =>
+    import('../../ignitus-AboutPage/ignitus-About/Components/About'),
   loading: Loading,
 });
 
 export const PublicRoutes = () => {
   return (
     <React.Fragment>
-      <Navigation.components.Navigation id={35} />
+      <Navigation.components.Navigation />
       <Switch>
         <Route
           exact
