@@ -75,6 +75,8 @@ We also plan to introduce some new technologies in the future such as.
 
 
 ## Contributing
-Please check the [Contribution Guidelines](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md)
+
+- Please check the [Contribution Guidelines](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md).
+- Please check the [Coding Conventions](https://github.com/Ignitus/Ignitus-client/wiki/CodeGuidelines-And-Conventions).
 
 
