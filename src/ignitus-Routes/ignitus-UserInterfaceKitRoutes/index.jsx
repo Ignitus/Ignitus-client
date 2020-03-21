@@ -11,6 +11,7 @@ import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
+import { interfaceColors } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceColors/Components';
 
 
 const Container = styled.div`
@@ -60,6 +61,11 @@ const UserInterfaceKitRoutes = () => (
       <Route
         path="/interface/underConstruction"
         component={interfaceUnderConstruction}
+      />
+
+      <Route
+        path="/interface/colors"
+        component={interfaceColors}
       />
     </Switch>
   </Container>

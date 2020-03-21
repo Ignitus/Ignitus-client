@@ -1,4 +1,11 @@
 import {SM, MD, XXS} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {
+  GreyBackground,
+  White,
+  GreyLight,
+} from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
+
+const hexArray = [GreyBackground, White, GreyLight];
 
 export const getPadding = (props: BtnSizeProps) => {
   if (props.medium) {
@@ -31,4 +38,9 @@ export const getRadius = (props: BtnSizeProps) => {
 export type BtnSizeProps = {
   medium?: boolean;
   small?: boolean;
+};
+
+export const hexDifferentiate = color => {
+  const result = hexArray.indexOf(color);
+  return result === -1 ? false : true;
 };
