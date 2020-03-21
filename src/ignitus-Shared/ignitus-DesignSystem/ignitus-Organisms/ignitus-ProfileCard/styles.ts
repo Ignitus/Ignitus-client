@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/atoms';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleColDiv, flexibleRowDiv, TextIconContainer} from '../../shared';
+import { flexibleColDiv, flexibleRowDiv, TextIconContainer } from '../../shared';
 import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/chatMessageIcon';
 import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
 import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
