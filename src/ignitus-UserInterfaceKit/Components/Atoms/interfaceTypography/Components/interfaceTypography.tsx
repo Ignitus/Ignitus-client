@@ -1,5 +1,4 @@
 import React from 'react';
-import * as T from '../styles';
 import {StyledHeading2} from '../../../../styles';
 import {TypographyContainer} from '../styles';
 import {
