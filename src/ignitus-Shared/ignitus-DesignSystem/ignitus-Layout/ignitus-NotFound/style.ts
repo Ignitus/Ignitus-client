@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import {keyframes} from '@emotion/core';
 import * as C from '../../ignitus-Atoms/colors';
 import {SM} from '../../ignitus-Atoms/fonts';
-import {Paragraph} from '../../ignitus-Atoms/atoms';
+import {Paragraph} from '../../ignitus-Atoms/typography';
 import {PrimaryButton} from '../../ignitus-Atoms/buttons';
 
 export const eye = keyframes`

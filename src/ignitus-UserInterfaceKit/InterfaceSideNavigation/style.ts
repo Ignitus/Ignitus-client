@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import * as A from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import * as A from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {GreyText} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import {Medium} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 

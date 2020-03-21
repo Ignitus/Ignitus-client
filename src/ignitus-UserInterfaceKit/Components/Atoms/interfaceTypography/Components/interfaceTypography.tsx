@@ -9,7 +9,7 @@ import {
   Heading5,
   Heading6,
   Paragraph,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const interfaceTypography = () => (
   <TypographyContainer>

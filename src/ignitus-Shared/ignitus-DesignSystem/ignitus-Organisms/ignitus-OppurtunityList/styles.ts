@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import * as T from '../../ignitus-Atoms/atoms';
+import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
 import { 
   flexibleColDiv,
