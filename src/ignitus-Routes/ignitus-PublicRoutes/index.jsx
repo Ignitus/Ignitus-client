@@ -24,7 +24,7 @@ import Loadable from 'react-loadable';
 
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-
+import { CareersHome } from '../../ignitus-Careers/ignitus-CareersHome/Components';
 // RouteBased CodeSplitting.
 
 const Loading = () => (
@@ -82,6 +82,7 @@ export const PublicRoutes = () => {
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
+         <Route path="/CareersHome" component={CareersHome} />
         <Route path="/" component={Notfound} />
       </Switch>
       <Footer.components.Footer />
