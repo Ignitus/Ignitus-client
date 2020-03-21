@@ -1,0 +1,230 @@
+@import './src/ignitus-Shared/styles/ignitus-tokens';
+
+
+
+.nav-item a{
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+text-align: center;
+color: $ignite-color-blue-bg;
+}
+
+.home {
+  position: absolute;
+  left: 8.67vw;
+  width: 3.2vw;
+  top: 1.4vh;
+  height: 1.8vh;
+}
+
+.internship {
+  position: absolute;
+  left: 18vw;
+  width: 6vw;
+  top: 1.4vh;
+  height: 1.8vh;
+}
+
+.searchbox{
+  position: absolute;
+  width: 14.5vw;
+  height: 2.9vh;
+  left: 56.4vw;
+  top: 2vh; 
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background: #FFFFFF;
+  border: 1px solid $ignite-color-blue-bg;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+.a {
+  color: $ignite-color-blue-bg;
+  font-size: $ignite-font-size-sm;
+
+  &:hover {
+    color: $ignite-color-yellow;
+    text-decoration: none;
+  }
+}
+
+.contact-btn {
+  color: $ignite-color-blue-bg;
+}
+
+.envelop {
+  position: absolute;
+  left: 72vw;
+  width:3.9vw;
+  height:5.5vh;
+  top: 2vh;
+}
+
+.bell {
+  position: absolute;
+  left: 74.7vw;
+  width: 3.9vw;
+  height: 5.5vh;
+  top: 2vh;
+}
+
+.user {
+  position: absolute;
+  left: 80.2vw;
+  width: 8.3vw;
+  height: 8.7vh;
+  top: 2.1vh;
+}
+
+.fa-button{
+  color:$ignite-color-blue-bg !important;
+}
+
+.navbar .element {
+  display: inline;
+}
+
+.Online {
+  color: red;
+}
+
+.Offline {
+  color: green;
+}
+
+.profile-dropdown {
+  position: relative;
+  top: 0vh;
+  left:83.6vw;
+  width: 14vw;
+  background-color: white;
+  font-weight:bold;
+  position: absolute;
+}
+
+.profile-button{
+  position: relative;
+  top: 1.8vh;
+  height:3.2vh;
+  background-color: #000066 ;
+  padding-left: 1.5vw;
+  padding-top: 0.5vh;
+  border-radius:9px;
+  margin-left: 1vw;
+  font-weight:bold;
+  color:white;
+}
+.profile-button:before{
+  content:"";
+  position:absolute;
+  width:0px;
+  height:0px;
+  border: 6px solid;
+  border-color: white transparent transparent transparent;
+  right:1vw;
+  top:1.6vh;
+}
+
+.profile-dropdown-list {  
+  list-style-type: none;
+  margin-top: 2.5vh;
+  padding: 0;
+  top:6.5vh;
+  left:83.6vw !important;
+  width: 14vw;
+  background-color: white;
+  font-weight:bold;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 16px 0px 16px 16px;
+}
+.profile-dropdown li a{
+  color: #006;
+}
+.profile-dropdown li {
+  padding: 8px 16px;
+  border-bottom: 0.25px solid #C6C6C6;
+}
+.profile-dropdown li:first-child {
+  border-radius: 16px 0px 0px 0px;
+}
+.profile-dropdown li:last-child {
+  border-bottom: none;
+  border-radius: 0px 0px 16px 16px;
+}
+.profile-dropdown li:hover {
+  background-color: #000066;
+}
+.profile-dropdown li a {
+  color: $ignite-color-blue-bg !important;
+}
+.profile-dropdown li:hover a{
+  color: #FFF !important;
+}
+
+.status {
+  position: relative;
+  top: 0vh;
+  left:47vw;
+  width: 7vw;
+  background-color: white;
+  font-weight:bold;
+  position: absolute;
+}
+
+.status-button{
+  position: relative;
+  top: 1.8vh;
+  height:3.2vh;
+  padding-top: 0.5vh;
+  color: #000000;
+  font-size: 1vw;
+}
+.status-button:before{
+  content:"";
+  position:absolute;
+  width:0px;
+  height:0px;
+  border: 0.4vw solid;
+  border-color: $ignite-color-blue-bg transparent transparent transparent;
+  right: 1vw;
+  top:0.8vw;
+}
+
+.status-dropdown-list {  
+  list-style-type: none;
+  margin-top: 1.2vw;
+  padding: 0;
+  width: 7vw;
+  background-color: white;
+  font-weight:bold;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 6px 6px;
+}
+.status li {
+  padding: 0.2vw 0.3vw;
+  border-top: 0.25px solid #C6C6C6;
+  border-bottom: 0.25px solid #C6C6C6;
+  font-size: 0.9vw;
+}
+.status li:last-child {
+  // border-bottom: none;
+  border-radius: 0px 0px 6px 6px;
+}
+.status li:hover {
+  background-color: #000066;
+  color: #FFF !important;
+}
+.Offline{
+  padding-right: 0.2vw;
+  color: red;
+  font-size: small;
+}
+.Online{
+  padding-right: 0.2vw;
+  color: green ;
+  font-size: small;
+}
