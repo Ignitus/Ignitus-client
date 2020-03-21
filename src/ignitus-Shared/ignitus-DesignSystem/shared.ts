@@ -93,18 +93,24 @@ export const flexibleRowDiv = styled.div`
   justify-content: center;
 `;
 
-export const ParagraphIcon = styled.p`
+export const TextIconContainer = styled.div`
 	color: ${C.IgnitusBlue};
 	padding-left: 2em;
 	position: relative;
 	width: 100%;
 	text-align: left;
+	span {
+		padding: 5px;
+		display: inline-block;
+		cursor: pointer;
+	}
 	i,
 	svg {
 		left:0;
 		position: absolute;
 		top: 0;
 		font-size: 1em;
+		height: 1.5rem;
 	}
 `
 
