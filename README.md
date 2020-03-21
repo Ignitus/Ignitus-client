@@ -35,8 +35,13 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [Netlify](https://www.netlify.com/) - Netlify builds, deploys 🚀 and hosts your front-end.
 - [Husky](https://github.com/typicode/husky) - Git hooks made easy 🐶 woof!
 - [Heroku](https://www.heroku.com/) - Heroku is a cloud platform as a service supporting several programming languages.
-- [Docker](https://www.docker.com/) - Empowering App Development for Developers.
+- [Docker](https://www.docker.com/) - Empowering App Development for Developers. 🐳
 - [Istanbul](https://istanbul.js.org/) - JavaScript test coverage tool.
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
+</a>
+
 
 ### Testing
 - [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework. 🔨
@@ -73,10 +78,21 @@ We also plan to introduce some new technologies in the future such as.
 - [Relay](https://relay.dev/) - The production-ready GraphQL client for React.
 - Microservices in [Golang](https://golang.org/) - Go is a statically typed, compiled programming language 
 
-
 ## Contributing
 
 - Please check the [Contribution Guidelines](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md).
 - Please check the [Coding Conventions](https://github.com/Ignitus/Ignitus-client/wiki/CodeGuidelines-And-Conventions).
 
 
+<p>
+  <sub>Built with ❤︎ by
+    <a href="https://github.com/liyasthomas/postwoman/graphs/contributors">contributors.</a>
+  </sub>
+</p>
+
+<div align="center">
+  <br>
+  <a href="https://postwoman.io"><img src="https://media.giphy.com/media/l46ChKeGsmsfE3Un6/giphy.gif" alt="Postwoman.io" width="200"></a>
+  <br>
+  <h3>Happy Coding ☘️.</h3>
+</div>
