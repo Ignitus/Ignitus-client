@@ -7,7 +7,7 @@ import Contributors from '../../ignitus-HomePage/ignitus-Contributors';
 import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
 import Introduction from '../../ignitus-HomePage/ignitus-Introduction';
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
-import WhatWeProvide from '../../ignitus-HomePage/ignitus-WhatWeDo';
+import WhatWeDo from '../../ignitus-HomePage/ignitus-WhatWeDo';
 import Partner from '../../ignitus-HomePage/ignitus-Partners';
 
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
@@ -52,7 +52,7 @@ export const PublicRoutes = () => {
           render={() => (
             <div className="content">
               <Introduction.components.Introduction />
-              <WhatWeProvide.components.WhatWeProvide />
+              <WhatWeDo.components.WhatWeDo />
               <Contributors.components.Contributors />
               <Partner.components.Partner />
               <Testimonial.containers.TestimonialContainer />

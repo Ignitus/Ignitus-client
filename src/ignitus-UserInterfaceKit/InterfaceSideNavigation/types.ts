@@ -1,11 +1,11 @@
 export type Edges = {
   node: {
     title: string;
-    children: children[];
+    children: Children[];
   };
 };
 
-export type children = {
+export type Children = {
   title: string;
   route: string | null;
 };

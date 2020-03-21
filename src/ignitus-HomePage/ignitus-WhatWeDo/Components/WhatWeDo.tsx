@@ -4,7 +4,7 @@ import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import { data } from '../constants';
 
-const WhatWeProvide = () => (
+const WhatWeDo = () => (
   <T.Wrapper id="what-we-do">
     <T.TopSection>
       <T.Title>What we provide?</T.Title>
@@ -32,4 +32,4 @@ const WhatWeProvide = () => (
   </T.Wrapper>
 );
 
-export default withErrorBoundary(WhatWeProvide);
+export default withErrorBoundary(WhatWeDo);
