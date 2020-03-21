@@ -7,26 +7,12 @@ import KitSideNavigation from '../InterfaceSideNavigation/Components/interfaceSi
 
 export const UIkit = () => (
   <K.Container>
-    <K.SideNavigationContainer>
-      <KitSideNavigation />
-    </K.SideNavigationContainer>
     <K.UIKitContainer>
-      <K.StyledHeading1> Ignitus UIKit </K.StyledHeading1>
-      <K.StyledHeading2> Atoms </K.StyledHeading2>
-      
       <K.StyledHeading4> Separator </K.StyledHeading4>
       <A.Separator />
-     
-      
+
       <K.StyledHeading6> Text link</K.StyledHeading6>
       <Button.TextButtonUnderline> Text Link </Button.TextButtonUnderline>
-     
-
-      <K.StyledHeading2> Organisms </K.StyledHeading2>
-     
-      <K.StyledHeading4> Opportunity list </K.StyledHeading4>
-      <Opportunity />
-      
     </K.UIKitContainer>
   </K.Container>
 );
