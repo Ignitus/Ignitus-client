@@ -10,8 +10,6 @@ import { interfaceTypography } from '../../ignitus-UserInterfaceKit/Components/A
 import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceCards/Components';
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
-import { WebsiteUnderConstruction } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components';
-import { Separator } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 
 
 const Container = styled.div`
@@ -53,6 +51,10 @@ const UserInterfaceKitRoutes = () => (
       <Route
         path="/interface/cardLayout"
         component={interfaceCardLayout}
+      />
+      <Route
+        path="/interface/notFound"
+        component={interfaceNotFound}
       />
     </Switch>
   </Container>
