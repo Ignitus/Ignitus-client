@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
-import * as F from './fonts';
-
-const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+import { mq } from './media';
 
 export const Separator = styled.hr`
   display: block;

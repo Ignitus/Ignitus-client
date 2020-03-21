@@ -4,6 +4,7 @@ import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/c
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import Icon from "../../../ignitus-Shared/ignitus-Utilities/Components/icon";
+import { mq } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 type LinkWrapperProps = {
   toggle: boolean;
@@ -11,9 +12,6 @@ type LinkWrapperProps = {
 type TeamItemTitleProps = {
   color: string;
 };
-
-const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 export const TeamItemTitle = styled.h6`
   margin-top: 1rem;
