@@ -1,7 +1,7 @@
 import React from 'react';
 import {ButtonsContainer} from '../style';
 
-import * as Button from '../style';
+import * as Button from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {StyledHeading2, StyledHeading6} from '../../../../styles';
 
 {

@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
-import * as C from '../../colors';
-import * as F from '../../fonts';
+import * as C from './colors';
+import * as F from './fonts';
+import { BtnSizeProps, getPadding, getFontSizes, getRadius } from '../../ignitus-Utilities/HelperFunctions/emotionHelpers';
+
+export const ButtonsContainer = styled.div`
+  padding: 3rem;
+`;
 
 export const Button = styled.button`
   padding: 16px 32px;
@@ -21,9 +26,12 @@ export const Button = styled.button`
   }
 `;
 
-export const PrimaryButton = styled(Button)`
+export const PrimaryButton = styled(Button)<BtnSizeProps>`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
   &:hover,
   &:focus {
     background-color: ${C.SecondaryColor};
@@ -31,21 +39,29 @@ export const PrimaryButton = styled(Button)`
   }
 `;
 
-export const SecondaryButton = styled(Button)`
+export const SecondaryButton = styled(Button)<BtnSizeProps>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   border: 2px solid ${C.IgnitusBlue};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
 `;
 
-export const WhiteButton = styled(Button)`
+export const WhiteButton = styled(Button)<BtnSizeProps>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
 `;
 
-export const GreyButton = styled(Button)`
+export const GreyButton = styled(Button)<BtnSizeProps>`
   color: ${C.IgnitusBlue};
   background-color: ${C.GreyLight};
-  border: none;
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
   &:hover,
   &:focus {
     background-color: ${C.Grey2};
@@ -53,41 +69,38 @@ export const GreyButton = styled(Button)`
   }
 `;
 
-export const OrangeButton = styled(Button)`
+export const OrangeButton = styled(Button)<BtnSizeProps>`
   color: ${C.IgnitusBlue};
   background-color: ${C.SecondaryColor};
-  border: none;
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
 `;
 
 export const DisabledButton = styled(Button)`
   color: ${C.GreySecondaryText};
   background-color: ${C.GreyLight};
-  border: none;
-  cursor: default;
+  cursor: not-allowed;
 `;
 
 export const DangerButton = styled(Button)`
   color: ${C.White};
   background-color: ${C.Red};
-  border: none;
 `;
 
 export const GreenButton = styled(Button)`
   color: ${C.White};
   background-color: ${C.Green};
-  border: none;
 `;
 
 export const YellowButton = styled(Button)`
   color: ${C.GreySecondaryText};
   background-color: ${C.Yellow};
-  border: none;
 `;
 
 export const TextButton = styled(Button)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
-  border: none;
   &:hover,
   &:focus {
     background-color: ${C.GreyLight};
@@ -98,7 +111,6 @@ export const TextButton = styled(Button)`
 export const TextButtonUnderline = styled(Button)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
-  border: none;
   text-decoration: underline;
   &:hover,
   &:focus {
@@ -131,16 +143,4 @@ export const StyledButtonTopLeft = styled(Button)`
 
 export const RoundedPrimaryButton = styled(PrimaryButton)`
   border-radius: 30px;
-`;
-
-export const MediumPrimaryButton = styled(PrimaryButton)`
-  padding: 8px 20px;
-  font-size: ${F.SM};
-  border-radius: 3px;
-`;
-
-export const SmallPrimaryButton = styled(PrimaryButton)`
-  padding: 4px 15px;
-  font-size: ${F.XS};
-  border-radius: 3px;
 `;
