@@ -2,16 +2,16 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import { KitSideNavigation } from '../../ignitus-UserInterfaceKit/InterfaceSideNavigation/Components';
-import { interfaceButttons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
-import { interfaceNavigation } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceNavigation/Components';
-import { interfaceIcons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceIcons/Components';
-import { interfaceTypography } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceTypography/Components';
-import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceCards/Components';
-import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
-import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
-import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
-import { interfaceColors } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceColors/Components';
+import { interfaceSideNavigation } from '../../ignitus-UserInterfaceBook/InterfaceSideNavigation/Components';
+import { interfaceButttons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceButtons/Components';
+import { interfaceNavigation } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNavigation/Components';
+import { interfaceIcons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIcons/Components';
+import { interfaceTypography } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTypography/Components';
+import { interfaceCards } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCards/Components';
+import { interfaceCardLayout } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceCardLayout/Components';
+import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
+import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceUnderConstruction/Components';
+import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
 
 
 const Container = styled.div`
@@ -19,9 +19,9 @@ const Container = styled.div`
   flex-direction: row;
 `;
 // eslint-disable-next-line import/prefer-default-export
-const UserInterfaceKitRoutes = () => (
+const UserInterfaceBookRoutes = () => (
   <Container>
-    <KitSideNavigation />
+    <interfaceSideNavigation />
     <Switch>
       <Route
         exact
@@ -71,4 +71,4 @@ const UserInterfaceKitRoutes = () => (
   </Container>
 );
 
-export default UserInterfaceKitRoutes;
+export default UserInterfaceBookRoutes;

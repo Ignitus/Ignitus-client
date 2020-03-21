@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import '../Styles/style.scss';
-import Foo from './GetStarted';
+import './Styles/style.scss';
+import Foo from './Components/GetStarted';
 
 describe('GetStarted', () => {
   test('Renders Sign Up button', () => {

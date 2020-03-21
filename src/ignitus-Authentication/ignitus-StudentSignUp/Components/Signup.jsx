@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import isEmpty from 'lodash/isEmpty';
 import isEqual from 'lodash/isEqual';
 import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import * as t from './Constants';
+import * as t from '../constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 import '../Styles/style.scss';

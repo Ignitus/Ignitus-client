@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import * as t from './constants';
+import * as t from '../constants';
 import '../Styles/style.scss';
 
 interface Props {
