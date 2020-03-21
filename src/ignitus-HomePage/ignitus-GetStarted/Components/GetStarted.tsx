@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
-const GetStarted = () => (
+const GetStarted:React.FunctionComponent = () => (
   <div className="started--container">
     <div className="started">
       Get started for free - join thousands of students and researchers already
