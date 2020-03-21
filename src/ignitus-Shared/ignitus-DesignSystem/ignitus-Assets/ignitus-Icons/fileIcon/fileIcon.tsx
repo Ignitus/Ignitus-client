@@ -1,6 +1,5 @@
 import React from 'react';
 import {HTMLAttributes} from 'react';
-
 type Props = HTMLAttributes<SVGElement>;
 
 const FileIcon = ({title = 'File Icon', ...rest}: Props) => {

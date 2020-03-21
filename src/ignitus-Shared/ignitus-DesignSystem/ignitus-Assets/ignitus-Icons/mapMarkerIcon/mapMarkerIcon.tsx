@@ -1,6 +1,5 @@
 import React from 'react';
 import {HTMLAttributes} from 'react';
-
 type Props = HTMLAttributes<SVGElement>;
 
 const MapMarkerIcon = ({title = 'Map Marker Icon', ...rest}: Props) => {

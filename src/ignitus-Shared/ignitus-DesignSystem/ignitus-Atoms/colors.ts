@@ -8,6 +8,7 @@ export const GreySecondaryText: string = '#4D4D4D';
 export const GreyLight: string = '#E0E0E0';
 export const Grey1: string = '#9C9C9C';
 export const Grey2: string = '#C4C4C4';
+export const Grey3: string = '#939393'
 export const Red: string = '#FF4444';
 export const Green: string = '#219653';
 export const OtherBlue: string = '#7272F4';

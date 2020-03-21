@@ -1,6 +1,5 @@
 import React from 'react';
 import {HTMLAttributes} from 'react';
-
 type Props = HTMLAttributes<SVGElement>;
 
 const BookmarkIcon = ({title = 'Bookmark Icon', ...rest}: Props) => {

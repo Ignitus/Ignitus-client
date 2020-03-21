@@ -95,12 +95,14 @@ export const flexibleRowDiv = styled.div`
 
 export const TextIconContainer = styled.div`
   color: ${C.IgnitusBlue};
+  font-size: 1em;
   padding-left: 2em;
   position: relative;
   width: 100%;
   text-align: left;
   span {
-    padding: 5px;
+    font-weight: 400;
+    padding-bottom: 5px;
     display: inline-block;
     cursor: pointer;
   }
@@ -110,7 +112,7 @@ export const TextIconContainer = styled.div`
     position: absolute;
     top: 0;
     font-size: 1em;
-    height: 1.5rem;
+		fill: ${C.IgnitusBlue};
   }
 `;
 

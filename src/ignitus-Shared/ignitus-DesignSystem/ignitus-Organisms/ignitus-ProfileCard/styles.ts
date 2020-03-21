@@ -16,6 +16,7 @@ export const ProfileContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   background-color: ${C.White};
+  color: ${C.IgnitusBlue};
   margin: 0.5rem;
   padding: 1rem;
   padding-top: 3px;
@@ -67,6 +68,11 @@ export const ProfileHeading = styled(T.Heading1)`
   flex: 1;
 `;
 
+export const ProfileSubHeading = styled(T.Heading4)`
+  flex: 1;
+  margin-bottom: 10px;
+`;
+
 export const SocialDiv = styled(flexibleColDiv)`
   padding: 0.5rem;
   border: 2px solid blue;
@@ -102,17 +108,14 @@ export const ProfileBookmarkIcon = styled(BookmarkIcon)`
 
 export const SendMessageIcon = styled(ChatMessageIcon)`
   height: 1.5rem;
-  fill: ${C.IgnitusBlue};
 `;
 
 export const ResumeIcon = styled(FileIcon)`
   height: 1.5rem;
-  fill: ${C.IgnitusBlue};
 `;
 
 export const LocationIcon = styled(MapMarkerIcon)`
-  height: 1.5rem;
-  fill: ${C.IgnitusBlue};
+  height: 1.2rem;
   position: relative;
   top: -10px;
 `;
@@ -124,6 +127,7 @@ export const DropDownBtnContainer = styled.div`
 
 export const DropDownBtn = styled.div`
   font-weight: bold;
+  color: ${C.Grey3};
   cursor: pointer;
   display: inline-block;
   padding: 10px 0;

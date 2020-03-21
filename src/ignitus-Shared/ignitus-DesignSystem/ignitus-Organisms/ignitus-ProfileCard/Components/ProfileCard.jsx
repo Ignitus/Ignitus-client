@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import * as S from '../styles';
-import {TextIconContainer} from '../../../shared';
+import { TextIconContainer } from '../../../shared';
 
 export default function ProfileCard() {
   return (
@@ -22,7 +22,7 @@ export default function ProfileCard() {
           </S.ImageContainer>
           <S.DetailsContainer>
             <S.ProfileHeading>Sophia Carter</S.ProfileHeading>
-            <p>Literature Student</p>
+            <S.ProfileSubHeading>Literature Student</S.ProfileSubHeading>
             <TextIconContainer>
               <S.LocationIcon />
               Location

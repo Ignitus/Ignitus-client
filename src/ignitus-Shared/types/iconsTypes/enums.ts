@@ -9,5 +9,9 @@ export enum AppIcon {
   SaveIcon = 'SaveIcon',
   MessageIcon = 'MessageIcon',
   NetworkIcon = 'NetworkIcon',
-  MentorsIcon = 'MentorsIcon',
+	MentorsIcon = 'MentorsIcon',
+	FileIcon = 'FileIcon',
+	BookmarkIcon = 'BookmarkIcon',
+	MapMarkerIcon = 'MapMarkerIcon',
+	ChatMessageIcon = 'ChatMessageIcon'
 }
