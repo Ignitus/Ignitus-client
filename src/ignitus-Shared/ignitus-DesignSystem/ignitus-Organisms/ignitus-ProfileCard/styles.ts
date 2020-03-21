@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/atoms';
 import * as C from '../../ignitus-Atoms/colors';
 import {flexibleColDiv, flexibleRowDiv, TextIconContainer} from '../../shared';
-import {Normal, MD} from '../../ignitus-Atoms/fonts';
 import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/chatMessageIcon';
 import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
 import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
@@ -58,10 +57,12 @@ export const ImageContainer = styled(flexibleRowDiv)`
     border-radius: 10px;
   }
 `;
+
 export const DetailsContainer = styled.div`
   flex: auto;
   padding: 0.5em 0 0 1.5em;
 `;
+
 export const ProfileHeading = styled(T.Heading1)`
   flex: 1;
 `;
@@ -84,8 +85,8 @@ export const SocialIcons = styled.div`
 `;
 
 export const TextIconContent = styled.span`
-	color: ${C.IgnitusBlue}
-`
+  color: ${C.IgnitusBlue}
+`;
 
 export const SocialContact = styled(flexibleColDiv)`
   flex: 100%;
@@ -93,6 +94,7 @@ export const SocialContact = styled(flexibleColDiv)`
     flex: 1 1 100%;
   }
 `;
+
 export const ProfileBookmarkIcon = styled(BookmarkIcon)`
   height: 2rem;
   fill: ${C.IgnitusBlue};
@@ -110,9 +112,9 @@ export const ResumeIcon = styled(FileIcon)`
 
 export const LocationIcon = styled(MapMarkerIcon)`
   height: 1.5rem;
-	fill: ${C.IgnitusBlue};
-	position: relative;
-	top: -10px;
+  fill: ${C.IgnitusBlue};
+  position: relative;
+  top: -10px;
 `;
 
 export const DropDownBtnContainer = styled.div`
@@ -127,13 +129,14 @@ export const DropDownBtn = styled.div`
   padding: 10px 0;
   transition: all 0.4s;
   width: fit-content;
-	
-	&:hover {
+  
+  &:hover {
     ul {
       display: block;
     }
   }
 `;
+
 export const DropDownMenu = styled.ul`
   z-index: 50;
   position: absolute;
@@ -150,6 +153,7 @@ export const DropDownMenu = styled.ul`
     display: block;
   }
 `;
+
 export const DropDownMenuListItem = styled.li`
   padding: 0.5em 1em;
   font-size: 14px;
