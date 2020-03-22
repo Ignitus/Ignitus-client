@@ -2,36 +2,35 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import {Link} from 'react-router-dom';
-import progress from '../../../ignitus-Assets/Images/progressPage5.png';
-import newsletter from '../../../ignitus-Assets/Images/newsletterIcon.png';
-import {withErrorBoundary} from '../../../ignitus-Internals';
-
+import { Link } from 'react-router-dom';
+import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage5.png';
+import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 
-const email = () => (
+const emailFlow = () => (
   <div className="email">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <div className="newsletter">
       <img src={newsletter} alt="newsletter" />
     </div>
-    <p className="welcome">Let’s confirm your email</p>
+    <p className="welcome">Let’s confirm your email.</p>
     <p className="paragraph">
       We recommend to confirm your email address to recieve further
       communication.
     </p>
     <p className="paragraph">
-      Click the link we sent to sofia.carter@gmail.com to confirm you email
+      Click the link we sent to sofia.carter@gmail.com to confirm you email.
     </p>
     <div className="emailConfirmContainer">
-      <button className="emailConfirmed">
+      <button className="emailConfirmed" type="button">
         <Link to="/signup/emailConfirmed" className="emailConfirmedText">
-          Email confirmed
+          Email confirmed.
         </Link>
       </button>
-      <button className="noEmail">
+      <button className="noEmail" type="button">
         <Link to="/" className="noEmailText">
-          I Don’t see the email
+          I Don’t see the email.
         </Link>
       </button>
     </div>
@@ -39,4 +38,4 @@ const email = () => (
   </div>
 );
 
-export default withErrorBoundary(email);
+export default withErrorBoundary(emailFlow);
