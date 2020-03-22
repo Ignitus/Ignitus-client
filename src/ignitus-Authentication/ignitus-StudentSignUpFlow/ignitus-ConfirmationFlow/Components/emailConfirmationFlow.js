@@ -8,7 +8,7 @@ import '../Styles/style.scss';
 import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage6.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterAcceptIcon.png';
 
-const emailConfirmed = () => (
+const emailConfirmationFlow = () => (
   <div className="emailConfirm">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <div className="newsletter">
@@ -26,4 +26,4 @@ const emailConfirmed = () => (
   </div>
 );
 
-export default withErrorBoundary(emailConfirmed);
+export default withErrorBoundary(emailConfirmationFlow);
