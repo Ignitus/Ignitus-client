@@ -1,13 +1,17 @@
-
-
 /* useful for keeping your bundle size small. */
-import { isString } from '../../ignitus-UtilityFunctions/utilityFunctions';
-import { isObject } from '../../ignitus-UtilityFunctions/utilityFunctions';
+import {
+  isString,
+  isObject,
+} from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import * as t from './actionTypes';
 
 export const signUpRequest = (email, password) => {
-  if (!isString(email)) { throw new Error(`email must be string: ${email}`); }
-  if (!isString(password)) { throw new Error(`password must be string: ${password}`); }
+  if (!isString(email)) {
+    throw new Error(`email must be string: ${email}`);
+  }
+  if (!isString(password)) {
+    throw new Error(`password must be string: ${password}`);
+  }
 
   return { type: t.SIGN_UP_REQUEST, email, password };
 };

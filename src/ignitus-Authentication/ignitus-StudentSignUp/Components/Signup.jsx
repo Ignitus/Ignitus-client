@@ -1,12 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { isEmpty } from '../../../ignitus-UtilityFunctions/utilityFunctions';
-import { isEqual } from '../../../ignitus-UtilityFunctions/utilityFunctions';
+import { isEmpty, isEqual } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import * as t from '../constants';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-
 import '../Styles/style.scss';
 
 const Signup = ({ signUpRequest, studentSignUpData }) => {
@@ -85,25 +85,25 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
             </div>
 
             {success && (
-            <div className="alert alert-success margin-Top">
-              <strong>Success!</strong>
-              {' '}
+              <div className="alert alert-success margin-Top">
+                <strong>Success!</strong>
+                {' '}
                   Please login!.
-            </div>
+              </div>
             )}
 
             {success === false && (
-            <div className="alert alert-danger margin-Top">
-              {msg}
-            </div>
+              <div className="alert alert-danger margin-Top">
+                {msg}
+              </div>
             )}
 
             {emptyMessage && (
-            <div className="alert alert-danger margin-Top">
-              <strong>Please!</strong>
-              {' '}
+              <div className="alert alert-danger margin-Top">
+                <strong>Please!</strong>
+                {' '}
                   fill the form!
-            </div>
+              </div>
             )}
 
             <form>
@@ -126,11 +126,11 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                 </div>
 
                 {invalidEmail && (
-                <div className="text-danger small mb-1">
-                  <strong>Please </strong>
-                  {' '}
+                  <div className="text-danger small mb-1">
+                    <strong>Please </strong>
+                    {' '}
                       input a valid mail!
-                </div>
+                  </div>
                 )}
 
                 <div className="input-group form-group mb-2">
@@ -178,16 +178,16 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                 </div>
 
                 {equalmessage && (
-                <div className="text-danger small mb-1">
-                  <strong>Password </strong>
-                  {' '}
+                  <div className="text-danger small mb-1">
+                    <strong>Password </strong>
+                    {' '}
                       does not match the confirm password.!
-                </div>
+                  </div>
                 )}
 
                 <div className="text-center mb-3 mt-3">
                   <button type="button" className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={e => handleSubmit(e)}>
-                      Sign up as Student
+                    Sign up as Student
                   </button>
                 </div>
                 <div className="or-seperator">
@@ -201,7 +201,7 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                 </div>
                 <div className="text-center">
                   <div>
-                      Already have an account?
+                    Already have an account?
                     {' '}
                     <Link to="/login/student" className="text-center linkform">
                       {' '}
@@ -216,15 +216,6 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
       </div>
     </div>
   );
-};
-
-Signup.propTypes = {
-  signUpRequest: PropTypes.func.isRequired,
-  studentSignUpData: PropTypes.shape({
-    isFetching: PropTypes.bool,
-    success: PropTypes.bool,
-    msg: PropTypes.string,
-  }).isRequired,
 };
 
 export default withErrorBoundary(Signup);

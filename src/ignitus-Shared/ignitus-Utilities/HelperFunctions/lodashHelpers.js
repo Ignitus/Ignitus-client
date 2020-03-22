@@ -8,9 +8,8 @@ function getTag(value) {
   return Object.prototype.toString.call(value);
 }
 
-
-/* 
-  Utilities Methods 
+/*
+  Utilities Methods
 */
 
 export function isEmpty(value) {
@@ -28,16 +27,20 @@ export function isEmpty(value) {
   return false;
 }
 
-
 export function isObject(value) {
   const type = typeof value;
   return value != null && (type === 'object' || type === 'function');
 }
 
-
 export function isString(value) {
   const type = typeof value;
-  return type === 'string' || (type === 'object' && value != null && !Array.isArray(value) && getTag(value) === '[object String]');
+  return (
+    type === 'string'
+    || (type === 'object'
+      && value != null
+      && !Array.isArray(value)
+      && getTag(value) === '[object String]')
+  );
 }
 
 export function isEqual(value, other) {
@@ -45,10 +48,9 @@ export function isEqual(value, other) {
   return JSON.stringify(value) === JSON.stringify(other);
 }
 
-
 export default {
   isEmpty,
   isObject,
   isString,
-  isEqual
+  isEqual,
 };
