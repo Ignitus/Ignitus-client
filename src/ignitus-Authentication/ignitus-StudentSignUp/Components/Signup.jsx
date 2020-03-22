@@ -9,7 +9,7 @@ import { statePayLoad } from '../../../ignitus-Shared/ignitus-DesignSystem/ignit
 import '../Styles/style.scss';
 
 const Signup = ({ signUpRequest, studentSignUpData }) => {
-  const [state, setState] = useState(statePayLoad);
+  const [state, setState] = useState({ ...statePayLoad });
   const {
     email, password, confirmPassword,
   } = state;
@@ -19,6 +19,7 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
 
     if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       setState({
+        ...state,
         emptyMessage: true,
       });
       return;
@@ -30,6 +31,7 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
 
       if (!(lastAtPos < lastDotPos && lastAtPos > 0 && email.indexOf('@@') === -1 && lastDotPos > 2 && (email.length - lastDotPos) > 2)) {
         setState({
+          ...state,
           invalidEmail: true,
         });
         return;
@@ -38,8 +40,9 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
 
     if (!isEqual(password, confirmPassword)) {
       setState({
-        equalmessage: true,
+        ...state,
         emptyMessage: false,
+        equalmessage: true,
       });
       return;
     }

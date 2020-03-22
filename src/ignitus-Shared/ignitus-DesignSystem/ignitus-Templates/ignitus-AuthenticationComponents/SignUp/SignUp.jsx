@@ -84,7 +84,7 @@ const SharedSignUp = ({
                     placeholder="Email"
                     required
                     value={email}
-                    onChange={e => setState({ email: e.target.value })}
+                    onChange={e => setState({ ...state, email: e.target.value })}
                   />
                 </div>
 
@@ -109,13 +109,13 @@ const SharedSignUp = ({
                     placeholder="Password"
                     required
                     value={password}
-                    onChange={e => setState({ password: e.target.value })}
+                    onChange={e => setState({ ...state, password: e.target.value })}
                   />
                   <div className="input-group-append">
                     <span
                       className="input-group-text password-visiblity-icon password-border"
                       onClick={() => {
-                        setState({ showPassword: !showPassword });
+                        setState({ ...state, showPassword: !showPassword });
                       }}
                     >
                       {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
@@ -136,7 +136,7 @@ const SharedSignUp = ({
                     placeholder="Confirm Password"
                     required
                     value={confirmPassword}
-                    onChange={e => setState({ confirmPassword: e.target.value })}
+                    onChange={e => setState({ ...state, confirmPassword: e.target.value })}
                   />
                 </div>
 
@@ -197,9 +197,9 @@ SharedSignUp.propTypes = {
   }).isRequired,
   setState: PropTypes.func.isRequired,
   signUpData: PropTypes.shape({
-    isFetching: PropTypes.bool.isRequired,
-    msg: PropTypes.string.isRequired,
-    success: PropTypes.bool.isRequired,
+    isFetching: PropTypes.bool,
+    msg: PropTypes.string,
+    success: PropTypes.bool,
   }).isRequired,
   handleSubmit: PropTypes.func.isRequired,
 };
