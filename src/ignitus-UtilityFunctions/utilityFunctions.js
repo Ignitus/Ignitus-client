@@ -13,7 +13,7 @@ function getTag(value) {
   Utilities Methods 
 */
 
-function isEmpty(value) {
+export function isEmpty(value) {
   if (value === null || value === undefined) {
     return true;
   }
@@ -29,18 +29,18 @@ function isEmpty(value) {
 }
 
 
-function isObject(value) {
+export function isObject(value) {
   const type = typeof value;
   return value != null && (type === 'object' || type === 'function');
 }
 
 
-function isString(value) {
+export function isString(value) {
   const type = typeof value;
-  return type === 'string' || (type === 'object' && value != null && !Array.isArray(value) && getTag(value) == '[object String]');
+  return type === 'string' || (type === 'object' && value != null && !Array.isArray(value) && getTag(value) === '[object String]');
 }
 
-function isEqual(value, other) {
+export function isEqual(value, other) {
   if (value === other) return true;
   return JSON.stringify(value) === JSON.stringify(other);
 }

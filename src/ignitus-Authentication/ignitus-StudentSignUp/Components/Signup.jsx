@@ -4,8 +4,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import isEmpty from 'lodash/isEmpty';
-import isEqual from 'lodash/isEqual';
+import { isEmpty } from '../../../ignitus-UtilityFunctions/utilityFunctions';
+import { isEqual } from '../../../ignitus-UtilityFunctions/utilityFunctions';
 import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import * as t from './Constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
