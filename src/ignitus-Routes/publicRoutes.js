@@ -1,30 +1,24 @@
-import React from 'react';
-import {Switch, Route} from 'react-router-dom';
-import Navigation from '../ignitus-Navigation';
-import Footer from '../ignitus-Footer';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Navigation from "../ignitus-Navigation";
+import Footer from "../ignitus-Footer";
 
-import Contributors from '../ignitus-Contributors';
-import GetStarted from '../ignitus-GetStarted';
-import Introduction from '../ignitus-Introduction';
-import Testimonial from '../ignitus-Testimonial';
-import WhatWeProvide from '../ignitus-WhatWeDo';
-import Partner from '../ignitus-Partners';
+import Contributors from "../ignitus-Contributors";
+import GetStarted from "../ignitus-GetStarted";
+import Introduction from "../ignitus-Introduction";
+import Testimonial from "../ignitus-Testimonial";
+import WhatWeProvide from "../ignitus-WhatWeDo";
+import Partner from "../ignitus-Partners";
 
-import LoginProfessor from '../ignitus-ProfessorLogin';
-import SignupProfessor from '../ignitus-ProfessorSignUp';
-import LoginStudent from '../ignitus-StudentLogin';
-import SignupStudent from '../ignitus-StudentSignUp';
-import interest from '../ignitus-StudentSignUp/interest/Components/interest';
-import email from '../ignitus-StudentSignUp/email/Components/email';
-import emailConfirmed
-  from '../ignitus-StudentSignUp/emailConfirmed/Components/emailConfirmed';
-import commonLoginUI
-  from '../ignitus-Common-Auth-Student-Prof/Components/commonLoginUI';
-import commonSignUpUI
-  from '../ignitus-Common-Auth-Student-Prof/Components/commonSignUpUI';
+import LoginProfessor from "../ignitus-ProfessorLogin";
+import SignupProfessor from "../ignitus-ProfessorSignUp";
+import LoginStudent from "../ignitus-StudentLogin";
+import SignupStudent from "../ignitus-StudentSignUp";
+import commonLoginUI from "../ignitus-Common-Auth-Student-Prof/Components/commonLoginUI";
+import commonSignUpUI from "../ignitus-Common-Auth-Student-Prof/Components/commonSignUpUI";
 
-import loader from '../ignitus-Assets/Images/loader2.gif';
-import Loadable from 'react-loadable';
+import loader from "../ignitus-Assets/Images/loader2.gif";
+import Loadable from "react-loadable";
 
 import {Notfound} from './notFound';
 
@@ -38,9 +32,9 @@ const Loading = () => (
   </div>
 );
 
-const AboutUs = Loadable ({
-  loader: () => import ('../ignitus-About/Components/About'),
-  loading: Loading,
+const AboutUs = Loadable({
+  loader: () => import("../ignitus-About/Components/About"),
+  loading: Loading
 });
 
 export const PublicRoutes = props => {
@@ -79,12 +73,12 @@ export const PublicRoutes = props => {
           path="/signup/student"
           component={SignupStudent.containers.Signup}
         />
-        <Route path="/signup/interest" component={interest} />
-        <Route path="/signup/email" component={email} />
-        <Route path="/signup/emailConfirmed" component={emailConfirmed} />
         <Route path="/Signup" component={commonSignUpUI} />
         <Route path="/Login" component={commonLoginUI} />
-        <Route path="/" component={Notfound} />
+        <Route
+          path="/"
+          component={Notfound}
+        />
       </Switch>
       <Footer.components.Footer />
     </React.Fragment>

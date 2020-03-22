@@ -1,0 +1,66 @@
+// import ignitus token variables
+@import './src/ignitus-Shared/styles/ignitus-tokens';
+
+// rem units change based on 1rem:16px
+
+// rem units change based on 1rem:16px
+
+.link {
+  color: $ignite-color-white;
+  font-size: $ignite-font-size-sm;
+
+  &:hover {
+    color: $ignite-color-yellow;
+    text-decoration: none;
+  }
+}
+
+.heading {
+	color: $ignite-color-white;
+	font-weight: $ignite-font-weight-bold;
+}
+
+.img-css {
+  align-self: center;
+  height: 6rem;
+  margin: 3rem 1rem;
+  width: 6rem;
+}
+
+.social-icon {
+	color: $ignite-color-white;
+}
+
+.pd-left {
+  padding-left: 1.5rem;
+}
+
+.footer-bg {
+	background-color: $ignite-color-blue-bg;
+}
+
+#footer-bg-id {
+	margin-top: 0 !important;
+}
+
+@media only screen and (max-width : 767px) {
+	.nav-accordion {
+		.navigation {
+			h5 {
+				cursor: pointer;
+			}
+		}
+		ul {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 1s ease-out;
+		}
+		.navigation.open {
+			ul {
+				height: auto;
+				max-height: 31.5rem;
+				transition: max-height 1s ease-in !important;
+			}
+		}
+	}
+}
