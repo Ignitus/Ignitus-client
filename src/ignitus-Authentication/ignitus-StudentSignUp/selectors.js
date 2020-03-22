@@ -1,6 +1,6 @@
 
 import { createSelector } from 'reselect';
-import isObject from 'lodash/isObject';
+import { isObject } from '../../ignitus-UtilityFunctions/utilityFunctions';
 
 export const selectStudentState = state => state.studentSignUpReducer;
 
