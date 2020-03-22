@@ -23,7 +23,7 @@ const EmailFlow = () => (
     </p>
     <div className="emailConfirmContainer">
       <button className="emailConfirmed" type="button">
-        <Link to="/signup/emailConfirmed" className="emailConfirmedText">
+        <Link to="/flow/emailConfirmed" className="emailConfirmedText">
           Email confirmed.
         </Link>
       </button>

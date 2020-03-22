@@ -44,12 +44,12 @@ const InterestFlow = () => (
     </div>
     <div className="text-center">
       <button className="saveButton" type="button">
-        <Link to="/signup/email" className="saveText">
+        <Link to="/flow/email" className="saveText">
           Save and Continue
         </Link>
       </button>
     </div>
-    <p className="skip">Skip for now &nbsp;</p>
+    <p className="skip">Skip for now. </p>
   </div>
 );
 
