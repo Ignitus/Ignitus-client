@@ -13,7 +13,7 @@ import Partner from '../../ignitus-HomePage/ignitus-Partners';
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
 import SignupProfessor from '../../ignitus-Authentication/ignitus-ProfessorSignUp';
 import LoginStudent from '../../ignitus-Authentication/ignitus-StudentLogin';
-import SignupStudent from '../../ignitus-Authentication/ignitus-StudentSignUp';
+import SignupStudent from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-StudentSignUp';
 import {
   CommonLoginUI,
   CommonSignUpUI,

@@ -3,9 +3,9 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { isEmpty, isEqual } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { isEmpty, isEqual } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import loader from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import * as t from '../constants';
 import '../Styles/style.scss';
 
