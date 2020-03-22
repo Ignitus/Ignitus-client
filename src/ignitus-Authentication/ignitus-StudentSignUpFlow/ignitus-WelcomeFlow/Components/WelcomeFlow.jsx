@@ -45,7 +45,7 @@ const WelcomeFlow = () => (
     </div>
     <div className="text-center">
       <button className="saveButton" type="button">
-        <Link to="/flow/interest" className="saveText">
+        <Link to="/flow/interestFlow" className="saveText">
           Save and Continue
         </Link>
       </button>

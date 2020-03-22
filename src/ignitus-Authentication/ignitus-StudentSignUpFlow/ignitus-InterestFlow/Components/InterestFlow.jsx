@@ -44,7 +44,7 @@ const InterestFlow = () => (
     </div>
     <div className="text-center">
       <button className="saveButton" type="button">
-        <Link to="/flow/email" className="saveText">
+        <Link to="/flow/emailFlow" className="saveText">
           Save and Continue
         </Link>
       </button>
