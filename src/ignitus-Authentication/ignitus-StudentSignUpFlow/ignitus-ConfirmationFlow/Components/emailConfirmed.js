@@ -2,12 +2,11 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import {Link} from 'react-router-dom';
-import progress from '../../../ignitus-Assets/Images/progressPage6.png';
-import newsletter from '../../../ignitus-Assets/Images/newsletterAcceptIcon.png';
-import {withErrorBoundary} from '../../../ignitus-Internals';
-
+import { Link } from 'react-router-dom';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
+import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage6.png';
+import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterAcceptIcon.png';
 
 const emailConfirmed = () => (
   <div className="emailConfirm">
@@ -15,10 +14,10 @@ const emailConfirmed = () => (
     <div className="newsletter">
       <img src={newsletter} alt="newsletter" />
     </div>
-    <p className="welcome">Your email has been confirmed</p>
+    <p className="welcome">Your email has been confirmed.</p>
     <p className="paragraph">Your verified email is sophia.crater@gmail.com</p>
     <div className="text-center">
-      <button className="getStarted">
+      <button className="getStarted" type="button">
         <Link to="/" className="saveText">
           Get started
         </Link>
