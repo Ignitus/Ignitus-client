@@ -7,7 +7,7 @@ import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 
-const emailFlow = () => (
+const EmailFlow = () => (
   <div className="email">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <div className="newsletter">
@@ -37,4 +37,4 @@ const emailFlow = () => (
   </div>
 );
 
-export default withErrorBoundary(emailFlow);
+export default withErrorBoundary(EmailFlow);

@@ -2,12 +2,12 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import '../Styles/style.scss';
 import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage6.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterAcceptIcon.png';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import '../Styles/style.scss';
 
-const emailConfirmationFlow = () => (
+const EmailConfirmationFlow = () => (
   <div className="emailConfirm">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <div className="newsletter">
@@ -25,4 +25,4 @@ const emailConfirmationFlow = () => (
   </div>
 );
 
-export default withErrorBoundary(emailConfirmationFlow);
+export default withErrorBoundary(EmailConfirmationFlow);

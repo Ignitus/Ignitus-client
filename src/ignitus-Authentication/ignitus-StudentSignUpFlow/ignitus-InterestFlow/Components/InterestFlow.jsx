@@ -2,14 +2,13 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import {Link} from 'react-router-dom';
-import progress from '../../../ignitus-Assets/Images/progressPage2.png';
-import interestsImage from '../../../ignitus-Assets/Images/interestsImage.png';
-import {withErrorBoundary} from '../../../ignitus-Internals';
-
+import { Link } from 'react-router-dom';
+import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage2.png';
+import interestsImage from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/interestsImage.png';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 
-const interest = () => (
+const InterestFlow = () => (
   <div className="interest">
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <p className="welcome">What are you interested in?</p>
@@ -19,21 +18,23 @@ const interest = () => (
     </p>
     <div className="checkboxContainer">
       <div className="checkboxes">
-        <label className="cbox">
+        <label htmlFor="User Interest" className="cbox">
           <input type="checkbox" name="Oppurtunities" value="yes" />
           Oppurtunities
         </label>
         <br />
-        <label className="cbox">
+        <label htmlFor="User Interest" className="cbox">
           <input type="checkbox" name="Build-Network" value="yes" />
           Build Network
         </label>
         <br />
-        <label className="cbox">
-          <input type="checkbox" name="read-blogs" value="yes" /> Read Blogs
+        <label htmlFor="User Interest" className="cbox">
+          <input type="checkbox" name="read-blogs" value="yes" />
+          {' '}
+          Read Blogs
         </label>
         <br />
-        <label className="cbox">
+        <label htmlFor="User Interest" className="cbox">
           <input type="checkbox" name="all-of-these" value="yes" />
           All of these
         </label>
@@ -42,14 +43,14 @@ const interest = () => (
       <img className="interestsImage" src={interestsImage} alt="interests" />
     </div>
     <div className="text-center">
-      <button className="saveButton">
+      <button className="saveButton" type="button">
         <Link to="/signup/email" className="saveText">
           Save and Continue
         </Link>
       </button>
     </div>
-    <p className="skip">Skip for now &nbsp; >></p>
+    <p className="skip">Skip for now &nbsp;</p>
   </div>
 );
 
-export default withErrorBoundary(interest);
+export default withErrorBoundary(InterestFlow);
