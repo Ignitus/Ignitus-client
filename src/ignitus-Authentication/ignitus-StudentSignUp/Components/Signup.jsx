@@ -47,14 +47,15 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
       return;
     }
 
-    // eslint-disable-next-line react/destructuring-assignment
     signUpRequest(email, password);
     setState({
       email: '',
       password: '',
       confirmPassword: '',
+      showPassword: false,
       emptyMessage: false,
       equalmessage: false,
+      invalidEmail: false,
     });
   };
 

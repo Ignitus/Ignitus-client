@@ -13,7 +13,7 @@ const SharedSignUp = ({
     email, password, confirmPassword, equalmessage, emptyMessage, invalidEmail, showPassword,
   } = state;
 
-  const { isFetching, msg, success } = signUpData;
+  const { isFetching, message, success } = signUpData;
 
   if (isFetching) {
     return (
@@ -57,7 +57,7 @@ const SharedSignUp = ({
 
             {success === false && (
             <div className="alert alert-danger margin-Top">
-              {msg}
+              {message}
             </div>
             )}
 
@@ -198,7 +198,7 @@ SharedSignUp.propTypes = {
   setState: PropTypes.func.isRequired,
   signUpData: PropTypes.shape({
     isFetching: PropTypes.bool,
-    msg: PropTypes.string,
+    message: PropTypes.string,
     success: PropTypes.bool,
   }).isRequired,
   handleSubmit: PropTypes.func.isRequired,
