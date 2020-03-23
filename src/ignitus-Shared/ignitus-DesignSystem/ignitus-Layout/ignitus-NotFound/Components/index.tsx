@@ -16,7 +16,7 @@ export const Notfound = () => (
           The page you are looking for is not available! 🔨
         </S.StyledParagraph>
       </S.Message>
-      <S.StyledPrimaryBtn primary>
+      <S.StyledPrimaryBtn>
         <Link to="/"> Home Page </Link>
       </S.StyledPrimaryBtn>
     </S.MessageContainer>

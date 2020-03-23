@@ -1,60 +1,6 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
-import * as F from './fonts';
-
-type InputProps = {
-  primary: true;
-};
-
-const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
-
-const colors = {
-  ignitusBlue: C.IgnitusBlue,
-};
-
-export const Heading1 = styled.h1`
-  font-weight: ${F.Medium};
-  font-size: ${F.XXXL};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Heading2 = styled.h2`
-  font-weight: ${F.Normal};
-  font-size: ${F.XXL};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Heading3 = styled.h3`
-  font-weight: ${F.Medium};
-  font-size: ${F.XL};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Heading4 = styled.h4`
-  font-weight: ${F.Normal};
-  font-size: ${F.LG};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Heading5 = styled.h5`
-  font-weight: ${F.Bold};
-  font-size: ${F.MD};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Heading6 = styled.h6`
-  font-weight: ${F.Medium};
-  font-size: ${F.SM};
-  color: ${C.IgnitusBlue};
-`;
-
-export const Paragraph = styled.p`
-  font-size: ${F.SM};
-  font-weight: ${F.Normal};
-  color: ${C.GreyText};
-  margin: 0;
-`;
+import { mq } from './media';
 
 export const Separator = styled.hr`
   display: block;
@@ -65,56 +11,6 @@ export const Separator = styled.hr`
   border-style: inset;
   border-width: 1px;
   color: ${C.Grey1};
-`;
-
-export const Button = styled.button`
-  border-radius: 5px;
-  padding: 15px 22px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-  line-height: 1rem;
-  margin: 10px;
-`;
-
-export const PrimaryButton = styled(Button)<InputProps>`
-  color: ${C.White};
-  font-size: ${F.MD};
-  font-weight: ${F.Normal};
-  background-color: ${props =>
-    props.primary ? colors['ignitusBlue'] : 'null'};
-  border: none;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    background-color: ${C.SecondaryColor};
-    color: ${C.IgnitusBlue};
-    font-size: ${F.MD};
-  }
-`;
-
-export const SecondaryButton = styled(Button)`
-  color: ${C.IgnitusBlue};
-  font-size: ${F.MD};
-  background-color: ${C.White};
-  border: 2px solid ${C.IgnitusBlue};
-`;
-
-export const GreyButton = styled(Button)`
-  color: ${C.IgnitusBlue};
-  font-size: ${F.MD};
-  line-height: 1rem;
-  background-color: ${C.GreyLight};
-  border: none;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    background-color: ${C.Grey1};
-    color: ${C.IgnitusBlue};
-    font-size: ${F.MD};
-  }
 `;
 
 export const Card = styled.a`
@@ -192,4 +88,4 @@ export const flexibleColDiv = styled.div`
   justify-content: center;
 `;
 
-/* Shared between partners & contirbutors component. */
+/* Shared between partners & contributors component. */
