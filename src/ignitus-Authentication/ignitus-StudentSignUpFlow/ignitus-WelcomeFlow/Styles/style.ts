@@ -26,6 +26,8 @@ export const MiddleSection = styled.div`
   flex-wrap: wrap;
 `;
 
+export const BottomSection = styled(flexibleColDiv)``;
+
 export const LeftSection = styled(flexibleColDiv)`
   margin-right: 1rem;
 `;
