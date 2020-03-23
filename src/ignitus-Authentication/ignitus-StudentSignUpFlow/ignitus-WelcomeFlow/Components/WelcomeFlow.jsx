@@ -14,12 +14,14 @@ import { Paragraph, Heading3 } from '../../../../ignitus-Shared/ignitus-DesignSy
 import * as T from '../Styles/style';
 
 const WelcomeFlow = () => (
-  <T.SignUp>
-    <img className="progressBarSignup" src={progress} alt="progress-bar" />
-    <Heading3>Welcome, Sophia</Heading3>
-    <Paragraph>Let’s start with your profile. This will get you successful on Ignitus</Paragraph>
-    <Paragraph>Confirm your own location and time zone to make communication easier!</Paragraph>
-    <T.InfoContainer>
+  <T.WelcomeContainer>
+    <T.TopSection>
+      <T.Progress src={progress} alt="progress-bar" />
+      <Heading3>Welcome, Sophia</Heading3>
+      <Paragraph>Let’s start with your profile. This will get you successful on Ignitus</Paragraph>
+      <Paragraph>Confirm your own location and time zone to make communication easier!</Paragraph>
+    </T.TopSection>
+    <T.BottomSection>
       <form className="dropdownContainer">
         <label htmlFor="Select Country/Region" className="labelDropdown">Country/Region</label>
         <br />
@@ -41,7 +43,7 @@ const WelcomeFlow = () => (
         </select>
       </form>
       <img className="profileImageMap" src={imageMap} alt="map" />
-    </T.InfoContainer>
+    </T.BottomSection>
     <PrimaryButton>
       <Link to="/flow/interestFlow" className="saveText">
         Save and Continue
@@ -51,7 +53,7 @@ const WelcomeFlow = () => (
       Skip for now
       {' >> '}
     </p>
-  </T.SignUp>
+  </T.WelcomeContainer>
 );
 
 export default withErrorBoundary(WelcomeFlow);
