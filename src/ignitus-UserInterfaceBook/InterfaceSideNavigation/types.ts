@@ -8,9 +8,10 @@ export type Edges = {
 export type Children = {
   title: string;
   route: string | null;
+  children?: Edges[];
 };
 
 export type NavigationLayerProps = {
-  edges: any;
+  edge: Edges;
   nesting?: boolean;
 };

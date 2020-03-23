@@ -19,7 +19,7 @@ const InterfaceSideNavigation = () => {
   );
 };
 
-const NavigationLayers = ({edge, nesting = false}: any) => {
+const NavigationLayers = ({edge, nesting = false}: NavigationLayerProps) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   const navigation = (
     <React.Fragment key={edge.node.title}>
