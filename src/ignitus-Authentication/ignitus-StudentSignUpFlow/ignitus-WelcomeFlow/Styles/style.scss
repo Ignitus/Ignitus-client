@@ -2,8 +2,10 @@
 @import '../../../../ignitus-Shared/styles/ignitus-components-common.scss';
 
 .signUp {
-  background-color: white;
-  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
