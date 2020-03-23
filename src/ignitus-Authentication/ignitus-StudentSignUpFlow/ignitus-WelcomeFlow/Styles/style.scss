@@ -1,13 +1,6 @@
 // import ignitus token variables
 @import '../../../../ignitus-Shared/styles/ignitus-components-common.scss';
 
-.signUp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8rem;
-}
 
 .welcome {
   color: #000066;
@@ -41,15 +34,6 @@
   text-align: center;
   width: 100%;
 }
-
-.infoContainer {
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
 .labelDropdown {
   color: #000066;
   font-family: Raleway;

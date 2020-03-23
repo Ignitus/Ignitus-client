@@ -11,7 +11,7 @@ import {
   organismsEdges,
 } from '../constants';
 
-const interfaceSideNavigation = () => {
+const InterfaceSideNavigation = () => {
   return (
     <S.NavigationContainer>
       <Link to="/">
@@ -56,4 +56,4 @@ const UnorderedList = ({isexpanded, menuItem}) => (
   </S.UnorderedList>
 );
 
-export default interfaceSideNavigation;
+export default InterfaceSideNavigation;

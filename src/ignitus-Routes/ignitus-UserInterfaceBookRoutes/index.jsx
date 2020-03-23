@@ -11,6 +11,7 @@ import { interfaceCardLayout } from '../../ignitus-UserInterfaceBook/Components/
 import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceUnderConstruction/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
+import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/InterfaceSideNavigation/Components';
 
 
 const Container = styled.div`
@@ -20,7 +21,7 @@ const Container = styled.div`
 // eslint-disable-next-line import/prefer-default-export
 const UserInterfaceBookRoutes = () => (
   <Container>
-    <interfaceSideNavigation />
+    <InterfaceSideNavigation />
     <Switch>
       <Route
         exact

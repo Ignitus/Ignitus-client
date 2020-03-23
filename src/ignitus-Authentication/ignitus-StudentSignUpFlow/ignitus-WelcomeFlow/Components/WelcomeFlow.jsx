@@ -8,16 +8,18 @@ import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-As
 import imageMap from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/profileImageMap.png';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
-import { Paragraph, Heading3 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { PrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { Paragraph, Heading3 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+
+import * as T from '../Styles/style';
 
 const WelcomeFlow = () => (
-  <div className="signUp">
+  <T.SignUp>
     <img className="progressBarSignup" src={progress} alt="progress-bar" />
     <Heading3>Welcome, Sophia</Heading3>
     <Paragraph>Let’s start with your profile. This will get you successful on Ignitus</Paragraph>
     <Paragraph>Confirm your own location and time zone to make communication easier!</Paragraph>
-    <div className="infoContainer">
+    <T.InfoContainer>
       <form className="dropdownContainer">
         <label htmlFor="Select Country/Region" className="labelDropdown">Country/Region</label>
         <br />
@@ -39,17 +41,17 @@ const WelcomeFlow = () => (
         </select>
       </form>
       <img className="profileImageMap" src={imageMap} alt="map" />
-    </div>
+    </T.InfoContainer>
     <PrimaryButton>
-      <Link to="/flow/interestFlow">
+      <Link to="/flow/interestFlow" className="saveText">
         Save and Continue
       </Link>
     </PrimaryButton>
-    <Paragraph>
+    <p>
       Skip for now
       {' >> '}
-    </Paragraph>
-  </div>
+    </p>
+  </T.SignUp>
 );
 
 export default withErrorBoundary(WelcomeFlow);
