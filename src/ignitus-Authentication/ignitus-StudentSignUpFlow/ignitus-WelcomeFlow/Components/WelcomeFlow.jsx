@@ -41,14 +41,14 @@ const WelcomeFlow = () => (
       <img className="profileImageMap" src={imageMap} alt="map" />
     </div>
     <PrimaryButton>
-      <Link to="/flow/interestFlow" className="saveText">
+      <Link to="/flow/interestFlow">
         Save and Continue
       </Link>
     </PrimaryButton>
-    <PrimaryButton medium>
+    <Paragraph>
       Skip for now
       {' >> '}
-    </PrimaryButton>
+    </Paragraph>
   </div>
 );
 
