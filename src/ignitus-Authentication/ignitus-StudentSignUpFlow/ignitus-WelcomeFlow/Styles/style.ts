@@ -14,9 +14,21 @@ export const Progress = styled.img`
 
 export const TopSection = styled(flexibleColDiv)``;
 
-export const BottomSection = styled.div`
+export const DefaultDropdownContainer = styled.div`
+  margin: 1rem;
+`;
+export const MiddleSection = styled.div`
   align-content: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+`;
+
+export const LeftSection = styled(flexibleColDiv)`
+  margin-right: 1rem;
+`;
+export const RightSection = styled.div`
+  margin-left: 1rem;
 `;

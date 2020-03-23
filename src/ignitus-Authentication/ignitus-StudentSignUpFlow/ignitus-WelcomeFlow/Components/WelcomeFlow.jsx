@@ -12,6 +12,7 @@ import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-As
 import imageMap from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/profileImageMap.png';
 import '../Styles/style.scss';
 import * as T from '../Styles/style';
+import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultlDropdown/Components';
 
 const WelcomeFlow = () => (
   <T.WelcomeContainer>
@@ -21,29 +22,25 @@ const WelcomeFlow = () => (
       <Paragraph>Let’s start with your profile. This will get you successful on Ignitus</Paragraph>
       <Paragraph>Confirm your own location and time zone to make communication easier!</Paragraph>
     </T.TopSection>
-    <T.BottomSection>
-      <form className="dropdownContainer">
-        <label htmlFor="Select Country/Region" className="labelDropdown">Country/Region</label>
-        <br />
-        <select className="dropdown" value="Select country">
-          <option value="Select country">Select country</option>
-          <option value="country">Country</option>
-        </select>
-        <label htmlFor="Select Province" className="labelDropdown">Province</label>
-        <br />
-        <select className="dropdown" value="Select province">
-          <option value="Select province">Select province</option>
-          <option value="province">Province</option>
-        </select>
-        <label htmlFor="Select Time Zone" className="labelDropdown">Time zone</label>
-        <br />
-        <select className="dropdown" alue="Select timezone">
-          <option value="Select timezone">Select timezone</option>
-          <option value="timezone">Time Zone</option>
-        </select>
-      </form>
-      <img className="profileImageMap" src={imageMap} alt="map" />
-    </T.BottomSection>
+    <T.MiddleSection>
+      <T.LeftSection>
+        <form>
+          <T.DefaultDropdownContainer>
+            <DefaultDropdown label="Country/Region" options={['Germany', 'Austria']} />
+          </T.DefaultDropdownContainer>
+          <T.DefaultDropdownContainer>
+            {' '}
+            <DefaultDropdown label="Province" options={['Bavaria', 'Berlin']} />
+          </T.DefaultDropdownContainer>
+          <T.DefaultDropdownContainer>
+            <DefaultDropdown label="Time Zone" options={['CEST', 'IST']} />
+          </T.DefaultDropdownContainer>
+        </form>
+      </T.LeftSection>
+      <T.RightSection>
+        <img className="profileImageMap" src={imageMap} alt="map" />
+      </T.RightSection>
+    </T.MiddleSection>
     <PrimaryButton>
       <Link to="/flow/interestFlow" className="saveText">
         Save & Continue
