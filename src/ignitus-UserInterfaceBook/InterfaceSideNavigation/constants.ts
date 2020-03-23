@@ -1,6 +1,6 @@
 import {Edges} from './types';
 
-export const atomsEdges: any[] = [
+export const edges: any[] = [
   {
     node: {
       title: 'Atoms',
@@ -41,7 +41,7 @@ export const atomsEdges: any[] = [
                   route: '/interface/defaultdropdown',
                 },
                 {
-                  title: 'Secondary Dropdowns',
+                  title: 'X Dropdowns',
                   route: '/interface/secondarydropdown',
                 },
               ],
@@ -79,9 +79,6 @@ export const atomsEdges: any[] = [
       ],
     },
   },
-];
-
-export const moleculesEdges = [
   {
     node: {
       title: 'Molecules',
@@ -97,9 +94,6 @@ export const moleculesEdges = [
       ],
     },
   },
-];
-
-export const organismsEdges = [
   {
     node: {
       title: 'Organisms',
@@ -123,9 +117,6 @@ export const organismsEdges = [
       ],
     },
   },
-];
-
-export const templatesEdges = [
   {
     node: {
       title: 'Templates',
@@ -153,9 +144,6 @@ export const templatesEdges = [
       ],
     },
   },
-];
-
-export const layoutEdges = [
   {
     node: {
       title: 'Layouts',
