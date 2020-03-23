@@ -14,4 +14,5 @@ export enum AppIcon {
   KeyBoardArrowDown = 'KeyBoardArrowDown',
   KeyBoardArrowRight = 'KeyBoardArrowRight',
   IgnitusFullLogo = 'IgnitusFullLogo',
+  QuestionAnswerIcon = 'QuestionAnswerIcon',
 }
