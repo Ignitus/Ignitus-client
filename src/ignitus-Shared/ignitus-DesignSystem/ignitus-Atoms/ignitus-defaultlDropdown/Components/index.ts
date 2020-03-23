@@ -1,1 +1,1 @@
-export {default as DefaultlDropdown} from './defaultlDropdown';
+export {default as DefaultDropdown} from './defaultDropdown';
