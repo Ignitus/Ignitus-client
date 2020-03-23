@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Dropdown = () => (
+const DefaultlDropdown = () => (
   <React.Fragment>
     <label htmlFor="cars">Choose a car:</label>
     <select id="cars">
@@ -12,4 +12,4 @@ const Dropdown = () => (
   </React.Fragment>
 );
 
-export default Dropdown;
+export default DefaultlDropdown;

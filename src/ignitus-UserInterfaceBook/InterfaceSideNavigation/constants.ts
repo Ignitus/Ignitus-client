@@ -38,11 +38,11 @@ export const atomsEdges: any[] = [
               children: [
                 {
                   title: 'Default Dropdowns',
-                  route: '/interface/dropdowns',
+                  route: '/interface/defaultdropdown',
                 },
                 {
                   title: 'Secondary Dropdowns',
-                  route: '/interface/dropdowns',
+                  route: '/interface/secondarydropdown',
                 },
               ],
             },

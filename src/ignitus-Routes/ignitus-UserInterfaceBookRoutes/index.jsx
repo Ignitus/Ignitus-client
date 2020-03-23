@@ -12,7 +12,7 @@ import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/La
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceUnderConstruction/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
 import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/InterfaceSideNavigation/Components';
-
+import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
 
 const Container = styled.div`
   display:flex;
@@ -66,6 +66,11 @@ const UserInterfaceBookRoutes = () => (
       <Route
         path="/interface/colors"
         component={interfaceColors}
+      />
+
+      <Route
+        path="/interface/defaultdropdown"
+        component={interfaceDropDown}
       />
     </Switch>
   </Container>
