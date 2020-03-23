@@ -1,6 +1,6 @@
 import {Edges} from './types';
 
-export const atomsEdges: Edges[] = [
+export const atomsEdges: any[] = [
   {
     node: {
       title: 'Atoms',
@@ -32,6 +32,21 @@ export const atomsEdges: Edges[] = [
         {
           title: 'Dropdowns',
           route: '/interface/dropdowns',
+          children: [{
+            node: {
+              title: 'DropDowns',
+              children: [
+                {
+                  title: 'Default Dropdowns',
+                  route: '/interface/dropdowns',
+                },
+                {
+                  title: 'Secondary Dropdowns',
+                  route: '/interface/dropdowns',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Card',

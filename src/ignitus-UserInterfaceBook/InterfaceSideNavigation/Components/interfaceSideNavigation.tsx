@@ -10,6 +10,7 @@ import {
   layoutEdges,
   organismsEdges,
 } from '../constants';
+import {NavigationLayerProps} from '../types';
 
 const InterfaceSideNavigation = () => {
   return (
@@ -27,32 +28,40 @@ const InterfaceSideNavigation = () => {
   );
 };
 
-const NavigationLayers = ({edges}: any) => {
+const NavigationLayers = ({edges, nesting = false}: NavigationLayerProps) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   const navigation = edges.map(menuItem => (
     <React.Fragment key={menuItem.node.title}>
       <S.HeadingArrowContainer onClick={toogleisexpanded}>
         {' '}
-        <S.Heading>{menuItem.node.title}</S.Heading>{' '}
+        <S.Heading nesting={nesting}>{menuItem.node.title}</S.Heading>{' '}
         <S.Arrow name={AppIcon.KeyBoardArrowRight} isexpanded={isexpanded} />
       </S.HeadingArrowContainer>
 
       {menuItem.node.children ? (
-        <UnorderedList isexpanded={isexpanded} menuItem={menuItem} />
+        <UnorderedList
+          isexpanded={isexpanded}
+          menuItem={menuItem}
+          nesting={nesting}
+        />
       ) : null}
     </React.Fragment>
   ));
   return navigation;
 };
 
-const UnorderedList = ({isexpanded, menuItem}) => (
+const UnorderedList = ({isexpanded, menuItem, nesting}) => (
   <S.UnorderedList isexpanded={isexpanded}>
-    {menuItem.node.children.map(({title, route}) => (
-      <Link to={route} key={title}>
-        {' '}
-        <S.ListItem>{title}</S.ListItem>
-      </Link>
-    ))}
+    {menuItem.node.children.map(x => {
+      return x.children ? (
+        <NavigationLayers edges={x.children} key={x.title} nesting={true} />
+      ) : (
+        <Link to={x.route} key={x.title}>
+          {' '}
+          <S.ListItem nesting={nesting}>{x.title}</S.ListItem>
+        </Link>
+      );
+    })}
   </S.UnorderedList>
 );
 
