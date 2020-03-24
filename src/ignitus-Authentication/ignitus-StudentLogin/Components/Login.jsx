@@ -27,10 +27,10 @@ const Login = ({ logInRequest, studentLoginData }) => {
       if (
         !(
           lastAtPos < lastDotPos
-            && lastAtPos > 0
-            && email.indexOf('@@') === -1
-            && lastDotPos > 2
-            && email.length - lastDotPos > 2
+          && lastAtPos > 0
+          && email.indexOf('@@') === -1
+          && lastDotPos > 2
+          && email.length - lastDotPos > 2
         )
       ) {
         setState({
@@ -48,8 +48,9 @@ const Login = ({ logInRequest, studentLoginData }) => {
       emptyMessage: false,
     });
   };
-
+  console.log('student', studentLoginData);
   return (
+
     <SharedLogin
       loginType="Student"
       tagline="Skyrocket your career with best global opportunities"

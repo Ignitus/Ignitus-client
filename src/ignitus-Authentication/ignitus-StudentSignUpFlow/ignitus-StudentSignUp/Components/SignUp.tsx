@@ -6,7 +6,7 @@ import {
 } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import { statePayLoad } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/Constants';
-import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
+import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/SignUp';
 
 const Signup = ({signUpRequest, studentSignUpData}) => {
   const [state, setState] = useState({...statePayLoad});
