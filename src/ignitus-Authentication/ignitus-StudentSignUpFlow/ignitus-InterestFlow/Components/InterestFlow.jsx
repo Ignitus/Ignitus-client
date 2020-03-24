@@ -13,6 +13,7 @@ import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandl
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { DefaultCheckbox } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 
 const InterestFlow = () => (
   <T.WelcomeContainer>
@@ -28,30 +29,10 @@ const InterestFlow = () => (
       <T.LeftSection>
         {' '}
         <form>
-          <C.CheckboxContainer>
-            <C.Label htmlFor="User Interest">
-              <C.Input type="checkbox" name="Oppurtunities" value="yes" />
-              Opportunities
-            </C.Label>
-          </C.CheckboxContainer>
-          <C.CheckboxContainer>
-            <C.Label htmlFor="User Interest">
-              <C.Input type="checkbox" name="Build-Network" value="yes" />
-              Build Network
-            </C.Label>
-          </C.CheckboxContainer>
-          <C.CheckboxContainer>
-            <C.Label htmlFor="User Interest">
-              <C.Input type="checkbox" name="read-blogs" value="yes" />
-              Read Blogs
-            </C.Label>
-          </C.CheckboxContainer>
-          <C.CheckboxContainer>
-            <C.Label htmlFor="User Interest">
-              <C.Input type="checkbox" name="all-of-these" value="yes" />
-              All of These
-            </C.Label>
-          </C.CheckboxContainer>
+          <DefaultCheckbox label="User Interest" value="true" />
+          <DefaultCheckbox label="Build Network" value="true" />
+          <DefaultCheckbox label="Read Blogs" value="true" />
+          <DefaultCheckbox label="User Interest" value="true" />
         </form>
       </T.LeftSection>
       <T.RightSection>

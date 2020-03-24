@@ -33,14 +33,15 @@ const WelcomeFlow = () => (
             <DefaultDropdown
               label="Country/Region"
               options={['Germany', 'Austria']}
+              display="block"
             />
           </T.DefaultDropdownContainer>
           <T.DefaultDropdownContainer>
             {' '}
-            <DefaultDropdown label="Province" options={['Bavaria', 'Berlin']} />
+            <DefaultDropdown label="Province" options={['Bavaria', 'Berlin']} display="block" />
           </T.DefaultDropdownContainer>
           <T.DefaultDropdownContainer>
-            <DefaultDropdown label="Time Zone" options={['CEST', 'IST']} />
+            <DefaultDropdown label="Time Zone" options={['CEST', 'IST']} display="block" />
           </T.DefaultDropdownContainer>
         </form>
       </T.LeftSection>
