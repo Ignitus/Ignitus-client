@@ -1,11 +1,16 @@
 import styled from '@emotion/styled';
-import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading3 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { flexibleRowDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { XL, SM } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 type ArrowProps = {
   isexpanded: boolean;
+};
+
+type SubNestingProps = {
+  nesting?: boolean;
 };
 
 export const NavigationContainer = styled.nav`
@@ -14,7 +19,8 @@ export const NavigationContainer = styled.nav`
   background: ${C.GreyLight};
 `;
 
-export const Heading = styled(Heading3)`
+export const Heading = styled(Heading3)<SubNestingProps>`
+  font-size: ${props => (props.nesting ? SM : XL)};
   color: ${C.IgnitusBlue};
   margin-bottom: 0;
 `;
@@ -29,10 +35,10 @@ export const UnorderedList = styled.ul<ArrowProps>`
   }
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.li<SubNestingProps>`
+  margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
   padding: 0.5rem;
   cursor: pointer;
-
   &:hover {
     background: ${C.IgnitusBlue};
     color: ${C.White};

@@ -17,6 +17,7 @@ import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-I
 import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon/createIcon';
 import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/clearIcon';
 import LocationOnIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationOnIcon';
+import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
 
 type Props = {
   name: AppIcon;
@@ -74,6 +75,9 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.LocationOnIcon:
       return <LocationOnIcon {...rest} />;
+        
+    case AppIcon.QuestionAnswerIcon:
+      return <QuestionAnswerIcon {...rest} />;
   }
 };
 

@@ -1,4 +1,5 @@
 import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/enums';
+
 export const SocialIcons: AppIcon[] = [
   AppIcon.LinkedInIcon,
   AppIcon.AngelListIcon,
@@ -16,6 +17,7 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.CreateIcon,
   AppIcon.ClearIcon,
   AppIcon.LocationOnIcon,
+  AppIcon.QuestionAnswerIcon
 ];
 
 export const GeneralIcons: AppIcon[] = [

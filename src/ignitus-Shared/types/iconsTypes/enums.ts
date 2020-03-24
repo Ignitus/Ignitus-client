@@ -16,4 +16,5 @@ export enum AppIcon {
   CreateIcon = 'CreateIcon',
   ClearIcon = 'ClearIcon',
   LocationOnIcon = 'LocationOnIcon',
+  QuestionAnswerIcon = 'QuestionAnswerIcon',
 }
