@@ -12,6 +12,7 @@ const interfaceDropDown = () => (
   <D.DropDownContainer>
     <Heading3>DropDowns</Heading3>
     <hr />
+    <hr />
     <Heading5>Inline Block</Heading5>
     <DefaultDropdown options={cars} label={'cars'} display="inline-block" />
     <br />

@@ -5,7 +5,7 @@ import * as D from '../styles';
 const DefaultDropdown = ({label, options, display}: DropDownType) => (
   <React.Fragment>
     <label htmlFor={label}>{label} *</label>
-    <D.Select id={label} display={display || ''}>
+    <D.Select id={label} display={display}>
       {options.map(option => (
         <OptionMapper key={option} option={option} />
       ))}

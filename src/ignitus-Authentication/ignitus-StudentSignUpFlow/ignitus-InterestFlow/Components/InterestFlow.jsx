@@ -29,10 +29,18 @@ const InterestFlow = () => (
       <T.LeftSection>
         {' '}
         <form>
-          <DefaultCheckbox label="User Interest" value="true" />
-          <DefaultCheckbox label="Build Network" value="true" />
-          <DefaultCheckbox label="Read Blogs" value="true" />
-          <DefaultCheckbox label="User Interest" value="true" />
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="User Interest" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="Build Network" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="Read Blogs" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="User Interest" value="true" />
+          </C.CheckboxContainer>
         </form>
       </T.LeftSection>
       <T.RightSection>
