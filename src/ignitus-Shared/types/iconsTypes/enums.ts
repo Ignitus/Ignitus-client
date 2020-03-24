@@ -17,4 +17,12 @@ export enum AppIcon {
   ClearIcon = 'ClearIcon',
   LocationOnIcon = 'LocationOnIcon',
   QuestionAnswerIcon = 'QuestionAnswerIcon',
+  GithubIcon = 'GithubIcon',
+  FacebookIcon = 'FacebookIcon',
+  GooglePlusIcon = 'GooglePlusIcon',
+  InfoIcon = 'InfoIcon',
+  PdfIcon = 'PdfIcon',
+  LibraryBooksIcon = 'LibraryBooksIcon',
+  LocalLibraryIcon = 'LocalLibraryIcon',
+  GraduationCapIcon = 'GraduationCapIcon',
 }
