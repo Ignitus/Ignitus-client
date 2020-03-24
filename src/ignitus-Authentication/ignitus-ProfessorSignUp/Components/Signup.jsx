@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SharedSignup from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/SharedSignUp';
-import { statePayLoad } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/Constants';
+import SharedSignup from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/Components/SharedSignUp';
+import { statePayLoad } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import * as t from './Constants';
-import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import * as t from '../constants';
+import loader from '../../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { withErrorBoundary } from '../../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 const SharedSignUp = ({
   signUpType, tagline, state, setState, signUpData, handleSubmit,
