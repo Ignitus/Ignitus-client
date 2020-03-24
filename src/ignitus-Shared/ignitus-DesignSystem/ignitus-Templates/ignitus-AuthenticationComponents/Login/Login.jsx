@@ -3,11 +3,11 @@
 
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
-import isEmpty from 'lodash/isEmpty';
 import PropTypes from 'prop-types';
 import * as t from './Constants';
 import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { isEmpty } from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 
 const Login = ({
   loginType, tagline, handleSubmit, logInData, state, setState,

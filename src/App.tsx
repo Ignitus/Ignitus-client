@@ -5,14 +5,14 @@ import { DashboardRoutes } from './ignitus-Routes/ignitus-DashboardRoutes';
 // eslint-disable-next-line import/named
 import { PublicRoutes } from './ignitus-Routes/ignitus-PublicRoutes';
 import './App.scss';
-import UserInterfaceKitRoutes from './ignitus-Routes/ignitus-UserInterfaceKitRoutes';
+import UserInterfaceBookRoutes from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
 
 
 const App = () => (
   <div className="content-container">
     <Switch>
       <Route path="/dashboard" component={DashboardRoutes} />
-      <Route path="/interface" component={UserInterfaceKitRoutes} />
+      <Route path="/interface" component={UserInterfaceBookRoutes} />
       <Route path="/" component={PublicRoutes} />
     </Switch>
   </div>

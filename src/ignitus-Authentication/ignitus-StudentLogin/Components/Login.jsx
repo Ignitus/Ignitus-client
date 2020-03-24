@@ -1,13 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import isEmpty from 'lodash/isEmpty';
-import PropTypes from 'prop-types';
+import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
 import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Constants';
+import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
 
 const Login = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(statePayload);
-
   const { email, password } = state;
 
   const handleSubmit = (e) => {
@@ -60,15 +59,6 @@ const Login = ({ logInRequest, studentLoginData }) => {
       setState={setState}
     />
   );
-};
-
-Login.propTypes = {
-  logInRequest: PropTypes.func.isRequired,
-  studentLoginData: PropTypes.shape({
-    isFetching: PropTypes.bool.isRequired,
-    message: PropTypes.string.isRequired,
-    success: PropTypes.bool.isRequired,
-  }).isRequired,
 };
 
 export default withErrorBoundary(Login);
