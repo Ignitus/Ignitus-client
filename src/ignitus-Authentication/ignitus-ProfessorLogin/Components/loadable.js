@@ -1,5 +1,5 @@
 import React from 'react';
-import Loadable from 'react-loadable';
+import Loadable from '../../../ignitus-Routes/ignitus-PublicRoutes/node_modules/react-loadable';
 import loader from '../../ignitus-Assets/Images/loader.gif';
 
 // [@INFO] Loading component can put in global UI component

@@ -3,10 +3,11 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import {Data} from '../constants';
-import {withErrorBoundary} from '../../../ignitus-Shared/Components/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as S from '../Styles';
-import * as T from '../../../ignitus-Shared/Components/emotionStyles/shared';
-import {coreTeam, TeamItemProps} from '../types';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {Team, TeamItemProps} from '../types';
+import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/enums';
 
 const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>
@@ -29,10 +30,10 @@ const TeamItem = ({
         <T.Paragraph>{description}</T.Paragraph>
         <S.LinkWrapper toggle={value}>
           <S.Link href={linkedin} color="black">
-            <i className="fa fa-linkedin-square" />
+            <S.LinkedIn name={AppIcon.LinkedInIcon} />
           </S.Link>
           <S.Link href={angellist} color="black">
-            <i className="fa fa-angellist" />
+            <S.AngelList name={AppIcon.AngelListIcon} />
           </S.Link>
         </S.LinkWrapper>
       </S.TeamCard>
@@ -41,7 +42,7 @@ const TeamItem = ({
 };
 
 const CoreTeam = () => {
-  const team = Data.map((item: coreTeam) => {
+  const team = Data.map((item: Team) => {
     return <TeamItem key={item.title} item={item} />;
   });
   return <PureCoreTeam team={team} />;

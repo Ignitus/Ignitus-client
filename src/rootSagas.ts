@@ -1,7 +1,7 @@
 
 import { all } from 'redux-saga/effects';
 import Testimonial from './ignitus-HomePage/ignitus-Testimonial';
-import studentSignUp from './ignitus-Authentication/ignitus-StudentSignUp';
+import studentSignUp from './ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-StudentSignUp';
 import studentLogin from './ignitus-Authentication/ignitus-StudentLogin';
 import contributors from './ignitus-AboutPage/ignitus-Team';
 
