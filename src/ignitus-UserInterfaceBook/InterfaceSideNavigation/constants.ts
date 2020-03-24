@@ -105,6 +105,21 @@ export const edges: Edges[] = [
         {
           title: 'Side Navigation',
           route: '/interface/sideNavigation',
+          children: [{
+            node: {
+              title: 'Navigation',
+              children: [
+                {
+                  title: 'Dashboard',
+                  route: '/interface/defaultDropdown',
+                },
+                {
+                  title: 'Settings',
+                  route: '/interface/sideNavigation',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Footer',

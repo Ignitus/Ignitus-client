@@ -23,10 +23,14 @@ const NavigationLayers = ({edge, nesting = false}: NavigationLayerProps) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   const navigation = (
     <React.Fragment key={edge.node.title}>
-      <S.HeadingArrowContainer onClick={toogleisexpanded}>
+      <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting}>
         {' '}
         <S.Heading nesting={nesting}>{edge.node.title}</S.Heading>{' '}
-        <S.Arrow name={AppIcon.KeyBoardArrowRight} isexpanded={isexpanded} />
+        <S.Arrow
+          name={AppIcon.KeyBoardArrowRight}
+          isexpanded={isexpanded}
+          nesting={nesting}
+        />
       </S.HeadingArrowContainer>
 
       {edge.node.children ? (
