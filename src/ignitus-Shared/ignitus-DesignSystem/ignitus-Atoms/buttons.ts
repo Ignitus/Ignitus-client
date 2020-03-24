@@ -24,6 +24,7 @@ export const Button = styled.button`
   margin: 5px;
   border: none;
   font-size: ${F.MD};
+  outline: none;
   font-weight: ${F.Normal};
   &:hover,
   &:focus {

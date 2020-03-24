@@ -20,13 +20,13 @@ const InterestFlow = () => (
     <T.TopSection>
       <T.Progress src={progress} alt="progress-bar" />
       <Heading1>What are you interested in?</Heading1>
-      <Paragraph>This will customize your experience</Paragraph>
+      <Paragraph>This will customize your experience.</Paragraph>
       <Paragraph>
-        This will help you to discover right people and opportunities
+        This will help you to discover right people and opportunities.
       </Paragraph>
     </T.TopSection>
     <T.MiddleSection>
-      <T.LeftSection>
+      <C.LeftSection>
         {' '}
         <form>
           <C.CheckboxContainer>
@@ -42,10 +42,10 @@ const InterestFlow = () => (
             <DefaultCheckbox label="User Interest" value="true" />
           </C.CheckboxContainer>
         </form>
-      </T.LeftSection>
-      <T.RightSection>
+      </C.LeftSection>
+      <C.RightSection>
         <C.InterestImage src={interestsImage} alt="interests" />
-      </T.RightSection>
+      </C.RightSection>
     </T.MiddleSection>
     <T.BottomSection>
       <RoundedPrimaryButton>
