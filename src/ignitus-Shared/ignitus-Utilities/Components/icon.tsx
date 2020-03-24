@@ -21,6 +21,14 @@ import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitu
 import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon';
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
+import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
+import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
+import GooglePlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon/googlePlusIcon';
+import InfoIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/infoIcon';
+import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdfIcon';
+import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
+import LocalLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
+import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
 
 type Props = {
   name: AppIcon;
@@ -78,7 +86,7 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.LocationOnIcon:
       return <LocationOnIcon {...rest} />;
-        
+
     case AppIcon.QuestionAnswerIcon:
       return <QuestionAnswerIcon {...rest} />;
 
@@ -92,6 +100,30 @@ const Icon = ({name, ...rest}: Props) => {
       return <NotificationIcon {...rest} />;
   
         
+
+    case AppIcon.GithubIcon:
+      return <GithubIcon {...rest} />;
+
+    case AppIcon.FacebookIcon:
+      return <FacebookIcon {...rest} />;
+
+    case AppIcon.GooglePlusIcon:
+      return <GooglePlusIcon {...rest} />;
+
+    case AppIcon.InfoIcon:
+      return <InfoIcon {...rest} />;
+
+    case AppIcon.PdfIcon:
+      return <PdfIcon {...rest} />;
+
+    case AppIcon.LibraryBooksIcon:
+      return <LibraryBooksIcon {...rest} />;
+
+    case AppIcon.LocalLibraryIcon:
+      return <LocalLibraryIcon {...rest} />;
+
+    case AppIcon.GraduationCapIcon:
+      return <GraduationCapIcon {...rest} />;
   }
 };
 

@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Constants';
-import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
+import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/constants';
+import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/Components/SharedLogin';
 
 const Login = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(statePayload);
@@ -27,10 +27,10 @@ const Login = ({ logInRequest, studentLoginData }) => {
       if (
         !(
           lastAtPos < lastDotPos
-            && lastAtPos > 0
-            && email.indexOf('@@') === -1
-            && lastDotPos > 2
-            && email.length - lastDotPos > 2
+          && lastAtPos > 0
+          && email.indexOf('@@') === -1
+          && lastDotPos > 2
+          && email.length - lastDotPos > 2
         )
       ) {
         setState({
@@ -50,6 +50,7 @@ const Login = ({ logInRequest, studentLoginData }) => {
   };
 
   return (
+
     <SharedLogin
       loginType="Student"
       tagline="Skyrocket your career with best global opportunities"

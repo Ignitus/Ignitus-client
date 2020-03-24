@@ -1,58 +1,19 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { isEmpty, isEqual } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import loader from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import PropTypes from 'prop-types';
 import * as t from '../constants';
-import '../Styles/style.scss';
+import loader from '../../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { withErrorBoundary } from '../../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-const Signup = ({ signUpRequest, studentSignUpData }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [equalmessage, setEqualMessage] = useState(false);
+const SharedSignUp = ({
+  signUpType, tagline, state, setState, signUpData, handleSubmit,
+}) => {
+  const alternateSignUp = signUpType === 'Student' ? 'Professor' : 'Student';
+  const {
+    email, password, confirmPassword, equalmessage, emptyMessage, invalidEmail, showPassword,
+  } = state;
 
-  const [emptyMessage, setEmptyMessage] = useState(false);
-  const [invalidEmail, setInvalidEmail] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
-
-  const { isFetching, msg, success } = studentSignUpData;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
-      setEmptyMessage(true);
-      return;
-    }
-
-    if (typeof email !== 'undefined') {
-      const lastAtPos = email.lastIndexOf('@');
-      const lastDotPos = email.lastIndexOf('.');
-
-      if (!(lastAtPos < lastDotPos && lastAtPos > 0 && email.indexOf('@@') === -1 && lastDotPos > 2 && (email.length - lastDotPos) > 2)) {
-        setInvalidEmail(true);
-        return;
-      }
-    }
-
-    if (!isEqual(password, confirmPassword)) {
-      setEqualMessage(true);
-      setEmptyMessage(false);
-      return;
-    }
-
-    // eslint-disable-next-line react/destructuring-assignment
-    signUpRequest(email, password);
-    setEmail('');
-    setPassword('');
-    setConfirmPassword('');
-    setEmptyMessage(false);
-    setEqualMessage(false);
-  };
+  const { isFetching, message, success } = signUpData;
 
   if (isFetching) {
     return (
@@ -70,11 +31,13 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
             <img className="img-fluid img-login d-block" src={t.studentAuth} alt="login" />
             <div className="text-below-image text-center">
               <p className="mb-5 ">Let&apos;s get started</p>
-              <p>Skyrocket your career with best global opportunities</p>
+              <p>{tagline}</p>
               <p>
-                <Link to="/signup/professor" className="text-center linkform">
+                <Link to={`/signup/${alternateSignUp.toLocaleLowerCase()}`} className="text-center linkform">
                   {' '}
-                    I am a Professor
+                    I am a
+                  {' '}
+                  {alternateSignUp}
                 </Link>
               </p>
             </div>
@@ -85,25 +48,25 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
             </div>
 
             {success && (
-              <div className="alert alert-success margin-Top">
-                <strong>Success!</strong>
-                {' '}
+            <div className="alert alert-success margin-Top">
+              <strong>Success!</strong>
+              {' '}
                   Please login!.
-              </div>
+            </div>
             )}
 
             {success === false && (
-              <div className="alert alert-danger margin-Top">
-                {msg}
-              </div>
+            <div className="alert alert-danger margin-Top">
+              {message}
+            </div>
             )}
 
             {emptyMessage && (
-              <div className="alert alert-danger margin-Top">
-                <strong>Please!</strong>
-                {' '}
+            <div className="alert alert-danger margin-Top">
+              <strong>Please!</strong>
+              {' '}
                   fill the form!
-              </div>
+            </div>
             )}
 
             <form>
@@ -121,16 +84,16 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                     placeholder="Email"
                     required
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={e => setState({ ...state, email: e.target.value })}
                   />
                 </div>
 
                 {invalidEmail && (
-                  <div className="text-danger small mb-1">
-                    <strong>Please </strong>
-                    {' '}
+                <div className="text-danger small mb-1">
+                  <strong>Please </strong>
+                  {' '}
                       input a valid mail!
-                  </div>
+                </div>
                 )}
 
                 <div className="input-group form-group mb-2">
@@ -146,13 +109,13 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                     placeholder="Password"
                     required
                     value={password}
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={e => setState({ ...state, password: e.target.value })}
                   />
                   <div className="input-group-append">
                     <span
                       className="input-group-text password-visiblity-icon password-border"
                       onClick={() => {
-                        setShowPassword(!showPassword);
+                        setState({ ...state, showPassword: !showPassword });
                       }}
                     >
                       {!showPassword && <i className="fa fa-eye-slash" aria-hidden="true" />}
@@ -173,21 +136,23 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                     placeholder="Confirm Password"
                     required
                     value={confirmPassword}
-                    onChange={e => setConfirmPassword(e.target.value)}
+                    onChange={e => setState({ ...state, confirmPassword: e.target.value })}
                   />
                 </div>
 
                 {equalmessage && (
-                  <div className="text-danger small mb-1">
-                    <strong>Password </strong>
-                    {' '}
+                <div className="text-danger small mb-1">
+                  <strong>Password </strong>
+                  {' '}
                       does not match the confirm password.!
-                  </div>
+                </div>
                 )}
 
                 <div className="text-center mb-3 mt-3">
                   <button type="button" className="btn btn-success button-bg btn-rounded px-3 py-2" onClick={e => handleSubmit(e)}>
-                    Sign up as Student
+                      Sign up as
+                    {' '}
+                    {signUpType}
                   </button>
                 </div>
                 <div className="or-seperator">
@@ -201,9 +166,9 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                 </div>
                 <div className="text-center">
                   <div>
-                    Already have an account?
+                      Already have an account?
                     {' '}
-                    <Link to="/login/student" className="text-center linkform">
+                    <Link to={`/login/${signUpType.toLowerCase()}`} className="text-center linkform">
                       {' '}
                         Log In
                     </Link>
@@ -218,4 +183,25 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
   );
 };
 
-export default withErrorBoundary(Signup);
+SharedSignUp.propTypes = {
+  signUpType: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
+  state: PropTypes.shape({
+    email: PropTypes.string.isRequired,
+    password: PropTypes.string.isRequired,
+    confirmPassword: PropTypes.string.isRequired,
+    equalmessage: PropTypes.bool.isRequired,
+    emptyMessage: PropTypes.bool.isRequired,
+    invalidEmail: PropTypes.bool.isRequired,
+    showPassword: PropTypes.bool.isRequired,
+  }).isRequired,
+  setState: PropTypes.func.isRequired,
+  signUpData: PropTypes.shape({
+    isFetching: PropTypes.bool,
+    message: PropTypes.string,
+    success: PropTypes.bool,
+  }).isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
+
+export default withErrorBoundary(SharedSignUp);
