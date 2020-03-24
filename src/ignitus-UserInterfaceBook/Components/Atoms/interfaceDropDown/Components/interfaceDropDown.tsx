@@ -3,7 +3,6 @@ import * as D from '../styles';
 import DefaultDropdown from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components/defaultDropdown';
 import {cars} from '../constants';
 import {
-  Paragraph,
   Heading3,
   Heading5,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';

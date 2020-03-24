@@ -3,7 +3,6 @@ import * as C from '../styles';
 import {DefaultCheckbox} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 import {
   Heading3,
-  Heading5,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const interfaceCheckBox = () => (
