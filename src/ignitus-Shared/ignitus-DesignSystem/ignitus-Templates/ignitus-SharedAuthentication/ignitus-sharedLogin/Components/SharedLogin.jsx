@@ -4,12 +4,12 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import * as t from './Constants';
-import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import { isEmpty } from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import * as t from '../constants';
+import loader from '../../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { withErrorBoundary } from '../../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { isEmpty } from '../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 
-const Login = ({
+const SharedLogin = ({
   loginType, tagline, handleSubmit, logInData, state, setState,
 }) => {
   const {
@@ -186,7 +186,7 @@ const Login = ({
   );
 };
 
-Login.propTypes = {
+SharedLogin.propTypes = {
   loginType: PropTypes.string.isRequired,
   tagline: PropTypes.string.isRequired,
   handleSubmit: PropTypes.func.isRequired,
@@ -205,4 +205,4 @@ Login.propTypes = {
   setState: PropTypes.func.isRequired,
 };
 
-export default withErrorBoundary(Login);
+export default withErrorBoundary(SharedLogin);
