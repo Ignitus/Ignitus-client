@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Constants';
-import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
+import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/constants';
+import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/Components/SharedLogin';
 
 const Login = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(statePayload);
@@ -48,7 +48,7 @@ const Login = ({ logInRequest, studentLoginData }) => {
       emptyMessage: false,
     });
   };
-  console.log('student', studentLoginData);
+
   return (
 
     <SharedLogin

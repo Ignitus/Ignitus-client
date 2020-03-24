@@ -5,8 +5,8 @@ import {
   isEqual,
 } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/Components/SharedSignUp';
-import { statePayLoad } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/constants';
+import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/Components/SharedSignUp';
+import { statePayLoad } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/constants';
 
 const Signup = ({signUpRequest, studentSignUpData}) => {
   const [state, setState] = useState({...statePayLoad});
