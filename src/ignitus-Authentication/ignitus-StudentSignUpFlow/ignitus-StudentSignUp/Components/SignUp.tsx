@@ -6,7 +6,7 @@ import {
 } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import { statePayLoad } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/Constants';
-import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/SignUp';
+import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/SignUp/SharedSignUp';
 
 const Signup = ({signUpRequest, studentSignUpData}) => {
   const [state, setState] = useState({...statePayLoad});
@@ -20,7 +20,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         ...state,
         emptyMessage: true,
       });
-      return;
+      return; 
     }
 
     if (typeof email !== 'undefined') {
