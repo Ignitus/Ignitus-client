@@ -18,6 +18,9 @@ import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/
 import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/clearIcon';
 import LocationOnIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationOnIcon';
 import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
+import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
+import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon';
+import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
 
 type Props = {
   name: AppIcon;
@@ -78,6 +81,17 @@ const Icon = ({name, ...rest}: Props) => {
         
     case AppIcon.QuestionAnswerIcon:
       return <QuestionAnswerIcon {...rest} />;
+
+    case AppIcon.AccountCircleIcon:
+      return <AccountCircleIcon {...rest} />;
+
+    case AppIcon.SearchIcon:
+      return <SearchIcon {...rest} />;
+
+    case AppIcon.NotificationIcon:
+      return <NotificationIcon {...rest} />;
+  
+        
   }
 };
 

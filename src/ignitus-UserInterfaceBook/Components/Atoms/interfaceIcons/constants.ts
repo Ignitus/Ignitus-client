@@ -17,7 +17,10 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.CreateIcon,
   AppIcon.ClearIcon,
   AppIcon.LocationOnIcon,
-  AppIcon.QuestionAnswerIcon
+  AppIcon.QuestionAnswerIcon,
+  AppIcon.AccountCircleIcon,
+  AppIcon.SearchIcon,
+  AppIcon.NotificationIcon,
 ];
 
 export const GeneralIcons: AppIcon[] = [
