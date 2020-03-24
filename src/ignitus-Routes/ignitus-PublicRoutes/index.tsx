@@ -20,10 +20,10 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components';
-import { EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
+import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
+import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
+import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
@@ -89,7 +89,10 @@ export const PublicRoutes = () => {
           component={JobConfirmation.components.JobConfirmation}
         />
 
-        <Route path="/flow/emailConfirmationFlow" component={EmailConfirmationFlow} />
+        <Route
+          path="/flow/emailConfirmationFlow"
+          component={EmailConfirmationFlow}
+        />
         <Route path="/flow/emailFlow" component={EmailFlow} />
         <Route path="/flow/interestFlow" component={InterestFlow} />
         <Route path="/flow/welcomeFlow" component={WelcomeFlow} />
