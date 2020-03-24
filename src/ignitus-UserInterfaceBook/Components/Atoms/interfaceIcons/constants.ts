@@ -4,6 +4,9 @@ export const SocialIcons: AppIcon[] = [
   AppIcon.LinkedInIcon,
   AppIcon.AngelListIcon,
   AppIcon.TwitterIcon,
+  AppIcon.GithubIcon,
+  AppIcon.FacebookIcon,
+  AppIcon.GooglePlusIcon,
 ];
 
 export const DashboardIcons: AppIcon[] = [
@@ -17,7 +20,12 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.CreateIcon,
   AppIcon.ClearIcon,
   AppIcon.LocationOnIcon,
-  AppIcon.QuestionAnswerIcon
+  AppIcon.QuestionAnswerIcon,
+  AppIcon.InfoIcon,
+  AppIcon.PdfIcon,
+  AppIcon.LibraryBooksIcon,
+  AppIcon.LocalLibraryIcon,
+  AppIcon.GraduationCapIcon,
 ];
 
 export const GeneralIcons: AppIcon[] = [
