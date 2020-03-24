@@ -25,4 +25,7 @@ export enum AppIcon {
   LibraryBooksIcon = 'LibraryBooksIcon',
   LocalLibraryIcon = 'LocalLibraryIcon',
   GraduationCapIcon = 'GraduationCapIcon',
+  AccountCircleIcon = 'AccountCircleIcon',
+  SearchIcon = 'SearchIcon',
+  NotificationIcon = 'NotificationIcon',
 }
