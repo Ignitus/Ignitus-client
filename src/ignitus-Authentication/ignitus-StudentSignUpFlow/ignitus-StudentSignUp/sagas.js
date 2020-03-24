@@ -3,7 +3,7 @@
 import { effects } from 'redux-saga';
 import * as t from './actionTypes';
 import * as a from './actions';
-import * as api from '../../ignitus-Api';
+import * as api from '../../../ignitus-Api';
 
 const {
   call, put, takeLatest, all,

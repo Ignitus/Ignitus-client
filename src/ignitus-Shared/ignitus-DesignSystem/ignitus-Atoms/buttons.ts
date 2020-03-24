@@ -1,7 +1,12 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
-import { BtnSizeProps, getPadding, getFontSizes, getRadius } from '../../ignitus-Utilities/HelperFunctions/emotionHelpers';
+import {
+  BtnSizeProps,
+  getPadding,
+  getFontSizes,
+  getRadius,
+} from '../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const ButtonsContainer = styled.div`
   padding: 3rem;
@@ -32,10 +37,19 @@ export const PrimaryButton = styled(Button)<BtnSizeProps>`
   padding: ${props => getPadding(props)};
   font-size: ${props => getFontSizes(props)};
   border-radius: ${props => getRadius(props)};
+
+  a {
+    color: ${C.White};
+  }
+  
   &:hover,
   &:focus {
     background-color: ${C.SecondaryColor};
     color: ${C.IgnitusBlue};
+
+    a {
+      color: ${C.IgnitusBlue};
+    }
   }
 `;
 

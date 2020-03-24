@@ -2,7 +2,7 @@
 import {
   isString,
   isObject,
-} from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+} from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import * as t from './actionTypes';
 
 export const signUpRequest = (email, password) => {
