@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 
 export const WelcomeContainer = styled(flexibleColDiv)`
-  margin-bottom: 8rem;
+  background: white;
   margin-top: 4rem;
   padding: 2rem;
 `;
@@ -17,12 +17,13 @@ export const TopSection = styled(flexibleColDiv)``;
 export const DefaultDropdownContainer = styled.div`
   margin: 1rem;
 `;
+
 export const MiddleSection = styled.div`
   align-content: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1rem;
+  margin: 2rem;
   flex-wrap: wrap;
 `;
 
