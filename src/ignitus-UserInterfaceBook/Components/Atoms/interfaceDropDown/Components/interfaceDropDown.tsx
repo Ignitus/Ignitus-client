@@ -1,6 +1,6 @@
 import React from 'react';
 import * as D from '../styles';
-import DefaultDropdown from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultlDropdown/Components/defaultDropdown';
+import DefaultDropdown from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components/defaultDropdown';
 import { cars } from '../constants';
 
 const interfaceDropDown = () => (

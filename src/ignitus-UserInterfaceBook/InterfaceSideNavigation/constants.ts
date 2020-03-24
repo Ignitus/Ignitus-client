@@ -23,7 +23,7 @@ export const edges: Edges[] = [
         },
         {
           title: 'Checkboxes',
-          route: '/interface/checkboxes',
+          route: '/interface/defaultCheckbox',
         },
         {
           title: 'Radio Buttons',
@@ -38,11 +38,11 @@ export const edges: Edges[] = [
               children: [
                 {
                   title: 'Default Dropdowns',
-                  route: '/interface/defaultdropdown',
+                  route: '/interface/defaultDropdown',
                 },
                 {
                   title: 'X Dropdowns',
-                  route: '/interface/secondarydropdown',
+                  route: '/interface/secondaryDropdown',
                 },
               ],
             },

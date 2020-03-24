@@ -13,6 +13,7 @@ import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Comp
 import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
 import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/InterfaceSideNavigation/Components';
 import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
+import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
 
 const Container = styled.div`
   display:flex;
@@ -69,8 +70,13 @@ const UserInterfaceBookRoutes = () => (
       />
 
       <Route
-        path="/interface/defaultdropdown"
+        path="/interface/defaultDropdown"
         component={interfaceDropDown}
+      />
+
+      <Route
+        path="/interface/defaultCheckbox"
+        component={interfaceCheckBox}
       />
     </Switch>
   </Container>
