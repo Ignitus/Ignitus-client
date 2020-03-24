@@ -1,6 +1,6 @@
 import React from 'react';
 import { DropDownType } from '../types';
-import * as D from '../style';
+import * as D from '../styles';
 
 const DefaultDropdown = ({label, options}: DropDownType) => (
   <React.Fragment>
