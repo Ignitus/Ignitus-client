@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage5.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
-import {withErrorBoundary} from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   Paragraph,
-  Heading1,
+  Heading2,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
@@ -21,7 +21,7 @@ const EmailFlow = () => (
     <T.TopSection>
       <T.Progress src={progress} alt="progress-bar" />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
-      <Heading1>Let’s confirm your email.</Heading1>
+      <Heading2>Let’s confirm your email.</Heading2>
       <Paragraph>
         {' '}
         We recommend to confirm your email address to recieve further
@@ -40,7 +40,7 @@ const EmailFlow = () => (
           <Link to="/">I don’t see the email</Link>
         </WhiteButton>
       </C.ButtonContainer>
-      <Paragraph>I don’t want to confirm my email yet</Paragraph>
+      <Paragraph><Link to="/">I don’t want to confirm my email yet.</Link></Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
 );
