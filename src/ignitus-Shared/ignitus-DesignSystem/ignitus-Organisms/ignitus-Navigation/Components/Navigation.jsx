@@ -7,7 +7,6 @@ import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBla
 import '../Styles/style.scss';
 
 const handleSmallerScreen = () => {
-  const burger = document.querySelector('#burger');
   const navlinks = document.querySelector('.navlinks');
   const lines = document.querySelectorAll('.line');
   lines.forEach(line => {
