@@ -6,7 +6,7 @@ import { KitSideNavigation } from '../../ignitus-UserInterfaceKit/InterfaceSideN
 import { interfaceButttons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceButtons/Components';
 import { interfaceNavigation } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceNavigation/Components';
 import { interfaceIcons } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceIcons/Components';
-import { interfaceInputs } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceInputs/Components';
+import { DefaultInput } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultInput/Components';
 import { interfaceTypography } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceTypography/Components';
 import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceCards/Components';
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
@@ -45,7 +45,7 @@ const UserInterfaceKitRoutes = () => (
       />
       <Route
         path="/interface/inputFields"
-        component={interfaceInputs}
+        component={DefaultInput}
       />
       <Route
         path="/interface/typography"
