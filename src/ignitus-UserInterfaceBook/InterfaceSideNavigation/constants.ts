@@ -20,6 +20,25 @@ export const edges: Edges[] = [
         {
           title: 'Input Fields',
           route: '/interface/inputFields',
+          children: [{
+            node: {
+              title: 'Inputs Fields',
+              children: [
+                {
+                  title: 'Search',
+                  route: '/interface/searchInput',
+                },
+                {
+                  title: 'Primary',
+                  route: '/interface/primaryInput',
+                },
+                {
+                  title: 'TextArea',
+                  route: '/interface/textArea',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Checkboxes',
@@ -37,11 +56,11 @@ export const edges: Edges[] = [
               title: 'DropDowns',
               children: [
                 {
-                  title: 'Default Dropdowns',
+                  title: 'Default',
                   route: '/interface/defaultDropdown',
                 },
                 {
-                  title: 'X Dropdowns',
+                  title: 'Secondary',
                   route: '/interface/secondaryDropdown',
                 },
               ],
