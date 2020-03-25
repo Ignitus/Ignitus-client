@@ -4,7 +4,7 @@ import { Input } from '../styles';
 
 const DefaultInput = ({placeholder, type, name}: InputType) => (
   <React.Fragment>
-    <Input placeholder={placeholder||"First Name"} type={type||"text"} name={name||"name"}/>
+    <Input placeholder={placeholder} type={type} name={name}/>
   </React.Fragment>
 );
 

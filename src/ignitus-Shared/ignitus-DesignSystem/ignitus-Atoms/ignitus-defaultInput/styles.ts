@@ -5,7 +5,6 @@ import * as F from '../fonts';
 export const Input = styled.input`
   height: 70px;
   width: 300px;
-  margin: 10px;
   background-color: ${C.GreyLight};
   padding-left: 30px;
   color: ${C.GreySecondaryText};
