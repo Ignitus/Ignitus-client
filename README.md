@@ -57,7 +57,6 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [React Loadable](https://github.com/jamiebuilds/react-loadable) - A HOC for loading components with promises.
 - [IDB](https://www.npmjs.com/package/idb) - IndexedDB with usability.
 - [Font Awesome](https://fontawesome.com/) - Font Awesome is a font and icon toolkit based on CSS and LESS.
-- [Lodash](https://lodash.com/) - A JavaScript utility library delivering consistency, modularity.
 - [React Router](https://www.npmjs.com/package/react-router) - Router for react applications.
 
 ### Additional tools.
@@ -70,7 +69,7 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [BootStrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - JS UI Framework.
 - [Material UI](https://material-ui.com/) - React components for faster and easier web development.
 - [Prop-Types](https://www.npmjs.com/package/prop-types) - Runtime type checking for React props and similar objects.
-
+- [Lodash](https://lodash.com/) - A JavaScript utility library delivering consistency, modularity.
 
 ### Upcoming Modern Stack.
 We also plan to introduce some new technologies in the future such as.

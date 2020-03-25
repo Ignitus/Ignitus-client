@@ -1,4 +1,3 @@
-
 export enum AppIcon {
   ApplyIcon = 'ApplyIcon',
   AngelListIcon = 'AngelListIcon',
@@ -14,4 +13,19 @@ export enum AppIcon {
   KeyBoardArrowDown = 'KeyBoardArrowDown',
   KeyBoardArrowRight = 'KeyBoardArrowRight',
   IgnitusFullLogo = 'IgnitusFullLogo',
+  CreateIcon = 'CreateIcon',
+  ClearIcon = 'ClearIcon',
+  LocationOnIcon = 'LocationOnIcon',
+  QuestionAnswerIcon = 'QuestionAnswerIcon',
+  GithubIcon = 'GithubIcon',
+  FacebookIcon = 'FacebookIcon',
+  GooglePlusIcon = 'GooglePlusIcon',
+  InfoIcon = 'InfoIcon',
+  PdfIcon = 'PdfIcon',
+  LibraryBooksIcon = 'LibraryBooksIcon',
+  LocalLibraryIcon = 'LocalLibraryIcon',
+  GraduationCapIcon = 'GraduationCapIcon',
+  AccountCircleIcon = 'AccountCircleIcon',
+  SearchIcon = 'SearchIcon',
+  NotificationIcon = 'NotificationIcon',
 }
