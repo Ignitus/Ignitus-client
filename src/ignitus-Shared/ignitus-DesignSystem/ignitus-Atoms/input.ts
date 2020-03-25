@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
 
-export const InputField1 = styled.input`
+export const DefaultInput = styled.input`
   height: 70px;
   width: 300px;
   background-color: ${C.GreyLight};
@@ -13,18 +13,10 @@ export const InputField1 = styled.input`
   border: none;
   border-radius: 17px;
 
-  ::placeholder,
-  ::-webkit-input-placeholder {
+  ::placeholder {
     color: ${C.GreySecondaryText};
     font-weight: ${F.SemiBold};
     font-size: ${F.XL};
     opacity: 0.5;
   }
-  :-ms-input-placeholder {
-    color: ${C.GreySecondaryText};
-    font-weight: ${F.SemiBold};
-    font-size: ${F.XL};
-    opacity: 0.5;
-  }
-
 `;

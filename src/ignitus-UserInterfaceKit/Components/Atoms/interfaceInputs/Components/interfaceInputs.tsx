@@ -1,15 +1,16 @@
 import React from 'react';
-import {InputContainer} from '../styles';
-import {StyledHeading2} from '../../../../styles';
+import { InputType } from '../types'
+import { InputContainer } from '../styles';
+import { StyledHeading2 } from '../../../../styles';
 import {
-  InputField1
+  DefaultInput
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/input';
 
-const interfaceInputs = () => (
+const interfaceInputs = ({placeholder, type, name}: InputType) => (
   <InputContainer>
   <StyledHeading2>Input Fields ★</StyledHeading2>
   <hr />
-    <InputField1 placeholder="First Name" type="text" />
+    <DefaultInput placeholder={placeholder||"First Name"} type={type||"text"} name={name||"name"}/>
   </InputContainer>
 );
 
