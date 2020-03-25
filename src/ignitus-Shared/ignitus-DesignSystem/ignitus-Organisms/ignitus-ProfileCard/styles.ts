@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import * as T from '../../ignitus-Atoms/atoms';
 import * as C from '../../ignitus-Atoms/colors';
 import { flexibleColDiv, flexibleRowDiv, TextIconContainer } from '../../shared';
 import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/chatMessageIcon';
 import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
 import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
 import MapMarkerIcon from '../../ignitus-Assets/ignitus-Icons/mapMarkerIcon/mapMarkerIcon';
+import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
 
 export const ProfileDiv = styled(flexibleColDiv)`
   padding: 2rem;
@@ -64,11 +64,11 @@ export const DetailsContainer = styled.div`
   padding: 0.5em 0 0 1.5em;
 `;
 
-export const ProfileHeading = styled(T.Heading1)`
+export const ProfileHeading = styled(Heading1)`
   flex: 1;
 `;
 
-export const ProfileSubHeading = styled(T.Heading4)`
+export const ProfileSubHeading = styled(Heading4)`
   flex: 1;
   margin-bottom: 10px;
 `;
@@ -91,7 +91,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const TextIconContent = styled.span`
-  color: ${C.IgnitusBlue}
+  color: ${C.IgnitusBlue};
 `;
 
 export const SocialContact = styled(flexibleColDiv)`
