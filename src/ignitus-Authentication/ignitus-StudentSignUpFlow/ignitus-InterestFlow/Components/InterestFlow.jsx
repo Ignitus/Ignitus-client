@@ -4,53 +4,59 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage2.png';
+import {
+  Paragraph,
+  Heading1,
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import interestsImage from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/interestsImage.png';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import '../Styles/style.scss';
+import * as T from '../../ignitus-WelcomeFlow/Styles/style';
+import * as C from '../Styles/style';
+import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { DefaultCheckbox } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 
 const InterestFlow = () => (
-  <div className="interest">
-    <img className="progressBarSignup" src={progress} alt="progress-bar" />
-    <p className="welcome">What are you interested in?</p>
-    <p className="paragraph">This will customize your experience</p>
-    <p className="paragraph">
-      This will help you to discover right people and opportunities
-    </p>
-    <div className="checkboxContainer">
-      <div className="checkboxes">
-        <label htmlFor="User Interest" className="cbox">
-          <input type="checkbox" name="Oppurtunities" value="yes" />
-          Oppurtunities
-        </label>
-        <br />
-        <label htmlFor="User Interest" className="cbox">
-          <input type="checkbox" name="Build-Network" value="yes" />
-          Build Network
-        </label>
-        <br />
-        <label htmlFor="User Interest" className="cbox">
-          <input type="checkbox" name="read-blogs" value="yes" />
-          {' '}
-          Read Blogs
-        </label>
-        <br />
-        <label htmlFor="User Interest" className="cbox">
-          <input type="checkbox" name="all-of-these" value="yes" />
-          All of these
-        </label>
-        <br />
-      </div>
-      <img className="interestsImage" src={interestsImage} alt="interests" />
-    </div>
-    <div className="text-center">
-      <button className="saveButton" type="button">
-        <Link to="/flow/emailFlow" className="saveText">
-          Save and Continue
-        </Link>
-      </button>
-    </div>
-    <p className="skip">Skip for now. </p>
-  </div>
+  <T.WelcomeContainer>
+    <T.TopSection>
+      <T.Progress src={progress} alt="progress-bar" />
+      <Heading1>What are you interested in?</Heading1>
+      <Paragraph>This will customize your experience.</Paragraph>
+      <Paragraph>
+        This will help you to discover right people and opportunities.
+      </Paragraph>
+    </T.TopSection>
+    <T.MiddleSection>
+      <C.LeftSection>
+        {' '}
+        <form>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="User Interest" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="Build Network" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="Read Blogs" value="true" />
+          </C.CheckboxContainer>
+          <C.CheckboxContainer>
+            <DefaultCheckbox label="User Interest" value="true" />
+          </C.CheckboxContainer>
+        </form>
+      </C.LeftSection>
+      <C.RightSection>
+        <C.InterestImage src={interestsImage} alt="interests" />
+      </C.RightSection>
+    </T.MiddleSection>
+    <T.BottomSection>
+      <RoundedPrimaryButton>
+        <Link to="/flow/emailFlow">Save & Continue</Link>
+      </RoundedPrimaryButton>
+      <Paragraph>
+        Skip for now
+        {' >> '}
+      </Paragraph>
+    </T.BottomSection>
+  </T.WelcomeContainer>
 );
 
 export default withErrorBoundary(InterestFlow);
