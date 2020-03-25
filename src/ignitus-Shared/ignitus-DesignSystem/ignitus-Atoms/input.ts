@@ -19,4 +19,9 @@ export const DefaultInput = styled.input`
     font-size: ${F.XL};
     opacity: 0.5;
   }
+<<<<<<< HEAD
 `;
+=======
+
+`;
+>>>>>>> 815d0e080863b8e795366b00a0ac20fb66f942b4
