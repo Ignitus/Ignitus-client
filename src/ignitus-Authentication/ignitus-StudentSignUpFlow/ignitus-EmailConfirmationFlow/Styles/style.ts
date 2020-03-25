@@ -4,7 +4,9 @@ import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ig
 export const NewsletterImage = styled.img``;
 
 export const BottomSection = styled.div`
-  margin-top: 2rem;
+  margin-top: 3rem;
 `;
 
-export const TopSection = styled(flexibleColDiv)``;
+export const TopMiddleSection = styled.div`
+  margin-top: 1rem;
+`;
