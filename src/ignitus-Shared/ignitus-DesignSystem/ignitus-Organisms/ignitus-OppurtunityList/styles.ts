@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import * as T from '../../ignitus-Atoms/atoms';
+import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
 import { 
   flexibleColDiv,
@@ -12,7 +12,6 @@ import { Paragraph } from '../../shared';
 
 export const OpportunityList = styled(flexibleColDiv)`
   padding: 2rem;
-  margin-top: 100px;
 `;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`

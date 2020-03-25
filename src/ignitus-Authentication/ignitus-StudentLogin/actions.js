@@ -1,6 +1,5 @@
 /* useful for keeping your bundle size small. */
-import isString from 'lodash/isString';
-import isObject from 'lodash/isObject';
+import { isString, isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import * as t from './actionTypes';
 
 

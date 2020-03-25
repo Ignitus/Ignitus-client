@@ -6,7 +6,7 @@ import * as t from '../constants';
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
-const About = () => (
+const About: React.FunctionComponent = () => (
   <Fragment>
     <S.AboutSection>
       <S.AboutContainer>

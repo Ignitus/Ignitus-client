@@ -3,9 +3,7 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import HeartIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-
-const breakpoints: number[] = [576, 768, 992, 1200];
-const mq: string[] = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+import { mq } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const Icon = styled.span`
   i { color: ${C.Red};}

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import * as S from '../style';
 import {AppIcon} from '../../../../../types/iconsTypes/enums';
@@ -11,7 +10,7 @@ type props = {
   name: AppIcon;
 };
 
-export default function UserSettingsSideNavigation() {
+export default function DashboardNavigation() {
   return (
     <S.SettingsContainer>
       <Layer text="Saved" marginTop={true} name={AppIcon.SaveIcon} />
