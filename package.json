@@ -42,7 +42,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
+    "heroku-postbuild": "react-scripts build",
+    "build": "npm run heroku-postbuild && sw-precache --config=sw-precache-config.js",
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
