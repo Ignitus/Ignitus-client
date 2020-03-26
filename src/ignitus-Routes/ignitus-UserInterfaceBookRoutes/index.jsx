@@ -11,7 +11,10 @@ import { interfaceCardLayout } from '../../ignitus-UserInterfaceBook/Components/
 import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceUnderConstruction/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
-
+import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/InterfaceSideNavigation/Components';
+import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
+import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
+import { interfaceInput } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceInput/Components';
 
 const Container = styled.div`
   display:flex;
@@ -20,7 +23,7 @@ const Container = styled.div`
 // eslint-disable-next-line import/prefer-default-export
 const UserInterfaceBookRoutes = () => (
   <Container>
-    <interfaceSideNavigation />
+    <InterfaceSideNavigation />
     <Switch>
       <Route
         exact
@@ -65,6 +68,21 @@ const UserInterfaceBookRoutes = () => (
       <Route
         path="/interface/colors"
         component={interfaceColors}
+      />
+
+      <Route
+        path="/interface/defaultDropdown"
+        component={interfaceDropDown}
+      />
+
+      <Route
+        path="/interface/defaultCheckbox"
+        component={interfaceCheckBox}
+      />
+
+      <Route
+        path="/interface/primaryInput"
+        component={interfaceInput}
       />
     </Switch>
   </Container>

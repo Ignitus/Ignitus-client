@@ -1,2 +1,2 @@
 
-export { default as interfaceSideNavigation } from './interfaceSideNavigation';
+export { default as InterfaceSideNavigation } from './interfaceSideNavigation';

@@ -1,6 +1,6 @@
-import {Edges} from './types';
+import { Edges } from './types';
 
-export const atomsEdges: Edges[] = [
+export const edges: Edges[] = [
   {
     node: {
       title: 'Atoms',
@@ -20,10 +20,29 @@ export const atomsEdges: Edges[] = [
         {
           title: 'Input Fields',
           route: '/interface/inputFields',
+          children: [{
+            node: {
+              title: 'Inputs Fields',
+              children: [
+                {
+                  title: 'Search',
+                  route: '/interface/searchInput',
+                },
+                {
+                  title: 'Primary',
+                  route: '/interface/primaryInput',
+                },
+                {
+                  title: 'TextArea',
+                  route: '/interface/textArea',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Checkboxes',
-          route: '/interface/checkboxes',
+          route: '/interface/defaultCheckbox',
         },
         {
           title: 'Radio Buttons',
@@ -32,6 +51,21 @@ export const atomsEdges: Edges[] = [
         {
           title: 'Dropdowns',
           route: '/interface/dropdowns',
+          children: [{
+            node: {
+              title: 'DropDowns',
+              children: [
+                {
+                  title: 'Default',
+                  route: '/interface/defaultDropdown',
+                },
+                {
+                  title: 'Secondary',
+                  route: '/interface/secondaryDropdown',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Card',
@@ -64,9 +98,6 @@ export const atomsEdges: Edges[] = [
       ],
     },
   },
-];
-
-export const moleculesEdges = [
   {
     node: {
       title: 'Molecules',
@@ -82,9 +113,6 @@ export const moleculesEdges = [
       ],
     },
   },
-];
-
-export const organismsEdges = [
   {
     node: {
       title: 'Organisms',
@@ -96,6 +124,21 @@ export const organismsEdges = [
         {
           title: 'Side Navigation',
           route: '/interface/sideNavigation',
+          children: [{
+            node: {
+              title: 'Navigation',
+              children: [
+                {
+                  title: 'Dashboard',
+                  route: '/interface/defaultDropdown',
+                },
+                {
+                  title: 'Settings',
+                  route: '/interface/sideNavigation',
+                },
+              ],
+            },
+          }],
         },
         {
           title: 'Footer',
@@ -108,9 +151,6 @@ export const organismsEdges = [
       ],
     },
   },
-];
-
-export const templatesEdges = [
   {
     node: {
       title: 'Templates',
@@ -138,9 +178,6 @@ export const templatesEdges = [
       ],
     },
   },
-];
-
-export const layoutEdges = [
   {
     node: {
       title: 'Layouts',

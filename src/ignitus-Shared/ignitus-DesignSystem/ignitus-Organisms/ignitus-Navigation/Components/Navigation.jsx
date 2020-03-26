@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -6,81 +8,62 @@ import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo
 import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 import '../Styles/style.scss';
 
+const handleSmallerScreen = () => {
+  const navlinks = document.querySelector('.navlinks');
+  const lines = document.querySelectorAll('.line');
+  lines.forEach((line) => {
+    line.classList.toggle('mobile');
+  });
+  navlinks.classList.toggle('mobile');
+};
 
 const PureNavigation = ({ displayClass, dynamicLogo }) => (
-  <nav className={`navbar navbar-expand-lg ${displayClass}`}>
+  <nav className={`navbar  ${displayClass}`}>
     <HashLink className="navbar-brand" to="/#">
       <img src={dynamicLogo} width="40" height="40" alt="logo" />
     </HashLink>
-    <button
-      className="navbar-toggler collapsed"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span />
-      <span />
-      <span />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="nav navbar-nav">
-        <li className="nav-item active">
-          <HashLink smooth to="/#">
-            <span className="nav-link">
-                  Home
-              {' '}
-              <span className="sr-only">(current)</span>
-            </span>
-          </HashLink>
-        </li>
-        <li className="nav-item">
-          <HashLink smooth to="/#what-we-do">
-            <span className="nav-link">What we provide?</span>
-          </HashLink>
-        </li>
-        <li className="nav-item">
-          <HashLink smooth to="/#contributors">
-            <span className="nav-link">Contributors</span>
-          </HashLink>
-        </li>
-        <li className="nav-item">
-          <Link to="/aboutus">
-            <span className="nav-link" href="/aboutus">
-                  About
-            </span>
-          </Link>
-        </li>
 
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://bit.ly/2SaYXMO"
-          >
-                Join
-          </a>
-        </li>
+    <ul className="navlinks">
+      <li className="navlinks-item active">
+        <HashLink smooth to="/#" className="navlink">Home</HashLink>
+      </li>
 
-        <li className="nav-item">
-          <Link to="/Login">
-            <span className="nav-link" href="/Login">
-                  Sign in
-            </span>
-          </Link>
-        </li>
+      <li className="navlinks-item">
+        <HashLink smooth to="/#what-we-do" className="navlink">What we provide?</HashLink>
+      </li>
 
-        <li className="nav-item">
-          <Link to="/Signup">
-            <span className="nav-link" href="/Signup">
-                  Sign up
-            </span>
-          </Link>
-        </li>
-      </ul>
+      <li className="navlinks-item">
+        <HashLink smooth to="/#contributors" className="navlink">Contributors</HashLink>
+      </li>
+
+      <li className="navlinks-item">
+        <Link to="/aboutus" className="navlink">About</Link>
+      </li>
+
+      <li className="navlinks-item">
+        <a
+          className="navlink"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://bit.ly/2SaYXMO"
+        >
+          Join
+        </a>
+      </li>
+
+      <li className="navlinks-item">
+        <Link to="/Login" className="navlink">Sign in</Link>
+      </li>
+
+      <li className="navlinks-item">
+        <Link to="/Signup" className="navlink">Sign up</Link>
+      </li>
+    </ul>
+
+    <div id="burger" onClick={handleSmallerScreen}>
+      <span className="line mobile" />
+      <span className="line mobile" />
+      <span className="line mobile" />
     </div>
   </nav>
 );
