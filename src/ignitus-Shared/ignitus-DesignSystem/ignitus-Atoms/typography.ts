@@ -44,3 +44,11 @@ export const Paragraph = styled.p`
   color: ${C.GreyText};
   margin: 0;
 `;
+
+export const TextLink = styled.a`
+  font-size: ${F.SM};
+  font-weight: ${F.Normal};
+  color: ${C.GreyText};
+  margin: 0;
+`;
+
