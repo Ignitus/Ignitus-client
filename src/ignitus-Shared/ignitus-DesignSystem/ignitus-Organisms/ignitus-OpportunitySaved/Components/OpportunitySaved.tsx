@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from '../styles';
 import universityOfMelbourne from '../../../ignitus-Assets/ignitus-Images/img-Png/universityOfMelbourne.png'
 import { Description } from '../types';
-import { Data, Title, Subtitle, OpportunityDescription } from '../constants';
+import { opportunity } from '../constants';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const OpportunitySavedCard = ({title, description, subtitle, data}: Description) => (
@@ -21,13 +21,6 @@ export const OpportunitySavedCard = ({title, description, subtitle, data}: Descr
     </S.ImageDescriptionContainer>
   </S.OpportunityContainer>
 );
-
-const opportunity = [{'title':Title[0],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[0]},
-{'title':Title[1],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[1]},
-{'title':Title[2],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[2]},
-{'title':Title[1],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[3]},
-{'title':Title[1],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[4]},
-{'title':Title[3],'description':OpportunityDescription[0],'subtitle':Subtitle[0], 'data':Data[5]}];
 
 const OpportunitySavedLayout = () => (
   <S.OpportunityList>
