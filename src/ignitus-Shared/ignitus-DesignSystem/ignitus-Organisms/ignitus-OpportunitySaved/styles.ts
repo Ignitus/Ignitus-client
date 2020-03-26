@@ -33,13 +33,13 @@ export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 3;
-  margin-left: 16px;
+  margin-left: 20px;
 `;
 
 export const OpportunityDescription = styled(T.Heading6)`
   font-weight: ${Normal};
   color: ${C.Black};
-  margin-right: 10px;
+  margin-right: 25px;
 `;
 
 export const OpportunityTitle = styled(T.Heading4)`
@@ -51,14 +51,13 @@ export const OpportunitySubTitle = styled.div`
   font-weight: ${SemiBold};
   color: ${C.GreySecondaryText};
   font-size: ${XS};
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin-top: -5px;
 `;
 
 export const OpportunitiesSavedGrid = styled.div`
-  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 4fr);
   grid-auto-rows: auto;
   grid-row-gap: 2rem;
 `;

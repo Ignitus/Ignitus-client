@@ -7,5 +7,5 @@ export const universityOfNewcastle: string = '../../../../ignitus-Assets/ignitus
 
 export const Data: string[] = [universityOfMelbourne, universityOfPortsmouth, tohokuUniversity, murdochUniversity, microsoft, universityOfNewcastle,"https://brandhub.unimelb.edu.au/guidelines/logos/04_Logo_Vertical-Housed.jpg"];
 export const Title: string[] = ['PhD Project:', 'Internship', 'Funded Research', "Professor's Assistant"];
-export const OpportunityDescription: string[] = ["Church and civil courts in late medieval and early modern Scotland."]
+export const OpportunityDescription: string[] = ["Church and civil courts in late medieval and early modern Scotland"]
 export const Subtitle: string[] = ["By The University of Melbourne"]

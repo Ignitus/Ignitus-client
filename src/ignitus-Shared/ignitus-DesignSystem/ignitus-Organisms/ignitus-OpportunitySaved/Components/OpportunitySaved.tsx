@@ -5,7 +5,7 @@ import { Description } from '../types';
 import { Data, Title, Subtitle, OpportunityDescription } from '../constants';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-export const Opportunity = ({title, description, subtitle, data}: Description) => (
+export const OpportunitySavedCard = ({title, description, subtitle, data}: Description) => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
@@ -33,7 +33,7 @@ const OpportunitySavedLayout = () => (
   <S.OpportunityList>
     <S.OpportunitiesSavedGrid>
     {opportunity.map(({title, description, subtitle, data}: Description) => (
-        <Opportunity title={title} description={description} subtitle={subtitle} data={data} />
+        <OpportunitySavedCard title={title} description={description} subtitle={subtitle} data={data} />
     ))}
     </S.OpportunitiesSavedGrid>
   </S.OpportunityList>
