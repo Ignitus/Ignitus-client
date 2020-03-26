@@ -1,0 +1,64 @@
+import styled from '@emotion/styled';
+import * as T from '../../ignitus-Atoms/typography';
+import * as C from '../../ignitus-Atoms/colors';
+import { flexibleRowDiv, flexibleColDiv } from '../../shared';
+import { Normal, SemiBold, Bold, XS} from '../../ignitus-Atoms/fonts';
+
+export const OpportunityList = styled(flexibleColDiv)`
+  padding: 2rem;
+`;
+
+export const OpportunityContainer = styled(flexibleRowDiv)`
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: ${C.White};
+  border-radius: 20px;
+  width: 80%;
+`;
+
+export const ImageDescriptionContainer = styled(flexibleRowDiv)`
+  flex: 4;
+`;
+
+export const ImageContainer = styled(flexibleRowDiv)`
+  flex: 1;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+`;
+
+export const DescriptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-left: 16px;
+`;
+
+export const OpportunityDescription = styled(T.Heading6)`
+  font-weight: ${Normal};
+  color: ${C.Black};
+  margin-right: 10px;
+`;
+
+export const OpportunityTitle = styled(T.Heading4)`
+  flex: 1;
+  font-weight: ${Bold};
+`;
+
+export const OpportunitySubTitle = styled.div`
+  font-weight: ${SemiBold};
+  color: ${C.GreySecondaryText};
+  font-size: ${XS};
+  padding-bottom: 5px;
+  margin-top: -5px;
+`;
+
+export const OpportunitiesSavedGrid = styled.div`
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-row-gap: 2rem;
+`;

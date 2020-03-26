@@ -11,6 +11,7 @@ import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
+import { interfaceOpportunitiesSaved } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceOpportunitiesSaved/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceColors/Components';
 
 
@@ -62,7 +63,14 @@ const UserInterfaceKitRoutes = () => (
         path="/interface/underConstruction"
         component={interfaceUnderConstruction}
       />
-
+      <Route
+        path="/interface/underConstruction"
+        component={interfaceUnderConstruction}
+      />
+      <Route
+        path="/interface/opportunitiesSaved"
+        component={interfaceOpportunitiesSaved}
+      />
       <Route
         path="/interface/colors"
         component={interfaceColors}

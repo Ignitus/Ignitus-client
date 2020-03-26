@@ -153,6 +153,10 @@ export const layoutEdges = [
           title: 'Under Construction',
           route: '/interface/underConstruction',
         },
+        {
+          title: 'Opportunities Saved',
+          route: '/interface/opportunitiesSaved',
+        },
       ],
     },
   },
