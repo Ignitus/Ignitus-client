@@ -1,12 +1,8 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
-import { flexibleRowDiv, flexibleColDiv } from '../../shared';
+import { flexibleRowDiv } from '../../shared';
 import { Normal, SemiBold, Bold, XS} from '../../ignitus-Atoms/fonts';
-
-export const OpportunityList = styled(flexibleColDiv)`
-  padding: 2rem;
-`;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -53,11 +49,4 @@ export const OpportunitySubTitle = styled.div`
   font-size: ${XS};
   padding-bottom: 8px;
   margin-top: -5px;
-`;
-
-export const OpportunitiesSavedGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 4fr);
-  grid-auto-rows: auto;
-  grid-row-gap: 2rem;
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyledHeading2} from '../../../../styles';
-import OpportunitySavedLayout from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunitySaved/Components/OpportunitySaved';
+import OpportunitySavedLayout from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-OpportunitiesSaved/Components/OpportunitySavedGrid';
 import {OpportunitiesSavedContainer} from '../style';
 
 const interfaceOpportunitiesSaved = () => (
