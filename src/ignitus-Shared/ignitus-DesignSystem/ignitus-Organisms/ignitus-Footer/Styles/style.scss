@@ -1,66 +1,100 @@
-// import ignitus token variables
-@import './src/ignitus-Shared/styles/ignitus-tokens';
+.footer{
+  background-color:#000066;
+  padding-bottom:1rem;
+}
 
-// rem units change based on 1rem:16px
+.container{
+  max-width:72rem;
+  min-height:20vh;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
 
-// rem units change based on 1rem:16px
+.footer-parts{
+  width:max-content;
+  margin:0rem 2rem;
+}
 
-.link {
-  color: $ignite-color-white;
-  font-size: $ignite-font-size-sm;
+.footer-head{
+  color:#fff;
+  font-weight:bold;
+}
 
-  &:hover {
-    color: $ignite-color-yellow;
-    text-decoration: none;
+.footerlinks{
+  display:flex;
+  flex-direction: column;
+}
+
+.footerlinks-item{
+  padding:2px;
+}
+
+.footerlink:link,.footerlink:visited{
+  color:#fff;
+}
+
+.footerlink:hover,.footerlink:active{
+  color:#F9BF64;
+}
+
+.footer-logo{
+  width:6rem;
+  height:auto;
+  margin-top: 1rem;
+}
+
+
+.socials{
+  max-width:max-content;
+  margin:2rem auto;
+}
+
+.footer-socials{
+  display:flex;
+}
+
+.footer-social-item{
+  padding:0rem 0.5rem;
+}
+
+.copyright{
+  text-align:center;
+  color:#fff;
+  font-weight:bold;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width:792px){
+  .container{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-}
-
-.heading {
-	color: $ignite-color-white;
-	font-weight: $ignite-font-weight-bold;
-}
-
-.img-css {
-  align-self: center;
-  height: 6rem;
-  margin: 3rem 1rem;
-  width: 6rem;
-}
-
-.social-icon {
-	color: $ignite-color-white;
-}
-
-.pd-left {
-  padding-left: 1.5rem;
-}
-
-.footer-bg {
-	background-color: $ignite-color-blue-bg;
-}
-
-#footer-bg-id {
-	margin-top: 0 !important;
-}
-
-@media only screen and (max-width : 767px) {
-	.nav-accordion {
-		.navigation {
-			h5 {
-				cursor: pointer;
-			}
-		}
-		ul {
-			max-height: 0;
-			overflow: hidden;
-			transition: max-height 1s ease-out;
-		}
-		.navigation.open {
-			ul {
-				height: auto;
-				max-height: 31.5rem;
-				transition: max-height 1s ease-in !important;
-			}
-		}
-	}
+  
+  .footer-parts{
+    align-self: center;
+    padding:1rem;
+    margin:0;
+    margin-bottom:0.5rem;
+    max-width:15rem;
+    text-align:center;
+    transition: max-height 1s ease-in;
+  }
+  
+  .footerlinks{
+    display:none;
+  }
+  
+  .footerlinks-item{
+    align-self: center;
+  }
+  
+  .footerlinks.hide{
+    display:block;
+  }
+  
+  .footer-logo{
+    margin:1rem;
+  }
 }
