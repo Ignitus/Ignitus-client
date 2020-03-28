@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import {maximumWidthQuery} from '../../ignitus-Atoms/media';
 
 type FooterLinkprops = {
   toggle: boolean;
@@ -17,14 +18,14 @@ export const Container = styled.div`
   max-width: 72rem;
   min-height: 20vh;
 
-  @media only screen and (max-width: 792px) {
+  ${maximumWidthQuery[1]} {
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
 `;
 
-export const FooterParts = styled.div`
+export const FooterSections = styled.div`
   margin: 0rem 2rem;
   width: max-content;
 
@@ -37,12 +38,12 @@ export const FooterParts = styled.div`
     height: auto;
     margin-top: 1rem;
     width: 6rem;
-    @media only screen and (max-width: 792px) {
+    ${maximumWidthQuery[1]} {
       margin: 1rem;
     }
   }
 
-  @media only screen and (max-width: 792px) {
+  ${maximumWidthQuery[1]} {
     align-self: center;
     padding: 1rem;
     margin: 0;
@@ -60,7 +61,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
   > li {
     padding: 2px;
 
-    @media only screen and (max-width: 792px) {
+    ${maximumWidthQuery[1]} {
       align-self: center;
     }
 
@@ -75,7 +76,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
     }
   }
 
-  @media only screen and (max-width: 792px) {
+  ${maximumWidthQuery[1]} {
     display: ${props => (props.toggle ? `none` : 'block')};
   }
 `;

@@ -17,7 +17,7 @@ const PureFooter = ({
 }) => (
   <S.Footer>
     <S.Container>
-      <S.FooterParts>
+      <S.FooterSections>
         <h5 onClick={() => hideUnhide('featuresToggle')}>Features</h5>
         <S.FooterLinks toggle={featuresToggle}>
           <li>
@@ -36,9 +36,9 @@ const PureFooter = ({
             <a href="#!">OpenSource</a>
           </li>
         </S.FooterLinks>
-      </S.FooterParts>
+      </S.FooterSections>
 
-      <S.FooterParts>
+      <S.FooterSections>
         <h5 onClick={() => hideUnhide('communityToggle')}>Community</h5>
         <S.FooterLinks toggle={communityToggle}>
           <li>
@@ -69,13 +69,13 @@ const PureFooter = ({
             </a>
           </li>
         </S.FooterLinks>
-      </S.FooterParts>
+      </S.FooterSections>
 
-      <S.FooterParts>
+      <S.FooterSections>
         <img src={logo} alt="logo" />
-      </S.FooterParts>
+      </S.FooterSections>
 
-      <S.FooterParts>
+      <S.FooterSections>
         <h5 onClick={() => hideUnhide('companyToggle')}>Company</h5>
         <S.FooterLinks toggle={companyToggle}>
           <li>
@@ -108,9 +108,9 @@ const PureFooter = ({
             </a>
           </li>
         </S.FooterLinks>
-      </S.FooterParts>
+      </S.FooterSections>
 
-      <S.FooterParts>
+      <S.FooterSections>
         <h5 onClick={() => hideUnhide('linkToggle')}>Links</h5>
         <S.FooterLinks toggle={linkToggle}>
           <li>
@@ -129,7 +129,7 @@ const PureFooter = ({
             <Link to="/aboutus">About us</Link>
           </li>
         </S.FooterLinks>
-      </S.FooterParts>
+      </S.FooterSections>
     </S.Container>
 
     <S.Socials>
