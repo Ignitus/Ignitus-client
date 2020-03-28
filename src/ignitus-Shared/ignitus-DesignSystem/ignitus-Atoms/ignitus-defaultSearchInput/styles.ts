@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {IgnitusBlue, Red, Grey1} from '../colors';
+import {IgnitusBlue, White, Red, Grey1} from '../colors';
 import {SM} from '../fonts';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../shared';
@@ -9,6 +9,7 @@ export const InputContainer = styled(flexibleRowDiv)`
   border-radius: 0.5rem;
   padding: 0.2rem;
   width: 14rem;
+  background: ${White};
   &:focus {
     color: ${Red};
   }
