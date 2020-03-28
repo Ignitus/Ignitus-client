@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from '@emotion/styled';
@@ -15,6 +16,7 @@ import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/Interfa
 import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
 import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
+import { interfaceDashBoardOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceDashBoardOpportunity/Components';
 
 const Container = styled.div`
   display:flex;
@@ -83,6 +85,11 @@ const UserInterfaceBookRoutes = () => (
       <Route
         path="/interface/primaryInput"
         component={interfaceInput}
+      />
+
+      <Route
+        path="/interface/gridOpportunity"
+        component={interfaceDashBoardOpportunity}
       />
     </Switch>
   </Container>
