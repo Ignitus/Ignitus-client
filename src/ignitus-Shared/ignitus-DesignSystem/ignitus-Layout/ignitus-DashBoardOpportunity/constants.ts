@@ -1,4 +1,4 @@
-export const opportunityList = [
+export const OpportunityList = [
   {
     title: 'PhD Project',
     description:

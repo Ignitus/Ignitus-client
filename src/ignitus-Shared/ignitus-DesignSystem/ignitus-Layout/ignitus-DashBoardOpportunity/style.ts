@@ -11,18 +11,16 @@ export const OpportunitiesSavedGrid = styled.div`
   grid-row-gap: 2rem;
 `;
 
-export const OpportunityContainer = styled(flexibleRowDiv)`
+export const DashboardOpportunityContainer = styled.div`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   border-radius: 20px;
   width: 80%;
+  padding: 0.5rem;
 `;
 
-export const ImageDescriptionContainer = styled(flexibleRowDiv)`
-  flex: 4;
-`;
-
-export const ImageContainer = styled(flexibleRowDiv)`
+export const Row = styled(flexibleRowDiv)``;
+export const LeftRow = styled.div`
   flex: 1;
   img {
     max-width: 100%;
@@ -32,28 +30,26 @@ export const ImageContainer = styled(flexibleRowDiv)`
   }
 `;
 
-export const DescriptionContainer = styled.div`
+export const RightRow = styled.div`
   display: flex;
   flex-direction: column;
   flex: 3;
   margin-left: 20px;
 `;
 
-export const OpportunityDescription = styled(T.Heading6)`
+export const Description = styled(T.Heading6)`
   font-weight: ${Normal};
   color: ${C.Black};
   margin-right: 25px;
 `;
 
-export const OpportunityTitle = styled(T.Heading4)`
+export const Title = styled(T.Heading4)`
   flex: 1;
   font-weight: ${Bold};
 `;
 
-export const OpportunitySubTitle = styled.div`
+export const SubTitle = styled.p`
   font-weight: ${SemiBold};
   color: ${C.GreySecondaryText};
   font-size: ${XS};
-  padding-bottom: 8px;
-  margin-top: -5px;
 `;
