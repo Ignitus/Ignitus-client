@@ -98,7 +98,7 @@ class Signup extends React.Component {
                     <i className="text-black-50">or</i>
                   </div>
                   <div className="mb-4">
-                    <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
+                    <button type="button" name={AppIcon.NetworkIcon} className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                       <i className="fa fa-linkedin mr-3" />
                       Linkedin
                     </button>

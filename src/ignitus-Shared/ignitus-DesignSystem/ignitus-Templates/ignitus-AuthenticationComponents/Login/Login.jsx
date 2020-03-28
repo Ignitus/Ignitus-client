@@ -163,7 +163,7 @@ const Login = ({
                 <button
                   type="button"
                   className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block"
-                >
+                > <Layer name={AppIcon.NetworkIcon} />
                   <i className="fa fa-linkedin mr-3" />
                   Linked-in
                 </button>

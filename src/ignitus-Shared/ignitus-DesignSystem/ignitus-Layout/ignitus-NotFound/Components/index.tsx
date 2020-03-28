@@ -17,7 +17,7 @@ export const Notfound = () => (
         </S.StyledParagraph>
       </S.Message>
       <S.StyledPrimaryBtn>
-        <Link to="/"> Home Page </Link>
+        <Link to="/">   Home Page </Link>
       </S.StyledPrimaryBtn>
     </S.MessageContainer>
   </React.Fragment>

@@ -12,7 +12,7 @@ const GetStarted = () => (
     </div>
     <Link to="/Signup">
       <button className="btn btn-secondary button-get-started" type="button">
-        Sign-Up
+        <layer name={AppIcon.MentorsIcon} />Sign-Up
       </button>
     </Link>
   </div>

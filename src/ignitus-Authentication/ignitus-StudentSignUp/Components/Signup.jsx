@@ -196,7 +196,7 @@ const Signup = ({ signUpRequest, studentSignUpData }) => {
                 <div className="mb-4">
                   <button type="button" className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block">
                     <i className="fa fa-linkedin mr-3" />
-                      Linkedin
+                    <Layer name={AppIcon.NetworkIcon} Linkedin />
                   </button>
                 </div>
                 <div className="text-center">
