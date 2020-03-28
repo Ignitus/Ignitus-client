@@ -8,6 +8,7 @@ export const InputContainer = styled(flexibleRowDiv)`
   border: 1px solid ${IgnitusBlue};
   border-radius: 0.5rem;
   padding: 0.2rem;
+  width: 14rem;
   &:focus {
     color: ${Red};
   }
