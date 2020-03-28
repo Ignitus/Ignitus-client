@@ -1,50 +1,32 @@
 import styled from '@emotion/styled';
-import * as C from '../colors';
-import * as F from '../fonts';
-import icon from '../../../ignitus-Utilities/Components/icon';
+import {IgnitusBlue, Red, Grey1} from '../colors';
+import {SM} from '../fonts';
+import Icon from '../../../ignitus-Utilities/Components/icon';
+import {flexibleRowDiv} from '../../shared';
 
-export const InputCont = styled.div`
-height: 50px;
-width: 500px;  
-border-radius: 20px ;
-border: 2px solid ${C.IgnitusBlue};
-color: ${C.IgnitusBlue};
-background-color: ${C.White} ;
-input[type="text"]:focus{
-  border-color: none;
-  // box-shadow: 0 0 8px 0 ;
-} 
+export const InputContainer = styled(flexibleRowDiv)`
+  border: 1px solid ${IgnitusBlue};
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  &:focus {
+    color: ${Red};
+  }
 `;
 
 export const Input = styled.input`
-  height: 45px;
-  width: 430px;  
-  border-radius: 20px ;
-  color: ${C.IgnitusBlue};
-  font-weight: ${F.Light};
-  font-size: ${F.XL};
-  border:none;
-  background-color: none;
-  ::placeholder {
-    algin:center;
-    padding: 20px;
-    height: 50px;
-    max-width: 300px;  
-    background-color: none;
-    color: ${C.IgnitusBlue};
-    font-weight: ${F.Light};
-    font-size: ${F.XL};
-    }
-    input : focus{
-      outline: none;
-      box-shadow: none;
-    }
-  `;
-
-  export const StyledIcon = styled(icon)`
-  margin-left: 20px;
- 
-  height: 2rem;
-  color: ${C.IgnitusBlue};
+  border: none;
+  font-size: ${SM};
+  outline: none;
+  flex: 1;
+  &::placeholder {
+    color: ${Grey1};
+  }
 `;
-  
+
+export const StyledIcon = styled(Icon)`
+  height: 1.2rem;
+  width: 1.2rem;
+  fill: ${IgnitusBlue};
+  transition: 0.3s;
+  flex: 1;
+`;
