@@ -168,12 +168,12 @@ export const edges: Edges[] = [
               title: 'Card Layouts',
               children: [
                 {
-                  title: 'Opportunity Listing',
+                  title: 'Opportunity',
                   route: '/interface/opportunityPosted',
                 },
                 {
                   title: 'Grid Opportunity Saved',
-                  route: '/interface/gridSaved',
+                  route: '/interface/gridOpportunity',
                 },
                 {
                   title: 'List Opportunity Saved',
@@ -228,6 +228,10 @@ export const edges: Edges[] = [
         {
           title: 'Under Construction',
           route: '/interface/underConstruction',
+        },
+        {
+          title: 'Opportunities Saved',
+          route: '/interface/opportunitiesSaved',
         },
       ],
     },
