@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import {maximumWidthQuery} from '../../ignitus-Atoms/media';
-import {Heading3} from '../../ignitus-Atoms/typography';
-import {White} from '../../ignitus-Atoms/colors';
+import { maximumWidthQuery } from '../../ignitus-Atoms/media';
+import { Heading3 } from '../../ignitus-Atoms/typography';
+import { White, SecondaryColor, IgnitusBlue } from '../../ignitus-Atoms/colors';
 
 type FooterLinkprops = {
   toggle: boolean;
@@ -16,7 +16,7 @@ export const StyledHeading = styled(Heading3)`
 `;
 
 export const Footer = styled.footer`
-  background-color: #000066;
+  background-color: ${IgnitusBlue};
   padding-bottom: 1rem;
 `;
 
@@ -36,15 +36,15 @@ export const Container = styled.div`
 `;
 
 export const FooterSections = styled.div`
-  margin: 0rem 2rem;
+  margin: 0 2rem;
   width: max-content;
 
-  > h5 {
-    color: #fff;
+  h5 {
+    color: ${White};
     font-weight: bold;
   }
 
-  > img {
+  img {
     height: auto;
     margin-top: 1rem;
     width: 6rem;
@@ -68,21 +68,24 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
   display: flex;
   flex-direction: column;
 
-  > li {
+  li {
     padding: 2px;
-
     ${maximumWidthQuery[1]} {
       align-self: center;
     }
 
-    > a:link,
-    a:visited {
-      color: #fff;
+    a {
+      &:link,
+      &:visited {
+        color: ${White};
+      }
     }
 
-    > a:hover,
-    a:active {
-      color: #f9bf64;
+    a {
+      &:hover,
+      &:active {
+        color: ${SecondaryColor};
+      }
     }
   }
 
@@ -99,23 +102,27 @@ export const Socials = styled.div`
 export const FooterSocial = styled.ul`
   display: flex;
 
-  > li {
+  li {
     padding: 0rem 0.5rem;
 
-    > a:link,
-    a:visited {
-      color: #fff;
+    a {
+      &:link,
+      &:visited {
+        color: ${White};
+      }
     }
 
-    > a:hover,
-    a:active {
-      color: #f9bf64;
+    a {
+      &:hover,
+      &:active {
+        color: ${SecondaryColor};
+      }
     }
   }
 `;
 
 export const Copyright = styled.p`
-  color: #fff;
+  color: ${White};
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
