@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import { mq } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { Heading3 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};
@@ -60,7 +60,7 @@ export const ContentContainer = styled.section`
   padding: 1.5rem;
 `;
 
-export const Title = styled(T.Title)`
+export const Title = styled(Heading3)`
   text-align: center;
 `;
 

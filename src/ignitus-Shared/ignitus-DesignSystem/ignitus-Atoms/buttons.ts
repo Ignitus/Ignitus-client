@@ -42,7 +42,7 @@ export const PrimaryButton = styled(Button)<BtnSizeProps>`
   a {
     color: ${C.White};
   }
-  
+
   &:hover,
   &:focus {
     background-color: ${C.SecondaryColor};
@@ -69,6 +69,9 @@ export const WhiteButton = styled(Button)<BtnSizeProps>`
   padding: ${props => getPadding(props)};
   font-size: ${props => getFontSizes(props)};
   border-radius: ${props => getRadius(props)};
+  a {
+    color: ${C.IgnitusBlue};
+  }
 `;
 
 export const GreyButton = styled(Button)<BtnSizeProps>`
