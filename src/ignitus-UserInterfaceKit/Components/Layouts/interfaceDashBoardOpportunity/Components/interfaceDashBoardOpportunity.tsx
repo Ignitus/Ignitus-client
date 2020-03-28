@@ -12,6 +12,7 @@ const interfaceDashBoardOpportunity = () => (
     <Grid>
       {List.map(({title, description, subtitle, src}: Opportunity) => (
         <DashBoardOpportunity
+          key={title}
           title={title}
           description={description}
           subtitle={subtitle}

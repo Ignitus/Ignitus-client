@@ -13,6 +13,7 @@ import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/O
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceColors/Components';
+import { interfaceDashBoardOpportunity } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceDashBoardOpportunity/Components';
 
 const Container = styled.div`
   display:flex;
