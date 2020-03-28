@@ -1,29 +1,14 @@
 import React from 'react';
 import * as S from '../style';
-import { OpportunityList } from '../constants';
-import { Opportunity } from '../types';
-import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import {Opportunity} from '../types';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-export const DashBoardOpportunity = () => (
-  <S.OpportunitiesSavedGrid>
-    {OpportunityList.map(({title, description, subtitle, src}: Opportunity) => (
-      <OpportunitySavedCard
-        title={title}
-        description={description}
-        subtitle={subtitle}
-        src={src}
-      />
-    ))}
-  </S.OpportunitiesSavedGrid>
+export const DashBoardOpportunity = ({ title, description, subtitle, src }: Opportunity) => (
+  <Card title={title} description={description} subtitle={subtitle} src={src} />
 );
 
-const OpportunitySavedCard = ({
-  title,
-  description,
-  subtitle,
-  src,
-}: Opportunity) => (
-  <S.DashboardOpportunityContainer>
+const Card = ({title, description, subtitle, src}: Opportunity) => (
+  <S.Container>
     <S.Row>
       <S.LeftRow>
         <img src={src} alt={title} height="120" />
@@ -34,7 +19,7 @@ const OpportunitySavedCard = ({
         <S.Description>{description}</S.Description>
       </S.RightRow>
     </S.Row>
-  </S.DashboardOpportunityContainer>
+  </S.Container>
 );
 
 export default withErrorBoundary(DashBoardOpportunity);

@@ -4,14 +4,7 @@ import * as C from '../../ignitus-Atoms/colors';
 import {flexibleRowDiv} from '../../shared';
 import {Normal, SemiBold, Bold, XS} from '../../ignitus-Atoms/fonts';
 
-export const OpportunitiesSavedGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 4fr);
-  grid-auto-rows: auto;
-  grid-row-gap: 2rem;
-`;
-
-export const DashboardOpportunityContainer = styled.div`
+export const Container = styled.div`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   border-radius: 20px;

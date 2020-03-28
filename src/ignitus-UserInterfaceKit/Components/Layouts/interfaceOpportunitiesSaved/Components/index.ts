@@ -1,1 +1,0 @@
-export { default as interfaceOpportunitiesSaved } from './interfaceOpportunitiesSaved';

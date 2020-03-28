@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from '@emotion/styled';
@@ -11,9 +12,7 @@ import { interfaceCards } from '../../ignitus-UserInterfaceKit/Components/Atoms/
 import { interfaceCardLayout } from '../../ignitus-UserInterfaceKit/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceUnderConstruction/Components';
-import { interfaceOpportunitiesSaved } from '../../ignitus-UserInterfaceKit/Components/Layouts/interfaceOpportunitiesSaved/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceKit/Components/Atoms/interfaceColors/Components';
-
 
 const Container = styled.div`
   display:flex;
@@ -69,7 +68,7 @@ const UserInterfaceKitRoutes = () => (
       />
       <Route
         path="/interface/opportunitiesSaved"
-        component={interfaceOpportunitiesSaved}
+        component={interfaceDashBoardOpportunity}
       />
       <Route
         path="/interface/colors"
