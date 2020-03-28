@@ -23,7 +23,6 @@
     "font-awesome": "^4.7.0",
     "idb": "^4.0.3",
     "jquery": "^3.3.1",
-    "lodash": "^4.17.11",
     "node-sass": "^4.13.1",
     "popper.js": "^1.15.0",
     "prop-types": "^15.6.2",
@@ -43,7 +42,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
+    "heroku-postbuild": "react-scripts build",
+    "build": "npm run heroku-postbuild && sw-precache --config=sw-precache-config.js",
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
@@ -54,7 +54,6 @@
   "devDependencies": {
     "@types/eslint": "^6.1.8",
     "@types/jest": "^25.1.3",
-    "@types/lodash": "^4.14.149",
     "@types/node": "^13.7.4",
     "@types/react-dom": "^16.8.2",
     "@types/react-redux": "^7.1.7",
