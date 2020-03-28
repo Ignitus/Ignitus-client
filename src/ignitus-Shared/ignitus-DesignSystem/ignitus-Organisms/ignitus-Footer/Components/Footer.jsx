@@ -1,15 +1,19 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import '../Styles/style.scss';
-import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
-import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import { logo } from './Constants';
+import {HashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import {logo} from './Constants';
 
 const PureFooter = ({
-  hideUnhide, featuresToggle, communityToggle, companyToggle, linkToggle,
+  hideUnhide,
+  featuresToggle,
+  communityToggle,
+  companyToggle,
+  linkToggle,
 }) => (
   <footer className="footer-bg text-white mt-4" id="footer-bg-id">
     <div className="container text-center text-md-left">
@@ -172,19 +176,19 @@ const PureFooter = ({
                 </HashLink>
               </li>
               <li>
-                <HashLink to="/#what-we-do">
-                  <span className="link">What we provide?</span>
+                <Link to="/aboutus">
+                  <span className="link">About us</span>
+                </Link>
+              </li>
+              <li>
+                <HashLink to="/interface">
+                  <span className="link">Design System</span>
                 </HashLink>
               </li>
               <li>
                 <HashLink to="/#contributors">
                   <span className="link">Contributors</span>
                 </HashLink>
-              </li>
-              <li>
-                <Link to="/aboutus">
-                  <span className="link">About us</span>
-                </Link>
               </li>
             </ul>
           </div>
@@ -288,7 +292,7 @@ const Footer = () => {
   const [companyToggle, setCompanyToggle] = useState(true);
   const [linkToggle, setLinkToggle] = useState(true);
 
-  const hideUnhide = (toToggle) => {
+  const hideUnhide = toToggle => {
     if (toToggle === 'featuresToggle') {
       setFeaturesToggle(!featuresToggle);
     }
