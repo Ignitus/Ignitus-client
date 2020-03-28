@@ -3,7 +3,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import {HashLink} from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { logo } from '../constants';
 import * as S from '../styles';
@@ -69,85 +68,14 @@ const PureFooter = ({
 
     <S.Socials>
       <S.FooterSocial>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/Ignitus.org/"
-          >
-            <i className="fa fa-facebook" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/ignitus_org"
-          >
-            <i className="fa fa-twitter" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://angel.co/ignitus-2"
-          >
-            <i className="fa fa-angellist" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="http://bit.do/join-ignitus"
-          >
-            <i className="fa fa-slack" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/company/13733583/admin/updates/"
-          >
-            <i className="fa fa-linkedin" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Ignitus"
-          >
-            <i className="fa fa-github" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://medium.com/@social_63397"
-          >
-            <i className="fa fa-medium" />
-          </a>
-        </li>
-
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"
-          >
-            <i className="fa fa-youtube" />
-          </a>
-        </li>
+        <li> <a target="_blank" href="https://www.facebook.com/Ignitus.org/"> <i className="fa fa-facebook"/></a> </li>
+        <li> <a target="_blank" href="https://twitter.com/ignitus_org/"> <i className="fa fa-twitter"/></a> </li>
+        <li> <a target="_blank" href="https://angel.co/ignitus-2"> <i className="fa fa-angellist"/></a> </li>
+        <li> <a target="_blank" href="https://bit.ly/JoinIgnitusSlack"> <i className="fa fa-slack"/></a> </li>
+        <li> <a target="_blank" href="https://www.linkedin.com/company/13733583/admin/updates/"> <i className="fa fa-linkedin"/></a> </li>
+        <li> <a target="_blank" href="https://github.com/Ignitus"> <i className="fa fa-github"/></a> </li>
+        <li> <a target="_blank" href="https://medium.com/@social_63397"> <i className="fa fa-medium"/></a> </li>
+        <li> <a target="_blank" href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"> <i className="fa fa-youtube"/></a> </li>
       </S.FooterSocial>
     </S.Socials>
     <S.Copyright>&copy; 2018 Copyright Ignitus</S.Copyright>
