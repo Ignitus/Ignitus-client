@@ -1,6 +1,6 @@
-export type Description = {
+export type Opportunity = {
   title: string;
   description: string;
   subtitle: string;
-  data: string;
+  src: string;
 };

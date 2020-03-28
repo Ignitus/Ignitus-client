@@ -1,25 +1,29 @@
 import React from 'react';
 import * as S from '../style';
 
-import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import {opportunity} from '../constants';
-import universityOfMelbourne from '../../../ignitus-Assets/ignitus-Images/img-Png/universityOfMelbourne.png';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { opportunityList } from '../constants';
+import { Opportunity } from '../types';
 
 export const OpportunitySavedLayout = () => (
   <S.OpportunitiesSavedGrid>
-    {opportunity.map(({title, description, subtitle, src}: any) => (
+    {opportunityList.map(({title, description, subtitle, src}: Opportunity) => (
       <OpportunitySavedCard
         title={title}
         description={description}
         subtitle={subtitle}
-        src={universityOfMelbourne}
+        src={src}
       />
     ))}
   </S.OpportunitiesSavedGrid>
 );
 
-
-const OpportunitySavedCard = ({title, description, subtitle, src}: any) => (
+const OpportunitySavedCard = ({
+  title,
+  description,
+  subtitle,
+  src,
+}: Opportunity) => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
@@ -28,9 +32,7 @@ const OpportunitySavedCard = ({title, description, subtitle, src}: any) => (
       <S.DescriptionContainer>
         <S.OpportunityTitle>{title}</S.OpportunityTitle>
         <S.OpportunitySubTitle>{subtitle}</S.OpportunitySubTitle>
-          <S.OpportunityDescription>
-            {description}
-          </S.OpportunityDescription>
+        <S.OpportunityDescription>{description}</S.OpportunityDescription>
       </S.DescriptionContainer>
     </S.ImageDescriptionContainer>
   </S.OpportunityContainer>
