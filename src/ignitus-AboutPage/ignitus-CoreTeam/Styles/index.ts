@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import Icon from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import {mq} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Heading6} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 type LinkWrapperProps = {
@@ -77,15 +77,15 @@ export const TeamCardContainer = styled.div`
     flex: 0 0 50%;
     max-width: 50%;
   }
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     flex: 0 0 26%;
     max-width: 26%;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     flex: 0 0 22%;
     max-width: 22%;
   }
