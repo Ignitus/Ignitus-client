@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
+import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
