@@ -3,6 +3,7 @@ import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import PlusIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 import ChevronIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chevronIcon/chevronIcon';
+import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -18,13 +19,14 @@ export const Section = styled(T.flexibleColDiv)``;
 
 export const GithubContributorsTitle = styled(T.Title)`
   i {
-  font-size: 1.2rem;
-  margin-right: 3px;
-}
+    font-size: 1.2rem;
+    margin-right: 3px;
+  }
 `;
 
 export const GithubContributors = styled.div`
   max-width: 80rem;
+  margin-top: 2rem;
   width: 100%;
 `;
 
@@ -34,8 +36,8 @@ export const Contributors = styled.div`
   justify-content: center;
 `;
 
-export const Paragraph = styled(T.Paragraph)`
-      text-align: center;Ì
+export const StyledParagraph = styled(Paragraph)`
+  text-align: center;
 `;
 
 export const Link = styled(T.Link)`

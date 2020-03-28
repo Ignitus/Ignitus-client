@@ -12,7 +12,7 @@ export const Card = styled.div`
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0.5em;
-  padding: 0.3em;
+  padding: 1rem;
   display: flex;
   text-align: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
