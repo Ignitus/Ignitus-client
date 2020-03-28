@@ -1,9 +1,19 @@
 import styled from '@emotion/styled';
 import {maximumWidthQuery} from '../../ignitus-Atoms/media';
+import {Heading3} from '../../ignitus-Atoms/typography';
+import {White} from '../../ignitus-Atoms/colors';
 
 type FooterLinkprops = {
   toggle: boolean;
 };
+
+export const StyledHeading = styled(Heading3)`
+  color: ${White};
+
+  ${maximumWidthQuery[1]} {
+    cursor: pointer;
+  }
+`;
 
 export const Footer = styled.footer`
   background-color: #000066;

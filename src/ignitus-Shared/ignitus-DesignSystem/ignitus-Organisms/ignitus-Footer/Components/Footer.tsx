@@ -1,11 +1,11 @@
 /* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {HashLink} from 'react-router-hash-link';
-import {Link} from 'react-router-dom';
-import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import {logo} from '../constants';
+import { Link } from 'react-router-dom';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { logo } from '../constants';
 import * as S from '../styles';
 
 const PureFooter = ({
@@ -18,116 +18,51 @@ const PureFooter = ({
   <S.Footer>
     <S.Container>
       <S.FooterSections>
-        <h5 onClick={() => hideUnhide('featuresToggle')}>Features</h5>
+        <S.StyledHeading onClick={() => hideUnhide('featuresToggle')}>
+          Features
+        </S.StyledHeading>
         <S.FooterLinks toggle={featuresToggle}>
-          <li>
-            <a href="#!">Resume</a>
-          </li>
-
-          <li>
-            <a href="#!">Opportunities</a>
-          </li>
-
-          <li>
-            <a href="#!">Interships</a>
-          </li>
-
-          <li>
-            <a href="#!">OpenSource</a>
-          </li>
+          <li> <a href="#!">Resume</a> </li>
+          <li> <a href="#!">Opportunities</a></li>
+          <li> <a href="#!">Interships</a> </li>
+          <li> <a href="#!">OpenSource</a> </li>
         </S.FooterLinks>
       </S.FooterSections>
 
       <S.FooterSections>
-        <h5 onClick={() => hideUnhide('communityToggle')}>Community</h5>
+        <S.StyledHeading onClick={() => hideUnhide('communityToggle')}>
+          Community
+        </S.StyledHeading>
         <S.FooterLinks toggle={communityToggle}>
-          <li>
-            <a href="#!">Personal</a>
-          </li>
-
-          <li>
-            <a href="#!">Partners</a>
-          </li>
-
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.quora.com/What-are-Ignitus-and-WooTech-about"
-            >
-              Ignitus Woo-Tech
-            </a>
-          </li>
-
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7"
-            >
-              Ignitus Scholar
-            </a>
-          </li>
+           <li> <a href="#!">Personal</a> </li>
+           <li> <a href="#!">Partners</a> </li>
+           <li> <a target="_blank" href="https://www.quora.com/What-are-Ignitus-and-WooTech-about">Ignitus Woo-Tech</a> </li>
+           <li> <a target="_blank" href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7">Ignitus Scholar</a> </li>
         </S.FooterLinks>
       </S.FooterSections>
-
       <S.FooterSections>
         <img src={logo} alt="logo" />
       </S.FooterSections>
 
       <S.FooterSections>
-        <h5 onClick={() => hideUnhide('companyToggle')}>Company</h5>
+        <S.StyledHeading onClick={() => hideUnhide('companyToggle')}>
+          Company
+        </S.StyledHeading>
         <S.FooterLinks toggle={companyToggle}>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/Ignitus.org/"
-            >
-              About
-            </a>
-          </li>
-
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://angel.co/ignitus-2/jobs"
-            >
-              Careers
-            </a>
-          </li>
-
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c"
-            >
-              Blog
-            </a>
-          </li>
+        <li> <a target="_blank" href="https://www.facebook.com/Ignitus.org/">About</a> </li>
+        <li> <a target="_blank" href="https://angel.co/ignitus-2/jobs">Careers</a> </li>
+        <li> <a target="_blank" href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c">Blog</a> </li>
         </S.FooterLinks>
       </S.FooterSections>
 
       <S.FooterSections>
-        <h5 onClick={() => hideUnhide('linkToggle')}>Links</h5>
+        <S.StyledHeading onClick={() => hideUnhide('linkToggle')}>
+          Links
+        </S.StyledHeading>
         <S.FooterLinks toggle={linkToggle}>
-          <li>
-            <HashLink to="/#!">Home</HashLink>
-          </li>
-
-          <li>
-            <HashLink to="/#what-we-do">What we provide?</HashLink>
-          </li>
-
-          <li>
-            <HashLink to="/#contributors">Contributors</HashLink>
-          </li>
-
-          <li>
-            <Link to="/aboutus">About us</Link>
-          </li>
+        <li> <HashLink to="/#!">Home</HashLink> </li>
+        <li> <HashLink to="/#what-we-do">What we Do?</HashLink> </li>
+        <li> <HashLink to="/#contributors">Contributors</HashLink> </li>
         </S.FooterLinks>
       </S.FooterSections>
     </S.Container>
@@ -215,7 +150,6 @@ const PureFooter = ({
         </li>
       </S.FooterSocial>
     </S.Socials>
-
     <S.Copyright>&copy; 2018 Copyright Ignitus</S.Copyright>
   </S.Footer>
 );
