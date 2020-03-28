@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
-export const CardLayoutContainer = styled.nav`
+export const SearchInputContainer = styled.nav`
   padding: 2rem;
 `;

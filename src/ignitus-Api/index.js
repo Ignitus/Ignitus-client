@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-inner-declarations */
 /* eslint-disable no-plusplus */
 

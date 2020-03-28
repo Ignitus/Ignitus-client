@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
-import { mq } from './ignitus-Atoms/media';
+import {mq} from './ignitus-Atoms/media';
+import {Heading3} from './ignitus-Atoms/typography';
 
-export const Title = styled.h3`
-  font-weight: ${F.Normal};
+export const Title = styled(Heading3)`
   color: ${C.IgnitusBlue};
 `;
 
@@ -21,8 +21,8 @@ export const Paragraph = styled.p`
 /* Shared between partners & contirbutors component. */
 
 export const Wrapper = styled.div`
-  margin: 1em;
-  margin-bottom: 2em;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 `;
 
 export const TopSection = styled.section`
