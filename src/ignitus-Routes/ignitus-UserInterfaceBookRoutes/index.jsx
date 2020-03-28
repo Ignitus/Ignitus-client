@@ -107,7 +107,7 @@ const UserInterfaceBookRoutes = () => (
         />
 
         <Route
-          path="/interface/inputFields"
+          path="/interface/searchInput"
           component={interfaceSearchInput}
         />
       </Switch>
