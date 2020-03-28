@@ -171,20 +171,18 @@ const PureFooter = ({
                   <span className="link">Home</span>
                 </HashLink>
               </li>
+              <Link to="/aboutus">
+                  <span className="link">About us</span>
+                </Link>
               <li>
-                <HashLink to="/#what-we-do">
-                  <span className="link">What we provide?</span>
+                <HashLink to="/interface">
+                  <span className="link">Design system</span>
                 </HashLink>
               </li>
               <li>
                 <HashLink to="/#contributors">
                   <span className="link">Contributors</span>
                 </HashLink>
-              </li>
-              <li>
-                <Link to="/aboutus">
-                  <span className="link">About us</span>
-                </Link>
               </li>
             </ul>
           </div>
