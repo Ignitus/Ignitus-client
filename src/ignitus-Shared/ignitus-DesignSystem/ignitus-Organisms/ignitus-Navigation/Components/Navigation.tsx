@@ -14,7 +14,7 @@ const handleSmallerScreen = () => {
   lines.forEach((line) => {
     line.classList.toggle('mobile');
   });
-  navlinks.classList.toggle('mobile');
+  navlinks?.classList.toggle('mobile');
 };
 
 const PureNavigation = ({ displayClass, dynamicLogo }) => (
