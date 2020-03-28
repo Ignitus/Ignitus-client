@@ -8,8 +8,8 @@ export const Container = styled.div`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   border-radius: 20px;
-  width: 80%;
-  padding: 0.5rem;
+  display: flex;
+  margin: 0.5rem;
 `;
 
 export const Row = styled(flexibleRowDiv)``;
@@ -28,6 +28,7 @@ export const RightRow = styled.div`
   flex-direction: column;
   flex: 3;
   margin-left: 20px;
+  padding: 0.5rem;
 `;
 
 export const Description = styled(T.Heading6)`
