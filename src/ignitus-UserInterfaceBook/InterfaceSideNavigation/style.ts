@@ -20,7 +20,7 @@ type SubNestingProps = {
 };
 
 export const NavigationContainer = styled.nav`
-  width: 15rem;
+  width: 16rem;
   padding: 2rem;
   background: ${C.GreyLight};
 `;

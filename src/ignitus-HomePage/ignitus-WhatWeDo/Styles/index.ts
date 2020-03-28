@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { mq } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const Icon = styled.span`
   i { color: ${C.IgnitusBlue};}
@@ -12,7 +12,7 @@ export const Card = styled.div`
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0.5em;
-  padding: 0.3em;
+  padding: 1rem;
   display: flex;
   text-align: center;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -20,15 +20,15 @@ export const Card = styled.div`
   flex-direction: column;
   background: ${C.White};;
 
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     flex: 0 0 85%;
     max-width: 85%;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     flex: 0 0 45.33333%;
     max-width: 45.33333%;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     flex: 0 0 30.33333%;
     max-width: 30.33333%;
   }

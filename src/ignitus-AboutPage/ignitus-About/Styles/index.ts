@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { mq } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { Heading3 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};
@@ -20,16 +20,16 @@ export const AboutContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     max-width: 540px;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     max-width: 720px;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     max-width: 960px;
   }
-  ${mq[3]} {
+  ${minimumWidthQuery[3]} {
     max-width: 1140px;
   }
 `;
@@ -60,7 +60,7 @@ export const ContentContainer = styled.section`
   padding: 1.5rem;
 `;
 
-export const Title = styled(T.Title)`
+export const Title = styled(Heading3)`
   text-align: center;
 `;
 
