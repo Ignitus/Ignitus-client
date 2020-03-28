@@ -8,7 +8,6 @@ import { interfaceNavigation } from '../../ignitus-UserInterfaceBook/Components/
 import { interfaceIcons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIcons/Components';
 import { interfaceTypography } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTypography/Components';
 import { interfaceCards } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCards/Components';
-import { interfaceCardLayout } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceCardLayout/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
 import { interfaceUnderConstruction } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceUnderConstruction/Components';
 import { interfaceColors } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceColors/Components';
@@ -16,7 +15,8 @@ import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/Interfa
 import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
 import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
-import { interfaceDashBoardOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceDashBoardOpportunity/Components';
+import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
+import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 
 const Container = styled.div`
   display:flex;
@@ -68,8 +68,8 @@ const UserInterfaceBookRoutes = () => (
           component={interfaceCards}
         />
         <Route
-          path="/interface/cardLayout"
-          component={interfaceCardLayout}
+          path="/interface/opportunityPosted"
+          component={interfaceOpportunity}
         />
         <Route
           path="/interface/notFound"
@@ -101,8 +101,8 @@ const UserInterfaceBookRoutes = () => (
         />
 
         <Route
-          path="/interface/gridOpportunity"
-          component={interfaceDashBoardOpportunity}
+          path="/interface/opportunitySaved"
+          component={interfaceSavedOpportunity}
         />
       </Switch>
     </LeftRow>

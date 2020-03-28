@@ -172,16 +172,12 @@ export const edges: Edges[] = [
                   route: '/interface/opportunityPosted',
                 },
                 {
-                  title: 'Grid Opportunity Saved',
-                  route: '/interface/gridOpportunity',
+                  title: 'Saved Opportunity',
+                  route: '/interface/opportunitySaved',
                 },
                 {
-                  title: 'List Opportunity Saved',
-                  route: '/interface/listSaved',
-                },
-                {
-                  title: 'Profile',
-                  route: '/interface/profileLayout',
+                  title: 'User Profile',
+                  route: '/interface/userProfile',
                 },
               ],
             },

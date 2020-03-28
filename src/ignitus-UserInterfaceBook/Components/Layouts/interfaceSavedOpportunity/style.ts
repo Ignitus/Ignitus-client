@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 export const Grid = styled.div`
