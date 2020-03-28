@@ -5,9 +5,9 @@ import {OpportunitiesSavedContainer} from '../style';
 
 const interfaceOpportunitiesSaved = () => (
   <OpportunitiesSavedContainer>
-  <StyledHeading2>Opportunities Saved Layout ★</StyledHeading2>
+    <StyledHeading2>Opportunities Saved Layout ★</StyledHeading2>
     <hr />
-  <OpportunitySavedLayout />
+    <OpportunitySavedLayout />
   </OpportunitiesSavedContainer>
 );
 
