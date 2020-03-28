@@ -13,9 +13,9 @@ const PureTeam = ({contributors}: any) => (
           <S.Plus />
           {contributors.length} Contributors
         </S.GithubContributorsTitle>
-        <S.Paragraph>
+        <S.StyledParagraph>
           This project was made possible by these contributors. 🎉 🎨
-        </S.Paragraph>
+        </S.StyledParagraph>
       </S.TitleWrapper>
       <S.GithubContributors>
         <S.Contributors>{contributors}</S.Contributors>
