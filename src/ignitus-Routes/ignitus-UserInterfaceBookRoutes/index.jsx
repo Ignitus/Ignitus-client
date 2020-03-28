@@ -17,6 +17,7 @@ import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/At
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
 import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
+import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 
 const Container = styled.div`
   display:flex;
@@ -104,9 +105,13 @@ const UserInterfaceBookRoutes = () => (
           path="/interface/opportunitySaved"
           component={interfaceSavedOpportunity}
         />
+
+        <Route
+          path="/interface/searchInput"
+          component={interfaceSearchInput}
+        />
       </Switch>
     </LeftRow>
-
   </Container>
 );
 
