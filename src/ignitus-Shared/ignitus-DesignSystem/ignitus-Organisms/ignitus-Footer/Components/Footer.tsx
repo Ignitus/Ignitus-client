@@ -61,6 +61,7 @@ const PureFooter = ({
         <S.FooterLinks toggle={linkToggle}>
         <li> <HashLink to="/#!">Home</HashLink> </li>
         <li> <HashLink to="/#what-we-do">What we Do?</HashLink> </li>
+        <li> <HashLink to="/interface">Design System</HashLink> </li>
         <li> <HashLink to="/#contributors">Contributors</HashLink> </li>
         </S.FooterLinks>
       </S.FooterSections>
