@@ -1,22 +1,24 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Redirect, Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import {Props, userRole, authType} from '../types';
+import {isEmpty} from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import * as t from '../constants';
-import loader from '../../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import { withErrorBoundary } from '../../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import { isEmpty } from '../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 
-const SharedLogin = ({
-  loginType, tagline, handleSubmit, logInData, state, setState,
+const SharedAuthComponent: FunctionComponent<Props> = ({
+  authenticationType,
+  role,
+  handleSubmit,
+  state,
+  setState,
+  authenticationData,
 }) => {
-  const {
-    email, password, emptyMessage, invalidEmail, showPassword,
-  } = state;
-  const isStudent = loginType === 'Student';
-  const { isFetching, message, success } = logInData;
+
+  const alternateRole: userRole = (role === 'Student') ? 'Professor' : 'Student';
+  const alternateAuth: authType = (authenticationType === 'LogIn') ? 'SignUp' : 'LogIn';
+  const authRedirectText: string = (authenticationType === 'LogIn') ? `Don't have an account?` : `Already have an account?`;
+  const {isFetching, message, success} = authenticationData;
 
   if (isFetching) {
     return (
@@ -28,29 +30,31 @@ const SharedLogin = ({
     );
   }
 
-  if (success) return <Redirect to="/dashboard" />;
+  if (authenticationType === 'LogIn' && success) {
+    return <Redirect to="/dashboard" />;
+  }
 
   return (
-
     <div className="col-lg-12 container-bg">
       <div className="col-lg-8 container-custom p-5">
         <div className="row shadow border-rad">
           <div className="col-md-6 p-0 container-image">
-
             <img
-              alt={`${isStudent ? 'Student ' : 'Professor '}auth`}
+              alt={`${role}auth`}
               className="img-fluid img-login d-block"
-              src={isStudent ? t.studentAuth : t.professorAuth}
+              src={(role === 'Student') ? t.studentAuth : t.professorAuth}
             />
 
             <div className="text-below-image text-center">
               <p className="mb-5">Let&apos;s get started</p>
-              <p>{tagline}</p>
+              <p>Skyrocket your career with best global opportunities. 🎓</p>
               <p>
-                <Link to={`/login/${isStudent ? 'professor' : 'student'}`} className="text-center linkform">
+                <Link
+                  to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`}
+                  className="text-center linkform"
+                >
                   {' '}
-                  I am a
-                  {isStudent ? ' Professor' : ' Student'}
+                  I am a {alternateRole}
                 </Link>
               </p>
             </div>
@@ -63,16 +67,26 @@ const SharedLogin = ({
                 alt="Ignitus Logo"
               />
             </div>
-            {!isEmpty(message) && (
+
+            {/* SIGNUP SUCCESS */}
+            {authenticationType === 'SignUp' && success && (
+              <div className="alert alert-success margin-Top">
+                <strong>Success!</strong> Please login!.
+              </div>
+            )}
+
+            {!success && !isEmpty(message) && (
               <div className="alert alert-danger margin-Top">
                 <strong>{message}</strong>
               </div>
             )}
-            {emptyMessage && (
+
+            {state.emptyMessage && (
               <div className="alert alert-danger margin-Top">
                 <strong>Please fill the form to proceed!</strong>
               </div>
             )}
+
             <form>
               <div className="px-4">
                 <div className="input-group form-group mb-2">
@@ -87,9 +101,8 @@ const SharedLogin = ({
                     id="email"
                     className="form-control"
                     placeholder="Email"
-                    // eslint-disable-next-line react/destructuring-assignment
-                    value={email}
-                    onChange={(e) => {
+                    value={state.email}
+                    onChange={e => {
                       setState({
                         ...state,
                         email: e.target.value,
@@ -98,11 +111,9 @@ const SharedLogin = ({
                     required
                   />
                 </div>
-                {invalidEmail && (
+                {state.invalidEmail && (
                   <div className="text-danger small mb-2">
-                    <strong>Please </strong>
-                    {' '}
-                    input a valid mail!
+                    <strong>Please </strong> input a valid mail!
                   </div>
                 )}
                 <div className="input-group form-group mb-2">
@@ -113,12 +124,12 @@ const SharedLogin = ({
                   </div>
                   <input
                     name="password"
-                    type={showPassword ? 'text' : 'password'}
+                    type={state.showPassword ? 'text' : 'password'}
                     id="pass"
                     className="form-control"
                     placeholder="Password"
-                    value={password}
-                    onChange={(e) => {
+                    value={state.password}
+                    onChange={e => {
                       setState({
                         ...state,
                         password: e.target.value,
@@ -136,24 +147,54 @@ const SharedLogin = ({
                         });
                       }}
                     >
-                      {!showPassword && (
+                      {!state.showPassword && (
                         <i className="fa fa-eye-slash" aria-hidden="true" />
                       )}
-                      {showPassword && (
+                      {state.showPassword && (
                         <i className="fa fa-eye" aria-hidden="true" />
                       )}
                     </span>
                   </div>
                 </div>
+                {/* SIGNUP CONFIRM PASSWORD */}
+                {authenticationType === 'SignUp' && (
+                  <>
+                    <div className="input-group form-group mb-2">
+                      <div className="input-group-prepend">
+                        <span className="input-group-text span-bg">
+                          <i className="fa fa-key fa-fw key-color" />
+                        </span>
+                      </div>
+                      <input
+                        type={state.showPassword ? 'text' : 'password'}
+                        id="confirmPass"
+                        className="form-control password-border"
+                        placeholder="Confirm Password"
+                        required
+                        value={state.confirmPassword}
+                        onChange={e =>
+                          setState({...state, confirmPassword: e.target.value})
+                        }
+                      />
+                    </div>
+
+                    {state.equalmessage && (
+                      <div className="text-danger small mb-1">
+                        <strong>Password </strong> does not match the confirm
+                        password.!
+                      </div>
+                    )}
+                  </>
+                )}
               </div>
+
               <div className="text-center mb-3 mt-3">
                 <button
                   type="button"
                   className="btn btn-success btn-rounded button-bg px-3 py-2"
                   onClick={e => handleSubmit(e)}
                 >
-                  Sign in as&nbsp;
-                  {loginType}
+                  {authenticationType} as {role}
                 </button>
               </div>
               <div className="or-seperator">
@@ -170,11 +211,13 @@ const SharedLogin = ({
               </div>
               <div className="text-center mb-3 mt-3">
                 <div>
-                  Don&apos;t have an account?
-                  {' '}
-                  <Link to={`/signup/${isStudent ? 'student' : 'professor'}`} className="text-center linkform">
+                  {authRedirectText}{' '}
+                  <Link
+                    to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
+                    className="text-center linkform"
+                  >
                     {' '}
-                    Sign Up
+                    {alternateAuth}
                   </Link>
                 </div>
               </div>
@@ -186,23 +229,6 @@ const SharedLogin = ({
   );
 };
 
-SharedLogin.propTypes = {
-  loginType: PropTypes.string.isRequired,
-  tagline: PropTypes.string.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
-  logInData: PropTypes.shape({
-    isFetching: PropTypes.bool.isRequired,
-    message: PropTypes.string.isRequired,
-    success: PropTypes.bool.isRequired,
-  }).isRequired,
-  state: PropTypes.shape({
-    email: PropTypes.string.isRequired,
-    password: PropTypes.string.isRequired,
-    emptyMessage: PropTypes.bool.isRequired,
-    invalidEmail: PropTypes.bool.isRequired,
-    showPassword: PropTypes.bool.isRequired,
-  }).isRequired,
-  setState: PropTypes.func.isRequired,
-};
-
-export default withErrorBoundary(SharedLogin);
+export const SharedAuthentication: FunctionComponent<Props> = withErrorBoundary(
+  SharedAuthComponent,
+);
