@@ -4,12 +4,14 @@ import {
   isEmpty,
   isEqual,
 } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import SharedSignup from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/Components/SharedSignUp';
-import { statePayLoad } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/constants';
+import {withErrorBoundary} from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {
+  SharedAuthentication,
+  SignupStatePayload,
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
 
 const Signup = ({signUpRequest, studentSignUpData}) => {
-  const [state, setState] = useState({...statePayLoad});
+  const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
 
   const handleSubmit = e => {
@@ -20,7 +22,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         ...state,
         emptyMessage: true,
       });
-      return; 
+      return;
     }
 
     if (typeof email !== 'undefined') {
@@ -66,13 +68,13 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
   };
 
   return (
-    <SharedSignup
-      signUpType="Student"
-      tagline="Skyrocket your career with best global opportunities"
-      handleSubmit={handleSubmit}
-      signUpData={studentSignUpData}
+    <SharedAuthentication
+      authenticationType="SignUp"
+      role="Student"
       state={state}
       setState={setState}
+      authenticationData={studentSignUpData}
+      handleSubmit={handleSubmit}
     />
   );
 };

@@ -1,8 +1,8 @@
+/* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage5.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
@@ -19,7 +19,7 @@ import {
 const EmailFlow = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src={progress} alt="progress-bar" />
+      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png" alt="progress-bar" />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <Heading2>Let’s confirm your email.</Heading2>
       <Paragraph>
