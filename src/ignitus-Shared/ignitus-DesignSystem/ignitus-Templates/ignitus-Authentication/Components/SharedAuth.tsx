@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ComponentState } from 'react';
+import React, { FunctionComponent } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import * as t from '../helpers/Constants';
