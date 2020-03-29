@@ -1,4 +1,4 @@
-import { ComponentState } from 'react';
+import {ComponentState} from 'react';
 
 export type userRole = 'Student' | 'Professor';
 export type authType = 'Login' | 'Signup';

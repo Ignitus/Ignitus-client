@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
@@ -55,7 +56,6 @@ const Login = ({ logInRequest, studentLoginData }) => {
     <SharedAuthentication
       authenticationType="Login"
       tagline="Skyrocket your career with best global opportunities"
-      // eslint-disable-next-line jsx-a11y/aria-role
       role="Student"
       handleSubmit={handleSubmit}
       state={state}

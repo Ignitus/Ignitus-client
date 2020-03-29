@@ -4,7 +4,7 @@ import {
   isEmpty,
   isEqual,
 } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   SharedAuthentication,
   SignupStatePayload,

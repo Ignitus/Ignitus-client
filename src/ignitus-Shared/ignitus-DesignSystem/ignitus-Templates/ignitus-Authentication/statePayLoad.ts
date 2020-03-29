@@ -1,7 +1,7 @@
 import {
   LoginState,
   SignupState
-} from './AuthTypes';
+} from './types';
 
 export const LoginStatePayload: LoginState = {
   email: '',

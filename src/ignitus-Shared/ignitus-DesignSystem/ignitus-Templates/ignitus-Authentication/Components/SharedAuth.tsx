@@ -1,34 +1,28 @@
 import React, { FunctionComponent } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import * as t from '../helpers/Constants';
-import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import {
-  Props, userRole, authType
-} from '../helpers/AuthTypes';
-import { isEmpty } from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import {Props, userRole, authType} from '../types';
+import {isEmpty} from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import * as t from '../Constants';
 
 const SharedAuthComponent: FunctionComponent<Props> = ({
-  authenticationType, role, tagline, handleSubmit, state, setState, authenticationData
+  authenticationType,
+  role,
+  tagline,
+  handleSubmit,
+  state,
+  setState,
+  authenticationData,
 }) => {
-  const alternateRole: userRole = role === 'Student' ? 'Professor' : 'Student';
 
-  const isStudent = role === 'Student';
-
-  const authSuffix = authenticationType === 'Login' ? 'in' : 'up';
-
-  const beautifiedAuth = authenticationType === 'Login' ? 'Log In' : 'Sign Up';
-
-  const alternateAuth: authType = authenticationType === 'Login' ? 'Signup' : 'Login';
-
-  const authRedirectText = (
-    authenticationType === 'Login' ? `Don't have an account?`
-      : `Already have an account?`
-  );
-
-  const {
-    isFetching, message, success
-  } = authenticationData;
+  const alternateRole: userRole = (role === 'Student') ? 'Professor' : 'Student';
+  const isStudent = (role === 'Student');
+  const authSuffix = (authenticationType === 'Login') ? 'in' : 'up';
+  const beautifiedAuth = (authenticationType === 'Login') ? 'Log In' : 'Sign Up';
+  const alternateAuth: authType = (authenticationType === 'Login') ? 'Signup' : 'Login';
+  const authRedirectText = (authenticationType === 'Login') ? `Don't have an account?` : `Already have an account?`;
+  const {isFetching, message, success} = authenticationData;
 
   if (isFetching) {
     return (
@@ -41,7 +35,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
   }
 
   if (authenticationType === 'Login' && success) {
-    return <Redirect to="/dashboard" />
+    return <Redirect to="/dashboard" />;
   }
 
   return (
@@ -49,7 +43,6 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
       <div className="col-lg-8 container-custom p-5">
         <div className="row shadow border-rad">
           <div className="col-md-6 p-0 container-image">
-
             <img
               alt={`${role}auth`}
               className="img-fluid img-login d-block"
@@ -60,10 +53,12 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
               <p className="mb-5">Let&apos;s get started</p>
               <p>{tagline}</p>
               <p>
-                <Link to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`} className="text-center linkform">
+                <Link
+                  to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`}
+                  className="text-center linkform"
+                >
                   {' '}
-                  I am a{' '}
-                  {alternateRole}
+                  I am a {alternateRole}
                 </Link>
               </p>
             </div>
@@ -80,9 +75,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
             {/* SIGNUP SUCCESS */}
             {authenticationType === 'Signup' && success && (
               <div className="alert alert-success margin-Top">
-                <strong>Success!</strong>
-                {' '}
-                Please login!.
+                <strong>Success!</strong> Please login!.
               </div>
             )}
 
@@ -113,7 +106,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                     className="form-control"
                     placeholder="Email"
                     value={state.email}
-                    onChange={(e) => {
+                    onChange={e => {
                       setState({
                         ...state,
                         email: e.target.value,
@@ -124,9 +117,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                 </div>
                 {state.invalidEmail && (
                   <div className="text-danger small mb-2">
-                    <strong>Please </strong>
-                    {' '}
-                    input a valid mail!
+                    <strong>Please </strong> input a valid mail!
                   </div>
                 )}
                 <div className="input-group form-group mb-2">
@@ -142,7 +133,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                     className="form-control"
                     placeholder="Password"
                     value={state.password}
-                    onChange={(e) => {
+                    onChange={e => {
                       setState({
                         ...state,
                         password: e.target.value,
@@ -185,22 +176,21 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                         placeholder="Confirm Password"
                         required
                         value={state.confirmPassword}
-                        onChange={e => setState({ ...state, confirmPassword: e.target.value })}
+                        onChange={e =>
+                          setState({...state, confirmPassword: e.target.value})
+                        }
                       />
                     </div>
 
                     {state.equalmessage && (
                       <div className="text-danger small mb-1">
-                        <strong>Password </strong>
-                        {' '}
-                        does not match the confirm password.!
-                    </div>
+                        <strong>Password </strong> does not match the confirm
+                        password.!
+                      </div>
                     )}
                   </>
                 )}
               </div>
-
-
 
               <div className="text-center mb-3 mt-3">
                 <button
@@ -208,9 +198,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                   className="btn btn-success btn-rounded button-bg px-3 py-2"
                   onClick={e => handleSubmit(e)}
                 >
-                  Sign {authSuffix} as
-                  {' '}
-                  {role}
+                  Sign {authSuffix} as {role}
                 </button>
               </div>
               <div className="or-seperator">
@@ -227,9 +215,11 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
               </div>
               <div className="text-center mb-3 mt-3">
                 <div>
-                  {authRedirectText}
-                  {' '}
-                  <Link to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`} className="text-center linkform">
+                  {authRedirectText}{' '}
+                  <Link
+                    to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
+                    className="text-center linkform"
+                  >
                     {' '}
                     {beautifiedAuth}
                   </Link>
@@ -243,4 +233,6 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
   );
 };
 
-export const SharedAuthentication: FunctionComponent<Props> = withErrorBoundary(SharedAuthComponent);
+export const SharedAuthentication: FunctionComponent<Props> = withErrorBoundary(
+  SharedAuthComponent,
+);
