@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 class dashBoardHeader extends React.Component {
@@ -37,7 +39,12 @@ class dashBoardHeader extends React.Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg whitenav">
           <HashLink className="navbar-brand" to="/#">
-            <img src={logo} width="40" height="40" alt="logo" />
+            <img
+              src="https://storage.googleapis.com/ignitus_assets/ig-logo/ignitusBlue.svg"
+              width="40"
+              height="40"
+              alt="logo"
+            />
           </HashLink>
           <button
             className="navbar-toggler"
@@ -56,7 +63,6 @@ class dashBoardHeader extends React.Component {
                 <HashLink smooth to="/#">
                   <span className="nav-link">
                     Home
-                    {' '}
                     <span className="sr-only">(current)</span>
                   </span>
                 </HashLink>

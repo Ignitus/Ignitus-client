@@ -18,6 +18,7 @@ export const StyledHeading = styled(Heading3)`
 export const Footer = styled.footer`
   background-color: ${IgnitusBlue};
   padding-bottom: 1rem;
+  padding-top: 2rem;
 `;
 
 export const Container = styled.div`
@@ -95,7 +96,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
 `;
 
 export const Socials = styled.div`
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: max-content;
 `;
 
