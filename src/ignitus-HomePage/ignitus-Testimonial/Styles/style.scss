@@ -1,26 +1,28 @@
 @import './src/ignitus-Shared/styles/ignitus-tokens';
 @import './src/ignitus-Shared/styles/ignitus-mixins';
+$ignite-font-family-default: 'Raleway', sans-serif;
+$ignite-color-blue-24: #192b65;
+$ignite-font-weight-semibold: 600;
+$ignite-font-size-sm: 16px;
 
 .testimonial {
-  margin: 0;
-
   .testimonials-title {
+    font-family: $ignite-font-family-default;
     text-align: center;
-    font-family: Raleway;
   }
 
   .testimonial-wrapper {
-    margin: 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    margin: 0;
     flex-direction: column;
+    justify-content: center;
   }
 
   .carousel-content {
     padding: 1em;
-    width: 70%;
     text-align: center;
+    width: 70%;
   }
 
   .text {
@@ -28,7 +30,6 @@
   }
 
   .text p {
-    text-align: center;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
@@ -36,22 +37,21 @@
   }
 
   .text::before {
-    position: absolute;
-    font-family: 'FontAwesome';
+    color: $ignite-color-blue-24;
     content: '\f10d';
-
-    top: -30%;
+    font-family: 'FontAwesome';
     left: 19%;
-    color: #192b65;
+    position: absolute;
+    top: -30%;
   }
 
   .text::after {
-    position: absolute;
-    font-family: 'FontAwesome';
     content: '\f10e';
+    color: $ignite-color-blue-24;
+    font-family: 'FontAwesome';
+    position: absolute;
     right: 19%;
     top: 60%;
-    color: #192b65;
   }
 
   .avatar {
@@ -64,15 +64,15 @@
   }
 
   .name {
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 0em;
     font-size: 18px;
+    font-weight: $ignite-font-weight-semibold;
+    margin-bottom: 0;
+    text-align: center;
   }
 
   .designation {
+    font-size: $ignite-font-size-sm;
     text-align: center;
-    font-size: 16px;
   }
 
   .nav-avatar {
