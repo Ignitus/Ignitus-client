@@ -2,11 +2,13 @@
 import React, { useState } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/constants';
-import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedLogin/Components/SharedLogin';
+import {
+  SharedAuthentication,
+  LoginStatePayload,
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index.ts';
 
 const Login = ({ logInRequest, studentLoginData }) => {
-  const [state, setState] = useState(statePayload);
+  const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
   const handleSubmit = (e) => {
@@ -50,14 +52,15 @@ const Login = ({ logInRequest, studentLoginData }) => {
   };
 
   return (
-
-    <SharedLogin
-      loginType="Student"
+    <SharedAuthentication
+      authenticationType="Login"
       tagline="Skyrocket your career with best global opportunities"
+      // eslint-disable-next-line jsx-a11y/aria-role
+      role="Student"
       handleSubmit={handleSubmit}
-      logInData={studentLoginData}
       state={state}
       setState={setState}
+      authenticationData={studentLoginData}
     />
   );
 };

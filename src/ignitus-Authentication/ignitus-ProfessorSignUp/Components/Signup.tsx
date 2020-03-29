@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import SharedSignup from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/Components/SharedSignUp';
-import { statePayLoad } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-SharedAuthentication/ignitus-sharedSignUp/constants';
+import {
+  SharedAuthentication,
+  SignupStatePayload,
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import '../Styles/style.scss';
+// import '../Styles/style.scss';
 
 /*
   Core functionality of Professor signup is not implemented yet.
@@ -15,19 +17,22 @@ const SignUp = () => {
     success: undefined, // red/green box showing above email, if set true/false
   };
 
-  const [state, setState] = useState(statePayLoad);
+  const [state, setState] = useState(SignupStatePayload);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
-    <SharedSignup
-      signUpType="Professor"
+    <SharedAuthentication
+      authenticationType="Signup"
       tagline="Help providing opportunities to your students"
+      // eslint-disable-next-line jsx-a11y/aria-role
+      role="Professor"
       state={state}
       setState={setState}
       handleSubmit={handleSubmit}
-      signUpData={professorSignUpData}
+      authenticationData={professorSignUpData}
     />
   );
 };
