@@ -22,9 +22,8 @@ const Login: FunctionComponent = () => {
 
   return (
     <SharedAuthentication
-      authenticationType="Login"
+      authenticationType="LogIn"
       role="Professor"
-      tagline="Help providing opportunities for your students."
       authenticationData={professorLogInData}
       handleSubmit={handleSubmit}
       state={state}

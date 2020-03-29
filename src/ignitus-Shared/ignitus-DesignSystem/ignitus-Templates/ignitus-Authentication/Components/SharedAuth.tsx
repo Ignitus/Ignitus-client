@@ -4,12 +4,11 @@ import loader from '../../../ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import {Props, userRole, authType} from '../types';
 import {isEmpty} from '../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import * as t from '../Constants';
+import * as t from '../constants';
 
 const SharedAuthComponent: FunctionComponent<Props> = ({
   authenticationType,
   role,
-  tagline,
   handleSubmit,
   state,
   setState,
@@ -17,11 +16,8 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
 }) => {
 
   const alternateRole: userRole = (role === 'Student') ? 'Professor' : 'Student';
-  const isStudent = (role === 'Student');
-  const authSuffix = (authenticationType === 'Login') ? 'in' : 'up';
-  const beautifiedAuth = (authenticationType === 'Login') ? 'Log In' : 'Sign Up';
-  const alternateAuth: authType = (authenticationType === 'Login') ? 'Signup' : 'Login';
-  const authRedirectText = (authenticationType === 'Login') ? `Don't have an account?` : `Already have an account?`;
+  const alternateAuth: authType = (authenticationType === 'LogIn') ? 'SignUp' : 'LogIn';
+  const authRedirectText: string = (authenticationType === 'LogIn') ? `Don't have an account?` : `Already have an account?`;
   const {isFetching, message, success} = authenticationData;
 
   if (isFetching) {
@@ -34,7 +30,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
     );
   }
 
-  if (authenticationType === 'Login' && success) {
+  if (authenticationType === 'LogIn' && success) {
     return <Redirect to="/dashboard" />;
   }
 
@@ -46,12 +42,12 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
             <img
               alt={`${role}auth`}
               className="img-fluid img-login d-block"
-              src={isStudent ? t.studentAuth : t.professorAuth}
+              src={(role === 'Student') ? t.studentAuth : t.professorAuth}
             />
 
             <div className="text-below-image text-center">
               <p className="mb-5">Let&apos;s get started</p>
-              <p>{tagline}</p>
+              <p>Skyrocket your career with best global opportunities. 🎓</p>
               <p>
                 <Link
                   to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`}
@@ -73,7 +69,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
             </div>
 
             {/* SIGNUP SUCCESS */}
-            {authenticationType === 'Signup' && success && (
+            {authenticationType === 'SignUp' && success && (
               <div className="alert alert-success margin-Top">
                 <strong>Success!</strong> Please login!.
               </div>
@@ -161,7 +157,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                   </div>
                 </div>
                 {/* SIGNUP CONFIRM PASSWORD */}
-                {authenticationType === 'Signup' && (
+                {authenticationType === 'SignUp' && (
                   <>
                     <div className="input-group form-group mb-2">
                       <div className="input-group-prepend">
@@ -198,7 +194,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                   className="btn btn-success btn-rounded button-bg px-3 py-2"
                   onClick={e => handleSubmit(e)}
                 >
-                  Sign {authSuffix} as {role}
+                  {authenticationType} as {role}
                 </button>
               </div>
               <div className="or-seperator">
@@ -221,7 +217,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
                     className="text-center linkform"
                   >
                     {' '}
-                    {beautifiedAuth}
+                    {alternateAuth}
                   </Link>
                 </div>
               </div>

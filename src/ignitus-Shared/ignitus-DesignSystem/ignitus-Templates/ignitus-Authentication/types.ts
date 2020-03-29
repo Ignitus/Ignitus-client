@@ -1,7 +1,7 @@
 import {ComponentState} from 'react';
 
 export type userRole = 'Student' | 'Professor';
-export type authType = 'Login' | 'Signup';
+export type authType = 'LogIn' | 'SignUp';
 
 export interface authData {
   isFetching: boolean;
@@ -23,9 +23,8 @@ export interface SignupState extends LoginState {
 }
 
 export interface Props {
-  authenticationType: 'Login' | 'Signup';
+  authenticationType: 'LogIn' | 'SignUp';
   role: userRole;
-  tagline: string;
   handleSubmit: Function;
   state: ComponentState;
   setState: Function;

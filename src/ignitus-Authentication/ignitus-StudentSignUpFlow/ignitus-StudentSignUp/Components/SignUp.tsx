@@ -69,8 +69,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
 
   return (
     <SharedAuthentication
-      authenticationType="Signup"
-      tagline="Skyrocket your career with best global opportunities"
+      authenticationType="SignUp"
       role="Student"
       state={state}
       setState={setState}

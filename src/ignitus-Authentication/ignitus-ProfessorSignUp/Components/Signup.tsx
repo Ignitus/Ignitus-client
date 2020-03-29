@@ -25,8 +25,7 @@ const SignUp = () => {
 
   return (
     <SharedAuthentication
-      authenticationType="Signup"
-      tagline="Help providing opportunities to your students"
+      authenticationType="SignUp"
       // eslint-disable-next-line jsx-a11y/aria-role
       role="Professor"
       state={state}

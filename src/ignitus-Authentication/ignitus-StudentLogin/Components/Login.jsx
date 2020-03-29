@@ -54,8 +54,7 @@ const Login = ({ logInRequest, studentLoginData }) => {
 
   return (
     <SharedAuthentication
-      authenticationType="Login"
-      tagline="Skyrocket your career with best global opportunities"
+      authenticationType="LogIn"
       role="Student"
       handleSubmit={handleSubmit}
       state={state}
