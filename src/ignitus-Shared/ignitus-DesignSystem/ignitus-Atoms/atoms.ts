@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
-import { mq } from './media';
+import { minimumWidthQuery } from './media';
 
 export const Separator = styled.hr`
   display: block;
@@ -41,16 +41,16 @@ export const BottomSection = styled.section`
   padding: 0 15px 0 15px;
   margin: 0 auto 0 auto;
 
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     max-width: 540px;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     max-width: 720px;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     max-width: 960px;
   }
-  ${mq[3]} {
+  ${minimumWidthQuery[3]} {
     max-width: 1140px;
   }
 `;
@@ -64,16 +64,16 @@ export const BottomRow = styled.div`
 
 // We plan to use Container as parent element of in lot of components.
 export const Container = styled.div`
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     max-width: 540px;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     max-width: 720px;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     max-width: 960px;
   }
-  ${mq[3]} {
+  ${minimumWidthQuery[3]} {
     max-width: 1140px;
   }
 `;

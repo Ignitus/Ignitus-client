@@ -32,7 +32,7 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
 
   return (
     <div className="testimonial">
-      <div className="testimonials-title title">Testimonials</div>
+      <div className="testimonials-title">Testimonials</div>
       <div className="testimonial-wrapper">
         <div className="left-arrow arrow" onClick={prevTestimonial}>
           <i className="fa fa-arrow-left" />

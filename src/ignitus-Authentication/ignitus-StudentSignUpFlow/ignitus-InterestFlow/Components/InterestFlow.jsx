@@ -30,7 +30,7 @@ const InterestFlow = () => (
         {' '}
         <form>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="User Interest" value="true" />
+            <DefaultCheckbox label="Opportunities" value="true" />
           </C.CheckboxContainer>
           <C.CheckboxContainer>
             <DefaultCheckbox label="Build Network" value="true" />
@@ -39,7 +39,7 @@ const InterestFlow = () => (
             <DefaultCheckbox label="Read Blogs" value="true" />
           </C.CheckboxContainer>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="User Interest" value="true" />
+            <DefaultCheckbox label="All of these" value="true" />
           </C.CheckboxContainer>
         </form>
       </C.LeftSection>
