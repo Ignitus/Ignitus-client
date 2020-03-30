@@ -1,4 +1,4 @@
-import React, {FunctionComponent, ComponentState} from 'react';
+import React, {FunctionComponent} from 'react';
 import {Link} from 'react-router-dom';
 
 import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
