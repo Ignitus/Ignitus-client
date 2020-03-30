@@ -2,10 +2,10 @@ import React, {FunctionComponent} from 'react';
 import {Redirect} from 'react-router-dom';
 import {
   Wrapper,
-  Information,
+  SideWrapper,
   Form,
   Loader,
-} from './partials';
+} from './SplittedComponents';
 import {Props, userRole, authType} from '../types';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
@@ -30,7 +30,7 @@ const SharedAuthComponent: FunctionComponent<Props> = (props:Props) => {
 
   return (
     <Wrapper>
-      <Information
+      <SideWrapper
         role={role}
         authenticationType={authenticationType}
         alternateRole={alternateRole}

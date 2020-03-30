@@ -1,12 +1,12 @@
 import React, {FunctionComponent, ComponentState} from 'react';
 import {Link} from 'react-router-dom';
-import * as t from '../../constants';
-import {isEmpty} from '../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import * as t from '../../../constants';
+import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 import {
   authType,
   userRole,
   authData,
-} from '../../types';
+} from '../../../types';
 
 interface FormProps {
   role: userRole;

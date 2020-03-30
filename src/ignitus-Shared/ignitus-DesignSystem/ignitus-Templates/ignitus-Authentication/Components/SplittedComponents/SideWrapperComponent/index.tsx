@@ -1,19 +1,15 @@
-import React, { FunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
-import * as t from '../../constants';
-import {
-  userRole,
-  authType,
-} from '../../types';
+import React, {FunctionComponent} from 'react';
+import {Link} from 'react-router-dom';
+import * as t from '../../../constants';
+import {userRole, authType} from '../../../types';
 
-
-interface InformationProps {
+interface SideWrapperProps {
   role: userRole;
   authenticationType: authType;
   alternateRole: userRole;
 }
 
-export const Information: FunctionComponent<InformationProps> = ({
+export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
   role,
   authenticationType,
   alternateRole,
@@ -22,7 +18,9 @@ export const Information: FunctionComponent<InformationProps> = ({
     <img
       alt={`${role}auth`}
       className="img-fluid img-login d-block"
-      src={(role === 'Student') ? t.studentAuthentication : t.professorAuthentication}
+      src={
+        role === 'Student' ? t.studentAuthentication : t.professorAuthentication
+      }
     />
 
     <div className="text-below-image text-center">
