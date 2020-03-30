@@ -6,7 +6,7 @@ import { Heading3 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-A
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};
   font-size: ${F.SM};
-  background: url('https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_split-blue-background.png')
+  background: url('https://storage.googleapis.com/ignitus_assets/ig-assets/splitBlueBackground.png')
     no-repeat;
   background-size: 70%;
   background-position: top right;
