@@ -19,6 +19,8 @@ import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 
+import { interfaceOverlay } from '../../ignitus-UserInterfaceBook/Components/Molecules/Overlay/Components';
+
 const Container = styled.div`
   display:flex;
   flex-direction: row;
@@ -109,6 +111,10 @@ const UserInterfaceBookRoutes = () => (
         <Route
           path="/interface/searchInput"
           component={interfaceSearchInput}
+        />
+         <Route
+          path="/interface/overlay"
+          component={interfaceOverlay}
         />
       </Switch>
     </LeftRow>
