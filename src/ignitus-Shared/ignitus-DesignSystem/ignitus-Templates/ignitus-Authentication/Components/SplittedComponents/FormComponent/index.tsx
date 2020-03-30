@@ -1,23 +1,9 @@
 import React, {FunctionComponent, ComponentState} from 'react';
 import {Link} from 'react-router-dom';
-import * as t from '../../../constants';
-import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
-import {
-  authType,
-  userRole,
-  authData,
-} from '../../../types';
 
-interface FormProps {
-  role: userRole;
-  authenticationType: authType;
-  alternateAuth: authType;
-  authRedirectText: string;
-  state: ComponentState;
-  setState: Function;
-  authenticationData: authData;
-  handleSubmit: Function;
-}
+import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import {FormProps} from '../../../types';
+import * as t from '../../../constants';
 
 export const Form: FunctionComponent<FormProps> = ({
   role,
@@ -27,7 +13,7 @@ export const Form: FunctionComponent<FormProps> = ({
   state,
   setState,
   authenticationData,
-  handleSubmit
+  handleSubmit,
 }) => {
   const {message, success} = authenticationData;
   return (
@@ -44,7 +30,7 @@ export const Form: FunctionComponent<FormProps> = ({
       {authenticationType === 'SignUp' && success && (
         <div className="alert alert-success margin-Top">
           <strong>Success!</strong> Please login!.
-    </div>
+        </div>
       )}
 
       {!success && !isEmpty(message) && (
@@ -86,7 +72,7 @@ export const Form: FunctionComponent<FormProps> = ({
           {state.invalidEmail && (
             <div className="text-danger small mb-2">
               <strong>Please </strong> input a valid mail!
-        </div>
+            </div>
           )}
           <div className="input-group form-group mb-2">
             <div className="input-group-prepend">
@@ -145,7 +131,7 @@ export const Form: FunctionComponent<FormProps> = ({
                   required
                   value={state.confirmPassword}
                   onChange={e =>
-                    setState({ ...state, confirmPassword: e.target.value })
+                    setState({...state, confirmPassword: e.target.value})
                   }
                 />
               </div>
@@ -154,7 +140,7 @@ export const Form: FunctionComponent<FormProps> = ({
                 <div className="text-danger small mb-1">
                   <strong>Password </strong> does not match the confirm
                   password.!
-            </div>
+                </div>
               )}
             </>
           )}
@@ -179,7 +165,7 @@ export const Form: FunctionComponent<FormProps> = ({
           >
             <i className="fa fa-linkedin mr-3" />
             Linked-in
-      </button>
+          </button>
         </div>
         <div className="text-center mb-3 mt-3">
           <div>
@@ -196,4 +182,4 @@ export const Form: FunctionComponent<FormProps> = ({
       </form>
     </div>
   );
-}
+};

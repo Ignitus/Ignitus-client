@@ -1,13 +1,7 @@
-import React, {FunctionComponent} from 'react';
-import {Link} from 'react-router-dom';
+import React, { FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
 import * as t from '../../../constants';
-import {userRole, authType} from '../../../types';
-
-interface SideWrapperProps {
-  role: userRole;
-  authenticationType: authType;
-  alternateRole: userRole;
-}
+import { SideWrapperProps } from '../../../types';
 
 export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
   role,
@@ -18,9 +12,7 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
     <img
       alt={`${role}auth`}
       className="img-fluid img-login d-block"
-      src={
-        role === 'Student' ? t.studentAuthentication : t.professorAuthentication
-      }
+      src={(role === 'Student') ? t.studentAuthentication : t.professorAuthentication}
     />
 
     <div className="text-below-image text-center">
