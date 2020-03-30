@@ -78,7 +78,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
   );
 };
 
-Signup.propTypes = {
+Signup = {
   signUpRequest: func.isRequired,
   studentSignUpData: shape({
     isFetching: bool,
