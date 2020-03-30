@@ -81,9 +81,9 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
 Signup = {
   signUpRequest: func.isRequired,
   studentSignUpData: shape({
-    isFetching: bool,
-    success: bool,
-    msg: string,
+    isFetching: Boolean,
+    success: Boolean,
+    msg: String,
   }).isRequired,
 };
 
