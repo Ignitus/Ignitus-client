@@ -42,7 +42,7 @@ const SharedAuthComponent: FunctionComponent<Props> = ({
             <img
               alt={`${role}auth`}
               className="img-fluid img-login d-block"
-              src={(role === 'Student') ? t.studentAuth : t.professorAuth}
+              src={(role === 'Student') ? t.studentAuthentication : t.professorAuthentication}
             />
 
             <div className="text-below-image text-center">

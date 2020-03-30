@@ -1,6 +1,6 @@
 describe('Navigation', () => {
   test('renders an image logo', () => {
-    expect(typeof 'https://storage.googleapis.com/ignitus/IgnitusLogos/white_logo.png').toBe('string');
+    expect(typeof 'https://storage.googleapis.com/ignitus_assets/ig-logo/ignitusWhite.png').toBe('string');
   });
 });
 

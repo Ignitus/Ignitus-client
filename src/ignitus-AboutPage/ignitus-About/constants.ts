@@ -1,6 +1,6 @@
 /* eslint-disable eol-last */
 // eslint-disable-next-line import/prefer-default-export
-export const aboutImg: string = 'https://storage.googleapis.com/ignitus_assets/ig-assets/Assets_about-us.png';
+export const aboutImg: string = 'https://storage.googleapis.com/ignitus_assets/ig-assets/about.png';
 
 interface IntroObj {
   title: string,
