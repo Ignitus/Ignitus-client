@@ -1,17 +1,11 @@
 import React from 'react';
-import {StyledHeading2} from '../../../../styles';
 import {TypographyContainer} from '../styles';
 import {
-  Heading1,
-  Heading2,
-  Heading3,
-  Heading4,
   Heading5,
-  Heading6,
   Paragraph,
   TextLink,
-} from   '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/typography';
-import * as Button from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/buttons';
+} from   '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import * as Button from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import confetti from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/logo-Svg/confetti.svg';
 import { Backdrop } from '@material-ui/core';
 // const [open, setOpen] = React.useState(false);
