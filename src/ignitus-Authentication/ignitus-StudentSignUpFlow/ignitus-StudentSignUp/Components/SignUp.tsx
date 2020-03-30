@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types';
 import {
   isEmpty,
   isEqual,
@@ -80,11 +79,11 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
 };
 
 Signup.propTypes = {
-  signUpRequest: PropTypes.func.isRequired,
-  studentSignUpData: PropTypes.shape({
-    isFetching: PropTypes.bool,
-    success: PropTypes.bool,
-    msg: PropTypes.string,
+  signUpRequest: func.isRequired,
+  studentSignUpData: shape({
+    isFetching: bool,
+    success: bool,
+    msg: string,
   }).isRequired,
 };
 
