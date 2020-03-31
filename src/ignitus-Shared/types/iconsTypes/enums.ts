@@ -6,4 +6,8 @@ export enum AppIcon {
   PlusIcon = 'PlusIcon',
   HeartIcon = 'HeartIcon',
   TwitterIcon = 'TwitterIcon',
+  LocationIcon = 'LocationIcon',
+  FilledArrowDownIcon = 'FilledArrowDownIcon',
+  CrossIcon = 'CrossIcon',
+  SearchIcon = 'SearchIcon',
 }
