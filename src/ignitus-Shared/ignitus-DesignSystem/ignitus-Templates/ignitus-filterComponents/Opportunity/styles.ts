@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Atoms/colors';
-import * as A from '../../../ignitus-Atoms/atoms';
 import * as F from '../../../ignitus-Atoms/fonts';
 
 import {Paragraph} from '../../../shared';
 import FilledArrowDownIcon from '../../../ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import CrossIcon from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../../ignitus-Assets/ignitus-Icons/locationIcon';
-import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/searchIcon';
+import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/SearchIcon/searchIcon';
+import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
+import { Card } from '../../../ignitus-Atoms/atoms';
 
-export const FiltersContainer = styled(A.Card)`
+export const FiltersContainer = styled(Card)`
   position: absolute;
   top: 145px;
   right: 160px;
@@ -34,7 +35,7 @@ export const UpperContainer = styled.div`
   padding: 0;
 `;
 
-export const TagBtnContainer = styled(A.PrimaryButton)`
+export const TagBtnContainer = styled(PrimaryButton)`
   border-radius: 2rem;
   text-decoration: none;
   background-color: ${C.IgnitusBlue};
@@ -49,7 +50,7 @@ export const TagBtnContainer = styled(A.PrimaryButton)`
   }
 `;
 
-export const ResetBtnContainer = styled(A.PrimaryButton)`
+export const ResetBtnContainer = styled(PrimaryButton)`
   background-color: ${C.White};
   font-size: ${F.MD};
   padding: 10px 22px;
@@ -67,7 +68,7 @@ export const ResetBtnContainer = styled(A.PrimaryButton)`
   }
 `;
 
-export const DropdownBtnContainer = styled(A.Button)`
+export const DropdownBtnContainer = styled(Button)`
   background-color: ${C.White};
   padding: 10px 25px;
   margin: 10px;
