@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as C from '../../../ignitus-Atoms/colors.ts';
 import * as S from './styles.ts';
 
-export default function Opportunity() {
+export default function OpportunityFilters() {
   const [Tags, setTags] = useState({
     datePosted: '',
     jobType: '',

@@ -11,9 +11,6 @@ import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
 import { Card } from '../../../ignitus-Atoms/atoms';
 
 export const FiltersContainer = styled(Card)`
-  position: absolute;
-  top: 145px;
-  right: 160px;
   border-radius: 16px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   margin: 0.5rem;
