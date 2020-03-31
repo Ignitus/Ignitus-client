@@ -7,10 +7,6 @@ import PlusIcon from './plusIcon/plusIcon';
 import ApplyIcon from './applyIcon/applyIcon';
 import HeartIcon from './heartIcon/heartIcon';
 import {AppIcon} from '../../../types/iconsTypes/enums';
-import LocationIcon from './locationIcon/locationIcon';
-import FilledArrowDownIcon from './filledArrowDownIcon/filledArrowDownIcon';
-import CrossIcon from './crossIcon/crossIcon';
-import SearchIcon from './searchIcon/searchIcon';
 
 type Props = {
   name: AppIcon;
@@ -38,18 +34,6 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.TwitterIcon:
       return <TwitterIcon {...rest} />;
-
-    case AppIcon.LocationIcon:
-      return <LocationIcon {...rest} />;
-
-    case AppIcon.FilledArrowDownIcon:
-      return <FilledArrowDownIcon {...rest} />;
-
-    case AppIcon.CrossIcon:
-      return <CrossIcon {...rest} />;
-
-    case AppIcon.SearchIcon:
-      return <SearchIcon {...rest} />;
   }
 };
 

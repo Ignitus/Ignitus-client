@@ -1,12 +1,10 @@
 import styled from '@emotion/styled';
 import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
+import {minimumWidthQuery} from './ignitus-Atoms/media';
+import {Heading3} from './ignitus-Atoms/typography';
 
-const breakpoints = [576, 768, 992, 1200];
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
-
-export const Title = styled.h3`
-  font-weight: ${F.Normal};
+export const Title = styled(Heading3)`
   color: ${C.IgnitusBlue};
 `;
 
@@ -23,8 +21,8 @@ export const Paragraph = styled.p`
 /* Shared between partners & contirbutors component. */
 
 export const Wrapper = styled.div`
-  margin: 1em;
-  margin-bottom: 2em;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 `;
 
 export const TopSection = styled.section`
@@ -39,16 +37,16 @@ export const BottomSection = styled.section`
   padding: 0 15px 0 15px;
   margin: 0 auto 0 auto;
 
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     max-width: 540px;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     max-width: 720px;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     max-width: 960px;
   }
-  ${mq[3]} {
+  ${minimumWidthQuery[3]} {
     max-width: 1140px;
   }
 `;
@@ -62,16 +60,16 @@ export const BottomRow = styled.div`
 
 // We plan to use Container as parent element of in lot of components.
 export const Container = styled.div`
-  ${mq[0]} {
+  ${minimumWidthQuery[0]} {
     max-width: 540px;
   }
-  ${mq[1]} {
+  ${minimumWidthQuery[1]} {
     max-width: 720px;
   }
-  ${mq[2]} {
+  ${minimumWidthQuery[2]} {
     max-width: 960px;
   }
-  ${mq[3]} {
+  ${minimumWidthQuery[3]} {
     max-width: 1140px;
   }
 `;

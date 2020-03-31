@@ -1,4 +1,4 @@
-export type coreTeam = {
+export type Team = {
   title: string;
   img: string;
   description: string;
@@ -8,5 +8,5 @@ export type coreTeam = {
 
 export type TeamItemProps = {
   key: string;
-  item: coreTeam;
+  item: Team;
 }

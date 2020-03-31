@@ -1,16 +1,15 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/aria-role */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import isEmpty from 'lodash/isEmpty';
-import PropTypes from 'prop-types';
+import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import SharedLogin from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Login';
-import { statePayload } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-AuthenticationComponents/Login/Constants';
+import {
+  SharedAuthentication,
+  LoginStatePayload,
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index.ts';
 
 const Login = ({ logInRequest, studentLoginData }) => {
-  const [state, setState] = useState(statePayload);
-
+  const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
   const handleSubmit = (e) => {
@@ -31,10 +30,10 @@ const Login = ({ logInRequest, studentLoginData }) => {
       if (
         !(
           lastAtPos < lastDotPos
-            && lastAtPos > 0
-            && email.indexOf('@@') === -1
-            && lastDotPos > 2
-            && email.length - lastDotPos > 2
+          && lastAtPos > 0
+          && email.indexOf('@@') === -1
+          && lastDotPos > 2
+          && email.length - lastDotPos > 2
         )
       ) {
         setState({
@@ -54,24 +53,15 @@ const Login = ({ logInRequest, studentLoginData }) => {
   };
 
   return (
-    <SharedLogin
-      loginType="Student"
-      tagline="Skyrocket your career with best global opportunities"
+    <SharedAuthentication
+      authenticationType="LogIn"
+      role="Student"
       handleSubmit={handleSubmit}
-      logInData={studentLoginData}
       state={state}
       setState={setState}
+      authenticationData={studentLoginData}
     />
   );
-};
-
-Login.propTypes = {
-  logInRequest: PropTypes.func.isRequired,
-  studentLoginData: PropTypes.shape({
-    isFetching: PropTypes.bool.isRequired,
-    message: PropTypes.string.isRequired,
-    success: PropTypes.bool.isRequired,
-  }).isRequired,
 };
 
 export default withErrorBoundary(Login);

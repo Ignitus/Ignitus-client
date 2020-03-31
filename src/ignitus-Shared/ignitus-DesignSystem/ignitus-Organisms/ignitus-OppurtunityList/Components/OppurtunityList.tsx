@@ -1,8 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import * as S from '../styles';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
@@ -12,7 +7,7 @@ export const Opportunity = () => (
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
         <img
-          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/Team_avatar-eugene.png"
+          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
           alt="universityLogo"
           height="150"
         />

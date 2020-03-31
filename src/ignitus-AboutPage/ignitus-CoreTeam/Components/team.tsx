@@ -6,8 +6,9 @@ import {Data} from '../constants';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {coreTeam, TeamItemProps} from '../types';
+import {Team, TeamItemProps} from '../types';
 import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/enums';
+import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>
@@ -27,7 +28,7 @@ const TeamItem = ({
       <S.TeamCard>
         <S.TeamItemImg src={img} alt={`avatar ${title}`} />
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
-        <T.Paragraph>{description}</T.Paragraph>
+        <Paragraph>{description}</Paragraph>
         <S.LinkWrapper toggle={value}>
           <S.Link href={linkedin} color="black">
             <S.LinkedIn name={AppIcon.LinkedInIcon} />
@@ -42,7 +43,7 @@ const TeamItem = ({
 };
 
 const CoreTeam = () => {
-  const team = Data.map((item: coreTeam) => {
+  const team = Data.map((item: Team) => {
     return <TeamItem key={item.title} item={item} />;
   });
   return <PureCoreTeam team={team} />;
