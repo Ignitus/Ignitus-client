@@ -13,17 +13,13 @@ import { Card } from '../../../ignitus-Atoms/atoms';
 export const FiltersContainer = styled(Card)`
   border-radius: 16px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-  margin: 0.5rem;
-  padding: .2rem 3rem .2rem 3rem;
-  min-width: 60vw;
+  padding: 1rem;
 `;
 
 export const FilterItemsContainer = styled.div`
-  margin: 0;
-  padding: 0;
   padding-right: 1.5rem;
   display: block;
-  width: 95%;
+  width: 100%;
 `;
 
 export const UpperContainer = styled.div`
