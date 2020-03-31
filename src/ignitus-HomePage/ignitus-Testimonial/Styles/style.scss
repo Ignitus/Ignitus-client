@@ -6,7 +6,7 @@ $ignite-font-weight-semibold: 600;
 $ignite-font-size-sm: 16px;
 
 .testimonial {
-  .testimonials-title {
+ .testimonials-title {
     font-family: $ignite-font-family-default;
     text-align: center;
   }
@@ -22,36 +22,34 @@ $ignite-font-size-sm: 16px;
   .carousel-content {
     padding: 1em;
     text-align: center;
-    width: 70%;
+    width: auto;
   }
 
-  .text {
-    position: relative;
-  }
-
-  .text p {
+  .text-box  p {
+    display: inline-block;
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     text-align: center;
   }
 
-  .text::before {
+
+  .text-box::before {
     color: $ignite-color-blue-24;
-    content: '\f10d';
-    font-family: 'FontAwesome';
-    left: 19%;
-    position: absolute;
-    top: -30%;
+    content: "\f10d";
+    display: inline-block;
+    font-family: "FontAwesome";
+    vertical-align: top;
   }
 
-  .text::after {
-    content: '\f10e';
+  .text-box::after {
+    content: "\f10e";
     color: $ignite-color-blue-24;
-    font-family: 'FontAwesome';
-    position: absolute;
-    right: 19%;
-    top: 60%;
+    display: inline-block;
+    font-family: "FontAwesome";
+    vertical-align: bottom;
   }
 
   .avatar {
@@ -76,18 +74,21 @@ $ignite-font-size-sm: 16px;
   }
 
   .nav-avatar {
+    align-items: center;
     display: flex;
     justify-content: center;
+    min-height: 5.5vh;
 
     img {
       border-radius: 100%;
-      height: 4vh;
-      margin: 5px;
+      height: 3.5vh;
+      margin-right: 0.3em;
     }
     img:hover {
       border: 1px solid #192b65;
-      height: 4.5vh;
-      transition: height ease 0.5s;
+      height: 5vh;
+      transition: ease 0.8s;
+      
     }
   }
 
