@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import * as T from '../../ignitus-Atoms/atoms';
 import * as C from '../../ignitus-Atoms/colors';
-import { flexibleColDiv, flexibleRowDiv, TextIconContainer } from '../../shared';
+import { flexibleColDiv, flexibleRowDiv, TextIconContainer, Title, SubTitle } from '../../shared';
 import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/chatMessageIcon';
 import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
 import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
@@ -64,11 +63,11 @@ export const DetailsContainer = styled.div`
   padding: 0.5em 0 0 1.5em;
 `;
 
-export const ProfileHeading = styled(T.Heading1)`
+export const ProfileHeading = styled(Title)`
   flex: 1;
 `;
 
-export const ProfileSubHeading = styled(T.Heading4)`
+export const ProfileSubHeading = styled(SubTitle)`
   flex: 1;
   margin-bottom: 10px;
 `;
