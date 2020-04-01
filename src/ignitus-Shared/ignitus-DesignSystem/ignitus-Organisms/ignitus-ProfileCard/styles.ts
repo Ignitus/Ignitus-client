@@ -1,11 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import {
-  flexibleColDiv,
-  flexibleRowDiv,
-  Link,
-} from '../../shared';
-import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
+import { flexibleColDiv, flexibleRowDiv, Link } from '../../shared';
+import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const ProfileDiv = styled(flexibleColDiv)`
@@ -31,7 +27,7 @@ export const ProfileTrack = styled.div`
 `;
 
 export const BookmarkIconDiv = styled.div`
-	text-align: right;
+  text-align: right;
 `;
 
 export const ContentDiv = styled(flexibleRowDiv)`

@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import * as S from '../styles';
-import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import {AppIcon} from '../../../../types/iconsTypes/enums';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { AppIcon } from '../../../../types/iconsTypes/enums';
 
 const ProfileCard = () => (
   <S.ProfileDiv>
@@ -32,27 +32,31 @@ const ProfileCard = () => (
       </S.ContentDiv>
       <S.SocialDiv>
         <S.SocialIcons>
-          <S.SocialLinks href={''}>
+          <S.SocialLinks href="">
             <S.SocialLinkIcons name={AppIcon.LinkedInIcon} />
           </S.SocialLinks>
-          <S.SocialLinks href={''}>
+          <S.SocialLinks href="">
             <S.SocialLinkIcons name={AppIcon.FacebookIcon} />
           </S.SocialLinks>
-          <S.SocialLinks href={''}>
+          <S.SocialLinks href="">
             <S.SocialLinkIcons name={AppIcon.GithubIcon} />
           </S.SocialLinks>
-          <S.SocialLinks href={''}>
+          <S.SocialLinks href="">
             <S.SocialLinkIcons name={AppIcon.GooglePlusIcon} />
           </S.SocialLinks>
         </S.SocialIcons>
         <S.SocialContact>
           <S.TextIconContainer>
-            <S.SocialContactIcons name={AppIcon.ChatMessageIcon} />
-            <S.TextIconContent>Send them a message</S.TextIconContent>
+            <S.SocialLinks href="">
+              <S.SocialContactIcons name={AppIcon.ChatMessageIcon} />
+              <S.TextIconContent>Send them a message</S.TextIconContent>
+            </S.SocialLinks>
           </S.TextIconContainer>
           <S.TextIconContainer>
-            <S.SocialContactIcons name={AppIcon.FileIcon} />
-            <S.TextIconContent>Resume</S.TextIconContent>
+            <S.SocialLinks href="">
+              <S.SocialContactIcons name={AppIcon.FileIcon} />
+              <S.TextIconContent>Resume</S.TextIconContent>
+            </S.SocialLinks>
           </S.TextIconContainer>
         </S.SocialContact>
       </S.SocialDiv>
