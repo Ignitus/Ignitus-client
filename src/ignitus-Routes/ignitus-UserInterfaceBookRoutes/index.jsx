@@ -26,12 +26,27 @@ const Container = styled.div`
   flex-direction: row;
 `;
 
+const Reset = `
+  @media (max-width: 420px) {
+    height: auto;
+    overflow: auto;
+  }
+`;
+
 const RightRow = styled.div`
-  flex:1;
+  flex:1.5;
+  height: 100vh;
+  overflow-y: overlay;
+  overflow-x: auto;
+  ${Reset}
 `;
 
 const LeftRow = styled.div`
   flex:5;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  ${Reset}
 `;
 
 // eslint-disable-next-line import/prefer-default-export
