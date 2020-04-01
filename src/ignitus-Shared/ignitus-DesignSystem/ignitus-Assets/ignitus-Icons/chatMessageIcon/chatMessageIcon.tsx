@@ -3,7 +3,7 @@ import {HTMLAttributes} from 'react';
 
 type Props = HTMLAttributes<SVGElement>;
 
-const chatMessageIcon = ({title = 'Chat Message Icon', ...rest}: Props) => {
+const ChatMessageIcon = ({title = 'Chat Message Icon', ...rest}: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +18,6 @@ const chatMessageIcon = ({title = 'Chat Message Icon', ...rest}: Props) => {
   );
 };
 
-export default chatMessageIcon;
+export default ChatMessageIcon;
 
 /* SVG credits goes to https://material.io/resources/icons/ */

@@ -5,6 +5,7 @@ import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/
 import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
 import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
 import MapMarkerIcon from '../../ignitus-Assets/ignitus-Icons/mapMarkerIcon/mapMarkerIcon';
+import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
 
 export const ProfileDiv = styled(flexibleColDiv)`
   padding: 2rem;
@@ -90,7 +91,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const TextIconContent = styled.span`
-  color: ${C.IgnitusBlue}
+  color: ${C.IgnitusBlue};
 `;
 
 export const SocialContact = styled(flexibleColDiv)`
