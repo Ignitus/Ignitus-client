@@ -27,11 +27,25 @@ const Container = styled.div`
 `;
 
 const RightRow = styled.div`
-  flex:1;
+  flex:1.5;
+  height: 100vh;
+  overflow-y: overlay;
+  overflow-x: auto;
+  @media (max-width: 420px) {
+    height: auto;
+    overflow: auto;
+  }
 `;
 
 const LeftRow = styled.div`
   flex:5;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  @media (max-width: 420px) {
+    height: auto;
+    overflow: auto;
+  }
 `;
 
 // eslint-disable-next-line import/prefer-default-export
