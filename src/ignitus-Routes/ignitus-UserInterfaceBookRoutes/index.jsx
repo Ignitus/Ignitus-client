@@ -26,15 +26,19 @@ const Container = styled.div`
   flex-direction: row;
 `;
 
+const Reset = `
+  @media (max-width: 420px) {
+    height: auto;
+    overflow: auto;
+  }
+`;
+
 const RightRow = styled.div`
   flex:1.5;
   height: 100vh;
   overflow-y: overlay;
   overflow-x: auto;
-  @media (max-width: 420px) {
-    height: auto;
-    overflow: auto;
-  }
+  ${Reset}
 `;
 
 const LeftRow = styled.div`
@@ -42,10 +46,7 @@ const LeftRow = styled.div`
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  @media (max-width: 420px) {
-    height: auto;
-    overflow: auto;
-  }
+  ${Reset}
 `;
 
 // eslint-disable-next-line import/prefer-default-export
