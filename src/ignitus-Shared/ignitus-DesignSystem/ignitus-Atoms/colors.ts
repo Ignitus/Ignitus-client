@@ -21,4 +21,3 @@ export const Yellow: string = '#ffd747';
 // social platform colors
 export const TwitterIconColor: string = ' #1dcaff';
 export const LinkedinIconColor: string = '#2867B2';
-export const Grey3: string = '#939393';

@@ -91,27 +91,4 @@ export const flexibleRowDiv = styled.div`
   justify-content: center;
 `;
 
-export const TextIconContainer = styled.div`
-  color: ${C.IgnitusBlue};
-  font-size: 1em;
-  padding-left: 2em;
-  position: relative;
-  width: 100%;
-  text-align: left;
-  span {
-    font-weight: 400;
-    padding-bottom: 5px;
-    display: inline-block;
-    cursor: pointer;
-  }
-  i,
-  svg {
-    left: 0;
-    position: absolute;
-    top: 0;
-    font-size: 1em;
-		fill: ${C.IgnitusBlue};
-  }
-`;
-
 /* Shared between partners & contirbutors component. */

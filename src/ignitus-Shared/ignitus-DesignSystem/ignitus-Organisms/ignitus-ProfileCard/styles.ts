@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import { flexibleColDiv, flexibleRowDiv, TextIconContainer, Title, SubTitle } from '../../shared';
-import ChatMessageIcon from '../../ignitus-Assets/ignitus-Icons/chatMessageIcon/chatMessageIcon';
-import FileIcon from '../../ignitus-Assets/ignitus-Icons/fileIcon/fileIcon';
-import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon/bookmarkIcon';
-import MapMarkerIcon from '../../ignitus-Assets/ignitus-Icons/mapMarkerIcon/mapMarkerIcon';
-import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
+import {
+  flexibleColDiv,
+  flexibleRowDiv,
+  Link,
+} from '../../shared';
+import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
+import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const ProfileDiv = styled(flexibleColDiv)`
   padding: 2rem;
@@ -29,16 +30,8 @@ export const ProfileTrack = styled.div`
   text-align: end;
 `;
 
-export const BookmarkIconDiv = styled(TextIconContainer)`
-  padding-left: 0;
-  padding-right: 2em;
-  text-align: right;
-  svg {
-    left: initial;
-    right: 0;
-    font-size: 2em;
-    top: -5px;
-  }
+export const BookmarkIconDiv = styled.div`
+	text-align: right;
 `;
 
 export const ContentDiv = styled(flexibleRowDiv)`
@@ -64,11 +57,11 @@ export const DetailsContainer = styled.div`
   padding: 0.5em 0 0 1.5em;
 `;
 
-export const ProfileHeading = styled(Title)`
+export const ProfileHeading = styled(Heading1)`
   flex: 1;
 `;
 
-export const ProfileSubHeading = styled(SubTitle)`
+export const ProfileSubHeading = styled(Heading4)`
   flex: 1;
   margin-bottom: 10px;
 `;
@@ -80,6 +73,15 @@ export const SocialDiv = styled(flexibleColDiv)`
   border: none;
 `;
 
+export const SocialContact = styled(flexibleColDiv)`
+  flex: 100%;
+  p {
+    flex: 1 1 100%;
+  }
+`;
+
+// Icon Setting
+
 export const SocialIcons = styled.div`
   flex: 100%;
   margin: 1em 0;
@@ -90,35 +92,45 @@ export const SocialIcons = styled.div`
   }
 `;
 
+export const TextIconContainer = styled(flexibleRowDiv)`
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 5px;
+`;
+
 export const TextIconContent = styled.span`
   color: ${C.IgnitusBlue};
+  display: inline-block;
+  margin: 0 10px;
 `;
 
-export const SocialContact = styled(flexibleColDiv)`
-  flex: 100%;
-  p {
-    flex: 1 1 100%;
-  }
-`;
-
-export const ProfileBookmarkIcon = styled(BookmarkIcon)`
+export const ProfileBookmarkIcon = styled(Icon)`
   height: 2rem;
   fill: ${C.IgnitusBlue};
 `;
 
-export const SendMessageIcon = styled(ChatMessageIcon)`
+export const SocialContactIcons = styled(Icon)`
   height: 1.5rem;
+  fill: ${C.IgnitusBlue};
 `;
 
-export const ResumeIcon = styled(FileIcon)`
-  height: 1.5rem;
+export const SocialLinks = styled(Link)`
+  margin-right: 20px;
 `;
 
-export const LocationIcon = styled(MapMarkerIcon)`
+export const LocationIcon = styled(Icon)`
   height: 1.2rem;
   position: relative;
-  top: -10px;
+  top: -5px;
+  fill: ${C.IgnitusBlue};
 `;
+
+export const SocialLinkIcons = styled(Icon)`
+  height: 1.8rem;
+  fill: ${C.IgnitusBlue};
+`;
+
+// Drop Down Menu
 
 export const DropDownBtnContainer = styled.div`
   flex: 100%;
@@ -127,13 +139,13 @@ export const DropDownBtnContainer = styled.div`
 
 export const DropDownBtn = styled.div`
   font-weight: bold;
-  color: ${C.Grey3};
+  color: ${C.GreyText};
   cursor: pointer;
   display: inline-block;
-  padding: 10px 0;
+  padding-bottom: 10px;
   transition: all 0.4s;
   width: fit-content;
-  
+
   &:hover {
     ul {
       display: block;
