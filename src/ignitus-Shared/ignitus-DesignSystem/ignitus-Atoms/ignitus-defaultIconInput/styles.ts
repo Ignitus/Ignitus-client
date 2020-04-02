@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import {flexibleRowDiv} from '../../shared';
-import {Grey1, Grey2, GreyBackground, IgnitusBlue, Red, White} from '../colors';
-import {SM} from '../fonts';
+import {GreyBackground, IgnitusBlue, Red} from '../colors';
+
 import Icon from '../../../ignitus-Utilities/Components/icon';
 
 
@@ -43,10 +43,6 @@ export const StyledIcon = styled(Icon)`
   position: absolute;
   left: 90.33%;
   right: 3.5%;
-  // top: 4.17%;
-  // bottom: 4.17%;
 
-  // background: #000066;
-  // 1x
 
 `;
