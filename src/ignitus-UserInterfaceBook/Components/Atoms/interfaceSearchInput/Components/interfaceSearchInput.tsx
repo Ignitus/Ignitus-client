@@ -9,7 +9,7 @@ const interfaceTypography = () => (
     <hr />
 
     <DefaultSearchInput
-      placeholder={'Sea'}
+      placeholder={'Search @user'}
       type={'text'}
       name={'name'}
     />
