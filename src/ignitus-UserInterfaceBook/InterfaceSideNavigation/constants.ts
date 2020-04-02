@@ -59,38 +59,6 @@ export const edges: Edges[] = [
           {
             title: 'Toggles',
             route: '/interface/toggles'
-          },
-          {
-            title: 'Any',
-            children: [
-              {
-                title: 'First',
-                route: '/interface/toggles'
-              },
-              {
-                title: 'Second',
-                children: [
-                  {
-                    title: 'Third',
-                    children: [
-                      {
-                        title: 'Fourth',
-                        children: [
-                          {
-                            title: 'Fifth',
-                            route: '/hello'
-                          },
-                          {
-                            title: 'Sixth',
-                            route: '/bye'
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
