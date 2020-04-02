@@ -1,8 +1,7 @@
 export type Edges = {
-  node: {
-    title: string;
-    children: Children[];
-  };
+  title: string;
+  route?: string;
+  children?: Edges[];
 };
 
 export type Children = {
@@ -14,4 +13,5 @@ export type Children = {
 export type NavigationLayerProps = {
   edge: Edges;
   nesting?: boolean;
+  level: number;
 };
