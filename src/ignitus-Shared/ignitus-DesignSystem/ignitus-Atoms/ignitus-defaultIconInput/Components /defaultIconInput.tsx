@@ -3,7 +3,7 @@ import {InputTypes} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/enums';
 import * as I from '../styles';
 
-const DefaultIconInput = ({placeholder, type, name}: InputTypes) => (
+const DefaultIconInput = () => (
   <React.Fragment>
     <I.InputContainer>
       <I.Input> https://goo.gl/HEp5FW </I.Input >

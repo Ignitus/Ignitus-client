@@ -11,11 +11,7 @@ const interfaceIconInput = () => (
     <Heading3>Input with Icon </Heading3>
     <hr />
     <Heading6> Direct link</Heading6>
-    <DefaultIconInput
-      placeholder={'Search @user'}
-      type={'text'}
-      name={'name'}
-    />
+    <DefaultIconInput/>
   </InputContainer>
 );
 
