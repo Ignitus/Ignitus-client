@@ -1,5 +1,4 @@
 import React from 'react';
-import {InputTypes} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/enums';
 import * as I from '../styles';
 
