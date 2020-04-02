@@ -29,6 +29,7 @@ import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdf
 import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
 import LocalLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
 import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
+import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 
 type Props = {
   name: AppIcon;
@@ -98,8 +99,8 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.NotificationIcon:
       return <NotificationIcon {...rest} />;
-  
-        
+
+
 
     case AppIcon.GithubIcon:
       return <GithubIcon {...rest} />;
@@ -124,6 +125,9 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.GraduationCapIcon:
       return <GraduationCapIcon {...rest} />;
+
+    case AppIcon.CopyIcon:
+      return <CopyIcon {...rest} />;
   }
 };
 

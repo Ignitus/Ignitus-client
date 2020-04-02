@@ -17,6 +17,24 @@ export interface LoginState {
   showPassword: boolean;
 }
 
+export interface SideWrapperProps {
+  role: userRole;
+  authenticationType: authType;
+  alternateRole: userRole;
+}
+
+
+export interface FormProps {
+  role: userRole;
+  authenticationType: authType;
+  alternateAuth: authType;
+  authRedirectText: string;
+  state: ComponentState;
+  setState: Function;
+  authenticationData: authData;
+  handleSubmit: Function;
+}
+
 export interface SignupState extends LoginState {
   confirmPassword: string;
   equalmessage: boolean;
