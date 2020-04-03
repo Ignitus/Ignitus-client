@@ -33,7 +33,7 @@ export const edges: Edges[] = [
         children: [
           {
             title: 'Search',
-            children: [{title: 'a', route: 'x'}, {title: 'c', route: 'z'}],
+            route: '/interface/searchInput',
           },
           {
             title: 'Primary',
@@ -132,7 +132,6 @@ export const edges: Edges[] = [
       },
       {
         title: 'Card Layouts',
-        route: '',
         children: [
           {
             title: 'Opportunity',
