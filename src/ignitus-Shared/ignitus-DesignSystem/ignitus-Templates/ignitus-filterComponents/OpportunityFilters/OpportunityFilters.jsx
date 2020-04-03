@@ -8,9 +8,9 @@ import { AppIcon } from '../../../../types/iconsTypes/enums';
 
 export default function OpportunityFilters() {
   const [Tags, setTags] = useState({
-    datePosted: '',
-    jobType: '',
-    jobLocation: '',
+    dummyDates: '',
+    dummyJobType: '',
+    dummyJobLocations: '',
   });
   const [keyWords, setKeyWords] = useState({
     keywords: '',
@@ -26,18 +26,18 @@ export default function OpportunityFilters() {
   const resetFilters = () => {
     setTags({
       ...Tags,
-      datePosted: '',
-      jobType: '',
-      jobLocation: '',
+      dummyDates: '',
+      dummyJobType: '',
+      dummyJobLocations: '',
     });
     setKeyWords({
       keywords: '',
     });
   };
 
-  const datePosted = ['Past 24 hours', 'Past week', 'Past Month', 'Any time'];
-  const jobType = ['Part time', 'Full time', 'Contract'];
-  const jobLocation = ['Berlin, Germany', 'Berlin', 'India'];
+  const dummyDates = ['Past 24 hours', 'Past week', 'Past Month'];
+  const dummyJobType = ['Part time', 'Full time', 'Contract'];
+  const dummyJobLocations = ['Munich, Paris', 'Prague', 'Zurich'];
 
   return (
     <S.FiltersContainer>
@@ -77,13 +77,13 @@ export default function OpportunityFilters() {
             <S.DropdownContainer key={i}>
               <S.DropdownBtnContainer>
                 {
-                  key === 'datePosted' ? (
+                  key === 'dummyDates' ? (
                     <span>
                       Date Posted
                       <S.ArrowDownIconContainer name={AppIcon.FilledArrowDownIcon} />
                     </span>
                   )
-                    : key === 'jobType' ? (
+                    : key === 'dummyJobType' ? (
                       <span>
                         Job Type
                         <S.ArrowDownIconContainer name={AppIcon.FilledArrowDownIcon} />
