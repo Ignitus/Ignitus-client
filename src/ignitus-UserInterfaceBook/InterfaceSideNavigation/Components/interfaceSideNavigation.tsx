@@ -20,7 +20,7 @@ const InterfaceSideNavigation = () => {
 const NavigationLayers = ({edges, nesting = false}: NavigationLayerProps) => (
   <React.Fragment>
     {edges.map(edge => (
-      <Layers edge={edge} nesting={nesting} />
+      <Layers edge={edge} nesting={nesting} key={edge.title} />
     ))}
   </React.Fragment>
 );
@@ -28,8 +28,8 @@ const NavigationLayers = ({edges, nesting = false}: NavigationLayerProps) => (
 const Layers = ({edge, nesting}: any) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   return (
-    <React.Fragment key={edge.title}>
-      {(edge.route == undefined) && (
+    <React.Fragment>
+      {edge.route == undefined && (
         <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting}>
           {' '}
           <S.Heading nesting={nesting}>{edge.title}</S.Heading>{' '}
@@ -40,11 +40,7 @@ const Layers = ({edge, nesting}: any) => {
           />
         </S.HeadingArrowContainer>
       )}
-      <Extension
-        isexpanded={isexpanded}
-        edge={edge}
-        nesting={nesting}
-      />
+      <Extension isexpanded={isexpanded} edge={edge} nesting={nesting} />
     </React.Fragment>
   );
 };
@@ -61,10 +57,7 @@ const Extension = ({isexpanded, edge, nesting}) => {
   return (
     edge.children && (
       <S.UnorderedList isexpanded={isexpanded}>
-        <NavigationLayers
-          edges={edge.children}
-          nesting={true}
-        />
+        <NavigationLayers edges={edge.children} nesting={true} />
       </S.UnorderedList>
     )
   );
