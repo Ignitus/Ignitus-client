@@ -46,12 +46,12 @@ export default function OpportunityFilters() {
         <S.FilterItemsContainer>
           <S.TagsBarContainer>
             {
-              Object.keys(Tags).map(key => (Tags[key] ? (
+              Object.keys(Tags).map(key => (Tags[key] && (
                 <S.TagBtnContainer key={key}>
                   {Tags[key]}
                   <S.CrossIconContainer name={AppIcon.CrossIcon} onClick={() => resetTag(key)} />
                 </S.TagBtnContainer>
-              ) : ''))
+              )))
             }
           </S.TagsBarContainer>
           <S.DashedLineContainer />
@@ -77,24 +77,29 @@ export default function OpportunityFilters() {
             <S.DropdownContainer key={i}>
               <S.DropdownBtnContainer>
                 {
-                  key === 'dummyDates' ? (
+                  key === 'dummyDates' && (
                     <span>
                       Date Posted
                       <S.ArrowDownIconContainer name={AppIcon.FilledArrowDownIcon} />
                     </span>
                   )
-                    : key === 'dummyJobType' ? (
-                      <span>
-                        Job Type
-                        <S.ArrowDownIconContainer name={AppIcon.FilledArrowDownIcon} />
-                      </span>
-                    )
-                      : (
-                        <span>
-                          <S.LocationIconContainer name={AppIcon.LocationIcon} />
-                          Job Location
-                        </span>
-                      )
+                }
+                {
+                  key === 'dummyJobType' && (
+                    <span>
+                      Job Type
+                      <S.ArrowDownIconContainer name={AppIcon.FilledArrowDownIcon} />
+                    </span>
+                  )
+                }
+
+                {
+                  key === 'dummyJobLocations' && (
+                    <span>
+                      <S.LocationIconContainer name={AppIcon.LocationIcon} />
+                      Job Location
+                    </span>
+                  )
                 }
               </S.DropdownBtnContainer>
               <S.SelectOptionContainer>
