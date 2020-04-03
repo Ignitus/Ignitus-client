@@ -3,12 +3,13 @@ import * as C from '../../../ignitus-Atoms/colors';
 import * as F from '../../../ignitus-Atoms/fonts';
 
 import {Paragraph} from '../../../shared';
+import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
+import { Card } from '../../../ignitus-Atoms/atoms';
+
+import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/searchIcon';
 import FilledArrowDownIcon from '../../../ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import CrossIcon from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../../ignitus-Assets/ignitus-Icons/locationIcon';
-import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/SearchIcon/searchIcon';
-import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
-import { Card } from '../../../ignitus-Atoms/atoms';
 
 export const FiltersContainer = styled(Card)`
   border-radius: 16px;

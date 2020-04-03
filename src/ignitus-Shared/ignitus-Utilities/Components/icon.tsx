@@ -31,7 +31,7 @@ import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
-// import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
 
 type Props = {
   name: AppIcon;
@@ -69,8 +69,8 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.CrossIcon:
       return <CrossIcon {...rest} />;
 
-    // case AppIcon.SearchIcon:
-    //   return <SearchIcon {...rest} />;
+    case AppIcon.SearchIcon:
+      return <SearchIcon {...rest} />;
 
     case AppIcon.MessageIcon:
       return <MessageIcon {...rest} />;
