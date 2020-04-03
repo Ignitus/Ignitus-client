@@ -1,15 +1,16 @@
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Atoms/colors';
-import * as F from '../../../ignitus-Atoms/fonts';
 
-import {Paragraph} from '../../../shared';
+import { Paragraph } from '../../../shared';
 import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
 import { Card } from '../../../ignitus-Atoms/atoms';
+import { White, IgnitusBlue, Grey1, Grey2 } from '../../../ignitus-Atoms/colors';
+import { MD, Normal } from '../../../ignitus-Atoms/fonts';
 
 import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/searchIcon';
 import FilledArrowDownIcon from '../../../ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import CrossIcon from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../../ignitus-Assets/ignitus-Icons/locationIcon';
+
 
 export const FiltersContainer = styled(Card)`
   border-radius: 16px;
@@ -32,44 +33,44 @@ export const UpperContainer = styled.div`
 export const TagBtnContainer = styled(PrimaryButton)`
   border-radius: 2rem;
   text-decoration: none;
-  background-color: ${C.IgnitusBlue};
+  background-color: ${IgnitusBlue};
   padding: 10px 22px;
-  color: ${C.White};
-  font-size: ${F.MD};
+  color: ${White};
+  font-size: ${MD};
   &:hover,
   &:focus {
-    background-color: ${C.IgnitusBlue};
-    color: ${C.White};
+    background-color: ${IgnitusBlue};
+    color: ${White};
     outline: none;
   }
 `;
 
 export const ResetBtnContainer = styled(PrimaryButton)`
-  background-color: ${C.White};
-  font-size: ${F.MD};
+  background-color: ${White};
+  font-size: ${MD};
   padding: 10px 22px;
   margin: 10px;
   margin-left: auto;
-  color: ${C.IgnitusBlue};
-  border: 2px solid ${C.IgnitusBlue};
+  color: ${IgnitusBlue};
+  border: 2px solid ${IgnitusBlue};
   border-radius: 2rem;
   outline: none;
   &:hover,
   &:focus {
-    background-color: ${C.IgnitusBlue};
-    color: ${C.White};
+    background-color: ${IgnitusBlue};
+    color: ${White};
     outline: none;
   }
 `;
 
 export const DropdownBtnContainer = styled(Button)`
-  background-color: ${C.White};
+  background-color: ${White};
   padding: 10px 25px;
   margin: 10px;
   margin-left: 0;
-  font-size: ${F.MD};
-  color: ${C.IgnitusBlue};
-  border: 2px solid ${C.IgnitusBlue};
+  font-size: ${MD};
+  color: ${IgnitusBlue};
+  border: 2px solid ${IgnitusBlue};
   border-radius: 2rem;
   &:hover,
   &:focus {
@@ -80,7 +81,7 @@ export const DropdownBtnContainer = styled(Button)`
 export const SelectOptionContainer = styled.div`
   display: none;
   position: absolute;
-  background-color: ${C.White};
+  background-color: ${White};
   top: 55px;
   width: 100%;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
@@ -104,24 +105,24 @@ export const DropdownContainer = styled.div`
 `;
 
 export const SelectOptionText = styled(Paragraph)`
-  font-size: ${F.MD};
-  font-weight: ${F.Normal};
+  font-size: ${MD};
+  font-weight: ${Normal};
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  color: ${C.IgnitusBlue};
+  color: ${IgnitusBlue};
   &:hover {
     cursor: pointer;
-    background-color: ${C.IgnitusBlue};
-    color: ${C.White};
+    background-color: ${IgnitusBlue};
+    color: ${White};
   }
 `;
 
 export const InputContainer = styled.input`
   background: transparent;
   border: none;
-  color: ${C.IgnitusBlue};
+  color: ${IgnitusBlue};
   padding: .5rem;
   outline: none;
   width: 95%;
@@ -131,7 +132,7 @@ export const ArrowDownIconContainer = styled(FilledArrowDownIcon)`
   margin-bottom: -.6rem;
   margin-left: .5rem;
   margin-right: -1rem;
-  fill: ${props => props.color ? props.color : C.IgnitusBlue};
+  fill: ${props => props.color ? props.color : IgnitusBlue};
 `;
 
 export const CrossIconContainer = styled(CrossIcon)`
@@ -139,20 +140,20 @@ export const CrossIconContainer = styled(CrossIcon)`
   margin-left: 1.2rem;
   margin-right: -.7rem;
   cursor: pointer;
-  fill: ${props => props.color ? props.color : C.White};
+  fill: ${props => props.color ? props.color : White};
 `;
 
 export const SearchIconContainer = styled(SearchIcon)`
   margin-right: .7rem;
   margin-top: 1rem;
   cursor: pointer;
-  fill: ${props => props.color ? props.color : C.Grey1};
+  fill: ${props => props.color ? props.color : Grey1};
 `;
 
 export const LocationIconContainer = styled(LocationIcon)`
   margin-left: -.4rem;
   margin-right: .4rem;
-  fill: ${props => props.color ? props.color : C.IgnitusBlue};
+  fill: ${props => props.color ? props.color : IgnitusBlue};
 `;
 
 export const TagsBarContainer = styled.div`
@@ -178,5 +179,5 @@ export const FilterBtnsContainer = styled.div`
 export const DashedLineContainer = styled.hr`
   margin: 0;
   padding: 0;
-  border-top: 2px dashed ${C.Grey2};
+  border-top: 2px dashed ${Grey2};
 `
