@@ -28,7 +28,7 @@ const NavigationLayers = ({edges, nesting = false}: NavigationLayerProps) => (
 const Layers = ({edge, nesting}: any) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   return (
-    <React.Fragment>
+    <React.Fragment key={edge.title}>
       {edge.route == undefined && (
         <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting}>
           {' '}
