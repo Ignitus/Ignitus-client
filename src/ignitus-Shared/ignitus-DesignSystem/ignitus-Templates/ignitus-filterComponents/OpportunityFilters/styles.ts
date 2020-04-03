@@ -5,11 +5,7 @@ import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
 import { Card } from '../../../ignitus-Atoms/atoms';
 import { White, IgnitusBlue, Grey1, Grey2 } from '../../../ignitus-Atoms/colors';
 import { MD, Normal } from '../../../ignitus-Atoms/fonts';
-
-import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/searchIcon';
-import FilledArrowDownIcon from '../../../ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
-import CrossIcon from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
-import LocationIcon from '../../../ignitus-Assets/ignitus-Icons/locationIcon';
+import Icon from '../../../../ignitus-Utilities/Components/icon';
 
 
 export const FiltersContainer = styled(Card)`
@@ -128,14 +124,14 @@ export const InputContainer = styled.input`
   width: 95%;
 `
 
-export const ArrowDownIconContainer = styled(FilledArrowDownIcon)`
+export const ArrowDownIconContainer = styled(Icon)`
   margin-bottom: -.6rem;
   margin-left: .5rem;
   margin-right: -1rem;
   fill: ${props => props.color ? props.color : IgnitusBlue};
 `;
 
-export const CrossIconContainer = styled(CrossIcon)`
+export const CrossIconContainer = styled(Icon)`
   margin-bottom: -.5rem;
   margin-left: 1.2rem;
   margin-right: -.7rem;
@@ -143,14 +139,14 @@ export const CrossIconContainer = styled(CrossIcon)`
   fill: ${props => props.color ? props.color : White};
 `;
 
-export const SearchIconContainer = styled(SearchIcon)`
+export const SearchIconContainer = styled(Icon)`
   margin-right: .7rem;
   margin-top: 1rem;
   cursor: pointer;
   fill: ${props => props.color ? props.color : Grey1};
 `;
 
-export const LocationIconContainer = styled(LocationIcon)`
+export const LocationIconContainer = styled(Icon)`
   margin-left: -.4rem;
   margin-right: .4rem;
   fill: ${props => props.color ? props.color : IgnitusBlue};
