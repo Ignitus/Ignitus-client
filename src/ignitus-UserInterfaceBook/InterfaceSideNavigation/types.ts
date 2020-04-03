@@ -12,4 +12,5 @@ export type Children = {
 export type NavigationLayerProps = {
   edges: Edges[];
   nesting?: boolean;
+  level?: number;
 };
