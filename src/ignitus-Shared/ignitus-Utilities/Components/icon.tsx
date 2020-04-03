@@ -19,7 +19,6 @@ import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/c
 import LocationOnIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationOnIcon';
 import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
 import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
-import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon';
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
 import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
 import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
@@ -32,6 +31,7 @@ import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
+// import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
 
 type Props = {
   name: AppIcon;
@@ -69,8 +69,8 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.CrossIcon:
       return <CrossIcon {...rest} />;
 
-    case AppIcon.SearchIcon:
-      return <SearchIcon {...rest} />;
+    // case AppIcon.SearchIcon:
+    //   return <SearchIcon {...rest} />;
 
     case AppIcon.MessageIcon:
       return <MessageIcon {...rest} />;

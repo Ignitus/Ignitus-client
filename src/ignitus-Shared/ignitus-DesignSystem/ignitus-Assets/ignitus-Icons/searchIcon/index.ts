@@ -1,1 +1,1 @@
-export {default} from './searchIcon';
+export {default} from './SearchIcon';
