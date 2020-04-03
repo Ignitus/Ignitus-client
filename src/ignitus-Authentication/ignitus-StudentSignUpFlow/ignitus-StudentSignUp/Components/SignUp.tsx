@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types';
 import {
   isEmpty,
   isEqual,
@@ -77,15 +76,6 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
       handleSubmit={handleSubmit}
     />
   );
-};
-
-Signup.propTypes = {
-  signUpRequest: PropTypes.func.isRequired,
-  studentSignUpData: PropTypes.shape({
-    isFetching: PropTypes.bool,
-    success: PropTypes.bool,
-    msg: PropTypes.string,
-  }).isRequired,
 };
 
 export default withErrorBoundary(Signup);
