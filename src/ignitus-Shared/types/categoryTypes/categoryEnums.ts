@@ -4,4 +4,8 @@ export enum CategoryEnums {
   Grey = 'grey',
   Orange = 'orange',
   White = 'white',
+  Red = 'red',
+  Green = 'green',
+  Yellow = 'yellow',
+  Disabled = 'disabled',
 }

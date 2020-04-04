@@ -32,6 +32,27 @@ const interfaceButttons = () => (
       {' '}
       White Button{' '}
     </B.Button>
+
+    <B.Button size="large" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
     {/* <DefaultButtonWithIcon name={AppIcon.MessageIcon} content={'Message'}/> */}
 
     <hr />
@@ -56,6 +77,27 @@ const interfaceButttons = () => (
       {' '}
       White Button{' '}
     </B.Button>
+
+    <B.Button size="medium" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
     {/* <DefaultButtonWithIcon type="medium" name={AppIcon.MessageIcon} content={'Message'}/> */}
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
@@ -80,12 +122,26 @@ const interfaceButttons = () => (
       White Button{' '}
     </B.Button>
 
-    <hr />
-    <StyledHeading6> Button States </StyledHeading6>
-    <B.DisabledButton disabled> Disabled State </B.DisabledButton>
-    <B.DangerButton> Danger State </B.DangerButton>
-    <B.YellowButton> Yellow Button </B.YellowButton>
-    <B.GreenButton> Green Button </B.GreenButton>
+    <B.Button size="small" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
     <hr />
     <StyledHeading6> Text Button </StyledHeading6>
     <B.TextButton> Text Button </B.TextButton>

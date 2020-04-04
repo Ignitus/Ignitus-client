@@ -6,9 +6,12 @@ import {
   IgnitusBlue,
   SecondaryColor,
   Grey2,
+  Red,
+  GreySecondaryText,
 } from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
 import {AppSize} from '../../types/sizeTypes/sizeEnums';
 import {CategoryEnums} from '../../types/categoryTypes/categoryEnums';
+import {Green, Yellow} from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
 
 const hexArray = [GreyBackground, White, GreyLight];
 
@@ -61,16 +64,19 @@ export const getColor = ({category}: ButtonProperties) => {
     case CategoryEnums.Primary:
       return White;
 
-    case CategoryEnums.Secondary:
-      return IgnitusBlue;
+    case CategoryEnums.Red:
+      return White;
 
-    case CategoryEnums.Grey:
-      return IgnitusBlue;
+    case CategoryEnums.Green:
+      return White;
 
-    case CategoryEnums.Orange:
-      return IgnitusBlue;
+    case CategoryEnums.Yellow:
+      return GreySecondaryText;
 
-    case CategoryEnums.White:
+    case CategoryEnums.Disabled:
+      return GreySecondaryText;
+
+    default:
       return IgnitusBlue;
   }
 };
@@ -91,6 +97,18 @@ export const getBackgroundColor = ({category}: ButtonProperties) => {
 
     case CategoryEnums.White:
       return White;
+
+    case CategoryEnums.Red:
+      return Red;
+
+    case CategoryEnums.Green:
+      return Green;
+
+    case CategoryEnums.Yellow:
+      return Yellow;
+
+    case CategoryEnums.Disabled:
+      return GreyLight;
   }
 };
 
