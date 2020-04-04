@@ -147,18 +147,136 @@ const interfaceButttons = () => (
     <B.TextButton> Text Button </B.TextButton>
     <B.TextButtonUnderline> Text Button </B.TextButtonUnderline>
     <hr />
-    <StyledHeading6> Styled Buttons </StyledHeading6>
-    <B.StyledButtonBottomRight>
+
+    <StyledHeading2> Styled Buttons </StyledHeading2>
+
+    <B.ButtonBottomRight size="large" category="primary">
       {' '}
-      Styled Button Bottom Right{' '}
-    </B.StyledButtonBottomRight>
-    <B.StyledButtonTopLeft> Styled Button Top Left </B.StyledButtonTopLeft>
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="secondary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.StyledButtonTopLeft size="large" category="primary">
+      {' '}
+      Button Top Left{' '}
+    </B.StyledButtonTopLeft>
+
+    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+
+    <B.ButtonBottomRight size="medium" category="primary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="secondary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <StyledHeading6> Small Size Buttons </StyledHeading6>
+
+    <B.ButtonBottomRight size="small" category="primary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="secondary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.StyledButtonTopLeft size="small" category="primary">
+      {' '}
+      Button Top Left{' '}
+    </B.StyledButtonTopLeft>
     <hr />
-    <StyledHeading6> Rounded Button </StyledHeading6>
+    <StyledHeading2> Rounded Button </StyledHeading2>
     <B.RoundedButton size="large" category="primary">
       {' '}
-      Rounded Primary Button{' '}
+      Rounded Button{' '}
     </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="secondary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="grey">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="orange">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+
+    <B.RoundedButton size="medium" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="secondary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="grey">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="orange">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
     <hr />
     <StyledHeading6> Social Buttons </StyledHeading6>
     <StyledHeading6> Button with Icons </StyledHeading6>

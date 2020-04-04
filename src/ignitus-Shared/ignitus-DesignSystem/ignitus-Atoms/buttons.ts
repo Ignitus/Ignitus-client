@@ -58,28 +58,6 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   }
 `;
 
-
-export const DisabledButton = styled(ParentButton)`
-  color: ${C.GreySecondaryText};
-  background-color: ${C.GreyLight};
-  cursor: not-allowed;
-`;
-
-export const DangerButton = styled(ParentButton)`
-  color: ${C.White};
-  background-color: ${C.Red};
-`;
-
-export const GreenButton = styled(ParentButton)`
-  color: ${C.White};
-  background-color: ${C.Green};
-`;
-
-export const YellowButton = styled(ParentButton)`
-  color: ${C.GreySecondaryText};
-  background-color: ${C.Yellow};
-`;
-
 export const TextButton = styled(ParentButton)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
@@ -101,26 +79,12 @@ export const TextButtonUnderline = styled(ParentButton)`
   }
 `;
 
-export const StyledButtonBottomRight = styled(ParentButton)`
-  color: ${C.White};
-  background-color: ${C.IgnitusBlue};
+export const ButtonBottomRight = styled(Button)`
   border-radius: 0px 30px;
-  &:hover,
-  &:focus {
-    background-color: ${C.SecondaryColor};
-    color: ${C.IgnitusBlue};
-  }
 `;
 
-export const StyledButtonTopLeft = styled(ParentButton)`
-  color: ${C.White};
-  background-color: ${C.IgnitusBlue};
+export const StyledButtonTopLeft = styled(Button)`
   border-radius: 30px 0px;
-  &:hover,
-  &:focus {
-    background-color: ${C.SecondaryColor};
-    color: ${C.IgnitusBlue};
-  }
 `;
 
 export const RoundedButton = styled(Button)`
