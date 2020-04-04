@@ -3,6 +3,8 @@ import {ButtonsContainer} from '../style';
 
 import * as Button from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {StyledHeading2, StyledHeading6} from '../../../../styles';
+import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
+import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/enums';
 
 {
   /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
@@ -22,6 +24,7 @@ const interfaceButttons = () => (
     <Button.GreyButton medium> Grey Button </Button.GreyButton>
     <Button.OrangeButton medium> Orange Button </Button.OrangeButton>
     <Button.WhiteButton medium> White Button </Button.WhiteButton>
+    <DefaultButtonWithIcon name={AppIcon.MessageIcon} content={'Message'}/>
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
     <Button.PrimaryButton small> Small Primary Button </Button.PrimaryButton>
@@ -61,6 +64,8 @@ const interfaceButttons = () => (
     <StyledHeading6> Floating Action Button </StyledHeading6>
     <StyledHeading6> Icon with text link</StyledHeading6>
     <StyledHeading6> Icon Button</StyledHeading6>
+
+
   </ButtonsContainer>
 );
 

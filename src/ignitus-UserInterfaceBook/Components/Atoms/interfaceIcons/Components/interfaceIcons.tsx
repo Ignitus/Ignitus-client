@@ -22,6 +22,7 @@ const interfaceIcons = () => (
     <hr />
     <StyledHeading2>General Icons</StyledHeading2>
     <IconsMapper icons={GeneralIcons} />
+
     <hr />
     <StyledHeading2>Ignitus Logos</StyledHeading2>
     <IconsMapper icons={IgnitusLogos} />

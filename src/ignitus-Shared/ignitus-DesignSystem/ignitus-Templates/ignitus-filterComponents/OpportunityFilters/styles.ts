@@ -125,30 +125,21 @@ export const InputContainer = styled.input`
 `
 
 export const ArrowDownIcon = styled(Icon)`
-  margin-bottom: -.6rem;
-  margin-left: .5rem;
-  margin-right: -1rem;
+cursor: pointer;
   fill: ${props => props.color ? props.color : IgnitusBlue};
 `;
 
 export const CrossIcon = styled(Icon)`
-  margin-bottom: -.5rem;
-  margin-left: 1.2rem;
-  margin-right: -.7rem;
   cursor: pointer;
   fill: ${props => props.color ? props.color : White};
 `;
 
 export const SearchIcon = styled(Icon)`
-  margin-right: .7rem;
-  margin-top: 1rem;
   cursor: pointer;
   fill: ${props => props.color ? props.color : Grey1};
 `;
 
 export const LocationIcon = styled(Icon)`
-  margin-left: -.4rem;
-  margin-right: .4rem;
   fill: ${props => props.color ? props.color : IgnitusBlue};
 `;
 

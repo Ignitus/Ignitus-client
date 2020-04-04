@@ -13,19 +13,17 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const Button = styled.button`
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
   padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 5px;
   line-height: 1rem;
-  margin: 5px;
-  border: none;
-  font-size: ${F.MD};
+  margin: 0.5rem;
   outline: none;
+  font-size: ${F.MD};
   font-weight: ${F.Normal};
+  transition: all 0.3s ease;
   &:hover,
   &:focus {
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24);
