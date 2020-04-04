@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
 import {
-  BtnSizeProps,
+  ButtonProperties,
   getPadding,
   getFontSizes,
   getRadius,
@@ -30,7 +30,7 @@ export const Button = styled.button`
   }
 `;
 
-export const PrimaryButton = styled(Button)<BtnSizeProps>`
+export const PrimaryButton = styled(Button)<ButtonProperties>`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
   padding: ${props => getPadding(props)};
@@ -52,7 +52,7 @@ export const PrimaryButton = styled(Button)<BtnSizeProps>`
   }
 `;
 
-export const SecondaryButton = styled(Button)<BtnSizeProps>`
+export const SecondaryButton = styled(Button)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   border: 2px solid ${C.IgnitusBlue};
@@ -61,7 +61,7 @@ export const SecondaryButton = styled(Button)<BtnSizeProps>`
   border-radius: ${props => getRadius(props)};
 `;
 
-export const WhiteButton = styled(Button)<BtnSizeProps>`
+export const WhiteButton = styled(Button)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   padding: ${props => getPadding(props)};
@@ -72,7 +72,7 @@ export const WhiteButton = styled(Button)<BtnSizeProps>`
   }
 `;
 
-export const GreyButton = styled(Button)<BtnSizeProps>`
+export const GreyButton = styled(Button)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.GreyLight};
   padding: ${props => getPadding(props)};
@@ -85,7 +85,7 @@ export const GreyButton = styled(Button)<BtnSizeProps>`
   }
 `;
 
-export const OrangeButton = styled(Button)<BtnSizeProps>`
+export const OrangeButton = styled(Button)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.SecondaryColor};
   padding: ${props => getPadding(props)};

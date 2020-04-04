@@ -1,12 +1,7 @@
 import React from 'react';
-import {PrimaryButtonWithIcon, StyledIcon} from '../styles';
 
-const DefaultButtonWithIcon = ({name, content}) => (
+const DefaultButtonWithIcon = ({type, name, content}) => (
   <React.Fragment>
-    <PrimaryButtonWithIcon>
-      {content}
-      <StyledIcon name={name} />
-    </PrimaryButtonWithIcon>
   </React.Fragment>
 );
 

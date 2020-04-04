@@ -6,7 +6,7 @@ import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingCo
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {Team, TeamItemProps} from '../types';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/enums';
+import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const PureCoreTeam = ({team}: any) => (

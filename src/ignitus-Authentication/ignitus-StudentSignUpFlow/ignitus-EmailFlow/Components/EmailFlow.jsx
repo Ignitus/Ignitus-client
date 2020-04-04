@@ -33,7 +33,7 @@ const EmailFlow = () => (
     </T.TopSection>
     <T.BottomSection>
       <C.ButtonContainer>
-        <PrimaryButton>
+        <PrimaryButton size="large">
           <Link to="/flow/emailConfirmationFlow">Email confirmed</Link>
         </PrimaryButton>
         <WhiteButton>

@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import * as C from '../../../ignitus-Atoms/colors.ts';
 import * as S from './styles.ts';
-import { AppIcon } from '../../../../types/iconsTypes/enums';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 export default function OpportunityFilters() {
 
@@ -45,7 +45,7 @@ export default function OpportunityFilters() {
       <S.UpperContainer>
         <S.SearchIcon name={AppIcon.SearchIcon} />
         <S.FilterItemsContainer>
-          <S.TagsBarContainer>
+          <S.TagsBarContainer size="large">
             {
               Object.keys(Tags).map(key => (Tags[key] && (
                 <S.TagBtnContainer key={key}>
@@ -115,7 +115,7 @@ export default function OpportunityFilters() {
             </S.DropdownContainer>
           ))
         }
-        <S.ResetBtnContainer onClick={resetFilters}>Reset Filter</S.ResetBtnContainer>
+        <S.ResetBtnContainer size="large" onClick={resetFilters}>Reset Filter</S.ResetBtnContainer>
       </S.FilterBtnsContainer>
     </S.FiltersContainer>
   );

@@ -1,1 +1,3 @@
-export{};
+export type BtnSizeProps = {
+  type: boolean;
+};
