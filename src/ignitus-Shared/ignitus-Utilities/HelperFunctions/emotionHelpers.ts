@@ -3,8 +3,12 @@ import {
   GreyBackground,
   White,
   GreyLight,
+  IgnitusBlue,
+  SecondaryColor,
+  Grey2,
 } from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
 import {AppSize} from '../../types/sizeTypes/sizeEnums';
+import {CategoryEnums} from '../../types/categoryTypes/categoryEnums';
 
 const hexArray = [GreyBackground, White, GreyLight];
 
@@ -49,6 +53,71 @@ export const getRadius = ({size}: ButtonProperties) => {
 
     case AppSize.Large:
       return '5px';
+  }
+};
+
+export const getColor = ({category}: ButtonProperties) => {
+  switch (category) {
+    case CategoryEnums.Primary:
+      return White;
+
+    case CategoryEnums.Secondary:
+      return IgnitusBlue;
+
+    case CategoryEnums.Grey:
+      return IgnitusBlue;
+  }
+};
+
+export const getBackgroundColor = ({category}: ButtonProperties) => {
+  switch (category) {
+    case CategoryEnums.Primary:
+      return IgnitusBlue;
+
+    case CategoryEnums.Secondary:
+      return White;
+
+    case CategoryEnums.Grey:
+      return GreyLight;
+  }
+};
+
+export const getBorder = ({category}: ButtonProperties) => {
+  switch (category) {
+    case CategoryEnums.Primary:
+      return 'none';
+
+    case CategoryEnums.Secondary:
+      return `2px solid ${IgnitusBlue}`;
+
+    case CategoryEnums.Grey:
+      return 'none';
+  }
+};
+
+export const getHoverColor = ({category}: ButtonProperties) => {
+  switch (category) {
+    case CategoryEnums.Primary:
+      return IgnitusBlue;
+
+    case CategoryEnums.Secondary:
+      return `none`;
+
+    case CategoryEnums.Grey:
+      return IgnitusBlue;
+  }
+};
+
+export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
+  switch (category) {
+    case CategoryEnums.Primary:
+      return SecondaryColor;
+
+    case CategoryEnums.Secondary:
+      return `none`;
+
+    case CategoryEnums.Grey:
+      return Grey2;
   }
 };
 

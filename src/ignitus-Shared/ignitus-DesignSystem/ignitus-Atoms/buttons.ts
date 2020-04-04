@@ -6,13 +6,18 @@ import {
   getPadding,
   getFontSizes,
   getRadius,
+  getColor,
+  getBackgroundColor,
+  getBorder,
+  getHoverBackgroundColor,
+  getHoverColor,
 } from '../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const ButtonsContainer = styled.div`
   padding: 3rem;
 `;
 
-export const Button = styled.button`
+export const ParentButton = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -30,7 +35,30 @@ export const Button = styled.button`
   }
 `;
 
-export const PrimaryButton = styled(Button)<ButtonProperties>`
+export const Button = styled(ParentButton)<ButtonProperties>`
+  color: ${props => getColor(props)};
+  background-color: ${props => getBackgroundColor(props)};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
+  border: ${props => getBorder(props)};
+
+  a {
+    color: ${C.White};
+  }
+
+  &:hover,
+  &:focus {
+    background-color: ${props => getHoverBackgroundColor(props)};
+    color: ${props => getHoverColor(props)};
+
+    a {
+      color: ${C.IgnitusBlue};
+    }
+  }
+`;
+
+export const PrimaryButton = styled(ParentButton)<ButtonProperties>`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
   padding: ${props => getPadding(props)};
@@ -43,8 +71,8 @@ export const PrimaryButton = styled(Button)<ButtonProperties>`
 
   &:hover,
   &:focus {
-    background-color: ${C.SecondaryColor};
-    color: ${C.IgnitusBlue};
+    background-color: ${props => getHoverBackgroundColor(props)};;
+    color: ${props => getHoverColor(props)};;
 
     a {
       color: ${C.IgnitusBlue};
@@ -52,7 +80,7 @@ export const PrimaryButton = styled(Button)<ButtonProperties>`
   }
 `;
 
-export const SecondaryButton = styled(Button)<ButtonProperties>`
+export const SecondaryButton = styled(ParentButton)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   border: 2px solid ${C.IgnitusBlue};
@@ -61,7 +89,7 @@ export const SecondaryButton = styled(Button)<ButtonProperties>`
   border-radius: ${props => getRadius(props)};
 `;
 
-export const WhiteButton = styled(Button)<ButtonProperties>`
+export const WhiteButton = styled(ParentButton)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.White};
   padding: ${props => getPadding(props)};
@@ -72,7 +100,7 @@ export const WhiteButton = styled(Button)<ButtonProperties>`
   }
 `;
 
-export const GreyButton = styled(Button)<ButtonProperties>`
+export const GreyButton = styled(ParentButton)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.GreyLight};
   padding: ${props => getPadding(props)};
@@ -85,7 +113,7 @@ export const GreyButton = styled(Button)<ButtonProperties>`
   }
 `;
 
-export const OrangeButton = styled(Button)<ButtonProperties>`
+export const OrangeButton = styled(ParentButton)<ButtonProperties>`
   color: ${C.IgnitusBlue};
   background-color: ${C.SecondaryColor};
   padding: ${props => getPadding(props)};
@@ -93,28 +121,28 @@ export const OrangeButton = styled(Button)<ButtonProperties>`
   border-radius: ${props => getRadius(props)};
 `;
 
-export const DisabledButton = styled(Button)`
+export const DisabledButton = styled(ParentButton)`
   color: ${C.GreySecondaryText};
   background-color: ${C.GreyLight};
   cursor: not-allowed;
 `;
 
-export const DangerButton = styled(Button)`
+export const DangerButton = styled(ParentButton)`
   color: ${C.White};
   background-color: ${C.Red};
 `;
 
-export const GreenButton = styled(Button)`
+export const GreenButton = styled(ParentButton)`
   color: ${C.White};
   background-color: ${C.Green};
 `;
 
-export const YellowButton = styled(Button)`
+export const YellowButton = styled(ParentButton)`
   color: ${C.GreySecondaryText};
   background-color: ${C.Yellow};
 `;
 
-export const TextButton = styled(Button)`
+export const TextButton = styled(ParentButton)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
   &:hover,
@@ -124,7 +152,7 @@ export const TextButton = styled(Button)`
   }
 `;
 
-export const TextButtonUnderline = styled(Button)`
+export const TextButtonUnderline = styled(ParentButton)`
   color: ${C.IgnitusBlue};
   background-color: inherit;
   text-decoration: underline;
@@ -135,7 +163,7 @@ export const TextButtonUnderline = styled(Button)`
   }
 `;
 
-export const StyledButtonBottomRight = styled(Button)`
+export const StyledButtonBottomRight = styled(ParentButton)`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
   border-radius: 0px 30px;
@@ -146,7 +174,7 @@ export const StyledButtonBottomRight = styled(Button)`
   }
 `;
 
-export const StyledButtonTopLeft = styled(Button)`
+export const StyledButtonTopLeft = styled(ParentButton)`
   color: ${C.White};
   background-color: ${C.IgnitusBlue};
   border-radius: 30px 0px;

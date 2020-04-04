@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import { Paragraph } from '../../../shared';
-import { PrimaryButton, Button } from '../../../ignitus-Atoms/buttons';
+import { PrimaryButton, ParentButton } from '../../../ignitus-Atoms/buttons';
 import { Card } from '../../../ignitus-Atoms/atoms';
 import { White, IgnitusBlue, Grey1, Grey2 } from '../../../ignitus-Atoms/colors';
 import { MD, Normal } from '../../../ignitus-Atoms/fonts';
@@ -59,7 +59,7 @@ export const ResetBtnContainer = styled(PrimaryButton)`
   }
 `;
 
-export const DropdownBtnContainer = styled(Button)`
+export const DropdownBtnContainer = styled(ParentButton)`
   background-color: ${White};
   padding: 10px 25px;
   margin: 10px;
