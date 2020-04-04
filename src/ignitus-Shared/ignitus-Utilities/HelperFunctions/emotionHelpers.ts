@@ -59,6 +59,19 @@ export const getRadius = ({size}: ButtonProperties) => {
   }
 };
 
+export const getIconDimension = ({size}: ButtonProperties) => {
+  switch (size) {
+    case AppSize.Small:
+      return '0.8rem';
+
+    case AppSize.Medium:
+      return '1rem';
+
+    case AppSize.Large:
+      return '1.2rem';
+  }
+};
+
 export const getColor = ({category}: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Primary:

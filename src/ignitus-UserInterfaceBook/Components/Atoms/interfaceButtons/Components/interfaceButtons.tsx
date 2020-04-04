@@ -53,7 +53,12 @@ const interfaceButttons = () => (
       Yellow Button{' '}
     </B.Button>
 
-    {/* <DefaultButtonWithIcon name={AppIcon.MessageIcon} content={'Message'}/> */}
+    <DefaultButtonWithIcon
+      size="large"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
 
     <hr />
     <StyledHeading6> Medium Size Buttons </StyledHeading6>
@@ -98,7 +103,13 @@ const interfaceButttons = () => (
       Yellow Button{' '}
     </B.Button>
 
-    {/* <DefaultButtonWithIcon type="medium" name={AppIcon.MessageIcon} content={'Message'}/> */}
+    <DefaultButtonWithIcon
+      size="medium"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
     <B.Button size="small" category="primary">
@@ -141,6 +152,13 @@ const interfaceButttons = () => (
       {' '}
       Yellow Button{' '}
     </B.Button>
+
+    <DefaultButtonWithIcon
+      size="small"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
 
     <hr />
     <StyledHeading6> Text Button </StyledHeading6>

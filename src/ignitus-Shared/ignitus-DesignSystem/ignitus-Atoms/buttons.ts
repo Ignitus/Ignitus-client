@@ -55,6 +55,10 @@ export const Button = styled(ParentButton)<ButtonProperties>`
     a {
       color: ${C.IgnitusBlue};
     }
+
+    svg {
+      fill: ${C.IgnitusBlue};
+    }
   }
 `;
 
