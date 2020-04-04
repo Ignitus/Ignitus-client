@@ -48,10 +48,10 @@ export default function OpportunityFilters() {
           <S.TagsBarContainer size="large">
             {
               Object.keys(Tags).map(key => (Tags[key] && (
-                <S.TagBtnContainer key={key}>
+                <S.TagButton size="large" category="primary" key={key}>
                   {Tags[key]}
                   <S.CrossIcon name={AppIcon.CrossIcon} onClick={() => resetTag(key)} />
-                </S.TagBtnContainer>
+                </S.TagButton>
               )))
             }
           </S.TagsBarContainer>
@@ -115,7 +115,7 @@ export default function OpportunityFilters() {
             </S.DropdownContainer>
           ))
         }
-        <S.ResetBtnContainer size="large" onClick={resetFilters}>Reset Filter</S.ResetBtnContainer>
+        <S.ResetButton size="large" category="primary" onClick={resetFilters}>Reset Filter</S.ResetButton>
       </S.FilterBtnsContainer>
     </S.FiltersContainer>
   );

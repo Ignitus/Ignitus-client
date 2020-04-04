@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import { Paragraph } from '../../../shared';
-import { PrimaryButton, ParentButton } from '../../../ignitus-Atoms/buttons';
+import { Button, ParentButton } from '../../../ignitus-Atoms/buttons';
 import { Card } from '../../../ignitus-Atoms/atoms';
 import { White, IgnitusBlue, Grey1, Grey2 } from '../../../ignitus-Atoms/colors';
 import { MD, Normal } from '../../../ignitus-Atoms/fonts';
@@ -26,7 +26,7 @@ export const UpperContainer = styled.div`
   padding: 0;
 `;
 
-export const TagBtnContainer = styled(PrimaryButton)`
+export const TagButton = styled(Button)`
   border-radius: 2rem;
   text-decoration: none;
   background-color: ${IgnitusBlue};
@@ -41,7 +41,7 @@ export const TagBtnContainer = styled(PrimaryButton)`
   }
 `;
 
-export const ResetBtnContainer = styled(PrimaryButton)`
+export const ResetButton = styled(Button)`
   background-color: ${White};
   font-size: ${MD};
   padding: 10px 22px;

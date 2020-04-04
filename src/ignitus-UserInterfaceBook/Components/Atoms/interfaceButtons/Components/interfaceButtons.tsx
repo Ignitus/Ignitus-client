@@ -99,7 +99,10 @@ const interfaceButttons = () => (
     <B.StyledButtonTopLeft> Styled Button Top Left </B.StyledButtonTopLeft>
     <hr />
     <StyledHeading6> Rounded Button </StyledHeading6>
-    <B.RoundedPrimaryButton> Rounded Primary Button </B.RoundedPrimaryButton>
+    <B.RoundedButton size="large" category="primary">
+      {' '}
+      Rounded Primary Button{' '}
+    </B.RoundedButton>
     <hr />
     <StyledHeading6> Social Buttons </StyledHeading6>
     <StyledHeading6> Button with Icons </StyledHeading6>

@@ -58,27 +58,6 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   }
 `;
 
-export const PrimaryButton = styled(ParentButton)<ButtonProperties>`
-  color: ${C.White};
-  background-color: ${C.IgnitusBlue};
-  padding: ${props => getPadding(props)};
-  font-size: ${props => getFontSizes(props)};
-  border-radius: ${props => getRadius(props)};
-
-  a {
-    color: ${C.White};
-  }
-
-  &:hover,
-  &:focus {
-    background-color: ${props => getHoverBackgroundColor(props)};
-    color: ${props => getHoverColor(props)};
-
-    a {
-      color: ${C.IgnitusBlue};
-    }
-  }
-`;
 
 export const DisabledButton = styled(ParentButton)`
   color: ${C.GreySecondaryText};
@@ -144,6 +123,6 @@ export const StyledButtonTopLeft = styled(ParentButton)`
   }
 `;
 
-export const RoundedPrimaryButton = styled(PrimaryButton)`
+export const RoundedButton = styled(Button)`
   border-radius: 30px;
 `;

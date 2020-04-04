@@ -16,9 +16,9 @@ export const Notfound = () => (
           The page you are looking for is not available! 🔨
         </S.StyledParagraph>
       </S.Message>
-      <S.StyledPrimaryBtn size="large">
+      <S.StyledButton size="large" category="primary">
         <Link to="/"> Home Page </Link>
-      </S.StyledPrimaryBtn>
+      </S.StyledButton>
     </S.MessageContainer>
   </React.Fragment>
 );
