@@ -71,54 +71,13 @@ export const PrimaryButton = styled(ParentButton)<ButtonProperties>`
 
   &:hover,
   &:focus {
-    background-color: ${props => getHoverBackgroundColor(props)};;
-    color: ${props => getHoverColor(props)};;
+    background-color: ${props => getHoverBackgroundColor(props)};
+    color: ${props => getHoverColor(props)};
 
     a {
       color: ${C.IgnitusBlue};
     }
   }
-`;
-
-export const SecondaryButton = styled(ParentButton)<ButtonProperties>`
-  color: ${C.IgnitusBlue};
-  background-color: ${C.White};
-  border: 2px solid ${C.IgnitusBlue};
-  padding: ${props => getPadding(props)};
-  font-size: ${props => getFontSizes(props)};
-  border-radius: ${props => getRadius(props)};
-`;
-
-export const WhiteButton = styled(ParentButton)<ButtonProperties>`
-  color: ${C.IgnitusBlue};
-  background-color: ${C.White};
-  padding: ${props => getPadding(props)};
-  font-size: ${props => getFontSizes(props)};
-  border-radius: ${props => getRadius(props)};
-  a {
-    color: ${C.IgnitusBlue};
-  }
-`;
-
-export const GreyButton = styled(ParentButton)<ButtonProperties>`
-  color: ${C.IgnitusBlue};
-  background-color: ${C.GreyLight};
-  padding: ${props => getPadding(props)};
-  font-size: ${props => getFontSizes(props)};
-  border-radius: ${props => getRadius(props)};
-  &:hover,
-  &:focus {
-    background-color: ${C.Grey2};
-    color: ${C.IgnitusBlue};
-  }
-`;
-
-export const OrangeButton = styled(ParentButton)<ButtonProperties>`
-  color: ${C.IgnitusBlue};
-  background-color: ${C.SecondaryColor};
-  padding: ${props => getPadding(props)};
-  font-size: ${props => getFontSizes(props)};
-  border-radius: ${props => getRadius(props)};
 `;
 
 export const DisabledButton = styled(ParentButton)`

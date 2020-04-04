@@ -66,6 +66,12 @@ export const getColor = ({category}: ButtonProperties) => {
 
     case CategoryEnums.Grey:
       return IgnitusBlue;
+
+    case CategoryEnums.Orange:
+      return IgnitusBlue;
+
+    case CategoryEnums.White:
+      return IgnitusBlue;
   }
 };
 
@@ -79,18 +85,21 @@ export const getBackgroundColor = ({category}: ButtonProperties) => {
 
     case CategoryEnums.Grey:
       return GreyLight;
+
+    case CategoryEnums.Orange:
+      return SecondaryColor;
+
+    case CategoryEnums.White:
+      return White;
   }
 };
 
 export const getBorder = ({category}: ButtonProperties) => {
   switch (category) {
-    case CategoryEnums.Primary:
-      return 'none';
-
     case CategoryEnums.Secondary:
       return `2px solid ${IgnitusBlue}`;
 
-    case CategoryEnums.Grey:
+    default:
       return 'none';
   }
 };
@@ -100,11 +109,11 @@ export const getHoverColor = ({category}: ButtonProperties) => {
     case CategoryEnums.Primary:
       return IgnitusBlue;
 
-    case CategoryEnums.Secondary:
-      return `none`;
-
     case CategoryEnums.Grey:
       return IgnitusBlue;
+
+    default:
+      return 'none';
   }
 };
 
@@ -113,11 +122,11 @@ export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
     case CategoryEnums.Primary:
       return SecondaryColor;
 
-    case CategoryEnums.Secondary:
-      return `none`;
-
     case CategoryEnums.Grey:
       return Grey2;
+
+    default:
+      return 'none';
   }
 };
 

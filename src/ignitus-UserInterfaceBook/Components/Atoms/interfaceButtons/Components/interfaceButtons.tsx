@@ -12,31 +12,73 @@ import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums'
 const interfaceButttons = () => (
   <ButtonsContainer>
     <StyledHeading2> Buttons </StyledHeading2>
-    <B.Button size="large" category="primary"> Primary Button </B.Button>
-    <B.Button size="large" category="secondary"> Secondary Button </B.Button>
-    <B.Button size="large" category="grey"> Grey Button </B.Button>
-
-    <B.OrangeButton size="large"> Orange Button </B.OrangeButton>
-    <B.WhiteButton size="large"> White Button </B.WhiteButton>
+    <B.Button size="large" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="large" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="large" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="large" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="large" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
     {/* <DefaultButtonWithIcon name={AppIcon.MessageIcon} content={'Message'}/> */}
 
     <hr />
     <StyledHeading6> Medium Size Buttons </StyledHeading6>
-    <B.Button size="medium" category="primary"> Primary Button </B.Button>
-    <B.Button size="medium" category="secondary"> Secondary Button </B.Button>
-    <B.Button size="medium" category="grey"> Grey Button </B.Button>
-
-    <B.GreyButton size="medium"> Grey Button </B.GreyButton>
-    <B.OrangeButton size="medium"> Orange Button </B.OrangeButton>
-    <B.WhiteButton size="medium"> White Button </B.WhiteButton>
+    <B.Button size="medium" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
     {/* <DefaultButtonWithIcon type="medium" name={AppIcon.MessageIcon} content={'Message'}/> */}
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
-    <B.PrimaryButton size="small"> Small Primary Button </B.PrimaryButton>
-    <B.SecondaryButton size="small"> Secondary Button </B.SecondaryButton>
-    <B.GreyButton size="small"> Grey Button </B.GreyButton>
-    <B.OrangeButton size="small"> Orange Button </B.OrangeButton>
-    <B.WhiteButton size="small"> White Button </B.WhiteButton>
+    <B.Button size="small" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="small" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="small" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="small" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="small" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
 
     <hr />
     <StyledHeading6> Button States </StyledHeading6>
