@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../shared';
-import {PrimaryFamily, Normal, XS} from '../../ignitus-Atoms/fonts';
+import { flexibleColDiv } from '../../shared';
+import { PrimaryFamily, XS } from '../../ignitus-Atoms/fonts';
 
 
 export const Footer = styled.footer`
@@ -18,12 +18,14 @@ export const Container = styled.div`
   min-height: 10vh;
 `;
 
-export const Column = styled(flexibleColDiv)``;
+export const Column = styled(flexibleColDiv)`
+    margin: 0 auto;
+`;
 
 export const FooterSections = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: centre;
+  align-items: center;
 `;
 
 export const FooterRow = styled.ul`
@@ -58,5 +60,6 @@ export const Copyright = styled.p`
   font-family: ${PrimaryFamily};
   font-size: ${XS};
   text-align: center;
+  margin-top: 20px;
 `;
 
