@@ -8,4 +8,5 @@ export enum CategoryEnums {
   Green = 'green',
   Yellow = 'yellow',
   Disabled = 'disabled',
+  Text = 'text'
 }

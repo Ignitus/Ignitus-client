@@ -58,27 +58,6 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   }
 `;
 
-export const TextButton = styled(ParentButton)`
-  color: ${C.IgnitusBlue};
-  background-color: inherit;
-  &:hover,
-  &:focus {
-    background-color: ${C.GreyLight};
-    color: ${C.IgnitusBlue};
-  }
-`;
-
-export const TextButtonUnderline = styled(ParentButton)`
-  color: ${C.IgnitusBlue};
-  background-color: inherit;
-  text-decoration: underline;
-  &:hover,
-  &:focus {
-    background-color: ${C.GreyLight};
-    color: ${C.IgnitusBlue};
-  }
-`;
-
 export const ButtonBottomRight = styled(Button)`
   border-radius: 0px 30px;
 `;

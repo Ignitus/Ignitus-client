@@ -109,6 +109,9 @@ export const getBackgroundColor = ({category}: ButtonProperties) => {
 
     case CategoryEnums.Disabled:
       return GreyLight;
+
+    case CategoryEnums.Text:
+      return 'inherit';
   }
 };
 
@@ -130,6 +133,9 @@ export const getHoverColor = ({category}: ButtonProperties) => {
     case CategoryEnums.Grey:
       return IgnitusBlue;
 
+    case CategoryEnums.Text:
+      return IgnitusBlue;
+
     default:
       return 'none';
   }
@@ -142,6 +148,9 @@ export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
 
     case CategoryEnums.Grey:
       return Grey2;
+
+    case CategoryEnums.Text:
+      return GreyLight;
 
     default:
       return 'none';

@@ -144,8 +144,18 @@ const interfaceButttons = () => (
 
     <hr />
     <StyledHeading6> Text Button </StyledHeading6>
-    <B.TextButton> Text Button </B.TextButton>
-    <B.TextButtonUnderline> Text Button </B.TextButtonUnderline>
+    <B.Button size="large" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
+    <B.Button size="small" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
     <hr />
 
     <StyledHeading2> Styled Buttons </StyledHeading2>
