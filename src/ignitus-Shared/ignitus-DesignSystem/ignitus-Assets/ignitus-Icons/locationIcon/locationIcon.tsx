@@ -1,21 +1,19 @@
 import React from 'react';
-import { HTMLAttributes } from 'react';
+import {HTMLAttributes} from 'react';
 
 type Props = HTMLAttributes<SVGElement>;
 
-const LocationIcon = ({ title = 'Location Icon', ...rest }: Props) => {
+const LocationIcon = ({title = 'Location Icon', ...rest}: Props) => {
   return (
     <svg
-      aria-label={title}
       xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      width="16"
-      height="16"
-      viewBox="0 0 11 15"
+      aria-label={title}
+      viewBox="0 0 24 24"
       {...rest}
     >
       <title>{title}</title>
-      <path d="M5.49935 0.592773C2.7581 0.592773 0.541016 2.80986 0.541016 5.55111C0.541016 8.50486 3.67185 12.5778 4.96102 14.129C5.24435 14.469 5.76143 14.469 6.04477 14.129C7.32685 12.5778 10.4577 8.50486 10.4577 5.55111C10.4577 2.80986 8.2406 0.592773 5.49935 0.592773ZM5.49935 7.32194C4.52185 7.32194 3.72852 6.52861 3.72852 5.55111C3.72852 4.57361 4.52185 3.78027 5.49935 3.78027C6.47685 3.78027 7.27018 4.57361 7.27018 5.55111C7.27018 6.52861 6.47685 7.32194 5.49935 7.32194Z"/>
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
     </svg>
   );
 };

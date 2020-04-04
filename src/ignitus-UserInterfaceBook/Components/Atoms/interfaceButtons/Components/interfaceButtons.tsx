@@ -60,6 +60,13 @@ const interfaceButttons = () => (
       content={'Message'}
     />
 
+    <DefaultButtonWithIcon
+      size="large"
+      category="primary"
+      name={AppIcon.LocationIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Medium Size Buttons </StyledHeading6>
     <B.Button size="medium" category="primary">
@@ -110,6 +117,13 @@ const interfaceButttons = () => (
       content={'Message'}
     />
 
+    <DefaultButtonWithIcon
+      size="medium"
+      category="primary"
+      name={AppIcon.LocationIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
     <B.Button size="small" category="primary">
@@ -157,6 +171,13 @@ const interfaceButttons = () => (
       size="small"
       category="primary"
       name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
+
+    <DefaultButtonWithIcon
+      size="small"
+      category="primary"
+      name={AppIcon.LocationIcon}
       content={'Message'}
     />
 
