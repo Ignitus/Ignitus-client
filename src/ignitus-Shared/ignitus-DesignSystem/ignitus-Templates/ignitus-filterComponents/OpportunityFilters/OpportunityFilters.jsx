@@ -113,7 +113,7 @@ export default function OpportunityFilters() {
               <S.OptionSelector>
                 {
                   dummyData[key].map(value => (
-                    <S.Option>
+                    <S.Option key={value}>
                       <S.OptionText key={value} onClick={e => handlechange(e, key)}>
                         {value}
                       </S.OptionText>
