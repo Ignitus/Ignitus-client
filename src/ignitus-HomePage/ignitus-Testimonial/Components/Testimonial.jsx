@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/alt-text */
@@ -16,14 +17,23 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleClick = (event) => {
     const { target: { id } } = event;
-    if (id === 'firstImage') {
-      setCurrentIndex(0);
-    } else if (id === 'secondImage') {
-      setCurrentIndex(1);
-    } else if (id === 'thirdImage') {
-      setCurrentIndex(2);
-    } else if (id === 'fourthImage') {
-      setCurrentIndex(3);
+
+    switch (id) {
+      case 'firstImage':
+        setCurrentIndex(0);
+        break;
+
+      case 'secondImage':
+        setCurrentIndex(1);
+        break;
+
+      case 'thirdImage':
+        setCurrentIndex(2);
+        break;
+
+      case 'fourthImage':
+        setCurrentIndex(3);
+        break;
     }
   };
 
