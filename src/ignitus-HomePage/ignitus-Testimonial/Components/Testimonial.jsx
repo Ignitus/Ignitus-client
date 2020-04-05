@@ -8,10 +8,7 @@
 import React, { useState, useEffect } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
-import i1 from '../images/i1.png';
-import i2 from '../images/i2.png';
-import i3 from '../images/i3.png';
-import i4 from '../images/i4.png';
+import { Avatars } from '../constants';
 
 const Testimonial = ({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +48,7 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
               <p>{testimonialData[currentIndex].description}</p>
             </div>
             <div className="avatar">
-              <img src={i1} />
+              <img src={Avatars[currentIndex]} />
             </div>
             <p className="name">{testimonialData[currentIndex].author}</p>
             <p className="designation">
@@ -60,10 +57,10 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
           </div>
         )}
         <div className="nav-avatar">
-          <img id="firstImage" src={i1} alt="" onClick={handleClick} />
-          <img id="secondImage" src={i2} alt="" onClick={handleClick} />
-          <img id="thirdImage" src={i3} alt="" onClick={handleClick} />
-          <img id="fourthImage" src={i4} alt="" onClick={handleClick} />
+          <img id="firstImage" src={Avatars[0]} alt="" onClick={handleClick} />
+          <img id="secondImage" src={Avatars[1]} alt="" onClick={handleClick} />
+          <img id="thirdImage" src={Avatars[2]} alt="" onClick={handleClick} />
+          <img id="fourthImage" src={Avatars[3]} alt="" onClick={handleClick} />
         </div>
       </div>
     </div>
