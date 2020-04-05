@@ -7,7 +7,7 @@ export const Opportunity = () => (
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
         <img
-          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/Team_avatar-eugene.png"
+          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
           alt="universityLogo"
           height="150"
         />

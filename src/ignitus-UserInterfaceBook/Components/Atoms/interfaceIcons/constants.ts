@@ -1,4 +1,4 @@
-import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/enums';
+import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 export const SocialIcons: AppIcon[] = [
   AppIcon.LinkedInIcon,

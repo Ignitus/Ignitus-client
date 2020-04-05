@@ -1,8 +1,10 @@
 import React from 'react';
 import {ButtonsContainer} from '../style';
 
-import * as Button from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {StyledHeading2, StyledHeading6} from '../../../../styles';
+import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
+import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 {
   /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
@@ -10,51 +12,320 @@ import {StyledHeading2, StyledHeading6} from '../../../../styles';
 const interfaceButttons = () => (
   <ButtonsContainer>
     <StyledHeading2> Buttons </StyledHeading2>
-    <Button.PrimaryButton> Primary Button </Button.PrimaryButton>
-    <Button.SecondaryButton> Secondary Button </Button.SecondaryButton>
-    <Button.GreyButton> Grey Button </Button.GreyButton>
-    <Button.OrangeButton> Orange Button </Button.OrangeButton>
-    <Button.WhiteButton> White Button </Button.WhiteButton>
+    <B.Button size="large" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="large" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="large" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="large" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="large" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="large" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
+    <DefaultButtonWithIcon
+      size="large"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
+
+    <DefaultButtonWithIcon
+      size="large"
+      category="primary"
+      name={AppIcon.LocationIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Medium Size Buttons </StyledHeading6>
-    <Button.PrimaryButton medium> Medium Primary Button </Button.PrimaryButton>
-    <Button.SecondaryButton medium> Secondary Button </Button.SecondaryButton>
-    <Button.GreyButton medium> Grey Button </Button.GreyButton>
-    <Button.OrangeButton medium> Orange Button </Button.OrangeButton>
-    <Button.WhiteButton medium> White Button </Button.WhiteButton>
+    <B.Button size="medium" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="medium" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
+    <DefaultButtonWithIcon
+      size="medium"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
+
+    <DefaultButtonWithIcon
+      size="medium"
+      category="primary"
+      name={AppIcon.LocationIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Small Size Buttons </StyledHeading6>
-    <Button.PrimaryButton small> Small Primary Button </Button.PrimaryButton>
-    <Button.SecondaryButton small> Secondary Button </Button.SecondaryButton>
-    <Button.GreyButton small> Grey Button </Button.GreyButton>
-    <Button.OrangeButton small> Orange Button </Button.OrangeButton>
-    <Button.WhiteButton small> White Button </Button.WhiteButton>
-    <hr />
-    <StyledHeading6> Button States </StyledHeading6>
-    <Button.DisabledButton disabled> Disabled State </Button.DisabledButton>
-    <Button.DangerButton> Danger State </Button.DangerButton>
-    <Button.YellowButton> Yellow Button </Button.YellowButton>
-    <Button.GreenButton> Green Button </Button.GreenButton>
+    <B.Button size="small" category="primary">
+      {' '}
+      Primary Button{' '}
+    </B.Button>
+    <B.Button size="small" category="secondary">
+      {' '}
+      Secondary Button{' '}
+    </B.Button>
+    <B.Button size="small" category="grey">
+      {' '}
+      Grey Button{' '}
+    </B.Button>
+    <B.Button size="small" category="orange">
+      {' '}
+      Orange Button{' '}
+    </B.Button>
+    <B.Button size="small" category="white">
+      {' '}
+      White Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="disabled">
+      {' '}
+      Disabled Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="red">
+      {' '}
+      Red Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="green">
+      {' '}
+      Green Button{' '}
+    </B.Button>
+
+    <B.Button size="small" category="yellow">
+      {' '}
+      Yellow Button{' '}
+    </B.Button>
+
+    <DefaultButtonWithIcon
+      size="small"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Message'}
+    />
+
+    <DefaultButtonWithIcon
+      size="small"
+      category="primary"
+      name={AppIcon.LocationIcon}
+      content={'Message'}
+    />
+
     <hr />
     <StyledHeading6> Text Button </StyledHeading6>
-    <Button.TextButton> Text Button </Button.TextButton>
-    <Button.TextButtonUnderline> Text Button </Button.TextButtonUnderline>
+    <B.Button size="large" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
+    <B.Button size="medium" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
+    <B.Button size="small" category="text">
+      {' '}
+      Text Button{' '}
+    </B.Button>
     <hr />
-    <StyledHeading6> Styled Buttons </StyledHeading6>
-    <Button.StyledButtonBottomRight>
+
+    <StyledHeading2> Styled Buttons </StyledHeading2>
+
+    <B.ButtonBottomRight size="large" category="primary">
       {' '}
-      Styled Button Bottom Right{' '}
-    </Button.StyledButtonBottomRight>
-    <Button.StyledButtonTopLeft>
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="secondary">
       {' '}
-      Styled Button Top Left{' '}
-    </Button.StyledButtonTopLeft>
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="large" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.StyledButtonTopLeft size="large" category="primary">
+      {' '}
+      Button Top Left{' '}
+    </B.StyledButtonTopLeft>
+
+    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+
+    <B.ButtonBottomRight size="medium" category="primary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="secondary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="medium" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <StyledHeading6> Small Size Buttons </StyledHeading6>
+
+    <B.ButtonBottomRight size="small" category="primary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="secondary">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="grey">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.ButtonBottomRight size="small" category="orange">
+      {' '}
+      Button Bottom Right{' '}
+    </B.ButtonBottomRight>
+
+    <B.StyledButtonTopLeft size="small" category="primary">
+      {' '}
+      Button Top Left{' '}
+    </B.StyledButtonTopLeft>
     <hr />
-    <StyledHeading6> Rounded Button </StyledHeading6>
-    <Button.RoundedPrimaryButton>
+    <StyledHeading2> Rounded Button </StyledHeading2>
+    <B.RoundedButton size="large" category="primary">
       {' '}
-      Rounded Primary Button{' '}
-    </Button.RoundedPrimaryButton>
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="secondary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="grey">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="large" category="orange">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+
+    <B.RoundedButton size="medium" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="secondary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="grey">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="medium" category="orange">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
     <hr />
     <StyledHeading6> Social Buttons </StyledHeading6>
     <StyledHeading6> Button with Icons </StyledHeading6>

@@ -30,7 +30,7 @@ const Testimonial = ({testimonialData, getTestimonialData}) => {
 
   return (
     <div className="testimonial">
-      <div className="testimonials-title title">Testimonials</div>
+      <div className="testimonials-title">Testimonials</div>
       <div className="testimonial-wrapper">
         {testimonialData.length > 0 && (
           <div className="carousel-content">

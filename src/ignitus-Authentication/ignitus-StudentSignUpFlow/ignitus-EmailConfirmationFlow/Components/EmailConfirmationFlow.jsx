@@ -1,8 +1,8 @@
+/* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage6.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterAcceptIcon.png';
 import {
   Paragraph,
@@ -12,13 +12,13 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 const EmailConfirmationFlow = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src={progress} alt="progress-bar" />
+      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png" alt="progress-bar" />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <C.TopMiddleSection>
         <Heading2>Your email has been confirmed.</Heading2>
@@ -26,9 +26,9 @@ const EmailConfirmationFlow = () => (
       </C.TopMiddleSection>
     </T.TopSection>
     <C.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/">Get started</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
     </C.BottomSection>
   </T.WelcomeContainer>
 );
