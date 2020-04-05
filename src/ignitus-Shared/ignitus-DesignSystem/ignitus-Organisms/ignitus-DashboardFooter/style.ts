@@ -1,32 +1,20 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import { flexibleColDiv } from '../../shared';
-import { PrimaryFamily, XS } from '../../ignitus-Atoms/fonts';
-
+import {flexibleColDiv, flexibleRowDiv} from '../../shared';
+import {PrimaryFamily, XS} from '../../ignitus-Atoms/fonts';
 
 export const Footer = styled.footer`
   background-color: ${C.White};
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  padding-top: 1rem;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
 `;
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  max-width: 72rem;
-  min-height: 10vh;
-`;
+export const Column = styled(flexibleColDiv)``;
 
-export const Column = styled(flexibleColDiv)`
-    margin: 0 auto;
-`;
-
-export const FooterSections = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
+export const FooterSections = styled(flexibleRowDiv)``;
 
 export const FooterRow = styled.ul`
   color: ${C.GreySecondaryText};
@@ -35,14 +23,13 @@ export const FooterRow = styled.ul`
   padding: 0.4rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   li {
     padding: 0rem 1rem;
 
     a {
       &:link,
       &:visited {
-        color: #3D3D3D;
+        color: #3d3d3d;
       }
     }
 
@@ -60,6 +47,6 @@ export const Copyright = styled.p`
   font-family: ${PrimaryFamily};
   font-size: ${XS};
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
 `;
-
