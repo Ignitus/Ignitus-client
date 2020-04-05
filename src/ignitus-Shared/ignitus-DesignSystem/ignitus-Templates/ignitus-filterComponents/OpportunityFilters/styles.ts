@@ -25,45 +25,37 @@ export const UpperContainer = styled.div`
   padding: 0;
 `;
 
-export const TagButton = styled(Button)`
-  border-radius: 2rem;
-  text-decoration: none;
-  background-color: ${IgnitusBlue};
-  padding: 10px 22px;
-  color: ${White};
-  font-size: ${MD};
-  &:hover,
-  &:focus {
-    background-color: ${IgnitusBlue};
-    color: ${White};
-    outline: none;
-  }
-`;
-
-export const OptionSelector = styled(flexibleColDiv)`
+export const OptionSelector = styled.div`
+  display: none;
   background-color: ${White};
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  padding: 1rem;
-  align-items: flex-start;
 `;
 
-export const SelectOptionText = styled(Paragraph)`
-  font-size: ${MD};
-  font-weight: ${Normal};
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  color: ${IgnitusBlue};
+export const Option = styled.div`
   &:hover {
     cursor: pointer;
     background-color: ${IgnitusBlue};
-    color: ${White};
+    p {
+      color: ${White};
+    }
   }
 `;
 
-export const ButtonDropDownContainer = styled(flexibleColDiv)``;
+export const OptionText = styled.p`
+  padding: 1rem;
+  font-size: ${MD};
+  margin: 0;
+  font-weight: ${Normal};
+  color: ${IgnitusBlue};
+`;
+
+export const ButtonDropDownContainer = styled(flexibleColDiv)`
+  &:hover {
+    div {
+      display: block;
+    }
+  }
+`;
 
 export const InputContainer = styled.input`
   background: transparent;

@@ -50,10 +50,7 @@ export default function OpportunityFilters() {
           <S.TagsBarContainer size="large">
             {
               Object.keys(Tags).map(key => (Tags[key] && (
-                <S.TagButton size="large" category="primary" key={key}>
-                  {Tags[key]}
-                  <S.CrossIcon name={AppIcon.CrossIcon} onClick={() => resetTag(key)} />
-                </S.TagButton>
+                <DefaultButtonWithIcon size="large" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
               )))
             }
           </S.TagsBarContainer>
@@ -114,9 +111,11 @@ export default function OpportunityFilters() {
               <S.OptionSelector>
                 {
                   eval(key).map(value => (
-                    <S.SelectOptionText key={value} onClick={e => handlechange(e, key)}>
-                      {value}
-                    </S.SelectOptionText>
+                    <S.Option>
+                      <S.OptionText key={value} onClick={e => handlechange(e, key)}>
+                        {value}
+                      </S.OptionText>
+                    </S.Option>
                   ))
                 }
               </S.OptionSelector>
