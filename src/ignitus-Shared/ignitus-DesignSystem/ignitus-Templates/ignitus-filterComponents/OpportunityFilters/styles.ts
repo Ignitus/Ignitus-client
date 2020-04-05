@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import { Paragraph } from '../../../shared';
+import {Paragraph, flexibleRowDiv} from '../../../shared';
 import {Button, ParentButton} from '../../../ignitus-Atoms/buttons';
-import { Card, flexibleColDiv } from '../../../ignitus-Atoms/atoms';
+import {Card, flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {White, IgnitusBlue, Grey1, Grey2} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
@@ -40,27 +40,13 @@ export const TagButton = styled(Button)`
   }
 `;
 
-export const DropdownBtnContainer = styled(ParentButton)`
-  background-color: ${White};
-  padding: 10px 25px;
-  margin: 10px;
-  margin-left: 0;
-  font-size: ${MD};
-  color: ${IgnitusBlue};
-  border: 2px solid ${IgnitusBlue};
-  border-radius: 2rem;
-  &:hover,
-  &:focus {
-    outline: none;
-  }
-`;
-
-export const SelectOptionContainer = styled(flexibleColDiv)`
+export const OptionSelector = styled(flexibleColDiv)`
   background-color: ${White};
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   z-index: 1;
+  padding: 1rem;
+  align-items: flex-start;
 `;
-
 
 export const SelectOptionText = styled(Paragraph)`
   font-size: ${MD};
@@ -77,6 +63,8 @@ export const SelectOptionText = styled(Paragraph)`
   }
 `;
 
+export const ButtonDropDownContainer = styled(flexibleColDiv)``;
+
 export const InputContainer = styled.input`
   background: transparent;
   border: none;
@@ -84,11 +72,6 @@ export const InputContainer = styled.input`
   padding: 0.5rem;
   outline: none;
   width: 95%;
-`;
-
-export const ArrowDownIcon = styled(Icon)`
-  cursor: pointer;
-  fill: ${props => (props.color ? props.color : IgnitusBlue)};
 `;
 
 export const CrossIcon = styled(Icon)`
@@ -99,10 +82,6 @@ export const CrossIcon = styled(Icon)`
 export const SearchIcon = styled(Icon)`
   cursor: pointer;
   fill: ${props => (props.color ? props.color : Grey1)};
-`;
-
-export const LocationIcon = styled(Icon)`
-  fill: ${props => (props.color ? props.color : IgnitusBlue)};
 `;
 
 export const TagsBarContainer = styled.div`
@@ -119,13 +98,10 @@ export const SearchBarContainer = styled.div`
   }
 `;
 
-export const FilterBtnsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+export const FilterButtons = styled(flexibleRowDiv)`
+  align-items: flex-start;
 `;
 
 export const DashedLineContainer = styled.hr`
-
   border-top: 2px dashed ${Grey2};
 `;

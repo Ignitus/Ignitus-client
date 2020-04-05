@@ -74,10 +74,10 @@ export default function OpportunityFilters() {
           </S.SearchBarContainer>
         </S.FilterItemsContainer>
       </S.UpperContainer>
-      <S.FilterBtnsContainer>
+      <S.FilterButtons>
         {
           Object.keys(Tags).map((key, i) => (
-            <React.Fragment key={i}>
+            <S.ButtonDropDownContainer className="test" key={i}>
               {
                 key === 'dummyDates'
                 && (
@@ -111,7 +111,7 @@ export default function OpportunityFilters() {
                   />
                 )
               }
-              <S.SelectOptionContainer>
+              <S.OptionSelector>
                 {
                   eval(key).map(value => (
                     <S.SelectOptionText key={value} onClick={e => handlechange(e, key)}>
@@ -119,8 +119,8 @@ export default function OpportunityFilters() {
                     </S.SelectOptionText>
                   ))
                 }
-              </S.SelectOptionContainer>
-            </React.Fragment>
+              </S.OptionSelector>
+            </S.ButtonDropDownContainer>
           ))
         }
         <Button
@@ -130,7 +130,7 @@ export default function OpportunityFilters() {
           {' '}
           Reset Filter
         </Button>
-      </S.FilterBtnsContainer>
+      </S.FilterButtons>
     </S.FiltersContainer>
   );
 }
