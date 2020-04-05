@@ -6,7 +6,7 @@ import * as C from '../../../ignitus-Atoms/colors.ts';
 import * as S from './styles.ts';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { DefaultButtonWithIcon } from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
-import { Button } from '../../../ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../ignitus-Atoms/buttons';
 
 
 export default function OpportunityFilters() {
@@ -50,7 +50,7 @@ export default function OpportunityFilters() {
           <S.TagsBarContainer size="large">
             {
               Object.keys(Tags).map(key => (Tags[key] && (
-                <DefaultButtonWithIcon size="large" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
+                <S.RoundedDefaultButtonWithIcon size="medium" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
               )))
             }
           </S.TagsBarContainer>
@@ -78,7 +78,7 @@ export default function OpportunityFilters() {
               {
                 key === 'dummyDates'
                 && (
-                  <DefaultButtonWithIcon
+                  <S.RoundedDefaultButtonWithIcon
                     size="medium"
                     category="secondary"
                     name={AppIcon.FilledArrowDownIcon}
@@ -89,7 +89,7 @@ export default function OpportunityFilters() {
               }
               {
                 key === 'dummyJobType' && (
-                  <DefaultButtonWithIcon
+                  <S.RoundedDefaultButtonWithIcon
                     size="medium"
                     category="secondary"
                     name={AppIcon.FilledArrowDownIcon}
@@ -100,7 +100,7 @@ export default function OpportunityFilters() {
 
               {
                 key === 'dummyJobLocations' && (
-                  <DefaultButtonWithIcon
+                  <S.RoundedDefaultButtonWithIcon
                     size="medium"
                     category="secondary"
                     name={AppIcon.LocationIcon}
@@ -122,14 +122,14 @@ export default function OpportunityFilters() {
             </S.ButtonDropDownContainer>
           ))
         }
-        <Button
+        <RoundedButton
           size="medium"
           category="secondary"
           onClick={resetFilters}
         >
           {' '}
           Reset Filter
-        </Button>
+        </RoundedButton>
       </S.FilterButtons>
     </S.FiltersContainer>
   );

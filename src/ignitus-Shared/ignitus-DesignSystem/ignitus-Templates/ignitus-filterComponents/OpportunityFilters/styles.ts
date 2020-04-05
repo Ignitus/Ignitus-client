@@ -6,12 +6,18 @@ import {Card, flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {White, IgnitusBlue, Grey1, Grey2} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
+import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
 
 export const FiltersContainer = styled(Card)`
   border-radius: 16px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   padding: 1rem;
 `;
+
+export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
+  border-radius: 2rem;
+`;
+
 
 export const FilterItemsContainer = styled.div`
   padding-right: 1.5rem;
