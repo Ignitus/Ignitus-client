@@ -5,9 +5,11 @@ import React, { useState } from 'react';
 import * as C from '../../../ignitus-Atoms/colors.ts';
 import * as S from './styles.ts';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { DefaultButtonWithIcon } from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
+import { Button } from '../../../ignitus-Atoms/buttons';
+
 
 export default function OpportunityFilters() {
-
   const dummyDates = ['Past 24 hours', 'Past week', 'Past Month'];
   const dummyJobType = ['Part time', 'Full time', 'Contract'];
   const dummyJobLocations = ['Munich, Paris', 'Prague', 'Zurich'];
@@ -75,34 +77,40 @@ export default function OpportunityFilters() {
       <S.FilterBtnsContainer>
         {
           Object.keys(Tags).map((key, i) => (
-            <S.DropdownContainer key={i}>
-              <S.DropdownBtnContainer>
-                {
-                  key === 'dummyDates' && (
-                    <span>
-                      Date Posted
-                      <S.ArrowDownIcon name={AppIcon.FilledArrowDownIcon} />
-                    </span>
-                  )
-                }
-                {
-                  key === 'dummyJobType' && (
-                    <span>
-                      Job Type
-                      <S.ArrowDownIcon name={AppIcon.FilledArrowDownIcon} />
-                    </span>
-                  )
-                }
+            <React.Fragment key={i}>
+              {
+                key === 'dummyDates'
+                && (
+                  <DefaultButtonWithIcon
+                    size="medium"
+                    category="secondary"
+                    name={AppIcon.FilledArrowDownIcon}
+                    content="Date Posted"
+                  />
+                )
 
-                {
-                  key === 'dummyJobLocations' && (
-                    <span>
-                      <S.LocationIcon name={AppIcon.LocationIcon} />
-                      Job Location
-                    </span>
-                  )
-                }
-              </S.DropdownBtnContainer>
+              }
+              {
+                key === 'dummyJobType' && (
+                  <DefaultButtonWithIcon
+                    size="medium"
+                    category="secondary"
+                    name={AppIcon.FilledArrowDownIcon}
+                    content="Job Type"
+                  />
+                )
+              }
+
+              {
+                key === 'dummyJobLocations' && (
+                  <DefaultButtonWithIcon
+                    size="medium"
+                    category="secondary"
+                    name={AppIcon.LocationIcon}
+                    content="Job Location"
+                  />
+                )
+              }
               <S.SelectOptionContainer>
                 {
                   eval(key).map(value => (
@@ -112,10 +120,16 @@ export default function OpportunityFilters() {
                   ))
                 }
               </S.SelectOptionContainer>
-            </S.DropdownContainer>
+            </React.Fragment>
           ))
         }
-        <S.ResetButton size="large" category="primary" onClick={resetFilters}>Reset Filter</S.ResetButton>
+        <Button
+          size="medium"
+          category="secondary"
+        >
+          {' '}
+          Reset Filter
+        </Button>
       </S.FilterBtnsContainer>
     </S.FiltersContainer>
   );

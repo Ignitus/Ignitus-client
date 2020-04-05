@@ -1,12 +1,11 @@
 import styled from '@emotion/styled';
 
 import { Paragraph } from '../../../shared';
-import { Button, ParentButton } from '../../../ignitus-Atoms/buttons';
-import { Card } from '../../../ignitus-Atoms/atoms';
-import { White, IgnitusBlue, Grey1, Grey2 } from '../../../ignitus-Atoms/colors';
-import { MD, Normal } from '../../../ignitus-Atoms/fonts';
+import {Button, ParentButton} from '../../../ignitus-Atoms/buttons';
+import { Card, flexibleColDiv } from '../../../ignitus-Atoms/atoms';
+import {White, IgnitusBlue, Grey1, Grey2} from '../../../ignitus-Atoms/colors';
+import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
-
 
 export const FiltersContainer = styled(Card)`
   border-radius: 16px;
@@ -41,24 +40,6 @@ export const TagButton = styled(Button)`
   }
 `;
 
-export const ResetButton = styled(Button)`
-  background-color: ${White};
-  font-size: ${MD};
-  padding: 10px 22px;
-  margin: 10px;
-  margin-left: auto;
-  color: ${IgnitusBlue};
-  border: 2px solid ${IgnitusBlue};
-  border-radius: 2rem;
-  outline: none;
-  &:hover,
-  &:focus {
-    background-color: ${IgnitusBlue};
-    color: ${White};
-    outline: none;
-  }
-`;
-
 export const DropdownBtnContainer = styled(ParentButton)`
   background-color: ${White};
   padding: 10px 25px;
@@ -74,31 +55,12 @@ export const DropdownBtnContainer = styled(ParentButton)`
   }
 `;
 
-export const SelectOptionContainer = styled.div`
-  display: none;
-  position: absolute;
+export const SelectOptionContainer = styled(flexibleColDiv)`
   background-color: ${White};
-  top: 55px;
-  width: 100%;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 16px 0px 16px 16px;
   z-index: 1;
-  p:first-of-type {
-    border-top-left-radius: 16px;
-  }
-  p:last-of-type {
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
 `;
 
-export const DropdownContainer = styled.div`
-  position: relative;
-  display: inline-block;
-  &:hover > div {
-    display: block;
-  }
-`;
 
 export const SelectOptionText = styled(Paragraph)`
   font-size: ${MD};
@@ -119,52 +81,51 @@ export const InputContainer = styled.input`
   background: transparent;
   border: none;
   color: ${IgnitusBlue};
-  padding: .5rem;
+  padding: 0.5rem;
   outline: none;
   width: 95%;
-`
+`;
 
 export const ArrowDownIcon = styled(Icon)`
-cursor: pointer;
-  fill: ${props => props.color ? props.color : IgnitusBlue};
+  cursor: pointer;
+  fill: ${props => (props.color ? props.color : IgnitusBlue)};
 `;
 
 export const CrossIcon = styled(Icon)`
   cursor: pointer;
-  fill: ${props => props.color ? props.color : White};
+  fill: ${props => (props.color ? props.color : White)};
 `;
 
 export const SearchIcon = styled(Icon)`
   cursor: pointer;
-  fill: ${props => props.color ? props.color : Grey1};
+  fill: ${props => (props.color ? props.color : Grey1)};
 `;
 
 export const LocationIcon = styled(Icon)`
-  fill: ${props => props.color ? props.color : IgnitusBlue};
+  fill: ${props => (props.color ? props.color : IgnitusBlue)};
 `;
 
 export const TagsBarContainer = styled.div`
   display: flex;
   min-height: 50px;
-`
+`;
 
 export const SearchBarContainer = styled.div`
   padding: 0.5rem;
   display: flex;
   & > svg {
     float: right;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
-`
+`;
 
 export const FilterBtnsContainer = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: row;
-`
+  align-items: center;
+`;
 
 export const DashedLineContainer = styled.hr`
-  margin: 0;
-  padding: 0;
+
   border-top: 2px dashed ${Grey2};
-`
+`;

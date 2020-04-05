@@ -21,6 +21,7 @@ export const ParentButton = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  outline: none;
   padding: 16px 32px;
   text-align: center;
   line-height: 1rem;
