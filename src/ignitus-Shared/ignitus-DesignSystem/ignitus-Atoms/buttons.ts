@@ -37,6 +37,7 @@ export const ParentButton = styled.button`
 `;
 
 export const Button = styled(ParentButton)<ButtonProperties>`
+  outline: none;
   color: ${props => getColor(props)};
   background-color: ${props => getBackgroundColor(props)};
   padding: ${props => getPadding(props)};

@@ -43,7 +43,7 @@ export default function OpportunityFilters() {
   };
 
   return (
-    <S.FilterContainer>
+    <S.Container>
       <S.TopContainer>
 
         <S.SelectedFiltersContainer>
@@ -58,23 +58,21 @@ export default function OpportunityFilters() {
 
         </S.SelectedFiltersContainer>
 
-        <S.FilterItemsContainer>
-          <S.DashedLineContainer />
-          <S.SearchBarContainer>
-            <S.InputContainer
+        <S.SearchContainer>
+          <S.SearchInputContainer>
+            <S.SearchInput
               type="text"
               name="keyword"
               value={keyWords.keywords}
               onChange={e => setKeyWords({ keywords: e.target.value })}
               placeholder="Search Keyword"
             />
-            <S.CrossIcon
-              name={AppIcon.CrossIcon}
-              color={C.IgnitusBlue}
-              onClick={() => setKeyWords({ keywords: '' })}
-            />
-          </S.SearchBarContainer>
-        </S.FilterItemsContainer>
+          </S.SearchInputContainer>
+          <S.CrossIcon
+            name={AppIcon.CrossIcon}
+            onClick={() => setKeyWords({ keywords: '' })}
+          />
+        </S.SearchContainer>
       </S.TopContainer>
       <S.BottomContainer>
         {
@@ -136,6 +134,6 @@ export default function OpportunityFilters() {
           Reset Filter
         </RoundedButton>
       </S.BottomContainer>
-    </S.FilterContainer>
+    </S.Container>
   );
 }
