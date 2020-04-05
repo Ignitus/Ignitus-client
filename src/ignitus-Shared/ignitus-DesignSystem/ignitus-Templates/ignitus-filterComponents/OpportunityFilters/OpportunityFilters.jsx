@@ -1,18 +1,17 @@
 /* eslint-disable import/extensions */
-/* eslint-disable no-eval */
 
 import React, { useState } from 'react';
-import * as C from '../../../ignitus-Atoms/colors.ts';
 import * as S from './styles.ts';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { DefaultButtonWithIcon } from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
 import { RoundedButton } from '../../../ignitus-Atoms/buttons';
 
 
 export default function OpportunityFilters() {
-  const dummyDates = ['Past 24 hours', 'Past week', 'Past Month'];
-  const dummyJobType = ['Part time', 'Full time', 'Contract'];
-  const dummyJobLocations = ['Munich, Paris', 'Prague', 'Zurich'];
+  const dummyData = {
+    dummyDates: ['Past 24 hours', 'Past week', 'Past Month'],
+    dummyJobType: ['Part time', 'Full time', 'Contract'],
+    dummyJobLocations: ['Munich, Paris', 'Prague', 'Zurich'],
+  };
 
   const [Tags, setTags] = useState({
     dummyDates: '',
@@ -113,7 +112,7 @@ export default function OpportunityFilters() {
               }
               <S.OptionSelector>
                 {
-                  eval(key).map(value => (
+                  dummyData[key].map(value => (
                     <S.Option>
                       <S.OptionText key={value} onClick={e => handlechange(e, key)}>
                         {value}
