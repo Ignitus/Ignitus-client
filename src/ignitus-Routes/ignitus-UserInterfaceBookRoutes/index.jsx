@@ -20,6 +20,7 @@ import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Compo
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
+import dashboardFooter from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
 const Container = styled.div`
   display:flex;
@@ -131,6 +132,11 @@ const UserInterfaceBookRoutes = () => (
         <Route
           path="/interface/seperators"
           component={interfaceSeparator}
+        />
+
+        <Route
+          path="/interface/dashBoardFooter"
+          component={dashboardFooter}
         />
       </Switch>
     </LeftRow>

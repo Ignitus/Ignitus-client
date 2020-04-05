@@ -128,7 +128,16 @@ export const edges: Edges[] = [
       },
       {
         title: 'Footer',
-        route: '/interface/footer',
+        children: [
+          {
+            title: 'Dashboard',
+            route: '/interface/dashBoardFooter',
+          },
+          {
+            title: 'Default',
+            route: '/interface/defaultFooter',
+          },
+        ],
       },
       {
         title: 'Card Layouts',
