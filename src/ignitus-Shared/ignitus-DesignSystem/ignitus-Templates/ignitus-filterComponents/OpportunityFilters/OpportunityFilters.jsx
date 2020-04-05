@@ -76,8 +76,8 @@ export default function OpportunityFilters() {
       </S.UpperContainer>
       <S.FilterButtons>
         {
-          Object.keys(Tags).map((key, i) => (
-            <S.ButtonDropDownContainer className="test" key={i}>
+          Object.keys(Tags).map(key => (
+            <S.ButtonDropDownContainer key={key}>
               {
                 key === 'dummyDates'
                 && (
@@ -126,6 +126,7 @@ export default function OpportunityFilters() {
         <Button
           size="medium"
           category="secondary"
+          onClick={resetFilters}
         >
           {' '}
           Reset Filter
