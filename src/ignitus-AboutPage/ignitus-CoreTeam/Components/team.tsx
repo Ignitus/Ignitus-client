@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';

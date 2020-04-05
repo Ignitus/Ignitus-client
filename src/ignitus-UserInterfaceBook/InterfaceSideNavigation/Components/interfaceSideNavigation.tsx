@@ -12,49 +12,55 @@ const InterfaceSideNavigation = () => {
       <Link to="/">
         <S.StyledLogo name={AppIcon.IgnitusFullLogo} />
       </Link>
-      {edges.map(edge => (
-        <NavigationLayers edge={edge} key={edge.node.title} />
-      ))}
+      <NavigationLayers edges={edges} level={0} />
     </S.NavigationContainer>
   );
 };
 
-const NavigationLayers = ({edge, nesting = false}: NavigationLayerProps) => {
-  const [isexpanded, toogleisexpanded] = useToggle(true);
-  const navigation = (
-    <React.Fragment key={edge.node.title}>
-      <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting}>
-        {' '}
-        <S.Heading nesting={nesting}>{edge.node.title}</S.Heading>{' '}
-        <S.Arrow
-          name={AppIcon.KeyBoardArrowRight}
-          isexpanded={isexpanded}
-          nesting={nesting}
-        />
-      </S.HeadingArrowContainer>
+const NavigationLayers = ({edges, nesting = false, level}: NavigationLayerProps) => (
+  <React.Fragment>
+    {edges.map(edge => (
+      <Layers edge={edge} nesting={nesting} key={edge.title} level={level} />
+    ))}
+  </React.Fragment>
+);
 
-      {edge.node.children ? (
-        <UnorderedList isexpanded={isexpanded} edge={edge} nesting={nesting} />
-      ) : null}
+const Layers = ({edge, nesting, level}: any) => {
+  const [isexpanded, toogleisexpanded] = useToggle(true);
+  return (
+    <React.Fragment key={edge.title}>
+      {edge.route == undefined && (
+        <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting} level={level}>
+          {' '}
+          <S.Heading nesting={nesting}>{edge.title}</S.Heading>{' '}
+          <S.Arrow
+            name={AppIcon.KeyBoardArrowRight}
+            isexpanded={isexpanded}
+            nesting={nesting}
+          />
+        </S.HeadingArrowContainer>
+      )}
+      <Extension isexpanded={isexpanded} edge={edge} nesting={nesting} level={level} />
     </React.Fragment>
   );
-  return navigation;
 };
 
-const UnorderedList = ({isexpanded, edge, nesting}) => (
-  <S.UnorderedList isexpanded={isexpanded}>
-    {edge.node.children.map(x =>
-      x.children ? (
-        /* In future if we have to support III Level of nesting, we will run another loop here. */
-        <NavigationLayers edge={x.children[0]} key={x.title} nesting={true} />
-      ) : (
-        <Link to={x.route} key={x.title}>
-          {' '}
-          <S.ListItem nesting={nesting}>{x.title}</S.ListItem>
-        </Link>
-      ),
-    )}
-  </S.UnorderedList>
-);
+const Extension = ({isexpanded, edge, nesting, level}) => {
+  if (edge.route) {
+    return (
+      <Link to={edge.route} key={edge.title}>
+        {' '}
+        <S.ListItem nesting={nesting} level={level}>{edge.title}</S.ListItem>
+      </Link>
+    );
+  }
+  return (
+    edge.children && (
+      <S.UnorderedList isexpanded={isexpanded}>
+        <NavigationLayers edges={edge.children} nesting={true} level={level + 1} />
+      </S.UnorderedList>
+    )
+  );
+};
 
 export default InterfaceSideNavigation;

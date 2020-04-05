@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
