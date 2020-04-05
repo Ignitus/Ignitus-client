@@ -16,19 +16,19 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
     const { target: { id } } = event;
 
     switch (id) {
-      case 'firstImage':
+      case '1':
         setCurrentIndex(0);
         break;
 
-      case 'secondImage':
+      case '2':
         setCurrentIndex(1);
         break;
 
-      case 'thirdImage':
+      case '3':
         setCurrentIndex(2);
         break;
 
-      case 'fourthImage':
+      case '4':
         setCurrentIndex(3);
         break;
     }
@@ -57,10 +57,10 @@ const Testimonial = ({ testimonialData, getTestimonialData }) => {
           </div>
         )}
         <div className="nav-avatar">
-          <img id="firstImage" src={Avatars[0]} alt="" onClick={handleClick} />
-          <img id="secondImage" src={Avatars[1]} alt="" onClick={handleClick} />
-          <img id="thirdImage" src={Avatars[2]} alt="" onClick={handleClick} />
-          <img id="fourthImage" src={Avatars[3]} alt="" onClick={handleClick} />
+          <img id="1" src={Avatars[0]} alt="" onClick={handleClick} />
+          <img id="2" src={Avatars[1]} alt="" onClick={handleClick} />
+          <img id="3" src={Avatars[2]} alt="" onClick={handleClick} />
+          <img id="4" src={Avatars[3]} alt="" onClick={handleClick} />
         </div>
       </div>
     </div>
