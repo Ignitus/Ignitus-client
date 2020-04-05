@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 
-import {Paragraph, flexibleRowDiv} from '../../../shared';
-import {Button, ParentButton} from '../../../ignitus-Atoms/buttons';
-import {Card, flexibleColDiv} from '../../../ignitus-Atoms/atoms';
+import {flexibleRowDiv, flexibleColDiv} from '../../../shared';
+import {Card} from '../../../ignitus-Atoms/atoms';
 import {White, IgnitusBlue, Grey1, Grey2} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
+
 import Icon from '../../../../ignitus-Utilities/Components/icon';
 import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
 
-export const FiltersContainer = styled(Card)`
+export const FilterContainer = styled(Card)`
   border-radius: 16px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   padding: 1rem;
@@ -18,17 +18,16 @@ export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
   border-radius: 2rem;
 `;
 
+export const TopContainer = styled(flexibleColDiv)`
+  align-items: flex-start;
+`;
+export const SelectedFiltersContainer = styled(flexibleRowDiv)``;
+export const SelectedFilters = styled.div``;
 
 export const FilterItemsContainer = styled.div`
   padding-right: 1.5rem;
   display: block;
   width: 100%;
-`;
-
-export const UpperContainer = styled.div`
-  display: flex;
-  margin: 0;
-  padding: 0;
 `;
 
 export const OptionSelector = styled.div`
@@ -72,14 +71,12 @@ export const InputContainer = styled.input`
   width: 95%;
 `;
 
-export const CrossIcon = styled(Icon)`
-  cursor: pointer;
-  fill: ${props => (props.color ? props.color : White)};
-`;
+export const CrossIcon = styled(Icon)``;
 
 export const SearchIcon = styled(Icon)`
-  cursor: pointer;
-  fill: ${props => (props.color ? props.color : Grey1)};
+  fill: ${Grey1};
+  height: 1.5rem;
+  width: 1.5rem;
 `;
 
 export const TagsBarContainer = styled.div`
@@ -96,7 +93,7 @@ export const SearchBarContainer = styled.div`
   }
 `;
 
-export const FilterButtons = styled(flexibleRowDiv)`
+export const BottomContainer = styled(flexibleRowDiv)`
   align-items: flex-start;
 `;
 

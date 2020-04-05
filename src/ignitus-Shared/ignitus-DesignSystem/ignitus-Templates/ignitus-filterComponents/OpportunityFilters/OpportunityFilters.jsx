@@ -43,17 +43,22 @@ export default function OpportunityFilters() {
   };
 
   return (
-    <S.FiltersContainer>
-      <S.UpperContainer>
-        <S.SearchIcon name={AppIcon.SearchIcon} />
-        <S.FilterItemsContainer>
-          <S.TagsBarContainer size="large">
+    <S.FilterContainer>
+      <S.TopContainer>
+
+        <S.SelectedFiltersContainer>
+          <S.SearchIcon name={AppIcon.SearchIcon} />
+          <S.SelectedFilters>
             {
               Object.keys(Tags).map(key => (Tags[key] && (
                 <S.RoundedDefaultButtonWithIcon size="medium" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
               )))
             }
-          </S.TagsBarContainer>
+          </S.SelectedFilters>
+
+        </S.SelectedFiltersContainer>
+
+        <S.FilterItemsContainer>
           <S.DashedLineContainer />
           <S.SearchBarContainer>
             <S.InputContainer
@@ -70,8 +75,8 @@ export default function OpportunityFilters() {
             />
           </S.SearchBarContainer>
         </S.FilterItemsContainer>
-      </S.UpperContainer>
-      <S.FilterButtons>
+      </S.TopContainer>
+      <S.BottomContainer>
         {
           Object.keys(Tags).map(key => (
             <S.ButtonDropDownContainer key={key}>
@@ -130,7 +135,7 @@ export default function OpportunityFilters() {
           {' '}
           Reset Filter
         </RoundedButton>
-      </S.FilterButtons>
-    </S.FiltersContainer>
+      </S.BottomContainer>
+    </S.FilterContainer>
   );
 }
