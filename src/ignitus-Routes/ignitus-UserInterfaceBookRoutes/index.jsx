@@ -18,8 +18,8 @@ import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms
 import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
-
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
+import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
 
 const Container = styled.div`
   display:flex;
@@ -131,6 +131,11 @@ const UserInterfaceBookRoutes = () => (
         <Route
           path="/interface/seperators"
           component={interfaceSeparator}
+        />
+
+        <Route
+          path="/interface/dashBoardFooter"
+          component={interfaceDashBoardFooter}
         />
       </Switch>
     </LeftRow>
