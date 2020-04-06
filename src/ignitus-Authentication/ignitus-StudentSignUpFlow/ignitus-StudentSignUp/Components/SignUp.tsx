@@ -21,7 +21,6 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         ...state,
         emptyMessage: true,
 			});
-			setTimeout(() => setState({ ...state, emptyMessage:false }),2000)
       return;
     }
 
@@ -39,21 +38,21 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         )
       ) {
         setState({
-          ...state,
+					...state,
+					emptyMessage: false,
           invalidEmail: true,
 				});
-				setTimeout(() => setState({ ...state, invalidEmail:false }),2000)
         return;
       }
     }
 
     if (!isEqual(password, confirmPassword)) {
       setState({
-        ...state,
+				...state,
+				invalidEmail: false,
         emptyMessage: false,
         equalmessage: true,
 			});
-			setTimeout(() => setState({ ...state, equalmessage:false }),3000)
       return;
     }
 
