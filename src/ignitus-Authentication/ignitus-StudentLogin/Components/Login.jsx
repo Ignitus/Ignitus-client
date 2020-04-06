@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/aria-role */
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';

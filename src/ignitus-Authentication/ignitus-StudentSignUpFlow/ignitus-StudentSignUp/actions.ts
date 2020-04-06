@@ -5,7 +5,7 @@ import {
 } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import * as t from './actionTypes';
 
-export const signUpRequest = (email, password) => {
+export const signUpRequest = (email: string, password: string) => {
   if (!isString(email)) {
     throw new Error(`email must be string: ${email}`);
   }

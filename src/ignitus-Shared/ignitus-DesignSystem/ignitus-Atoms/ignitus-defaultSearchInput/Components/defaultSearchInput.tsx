@@ -1,6 +1,6 @@
 import React from 'react';
 import {InputTypes} from '../types';
-import {AppIcon} from '../../../../types/iconsTypes/enums';
+import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
 const DefaultSearchInput = ({placeholder, type, name}: InputTypes) => (

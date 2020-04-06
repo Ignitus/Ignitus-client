@@ -12,7 +12,7 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 const EmailConfirmationFlow = () => (
@@ -26,9 +26,9 @@ const EmailConfirmationFlow = () => (
       </C.TopMiddleSection>
     </T.TopSection>
     <C.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/">Get started</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
     </C.BottomSection>
   </T.WelcomeContainer>
 );

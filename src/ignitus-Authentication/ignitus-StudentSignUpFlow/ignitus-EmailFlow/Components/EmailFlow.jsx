@@ -12,8 +12,7 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 import {
-  PrimaryButton,
-  WhiteButton,
+  Button,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
 const EmailFlow = () => (
@@ -33,12 +32,12 @@ const EmailFlow = () => (
     </T.TopSection>
     <T.BottomSection>
       <C.ButtonContainer>
-        <PrimaryButton>
+        <Button size="large" category="primary">
           <Link to="/flow/emailConfirmationFlow">Email confirmed</Link>
-        </PrimaryButton>
-        <WhiteButton>
+        </Button>
+        <Button size="large" category="white">
           <Link to="/">I don’t see the email</Link>
-        </WhiteButton>
+        </Button>
       </C.ButtonContainer>
       <Paragraph><Link to="/">I don’t want to confirm my email yet.</Link></Paragraph>
     </T.BottomSection>

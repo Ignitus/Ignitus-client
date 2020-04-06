@@ -18,20 +18,35 @@ import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms
 import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
-
-import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components ';
+import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
+import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
 
 const Container = styled.div`
   display:flex;
   flex-direction: row;
 `;
 
+const Reset = `
+  @media (max-width: 420px) {
+    height: auto;
+    overflow: auto;
+  }
+`;
+
 const RightRow = styled.div`
-  flex:1;
+  flex:1.5;
+  height: 100vh;
+  overflow-y: overlay;
+  overflow-x: auto;
+  ${Reset}
 `;
 
 const LeftRow = styled.div`
   flex:5;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  ${Reset}
 `;
 
 // eslint-disable-next-line import/prefer-default-export
@@ -116,6 +131,11 @@ const UserInterfaceBookRoutes = () => (
         <Route
           path="/interface/seperators"
           component={interfaceSeparator}
+        />
+
+        <Route
+          path="/interface/dashBoardFooter"
+          component={interfaceDashBoardFooter}
         />
       </Switch>
     </LeftRow>
