@@ -11,21 +11,21 @@ const DefaultMultiMediaInput = ({placeholder, name}: InputTypes) => (
       </I.TopContainer>
       <I.BottomContainer>
         <I.IconsContainer>
-          <I.IconCon>
+          <I.IconContainer>
             <I.Icon name={AppIcon.LibraryBooksIcon} />
-          </I.IconCon>
-          <I.IconCon>
+          </I.IconContainer>
+          <I.IconContainer>
             <I.Icon name={AppIcon.PollIcon} />
-          </I.IconCon>
-          <I.IconCon>
+          </I.IconContainer>
+          <I.IconContainer>
             <I.Icon name={AppIcon.PdfIcon} />
-          </I.IconCon>
-          <I.IconCon>
+          </I.IconContainer>
+          <I.IconContainer>
             <I.Icon name={AppIcon.VideoLibIcon} />
-          </I.IconCon>
-          <I.IconCon>
+          </I.IconContainer>
+          <I.IconContainer>
             <I.Icon name={AppIcon.CameraIcon} />
-          </I.IconCon>
+          </I.IconContainer>
         </I.IconsContainer>
         <I.Button category="primary" size="medium">
           {' '}

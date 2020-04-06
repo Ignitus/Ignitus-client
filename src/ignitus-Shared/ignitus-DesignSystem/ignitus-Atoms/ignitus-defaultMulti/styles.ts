@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 import {flexibleRowDiv} from '../../shared';
 import * as C from '../colors';
 import {SM} from '../fonts';
-import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import {default as I} from '../../../ignitus-Utilities/Components/icon';
 import {Button as Btn} from '../buttons';
 
 export const InputContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: ${C.White};
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
   border-radius: 16px;
@@ -46,11 +46,12 @@ export const IconsContainer = styled(flexibleRowDiv)`
   display: inline-flex;
 `;
 
-export const IconCon = styled.button`
+export const IconContainer = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
   overflow: hidden;
+  margin: 0 0.2rem;
 `;
 
 export const Button = styled(Btn)`
