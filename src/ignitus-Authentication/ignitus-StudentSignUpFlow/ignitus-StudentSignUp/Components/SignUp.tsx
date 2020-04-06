@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import PropTypes from 'prop-types';
+import React, {useState, FunctionComponent} from 'react';
 import {
   isEmpty,
   isEqual,
@@ -9,8 +8,9 @@ import {
   SharedAuthentication,
   SignupStatePayload,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
+import {Props} from '../types';
 
-const Signup = ({signUpRequest, studentSignUpData}) => {
+const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) => {
   const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
 
@@ -77,15 +77,6 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
       handleSubmit={handleSubmit}
     />
   );
-};
-
-Signup.propTypes = {
-  signUpRequest: PropTypes.func.isRequired,
-  studentSignUpData: PropTypes.shape({
-    isFetching: PropTypes.bool,
-    success: PropTypes.bool,
-    msg: PropTypes.string,
-  }).isRequired,
 };
 
 export default withErrorBoundary(Signup);

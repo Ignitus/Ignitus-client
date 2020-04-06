@@ -1,48 +1,32 @@
 import styled from '@emotion/styled';
-import {flexibleRowDiv} from '../../shared';
-import {GreyBackground, IgnitusBlue, Red} from '../colors';
+import {GreyBackground, IgnitusBlue, GreyText} from '../colors';
 
 import Icon from '../../../ignitus-Utilities/Components/icon';
+import {Normal, SM} from '../fonts';
 
-
-export const InputContainer = styled(flexibleRowDiv)`
-  border: none;
-  border-radius: 8px;
-  padding: 0.2rem;
-  position: absolute;
-  width: 436px;
-  height: 50px;
+export const InputContainer = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
   background: ${GreyBackground};
-  &:focus {
-    color: ${Red};
-  }
 `;
 
-export const Input = styled.div`
-  // position: absolute;
-  width: 436px;
-  height: 22px;
-  left:  22px;
-  top: 294px;
-  padding-left: 1rem;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  color: #F9BF64;
+export const Input = styled.input`
+  width: 16rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: ${SM};
+  font-weight: ${Normal};
+  color: ${GreyText};
 `;
 
 export const StyledIcon = styled(Icon)`
-  height: 2rem;
+  height: 1.5rem;
   width: 1.5rem;
+  cursor: pointer;
   fill: ${IgnitusBlue};
-  transition: 0.3s;
-  flex: 1;
-  margin-right:0;
-  position: absolute;
-  left: 90.33%;
-  right: 3.5%;
-
-
 `;

@@ -6,7 +6,7 @@ import ChevronIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons
 import PlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
 import HeartIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import {AppIcon} from '../../types/iconsTypes/enums';
+import {AppIcon} from '../../types/iconsTypes/iconEnums';
 import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon/messageIcon';
 import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
 import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
@@ -19,7 +19,6 @@ import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/c
 import LocationOnIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationOnIcon';
 import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
 import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
-import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon';
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
 import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
 import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
@@ -29,6 +28,10 @@ import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdf
 import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
 import LocalLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
 import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
+import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
+import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
+import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
+import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
 import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
@@ -60,6 +63,18 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.TwitterIcon:
       return <TwitterIcon {...rest} />;
+
+    case AppIcon.LocationIcon:
+      return <LocationIcon {...rest} />;
+
+    case AppIcon.FilledArrowDownIcon:
+      return <FilledArrowDownIcon {...rest} />;
+
+    case AppIcon.CrossIcon:
+      return <CrossIcon {...rest} />;
+
+    case AppIcon.SearchIcon:
+      return <SearchIcon {...rest} />;
 
     case AppIcon.MessageIcon:
       return <MessageIcon {...rest} />;
@@ -96,9 +111,6 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.AccountCircleIcon:
       return <AccountCircleIcon {...rest} />;
-
-    case AppIcon.SearchIcon:
-      return <SearchIcon {...rest} />;
 
     case AppIcon.NotificationIcon:
       return <NotificationIcon {...rest} />;

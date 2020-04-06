@@ -7,7 +7,7 @@ import {
   Heading5,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceDropDown = () => (
+const interfaceDropDown: React.FC = () => (
   <D.DropDownContainer>
     <Heading3>DropDowns</Heading3>
     <hr />
