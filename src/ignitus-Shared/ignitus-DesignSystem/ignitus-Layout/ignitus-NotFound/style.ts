@@ -3,7 +3,7 @@ import {keyframes} from '@emotion/core';
 import * as C from '../../ignitus-Atoms/colors';
 import {SM} from '../../ignitus-Atoms/fonts';
 import {Paragraph} from '../../ignitus-Atoms/typography';
-import {PrimaryButton} from '../../ignitus-Atoms/buttons';
+import {Button} from '../../ignitus-Atoms/buttons';
 
 export const eye = keyframes`
   0% ,30% , 55%, 90% , 100% {
@@ -126,7 +126,7 @@ export const Message = styled.p`
   color: ${C.IgnitusBlue};
 `;
 
-export const StyledPrimaryBtn = styled(PrimaryButton)`
+export const StyledButton = styled(Button)`
   a {
     color: ${C.White};
   }

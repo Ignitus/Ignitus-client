@@ -1,23 +1,19 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   Paragraph,
   Heading1,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-
-/** Image will be replaced by progress component in the future. */
-import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage1.png';
-import imageMap from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/profileImageMap.png';
-
 import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as T from '../Styles/style';
 
 const WelcomeFlow = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src={progress} alt="progress-bar" />
+      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressOne.png" alt="progress-bar" />
       <Heading1>Welcome, Sophia</Heading1>
       <Paragraph>
         Let’s start with your profile. This will get you successful on Ignitus
@@ -46,13 +42,13 @@ const WelcomeFlow = () => (
         </form>
       </T.LeftSection>
       <T.RightSection>
-        <img className="profileImageMap" src={imageMap} alt="map" />
+        <img className="profileImageMap" src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
       </T.RightSection>
     </T.MiddleSection>
     <T.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/flow/interestFlow">Save & Continue</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
       <Paragraph>
         Skip for now
         {' >> '}
