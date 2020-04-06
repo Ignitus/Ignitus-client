@@ -20,7 +20,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
       setState({
         ...state,
         emptyMessage: true,
-			});
+      });
       return;
     }
 
@@ -38,21 +38,21 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         )
       ) {
         setState({
-					...state,
-					emptyMessage: false,
+          ...state,
+          emptyMessage: false,
           invalidEmail: true,
-				});
+        });
         return;
       }
     }
 
     if (!isEqual(password, confirmPassword)) {
       setState({
-				...state,
-				invalidEmail: false,
+        ...state,
+        invalidEmail: false,
         emptyMessage: false,
         equalmessage: true,
-			});
+      });
       return;
     }
 
