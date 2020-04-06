@@ -2,20 +2,20 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Paragraph,
   Heading1,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import { DefaultCheckbox } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-const InterestFlow = () => (
+const InterestFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressTwo.png" alt="progress-bar" />
@@ -48,9 +48,9 @@ const InterestFlow = () => (
       </C.RightSection>
     </T.MiddleSection>
     <T.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/flow/emailFlow">Save & Continue</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
       <Paragraph>
         Skip for now
         {' >> '}

@@ -17,6 +17,7 @@ type ArrowProps = {
 
 type SubNestingProps = {
   nesting?: boolean;
+  level?: number;
 };
 
 export const NavigationContainer = styled.nav`
@@ -44,7 +45,8 @@ export const UnorderedList = styled.ul<ArrowProps>`
 `;
 
 export const ListItem = styled.li<SubNestingProps>`
-  margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
+  // margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
+  margin-left: ${props => (props.level ? `${props.level/2}rem` : '0rem')};
   padding: 0.5rem;
   cursor: pointer;
   &:hover {
@@ -62,6 +64,7 @@ export const Arrow = styled(Icon)<ArrowProps>`
 
 export const HeadingArrowContainer = styled(flexibleRowDiv)<SubNestingProps>`
   margin-top: ${props => (props.nesting ? '0' : '1rem')};
+  margin-left: ${props => (props.level ? `${props.level/2}rem` : '0rem')};
   justify-content: unset;
   cursor: pointer;
 `;

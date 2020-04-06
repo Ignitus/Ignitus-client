@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterAcceptIcon.png';
 import {
@@ -12,10 +12,10 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
-const EmailConfirmationFlow = () => (
+const EmailConfirmationFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png" alt="progress-bar" />
@@ -26,9 +26,9 @@ const EmailConfirmationFlow = () => (
       </C.TopMiddleSection>
     </T.TopSection>
     <C.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/">Get started</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
     </C.BottomSection>
   </T.WelcomeContainer>
 );
