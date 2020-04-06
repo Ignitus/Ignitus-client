@@ -21,7 +21,10 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         ...state,
         emptyMessage: true,
       });
-      setTimeout(() => setState({...state, emptyMessage: false}), 2000);
+      setTimeout(() => setState({
+				...state,
+				emptyMessage: false
+			}), 2000);
       return;
     }
 
@@ -42,7 +45,10 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
           ...state,
           invalidEmail: true,
         });
-        setTimeout(() => setState({...state, invalidEmail: false}), 2000);
+        setTimeout(() => setState({
+					...state,
+					invalidEmail: false
+				}), 2000);
         return;
       }
     }
@@ -53,7 +59,10 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
         emptyMessage: false,
         equalmessage: true,
       });
-      setTimeout(() => setState({...state, equalmessage: false}), 3000);
+      setTimeout(() => setState({
+				...state,
+				equalmessage: false
+			}), 3000);
       return;
     }
 
