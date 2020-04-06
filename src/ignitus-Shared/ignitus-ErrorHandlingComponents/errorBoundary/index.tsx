@@ -1,4 +1,4 @@
-import React, {ReactNode, ErrorInfo} from 'react';
+import React from 'react';
 
 import {Props, State} from './types';
 

@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactElement, JSXElementConstructor } from 'react';
+import React from 'react';
 import * as C from '../styles';
 import {StyledHeading2} from '../../../../styles';
 import {
@@ -7,7 +7,6 @@ import {
   BasicColors,
   SocialPlatformColors,
 } from '../constants';
-import { StyledComponent } from '@emotion/styled';
 
 const interfaceColors: React.FC = () => (
   <C.ColorsContainer>
