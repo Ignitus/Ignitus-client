@@ -4,7 +4,7 @@ import {CardLayoutContainer} from '../style';
 import Opportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
 import OpportunityFilters from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-filterComponents/OpportunityFilters/OpportunityFilters';
 
-const interfaceOpportunity = () => (
+const interfaceOpportunity: React.FC = () => (
   <CardLayoutContainer>
     <StyledHeading2>Card Layout ★</StyledHeading2>
     <hr />
