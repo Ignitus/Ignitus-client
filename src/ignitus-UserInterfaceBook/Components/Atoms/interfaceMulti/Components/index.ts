@@ -1,1 +1,1 @@
-export { default as interfaceMulti } from './interfaceMulti';
+export { default as interfaceMultiMediaInput } from './interfaceMultiMediaInput';

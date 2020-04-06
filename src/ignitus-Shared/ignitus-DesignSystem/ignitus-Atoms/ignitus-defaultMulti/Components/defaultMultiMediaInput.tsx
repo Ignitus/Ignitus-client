@@ -3,7 +3,7 @@ import {InputTypes} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultMulti = ({placeholder, type, name}: InputTypes) => (
+const DefaultMultiMediaInput = ({placeholder, type, name}: InputTypes) => (
   <React.Fragment>
     <I.InputContainer>
       <I.container1>
@@ -33,4 +33,4 @@ const DefaultMulti = ({placeholder, type, name}: InputTypes) => (
   </React.Fragment>
 );
 
-export default DefaultMulti;
+export default DefaultMultiMediaInput;
