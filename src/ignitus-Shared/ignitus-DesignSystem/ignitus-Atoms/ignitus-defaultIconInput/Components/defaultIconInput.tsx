@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import * as I from '../styles';
-import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
+import {InputTypes} from '../types';
 
-const DefaultIconInput = () => (
-  <React.Fragment>
-    <I.InputContainer>
-      <I.Input> https://goo.gl/HEp5FW </I.Input>
-      <I.StyledIcon name={AppIcon.CopyIcon} />
-    </I.InputContainer>
-  </React.Fragment>
-);
+const DefaultIconInput = ({
+  placeholder,
+  type,
+  name,
+  handleClick,
+}: InputTypes) => {
+  const [value, setValue] = useState('');
+  return (
+    <React.Fragment>
+      <I.InputContainer>
+        <I.Input
+          type={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={e => setValue(e.target.value)}
+        />
+        <I.StyledIcon name={name} onClick={() => handleClick(value)} />
+      </I.InputContainer>
+    </React.Fragment>
+  );
+};
 
 export default DefaultIconInput;
