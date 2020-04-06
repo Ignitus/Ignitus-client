@@ -24,4 +24,7 @@ export const BasicColors: string[] = [
 export const SocialPlatformColors: string[] = [
   C.TwitterIconColor,
   C.LinkedinIconColor,
+  C.FacebookIconColor,
+  C.RedditIconColor,
+  C.AngellistIconColor,
 ];

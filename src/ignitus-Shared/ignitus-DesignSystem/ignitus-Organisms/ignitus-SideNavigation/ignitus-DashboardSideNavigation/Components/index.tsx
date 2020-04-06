@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../style';
-import {AppIcon} from '../../../../../types/iconsTypes/enums';
+import {AppIcon} from '../../../../../types/iconsTypes/iconEnums';
 
 type props = {
   text: string;
