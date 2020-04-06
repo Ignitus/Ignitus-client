@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchInputContainer } from '../styles';
-import { DefaultMulti } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components ';
+import { DefaultMulti } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
 import { StyledHeading2 } from '../../../../styles';
 
 const interfaceTypography = () => (

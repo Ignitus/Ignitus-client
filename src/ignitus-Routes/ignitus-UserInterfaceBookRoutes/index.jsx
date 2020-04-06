@@ -20,7 +20,7 @@ import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Compo
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components ';
-import { interfaceMulti } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components ';
+import { interfaceMulti } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 
 const Container = styled.div`
   display:flex;
