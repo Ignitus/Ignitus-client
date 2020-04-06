@@ -1,8 +1,9 @@
+/* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import { AppIcon } from '../../../../types/iconsTypes/enums';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 const ProfileCard = () => (
   <S.ProfileDiv>

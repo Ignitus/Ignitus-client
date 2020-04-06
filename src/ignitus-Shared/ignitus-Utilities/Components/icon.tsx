@@ -28,14 +28,14 @@ import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdf
 import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
 import LocalLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
 import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
-import FileIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
-import MapMarkerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
-import BookmarkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
-import ChatMessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chatMessageIcon';
 import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import BookmarkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
+import FileIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
+import MapMarkerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
+import ChatMessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chatMessageIcon';
 
 type Props = {
   name: AppIcon;
