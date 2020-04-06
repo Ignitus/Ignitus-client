@@ -8,7 +8,7 @@ import {
   Paragraph,
   Heading1,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import { DefaultCheckbox } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
@@ -48,9 +48,9 @@ const InterestFlow: FunctionComponent = () => (
       </C.RightSection>
     </T.MiddleSection>
     <T.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/flow/emailFlow">Save & Continue</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
       <Paragraph>
         Skip for now
         {' >> '}

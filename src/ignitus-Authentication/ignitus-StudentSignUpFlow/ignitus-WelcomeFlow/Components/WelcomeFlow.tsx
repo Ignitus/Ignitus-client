@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   Paragraph,
   Heading1,
@@ -46,9 +46,9 @@ const WelcomeFlow: FunctionComponent = () => (
       </T.RightSection>
     </T.MiddleSection>
     <T.BottomSection>
-      <RoundedPrimaryButton>
+      <RoundedButton size="large" category="primary">
         <Link to="/flow/interestFlow">Save & Continue</Link>
-      </RoundedPrimaryButton>
+      </RoundedButton>
       <Paragraph>
         Skip for now
         {' >> '}

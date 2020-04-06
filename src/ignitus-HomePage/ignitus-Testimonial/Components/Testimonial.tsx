@@ -1,56 +1,67 @@
+/* eslint-disable default-case */
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState, useEffect, FunctionComponent } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
+import { Avatars } from '../constants';
 import { Props } from '../types';
 
-const Testimonial: FunctionComponent<Props> = ({ testimonialData, getTestimonialData }) => {
+const Testimonial: React.FC<Props> = ({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const nextTestimonial = () => {
-    setCurrentIndex((previous) => {
-      if (previous === testimonialData.length - 1) {
-        return 0;
-      }
-      return previous + 1;
-    });
+  const handleClick = (event) => {
+    const { target: { id } } = event;
+
+    switch (id) {
+      case '1':
+        setCurrentIndex(0);
+        break;
+
+      case '2':
+        setCurrentIndex(1);
+        break;
+
+      case '3':
+        setCurrentIndex(2);
+        break;
+
+      case '4':
+        setCurrentIndex(3);
+        break;
+    }
   };
 
   useEffect(() => {
     getTestimonialData();
   }, []);
 
-  const prevTestimonial = () => {
-    let nextIndex = currentIndex - 1;
-    if (currentIndex === 0) {
-      nextIndex = testimonialData.length - 1;
-    }
-    setCurrentIndex(nextIndex);
-  };
-
-
   return (
     <div className="testimonial">
       <div className="testimonials-title">Testimonials</div>
       <div className="testimonial-wrapper">
-        <div className="left-arrow arrow" onClick={prevTestimonial}>
-          <i className="fa fa-arrow-left" />
-        </div>
         {testimonialData.length > 0 && (
           <div className="carousel-content">
-            <p className="testimonial-text">
-              {testimonialData[currentIndex].description}
-            </p>
-            <p className="name">
-              {testimonialData[currentIndex].author}
-            </p>
+            <div className="text-box">
+              <p>{testimonialData[currentIndex].description}</p>
+            </div>
+            <div className="avatar">
+              <img src={Avatars[currentIndex]} />
+            </div>
+            <p className="name">{testimonialData[currentIndex].author}</p>
             <p className="designation">
               {testimonialData[currentIndex].authorDesignation}
             </p>
           </div>
         )}
-        <div className="right-arrow arrow" onClick={nextTestimonial}>
-          <i className="fa fa-arrow-right" />
+        <div className="nav-avatar">
+          <img id="1" src={Avatars[0]} alt="" onClick={handleClick} />
+          <img id="2" src={Avatars[1]} alt="" onClick={handleClick} />
+          <img id="3" src={Avatars[2]} alt="" onClick={handleClick} />
+          <img id="4" src={Avatars[3]} alt="" onClick={handleClick} />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as I from '../styles';
 import {StyledHeading2} from '../../../../styles';
-import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/enums';
+import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import { Heading4 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
   SocialIcons,
@@ -22,6 +22,7 @@ const interfaceIcons: React.FC = () => (
     <hr />
     <StyledHeading2>General Icons</StyledHeading2>
     <IconsMapper icons={GeneralIcons} />
+
     <hr />
     <StyledHeading2>Ignitus Logos</StyledHeading2>
     <IconsMapper icons={IgnitusLogos} />

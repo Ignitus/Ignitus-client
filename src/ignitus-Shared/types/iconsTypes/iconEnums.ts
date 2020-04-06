@@ -6,6 +6,10 @@ export enum AppIcon {
   PlusIcon = 'PlusIcon',
   HeartIcon = 'HeartIcon',
   TwitterIcon = 'TwitterIcon',
+  LocationIcon = 'LocationIcon',
+  FilledArrowDownIcon = 'FilledArrowDownIcon',
+  CrossIcon = 'CrossIcon',
+  SearchIcon = 'SearchIcon',
   SaveIcon = 'SaveIcon',
   MessageIcon = 'MessageIcon',
   NetworkIcon = 'NetworkIcon',
@@ -26,6 +30,5 @@ export enum AppIcon {
   LocalLibraryIcon = 'LocalLibraryIcon',
   GraduationCapIcon = 'GraduationCapIcon',
   AccountCircleIcon = 'AccountCircleIcon',
-  SearchIcon = 'SearchIcon',
   NotificationIcon = 'NotificationIcon',
 }
