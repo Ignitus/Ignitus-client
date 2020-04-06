@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode, ReactElement, JSXElementConstructor } from 'react';
 import * as C from '../styles';
 import {StyledHeading2} from '../../../../styles';
 import {
@@ -7,8 +7,9 @@ import {
   BasicColors,
   SocialPlatformColors,
 } from '../constants';
+import { StyledComponent } from '@emotion/styled';
 
-const interfaceColors = () => (
+const interfaceColors: React.FC = () => (
   <C.ColorsContainer>
     <StyledHeading2>Primary Colors</StyledHeading2>
     <ColorsMapper colors={PrimaryColors} />
@@ -25,7 +26,7 @@ const interfaceColors = () => (
   </C.ColorsContainer>
 );
 
-const ColorsMapper = ({colors}) =>
+const ColorsMapper: Function = ({colors}: {colors: string[]}): JSX.Element[] =>
   colors.map((color: string) => <C.Color key={color} hex={color}> {color} </C.Color>);
 
 export default interfaceColors;

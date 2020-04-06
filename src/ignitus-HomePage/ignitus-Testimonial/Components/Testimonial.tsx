@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FunctionComponent } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-
 import '../Styles/style.scss';
+import { Props } from '../types';
 
-const Testimonial = ({ testimonialData, getTestimonialData }) => {
+const Testimonial: FunctionComponent<Props> = ({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextTestimonial = () => {
     setCurrentIndex((previous) => {

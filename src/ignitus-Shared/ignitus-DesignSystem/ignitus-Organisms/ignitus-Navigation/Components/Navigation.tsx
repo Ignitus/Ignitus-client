@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
 import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 import '../Styles/style.scss';
+import { PureNavigationProps, displayClassTypes } from '../types';
 
 const handleSmallerScreen = () => {
   const navlinks = document.querySelector('.navlinks');
@@ -17,7 +17,7 @@ const handleSmallerScreen = () => {
   navlinks?.classList.toggle('mobile');
 };
 
-const PureNavigation = ({ displayClass, dynamicLogo }) => (
+const PureNavigation: React.FunctionComponent<PureNavigationProps> = ({ displayClass, dynamicLogo }) => (
   <nav className={`navbar  ${displayClass}`}>
     <HashLink className="navbar-brand" to="/#">
       <img src={dynamicLogo} width="40" height="40" alt="logo" />
@@ -69,9 +69,9 @@ const PureNavigation = ({ displayClass, dynamicLogo }) => (
 );
 
 
-const Navigation = () => {
+const Navigation: React.FunctionComponent = () => {
   const [navScrolled, setNavScrolled] = useState(false);
-  const [displayClass, setDisplayClass] = useState('transparent');
+  const [displayClass, setDisplayClass] = useState<displayClassTypes>('transparent');
   const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
 
   useEffect(() => {

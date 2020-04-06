@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { RoundedPrimaryButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
@@ -10,7 +10,7 @@ import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as T from '../Styles/style';
 
-const WelcomeFlow = () => (
+const WelcomeFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressOne.png" alt="progress-bar" />

@@ -11,7 +11,7 @@ import {
 } from '../constants';
 
 
-const interfaceIcons = () => (
+const interfaceIcons: React.FC = () => (
   <I.IconsContainer>
     <Heading4>We are mainly using the Material Rounded Icon Library and some other icons from Flaticon and Fa-Fa icons.</Heading4>
     <StyledHeading2>Social Icons 🎨</StyledHeading2>
@@ -28,6 +28,6 @@ const interfaceIcons = () => (
   </I.IconsContainer>
 );
 
-const IconsMapper = ({icons}) => icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);
+const IconsMapper: Function = ({icons}: {icons: AppIcon[]}): JSX.Element[] => icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);
 
 export default interfaceIcons;

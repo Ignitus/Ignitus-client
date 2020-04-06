@@ -7,7 +7,7 @@ import {StyledHeading2, StyledHeading6} from '../../../../styles';
 {
   /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
 }
-const interfaceButttons = () => (
+const interfaceButttons: React.FC = () => (
   <ButtonsContainer>
     <StyledHeading2> Buttons </StyledHeading2>
     <Button.PrimaryButton> Primary Button </Button.PrimaryButton>
