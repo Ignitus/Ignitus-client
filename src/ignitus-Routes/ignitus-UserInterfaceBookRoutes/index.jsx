@@ -20,8 +20,7 @@ import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Compo
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components ';
-import { interfaceIconInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components ';
-
+import { interfaceMulti } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components ';
 
 const Container = styled.div`
   display:flex;
@@ -135,8 +134,8 @@ const UserInterfaceBookRoutes = () => (
           component={interfaceSeparator}
         />
         <Route
-          path="/interface/iconInput"
-          component={interfaceIconInput}
+          path="/interface/multi"
+          component={interfaceMulti}
         />
       </Switch>
     </LeftRow>
