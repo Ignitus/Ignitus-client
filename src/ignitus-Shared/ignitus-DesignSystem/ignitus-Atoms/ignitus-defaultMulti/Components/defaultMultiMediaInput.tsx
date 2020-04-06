@@ -3,7 +3,7 @@ import {InputTypes} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultMultiMediaInput = ({placeholder, type, name}: InputTypes) => (
+const DefaultMultiMediaInput = ({placeholder, name}: InputTypes) => (
   <React.Fragment>
     <I.InputContainer>
       <I.container1>

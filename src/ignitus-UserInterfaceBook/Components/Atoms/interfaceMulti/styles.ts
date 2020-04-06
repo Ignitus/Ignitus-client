@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
-export const SearchInputContainer = styled.nav`
+export const MultiMediaInputContainer = styled.nav`
   padding: 2rem;
 `;
