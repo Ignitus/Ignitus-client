@@ -27,5 +27,6 @@ export const Input = styled.input`
 export const StyledIcon = styled(Icon)`
   height: 1.5rem;
   width: 1.5rem;
+  cursor: pointer;
   fill: ${IgnitusBlue};
 `;
