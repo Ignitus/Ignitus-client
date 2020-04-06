@@ -40,6 +40,9 @@ const RightRow = styled.div`
   overflow-y: overlay;
   overflow-x: auto;
   ${Reset}
+  @media (min-width: 1466px) {
+    flex: 1;
+  }
 `;
 
 const LeftRow = styled.div`
