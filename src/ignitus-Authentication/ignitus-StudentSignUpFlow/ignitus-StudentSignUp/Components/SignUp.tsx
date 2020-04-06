@@ -40,6 +40,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) =>
       ) {
         setState({
           ...state,
+          emptyMessage: false,
           invalidEmail: true,
         });
         return;
@@ -49,6 +50,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) =>
     if (!isEqual(password, confirmPassword)) {
       setState({
         ...state,
+        invalidEmail: false,
         emptyMessage: false,
         equalmessage: true,
       });
