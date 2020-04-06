@@ -45,7 +45,7 @@ export const UnorderedList = styled.ul<ArrowProps>`
 `;
 
 export const ListItem = styled.li<SubNestingProps>`
-  // margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
+  margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
   margin-left: ${props => (props.level ? `${props.level/2}rem` : '0rem')};
   padding: 0.5rem;
   cursor: pointer;

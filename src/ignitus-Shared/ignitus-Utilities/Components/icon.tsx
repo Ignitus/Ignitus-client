@@ -32,6 +32,7 @@ import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/c
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 
 type Props = {
   name: AppIcon;
@@ -111,6 +112,8 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.NotificationIcon:
       return <NotificationIcon {...rest} />;
 
+
+
     case AppIcon.GithubIcon:
       return <GithubIcon {...rest} />;
 
@@ -134,6 +137,9 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.GraduationCapIcon:
       return <GraduationCapIcon {...rest} />;
+
+    case AppIcon.CopyIcon:
+      return <CopyIcon {...rest} />;
   }
 };
 
