@@ -13,7 +13,7 @@ const interfaceOverlay = () => (
         </O.Paragraph>
       </O.TopSection>
       <O.BottomSection>
-        <O.Button category="orange" size="medium">
+        <O.Button category="primary" size="medium">
           {' '}
           Go Back
         </O.Button>

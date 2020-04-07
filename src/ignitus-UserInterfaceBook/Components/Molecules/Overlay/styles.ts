@@ -5,14 +5,14 @@ import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ig
 import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
 import {
   MD,
-  SemiBold,
   XS,
   Normal,
+  Medium,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
   GreySecondaryText,
-  GreyThree,
   White,
+  GreyOne,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 type props = {
@@ -38,13 +38,13 @@ export const TopSection = styled(flexibleColDiv)`
 `;
 
 export const BottomSection = styled(flexibleColDiv)`
-  padding: 0 1rem;
+  padding: 0 1.5rem 1.5rem;
   align-items: flex-end;
 `;
 
 export const Paragraph = styled(P)<props>`
-  color: ${props => (props.secondary ? GreyThree : GreySecondaryText)};
-  font-weight: ${props => (props.secondary ? Normal : SemiBold)};
+  color: ${props => (props.secondary ? GreyOne : GreySecondaryText)};
+  font-weight: ${props => (props.secondary ? Normal : Medium)};
   font-size: ${props => (props.secondary ? XS : MD)};
   margin-top: ${props => (props.secondary ? '1.5rem' : '0')};
 `;
