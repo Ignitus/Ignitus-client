@@ -5,7 +5,6 @@ import {
   Heading4,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {DefaultIconInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components';
-import {DefaultPublicationInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultPublicationInput/Components';
 import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 const copy = value => console.log('copied: ', value);
@@ -30,13 +29,6 @@ const interfaceIconInput = () => (
       placeholder="Give your publication a title..."
       handleClick={copy}
       position="row-reverse"
-    />
-    <br /><br />
-    <Heading4> Publications Details</Heading4>
-    <DefaultPublicationInput
-      name={AppIcon.PdfIcon}
-      type="string"
-      placeholder="Give your publication a title..."
     />
   </InputContainer>
 );
