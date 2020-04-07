@@ -10,12 +10,14 @@ export const InputContainer = styled.div<InputContainerProps>`
   justify-content: center;
   flex-direction: ${props => props.position};
   border-radius: 0.5rem;
-  border: 1px solid ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground) };
+  border: 1px solid
+    ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground)};
   padding: 0.7rem;
-  background: ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground) };
+  background: ${props =>
+    props.position === 'row-reverse' ? GreyLight : GreyBackground};
 
   &:hover {
-    border: 1px solid ${props => (props.position === 'row-reverse' ? IgnitusBlue : GreyBackground) };
+    border: 1px solid ${IgnitusBlue};
   }
 `;
 
@@ -33,6 +35,6 @@ export const StyledIcon = styled(Icon)<InputContainerProps>`
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  margin-right: ${props => (props.position === 'row-reverse' ? '1rem' : '0') };
+  margin-right: ${props => (props.position === 'row-reverse' ? '1rem' : '0')};
   fill: ${IgnitusBlue};
 `;
