@@ -1,8 +1,14 @@
 import React from 'react';
 import * as O from '../styles';
 import {Heading1} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {OverlayProps} from '../types';
 
-const Overlay = ({title, primaryText, secondaryText, buttonText}) => (
+const Overlay = ({
+  title,
+  primaryText,
+  secondaryText,
+  buttonText,
+}: OverlayProps) => (
   <O.Overlay>
     <O.TopSection>
       <Heading1>{title}</Heading1>
