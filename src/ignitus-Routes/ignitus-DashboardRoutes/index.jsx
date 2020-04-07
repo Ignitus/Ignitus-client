@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PrivateRoute from '../ignitus-PrivateRoutes';

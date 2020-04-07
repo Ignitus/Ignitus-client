@@ -13,7 +13,7 @@ export const Separator = styled.hr`
   color: ${C.Grey1};
 `;
 
-export const Card = styled.a`
+export const Card = styled.div`
   display: block;
   height: auto;
   padding: 20px;

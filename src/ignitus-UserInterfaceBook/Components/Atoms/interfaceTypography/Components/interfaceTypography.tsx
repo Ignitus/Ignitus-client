@@ -12,7 +12,7 @@ import {
   TextLink,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceTypography = () => (
+const interfaceTypography: React.FC = () => (
   <TypographyContainer>
     <StyledHeading2>Typography ★</StyledHeading2>
     <hr />
