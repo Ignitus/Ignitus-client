@@ -38,9 +38,10 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 - [Docker](https://www.docker.com/) - Empowering App Development for Developers. 🐳
 - [Istanbul](https://istanbul.js.org/) - JavaScript test coverage tool.
 
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
-</a>
+
+  <a href="https://www.netlify.com">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+  </a>
 
 
 ### Testing.
@@ -85,7 +86,7 @@ We also plan to introduce some new technologies in the future such as.
 
 <p>
   <sub>Built with ❤︎ by
-    <a href="https://github.com/liyasthomas/postwoman/graphs/contributors">contributors.</a>
+    <a href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">contributors.</a>
   </sub>
 </p>
 

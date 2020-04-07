@@ -28,7 +28,7 @@ function commonLoginRegister(props: Props): React.ComponentType {
                 <img
                   alt="Student auth"
                   className="img-fluid"
-                  src={t.studentAuth}
+                  src={t.studentAuthentication}
                 />
               </Link>
             </div>
@@ -38,7 +38,7 @@ function commonLoginRegister(props: Props): React.ComponentType {
                 <img
                   alt="Professor auth"
                   className="img-fluid"
-                  src={t.professorAuth}
+                  src={t.professorAuthentication}
                 />
               </Link>
             </div>

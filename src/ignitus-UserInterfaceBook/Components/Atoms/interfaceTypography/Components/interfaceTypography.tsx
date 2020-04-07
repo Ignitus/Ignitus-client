@@ -9,9 +9,10 @@ import {
   Heading5,
   Heading6,
   Paragraph,
+  TextLink,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceTypography = () => (
+const interfaceTypography: React.FC = () => (
   <TypographyContainer>
     <StyledHeading2>Typography ★</StyledHeading2>
     <hr />
@@ -22,6 +23,7 @@ const interfaceTypography = () => (
     <Heading5>Heading 5</Heading5>
     <Heading6>Heading 6</Heading6>
     <Paragraph>Paragraph</Paragraph>
+    <TextLink>Text Link</TextLink>
   </TypographyContainer>
 );
 

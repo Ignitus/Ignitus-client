@@ -1,40 +1,47 @@
+/* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import progress from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/progressPage5.png';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
 import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import '../Styles/style.scss';
+import {
+  Paragraph,
+  Heading2,
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import * as T from '../../ignitus-WelcomeFlow/Styles/style';
+import * as C from '../Styles/style';
+import {
+  Button,
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
-const EmailFlow = () => (
-  <div className="email">
-    <img className="progressBarSignup" src={progress} alt="progress-bar" />
-    <div className="newsletter">
-      <img src={newsletter} alt="newsletter" />
-    </div>
-    <p className="welcome">Let’s confirm your email.</p>
-    <p className="paragraph">
-      We recommend to confirm your email address to recieve further
-      communication.
-    </p>
-    <p className="paragraph">
-      Click the link we sent to sofia.carter@gmail.com to confirm you email.
-    </p>
-    <div className="emailConfirmContainer">
-      <button className="emailConfirmed" type="button">
-        <Link to="/flow/emailConfirmationFlow" className="emailConfirmedText">
-          Email confirmed.
-        </Link>
-      </button>
-      <button className="noEmail" type="button">
-        <Link to="/" className="noEmailText">
-          I Don’t see the email.
-        </Link>
-      </button>
-    </div>
-    <p className="paragraph">I don’t want to confirm my email yet</p>
-  </div>
+const EmailFlow: FunctionComponent = () => (
+  <T.WelcomeContainer>
+    <T.TopSection>
+      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png" alt="progress-bar" />
+      <C.NewsletterImage src={newsletter} alt="newsletter" />
+      <Heading2>Let’s confirm your email.</Heading2>
+      <Paragraph>
+        {' '}
+        We recommend to confirm your email address to recieve further
+        communication.
+      </Paragraph>
+      <Paragraph>
+        Click the link we sent to sofia.carter@gmail.com to confirm you email.
+      </Paragraph>
+    </T.TopSection>
+    <T.BottomSection>
+      <C.ButtonContainer>
+        <Button size="large" category="primary">
+          <Link to="/flow/emailConfirmationFlow">Email confirmed</Link>
+        </Button>
+        <Button size="large" category="white">
+          <Link to="/">I don’t see the email</Link>
+        </Button>
+      </C.ButtonContainer>
+      <Paragraph><Link to="/">I don’t want to confirm my email yet.</Link></Paragraph>
+    </T.BottomSection>
+  </T.WelcomeContainer>
 );
 
 export default withErrorBoundary(EmailFlow);

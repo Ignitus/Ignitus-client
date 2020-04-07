@@ -2,12 +2,12 @@ import React from 'react';
 import * as S from '../styles';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-export const Opportunity = () => (
+export const Opportunity: React.FunctionComponent = () => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
         <img
-          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/Team_avatar-eugene.png"
+          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
           alt="universityLogo"
           height="150"
         />
