@@ -19,6 +19,16 @@ const interfaceIconInput = () => (
       type="string"
       placeholder="Paste URL Here"
       handleClick={copy}
+      position="row"
+    />
+    <br /><br />
+    <Heading4>Publication Details</Heading4>
+    <DefaultIconInput
+      name={AppIcon.PdfIcon}
+      type="string"
+      placeholder="Give your publication a title..."
+      handleClick={copy}
+      position="row-reverse"
     />
   </InputContainer>
 );
