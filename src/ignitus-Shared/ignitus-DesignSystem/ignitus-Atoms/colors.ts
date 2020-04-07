@@ -10,6 +10,7 @@ export const GreySecondaryText: string = '#4D4D4D';
 export const GreyLight: string = '#E0E0E0';
 export const GreyOne: string = '#9C9C9C';
 export const GreyTwo: string = '#C4C4C4';
+export const GreyThree: string = ' #C5C5C5;';
 
 // basic Colors
 export const Black: string = '#000000';

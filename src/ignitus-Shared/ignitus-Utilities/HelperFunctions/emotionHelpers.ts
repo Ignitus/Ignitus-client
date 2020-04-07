@@ -83,6 +83,9 @@ export const getColor = ({category}: ButtonProperties) => {
     case CategoryEnums.Green:
       return White;
 
+    case CategoryEnums.Orange:
+      return White;
+
     case CategoryEnums.Yellow:
       return GreySecondaryText;
 

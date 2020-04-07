@@ -14,8 +14,13 @@ const interfaceOverlay = () => (
       <O.TopSection>
         <Heading1>Hooray!</Heading1>
         <O.Paragraph>Your application has been sent successfully!</O.Paragraph>
-        <O.Paragraph secondary>Make sure to keep an eye on your email.</O.Paragraph>
+        <O.Paragraph secondary>
+          Make sure to keep an eye on your email.
+        </O.Paragraph>
       </O.TopSection>
+      <O.BottomSection>
+        <O.Button category="orange" size="medium"> Go Back</O.Button>
+      </O.BottomSection>
     </O.Overlay>
   </O.OverlayContainer>
 );
