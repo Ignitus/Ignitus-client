@@ -1,12 +1,6 @@
 import React from 'react';
 import * as O from '../styles';
-import {
-  Heading1,
-  Paragraph,
-  TextLink,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-
-import {Button} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import {Heading1} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const interfaceOverlay = () => (
   <O.OverlayContainer>
@@ -19,7 +13,10 @@ const interfaceOverlay = () => (
         </O.Paragraph>
       </O.TopSection>
       <O.BottomSection>
-        <O.Button category="orange" size="medium"> Go Back</O.Button>
+        <O.Button category="orange" size="medium">
+          {' '}
+          Go Back
+        </O.Button>
       </O.BottomSection>
     </O.Overlay>
   </O.OverlayContainer>

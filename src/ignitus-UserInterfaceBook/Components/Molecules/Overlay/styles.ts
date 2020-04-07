@@ -12,6 +12,7 @@ import {
 import {
   GreySecondaryText,
   GreyThree,
+  White,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 type props = {
@@ -23,12 +24,13 @@ export const OverlayContainer = styled.nav`
 `;
 
 export const Overlay = styled.div`
-  /* background-image: url(${confetti}); */
-  background-color: 'white';
-  /* background-size: 'cover'; */
+  background-image: url(${confetti});
+  background-color: ${White};
+  background-size: contain;
+  border-radius: 1rem;
   display: inline-flex;
   flex-direction: column;
-  border: 1px solid black;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 `;
 
 export const TopSection = styled(flexibleColDiv)`
