@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/logo-Svg/confetti.svg';
+import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
 import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
@@ -14,14 +14,8 @@ import {
   White,
   GreyOne,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { props } from './types';
 
-type props = {
-  secondary?: boolean;
-};
-
-export const OverlayContainer = styled.nav`
-  padding: 2rem;
-`;
 
 export const Overlay = styled.div`
   background-image: url(${confetti});

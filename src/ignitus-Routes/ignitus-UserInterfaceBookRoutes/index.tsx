@@ -22,7 +22,7 @@ import {interfaceSeparator} from '../../ignitus-UserInterfaceBook/Components/Ato
 import {interfaceDashBoardFooter} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
 import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
 import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
-import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/Overlay/Components';
+import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 
 const Container = styled.div`
   display: flex;
