@@ -9,8 +9,9 @@ import React, { useState, useEffect } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 import { Avatars } from '../constants';
+import { Props } from '../types';
 
-const Testimonial = ({ testimonialData, getTestimonialData }) => {
+const Testimonial: React.FC<Props> = ({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleClick = (event) => {
     const { target: { id } } = event;

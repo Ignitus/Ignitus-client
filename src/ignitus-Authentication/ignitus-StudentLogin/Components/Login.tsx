@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/aria-role */
-import React, { useState } from 'react';
+import React, { useState, FunctionComponent } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   SharedAuthentication,
-  LoginStatePayload,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index.ts';
+  LoginStatePayload
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
+import { LogInProps } from '../types';
 
-const Login = ({ logInRequest, studentLoginData }) => {
+const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData }) => {
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 

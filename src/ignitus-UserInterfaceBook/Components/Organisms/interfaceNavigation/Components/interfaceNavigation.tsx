@@ -4,7 +4,8 @@ import MessageSideNavigation from '../../../../../ignitus-Shared/ignitus-DesignS
 import {NavigationContainer, Container} from '../style';
 import DashboardNavigation from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components/index';
 import {StyledHeading2} from '../../../../styles';
-const interfaceNavigation = () => (
+
+const interfaceNavigation: React.FC = () => (
   <Container>
     <StyledHeading2>Navigation</StyledHeading2>
     <hr />

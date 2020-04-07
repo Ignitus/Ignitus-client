@@ -32,6 +32,10 @@ import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/c
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
+import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
+import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
+import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
 
 type Props = {
   name: AppIcon;
@@ -111,6 +115,9 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.NotificationIcon:
       return <NotificationIcon {...rest} />;
 
+    case AppIcon.VideoLibIcon:
+      return <VideoLibraryIcon {...rest} />
+
     case AppIcon.GithubIcon:
       return <GithubIcon {...rest} />;
 
@@ -126,6 +133,9 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.PdfIcon:
       return <PdfIcon {...rest} />;
 
+    case AppIcon.PollIcon:
+        return <PollIcon {...rest} />;
+
     case AppIcon.LibraryBooksIcon:
       return <LibraryBooksIcon {...rest} />;
 
@@ -134,6 +144,12 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.GraduationCapIcon:
       return <GraduationCapIcon {...rest} />;
+
+    case AppIcon.CopyIcon:
+      return <CopyIcon {...rest} />;
+
+    case AppIcon.CameraIcon:
+      return <CameraIcon {...rest}/>
   }
 };
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export class ErrorBoundary extends React.Component {
+import {Props, State} from './types';
+
+export class ErrorBoundary extends React.Component<Props, State> {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,11 +48,6 @@ export class ErrorBoundary extends React.Component {
     return children;
   }
 }
-
-ErrorBoundary.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  children: PropTypes.object.isRequired,
-};
 
 export const withErrorBoundary = WrappedComponent => props => (
   <ErrorBoundary>
