@@ -21,7 +21,7 @@ import {interfaceSearchInput} from '../../ignitus-UserInterfaceBook/Components/A
 import {interfaceSeparator} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import {interfaceDashBoardFooter} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
 import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
-import interfaceMultiMediaInput from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components/interfaceMultiMediaInput';
+import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 
 const Container = styled.div`
   display: flex;
