@@ -8,8 +8,8 @@ export const GreyText: string = '#2D2D2D';
 export const GreyBackground: string = '#F7F7F7';
 export const GreySecondaryText: string = '#4D4D4D';
 export const GreyLight: string = '#E0E0E0';
-export const Grey1: string = '#9C9C9C';
-export const Grey2: string = '#C4C4C4';
+export const GreyOne: string = '#9C9C9C';
+export const GreyTwo: string = '#C4C4C4';
 
 // basic Colors
 export const Black: string = '#000000';

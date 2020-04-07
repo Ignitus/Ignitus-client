@@ -35,7 +35,7 @@ export const Input = styled.textarea`
   font-size: ${SM};
   resize: none;
   &::placeholder {
-    color: ${C.Grey1};
+    color: ${C.GreyOne};
     resize: none;
   }
 `;
