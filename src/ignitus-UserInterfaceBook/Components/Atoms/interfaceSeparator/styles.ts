@@ -18,7 +18,7 @@ export const Separator = styled.hr`
   opacity: 0.5;
   &:before {
     content: '';
-    background: ${C.Grey2};
+    background: ${C.GreyTwo};
     position: absolute;
     left: 0;
     top: 50%;
@@ -33,6 +33,6 @@ export const Separator = styled.hr`
     padding: 0.5em;
     line-height: 1.5em;
     color: ${C.GreySecondaryText};
-    background-color: ${C.Grey2};
+    background-color: ${C.GreyTwo};
   }
 `;

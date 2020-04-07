@@ -5,7 +5,7 @@ import {
   GreyLight,
   IgnitusBlue,
   SecondaryColor,
-  Grey2,
+  GreyTwo,
   Red,
   GreySecondaryText,
 } from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
@@ -81,6 +81,9 @@ export const getColor = ({category}: ButtonProperties) => {
       return White;
 
     case CategoryEnums.Green:
+      return White;
+
+    case CategoryEnums.Orange:
       return White;
 
     case CategoryEnums.Yellow:
@@ -160,7 +163,7 @@ export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
       return SecondaryColor;
 
     case CategoryEnums.Grey:
-      return Grey2;
+      return GreyTwo;
 
     case CategoryEnums.Text:
       return GreyLight;

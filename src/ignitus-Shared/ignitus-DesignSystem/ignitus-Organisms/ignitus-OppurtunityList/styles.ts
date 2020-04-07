@@ -30,7 +30,7 @@ export const DateBtnContainer = styled(flexibleColDiv)`
 `;
 
 export const DateContainer = styled(T.Heading6)`
-  color: ${C.Grey1};
+  color: ${C.GreyOne};
   font-weight: ${Normal};
 `;
 
@@ -95,7 +95,7 @@ export const OpportunityTitle = styled(T.Heading3)`
 `;
 
 export const OpportunityData = styled(T.Heading6)`
-  color: ${C.Grey1};
+  color: ${C.GreyOne};
   font-weight: ${Normal};
   flex: 1;
   text-align: end;
@@ -103,5 +103,5 @@ export const OpportunityData = styled(T.Heading6)`
 
 export const OpportunitySubTitle = styled(T.Heading4)`
   font-weight: ${Normal};
-  color: ${C.Grey1};
+  color: ${C.GreyOne};
 `;
