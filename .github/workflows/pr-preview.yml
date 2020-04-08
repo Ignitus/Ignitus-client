@@ -6,18 +6,20 @@ on:
 
 jobs:
   deploy_preview:
+    if: node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}"
     name: Deploy Preview of PR
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v2
       - run: npm install yaml @actions/github
-      - run: node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}"
-      - run: |
+      - run: echo "::set-env name=worker::$( node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}" )"
+      - if: worker == 'true'
+        run: |
           git fetch origin +refs/pull/${{ github.event.issue.number }}/merge
           git checkout FETCH_HEAD
           npm install
           CI=false npm run build
           mv ./build/index.html ./build/200.html
-      - run: npm install randomstring surge
-      - run: node ./scripts/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
+          npm install randomstring surge
+          node ./scripts/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
