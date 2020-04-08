@@ -194,7 +194,7 @@ export const RecommendationsInput3 = styled.input`
   flex:2;
 `;
 
-export const RecommendationsPara = styled.textarea`
+export const RecommendationsMainInput = styled.textarea`
   width: 100%;
   overflow:hidden;
   border: none;
