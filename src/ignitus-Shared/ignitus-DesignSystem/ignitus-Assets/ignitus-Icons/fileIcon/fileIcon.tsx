@@ -7,7 +7,7 @@ const FileIcon = ({title = 'File Icon', ...rest}: Props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       aria-label={title}
-			viewBox="0 0 384 512"
+			viewBox="0 0 448 512"
       {...rest}
     >
       <title>{title}</title>

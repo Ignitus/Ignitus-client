@@ -3,6 +3,21 @@ import * as C from '../../ignitus-Atoms/colors';
 import { flexibleColDiv, flexibleRowDiv, Link } from '../../shared';
 import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
 import Icon from '../../../ignitus-Utilities/Components/icon';
+import { maximumWidthQuery } from '../../ignitus-Atoms/media';
+
+type TextIconProps = {
+  contentDistance?: string;
+  direction?: string;
+};
+
+type IconProps = {
+  size?: string;
+};
+
+type TextProps = {
+  iconDistance?: number;
+  contentColor?: string;
+};
 
 export const ProfileDiv = styled(flexibleColDiv)`
   padding: 2rem;
@@ -10,15 +25,16 @@ export const ProfileDiv = styled(flexibleColDiv)`
 `;
 
 export const ProfileContainer = styled(flexibleRowDiv)`
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
   margin: 0.5rem;
-  padding: 1rem;
-  padding-top: 3px;
+  padding: 2rem 1rem;
+  padding-top: 1px;
   width: 100%;
   flex-wrap: wrap;
+  align-items: flex-start;
 `;
 
 export const ProfileTrack = styled.div`
@@ -26,104 +42,97 @@ export const ProfileTrack = styled.div`
   text-align: end;
 `;
 
-export const BookmarkIconDiv = styled.div`
-  text-align: right;
-`;
-
 export const ContentDiv = styled(flexibleRowDiv)`
   padding: 0.5rem;
-  border: 2px solid blue;
-  flex: 1 60%;
+  padding-left: 2rem;
+  flex: 1 70%;
   flex-wrap: wrap;
-  border: none;
+  align-items: flex-end;
 `;
 
 export const ImageContainer = styled(flexibleRowDiv)`
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 190px;
   img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 `;
 
 export const DetailsContainer = styled.div`
   flex: auto;
-  padding: 0.5em 0 0 1.5em;
+  padding: 0.5em 0 0 3rem;
+  align-items: center;
 `;
 
 export const ProfileHeading = styled(Heading1)`
   flex: 1;
+  font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	word-spacing: 1.5px;
+  margin-bottom: 0.65rem;
 `;
 
 export const ProfileSubHeading = styled(Heading4)`
   flex: 1;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 `;
 
 export const SocialDiv = styled(flexibleColDiv)`
   padding: 0.5rem;
-  border: 2px solid blue;
-  flex: 1 40%;
-  border: none;
+  flex: 1 30%;
+  align-items: flex-start;
+  ${maximumWidthQuery[0]} {
+    align-items: center;
+  }
 `;
 
 export const SocialContact = styled(flexibleColDiv)`
   flex: 100%;
-  p {
-    flex: 1 1 100%;
-  }
 `;
-
-// Icon Setting
 
 export const SocialIcons = styled.div`
   flex: 100%;
-  margin: 1em 0;
-  i {
-    color: ${C.IgnitusBlue};
-    font-size: 2em;
-    margin-right: 0.7em;
-  }
-`;
-
-export const TextIconContainer = styled(flexibleRowDiv)`
-  justify-content: flex-start;
-  width: 100%;
-  margin-bottom: 5px;
-`;
-
-export const TextIconContent = styled.span`
-  color: ${C.IgnitusBlue};
-  display: inline-block;
-  margin: 0 10px;
-`;
-
-export const ProfileBookmarkIcon = styled(Icon)`
-  height: 2rem;
-  fill: ${C.IgnitusBlue};
-`;
-
-export const SocialContactIcons = styled(Icon)`
-  height: 1.5rem;
-  fill: ${C.IgnitusBlue};
+  margin-top: 0.5em;
+  margin-bottom: 2em;
 `;
 
 export const SocialLinks = styled(Link)`
-  margin-right: 20px;
-`;
-
-export const LocationIcon = styled(Icon)`
-  height: 1.2rem;
-  position: relative;
-  top: -5px;
-  fill: ${C.IgnitusBlue};
+  margin-right: 2.3em;
+  display: inline-block;
 `;
 
 export const SocialLinkIcons = styled(Icon)`
   height: 1.8rem;
+  margin-bottom: 0.5em;
   fill: ${C.IgnitusBlue};
+`;
+
+//Text Icon Container
+
+export const TextIconContainer = styled(flexibleRowDiv)<TextIconProps>`
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: ${props =>
+    props.contentDistance ? `${props.contentDistance}rem` : '1rem'};
+  flex-direction: ${props => (props.direction ? 'row-reverse' : '')};
+  align-items: end;
+`;
+
+export const TextIcon = styled(Icon)<IconProps>`
+  height: ${props => (props.size ? `${props.size}rem` : '1.8rem')};
+  fill: ${C.IgnitusBlue};
+`;
+
+export const TextIconContent = styled.span<TextProps>`
+  font-weight: 500;
+  color: ${props => (props.contentColor ? props.contentColor : ``)};
+  padding: ${props =>
+    props.iconDistance ? `0 ${props.iconDistance}px` : '0 15px'};
+  flex: 1;
+  align-self: center;
 `;
 
 // Drop Down Menu
@@ -135,7 +144,7 @@ export const DropDownBtnContainer = styled.div`
 
 export const DropDownBtn = styled.div`
   font-weight: bold;
-  color: ${C.GreyText};
+  color: ${C.Grey1};
   cursor: pointer;
   display: inline-block;
   padding-bottom: 10px;
