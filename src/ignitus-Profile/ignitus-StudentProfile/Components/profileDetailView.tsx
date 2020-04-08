@@ -26,7 +26,7 @@ const ProfileDetailView = () => (
 
         <C.ContentContainer>
           <AboutContent
-            placeholder={'Well-versed in over a dozen literary genres and can teach to any range of students. Adept at creating a lesson plan that engages students helping students to see the beauty in literature and encouraging students to read on their own. Specializes in high school and junior college level classes.'}
+            placeholder='Well-versed in over a dozen literary genres and can teach to any range of students. Adept at creating a lesson plan that engages students helping students to see the beauty in literature and encouraging students to read on their own. Specializes in high school and junior college level classes.'
             rows={3}
           />
 
@@ -44,22 +44,22 @@ const ProfileDetailView = () => (
         <C.ContentContainer>
           <StyledHeading6>
             <C.Education1
-              placeholder={'Graham Junior College'}
-              type={'text'}
+              placeholder='Graham Junior College'
+              type='text'
             />
           </StyledHeading6>
 
           <StyledHeading4>
             <C.Education2
-              placeholder={'New Parkland,CA'}
-              type={'text'}
+              placeholder='New Parkland,CA'
+              type='text'
               />
           </StyledHeading4>
 
           <StyledHeading4>
             <C.Education3
-              placeholder={' 2015 – 2019 '}
-              type={'text'}
+              placeholder=' 2015 – 2019 '
+              type='text'
             />
           </StyledHeading4>
 
@@ -94,15 +94,15 @@ const ProfileDetailView = () => (
           <C.Publication>
             <C.PubStyledIcon name={AppIcon.PdfIcon} />
             <C.PubInput
-              placeholder={'Shakespeare and Elizabethan Poetry: A Study of His Earlier Work in Relation to the Poetry of the Time'}
-              // type={'text'}
+              placeholder='Shakespeare and Elizabethan Poetry: A Study of His Earlier Work in Relation to the Poetry of the Time'
+              //type='text'
             />
           </C.Publication>
           <C.Publication>
             <C.PubStyledIcon name={AppIcon.PdfIcon} />
             <C.PubInput
               placeholder={'Practice in a second language: Perspectives from applied linguistics and cognitive psychology'}
-              // type={'text'}
+              //type='text'
             />
           </C.Publication>
         </C.ContentContainer>
@@ -123,8 +123,8 @@ const ProfileDetailView = () => (
             <C.ContriElement>
               <C.ContriStyledIcon name={AppIcon.LibraryBooksIcon} />
               <C.ContriInput
-                placeholder={' 5'}
-                type={'number'}
+                placeholder=' 5'
+                type='number'
               />
               Articles
             </C.ContriElement>
@@ -132,24 +132,24 @@ const ProfileDetailView = () => (
             <C.ContriElement>
               <C.ContriStyledIcon name={AppIcon.PollIcon} />
               <C.ContriInput
-                placeholder={' 5'}
-                type={'number'}
+                placeholder=' 5'
+                type='number'
               />
               Polls
             </C.ContriElement>
             <C.ContriElement>
               <C.ContriStyledIcon name={AppIcon.PdfIcon} />
               <C.ContriInput
-                placeholder={' 5'}
-                type={'number'}
+                placeholder=' 5'
+                type='number'
               />
               Publications
             </C.ContriElement>
             <C.ContriElement>
               <C.ContriStyledIcon name={AppIcon.VideoLibIcon} />
               <C.ContriInput
-                placeholder={' 5'}
-                type={'number'}
+                placeholder=' 5'
+                type='number'
               />
               Videos
             </C.ContriElement>
