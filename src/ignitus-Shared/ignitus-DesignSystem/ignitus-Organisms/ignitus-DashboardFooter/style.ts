@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
 import {flexibleColDiv, flexibleRowDiv} from '../../shared';
-import {PrimaryFamily, XS} from '../../ignitus-Atoms/fonts';
+import {PrimaryFamily, SM} from '../../ignitus-Atoms/fonts';
 
 export const Footer = styled.footer`
   background-color: ${C.White};
@@ -18,7 +18,7 @@ export const FooterSections = styled(flexibleRowDiv)``;
 
 export const FooterRow = styled.ul`
   color: ${C.GreySecondaryText};
-  font-size: ${XS};
+  font-size: ${SM};
   font-family: ${PrimaryFamily};
   padding: 0.4rem;
   display: flex;
@@ -45,7 +45,7 @@ export const FooterRow = styled.ul`
 export const Copyright = styled.p`
   color: ${C.IgnitusBlue};
   font-family: ${PrimaryFamily};
-  font-size: ${XS};
+  font-size: ${SM};
   text-align: center;
   margin-top: 15px;
   margin-bottom: 0;

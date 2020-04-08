@@ -28,7 +28,7 @@ export const Overlay = styled.div`
 `;
 
 export const TopSection = styled(flexibleColDiv)`
-  padding: 2rem;
+  padding: 1.5rem;
 `;
 
 export const BottomSection = styled(flexibleColDiv)`

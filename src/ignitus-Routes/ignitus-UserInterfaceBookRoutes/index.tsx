@@ -91,7 +91,7 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         />
 
         <Route
-          path="/interface/defaultCheckbox"
+          path="/interface/checkboxes"
           component={interfaceCheckBox}
         />
 
