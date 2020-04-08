@@ -29,6 +29,8 @@ import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ign
 import Loadable from 'react-loadable';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
+import profileDetailView from '../../ignitus-Profile/ignitus-StudentProfile/Components/profileDetailView';
+import PrivateRoute from '../ignitus-PrivateRoutes';
 
 // RouteBased CodeSplitting.
 
@@ -97,7 +99,9 @@ export const PublicRoutes: React.FunctionComponent = () => {
         <Route path="/flow/interestFlow" component={InterestFlow} />
         <Route path="/flow/welcomeFlow" component={WelcomeFlow} />
 
+        <Route path="/profile" component={profileDetailView} />
         <Route path="/" component={Notfound} />
+
       </Switch>
       <Footer.components.Footer />
     </React.Fragment>

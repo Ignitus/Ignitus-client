@@ -11,8 +11,10 @@ import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons
 import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
 import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
 import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon/mentorsIcon';
-import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown/keyBoardArrowDown';
-import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
+import KeyBoardArrowDown
+  from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown/keyBoardArrowDown';
+import KeyBoardArrowRight
+  from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
 import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
 import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon/createIcon';
 import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/clearIcon';
@@ -31,11 +33,13 @@ import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
-import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/searchIcon';
 import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
 import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
+import ContributionIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
+import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
 
 type Props = {
   name: AppIcon;
@@ -150,6 +154,12 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.CameraIcon:
       return <CameraIcon {...rest}/>
+
+    case AppIcon.ContributionIcon:
+      return <ContributionIcon {...rest} />
+
+    case AppIcon.StarCircleIcon:
+      return < StarCircleIcon {...rest} />
   }
 };
 
