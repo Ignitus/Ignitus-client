@@ -19,5 +19,5 @@ jobs:
           npm install
           CI=false npm run build
           mv ./build/index.html ./build/200.html
-      - run: npm install randomstring
+      - run: npm install randomstring surge
       - run: node ./scripts/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
