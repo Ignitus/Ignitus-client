@@ -5,7 +5,7 @@ import {
   Heading3,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceInput = () => (
+const interfaceInput: React.FC = () => (
   <InputContainer>
     <Heading3>Input Fields</Heading3>
     <hr />

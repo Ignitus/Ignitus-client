@@ -11,8 +11,8 @@ export const GreyShades: string[] = [
   C.GreyBackground,
   C.GreySecondaryText,
   C.GreyLight,
-  C.Grey1,
-  C.Grey2,
+  C.GreyOne,
+  C.GreyTwo,
 ];
 export const BasicColors: string[] = [
   C.Black,
