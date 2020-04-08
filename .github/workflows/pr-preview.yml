@@ -1,0 +1,23 @@
+name: Generate Preview
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  deploy_preview:
+    name: Deploy Preview of PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - run: npm install yaml @actions/github
+      - run: node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}"
+      - run: |
+          git fetch origin +refs/pull/${{ github.event.issue.number }}/merge
+          git checkout FETCH_HEAD
+          npm install
+          CI=false npm run build
+          mv ./build/index.html ./build/200.html
+      - run: npm install randomstring
+      - run: node ./scripts/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
