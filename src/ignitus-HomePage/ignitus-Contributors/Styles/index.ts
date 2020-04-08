@@ -1,17 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import HeartIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {BottomRow as Row} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const Icon = styled.span`
-  i { color: ${C.Red};}
+  i {
+    color: ${C.Red};
+  }
 `;
 
-export const BottomRow = styled(T.BottomRow)`
-  justify-content: unset;
-`;
+export const BottomRow = styled(Row)``;
 
 export const Card = styled.div`
   flex: 0 0 100%;
@@ -42,9 +42,8 @@ export const Card = styled.div`
 
 export const CardPicture = styled.img`
   max-width: 100%;
-  height: 75%;
+  height: 3.6rem;
   object-fit: contain;
-  padding: 0.3em;
 `;
 
 export const Heart = styled(HeartIcon)`

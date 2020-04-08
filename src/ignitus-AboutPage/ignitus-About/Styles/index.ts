@@ -1,7 +1,12 @@
 import styled from '@emotion/styled';
 import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import { Heading3 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {
+  Heading3,
+  Paragraph as P,
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { White } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { flexibleColDiv } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};
@@ -52,12 +57,12 @@ export const Img = styled.img`
   padding: 3rem;
 `;
 
-export const ContentContainer = styled.section`
+export const ContentContainer = styled(flexibleColDiv)`
   flex: 1;
-  border-radius: 16px;
-  margin-top: 30px;
-  background-color: #fff;
-  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background-color: ${White};
+  padding: 0 1.5rem;
 `;
 
 export const Title = styled(Heading3)`
@@ -65,3 +70,7 @@ export const Title = styled(Heading3)`
 `;
 
 export const ParagraphContainer = styled.div``;
+
+export const Paragraph = styled(P)`
+  margin-bottom: 0.7rem;
+`;

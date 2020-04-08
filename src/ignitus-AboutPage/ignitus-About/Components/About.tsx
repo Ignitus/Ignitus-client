@@ -18,7 +18,7 @@ const About: React.FunctionComponent = () => (
             <S.Title> About Us</S.Title>
             <S.ParagraphContainer>
               {t.IgnitusIntro.map((x: any) => (
-                <Paragraph key={x.title}>{x.title}</Paragraph>
+                <S.Paragraph key={x.title}>{x.title}</S.Paragraph>
               ))}
             </S.ParagraphContainer>
           </S.ContentContainer>

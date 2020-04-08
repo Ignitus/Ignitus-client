@@ -41,7 +41,7 @@ export const BottomSection = styled.section`
     max-width: 540px;
   }
   ${minimumWidthQuery[1]} {
-    max-width: 720px;
+    max-width: 760px;
   }
   ${minimumWidthQuery[2]} {
     max-width: 960px;
@@ -52,10 +52,23 @@ export const BottomSection = styled.section`
 `;
 
 export const BottomRow = styled.div`
-  margin: 16px 90px;
+  margin: 1rem 6rem;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+
+  ${minimumWidthQuery[0]} {
+    margin: 1rem 2rem;
+  }
+  ${minimumWidthQuery[1]} {
+    margin: 1rem 2rem;
+  }
+  ${minimumWidthQuery[2]} {
+    margin: 1rem 6rem;
+  }
+  ${minimumWidthQuery[3]} {
+    margin: 1rem 6rem;
+  }
 `;
 
 // We plan to use Container as parent element of in lot of components.

@@ -4,8 +4,8 @@ import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandling
 import { Data } from '../constants';
 import { PureContributors } from '../../ignitus-Contributors/Components/Contributors';
 
-const Partner: React.FunctionComponent = () => (
-  <PureContributors data={Data} type="Partners" paragraph="by following Organizations..." />
+const SupportedBy: React.FunctionComponent = () => (
+  <PureContributors data={Data} type="Supported By" paragraph="by following Organizations..." />
 );
 
-export default withErrorBoundary(Partner);
+export default withErrorBoundary(SupportedBy);
