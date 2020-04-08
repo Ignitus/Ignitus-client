@@ -144,7 +144,7 @@ export const DropDownBtnContainer = styled.div`
 
 export const DropDownBtn = styled.div`
   font-weight: bold;
-  color: ${C.Grey1};
+  color: ${C.GreyOne};
   cursor: pointer;
   display: inline-block;
   padding-bottom: 10px;

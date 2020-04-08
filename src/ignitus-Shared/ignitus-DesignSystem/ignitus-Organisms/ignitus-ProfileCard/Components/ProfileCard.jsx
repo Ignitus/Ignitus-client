@@ -4,7 +4,7 @@ import React from 'react';
 import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { Grey1 } from '../../../ignitus-Atoms/colors';
+import { GreyOne } from '../../../ignitus-Atoms/colors';
 
 const ProfileCard = () => (
   <S.ProfileDiv>
@@ -15,7 +15,7 @@ const ProfileCard = () => (
           icon={AppIcon.BookmarkIcon}
           iconSize="2.5"
           direction="reverse"
-          contentColor={Grey1}
+          contentColor={GreyOne}
         />
       </S.ProfileTrack>
       <S.ContentDiv>
