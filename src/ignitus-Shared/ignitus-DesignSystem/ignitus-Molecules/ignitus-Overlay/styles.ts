@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
 import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
 import {
   MD,
   XS,
@@ -24,7 +23,7 @@ export const Overlay = styled.div`
   border-radius: 1rem;
   display: inline-flex;
   flex-direction: column;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 `;
 
 export const TopSection = styled(flexibleColDiv)`
@@ -41,8 +40,4 @@ export const Paragraph = styled(P)<props>`
   font-weight: ${props => (props.secondary ? Normal : Medium)};
   font-size: ${props => (props.secondary ? XS : MD)};
   margin-top: ${props => (props.secondary ? '1.5rem' : '0')};
-`;
-
-export const Button = styled(B)`
-  border-radius: 2rem;
 `;

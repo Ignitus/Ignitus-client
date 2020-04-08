@@ -55,7 +55,7 @@ export const EyesContainer = styled.div`
     top: 30px;
     left: 25px;
     border-radius: 50%;
-    box-shadow: 125px 0 0 white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     animation: ${eye} 2.5s infinite;
   }
 `;

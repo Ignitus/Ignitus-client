@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import PlusIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
-import ChevronIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chevronIcon/chevronIcon';
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import KeyBoardArrowRight from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -62,7 +62,7 @@ export const Link = styled(T.Link)`
     img {
       border-radius: 50%;
       border: 4px solid #fff;
-      box-shadow: 0 0 20px #000066;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
       opacity: 1;
     }
   }
@@ -71,7 +71,7 @@ export const Link = styled(T.Link)`
 export const Avatar = styled(T.Avatar)`
   border-radius: 50%;
   border: 4px solid #000066;
-  box-shadow: 0 0 0 #000066;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   transition: border 0.5s, box-shadow 0.5s;
   opacity: 0.9;
 `;
@@ -93,7 +93,7 @@ export const Plus = styled(PlusIcon)`
   fill: ${C.IgnitusBlue};
 `;
 
-export const Chevron = styled(ChevronIcon)`
+export const Right = styled(KeyBoardArrowRight)`
   height: 1.5rem;
   fill: ${C.IgnitusBlue};
 `;

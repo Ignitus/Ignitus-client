@@ -2,6 +2,7 @@ import React from 'react';
 import {InputTypes} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
+import { Button } from '../../buttons';
 
 const DefaultMultiMediaInput = ({placeholder, name}: InputTypes) => (
   <React.Fragment>
@@ -27,10 +28,10 @@ const DefaultMultiMediaInput = ({placeholder, name}: InputTypes) => (
             <I.Icon name={AppIcon.CameraIcon} />
           </I.IconContainer>
         </I.IconsContainer>
-        <I.Button category="primary" size="medium">
+        <Button category="primary" size="medium">
           {' '}
           Post
-        </I.Button>
+        </Button>
       </I.BottomContainer>
     </I.InputContainer>
   </React.Fragment>

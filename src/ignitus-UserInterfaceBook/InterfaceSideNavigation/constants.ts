@@ -101,10 +101,6 @@ export const edges: Edges[] = [
         route: '/interface/progressBars',
       },
       {
-        title: 'Input with Buttons',
-        route: '/interface/inputButtons',
-      },
-      {
         title: 'Banners',
         route: '/interface/banner',
       },
@@ -201,10 +197,6 @@ export const edges: Edges[] = [
       {
         title: 'Under Construction',
         route: '/interface/underConstruction',
-      },
-      {
-        title: 'Opportunities Saved',
-        route: '/interface/opportunitiesSaved',
       },
     ],
   },

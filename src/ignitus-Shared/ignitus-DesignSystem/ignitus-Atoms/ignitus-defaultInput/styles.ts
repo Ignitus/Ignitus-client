@@ -3,20 +3,26 @@ import * as C from '../colors';
 import * as F from '../fonts';
 
 export const Input = styled.input`
-  height: 70px;
-  width: 300px;
-  background-color: ${C.GreyLight};
-  padding-left: 30px;
-  color: ${C.GreySecondaryText};
-  font-weight: ${F.SemiBold};
-  font-size: ${F.XL};
-  border: none;
-  border-radius: 17px;
+  width: 16rem;
+  background: ${C.GreyLight};
+  padding: 0.7rem;
+  color: ${C.GreyText};
+  font-weight: ${F.Normal};
+  font-size: ${F.SM};
+  border: 1px solid ${C.GreyLight};
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
 
   ::placeholder {
-    color: ${C.GreySecondaryText};
-    font-weight: ${F.SemiBold};
-    font-size: ${F.XL};
-    opacity: 0.5;
+    color: ${C.GreyOne};
+    font-weight: ${F.Normal};
+    font-size: ${F.SM};
+  }
+  &:hover {
+    border: 1px solid ${C.IgnitusBlue};
   }
 `;

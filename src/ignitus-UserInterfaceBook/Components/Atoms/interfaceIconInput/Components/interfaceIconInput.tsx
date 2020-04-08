@@ -14,7 +14,7 @@ const interfaceIconInput = () => (
   <InputContainer>
     <Heading3>Input with Icon </Heading3>
     <hr />
-    <Heading4> Direct link</Heading4>
+    <Heading4> Icon position row</Heading4>
     <DefaultIconInput
       name={AppIcon.CopyIcon}
       type="string"
@@ -25,7 +25,7 @@ const interfaceIconInput = () => (
     />
     <br />
     <br />
-    <Heading4>Publication Details</Heading4>
+    <Heading4>Icon position row-reverse</Heading4>
     <DefaultIconInput
       name={AppIcon.PdfIcon}
       type="string"

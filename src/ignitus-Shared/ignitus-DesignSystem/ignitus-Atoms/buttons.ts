@@ -18,11 +18,11 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const ParentButton = styled.button`
-  border-radius: 5px;
+  border-radius: 0.4rem;
   border: none;
   cursor: pointer;
   outline: none;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   line-height: 1rem;
   margin: 0.5rem;

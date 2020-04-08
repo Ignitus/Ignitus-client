@@ -43,7 +43,7 @@ export const TeamContainer = styled(T.Container)`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+  padding: 0 1rem;
 `;
 
 export const TeamItemImg = styled.img`
@@ -56,13 +56,14 @@ export const TeamCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 1rem;
   text-align: center;
   padding: 1em;
   margin: 0.5em 0.5em;
   min-height: 3em;
   min-width: 3em;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: ${C.White};
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   height: 100%;
 `;
 

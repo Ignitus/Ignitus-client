@@ -15,8 +15,8 @@ export const AboutSection = styled.section`
 
 export const AboutContainer = styled.div`
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 
@@ -54,8 +54,8 @@ export const Img = styled.img`
 
 export const ContentContainer = styled.section`
   flex: 1;
-  border-radius: 16px;
-  margin-top: 30px;
+  border-radius: 1rem;
+  margin-top: 1.6rem;
   background-color: #fff;
   padding: 1.5rem;
 `;

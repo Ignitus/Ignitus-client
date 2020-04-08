@@ -10,7 +10,7 @@ const interfaceMultiMediaInput = () => (
 
     <DefaultMultiMediaInput
       placeholder={
-        'Share an article, poll, document, video, photo or an idea.\nUse @ to mention someone \n\n'
+        'Share an article, poll, document, video, photo or an idea. Use @ to mention someone. \n\n'
       }
       name={'name'}
     />

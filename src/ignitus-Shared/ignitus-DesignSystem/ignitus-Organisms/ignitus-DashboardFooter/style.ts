@@ -5,8 +5,8 @@ import {PrimaryFamily, XS} from '../../ignitus-Atoms/fonts';
 
 export const Footer = styled.footer`
   background-color: ${C.White};
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
   padding: 1rem;
   display: inline-flex;
   flex-direction: column;

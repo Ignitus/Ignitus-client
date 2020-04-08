@@ -2,6 +2,7 @@ import React from 'react';
 import * as O from '../styles';
 import {Heading1} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {OverlayProps} from '../types';
+import { Button } from '../../../ignitus-Atoms/buttons';
 
 const Overlay = ({
   title,
@@ -16,10 +17,10 @@ const Overlay = ({
       <O.Paragraph secondary>{secondaryText}</O.Paragraph>
     </O.TopSection>
     <O.BottomSection>
-      <O.Button category="primary" size="medium">
+      <Button category="primary" size="medium">
         {' '}
         {buttonText}
-      </O.Button>
+      </Button>
     </O.BottomSection>
   </O.Overlay>
 );

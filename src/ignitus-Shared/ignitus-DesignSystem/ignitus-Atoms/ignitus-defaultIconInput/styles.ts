@@ -10,11 +10,9 @@ export const InputContainer = styled.div<InputContainerProps>`
   justify-content: center;
   flex-direction: ${props => props.position};
   border-radius: 0.5rem;
-  border: 1px solid
-    ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground)};
+  border: 1px solid ${GreyLight};
   padding: 0.7rem;
-  background: ${props =>
-    props.position === 'row-reverse' ? GreyLight : GreyBackground};
+  background: ${GreyLight};
 
   &:hover {
     border: 1px solid ${IgnitusBlue};

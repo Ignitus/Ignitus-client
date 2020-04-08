@@ -20,7 +20,7 @@ const PureTeam = ({contributors}: any) => (
       <S.GithubContributors>
         <S.Contributors>{contributors}</S.Contributors>
         <S.GithubContributorsLink href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
-          View All <S.Chevron />
+          View All <S.Right />
         </S.GithubContributorsLink>
       </S.GithubContributors>
     </S.GithubContributorsContainer>

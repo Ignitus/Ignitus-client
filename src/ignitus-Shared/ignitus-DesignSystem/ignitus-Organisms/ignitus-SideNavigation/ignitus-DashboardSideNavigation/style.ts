@@ -12,8 +12,8 @@ type Props = {
 
 export const SettingsContainer = styled(flexibleColDiv)`
   background: ${White};
-  border-radius: 16px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   width: 12rem;
   height: 24rem;
 `;

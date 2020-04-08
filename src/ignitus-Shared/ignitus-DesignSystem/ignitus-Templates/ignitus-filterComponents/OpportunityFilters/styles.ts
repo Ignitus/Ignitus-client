@@ -9,8 +9,8 @@ import Icon from '../../../../ignitus-Utilities/Components/icon';
 import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
 
 export const Container = styled(Card)`
-  border-radius: 16px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   padding: 1rem;
 `;
 
@@ -61,7 +61,7 @@ export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
 export const OptionSelector = styled.div`
   display: none;
   background-color: ${White};
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 `;
 
 export const Option = styled.div`
