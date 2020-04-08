@@ -30,7 +30,7 @@ import Loadable from 'react-loadable';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import profileDetailView from '../../ignitus-Profile/ignitus-StudentProfile/Components/profileDetailView';
-import PrivateRoute from '../ignitus-PrivateRoutes';
+
 
 // RouteBased CodeSplitting.
 
