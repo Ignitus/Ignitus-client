@@ -4,7 +4,7 @@ const YAML = require('yaml');
 
 const [,, user, command] = process.argv;
 
-const autoAssign = fs.readFileSync('../.github/auto_assign.yml');
+const autoAssign = fs.readFileSync('./.github/auto_assign.yml');
 const authorizedUsers = YAML.parse(autoAssign).reviewers;
 
 if (user && command) {
