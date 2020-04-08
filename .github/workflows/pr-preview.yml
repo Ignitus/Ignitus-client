@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy_preview:
-    if: node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}"
     name: Deploy Preview of PR
     runs-on: ubuntu-latest
     steps:
