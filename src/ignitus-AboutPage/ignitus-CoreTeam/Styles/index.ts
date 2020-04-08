@@ -63,7 +63,7 @@ export const TeamCard = styled.div`
   min-height: 3em;
   min-width: 3em;
   background: ${C.White};
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${C.boxShadow};
   height: 100%;
 `;
 

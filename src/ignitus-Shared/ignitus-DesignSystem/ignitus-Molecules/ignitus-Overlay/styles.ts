@@ -12,6 +12,7 @@ import {
   GreySecondaryText,
   White,
   GreyOne,
+  boxShadow
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { props } from './types';
 
@@ -23,7 +24,7 @@ export const Overlay = styled.div`
   border-radius: 1rem;
   display: inline-flex;
   flex-direction: column;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${boxShadow};
 `;
 
 export const TopSection = styled(flexibleColDiv)`

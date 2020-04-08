@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import {flexibleRowDiv, flexibleColDiv} from '../../../shared';
 import {Card} from '../../../ignitus-Atoms/atoms';
-import {White, IgnitusBlue, GreyOne, GreyTwo} from '../../../ignitus-Atoms/colors';
+import {White, IgnitusBlue, GreyOne, GreyTwo, boxShadow} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 
 import Icon from '../../../../ignitus-Utilities/Components/icon';
@@ -10,7 +10,7 @@ import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonW
 
 export const Container = styled(Card)`
   border-radius: 1rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${boxShadow};
   padding: 1rem;
 `;
 
@@ -61,7 +61,7 @@ export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
 export const OptionSelector = styled.div`
   display: none;
   background-color: ${White};
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${boxShadow};
 `;
 
 export const Option = styled.div`

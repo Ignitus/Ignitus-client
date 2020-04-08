@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {White, GreyLight, IgnitusBlue} from '../../../ignitus-Atoms/colors';
+import {White, GreyLight, IgnitusBlue, boxShadow} from '../../../ignitus-Atoms/colors';
 import {flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 
@@ -12,7 +12,7 @@ type Props = {
 export const SettingsContainer = styled(flexibleColDiv)`
   background: ${White};
   border-radius: 1rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${boxShadow};
   width: 12rem;
   height: 22rem;
 `;

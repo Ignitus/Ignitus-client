@@ -62,7 +62,7 @@ export const Link = styled(T.Link)`
     img {
       border-radius: 50%;
       border: 4px solid #fff;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px 0 ${C.boxShadow};
       opacity: 1;
     }
   }
@@ -71,7 +71,7 @@ export const Link = styled(T.Link)`
 export const Avatar = styled(T.Avatar)`
   border-radius: 50%;
   border: 4px solid #000066;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${C.boxShadow};
   transition: border 0.5s, box-shadow 0.5s;
   opacity: 0.9;
 `;
