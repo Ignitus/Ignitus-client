@@ -31,7 +31,6 @@ import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import profileDetailView from '../../ignitus-Profile/ignitus-StudentProfile/Components/profileDetailView';
 
-
 // RouteBased CodeSplitting.
 
 const Loading: React.FunctionComponent = () => (

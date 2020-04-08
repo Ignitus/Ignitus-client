@@ -14,15 +14,13 @@ export const Container1 = styled(Container)`
   height: auto;
   background: ${C.White};
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 2rem;
   padding-left: 5rem;
   padding-right: 0;
   padding-bottom: 5rem;
 `;
 
 export const Container2 = styled.div`
-  margin-right: -0.3rem;
-  margin-top: -0.3rem;
   float: right;
 `;
 
@@ -41,7 +39,6 @@ export const ElementContainer = styled(Container)`
 `;
 
 export const HeadingContainer = styled(flexibleRowDiv)`
-  // padding-top: 3rem;
 `;
 
 export const NameContainer = styled.div`
@@ -93,11 +90,11 @@ export const Education3 = styled.input`
     width: 15rem;
 `;
 
-export const Publication = styled(flexibleRowDiv)`
+export const Publications = styled(flexibleRowDiv)`
   align-items: flex-start;
 `;
 
-export const PubInput = styled.textarea`
+export const PublicationsInput = styled.textarea`
   font-size: ${F.XS};
   outline:none;
   border:none;
@@ -106,7 +103,7 @@ export const PubInput = styled.textarea`
   overflow:hidden;
 `;
 
-export const PubStyledIcon = styled(Icon)`
+export const PublicationsStyledIcon = styled(Icon)`
   height: 1.3rem;
   width: 1.3rem;
   fill: ${C.IgnitusBlue};
@@ -114,44 +111,44 @@ export const PubStyledIcon = styled(Icon)`
   flex: 1;
 `;
 
-export const ContriContent = styled.div`
+export const ContributionsContent = styled.div`
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 `;
 
-export const ContriElement = styled(flexibleRowDiv)`
+export const ContributionsElement = styled(flexibleRowDiv)`
   flex:1;
 `;
 
-export const ContriStyledIcon = styled(Icon)`
+export const ContributionsStyledIcon = styled(Icon)`
   height: 1.3rem;
   width: 1.3rem;
   fill: ${C.IgnitusBlue};
   transition: 0.3s;
 `;
 
-export const ContriInput = styled.input`
+export const ContributionsInput = styled.input`
   outline: none;
   border:none;
   width:2rem;
 `;
 
-export const RecommendContent1 = styled(flexibleRowDiv)`
+export const RecommendationsContent1 = styled(flexibleRowDiv)`
   flex-wrap:wrap;
   align-items: flex-start;
 `;
 
-export const RecommendAvatar = styled(Avatar)`
+export const RecommendationsAvatar = styled(Avatar)`
   border-radius: 50%;
   border:none;
   margin:2rem;
 `;
-export const RecommendContent2 = styled(flexibleColDiv)`
+export const RecommendationsContent2 = styled(flexibleColDiv)`
   flex:1;
 `;
-export const RecommendInput1 = styled.input`
+export const RecommendationsInput1 = styled.input`
   outline: none;
   border:none;
   color: ${C.IgnitusBlue};
@@ -166,7 +163,7 @@ export const RecommendInput1 = styled.input`
   }
   flex:1;
 `;
-export const RecommendInput2 = styled.input`
+export const RecommendationsInput2 = styled.input`
   outline: none;
   border:none;
   color: ${C.IgnitusBlue};
@@ -181,7 +178,7 @@ export const RecommendInput2 = styled.input`
   }
   flex:1;
 `;
-export const RecommendInput3 = styled.input`
+export const RecommendationsInput3 = styled.input`
   outline: none;
   border:none;
   color: ${C.GreyOne};
@@ -197,7 +194,7 @@ export const RecommendInput3 = styled.input`
   flex:2;
 `;
 
-export const RecommendPara = styled.textarea`
+export const RecommendationsPara = styled.textarea`
   width: 100%;
   overflow:hidden;
   border: none;

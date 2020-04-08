@@ -19,6 +19,8 @@ export const DashboardRoutes = () => (
         )}
       />
       <PrivateRoute path="/dashboard" Component={Dashboard.components.Dashboard} />
+
+
     </Switch>
   </React.Fragment>
 );
