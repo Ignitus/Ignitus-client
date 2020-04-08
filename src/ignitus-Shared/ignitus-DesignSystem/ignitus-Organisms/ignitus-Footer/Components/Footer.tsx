@@ -6,8 +6,9 @@ import {HashLink} from 'react-router-hash-link';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { logo } from '../constants';
 import * as S from '../styles';
+import { Props } from '../types';
 
-const PureFooter = ({
+const PureFooter: React.FunctionComponent<Props> = ({
   hideUnhide,
   featuresToggle,
   communityToggle,

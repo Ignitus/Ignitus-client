@@ -43,6 +43,14 @@ export const edges: Edges[] = [
             title: 'TextArea',
             route: '/interface/textArea',
           },
+          {
+            title: 'Icon Input',
+            route: '/interface/defaultIconInput',
+          },
+          {
+            title: 'Multi Media',
+            route: '/interface/defaultMultiMediaInput',
+          },
         ],
       },
       {

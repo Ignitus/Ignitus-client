@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Paragraph,
@@ -15,7 +15,7 @@ import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandl
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-const InterestFlow = () => (
+const InterestFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressTwo.png" alt="progress-bar" />

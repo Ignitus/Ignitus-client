@@ -2,6 +2,8 @@ export enum AppIcon {
   ApplyIcon = 'ApplyIcon',
   AngelListIcon = 'AngelListIcon',
   Chevron = 'Chevron',
+  CopyIcon = 'CopyIcon',
+  CameraIcon = 'CameraIcon',
   LinkedInIcon = 'LinkedInIcon',
   PlusIcon = 'PlusIcon',
   HeartIcon = 'HeartIcon',
@@ -26,6 +28,7 @@ export enum AppIcon {
   GooglePlusIcon = 'GooglePlusIcon',
   InfoIcon = 'InfoIcon',
   PdfIcon = 'PdfIcon',
+  PollIcon = 'PollIcon',
   LibraryBooksIcon = 'LibraryBooksIcon',
   LocalLibraryIcon = 'LocalLibraryIcon',
   GraduationCapIcon = 'GraduationCapIcon',
@@ -34,5 +37,6 @@ export enum AppIcon {
 	FileIcon = 'FileIcon',
 	BookmarkIcon = 'BookmarkIcon',
 	MapMarkerIcon = 'MapMarkerIcon',
-	ChatMessageIcon = 'ChatMessageIcon'
+	ChatMessageIcon = 'ChatMessageIcon',
+  VideoLibIcon = 'VideoLibrary'
 }

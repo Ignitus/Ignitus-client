@@ -10,7 +10,7 @@ export const Separator = styled.hr`
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  color: ${C.Grey1};
+  color: ${C.GreyOne};
 `;
 
 export const Card = styled.div`

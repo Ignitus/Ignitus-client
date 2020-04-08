@@ -33,7 +33,7 @@ import ProfileCard from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organ
 
 // RouteBased CodeSplitting.
 
-const Loading = () => (
+const Loading: React.FunctionComponent = () => (
   <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
     <div className="loader">
       <img src={loader} alt="Loading..." />
@@ -47,7 +47,7 @@ const AboutUs = Loadable({
   loading: Loading,
 });
 
-export const PublicRoutes = () => {
+export const PublicRoutes: React.FunctionComponent = () => {
   return (
     <React.Fragment>
       <Navigation.components.Navigation />

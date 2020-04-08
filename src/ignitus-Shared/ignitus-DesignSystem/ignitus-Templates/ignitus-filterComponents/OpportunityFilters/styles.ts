@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import {flexibleRowDiv, flexibleColDiv} from '../../../shared';
 import {Card} from '../../../ignitus-Atoms/atoms';
-import {White, IgnitusBlue, Grey1, Grey2} from '../../../ignitus-Atoms/colors';
+import {White, IgnitusBlue, GreyOne, GreyTwo} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 
 import Icon from '../../../../ignitus-Utilities/Components/icon';
@@ -49,7 +49,7 @@ export const CrossIcon = styled(Icon)`
 `;
 
 export const SearchIcon = styled(Icon)`
-  fill: ${Grey1};
+  fill: ${GreyOne};
   height: 1.5rem;
   width: 1.5rem;
 `;
@@ -95,5 +95,5 @@ export const BottomContainer = styled(flexibleRowDiv)`
 `;
 
 export const DashedLineContainer = styled.hr`
-  border-top: 2px dashed ${Grey2};
+  border-top: 2px dashed ${GreyTwo};
 `;

@@ -2,11 +2,11 @@
 
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import '../Styles/style.scss';
 
-const JobConfirmation = () => (
+const JobConfirmation: FunctionComponent = () => (
   <div className="outer-container">
     <div className="outer-div-1">
       <div className="inner-div">

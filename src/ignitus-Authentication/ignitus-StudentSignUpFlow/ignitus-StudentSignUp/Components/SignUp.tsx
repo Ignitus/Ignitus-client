@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, FunctionComponent} from 'react';
 import {
   isEmpty,
   isEqual,
@@ -8,8 +8,9 @@ import {
   SharedAuthentication,
   SignupStatePayload,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
+import {Props} from '../types';
 
-const Signup = ({signUpRequest, studentSignUpData}) => {
+const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) => {
   const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
 
@@ -39,6 +40,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
       ) {
         setState({
           ...state,
+          emptyMessage: false,
           invalidEmail: true,
         });
         return;
@@ -48,6 +50,7 @@ const Signup = ({signUpRequest, studentSignUpData}) => {
     if (!isEqual(password, confirmPassword)) {
       setState({
         ...state,
+        invalidEmail: false,
         emptyMessage: false,
         equalmessage: true,
       });
