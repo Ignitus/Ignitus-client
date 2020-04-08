@@ -26,7 +26,7 @@ export const ProfileDiv = styled(flexibleColDiv)`
 
 export const ProfileContainer = styled(flexibleRowDiv)`
   border-radius: 10px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
   margin: 0.5rem;
@@ -159,7 +159,7 @@ export const DropDownBtn = styled.div`
 `;
 
 export const DropDownMenu = styled.ul`
-  z-index: 50;
+  z-index: 3;
   position: absolute;
   top: 30px;
   left: 0;
