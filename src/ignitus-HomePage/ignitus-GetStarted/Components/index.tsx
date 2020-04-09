@@ -14,7 +14,7 @@ export const GetStarted: React.FunctionComponent = withErrorBoundary(() => (
       </Paragraph>
     </TopSection>
     <BottomSection>
-      <Button size="large" category="orange">
+      <Button size="large" category="secondary">
         <Link to="/Signup">Sign-Up</Link>
       </Button>
     </BottomSection>

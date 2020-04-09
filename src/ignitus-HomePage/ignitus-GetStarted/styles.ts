@@ -26,8 +26,8 @@ export const Paragraph = styled(P)`
 `;
 
 export const TopSection = styled.div`
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 `;
 export const BottomSection = styled.div`
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;

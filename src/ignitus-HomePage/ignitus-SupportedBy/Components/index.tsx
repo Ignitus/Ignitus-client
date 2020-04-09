@@ -33,8 +33,7 @@ const PureContributors = ({ data, type, paragraph }: Props) => (
   </section>
 );
 
-const SupportedBy: React.FunctionComponent = () => (
+export const SupportedBy: React.FunctionComponent = withErrorBoundary(() => (
   <PureContributors data={Data} type="Supported By" paragraph="by following Organizations, Programs & Companies." />
-);
+));
 
-export default withErrorBoundary(SupportedBy);
