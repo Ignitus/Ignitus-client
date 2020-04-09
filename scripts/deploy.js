@@ -19,6 +19,6 @@ childProcess.exec(`./node_modules/.bin/surge ./build ${domain} --token ${SURGE_T
       process.exit(1);
     });
   } else {
-    botComment(GITHUB_TOKEN, issuNumber, `Yey @${USER}\n\n Liver Preview is ready: ${domain}\n😎`);
+    botComment(GITHUB_TOKEN, issuNumber, `Yey @${USER}\n\n Live Preview is ready: ${domain}\n 🚀`);
   }
 });
