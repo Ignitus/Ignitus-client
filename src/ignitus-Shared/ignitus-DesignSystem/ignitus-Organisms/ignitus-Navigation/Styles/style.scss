@@ -22,15 +22,6 @@
   align-self: stretch;
 }
 
-.navlink{
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  &:hover {
-    color: #F9BF64;
-  }
-}
-
 #burger{
   width:1.5rem;
   height:1.5rem;
@@ -55,6 +46,11 @@
   background-color:#fff;
   .navlink{
     color:#000e8c;
+    font-weight: 700;
+    font-size: 14px;
+    &:hover {
+      color: #F9BF64;
+    }
   }
 }
 
@@ -63,7 +59,7 @@
 }
 
 .line.mobile:last-child{
-  transform: rotateZ(-43deg) translateY(-0.3rem) 
+  transform: rotateZ(-43deg) translateY(-0.3rem)
 }
 
 .line.mobile:nth-child(2){
@@ -84,7 +80,7 @@
 
   .navlinks.mobile{
     display:none;
-  } 
+  }
 
   .navlinks{
     flex-direction: column;
@@ -108,4 +104,3 @@
   }
 
 }
- 

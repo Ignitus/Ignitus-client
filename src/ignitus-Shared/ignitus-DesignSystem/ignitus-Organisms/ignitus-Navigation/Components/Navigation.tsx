@@ -1,12 +1,10 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
-import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 import '../Styles/style.scss';
-import { PureNavigationProps, displayClassTypes } from '../types';
 
 const handleSmallerScreen = () => {
   const navlinks = document.querySelector('.navlinks');
@@ -17,10 +15,10 @@ const handleSmallerScreen = () => {
   navlinks?.classList.toggle('mobile');
 };
 
-const PureNavigation: React.FunctionComponent<PureNavigationProps> = ({ displayClass, dynamicLogo }) => (
-  <nav className={`navbar  ${displayClass}`}>
+const PureNavigation: React.FC = () => (
+  <nav className={`navbar  whitenav`}>
     <HashLink className="navbar-brand" to="/#">
-      <img src={dynamicLogo} width="40" height="40" alt="logo" />
+      <img src={logo} width="40" height="40" alt="logo" />
     </HashLink>
 
     <ul className="navlinks">
@@ -68,34 +66,4 @@ const PureNavigation: React.FunctionComponent<PureNavigationProps> = ({ displayC
   </nav>
 );
 
-
-const Navigation: React.FunctionComponent = () => {
-  const [navScrolled, setNavScrolled] = useState(false);
-  const [displayClass, setDisplayClass] = useState<displayClassTypes>('transparent');
-  const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
-
-  useEffect(() => {
-    const scrollFn = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY < 20) {
-        if (navScrolled === true) {
-          setNavScrolled(false);
-          setDisplayClass('transparent');
-          setDynamicLogo(blackLogo);
-        }
-      } else if (navScrolled === false) {
-        setNavScrolled(true);
-        setDisplayClass('whitenav');
-        setDynamicLogo(logo);
-      }
-    };
-    window.addEventListener('scroll', scrollFn, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', scrollFn);
-    };
-  }, [navScrolled]);
-
-  return <PureNavigation displayClass={displayClass} dynamicLogo={dynamicLogo} />;
-};
-
-export default React.memo(Navigation);
+export default PureNavigation;
