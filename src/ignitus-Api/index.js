@@ -48,7 +48,6 @@ async function getHeaders(name) {
 }
 
 export async function getContributorsData() {
-  return [];
   try {
     if (navigator.onLine) {
       const frontendConfig = await getHeaders('gh-frontend-contrib');

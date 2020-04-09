@@ -1,11 +1,11 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import HeartIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import {BottomRow as Row} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import { Paragraph as P } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { Medium } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
+import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { Paragraph as P } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Medium } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Icon = styled.span`
   i {
