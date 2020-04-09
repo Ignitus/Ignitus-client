@@ -3,7 +3,7 @@ import { InputTypes } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200 }: InputTypes) => {
+const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200, initialHeight }: InputTypes) => {
 
   let overflowVisible = false;
 
@@ -18,7 +18,7 @@ const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200 }: I
   };
 
   const setHeight = e => {
-    if (e.target.scrollHeight >= maxHeightOfInput) {
+    if (e.target.scrollHeight > maxHeightOfInput) {
       if (!overflowVisible) {
         setOverflowVisible(e);
         e.target.style.height = `${maxHeightOfInput}px`;
@@ -34,7 +34,7 @@ const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200 }: I
     <React.Fragment>
       <I.InputContainer>
         <I.TopContainer>
-          <I.Input placeholder={placeholder} name={name} onChange={setHeight} />
+          <I.Input placeholder={placeholder} name={name} onChange={setHeight} initialHeight={initialHeight} />
         </I.TopContainer>
         <I.BottomContainer>
           <I.IconsContainer>
