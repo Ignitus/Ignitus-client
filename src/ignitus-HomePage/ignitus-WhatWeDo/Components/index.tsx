@@ -5,7 +5,7 @@ import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandling
 import { data } from '../constants';
 import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const WhatWeDo: React.FunctionComponent = () => (
+export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
   <T.Wrapper id="what-we-do">
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
@@ -31,6 +31,4 @@ const WhatWeDo: React.FunctionComponent = () => (
       </T.BottomRow>
     </T.BottomSection>
   </T.Wrapper>
-);
-
-export default withErrorBoundary(WhatWeDo);
+));
