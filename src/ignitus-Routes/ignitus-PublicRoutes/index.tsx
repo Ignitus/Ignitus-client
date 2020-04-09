@@ -8,7 +8,6 @@ import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
 import Introduction from '../../ignitus-HomePage/ignitus-Introduction';
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
 import WhatWeDo from '../../ignitus-HomePage/ignitus-WhatWeDo';
-import Partner from '../../ignitus-HomePage/ignitus-Partners';
 
 // We will seperate these routes to seperate files in upcoming days.
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
@@ -24,6 +23,7 @@ import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFl
 import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
 import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
 import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import {SupportedBy} from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
@@ -58,7 +58,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
             <div className="content">
               <Introduction.components.Introduction />
               <WhatWeDo.components.WhatWeDo />
-              <Partner.components.SupportedBy />
+              <SupportedBy />
               <Testimonial.containers.TestimonialContainer />
               <GetStarted.components.GetStarted />
             </div>
