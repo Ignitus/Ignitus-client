@@ -9,6 +9,7 @@ import {
   IgnitusBlue,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
 export const Container = styled(flexibleColDiv)`
   background-color: ${IgnitusBlue};
@@ -22,6 +23,10 @@ export const Paragraph = styled(P)`
   color: ${White};
   text-align: center;
   max-width: 60rem;
+`;
+
+export const Button = styled(B)`
+  border-radius: 2rem;
 `;
 
 export const TopSection = styled.div`

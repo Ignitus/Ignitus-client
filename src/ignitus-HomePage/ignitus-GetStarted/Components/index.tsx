@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Container, Paragraph, TopSection, BottomSection} from '../styles';
-import {Button} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import {Container, Paragraph, TopSection, BottomSection, Button} from '../styles';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const GetStarted: React.FunctionComponent = withErrorBoundary(() => (
