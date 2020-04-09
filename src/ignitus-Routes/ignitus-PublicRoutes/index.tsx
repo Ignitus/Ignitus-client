@@ -44,7 +44,7 @@ const Loading: React.FunctionComponent = () => (
 
 const AboutUs = Loadable({
   loader: () =>
-    import('../../ignitus-AboutPage/ignitus-About/Components/About'),
+    import('../../ignitus-AboutPage/ignitus-About/Components'),
   loading: Loading,
 });
 

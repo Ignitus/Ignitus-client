@@ -1,8 +1,9 @@
 import React, {Fragment} from 'react';
-import Team from '../../ignitus-Team';
-import CoreTeam from '../../ignitus-CoreTeam';
 import { IgnitusIntroduction, AboutImage } from '../constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+
+import { CoreTeam } from '../../ignitus-CoreTeam/Components';
+import Team from '../../ignitus-Team';
 import * as S from '../styles';
 
 const About: React.FunctionComponent = () => (
@@ -23,7 +24,7 @@ const About: React.FunctionComponent = () => (
           </S.ContentContainer>
         </S.TopSection>
       </S.AboutContainer>
-      <CoreTeam.components.CoreTeam />
+      <CoreTeam />
       <Team.containers.TeamContainer />
     </S.AboutSection>
   </Fragment>

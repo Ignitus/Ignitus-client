@@ -1,10 +1,12 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import Icon from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import {Heading6} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+
+import { minimumWidthQuery } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { Heading6 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+
+import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as T from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 
 type LinkWrapperProps = {
   toggle: boolean;

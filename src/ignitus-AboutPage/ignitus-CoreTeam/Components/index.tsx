@@ -1,13 +1,15 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
-import {Data} from '../constants';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import * as S from '../Styles';
-import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {Team, TeamItemProps} from '../types';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
+
+import { Data } from '../constants';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { Team, TeamItemProps } from '../types';
+import { AppIcon } from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+
+import * as S from '../styles';
+import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 const PureCoreTeam = ({team}: any) => (
   <S.PureCoreTeam>
@@ -15,6 +17,7 @@ const PureCoreTeam = ({team}: any) => (
     <S.TeamContainer>{team}</S.TeamContainer>
   </S.PureCoreTeam>
 );
+
 const TeamItem = ({
   item: {title, img, description, linkedin, angellist},
 }: TeamItemProps) => {
@@ -41,11 +44,10 @@ const TeamItem = ({
   );
 };
 
-const CoreTeam = () => {
+export const CoreTeam = withErrorBoundary(() => {
   const team = Data.map((item: Team) => {
     return <TeamItem key={item.title} item={item} />;
   });
   return <PureCoreTeam team={team} />;
-};
+});
 
-export default withErrorBoundary(CoreTeam);
