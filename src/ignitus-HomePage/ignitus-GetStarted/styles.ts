@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
   XL,
-  SM,
   Normal,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
