@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import {maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Heading2} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {IgnitusBlue} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled(Heading3)`
+export const Title = styled(Heading2)`
   color: ${IgnitusBlue};
   text-align: center;
 `;

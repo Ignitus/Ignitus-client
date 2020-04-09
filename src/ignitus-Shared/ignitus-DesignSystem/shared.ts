@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
 import {minimumWidthQuery} from './ignitus-Atoms/media';
-import {Heading3} from './ignitus-Atoms/typography';
+import {Heading2} from './ignitus-Atoms/typography';
 
-export const Title = styled(Heading3)`
+export const Title = styled(Heading2)`
   color: ${C.IgnitusBlue};
 `;
 
