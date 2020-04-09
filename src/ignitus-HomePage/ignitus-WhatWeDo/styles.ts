@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import { minimumWidthQuery } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const Icon = styled.span`
   i { color: ${C.IgnitusBlue};}

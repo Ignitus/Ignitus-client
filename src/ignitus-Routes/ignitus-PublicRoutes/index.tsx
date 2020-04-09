@@ -7,7 +7,6 @@ import Contributors from '../../ignitus-HomePage/ignitus-Contributors';
 import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
 import Introduction from '../../ignitus-HomePage/ignitus-Introduction';
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
-import WhatWeDo from '../../ignitus-HomePage/ignitus-WhatWeDo';
 
 // We will seperate these routes to seperate files in upcoming days.
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
@@ -19,16 +18,18 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
-import {SupportedBy} from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
+import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
+import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
+import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
+import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { SupportedBy } from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
+import { WhatWeDo } from '../../ignitus-HomePage/ignitus-WhatWeDo/Components';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
+
 
 // RouteBased CodeSplitting.
 
@@ -57,7 +58,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
           render={() => (
             <div className="content">
               <Introduction.components.Introduction />
-              <WhatWeDo.components.WhatWeDo />
+              <WhatWeDo />
               <SupportedBy />
               <Testimonial.containers.TestimonialContainer />
               <GetStarted.components.GetStarted />

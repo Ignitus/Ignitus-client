@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from '../Styles';
+import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import { data } from '../constants';
