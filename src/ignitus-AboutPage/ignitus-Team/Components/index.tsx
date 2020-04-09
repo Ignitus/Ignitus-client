@@ -27,7 +27,7 @@ const PureTeam = ({contributors}: any) => (
   </S.Section>
 );
 
-const Team = ({
+export const Team = withErrorBoundary(({
   getContributorsData,
   contributorsData: {presets, isFetching},
 }: TeamPropType) => {
@@ -59,5 +59,4 @@ const Team = ({
   ));
 
   return <PureTeam contributors={contributors} />;
-};
-export default withErrorBoundary(Team);
+});
