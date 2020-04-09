@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v2
-      - run: npm install yaml @actions/github
+      - run: npm install yaml
       - run: echo "::set-env name=worker::$( node ./scripts/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}" )"
       - if: env.worker == 'true'
         run: |
@@ -20,5 +20,5 @@ jobs:
           npm install
           CI=false npm run build
           mv ./build/index.html ./build/200.html
-          npm install randomstring surge
+          npm install randomstring surge @actions/github
           node ./scripts/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
