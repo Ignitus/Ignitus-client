@@ -3,7 +3,6 @@ import {Switch, Route} from 'react-router-dom';
 import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
 import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
-import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
 
 // We will seperate these routes to seperate files in upcoming days.
@@ -23,11 +22,13 @@ import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-Stud
 import { SupportedBy } from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
 import { WhatWeDo } from '../../ignitus-HomePage/ignitus-WhatWeDo/Components';
 import { Introduction } from '../../ignitus-HomePage/ignitus-Introduction/Components';
+import { GetStarted } from '../../ignitus-HomePage/ignitus-GetStarted/Components';
 
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
+
 
 
 
@@ -61,7 +62,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
               <WhatWeDo />
               <SupportedBy />
               <Testimonial.containers.TestimonialContainer />
-              <GetStarted.components.GetStarted />
+              <GetStarted />
             </div>
           )}
         />
