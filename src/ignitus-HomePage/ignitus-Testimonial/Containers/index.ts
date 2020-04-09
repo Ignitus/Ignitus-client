@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { createStructuredSelector } from 'reselect';
@@ -11,7 +12,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({ getTestimonialData }, dispatch);
-export default connect(
+export const TestimonialContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
 )(Testimonial);

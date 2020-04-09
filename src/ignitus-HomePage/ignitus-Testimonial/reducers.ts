@@ -1,4 +1,3 @@
-
 import * as t from './actionTypes';
 
 const testimonialReducer = (state = [], action) => {

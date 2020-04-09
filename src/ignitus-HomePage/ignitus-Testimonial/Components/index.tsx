@@ -11,7 +11,7 @@ import '../Styles/style.scss';
 import { Avatars } from '../constants';
 import { Props } from '../types';
 
-const Testimonial: React.FC<Props> = ({ testimonialData, getTestimonialData }) => {
+export const Testimonial: React.FC<Props> = withErrorBoundary(({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleClick = (event) => {
     const { target: { id } } = event;
@@ -66,6 +66,4 @@ const Testimonial: React.FC<Props> = ({ testimonialData, getTestimonialData }) =
       </div>
     </div>
   );
-};
-
-export default withErrorBoundary(Testimonial);
+});
