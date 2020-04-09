@@ -58,7 +58,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
             <div className="content">
               <Introduction.components.Introduction />
               <WhatWeDo.components.WhatWeDo />
-              <Contributors.components.Contributors />
               <Partner.components.SupportedBy />
               <Testimonial.containers.TestimonialContainer />
               <GetStarted.components.GetStarted />
