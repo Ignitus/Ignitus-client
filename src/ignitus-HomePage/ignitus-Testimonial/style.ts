@@ -3,7 +3,13 @@ import {maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignit
 import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {IgnitusBlue} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
-import {MD} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {
+  MD,
+  SemiBold,
+  SM,
+  Normal,
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   ${maximumWidthQuery[0]} {
@@ -53,5 +59,35 @@ export const Avatar = styled(flexibleColDiv)`
   img {
     border-radius: 100%;
     height: 15.5vh;
+  }
+`;
+
+export const Name = styled.p`
+  font-size: ${MD};
+  font-weight: ${SemiBold};
+  margin-bottom: 0;
+  text-align: center;
+`;
+
+export const Designation = styled.p`
+  font-size: ${SM};
+  font-weight: ${Normal};
+  margin-bottom: 0;
+  text-align: center;
+`;
+
+export const Navigation = styled(flexibleRowDiv)`
+  min-height: 5.5vh;
+
+  img {
+    border-radius: 100%;
+    height: 3.5vh;
+    margin-right: 0.3em;
+
+    &:hover {
+      border: 1px solid #192b65;
+      height: 5vh;
+      transition: ease 0.5s;
+    }
   }
 `;
