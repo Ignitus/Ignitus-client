@@ -46,10 +46,11 @@
   background-color:#fff;
   .navlink{
     color:#000e8c;
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
+
     &:hover {
-      color: #F9BF64;
+      color: #f9bf64;
     }
   }
 }
@@ -59,7 +60,7 @@
 }
 
 .line.mobile:last-child{
-  transform: rotateZ(-43deg) translateY(-0.3rem)
+  transform: rotateZ(-43deg) translateY(-0.3rem);
 }
 
 .line.mobile:nth-child(2){
