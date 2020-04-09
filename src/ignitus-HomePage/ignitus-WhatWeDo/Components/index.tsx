@@ -9,16 +9,10 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
   <T.Wrapper id="what-we-do">
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
-      <Paragraph>
-        Guidance &nbsp;
-        {' '}
-        <S.Icon>
-          <i className="fa fa-graduation-cap" />
-        </S.Icon>
-        {' '}
-        &nbsp; in well researched and goal-oriented courses, getting Internships
+      <S.Paragraph>
+        Guidance 🎓 in well researched and goal-oriented courses, getting Internships
         etc.
-      </Paragraph>
+      </S.Paragraph>
     </T.TopSection>
     <T.BottomSection>
       <T.BottomRow>

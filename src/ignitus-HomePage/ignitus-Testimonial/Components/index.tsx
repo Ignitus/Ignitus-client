@@ -10,6 +10,7 @@ import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandling
 import '../Styles/style.scss';
 import { Avatars } from '../constants';
 import { Props } from '../types';
+import * as T from '../style';
 
 export const Testimonial: React.FC<Props> = withErrorBoundary(({ testimonialData, getTestimonialData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,22 +41,22 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(({ testimonialData
   }, []);
 
   return (
-    <div className="testimonial">
-      <div className="testimonials-title">Testimonials</div>
-      <div className="testimonial-wrapper">
+    <T.Container>
+      <T.Title>Testimonials</T.Title>
+      <T.Testimonial>
         {testimonialData.length > 0 && (
-          <div className="carousel-content">
-            <div className="text-box">
+          <T.Carousel>
+            <T.Text>
               <p>{testimonialData[currentIndex].description}</p>
-            </div>
-            <div className="avatar">
+            </T.Text>
+            <T.Avatar>
               <img src={Avatars[currentIndex]} />
-            </div>
+            </T.Avatar>
             <p className="name">{testimonialData[currentIndex].author}</p>
             <p className="designation">
               {testimonialData[currentIndex].authorDesignation}
             </p>
-          </div>
+          </T.Carousel>
         )}
         <div className="nav-avatar">
           <img id="1" src={Avatars[0]} alt="" onClick={handleClick} />
@@ -63,7 +64,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(({ testimonialData
           <img id="3" src={Avatars[2]} alt="" onClick={handleClick} />
           <img id="4" src={Avatars[3]} alt="" onClick={handleClick} />
         </div>
-      </div>
-    </div>
+      </T.Testimonial>
+    </T.Container>
   );
 });
