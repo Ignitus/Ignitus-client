@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../Styles/style.scss';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as t from '../constants';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
-const Introduction: React.FunctionComponent = () => (
+export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
   <div className="intro__wrapper">
     <img className="intro__torch" src={t.TORCH} alt="Ignitus Torch" />
     <h1 className="intro text-center">Welcome to Ignitus</h1>
@@ -38,6 +38,4 @@ const Introduction: React.FunctionComponent = () => (
       </div>
     </div>
   </div>
-);
-
-export default withErrorBoundary(Introduction);
+));
