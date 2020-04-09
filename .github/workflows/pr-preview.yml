@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v2
-      - run: npm install yaml
+      - run: npm install yaml -s
       - run: echo "::set-env name=worker::$( node ./scripts/deploy-preview/verify.js ${{ github.event.comment.user.login }} "${{ github.event.comment.body }}" )"
       - if: env.worker == 'true'
         run: |
           git fetch origin +refs/pull/${{ github.event.issue.number }}/merge
           git checkout FETCH_HEAD
-          npm install
+          npm install -s
           CI=false npm run build
           mv ./build/index.html ./build/200.html
-          npm install randomstring surge @actions/github
+          npm install randomstring surge @actions/github -s
           node ./scripts/deploy-preview/deploy.js ${{ github.event.issue.number }} ${{ secrets.SURGE_TOKEN }} ${{ secrets.GITHUB_TOKEN }} ${{ github.event.comment.user.login }}
