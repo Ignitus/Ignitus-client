@@ -4,6 +4,8 @@ import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/c
 import HeartIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
 import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {BottomRow as Row} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { Paragraph as P } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Medium } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Icon = styled.span`
   i {
@@ -49,4 +51,9 @@ export const CardPicture = styled.img`
 export const Heart = styled(HeartIcon)`
   height: 1rem;
   fill: ${C.Red};
+`;
+
+
+export const Paragraph = styled(P)`
+    font-weight: ${Medium}
 `;

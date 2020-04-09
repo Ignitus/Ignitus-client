@@ -5,7 +5,7 @@ import { Data } from '../constants';
 import { PureContributors } from '../../ignitus-Contributors/Components/Contributors';
 
 const SupportedBy: React.FunctionComponent = () => (
-  <PureContributors data={Data} type="Supported By" paragraph="by following Organizations..." />
+  <PureContributors data={Data} type="Supported By" paragraph="by following Organizations, Programs & Companies." />
 );
 
 export default withErrorBoundary(SupportedBy);

@@ -4,7 +4,6 @@ import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import { Data } from '../constants';
-import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 interface Props {
@@ -18,13 +17,13 @@ export const PureContributors = ({ data, type, paragraph }: Props) => (
     <T.Wrapper>
       <T.TopSection>
         <T.Title>{ type }</T.Title>
-        <Paragraph>
+        <S.Paragraph>
           Supported with
           {' '}
           <S.Icon><S.Heart/></S.Icon>
           {' '}
           {paragraph}
-        </Paragraph>
+        </S.Paragraph>
       </T.TopSection>
       <T.BottomSection>
         <S.BottomRow>
