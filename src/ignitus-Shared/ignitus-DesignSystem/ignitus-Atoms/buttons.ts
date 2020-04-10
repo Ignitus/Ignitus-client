@@ -46,7 +46,7 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   border: ${props => getBorder(props)};
 
   a {
-    color: ${C.White};
+    color: ${props => getColor(props)};
   }
 
   &:hover,

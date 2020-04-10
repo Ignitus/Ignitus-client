@@ -37,6 +37,5 @@ export enum AppIcon {
 	FileIcon = 'FileIcon',
 	BookmarkIcon = 'BookmarkIcon',
 	MapMarkerIcon = 'MapMarkerIcon',
-	ChatMessageIcon = 'ChatMessageIcon',
   VideoLibIcon = 'VideoLibrary'
 }

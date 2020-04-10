@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {BottomRow} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import { BottomRow } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const NewsletterImage = styled.img``;
 
