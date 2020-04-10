@@ -28,7 +28,6 @@ import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layo
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
-import ProfileCard from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/ProfileCard';
 
 
 
@@ -90,7 +89,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
-        <Route path="/profileList" component={ProfileCard} />
         <Route
           path="/flow/emailConfirmationFlow"
           component={EmailConfirmationFlow}
