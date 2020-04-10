@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyledHeading2} from '../../../../styles';
 import {TypographyContainer} from '../styles';
 import {
   Heading1,
@@ -14,7 +13,7 @@ import {
 
 export const interfaceTypography: React.FC = () => (
   <TypographyContainer>
-    <StyledHeading2>Typography ★</StyledHeading2>
+    <Heading3>Typography ★</Heading3>
     <hr />
     <Heading1>Heading 1</Heading1>
     <Heading2>Heading 2</Heading2>

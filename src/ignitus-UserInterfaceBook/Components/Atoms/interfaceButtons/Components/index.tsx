@@ -1,17 +1,17 @@
 import React from 'react';
-import {ButtonsContainer} from '../style';
-
 import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
-import {StyledHeading2, StyledHeading6} from '../../../../styles';
-import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
-import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
+
+import { DefaultButtonWithIcon } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
+import { AppIcon } from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
+import { Heading2, Heading6 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../styles';
 
 {
   /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
 }
 export const interfaceButttons: React.FC = () => (
-  <ButtonsContainer>
-    <StyledHeading2> Buttons </StyledHeading2>
+  <Interface>
+    <Heading2> Buttons </Heading2>
     <B.Button size="large" category="primary">
       {' '}
       Primary Button{' '}
@@ -68,7 +68,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
-    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+    <Heading6> Medium Size Buttons </Heading6>
     <B.Button size="medium" category="primary">
       {' '}
       Primary Button{' '}
@@ -125,7 +125,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
-    <StyledHeading6> Small Size Buttons </StyledHeading6>
+    <Heading6> Small Size Buttons </Heading6>
     <B.Button size="small" category="primary">
       {' '}
       Primary Button{' '}
@@ -182,7 +182,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
-    <StyledHeading6> Text Button </StyledHeading6>
+    <Heading6> Text Button </Heading6>
     <B.Button size="large" category="text">
       {' '}
       Text Button{' '}
@@ -197,7 +197,7 @@ export const interfaceButttons: React.FC = () => (
     </B.Button>
     <hr />
 
-    <StyledHeading2> Styled Buttons </StyledHeading2>
+    <Heading2> Styled Buttons </Heading2>
 
     <B.ButtonBottomRight size="large" category="primary">
       {' '}
@@ -224,7 +224,7 @@ export const interfaceButttons: React.FC = () => (
       Button Top Left{' '}
     </B.StyledButtonTopLeft>
 
-    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+    <Heading6> Medium Size Buttons </Heading6>
 
     <B.ButtonBottomRight size="medium" category="primary">
       {' '}
@@ -246,7 +246,7 @@ export const interfaceButttons: React.FC = () => (
       Button Bottom Right{' '}
     </B.ButtonBottomRight>
 
-    <StyledHeading6> Small Size Buttons </StyledHeading6>
+    <Heading6> Small Size Buttons </Heading6>
 
     <B.ButtonBottomRight size="small" category="primary">
       {' '}
@@ -273,7 +273,7 @@ export const interfaceButttons: React.FC = () => (
       Button Top Left{' '}
     </B.StyledButtonTopLeft>
     <hr />
-    <StyledHeading2> Rounded Button </StyledHeading2>
+    <Heading2> Rounded Button </Heading2>
     <B.RoundedButton size="large" category="primary">
       {' '}
       Rounded Button{' '}
@@ -299,7 +299,7 @@ export const interfaceButttons: React.FC = () => (
       Rounded Button{' '}
     </B.RoundedButton>
 
-    <StyledHeading6> Medium Size Buttons </StyledHeading6>
+    <Heading6> Medium Size Buttons </Heading6>
 
     <B.RoundedButton size="medium" category="primary">
       {' '}
@@ -327,10 +327,10 @@ export const interfaceButttons: React.FC = () => (
     </B.RoundedButton>
 
     <hr />
-    <StyledHeading6> Social Buttons </StyledHeading6>
-    <StyledHeading6> Button with Icons </StyledHeading6>
-    <StyledHeading6> Floating Action Button </StyledHeading6>
-    <StyledHeading6> Icon with text link</StyledHeading6>
-    <StyledHeading6> Icon Button</StyledHeading6>
-  </ButtonsContainer>
+    <Heading6> Social Buttons </Heading6>
+    <Heading6> Button with Icons </Heading6>
+    <Heading6> Floating Action Button </Heading6>
+    <Heading6> Icon with text link</Heading6>
+    <Heading6> Icon Button</Heading6>
+  </Interface>
 );

@@ -8,9 +8,8 @@ import {
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceDropDown: React.FC = () => (
-  <D.DropDownContainer>
+  <D.Container>
     <Heading3>DropDowns</Heading3>
-    <hr />
     <hr />
     <Heading5>Inline Block</Heading5>
     <DefaultDropdown options={cars} label={'cars'} display="inline-block" />
@@ -18,5 +17,5 @@ export const interfaceDropDown: React.FC = () => (
     <br />
     <Heading5>Block</Heading5>
     <DefaultDropdown options={cars} label={'cars'} display="block" />
-  </D.DropDownContainer>
+  </D.Container>
 );

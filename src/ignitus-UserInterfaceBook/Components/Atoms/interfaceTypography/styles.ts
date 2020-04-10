@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
 export const TypographyContainer = styled.nav`
-  padding: 2rem;
+  padding: 3rem;
 `;

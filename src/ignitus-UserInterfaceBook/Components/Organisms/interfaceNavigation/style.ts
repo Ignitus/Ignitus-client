@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  padding: 2rem;
-  flex: 1;
+  padding: 3rem;
 `;
 
 export const NavigationContainer = styled.div`

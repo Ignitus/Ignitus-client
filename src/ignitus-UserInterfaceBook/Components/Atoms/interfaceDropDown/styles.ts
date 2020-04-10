@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
-export const DropDownContainer = styled.div`
+export const Container = styled.div`
   padding: 3rem;
 `;
