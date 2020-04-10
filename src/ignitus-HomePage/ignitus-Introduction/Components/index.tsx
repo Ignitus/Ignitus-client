@@ -1,8 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import '../Styles/style.scss';
+
 import * as T from '../constants';
 import * as I from '../styles';
+
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const Introduction: React.FunctionComponent = withErrorBoundary(() => (

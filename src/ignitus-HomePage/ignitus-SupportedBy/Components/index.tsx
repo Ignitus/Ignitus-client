@@ -7,9 +7,8 @@ import { Props } from '../types';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as S from '../styles';
 
-const PureContributors = ({ data, type, paragraph }: Props) => (
-  <section id="contributors">
-    <T.Wrapper>
+const PureSupportedBy = ({ data, type, paragraph }: Props) => (
+    <T.Wrapper id="SupportedBy">
       <T.TopSection>
         <T.Title>{ type }</T.Title>
         <S.Paragraph>
@@ -30,10 +29,9 @@ const PureContributors = ({ data, type, paragraph }: Props) => (
         </S.BottomRow>
       </T.BottomSection>
     </T.Wrapper>
-  </section>
 );
 
 export const SupportedBy: React.FunctionComponent = withErrorBoundary(() => (
-  <PureContributors data={Data} type="Supported By" paragraph="by following Organizations, Programs & Companies." />
+  <PureSupportedBy data={Data} type="Supported By" paragraph="by following Organizations, Programs & Companies." />
 ));
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
 import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
@@ -57,13 +57,13 @@ export const PublicRoutes: React.FunctionComponent = () => {
           exact
           path="/"
           render={() => (
-            <div className="content">
+            <Fragment>
               <Introduction />
               <WhatWeDo />
               <SupportedBy />
               <Testimonial.containers.TestimonialContainer />
               <GetStarted />
-            </div>
+            </Fragment>
           )}
         />
         <Route path="/aboutus" component={AboutUs} />

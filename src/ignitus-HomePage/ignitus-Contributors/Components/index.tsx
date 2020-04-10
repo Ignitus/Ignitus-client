@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const PureContributors = ({data, type, paragraph}: Props) => (
-  <section id="contributors">
+  <div id="contributors">
     <T.Wrapper>
       <T.TopSection>
         <T.Title>{type}</T.Title>
@@ -35,7 +35,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
         </S.BottomRow>
       </T.BottomSection>
     </T.Wrapper>
-  </section>
+  </div>
 );
 
 export const Contributors = withErrorBoundary(() => (

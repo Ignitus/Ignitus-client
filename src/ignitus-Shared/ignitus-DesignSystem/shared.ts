@@ -30,6 +30,7 @@ export const TopSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 `;
 
 export const BottomSection = styled.section`

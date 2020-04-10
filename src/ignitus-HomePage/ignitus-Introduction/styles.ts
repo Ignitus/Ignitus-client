@@ -3,6 +3,7 @@ import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colo
 import {
   XL,
   LG,
+  Normal,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
@@ -50,12 +51,14 @@ export const Title = styled.h1`
 export const PrimaryText = styled.p`
   color: ${C.Black};
   font-size: ${XL};
+  font-weight: ${Normal};
   margin: 1rem 0;
 `;
 
 export const SecondaryText = styled.p`
   color: ${C.Black};
   font-size: ${LG};
+  font-weight: ${Normal};
   margin: 1rem 0;
 `;
 
