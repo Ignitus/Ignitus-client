@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
 import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
+import { PureNavigationProps, displayClassTypes, NavigationProps } from '../types';
 import '../Styles/style.scss';
-import { PureNavigationProps, displayClassTypes } from '../types';
 
 const handleSmallerScreen = () => {
   const navlinks = document.querySelector('.navlinks');
@@ -17,7 +17,7 @@ const handleSmallerScreen = () => {
   navlinks?.classList.toggle('mobile');
 };
 
-const PureNavigation: React.FunctionComponent<PureNavigationProps> = ({ displayClass, dynamicLogo }) => (
+const PureNavigation: React.FC<PureNavigationProps> = ({ displayClass, dynamicLogo }) => (
   <nav className={`navbar  ${displayClass}`}>
     <HashLink className="navbar-brand" to="/#">
       <img src={dynamicLogo} width="40" height="40" alt="logo" />
@@ -68,8 +68,8 @@ const PureNavigation: React.FunctionComponent<PureNavigationProps> = ({ displayC
   </nav>
 );
 
-
 const Navigation: React.FunctionComponent = () => {
+
   const [navScrolled, setNavScrolled] = useState(false);
   const [displayClass, setDisplayClass] = useState<displayClassTypes>('transparent');
   const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
@@ -98,4 +98,9 @@ const Navigation: React.FunctionComponent = () => {
   return <PureNavigation displayClass={displayClass} dynamicLogo={dynamicLogo} />;
 };
 
-export default React.memo(Navigation);
+const OptionalNavigations: React.FC<NavigationProps> = ({ dynamicNavigation = false }) => {
+  if (!dynamicNavigation) return <PureNavigation displayClass="whitenav" dynamicLogo={logo} />;
+  return <Navigation />
+};
+
+export default React.memo(OptionalNavigations);
