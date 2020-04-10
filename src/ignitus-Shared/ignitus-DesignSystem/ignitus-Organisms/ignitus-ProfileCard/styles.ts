@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import { flexibleColDiv, flexibleRowDiv, Link } from '../../shared';
-import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
+import {flexibleColDiv, flexibleRowDiv, Link as L} from '../../shared';
+import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
 
-import { maximumWidthQuery } from '../../ignitus-Atoms/media';
-import { XXXL, SemiBold } from '../../ignitus-Atoms/fonts';
+import {maximumWidthQuery} from '../../ignitus-Atoms/media';
+import {XXXL, SemiBold} from '../../ignitus-Atoms/fonts';
 
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import {default as I} from '../../../ignitus-Utilities/Components/icon';
 
 type TextIconProps = {
   contentDistance?: string;
@@ -26,7 +26,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
@@ -39,9 +39,12 @@ export const TopSection = styled.div`
 export const BottomSection = styled.div`
   display: flex;
   flex-direction: row;
+  padding: 1.5rem;
 `;
 
-export const LeftRow = styled(flexibleRowDiv)``;
+export const LeftRow = styled(flexibleRowDiv)`
+  margin-right: 2rem;
+`;
 
 export const Avatar = styled.img`
   width: 10rem;
@@ -63,43 +66,36 @@ export const ImageContainer = styled(flexibleRowDiv)`
   }
 `;
 
-export const ProfileHeading = styled(Heading1)`
+export const Name = styled(Heading1)`
   font-size: ${XXXL};
   font-weight: ${SemiBold};
 `;
 
-export const ProfileSubHeading = styled(Heading4)`
-  flex: 1;
-  margin-bottom: 1rem;
+export const Designation = styled(Heading4)``;
+
+export const ProfileInformationContainer = styled.div`
+  margin-left: 4rem;
 `;
 
-export const SocialDiv = styled(flexibleColDiv)`
-  padding: 0.5rem;
-  flex: 1 30%;
-  align-items: flex-start;
-  ${maximumWidthQuery[0]} {
-    align-items: center;
-  }
+export const RightRow = styled(flexibleColDiv)`
+  margin-left: 2rem;
 `;
 
 export const SocialContact = styled(flexibleColDiv)`
   flex: 100%;
 `;
 
-export const SocialIcons = styled.div`
-  flex: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 2em;
+export const Icons = styled(flexibleRowDiv)`
+  margin-bottom: 2rem;
 `;
 
-export const SocialLinks = styled(Link)`
-  margin-right: 2.3em;
+export const Link = styled(L)`
+  margin-right: 2rem;
   display: inline-block;
 `;
 
-export const SocialLinkIcons = styled(Icon)`
-  height: 1.8rem;
-  margin-bottom: 0.5em;
+export const Icon = styled(I)`
+  width: 1.5rem;
   fill: ${C.IgnitusBlue};
 `;
 

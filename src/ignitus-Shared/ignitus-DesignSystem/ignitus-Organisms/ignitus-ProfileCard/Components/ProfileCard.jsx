@@ -23,9 +23,9 @@ const ProfileCard = () => (
         <div>
           <S.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" alt="ProfileLogo" />
         </div>
-        <div>
-          <S.ProfileHeading>Sophia Carter</S.ProfileHeading>
-          <S.ProfileSubHeading>Literature Student</S.ProfileSubHeading>
+        <S.ProfileInformationContainer>
+          <S.Name>Sophia Carter</S.Name>
+          <S.Designation>Literature Student</S.Designation>
           <TextIconContainer
             content="Location"
             icon={AppIcon.MapMarkerIcon}
@@ -33,24 +33,24 @@ const ProfileCard = () => (
             iconDistance={10}
           />
           <DropDownButton />
-        </div>
+        </S.ProfileInformationContainer>
       </S.LeftRow>
 
-      <S.SocialDiv>
-        <S.SocialIcons>
-          <S.SocialLinks href="">
-            <S.SocialLinkIcons name={AppIcon.FacebookIcon} />
-          </S.SocialLinks>
-          <S.SocialLinks href="">
-            <S.SocialLinkIcons name={AppIcon.LinkedInIcon} />
-          </S.SocialLinks>
-          <S.SocialLinks href="">
-            <S.SocialLinkIcons name={AppIcon.GithubIcon} />
-          </S.SocialLinks>
-          <S.SocialLinks href="">
-            <S.SocialLinkIcons name={AppIcon.GooglePlusIcon} />
-          </S.SocialLinks>
-        </S.SocialIcons>
+      <S.RightRow>
+        <S.Icons>
+          <S.Link href="">
+            <S.Icon name={AppIcon.FacebookIcon} />
+          </S.Link>
+          <S.Link href="">
+            <S.Icon name={AppIcon.LinkedInIcon} />
+          </S.Link>
+          <S.Link href="">
+            <S.Icon name={AppIcon.GithubIcon} />
+          </S.Link>
+          <S.Link href="">
+            <S.Icon name={AppIcon.GooglePlusIcon} />
+          </S.Link>
+        </S.Icons>
         <S.SocialContact>
           <TextIconContainer
             content="Send them a message"
@@ -63,7 +63,7 @@ const ProfileCard = () => (
             contentDistance="1.5"
           />
         </S.SocialContact>
-      </S.SocialDiv>
+      </S.RightRow>
     </S.BottomSection>
   </S.Container>
 );
