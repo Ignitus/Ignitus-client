@@ -1,11 +1,11 @@
 import React from 'react';
 import {MultiMediaInputContainer} from '../styles';
 import {DefaultMultiMediaInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
-import {StyledHeading2} from '../../../../styles';
+import {Heading3} from '../../../../styles';
 
 export const interfaceMultiMediaInput = () => (
   <MultiMediaInputContainer>
-    <StyledHeading2>Multimedia Text Input </StyledHeading2>
+    <Heading3>Multimedia Text Input </Heading3>
     <hr />
 
     <DefaultMultiMediaInput

@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledHeading2} from '../../../../styles';
+import {Heading3} from '../../../../styles';
 import {Container, Grid} from '../style';
 import {List} from '../constants';
 import {Opportunity} from '../types';
@@ -7,7 +7,7 @@ import DashBoardOpportunity from '../../../../../ignitus-Shared/ignitus-DesignSy
 
 export const interfaceSavedOpportunity: React.FC = () => (
   <Container>
-    <StyledHeading2>Opportunities Saved Layout ★</StyledHeading2>
+    <Heading3>Opportunities Saved Layout ★</Heading3>
     <hr />
     <Grid>
       {List.map(({title, description, subtitle, src}: Opportunity) => (

@@ -1,15 +1,17 @@
 import React from 'react';
-import * as D from '../styles';
+
 import DefaultDropdown from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components/defaultDropdown';
+
 import {cars} from '../constants';
+import { Interface } from '../../../../styles';
 import {
-  Heading3,
+  Heading2,
   Heading5,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceDropDown: React.FC = () => (
-  <D.Container>
-    <Heading3>DropDowns</Heading3>
+  <Interface>
+    <Heading2>DropDowns</Heading2>
     <hr />
     <Heading5>Inline Block</Heading5>
     <DefaultDropdown options={cars} label={'cars'} display="inline-block" />
@@ -17,5 +19,5 @@ export const interfaceDropDown: React.FC = () => (
     <br />
     <Heading5>Block</Heading5>
     <DefaultDropdown options={cars} label={'cars'} display="block" />
-  </D.Container>
+  </Interface>
 );

@@ -7,11 +7,6 @@ export const StyledHeading1 = styled(A.Heading1)`
   text-align: center;
 `;
 
-export const StyledHeading2 = styled(A.Heading2)`
-  margin: 20px 0;
-  font-weight: ${Medium};
-`;
-
 export const StyledHeading4 = styled(A.Heading4)`
   margin: 20px 0;
   color: ${GreyText};

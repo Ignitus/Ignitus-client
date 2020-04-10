@@ -1,11 +1,11 @@
 import React from 'react';
 import Overlay from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 import {OverlayContainer} from '../styles';
-import {StyledHeading2} from '../../../../styles';
+import {Heading3} from '../../../../styles';
 
 export const interfaceOverlay = () => (
   <OverlayContainer>
-    <StyledHeading2>Overlay</StyledHeading2>
+    <Heading3>Overlay</Heading3>
     <hr />
     <Overlay
       primaryText="Your application has been sent successfully!"

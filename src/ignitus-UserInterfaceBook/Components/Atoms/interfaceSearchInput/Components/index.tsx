@@ -1,11 +1,11 @@
 import React from 'react';
 import {SearchInputContainer} from '../styles';
 import {DefaultSearchInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultSearchInput/Components';
-import { StyledHeading2 } from '../../../../styles';
+import { Heading3 } from '../../../../styles';
 
 export const interfaceSearchInput: React.FC = () => (
   <SearchInputContainer>
-    <StyledHeading2>Search Input </StyledHeading2>
+    <Heading3>Search Input </Heading3>
     <hr />
 
     <DefaultSearchInput

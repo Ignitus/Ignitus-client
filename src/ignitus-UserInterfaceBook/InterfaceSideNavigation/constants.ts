@@ -58,7 +58,7 @@ export const edges: Edges[] = [
         children: [
           {
             title: 'Checkboxes',
-            route: '/interface/checkboxes',
+            route: '/interface/defaultCheckbox',
           },
           {
             title: 'Radio Buttons',

@@ -1,12 +1,12 @@
 import React from 'react';
-import * as C from '../styles';
-import {DefaultCheckbox} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
-import { StyledHeading2 } from '../../../../styles';
+import { DefaultCheckbox } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
+import { Interface } from '../../../../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceCheckBox: React.FC = () => (
-  <C.CheckBoxContainer>
-    <StyledHeading2>Check Box </StyledHeading2>
+  <Interface>
+    <Heading2>Check Box </Heading2>
     <hr />
     <DefaultCheckbox value={'cars'} label={'cars'} />
-  </C.CheckBoxContainer>
+  </Interface>
 );
