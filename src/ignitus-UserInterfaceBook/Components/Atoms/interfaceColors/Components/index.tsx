@@ -8,7 +8,7 @@ import {
   SocialPlatformColors,
 } from '../constants';
 
-const interfaceColors: React.FC = () => (
+export const interfaceColors: React.FC = () => (
   <C.ColorsContainer>
     <StyledHeading2>Primary Colors</StyledHeading2>
     <ColorsMapper colors={PrimaryColors} />
@@ -27,5 +27,3 @@ const interfaceColors: React.FC = () => (
 
 const ColorsMapper: Function = ({colors}: {colors: string[]}): JSX.Element[] =>
   colors.map((color: string) => <C.Color key={color} hex={color}> {color} </C.Color>);
-
-export default interfaceColors;

@@ -3,7 +3,7 @@ import {DashBoardFooterContainer} from '../style';
 import {Heading3} from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import DashboardFooter from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
-const interfaceDashBoardFooter = () => (
+export const interfaceDashBoardFooter = () => (
   <DashBoardFooterContainer>
     <Heading3>Footer</Heading3>
     <hr />
@@ -11,5 +11,3 @@ const interfaceDashBoardFooter = () => (
     <DashboardFooter />
   </DashBoardFooterContainer>
 );
-
-export default interfaceDashBoardFooter;

@@ -6,7 +6,7 @@ import useToggle from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toog
 import {edges} from '../constants';
 import {NavigationLayerProps} from '../types';
 
-const InterfaceSideNavigation = () => {
+export const InterfaceSideNavigation = () => {
   return (
     <S.NavigationContainer>
       <Link to="/">
@@ -62,5 +62,3 @@ const Extension = ({isexpanded, edge, nesting, level}) => {
     )
   );
 };
-
-export default InterfaceSideNavigation;

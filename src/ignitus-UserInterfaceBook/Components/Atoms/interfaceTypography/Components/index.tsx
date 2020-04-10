@@ -12,7 +12,7 @@ import {
   TextLink,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceTypography: React.FC = () => (
+export const interfaceTypography: React.FC = () => (
   <TypographyContainer>
     <StyledHeading2>Typography ★</StyledHeading2>
     <hr />
@@ -26,5 +26,3 @@ const interfaceTypography: React.FC = () => (
     <TextLink>Text Link</TextLink>
   </TypographyContainer>
 );
-
-export default interfaceTypography;

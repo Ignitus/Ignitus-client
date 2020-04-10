@@ -3,7 +3,7 @@ import Overlay from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-
 import {OverlayContainer} from '../styles';
 import {StyledHeading2} from '../../../../styles';
 
-const interfaceOverlay = () => (
+export const interfaceOverlay = () => (
   <OverlayContainer>
     <StyledHeading2>Overlay</StyledHeading2>
     <hr />
@@ -15,5 +15,3 @@ const interfaceOverlay = () => (
     />
   </OverlayContainer>
 );
-
-export default interfaceOverlay;

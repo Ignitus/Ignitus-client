@@ -5,7 +5,7 @@ import {List} from '../constants';
 import {Opportunity} from '../types';
 import DashBoardOpportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
 
-const interfaceSavedOpportunity: React.FC = () => (
+export const interfaceSavedOpportunity: React.FC = () => (
   <Container>
     <StyledHeading2>Opportunities Saved Layout ★</StyledHeading2>
     <hr />
@@ -22,5 +22,3 @@ const interfaceSavedOpportunity: React.FC = () => (
     </Grid>
   </Container>
 );
-
-export default interfaceSavedOpportunity;

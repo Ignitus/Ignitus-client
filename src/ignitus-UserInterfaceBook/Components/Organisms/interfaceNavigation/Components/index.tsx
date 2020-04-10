@@ -5,7 +5,7 @@ import {NavigationContainer, Container} from '../style';
 import DashboardNavigation from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components/index';
 import {StyledHeading2} from '../../../../styles';
 
-const interfaceNavigation: React.FC = () => (
+export const interfaceNavigation: React.FC = () => (
   <Container>
     <StyledHeading2>Navigation</StyledHeading2>
     <hr />
@@ -16,5 +16,3 @@ const interfaceNavigation: React.FC = () => (
     </NavigationContainer>
   </Container>
 );
-
-export default interfaceNavigation;

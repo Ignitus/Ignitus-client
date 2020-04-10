@@ -3,7 +3,7 @@ import {SearchInputContainer} from '../styles';
 import {DefaultSearchInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultSearchInput/Components';
 import { StyledHeading2 } from '../../../../styles';
 
-const interfaceSearchInput: React.FC = () => (
+export const interfaceSearchInput: React.FC = () => (
   <SearchInputContainer>
     <StyledHeading2>Search Input </StyledHeading2>
     <hr />
@@ -15,5 +15,3 @@ const interfaceSearchInput: React.FC = () => (
     />
   </SearchInputContainer>
 );
-
-export default interfaceSearchInput;
