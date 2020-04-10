@@ -47,7 +47,7 @@ $hover-color: #f9bf64;
 
 .line{
   display:block;
-  background-color:$base-color;
+  background-color: $base-color;
   padding:0.1rem 0.8rem;
   width:0.1rem;
   margin:0.3rem;
@@ -58,7 +58,7 @@ $hover-color: #f9bf64;
 .navbar.whitenav{
   background-color:#fff;
   .navlink{
-    color:$base-color;
+    color: $base-color;
 
     &:hover {
       color: $hover-color;
@@ -112,7 +112,7 @@ $hover-color: #f9bf64;
   }
 
   .navlink{
-    color:$base-color;
+    color: $base-color;
   }
 
 }
