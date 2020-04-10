@@ -6,9 +6,9 @@ import {StyledHeading2, StyledHeading6} from '../../../../styles';
 import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
 import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
-{
-  /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
-}
+// {
+//    https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png
+// }
 const interfaceButttons: React.FC = () => (
   <ButtonsContainer>
     <StyledHeading2> Buttons </StyledHeading2>
