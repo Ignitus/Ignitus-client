@@ -1,26 +1,17 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleColDiv, flexibleRowDiv, Link as L} from '../../shared';
-import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
 
-import {maximumWidthQuery} from '../../ignitus-Atoms/media';
-import {XXXL, SemiBold} from '../../ignitus-Atoms/fonts';
+import {
+  flexibleColDiv,
+  flexibleRowDiv,
+  Link as L,
+  Paragraph as P,
+} from '../../shared';
+import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
+import {XXXL, SemiBold, Normal} from '../../ignitus-Atoms/fonts';
 
 import {default as I} from '../../../ignitus-Utilities/Components/icon';
-
-type TextIconProps = {
-  contentDistance?: string;
-  direction?: string;
-};
-
-type IconProps = {
-  size?: string;
-};
-
-type TextProps = {
-  iconDistance?: number;
-  contentColor?: string;
-};
+import {ParagraphProps} from './types';
 
 export const Container = styled.div`
   display: flex;
@@ -66,6 +57,13 @@ export const ImageContainer = styled(flexibleRowDiv)`
   }
 `;
 
+export const Paragraph = styled(P)<ParagraphProps>`
+  color: ${props => (props.primary ? C.IgnitusBlue : C.GreySecondaryText)};
+  font-weight: ${Normal};
+  display: inline;
+  margin: ${props => props.margin};
+`;
+
 export const Name = styled(Heading1)`
   font-size: ${XXXL};
   font-weight: ${SemiBold};
@@ -81,8 +79,10 @@ export const RightRow = styled(flexibleColDiv)`
   margin-left: 2rem;
 `;
 
-export const SocialContact = styled(flexibleColDiv)`
-  flex: 100%;
+export const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 export const Icons = styled(flexibleRowDiv)`
@@ -97,38 +97,19 @@ export const Link = styled(L)`
 export const Icon = styled(I)`
   width: 1.5rem;
   fill: ${C.IgnitusBlue};
+  path {
+  }
 `;
 
-//Text Icon Container
-
-export const TextIconContainer = styled(flexibleRowDiv)<TextIconProps>`
-  justify-content: flex-start;
-  width: 100%;
-  margin-bottom: ${props =>
-    props.contentDistance ? `${props.contentDistance}rem` : '1rem'};
-  flex-direction: ${props => (props.direction ? 'row-reverse' : '')};
-  align-items: end;
+export const Wrapper = styled.div`
+  display: flex;
+  margin: 0.5rem 0;
+  flex-direction: row;
 `;
-
-export const TextIcon = styled(Icon)<IconProps>`
-  height: ${props => (props.size ? `${props.size}rem` : '1.8rem')};
-  fill: ${C.IgnitusBlue};
-`;
-
-export const TextIconContent = styled.span<TextProps>`
-  font-weight: 500;
-  color: ${props => (props.contentColor ? props.contentColor : ``)};
-  padding: ${props =>
-    props.iconDistance ? `0 ${props.iconDistance}px` : '0 15px'};
-  flex: 1;
-  align-self: center;
-`;
-
-// Drop Down Menu
 
 export const DropDownBtnContainer = styled.div`
-  flex: 100%;
   position: relative;
+  margin-top: 1rem;
 `;
 
 export const DropDownBtn = styled.div`

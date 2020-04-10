@@ -4,18 +4,14 @@ import React from 'react';
 import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { GreyOne } from '../../../ignitus-Atoms/colors';
+import { Paragraph } from '../../../ignitus-Atoms/typography';
+import { Props } from '../types';
 
 const ProfileCard = () => (
   <S.Container>
     <S.TopSection>
-      <TextIconContainer
-        content="Track Sophi's progress"
-        icon={AppIcon.BookmarkIcon}
-        iconSize="2.5"
-        direction="reverse"
-        contentColor={GreyOne}
-      />
+      <S.Paragraph margin="0 0.5rem 0 0">Track Sophi progress</S.Paragraph>
+      <S.Icon name={AppIcon.BookmarkIcon} />
     </S.TopSection>
 
     <S.BottomSection>
@@ -26,12 +22,7 @@ const ProfileCard = () => (
         <S.ProfileInformationContainer>
           <S.Name>Sophia Carter</S.Name>
           <S.Designation>Literature Student</S.Designation>
-          <TextIconContainer
-            content="Location"
-            icon={AppIcon.MapMarkerIcon}
-            iconSize="1.2"
-            iconDistance={10}
-          />
+          <IconContent content="Canada" name={AppIcon.LocationIcon} />
           <DropDownButton />
         </S.ProfileInformationContainer>
       </S.LeftRow>
@@ -51,18 +42,10 @@ const ProfileCard = () => (
             <S.Icon name={AppIcon.GooglePlusIcon} />
           </S.Link>
         </S.Icons>
-        <S.SocialContact>
-          <TextIconContainer
-            content="Send them a message"
-            icon={AppIcon.ChatMessageIcon}
-            contentDistance="1.5"
-          />
-          <TextIconContainer
-            content="Resume"
-            icon={AppIcon.FileIcon}
-            contentDistance="1.5"
-          />
-        </S.SocialContact>
+        <S.Contact>
+          <IconContent content="Send Message" name={AppIcon.QuestionAnswerIcon} />
+          <IconContent content="Resume" name={AppIcon.FileIcon} />
+        </S.Contact>
       </S.RightRow>
     </S.BottomSection>
   </S.Container>
@@ -81,21 +64,12 @@ const DropDownButton = () => (
   </S.DropDownBtnContainer>
 );
 
-const TextIconContainer = ({
-  icon,
-  content,
-  direction,
-  iconSize,
-  iconDistance,
-  contentDistance,
-  contentColor,
-}) => (
-    <S.TextIconContainer direction={direction} contentDistance={contentDistance}>
-      <S.TextIcon name={icon} size={iconSize} />
-      <S.TextIconContent iconDistance={iconDistance} contentColor={contentColor}>
-        {content}
-      </S.TextIconContent>
-    </S.TextIconContainer>
-  );
+const IconContent = ({ content, name }: Props) => (
+  <S.Wrapper>
+    <S.Icon name={name} />
+    <S.Paragraph margin="0 0 0 0.5rem" primary>{content}</S.Paragraph>
+  </S.Wrapper>
+);
+
 
 export default withErrorBoundary(ProfileCard);
