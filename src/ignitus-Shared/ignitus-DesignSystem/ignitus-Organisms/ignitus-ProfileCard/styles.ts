@@ -15,9 +15,10 @@ import {ParagraphProps} from './types';
 
 export const Container = styled.div`
   display: flex;
+  width: 60rem;
   flex-direction: column;
-  padding: 1rem;
-  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
@@ -30,11 +31,14 @@ export const TopSection = styled.div`
 export const BottomSection = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 1.5rem;
+  padding: 1rem;
 `;
 
-export const LeftRow = styled(flexibleRowDiv)`
-  margin-right: 2rem;
+export const LeftRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: flex-start;
 `;
 
 export const Avatar = styled.img`
@@ -69,14 +73,18 @@ export const Name = styled(Heading1)`
   font-weight: ${SemiBold};
 `;
 
-export const Designation = styled(Heading4)``;
+export const Designation = styled(Heading4)`
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+`;
 
 export const ProfileInformationContainer = styled.div`
   margin-left: 4rem;
 `;
 
 export const RightRow = styled(flexibleColDiv)`
-  margin-left: 2rem;
+  flex: 1;
+  align-items: flex-start;
 `;
 
 export const Contact = styled.div`
@@ -103,7 +111,7 @@ export const Icon = styled(I)`
 
 export const Wrapper = styled.div`
   display: flex;
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
   flex-direction: row;
 `;
 
