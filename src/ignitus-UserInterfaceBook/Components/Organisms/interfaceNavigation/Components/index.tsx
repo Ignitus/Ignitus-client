@@ -4,17 +4,18 @@ import UserSettingsSideNavigation from '../../../../../ignitus-Shared/ignitus-De
 import MessageSideNavigation from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
 import DashboardNavigation from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components/index';
 
-import { NavigationContainer, Container } from '../style';
-import { Heading3 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { NavigationContainer } from '../style';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../styles';
 
 export const interfaceNavigation: React.FC = () => (
-  <Container>
-    <Heading3>Navigation</Heading3>
+  <Interface>
+    <Heading2>Navigation</Heading2>
     <hr />
     <NavigationContainer>
       <DashboardNavigation />
       <UserSettingsSideNavigation />
       <MessageSideNavigation />
     </NavigationContainer>
-  </Container>
+  </Interface>
 );

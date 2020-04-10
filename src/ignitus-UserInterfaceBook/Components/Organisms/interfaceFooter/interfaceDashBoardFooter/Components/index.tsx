@@ -2,13 +2,13 @@ import React from 'react';
 
 import DashboardFooter from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
-import { Container } from '../style';
-import { Heading3 } from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading2 } from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../../styles';
 
 export const interfaceDashBoardFooter = () => (
-  <Container>
-    <Heading3>Footer</Heading3>
+  <Interface>
+    <Heading2>Footer</Heading2>
     <hr />
     <DashboardFooter />
-  </Container>
+  </Interface>
 );
