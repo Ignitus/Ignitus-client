@@ -7,7 +7,7 @@ import {
   Heading5,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-const interfaceDropDown: React.FC = () => (
+export const interfaceDropDown: React.FC = () => (
   <D.DropDownContainer>
     <Heading3>DropDowns</Heading3>
     <hr />
@@ -20,5 +20,3 @@ const interfaceDropDown: React.FC = () => (
     <DefaultDropdown options={cars} label={'cars'} display="block" />
   </D.DropDownContainer>
 );
-
-export default interfaceDropDown;

@@ -3,7 +3,7 @@ import {StyledHeading2} from '../../../../styles';
 import {UnderConstructionContainer, Container} from '../style';
 import {WebsiteUnderConstruction} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components/index';
 
-const interfaceUnderConstruction: React.FC = () => (
+export const interfaceUnderConstruction: React.FC = () => (
   <Container>
     <StyledHeading2>UnderConstruction ★</StyledHeading2>
     <hr />
@@ -12,5 +12,3 @@ const interfaceUnderConstruction: React.FC = () => (
     </UnderConstructionContainer>
   </Container>
 );
-
-export default interfaceUnderConstruction;

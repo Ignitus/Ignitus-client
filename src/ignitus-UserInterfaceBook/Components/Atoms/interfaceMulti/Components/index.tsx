@@ -3,7 +3,7 @@ import {MultiMediaInputContainer} from '../styles';
 import {DefaultMultiMediaInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
 import {StyledHeading2} from '../../../../styles';
 
-const interfaceMultiMediaInput = () => (
+export const interfaceMultiMediaInput = () => (
   <MultiMediaInputContainer>
     <StyledHeading2>Multimedia Text Input </StyledHeading2>
     <hr />
@@ -16,5 +16,3 @@ const interfaceMultiMediaInput = () => (
     />
   </MultiMediaInputContainer>
 );
-
-export default interfaceMultiMediaInput;

@@ -10,7 +10,7 @@ import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums'
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
 
-const interfaceIconInput = () => (
+export const interfaceIconInput = () => (
   <InputContainer>
     <Heading3>Input with Icon </Heading3>
     <hr />
@@ -35,5 +35,3 @@ const interfaceIconInput = () => (
     />
   </InputContainer>
 );
-
-export default interfaceIconInput;

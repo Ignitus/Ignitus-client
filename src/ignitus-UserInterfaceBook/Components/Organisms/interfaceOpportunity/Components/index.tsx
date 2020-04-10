@@ -5,7 +5,7 @@ import Opportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/igni
 import OpportunityFilters from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-filterComponents/OpportunityFilters/OpportunityFilters';
 import { ProfileCard } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
-const interfaceOpportunity: React.FC = () => (
+export const interfaceOpportunity: React.FC = () => (
   <CardLayoutContainer>
     <StyledHeading2>Opportunity</StyledHeading2>
     <hr />
@@ -18,5 +18,3 @@ const interfaceOpportunity: React.FC = () => (
     <OpportunityFilters />
   </CardLayoutContainer>
 );
-
-export default interfaceOpportunity;
