@@ -1,7 +1,7 @@
 import {
   selectTestimonialState,
   makeSelectTestimonialData,
-} from './selectors';
+} from './selectors.ts';
 
 describe('Testimonial Selectors', () => {
   describe('selectTestimonialState', () => {

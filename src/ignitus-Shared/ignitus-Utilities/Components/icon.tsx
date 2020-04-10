@@ -10,9 +10,9 @@ import {AppIcon} from '../../types/iconsTypes/iconEnums';
 import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon/messageIcon';
 import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
 import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
-import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon/mentorsIcon';
-import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown/keyBoardArrowDown';
-import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight/KeyBoardArrowRight';
+import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon';
+import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
+import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight';
 import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
 import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon/createIcon';
 import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/clearIcon';
@@ -22,7 +22,7 @@ import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
 import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
 import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
-import GooglePlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon/googlePlusIcon';
+import GooglePlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon';
 import InfoIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/infoIcon';
 import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdfIcon';
 import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
@@ -32,6 +32,9 @@ import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/c
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
+import BookmarkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
+import FileIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
+import MapMarkerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
 import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
@@ -88,6 +91,15 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.MentorsIcon:
       return <MentorsIcon {...rest} />;
 
+    case AppIcon.FileIcon:
+      return <FileIcon {...rest} />;
+
+    case AppIcon.MapMarkerIcon:
+      return <MapMarkerIcon {...rest} />;
+
+    case AppIcon.BookmarkIcon:
+      return <BookmarkIcon {...rest} />;
+
     case AppIcon.KeyBoardArrowDown:
       return <KeyBoardArrowDown {...rest} />;
 
@@ -116,7 +128,7 @@ const Icon = ({name, ...rest}: Props) => {
       return <NotificationIcon {...rest} />;
 
     case AppIcon.VideoLibIcon:
-      return <VideoLibraryIcon {...rest} />
+      return <VideoLibraryIcon {...rest} />;
 
     case AppIcon.GithubIcon:
       return <GithubIcon {...rest} />;
@@ -134,7 +146,7 @@ const Icon = ({name, ...rest}: Props) => {
       return <PdfIcon {...rest} />;
 
     case AppIcon.PollIcon:
-        return <PollIcon {...rest} />;
+      return <PollIcon {...rest} />;
 
     case AppIcon.LibraryBooksIcon:
       return <LibraryBooksIcon {...rest} />;
@@ -149,7 +161,7 @@ const Icon = ({name, ...rest}: Props) => {
       return <CopyIcon {...rest} />;
 
     case AppIcon.CameraIcon:
-      return <CameraIcon {...rest}/>
+      return <CameraIcon {...rest} />;
   }
 };
 
