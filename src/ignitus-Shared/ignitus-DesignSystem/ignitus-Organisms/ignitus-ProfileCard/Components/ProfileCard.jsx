@@ -7,22 +7,23 @@ import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { GreyOne } from '../../../ignitus-Atoms/colors';
 
 const ProfileCard = () => (
-  <S.ProfileDiv>
-    <S.ProfileContainer>
-      <S.ProfileTrack>
-        <TextIconContainer
-          content="Track Sophi's progress"
-          icon={AppIcon.BookmarkIcon}
-          iconSize="2.5"
-          direction="reverse"
-          contentColor={GreyOne}
-        />
-      </S.ProfileTrack>
-      <S.ContentDiv>
-        <S.ImageContainer>
-          <img src="https://storage.googleapis.com/ignitus_assets/ig-avatars/Team_avatar-eugene.png" alt="ProfileLogo" />
-        </S.ImageContainer>
-        <S.DetailsContainer>
+  <S.Container>
+    <S.TopSection>
+      <TextIconContainer
+        content="Track Sophi's progress"
+        icon={AppIcon.BookmarkIcon}
+        iconSize="2.5"
+        direction="reverse"
+        contentColor={GreyOne}
+      />
+    </S.TopSection>
+
+    <S.BottomSection>
+      <S.LeftRow>
+        <div>
+          <S.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" alt="ProfileLogo" />
+        </div>
+        <div>
           <S.ProfileHeading>Sophia Carter</S.ProfileHeading>
           <S.ProfileSubHeading>Literature Student</S.ProfileSubHeading>
           <TextIconContainer
@@ -32,8 +33,9 @@ const ProfileCard = () => (
             iconDistance={10}
           />
           <DropDownButton />
-        </S.DetailsContainer>
-      </S.ContentDiv>
+        </div>
+      </S.LeftRow>
+
       <S.SocialDiv>
         <S.SocialIcons>
           <S.SocialLinks href="">
@@ -62,8 +64,8 @@ const ProfileCard = () => (
           />
         </S.SocialContact>
       </S.SocialDiv>
-    </S.ProfileContainer>
-  </S.ProfileDiv>
+    </S.BottomSection>
+  </S.Container>
 );
 
 const DropDownButton = () => (
@@ -88,12 +90,12 @@ const TextIconContainer = ({
   contentDistance,
   contentColor,
 }) => (
-  <S.TextIconContainer direction={direction} contentDistance={contentDistance}>
-    <S.TextIcon name={icon} size={iconSize} />
-    <S.TextIconContent iconDistance={iconDistance} contentColor={contentColor}>
-      {content}
-    </S.TextIconContent>
-  </S.TextIconContainer>
-);
+    <S.TextIconContainer direction={direction} contentDistance={contentDistance}>
+      <S.TextIcon name={icon} size={iconSize} />
+      <S.TextIconContent iconDistance={iconDistance} contentColor={contentColor}>
+        {content}
+      </S.TextIconContent>
+    </S.TextIconContainer>
+  );
 
 export default withErrorBoundary(ProfileCard);

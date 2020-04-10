@@ -90,7 +90,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
-        <Route path="/profileList" component={ProfileCard} />
         <Route
           path="/flow/emailConfirmationFlow"
           component={EmailConfirmationFlow}

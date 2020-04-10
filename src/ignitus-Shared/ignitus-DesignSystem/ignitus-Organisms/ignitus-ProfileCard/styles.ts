@@ -2,8 +2,11 @@ import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
 import { flexibleColDiv, flexibleRowDiv, Link } from '../../shared';
 import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
-import Icon from '../../../ignitus-Utilities/Components/icon';
+
 import { maximumWidthQuery } from '../../ignitus-Atoms/media';
+import { XXXL, SemiBold } from '../../ignitus-Atoms/fonts';
+
+import Icon from '../../../ignitus-Utilities/Components/icon';
 
 type TextIconProps = {
   contentDistance?: string;
@@ -19,35 +22,35 @@ type TextProps = {
   contentColor?: string;
 };
 
-export const ProfileDiv = styled(flexibleColDiv)`
-  padding: 2rem;
-  margin-top: 100px;
-`;
-
-export const ProfileContainer = styled(flexibleRowDiv)`
-  border-radius: 10px;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
-  margin: 0.5rem;
-  padding: 2rem 1rem;
-  padding-top: 1px;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: flex-start;
 `;
 
-export const ProfileTrack = styled.div`
-  flex: 1 100%;
+export const TopSection = styled.div`
   text-align: end;
 `;
 
-export const ContentDiv = styled(flexibleRowDiv)`
-  padding: 0.5rem;
-  padding-left: 2rem;
-  flex: 1 70%;
-  flex-wrap: wrap;
-  align-items: flex-end;
+export const BottomSection = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const LeftRow = styled(flexibleRowDiv)``;
+
+export const Avatar = styled.img`
+  width: 10rem;
+  border-radius: 1rem;
+`;
+
+export const MiddleRow = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ImageContainer = styled(flexibleRowDiv)`
@@ -60,19 +63,9 @@ export const ImageContainer = styled(flexibleRowDiv)`
   }
 `;
 
-export const DetailsContainer = styled.div`
-  flex: auto;
-  padding: 0.5em 0 0 3rem;
-  align-items: center;
-`;
-
 export const ProfileHeading = styled(Heading1)`
-  flex: 1;
-  font-size: 40px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	word-spacing: 1.5px;
-  margin-bottom: 0.65rem;
+  font-size: ${XXXL};
+  font-weight: ${SemiBold};
 `;
 
 export const ProfileSubHeading = styled(Heading4)`
