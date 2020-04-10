@@ -6,7 +6,7 @@ import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/e
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { Props } from '../types';
 
-export const ProfileCard = withErrorBoundary(() => (
+export const UserProfileCard = withErrorBoundary(() => (
   <S.Container>
     <S.TopSection>
       <S.Paragraph margin="0 0.5rem 0 0">Track Sophi progress</S.Paragraph>

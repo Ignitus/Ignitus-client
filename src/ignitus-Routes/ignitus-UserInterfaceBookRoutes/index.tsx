@@ -23,6 +23,8 @@ import {interfaceDashBoardFooter} from '../../ignitus-UserInterfaceBook/Componen
 import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
 import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
+import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
+import { UserProfileCard } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/index';
 
 const Container = styled.div`
   display: flex;
@@ -119,6 +121,10 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/dashBoardFooter"
           component={interfaceDashBoardFooter}
         />
+
+        <Route path="/interface/filters" component={interfaceFilters} />
+
+        <Route path="/interface/userProfile" component={UserProfileCard} />
 
         <Route path="/interface/overlay" component={interfaceOverlay} />
       </Switch>
