@@ -24,7 +24,7 @@ import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Ato
 import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
-import { UserProfileCard } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/index';
+import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 
 const Container = styled.div`
   display: flex;
@@ -124,7 +124,7 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
 
         <Route path="/interface/filters" component={interfaceFilters} />
 
-        <Route path="/interface/userProfile" component={UserProfileCard} />
+        <Route path="/interface/userProfile" component={interfaceUserProfile} />
 
         <Route path="/interface/overlay" component={interfaceOverlay} />
       </Switch>
