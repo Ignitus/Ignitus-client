@@ -1,14 +1,16 @@
 import React from 'react';
-import { InputContainer } from '../styles';
+
 import { DefaultInput } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultInput/Components';
+
 import {
-  Heading3,
+  Heading2,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../styles';
 
 export const interfaceInput: React.FC = () => (
-  <InputContainer>
-    <Heading3>Input Fields</Heading3>
+  <Interface>
+    <Heading2>Input Fields</Heading2>
     <hr />
     <DefaultInput placeholder={'First Name'} type={'text'} name={'name'}/>
-  </InputContainer>
+  </Interface>
 );

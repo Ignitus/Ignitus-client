@@ -1,11 +1,12 @@
 import React from 'react';
-import {MultiMediaInputContainer} from '../styles';
-import {DefaultMultiMediaInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
-import {Heading3} from '../../../../styles';
+
+import { DefaultMultiMediaInput } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
+import { Interface } from '../../../../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceMultiMediaInput = () => (
-  <MultiMediaInputContainer>
-    <Heading3>Multimedia Text Input </Heading3>
+  <Interface>
+    <Heading2>Multimedia Text Input </Heading2>
     <hr />
 
     <DefaultMultiMediaInput
@@ -14,5 +15,5 @@ export const interfaceMultiMediaInput = () => (
       }
       name={'name'}
     />
-  </MultiMediaInputContainer>
+  </Interface>
 );

@@ -7,7 +7,7 @@ import {
 
 import { DefaultIconInput } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components';
 import { AppIcon } from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import { Interface } from 'readline';
+import { Interface } from '../../../../styles';
 
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
