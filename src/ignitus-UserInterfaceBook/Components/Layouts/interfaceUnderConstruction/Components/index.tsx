@@ -1,14 +1,16 @@
 import React from 'react';
-import {Heading3} from '../../../../styles';
-import {UnderConstructionContainer, Container} from '../style';
-import {WebsiteUnderConstruction} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components/index';
+
+import { UnderConstructionContainer } from '../style';
+import { WebsiteUnderConstruction } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-UnderContruction/Components/index';
+import { Interface } from '../../../../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceUnderConstruction: React.FC = () => (
-  <Container>
-    <Heading3>UnderConstruction ★</Heading3>
+  <Interface>
+    <Heading2>UnderConstruction</Heading2>
     <hr />
     <UnderConstructionContainer>
       <WebsiteUnderConstruction />
     </UnderConstructionContainer>
-  </Container>
+  </Interface>
 );

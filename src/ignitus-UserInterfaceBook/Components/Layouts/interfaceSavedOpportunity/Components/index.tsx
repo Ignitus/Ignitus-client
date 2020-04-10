@@ -1,13 +1,15 @@
 import React from 'react';
-import {Heading3} from '../../../../styles';
-import {Container, Grid} from '../style';
-import {List} from '../constants';
-import {Opportunity} from '../types';
+
+import { Grid } from '../style';
+import { List } from '../constants';
+import { Opportunity } from '../types';
 import DashBoardOpportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../styles';
 
 export const interfaceSavedOpportunity: React.FC = () => (
-  <Container>
-    <Heading3>Opportunities Saved Layout ★</Heading3>
+  <Interface>
+    <Heading2>Opportunities Saved Layout</Heading2>
     <hr />
     <Grid>
       {List.map(({title, description, subtitle, src}: Opportunity) => (
@@ -20,5 +22,5 @@ export const interfaceSavedOpportunity: React.FC = () => (
         />
       ))}
     </Grid>
-  </Container>
+  </Interface>
 );
