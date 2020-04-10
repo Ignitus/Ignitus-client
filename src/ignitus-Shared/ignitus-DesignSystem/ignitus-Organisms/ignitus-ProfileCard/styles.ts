@@ -158,7 +158,7 @@ export const DropDownMenuListItem = styled.li`
   font-size: 14px;
   width: 200px;
 
-  &:first-child {
+  &:first-of-type {
     border-top-left-radius: 10px;
   }
 
