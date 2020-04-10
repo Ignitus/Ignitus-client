@@ -4,7 +4,6 @@ import React from 'react';
 import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { Paragraph } from '../../../ignitus-Atoms/typography';
 import { Props } from '../types';
 
 export const ProfileCard = withErrorBoundary(() => (
