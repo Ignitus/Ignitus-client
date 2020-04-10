@@ -1,3 +1,6 @@
+$base-color: #000e8c;
+$hover-color: #f9bf64;
+
 .navbar {
   align-items: center;
   display:flex;
@@ -22,6 +25,16 @@
   align-self: stretch;
 }
 
+.navlink{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
 #burger{
   width:1.5rem;
   height:1.5rem;
@@ -34,7 +47,7 @@
 
 .line{
   display:block;
-  background-color:#000e8c;
+  background-color:$base-color;
   padding:0.1rem 0.8rem;
   width:0.1rem;
   margin:0.3rem;
@@ -45,12 +58,10 @@
 .navbar.whitenav{
   background-color:#fff;
   .navlink{
-    color:#000e8c;
-    font-size: 14px;
-    font-weight: 700;
+    color:$base-color;
 
     &:hover {
-      color: #f9bf64;
+      color: $hover-color;
     }
   }
 }
@@ -101,7 +112,7 @@
   }
 
   .navlink{
-    color:#000e8c;
+    color:$base-color;
   }
 
 }

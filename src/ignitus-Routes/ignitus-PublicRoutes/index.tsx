@@ -51,7 +51,18 @@ const AboutUs = Loadable({
 export const PublicRoutes: React.FunctionComponent = () => {
   return (
     <React.Fragment>
-      <Navigation.components.Navigation />
+      <Switch>
+        <Route
+          exact
+          path={[
+            "/", "/aboutus"
+          ]}
+          render={() => <Navigation.components.Navigation dynamicNavigation/>}
+        />
+        <Route
+          component={Navigation.components.Navigation}
+        />
+      </Switch>
       <Switch>
         <Route
           exact
