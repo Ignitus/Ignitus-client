@@ -27,12 +27,13 @@ export const BottomContainer = styled.div`
   margin-top: 0.5rem;
 `;
 
-export const Input = styled.textarea`
+export const Input = styled.textarea<{ initialHeight?: string }>`
   flex: 1;
   border: none;
   outline: none;
   overflow: hidden;
   font-size: ${SM};
+  height: ${ props => props.initialHeight ? props.initialHeight : 'auto' };
   resize: none;
   &::placeholder {
     color: ${C.GreyOne};

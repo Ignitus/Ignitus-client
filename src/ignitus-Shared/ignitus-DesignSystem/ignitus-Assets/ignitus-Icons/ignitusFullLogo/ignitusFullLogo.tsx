@@ -3,7 +3,6 @@ import {HTMLAttributes} from 'react';
 type Props = HTMLAttributes<SVGElement>;
 
 const IgnitusFullLogo = ({title = 'KeyBoardArrowDown', ...rest}: Props) => {
-  console.log('dd', {...rest});
   return (
     <svg
       viewBox="0 0 322 104"

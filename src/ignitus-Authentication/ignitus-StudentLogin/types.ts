@@ -3,4 +3,5 @@ import {authData} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templa
 export interface LogInProps {
   logInRequest: Function;
   studentLoginData: authData;
+  clearPreviousLogin: Function;
 };

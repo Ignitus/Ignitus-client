@@ -12,10 +12,10 @@ export const WebsiteUnderConstruction = () => (
     <S.TextContainer>
       <Heading3>Our site is under maintenance</Heading3>
       <Paragraph>
-        We are working on making better experiences for you. 🔨
+        We are working on making better experiences for you. <span role="img" aria-label="hammer">🔨</span>
       </Paragraph>
       <Paragraph>
-        We should be back shortly, Thank you for the patience. ☘️
+        We should be back shortly, Thank you for the patience. <span role="img" aria-label="flake">☘️</span>
       </Paragraph>
     </S.TextContainer>
   </S.Container>

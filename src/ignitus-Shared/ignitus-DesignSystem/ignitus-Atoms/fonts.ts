@@ -4,6 +4,7 @@ export const SecondaryFamily: string = 'Open Sans, sans-serif';
 /* Font Weights */
 export const Light: number = 300;
 export const Normal: number = 400;
+export const SemiNormal: number = 500;
 export const Medium: number = 600;
 export const SemiBold: number = 700;
 export const Bold: number = 800;
