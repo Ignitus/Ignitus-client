@@ -6,7 +6,7 @@ import OpportunityFilters from '../../../../../ignitus-Shared/ignitus-DesignSyst
 
 const interfaceOpportunity: React.FC = () => (
   <CardLayoutContainer>
-    <StyledHeading2>Card Layout ★</StyledHeading2>
+    <StyledHeading2>Opportunity</StyledHeading2>
     <hr />
     <Opportunity />
     <OpportunityFilters />
