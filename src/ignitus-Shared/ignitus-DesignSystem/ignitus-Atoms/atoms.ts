@@ -55,13 +55,6 @@ export const BottomSection = styled.section`
   }
 `;
 
-export const BottomRow = styled.div`
-  margin: 16px 90px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 // We plan to use Container as parent element of in lot of components.
 export const Container = styled.div`
   ${minimumWidthQuery[0]} {

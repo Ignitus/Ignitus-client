@@ -1,14 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
 import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
 import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
-import Contributors from '../../ignitus-HomePage/ignitus-Contributors';
-import GetStarted from '../../ignitus-HomePage/ignitus-GetStarted';
-import Introduction from '../../ignitus-HomePage/ignitus-Introduction';
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
-import WhatWeDo from '../../ignitus-HomePage/ignitus-WhatWeDo';
-import Partner from '../../ignitus-HomePage/ignitus-Partners';
 
 // We will seperate these routes to seperate files in upcoming days.
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
@@ -20,16 +15,23 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
+import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
+import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
+import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { SupportedBy } from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
+import { WhatWeDo } from '../../ignitus-HomePage/ignitus-WhatWeDo/Components';
+import { Introduction } from '../../ignitus-HomePage/ignitus-Introduction/Components';
+import { GetStarted } from '../../ignitus-HomePage/ignitus-GetStarted/Components';
+import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 
+import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
-import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import profileDetailView from '../../ignitus-Profile/ignitus-StudentProfile/Components/profileDetailView';
+
+
+
 
 // RouteBased CodeSplitting.
 
@@ -43,7 +45,7 @@ const Loading: React.FunctionComponent = () => (
 
 const AboutUs = Loadable({
   loader: () =>
-    import('../../ignitus-AboutPage/ignitus-About/Components/About'),
+    import('../../ignitus-AboutPage/ignitus-About/Components'),
   loading: Loading,
 });
 
@@ -56,14 +58,13 @@ export const PublicRoutes: React.FunctionComponent = () => {
           exact
           path="/"
           render={() => (
-            <div className="content">
-              <Introduction.components.Introduction />
-              <WhatWeDo.components.WhatWeDo />
-              <Contributors.components.Contributors />
-              <Partner.components.Partner />
+            <Fragment>
+              <Introduction />
+              <WhatWeDo />
+              <SupportedBy />
               <Testimonial.containers.TestimonialContainer />
-              <GetStarted.components.GetStarted />
-            </div>
+              <GetStarted />
+            </Fragment>
           )}
         />
         <Route path="/aboutus" component={AboutUs} />
@@ -89,7 +90,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
-
         <Route
           path="/flow/emailConfirmationFlow"
           component={EmailConfirmationFlow}
