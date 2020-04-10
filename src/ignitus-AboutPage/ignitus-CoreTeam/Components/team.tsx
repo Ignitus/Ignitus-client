@@ -1,12 +1,12 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
-import {Data} from '../constants';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { Data } from '../constants';
+import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as S from '../Styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {Team, TeamItemProps} from '../types';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
+import { Team, TeamItemProps } from '../types';
+import { AppIcon } from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const PureCoreTeam = ({team}: any) => (
@@ -18,17 +18,13 @@ const PureCoreTeam = ({team}: any) => (
 const TeamItem = ({
   item: {title, img, description, linkedin, angellist},
 }: TeamItemProps) => {
-  const [value, setValue] = React.useState(false);
   return (
-    <S.TeamCardContainer
-      onMouseOver={() => setValue(true)}
-      onMouseOut={() => setValue(false)}
-    >
+    <S.TeamCardContainer>
       <S.TeamCard>
         <S.TeamItemImg src={img} alt={`avatar ${title}`} />
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
         <Paragraph>{description}</Paragraph>
-        <S.LinkWrapper toggle={value}>
+        <S.LinkWrapper>
           <S.Link href={linkedin} color="black">
             <S.LinkedIn name={AppIcon.LinkedInIcon} />
           </S.Link>

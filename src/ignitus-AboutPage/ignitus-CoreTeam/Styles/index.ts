@@ -3,12 +3,9 @@ import styled from '@emotion/styled';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import Icon from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import {Heading6} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { minimumWidthQuery } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { Heading6 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-type LinkWrapperProps = {
-  toggle: boolean;
-};
 type TeamItemTitleProps = {
   color: string;
 };
@@ -20,22 +17,14 @@ export const TeamItemTitle = styled(Heading6)`
 
 styled.a(props => ({color: props.color}));
 
-export const LinkWrapper = styled.div<LinkWrapperProps>(
-  {
-    flexDirection: 'row',
-    width: '100%',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-  },
-  props => ({display: props.toggle ? 'flex' : 'none'}),
-);
+export const LinkWrapper = styled(T.flexibleRowDiv)`
+  width: 100%;
+  margin-top: 5px;
+  justify-content: space-evenly;
+`;
 
-export const PureCoreTeam = styled.div`
+export const PureCoreTeam = styled(T.flexibleColDiv)`
   margin-top: 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const TeamContainer = styled(T.Container)`
@@ -51,11 +40,7 @@ export const TeamItemImg = styled.img`
   width: 6em;
 `;
 
-export const TeamCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+export const TeamCard = styled(T.flexibleColDiv)`
   border-radius: 16px;
   text-align: center;
   padding: 1em;
@@ -67,7 +52,6 @@ export const TeamCard = styled.div`
 `;
 
 export const TeamCardContainer = styled.div`
-  cursor: pointer;
   margin-top: 0.5em;
   height: 15em;
   flex: 0 0 35%;
@@ -88,11 +72,6 @@ export const TeamCardContainer = styled.div`
   ${minimumWidthQuery[2]} {
     flex: 0 0 22%;
     max-width: 22%;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
   }
 `;
 
