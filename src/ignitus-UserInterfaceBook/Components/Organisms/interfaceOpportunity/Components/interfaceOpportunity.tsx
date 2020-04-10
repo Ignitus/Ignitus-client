@@ -3,7 +3,7 @@ import {StyledHeading2} from '../../../../styles';
 import {CardLayoutContainer, Section} from '../style';
 import Opportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
 import OpportunityFilters from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-filterComponents/OpportunityFilters/OpportunityFilters';
-import ProfileCard from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/ProfileCard';
+import { ProfileCard } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
 const interfaceOpportunity: React.FC = () => (
   <CardLayoutContainer>

@@ -7,7 +7,7 @@ import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { Paragraph } from '../../../ignitus-Atoms/typography';
 import { Props } from '../types';
 
-const ProfileCard = () => (
+export const ProfileCard = withErrorBoundary(() => (
   <S.Container>
     <S.TopSection>
       <S.Paragraph margin="0 0.5rem 0 0">Track Sophi progress</S.Paragraph>
@@ -49,7 +49,7 @@ const ProfileCard = () => (
       </S.RightRow>
     </S.BottomSection>
   </S.Container>
-);
+));
 
 const DropDownButton = () => (
   <S.DropDownBtnContainer>
@@ -70,6 +70,3 @@ const IconContent = ({ content, name }: Props) => (
     <S.Paragraph margin="0 0 0 0.5rem" primary>{content}</S.Paragraph>
   </S.Wrapper>
 );
-
-
-export default withErrorBoundary(ProfileCard);
