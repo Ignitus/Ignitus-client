@@ -36,8 +36,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={communityToggle}>
            <li> <a href="#!">Personal</a> </li>
            <li> <a href="#!">Partners</a> </li>
-           <li> <a target="_blank" href="https://www.quora.com/What-are-Ignitus-and-WooTech-about">Ignitus Woo-Tech</a> </li>
-           <li> <a target="_blank" href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7">Ignitus Scholar</a> </li>
+           <li> <a target="_blank" rel="noopener noreferrer" href="https://www.quora.com/What-are-Ignitus-and-WooTech-about">Ignitus Woo-Tech</a> </li>
+           <li> <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7">Ignitus Scholar</a> </li>
         </S.FooterLinks>
       </S.FooterSections>
       <S.FooterSections>
@@ -49,9 +49,9 @@ const PureFooter: React.FunctionComponent<Props> = ({
           Company
         </S.StyledHeading>
         <S.FooterLinks toggle={companyToggle}>
-        <li> <a target="_blank" href="https://www.facebook.com/Ignitus.org/">About</a> </li>
-        <li> <a target="_blank" href="https://angel.co/ignitus-2/jobs">Careers</a> </li>
-        <li> <a target="_blank" href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c">Blog</a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Ignitus.org/">About</a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://angel.co/ignitus-2/jobs">Careers</a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c">Blog</a> </li>
         </S.FooterLinks>
       </S.FooterSections>
 
@@ -70,14 +70,14 @@ const PureFooter: React.FunctionComponent<Props> = ({
 
     <S.Socials>
       <S.FooterSocial>
-        <li> <a target="_blank" href="https://www.facebook.com/Ignitus.org/"> <i className="fa fa-facebook"/></a> </li>
-        <li> <a target="_blank" href="https://twitter.com/ignitus_org/"> <i className="fa fa-twitter"/></a> </li>
-        <li> <a target="_blank" href="https://angel.co/ignitus-2"> <i className="fa fa-angellist"/></a> </li>
-        <li> <a target="_blank" href="https://bit.ly/JoinIgnitusSlack"> <i className="fa fa-slack"/></a> </li>
-        <li> <a target="_blank" href="https://www.linkedin.com/company/13733583/admin/updates/"> <i className="fa fa-linkedin"/></a> </li>
-        <li> <a target="_blank" href="https://github.com/Ignitus"> <i className="fa fa-github"/></a> </li>
-        <li> <a target="_blank" href="https://medium.com/@social_63397"> <i className="fa fa-medium"/></a> </li>
-        <li> <a target="_blank" href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"> <i className="fa fa-youtube"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Ignitus.org/"> <i className="fa fa-facebook"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ignitus_org/"> <i className="fa fa-twitter"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://angel.co/ignitus-2"> <i className="fa fa-angellist"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/JoinIgnitusSlack"> <i className="fa fa-slack"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/13733583/admin/updates/"> <i className="fa fa-linkedin"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ignitus"> <i className="fa fa-github"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@social_63397"> <i className="fa fa-medium"/></a> </li>
+        <li> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"> <i className="fa fa-youtube"/></a> </li>
       </S.FooterSocial>
     </S.Socials>
     <S.Copyright>&copy; 2018 Copyright Ignitus</S.Copyright>

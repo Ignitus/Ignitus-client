@@ -1,1 +1,0 @@
-export { default as interfaceSeparator } from './interfaceSeparator';

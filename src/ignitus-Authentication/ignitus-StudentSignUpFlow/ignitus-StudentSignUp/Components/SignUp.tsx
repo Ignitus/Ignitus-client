@@ -10,17 +10,20 @@ import {
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
 import {Props} from '../types';
 
-const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) => {
+const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData, clearPreviousSignUp}) => {
   const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
 
   const handleSubmit = e => {
     e.preventDefault();
+    clearPreviousSignUp();
 
     if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       setState({
         ...state,
         emptyMessage: true,
+        invalidEmail: false,
+        equalmessage: false,
       });
       return;
     }
@@ -42,6 +45,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) =>
           ...state,
           emptyMessage: false,
           invalidEmail: true,
+          equalmessage: false,
         });
         return;
       }
@@ -58,15 +62,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData}) =>
     }
 
     signUpRequest(email, password);
-    setState({
-      email: '',
-      password: '',
-      confirmPassword: '',
-      showPassword: false,
-      emptyMessage: false,
-      equalmessage: false,
-      invalidEmail: false,
-    });
+    setState(SignupStatePayload);
   };
 
   return (

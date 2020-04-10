@@ -3,4 +3,5 @@ import {authData} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Tem
 export interface Props {
   signUpRequest: Function;
   studentSignUpData: authData;
+  clearPreviousSignUp: Function;
 }
