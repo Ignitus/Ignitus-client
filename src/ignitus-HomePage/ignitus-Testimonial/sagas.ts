@@ -9,7 +9,8 @@ function* getTestimonialData() {
     const data = yield call(api.getTestimonialData);
     yield put({type: t.SET_TESTIMONIAL_DATA, data});
   } catch (e) {
-    throw new e;
+    console.error(e);
+    throw e;
   }
 }
 
