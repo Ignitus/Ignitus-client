@@ -10,7 +10,7 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
       <S.Paragraph>
-        Guidance 🎓 in well researched and goal-oriented courses, getting Internships
+        Guidance 🎓 in well researched and goal-oriented courses, Internships
         etc.
       </S.Paragraph>
     </T.TopSection>

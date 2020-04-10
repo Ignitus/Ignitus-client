@@ -7,23 +7,26 @@ import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingCo
 
 export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
   <I.Container>
-    {/* <I.Torch src={T.TORCH} alt="Ignitus Torch" /> */}
     <I.LeftSection>
-      <I.Title>Welcome to Ignitus</I.Title>
+      <I.TitleImage>
+        <I.Title>Welcome to Ignitus</I.Title>
+        <I.Torch src={T.TORCH} alt="Ignitus Torch" />
+      </I.TitleImage>
       <I.PrimaryText>
-        Get handpicked top-quality global research <br />
-        and industrial internships, for <span className="bold-txt">free</span>!
+        Get handpicked top-quality global research and industrial internships,
+        for <b>free!</b>
       </I.PrimaryText>
       <I.SecondaryText>
-        Ignite your resume and get the{' '}
-        <span className="bold-txt">
-          best global <br />
-          opportunities
-        </span>{' '}
+        Ignite your resume and get the <b>best global opportunities </b>
         and Skyrocketing your career
       </I.SecondaryText>
+      <I.Button category="primary" size="large">
+        SIGN UP
+      </I.Button>
     </I.LeftSection>
 
-    <I.RightSection />
+    <I.RightSection>
+      <I.Resume src={T.RESUME} alt="resume" />
+    </I.RightSection>
   </I.Container>
 ));
