@@ -33,6 +33,7 @@ export const Team = withErrorBoundary(({
 }: TeamPropType) => {
   useEffect(() => {
     getContributorsData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (isFetching) {

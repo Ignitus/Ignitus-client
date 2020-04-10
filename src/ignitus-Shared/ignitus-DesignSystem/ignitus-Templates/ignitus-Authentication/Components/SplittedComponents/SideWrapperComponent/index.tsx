@@ -17,7 +17,7 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
 
     <div className="text-below-image text-center">
       <p className="mb-5">Let&apos;s get started</p>
-      <p>Skyrocket your career with best global opportunities. 🎓</p>
+      <p>Skyrocket your career with best global opportunities. <span role="img" aria-label="hat">🎓</span></p>
       <p>
         <Link
           to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`}

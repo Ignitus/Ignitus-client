@@ -34,6 +34,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
 
     useEffect(() => {
       getTestimonialData();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
