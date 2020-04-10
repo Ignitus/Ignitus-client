@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/aria-role */
-import React, { useState, FunctionComponent } from 'react';
+import React, { useState, FunctionComponent, useEffect } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
@@ -8,17 +8,19 @@ import {
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 import { LogInProps } from '../types';
 
-const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData }) => {
+const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData, clearPreviousLogin }) => {
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    clearPreviousLogin();
 
     if (isEmpty(email) || isEmpty(password)) {
       setState({
         ...state,
         emptyMessage: true,
+        invalidEmail: false,
       });
       return;
     }
@@ -39,17 +41,13 @@ const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData }
         setState({
           ...state,
           invalidEmail: true,
+          emptyMessage: false,
         });
         return;
       }
     }
     logInRequest(email, password);
-    setState({
-      ...state,
-      email: '',
-      password: '',
-      emptyMessage: false,
-    });
+    setState(LoginStatePayload);
   };
 
   return (
