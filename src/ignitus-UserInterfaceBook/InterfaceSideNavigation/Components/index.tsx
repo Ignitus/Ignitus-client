@@ -29,7 +29,7 @@ const Layers = ({edge, nesting, level}: any) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   return (
     <React.Fragment key={edge.title}>
-      {edge.route == undefined && (
+      {edge.route === undefined && (
         <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting} level={level}>
           {' '}
           <S.Heading nesting={nesting}>{edge.title}</S.Heading>{' '}

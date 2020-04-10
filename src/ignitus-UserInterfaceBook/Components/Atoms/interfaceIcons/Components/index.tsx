@@ -14,7 +14,7 @@ import {
 export const interfaceIcons: React.FC = () => (
   <I.IconsContainer>
     <Heading4>We are mainly using the Material Rounded Icon Library and some other icons from Flaticon and Fa-Fa icons.</Heading4>
-    <StyledHeading2>Social Icons 🎨</StyledHeading2>
+    <StyledHeading2>Social Icons <span role="img" aria-label="paint">🎨</span></StyledHeading2>
     <IconsMapper icons={SocialIcons} />
     <hr />
     <StyledHeading2>Dashboard Icons</StyledHeading2>
