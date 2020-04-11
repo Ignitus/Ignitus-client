@@ -1,17 +1,20 @@
 import React from 'react';
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import { data } from '../constants';
-import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {data} from '../constants';
+import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
-  <T.Wrapper id="what-we-do">
+  <div id="what-we-do">
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
       <S.Paragraph>
-        Guidance <span role="img" aria-label="hat">🎓</span> in well researched and goal-oriented courses, Internships
-        etc.
+        Guidance{' '}
+        <span role="img" aria-label="hat">
+          🎓
+        </span>{' '}
+        in well researched and goal-oriented courses, Internships etc.
       </S.Paragraph>
     </T.TopSection>
     <T.BottomSection>
@@ -24,5 +27,5 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
         ))}
       </T.BottomRow>
     </T.BottomSection>
-  </T.Wrapper>
+  </div>
 ));

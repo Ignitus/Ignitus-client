@@ -14,7 +14,7 @@ interface Props {
 
 export const PureContributors = ({data, type, paragraph}: Props) => (
   <div id="contributors">
-    <T.Wrapper>
+    <div>
       <T.TopSection>
         <T.Title>{type}</T.Title>
         <S.Paragraph>
@@ -34,7 +34,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
           ))}
         </S.BottomRow>
       </T.BottomSection>
-    </T.Wrapper>
+    </div>
   </div>
 );
 

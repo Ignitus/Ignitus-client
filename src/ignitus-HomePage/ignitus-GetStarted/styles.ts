@@ -13,7 +13,7 @@ import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Ato
 
 export const Container = styled(flexibleColDiv)`
   background-color: ${IgnitusBlue};
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 3rem 1.5rem;
 `;
 

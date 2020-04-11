@@ -8,30 +8,23 @@ import {
 import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
-const ContainerBackground: string =
-  'https://storage.googleapis.com/ignitus_assets/ig-assets/splitBlueBackground.png';
-
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  background: url(${ContainerBackground}) no-repeat;
-  background-size: 54%;
-  background-position: top right;
   padding: 9rem 6rem;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 
   ${minimumWidthQuery[0]} {
     flex-direction: column;
-    background: none;
   }
   ${minimumWidthQuery[1]} {
     flex-direction: column;
-    background: none;
   }
   ${minimumWidthQuery[2]} {
     flex-direction: row;
-    background: url(${ContainerBackground}) no-repeat;
-    background-size: 54%;
-    background-position: top right;
   }
 `;
 

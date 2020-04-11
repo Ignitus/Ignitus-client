@@ -20,11 +20,6 @@ export const Paragraph = styled.p`
 
 /* Shared between partners & contirbutors component. */
 
-export const Wrapper = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-`;
-
 export const TopSection = styled.section`
   display: flex;
   flex-direction: column;
