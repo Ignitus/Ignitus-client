@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery, maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const Icon = styled.span`
@@ -13,6 +13,7 @@ export const Icon = styled.span`
 
 export const Paragraph = styled(P)`
   font-weight: ${F.SemiNormal};
+  text-align: center;
 `;
 
 export const Card = styled.div`
@@ -27,9 +28,14 @@ export const Card = styled.div`
   flex-direction: column;
   background: ${C.White};
 
+  ${maximumWidthQuery[0]} {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  
   ${minimumWidthQuery[0]} {
-    flex: 0 0 85%;
-    max-width: 85%;
+    flex: 0 0 65%;
+    max-width: 65%;
   }
   ${minimumWidthQuery[1]} {
     flex: 0 0 45.33333%;

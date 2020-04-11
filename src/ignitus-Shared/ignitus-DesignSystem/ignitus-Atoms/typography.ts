@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
+import { maximumWidthQuery, minimumWidthQuery } from './media';
 
 export const Heading1 = styled.h1`
   font-weight: ${F.Medium};
@@ -37,6 +38,26 @@ export const Heading6 = styled.h6`
   font-size: ${F.SM};
   color: ${C.IgnitusBlue};
 `;
+
+
+export const Heading9 = styled.h6`
+  font-weight: ${F.Medium};
+  color: ${C.IgnitusBlue};
+  
+  ${maximumWidthQuery[0]} {
+    font-size: ${F.XXXL};
+  }
+  ${minimumWidthQuery[0]} {
+    font-size: ${F.XXXXXL};
+  }
+  ${minimumWidthQuery[1]} {
+    font-size: ${F.XXXXXXL};
+  }
+  ${minimumWidthQuery[2]} {
+    font-size: ${F.XXXXXXXL};
+  }
+`;
+
 
 export const Paragraph = styled.p`
   font-size: ${F.SM};

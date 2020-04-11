@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
-import {minimumWidthQuery} from './ignitus-Atoms/media';
+import {minimumWidthQuery, maximumWidthQuery} from './ignitus-Atoms/media';
 import {Heading2} from './ignitus-Atoms/typography';
 
 export const Title = styled(Heading2)`
@@ -52,6 +52,10 @@ export const BottomRow = styled.div`
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+
+  ${maximumWidthQuery[0]} {
+    margin: 1rem 2rem;
+  }
 
   ${minimumWidthQuery[0]} {
     margin: 1rem 2rem;

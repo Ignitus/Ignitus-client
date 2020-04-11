@@ -2,7 +2,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery, maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {SemiNormal} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
@@ -27,6 +27,11 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
   background: ${C.White};
+
+  ${maximumWidthQuery[0]} {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
 
   ${minimumWidthQuery[0]} {
     flex: 0 0 43%;
@@ -55,4 +60,5 @@ export const Heart = styled(HeartIcon)`
 
 export const Paragraph = styled(P)`
   font-weight: ${SemiNormal};
+  text-align: center;
 `;
