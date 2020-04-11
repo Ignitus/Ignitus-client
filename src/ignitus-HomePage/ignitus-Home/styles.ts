@@ -11,13 +11,13 @@ export const HomeContainer = styled.section`
     background: none;
   }
 
-  ${minimumWidthQuery[0]} {
-    background: none;
-  }
-  ${minimumWidthQuery[1]} {
-    background: none;
-  }
   ${minimumWidthQuery[2]} {
+    background: none;
+  }
+  ${minimumWidthQuery[3]} {
+    background: none;
+  }
+  ${minimumWidthQuery[4]} {
     background: url(${ContainerBackground}) no-repeat;
     background-size: 60%;
     background-position: top right;

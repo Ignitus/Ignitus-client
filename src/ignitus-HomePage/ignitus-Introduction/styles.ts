@@ -8,10 +8,7 @@ import {
   XS,
   SM,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {
-  maximumWidthQuery,
-  minimumWidthQuery,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {Heading9} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
@@ -19,20 +16,20 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
 
-  ${maximumWidthQuery[0]} {
+  ${minimumWidthQuery[1]} {
     flex-direction: column;
     padding: 9rem 2rem;
   }
 
-  ${minimumWidthQuery[0]} {
-    flex-direction: column;
-    padding: 9rem 6rem;
-  }
-  ${minimumWidthQuery[1]} {
-    flex-direction: column;
-    padding: 9rem 6rem;
-  }
   ${minimumWidthQuery[2]} {
+    flex-direction: column;
+    padding: 9rem 6rem;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: column;
+    padding: 9rem 6rem;
+  }
+  ${minimumWidthQuery[4]} {
     flex-direction: row;
     padding: 9rem 6rem;
   }
@@ -55,16 +52,16 @@ export const PrimaryText = styled.p`
   font-weight: ${Normal};
   margin: 1rem 0;
 
-  ${maximumWidthQuery[0]} {
+  ${minimumWidthQuery[1]} {
     font-size: ${XS};
   }
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     font-size: ${SM};
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     font-size: ${MD};
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     font-size: ${XL};
   }
 `;
@@ -74,17 +71,16 @@ export const SecondaryText = styled.p`
   font-weight: ${Normal};
   margin: 1rem 0;
 
-  ${maximumWidthQuery[0]} {
+  ${minimumWidthQuery[1]} {
     font-size: ${XS};
   }
-
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     font-size: ${SM};
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     font-size: ${MD};
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     font-size: ${LG};
   }
 `;
@@ -112,13 +108,16 @@ export const Button = styled(B)`
 `;
 
 export const Resume = styled.img`
-  ${minimumWidthQuery[0]} {
-    width: 14rem;
-  }
   ${minimumWidthQuery[1]} {
-    width: 16rem;
+    width: 12rem;
   }
   ${minimumWidthQuery[2]} {
+    width: 14rem;
+  }
+  ${minimumWidthQuery[3]} {
+    width: 16rem;
+  }
+  ${minimumWidthQuery[4]} {
     width: 18rem;
   }
 `;

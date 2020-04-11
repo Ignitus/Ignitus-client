@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
-import { maximumWidthQuery, minimumWidthQuery } from './media';
+import {minimumWidthQuery} from './media';
 
 export const Heading1 = styled.h1`
   font-weight: ${F.Medium};
@@ -39,25 +39,23 @@ export const Heading6 = styled.h6`
   color: ${C.IgnitusBlue};
 `;
 
-
 export const Heading9 = styled.h6`
   font-weight: ${F.Medium};
   color: ${C.IgnitusBlue};
-  
-  ${maximumWidthQuery[0]} {
+
+  ${minimumWidthQuery[1]} {
     font-size: ${F.XXXL};
   }
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     font-size: ${F.XXXXXL};
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     font-size: ${F.XXXXXXL};
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     font-size: ${F.XXXXXXXL};
   }
 `;
-
 
 export const Paragraph = styled.p`
   font-size: ${F.SM};
@@ -72,4 +70,3 @@ export const TextLink = styled.a`
   color: ${C.GreyText};
   margin: 0;
 `;
-

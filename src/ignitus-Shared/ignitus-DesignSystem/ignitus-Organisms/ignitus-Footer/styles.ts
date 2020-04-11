@@ -7,8 +7,7 @@ import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};
-
-  ${maximumWidthQuery[1]} {
+  ${maximumWidthQuery[3]} {
     cursor: pointer;
   }
 `;
@@ -26,8 +25,7 @@ export const Container = styled.div`
   margin: 0 auto;
   max-width: 72rem;
   min-height: 20vh;
-
-  ${maximumWidthQuery[1]} {
+  ${maximumWidthQuery[3]} {
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -37,13 +35,11 @@ export const Container = styled.div`
 export const FooterSections = styled.div`
   margin: 0 2rem;
   width: max-content;
-
   h5 {
     color: ${White};
     font-weight: bold;
   }
-
-  ${maximumWidthQuery[1]} {
+  ${maximumWidthQuery[3]} {
     align-self: center;
     padding: 1rem;
     margin: 0;
@@ -57,7 +53,7 @@ export const FooterSections = styled.div`
 export const Logo = styled(Icon)`
   margin-top: 1rem;
   width: 5rem;
-  ${maximumWidthQuery[1]} {
+  ${maximumWidthQuery[3]} {
     margin: 1rem;
   }
   path {
@@ -68,20 +64,17 @@ export const Logo = styled(Icon)`
 export const FooterLinks = styled('ul')<FooterLinkprops>`
   display: flex;
   flex-direction: column;
-
   li {
     padding: 2px;
-    ${maximumWidthQuery[1]} {
+    ${maximumWidthQuery[3]} {
       align-self: center;
     }
-
     a {
       &:link,
       &:visited {
         color: ${White};
       }
     }
-
     a {
       &:hover,
       &:active {
@@ -89,8 +82,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
       }
     }
   }
-
-  ${maximumWidthQuery[1]} {
+  ${maximumWidthQuery[3]} {
     display: ${props => (props.toggle ? `none` : 'block')};
   }
 `;
@@ -102,17 +94,14 @@ export const Socials = styled.div`
 
 export const FooterSocial = styled.ul`
   display: flex;
-
   li {
     padding: 0rem 0.5rem;
-
     a {
       &:link,
       &:visited {
         color: ${White};
       }
     }
-
     a {
       &:hover,
       &:active {

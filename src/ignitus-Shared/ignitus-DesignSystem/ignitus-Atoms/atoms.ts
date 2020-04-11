@@ -41,32 +41,32 @@ export const BottomSection = styled.section`
   padding: 0 15px 0 15px;
   margin: 0 auto 0 auto;
 
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     max-width: 720px;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     max-width: 960px;
   }
-  ${minimumWidthQuery[3]} {
+  ${minimumWidthQuery[5]} {
     max-width: 1140px;
   }
 `;
 
 // We plan to use Container as parent element of in lot of components.
 export const Container = styled.div`
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     max-width: 720px;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     max-width: 960px;
   }
-  ${minimumWidthQuery[3]} {
+  ${minimumWidthQuery[5]} {
     max-width: 1140px;
   }
 `;

@@ -25,16 +25,16 @@ export const AboutContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     max-width: 720px;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     max-width: 960px;
   }
-  ${minimumWidthQuery[3]} {
+  ${minimumWidthQuery[5]} {
     max-width: 1140px;
   }
 `;

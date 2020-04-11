@@ -33,16 +33,16 @@ export const BottomSection = styled.section`
   padding: 0 15px 0 15px;
   margin: 0 auto 0 auto;
 
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[3]} {
     max-width: 760px;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     max-width: 960px;
   }
-  ${minimumWidthQuery[3]} {
+  ${minimumWidthQuery[5]} {
     max-width: 1140px;
   }
 `;
@@ -53,20 +53,20 @@ export const BottomRow = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  ${maximumWidthQuery[0]} {
-    margin: 1rem 2rem;
-  }
-
   ${minimumWidthQuery[0]} {
     margin: 1rem 2rem;
   }
+
   ${minimumWidthQuery[1]} {
     margin: 1rem 2rem;
   }
   ${minimumWidthQuery[2]} {
-    margin: 1rem 6rem;
+    margin: 1rem 2rem;
   }
   ${minimumWidthQuery[3]} {
+    margin: 1rem 4rem;
+  }
+  ${minimumWidthQuery[4]} {
     margin: 1rem 6rem;
   }
 `;

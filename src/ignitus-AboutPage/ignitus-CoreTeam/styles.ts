@@ -75,19 +75,19 @@ export const TeamCardContainer = styled.div`
   flex: 0 0 35%;
   max-width: 35%;
 
-  @media (max-width: 420px) {
+  ${minimumWidthQuery[2]} {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[3]} {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  ${minimumWidthQuery[1]} {
+  ${minimumWidthQuery[4]} {
     flex: 0 0 26%;
     max-width: 26%;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[5]} {
     flex: 0 0 22%;
     max-width: 22%;
   }
