@@ -7,6 +7,7 @@ import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/e
 import { logo } from '../constants';
 import * as S from '../styles';
 import { Props } from '../types';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 const PureFooter: React.FunctionComponent<Props> = ({
   hideUnhide,
@@ -41,7 +42,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
         </S.FooterLinks>
       </S.FooterSections>
       <S.FooterSections>
-        <img src={logo} alt="logo" />
+        <S.Logo name={AppIcon.IgnitusLogo} />
       </S.FooterSections>
 
       <S.FooterSections>

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { maximumWidthQuery } from '../../ignitus-Atoms/media';
-import { Heading3 } from '../../ignitus-Atoms/typography';
-import { White, SecondaryColor, IgnitusBlue } from '../../ignitus-Atoms/colors';
-import { FooterLinkprops } from './types';
-
+import {maximumWidthQuery} from '../../ignitus-Atoms/media';
+import {Heading3} from '../../ignitus-Atoms/typography';
+import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
+import {FooterLinkprops} from './types';
+import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};
@@ -43,15 +43,6 @@ export const FooterSections = styled.div`
     font-weight: bold;
   }
 
-  img {
-    height: auto;
-    margin-top: 1rem;
-    width: 6rem;
-    ${maximumWidthQuery[1]} {
-      margin: 1rem;
-    }
-  }
-
   ${maximumWidthQuery[1]} {
     align-self: center;
     padding: 1rem;
@@ -60,6 +51,17 @@ export const FooterSections = styled.div`
     max-width: 15rem;
     text-align: center;
     transition: max-height 1s ease-in;
+  }
+`;
+
+export const Logo = styled(Icon)`
+  margin-top: 1rem;
+  width: 5rem;
+  ${maximumWidthQuery[1]} {
+    margin: 1rem;
+  }
+  path {
+    fill: ${White};
   }
 `;
 
