@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
@@ -10,19 +10,18 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
-import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import { Footer } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
-import { OptionalNavigation as Navigation } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
-import { Home } from '../../ignitus-HomePage/ignitus-Home/Components/index';
+import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
+import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
+import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
+import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import {Footer} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
+import {OptionalNavigation as Navigation} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
+import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
-
 
 // RouteBased CodeSplitting.
 
@@ -35,11 +34,9 @@ const Loading: React.FunctionComponent = () => (
 );
 
 const AboutUs = Loadable({
-  loader: () =>
-    import('../../ignitus-AboutPage/ignitus-About/Components'),
+  loader: () => import('../../ignitus-AboutPage/ignitus-About/Components'),
   loading: Loading,
 });
-
 
 export const PublicRoutes: React.FunctionComponent = () => {
   return (
@@ -47,21 +44,13 @@ export const PublicRoutes: React.FunctionComponent = () => {
       <Switch>
         <Route
           exact
-          path={[
-            "/", "/aboutus",
-          ]}
-          render={() => <Navigation transparentNavigation/>}
+          path={['/', '/aboutus']}
+          render={() => <Navigation transparentNavigation />}
         />
-        <Route
-          component={Navigation}
-        />
+        <Route component={Navigation} />
       </Switch>
       <Switch>
-        <Route
-          exact
-          path="/"
-          component={Home}
-        />
+        <Route exact path="/" component={Home} />
         <Route path="/aboutus" component={AboutUs} />
         <Route
           path="/login/professor"

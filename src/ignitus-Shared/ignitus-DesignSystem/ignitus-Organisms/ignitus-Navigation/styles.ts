@@ -5,8 +5,6 @@ import {
   White,
   SecondaryColor,
   IgnitusBlue,
-  Black,
-  Red,
 } from '../../ignitus-Atoms/colors';
 import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
 import {NavigationProps, ToggleProps} from './types';

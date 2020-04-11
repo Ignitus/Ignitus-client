@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {Introduction} from '../../ignitus-Introduction/Components';
 import {WhatWeDo} from '../../ignitus-WhatWeDo/Components';

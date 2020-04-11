@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
 
-import { minimumWidthQuery } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
-import { Heading6 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {Heading6} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as T from '../../ignitus-Shared/ignitus-DesignSystem/shared';
@@ -74,6 +74,11 @@ export const TeamCardContainer = styled.div`
   height: 15em;
   flex: 0 0 35%;
   max-width: 35%;
+
+  ${minimumWidthQuery[1]} {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
 
   ${minimumWidthQuery[2]} {
     flex: 0 0 50%;
