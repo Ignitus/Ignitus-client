@@ -29,10 +29,6 @@ import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
 
-
-
-
-
 // RouteBased CodeSplitting.
 
 const Loading: React.FunctionComponent = () => (

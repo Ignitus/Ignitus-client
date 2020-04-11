@@ -4,10 +4,10 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import { NavigationProps } from '../types';
-import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { useToggle } from '../../../../ignitus-Utilities/reactHooks/toogleHook'; 
 
 import * as N from '../styles';
-import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
 
 const PureNavigation: React.FC<NavigationProps> = ({
   transparentNavigation,
