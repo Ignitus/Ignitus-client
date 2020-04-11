@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/aria-role */
-import React, { useState, FunctionComponent } from 'react';
+import React, { useState, FunctionComponent, useEffect } from 'react';
 import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
@@ -11,6 +11,8 @@ import { LogInProps } from '../types';
 const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData, clearPreviousLogin }) => {
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
+
+  useEffect(() => (() => clearPreviousLogin()),[]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
