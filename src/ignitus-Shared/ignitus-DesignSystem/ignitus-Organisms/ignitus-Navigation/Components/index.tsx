@@ -2,24 +2,21 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
-import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 
-import {PureNavigationProps, NavigationProps} from '../types';
+import { NavigationProps } from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 
 import * as N from '../styles';
 import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
 
-const PureNavigation: React.FC<PureNavigationProps> = ({
+const PureNavigation: React.FC<NavigationProps> = ({
   transparentNavigation,
-  dynamicLogo,
 }) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   return (
     <N.Navigation transparentNavigation={transparentNavigation}>
       <N.NavigationBarBrand to="/#">
-        <N.Logo src={dynamicLogo} alt="logo" />
+        <N.Logo name={AppIcon.IgnitusLogo} transparentNavigation={transparentNavigation} />
       </N.NavigationBarBrand>
 
       <N.NavigationLinks isExpanded={isExpanded}>
@@ -82,7 +79,6 @@ const Navigation: React.FunctionComponent = () => {
   const [transparentNavigation, setTransparentNavigation] = useState<boolean>(
     true,
   );
-  const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
 
   useEffect(() => {
     const scrollFn = () => {
@@ -91,12 +87,10 @@ const Navigation: React.FunctionComponent = () => {
         if (scrolling === true) {
           setNavigationScrolled(false);
           setTransparentNavigation(true);
-          setDynamicLogo(blackLogo);
         }
       } else if (scrolling === false) {
         setNavigationScrolled(true);
         setTransparentNavigation(false);
-        setDynamicLogo(logo);
       }
     };
     window.addEventListener('scroll', scrollFn, {passive: true});
@@ -108,7 +102,6 @@ const Navigation: React.FunctionComponent = () => {
   return (
     <PureNavigation
       transparentNavigation={transparentNavigation}
-      dynamicLogo={dynamicLogo}
     />
   );
 };
@@ -117,7 +110,9 @@ export const OptionalNavigation: React.FC<NavigationProps> = React.memo(
   ({transparentNavigation = false}) => {
     if (!transparentNavigation)
       return (
-        <PureNavigation transparentNavigation={transparentNavigation} dynamicLogo={logo} />
+        <PureNavigation
+          transparentNavigation={transparentNavigation}
+        />
       );
     return <Navigation />;
   },

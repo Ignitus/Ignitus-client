@@ -57,7 +57,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
         <Route
           exact
           path={[
-            "/", "/aboutus"
+            "/", "/aboutus",
           ]}
           render={() => <Navigation transparentNavigation/>}
         />

@@ -39,6 +39,7 @@ import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/co
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
 import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
+import { IgnitusLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
 
 type Props = {
   name: AppIcon;
@@ -162,6 +163,9 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.CameraIcon:
       return <CameraIcon {...rest} />;
+
+    case AppIcon.IgnitusLogo:
+      return <IgnitusLogo {...rest} />;
   }
 };
 

@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import {HashLink} from 'react-router-hash-link';
-import Icon from '../../../ignitus-Utilities/Components/icon';
 import {keyframes, css} from '@emotion/core';
-import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
+import {White, SecondaryColor, IgnitusBlue, Black, Red} from '../../ignitus-Atoms/colors';
 import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
-import { NavigationProps, ToggleProps } from './types';
+import {NavigationProps, ToggleProps} from './types';
+import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const Navigation = styled.nav<NavigationProps>`
   align-items: center;
@@ -28,9 +28,12 @@ export const NavigationBarBrand = styled(HashLink)`
   padding: 0rem 1rem;
   align-self: stretch;
 `;
-export const Logo = styled.img`
+export const Logo = styled(Icon)<NavigationProps>`
   width: 2.5rem;
   height: 2.5rem;
+  path {
+    fill: ${IgnitusBlue}
+  }
 `;
 
 const fadeIn = keyframes`
