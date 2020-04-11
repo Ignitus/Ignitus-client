@@ -78,7 +78,7 @@ const PureNavigation: React.FC<PureNavigationProps> = ({
 };
 
 const Navigation: React.FunctionComponent = () => {
-  const [navigationScrolled, setNavigationScrolled] = useState(false);
+  const [scrolling, setNavigationScrolled] = useState(false);
   const [transparentNavigation, setTransparentNavigation] = useState<boolean>(
     true,
   );
@@ -86,14 +86,14 @@ const Navigation: React.FunctionComponent = () => {
 
   useEffect(() => {
     const scrollFn = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY < 20) {
-        if (navigationScrolled === true) {
+      const yAxis = window.scrollY;
+      if (yAxis < 20) {
+        if (scrolling === true) {
           setNavigationScrolled(false);
           setTransparentNavigation(true);
           setDynamicLogo(blackLogo);
         }
-      } else if (navigationScrolled === false) {
+      } else if (scrolling === false) {
         setNavigationScrolled(true);
         setTransparentNavigation(false);
         setDynamicLogo(logo);
@@ -103,7 +103,7 @@ const Navigation: React.FunctionComponent = () => {
     return () => {
       window.removeEventListener('scroll', scrollFn);
     };
-  }, [navigationScrolled]);
+  }, [scrolling]);
 
   return (
     <PureNavigation

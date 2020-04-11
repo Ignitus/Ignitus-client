@@ -4,14 +4,7 @@ import Icon from '../../../ignitus-Utilities/Components/icon';
 import {keyframes, css} from '@emotion/core';
 import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
 import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
-
-type ToggleProps = {
-  isExpanded: boolean;
-};
-
-type NavigationProps = {
-  transparentNavigation: boolean;
-};
+import { NavigationProps, ToggleProps } from './types';
 
 export const Navigation = styled.nav<NavigationProps>`
   align-items: center;
@@ -20,11 +13,11 @@ export const Navigation = styled.nav<NavigationProps>`
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9001;
+  z-index: 2;
   justify-content: space-between;
   transition: background-color 300ms ease-in;
   background: ${props => (props.transparentNavigation ? 'transparent' : White)};
-  padding: ${props => (props.transparentNavigation ? '0' : '0.5rem')};
+  padding: 0.5rem;
   @media only screen and (max-width: 1042px) {
     flex-direction: column;
     background: ${White};
