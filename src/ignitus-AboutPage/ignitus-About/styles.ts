@@ -13,7 +13,7 @@ export const AboutSection = styled.section`
   font-size: ${F.SM};
   background: url('https://storage.googleapis.com/ignitus_assets/ig-assets/splitBlueBackground.png')
     no-repeat;
-  background-size: 70%;
+  background-size: 54%;
   background-position: top right;
   padding-top: 3rem;
 `;

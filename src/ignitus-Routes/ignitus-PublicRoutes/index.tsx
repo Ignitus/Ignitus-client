@@ -1,9 +1,6 @@
 import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
-
-// We will seperate these routes to seperate files in upcoming days.
 import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
 import SignupProfessor from '../../ignitus-Authentication/ignitus-ProfessorSignUp';
 import LoginStudent from '../../ignitus-Authentication/ignitus-StudentLogin';
@@ -17,17 +14,15 @@ import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUp
 import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
 import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
 import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
-import { SupportedBy } from '../../ignitus-HomePage/ignitus-SupportedBy/Components';
-import { WhatWeDo } from '../../ignitus-HomePage/ignitus-WhatWeDo/Components';
-import { Introduction } from '../../ignitus-HomePage/ignitus-Introduction/Components';
-import { GetStarted } from '../../ignitus-HomePage/ignitus-GetStarted/Components';
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import { Footer } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
 import { OptionalNavigation as Navigation } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
+import { Home } from '../../ignitus-HomePage/ignitus-Home/Components/index';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
+
 
 // RouteBased CodeSplitting.
 
@@ -65,15 +60,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
         <Route
           exact
           path="/"
-          render={() => (
-            <Fragment>
-              <Introduction />
-              <WhatWeDo />
-              <SupportedBy />
-              <Testimonial.containers.TestimonialContainer />
-              <GetStarted />
-            </Fragment>
-          )}
+          component={Home}
         />
         <Route path="/aboutus" component={AboutUs} />
         <Route

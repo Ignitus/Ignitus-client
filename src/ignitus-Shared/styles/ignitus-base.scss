@@ -18,8 +18,5 @@ $font-family-base: 'Raleway';
 // import site reset
 @import 'ignitus-reset.scss';
 
-// import site utility classes
-@import 'ignitus-utilities.scss';
-
 // import common css shared among multiple components;
 @import 'ignitus-components-common.scss';

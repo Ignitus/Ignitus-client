@@ -4,10 +4,11 @@
 import React, { useState } from 'react';
 import {HashLink} from 'react-router-hash-link';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
-import { logo } from '../constants';
-import * as S from '../styles';
+
 import { Props } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+
+import * as S from '../styles';
 
 const PureFooter: React.FunctionComponent<Props> = ({
   hideUnhide,

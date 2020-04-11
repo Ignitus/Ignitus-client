@@ -3,7 +3,7 @@ import { IgnitusIntroduction, AboutImage } from '../constants';
 import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 import { CoreTeam } from '../../ignitus-CoreTeam/Components';
-import Team from '../../ignitus-Team';
+import {default as Team }  from '../../ignitus-Team';
 import * as S from '../styles';
 
 const About: React.FunctionComponent = withErrorBoundary(() => (
