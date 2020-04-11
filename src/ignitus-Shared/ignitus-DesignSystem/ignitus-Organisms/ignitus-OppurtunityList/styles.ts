@@ -1,24 +1,17 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
-import { 
-  flexibleColDiv,
-  flexibleRowDiv,
- } from '../../shared';
-import { Normal, MD} from '../../ignitus-Atoms/fonts';
+import {flexibleColDiv, flexibleRowDiv} from '../../shared';
+import {Normal, MD} from '../../ignitus-Atoms/fonts';
 import ApplyIcon from '../../ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
-import { Paragraph } from '../../shared';
+import {Paragraph} from '../../shared';
 
-
-export const OpportunityList = styled(flexibleColDiv)`
-  padding: 2rem;
-`;
+export const OpportunityList = styled(flexibleColDiv)``;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   background-color: ${C.White};
-  margin: 0.5rem;
   padding: 1rem;
   width: 100%;
 `;

@@ -20,3 +20,5 @@ export const signUpResponse = (data) => {
   if (!isObject(data)) throw new Error(`data should be object: ${data}`);
   return { type: t.SIGN_UP_RESPONSE, data };
 };
+
+export const clearPreviousSignUp = () => ({ type: t.CLEAR_PREVIOUS_SIGN_UP });

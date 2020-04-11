@@ -16,3 +16,5 @@ export const logInResponse = (data) => {
 };
 
 export const logUserOut = () => ({ type: t.LOG_USER_OUT });
+
+export const clearPreviousLogin = () => ({ type: t.LOG_IN_CLEAR_PREVIOUS });

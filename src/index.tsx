@@ -1,4 +1,3 @@
-import * as Sentry from '@sentry/browser';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -14,8 +13,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import rootSaga from './rootSagas';
-
-Sentry.init({ dsn: process.env.DSN });
 
 const sagaMiddleware = createSagaMiddleware();
 
