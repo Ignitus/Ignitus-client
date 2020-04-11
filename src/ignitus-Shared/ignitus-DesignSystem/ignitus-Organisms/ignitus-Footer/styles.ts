@@ -2,10 +2,8 @@ import styled from '@emotion/styled';
 import { maximumWidthQuery } from '../../ignitus-Atoms/media';
 import { Heading3 } from '../../ignitus-Atoms/typography';
 import { White, SecondaryColor, IgnitusBlue } from '../../ignitus-Atoms/colors';
+import { FooterLinkprops } from './types';
 
-type FooterLinkprops = {
-  toggle: boolean;
-};
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};
