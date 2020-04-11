@@ -1,10 +1,9 @@
-export type displayClassTypes = 'transparent' | 'whitenav';
 
 export interface PureNavigationProps {
-  displayClass: displayClassTypes;
+  transparentNavigation: boolean;
   dynamicLogo: string;
 };
 
 export interface NavigationProps {
-  dynamicNavigation?: boolean;
+  transparentNavigation?: boolean;
 };

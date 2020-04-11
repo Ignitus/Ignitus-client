@@ -59,7 +59,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
           path={[
             "/", "/aboutus"
           ]}
-          render={() => <Navigation dynamicNavigation/>}
+          render={() => <Navigation transparentNavigation/>}
         />
         <Route
           component={Navigation}

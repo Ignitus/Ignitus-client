@@ -2,12 +2,36 @@ import styled from '@emotion/styled';
 import {HashLink} from 'react-router-hash-link';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {keyframes, css} from '@emotion/core';
+import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
+import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
 
 type ToggleProps = {
   isExpanded: boolean;
 };
 
-export const NavBarBrand = styled(HashLink)`
+type NavigationProps = {
+  transparentNavigation: boolean;
+};
+
+export const Navigation = styled.nav<NavigationProps>`
+  align-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9001;
+  justify-content: space-between;
+  transition: background-color 300ms ease-in;
+  background: ${props => (props.transparentNavigation ? 'transparent' : White)};
+  padding: ${props => (props.transparentNavigation ? '0' : '0.5rem')};
+  @media only screen and (max-width: 1042px) {
+    flex-direction: column;
+    background: ${White};
+  }
+`;
+
+export const NavigationBarBrand = styled(HashLink)`
   padding: 0rem 1rem;
   align-self: stretch;
 `;
@@ -26,7 +50,7 @@ const fadeOut = keyframes`
       to { opacity: 0; }
 `;
 
-export const NavLinks = styled.ul<ToggleProps>`
+export const NavigationLinks = styled.ul<ToggleProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,15 +73,26 @@ export const NavLinks = styled.ul<ToggleProps>`
   }
 `;
 
-export const NavLinkItem = styled.li`
+export const NavigationLinkItem = styled.li<NavigationProps>`
   padding: 0rem 1rem;
   align-self: stretch;
+
+  a {
+    font-size: ${XS};
+    font-weight: ${SemiBold};
+    color: ${props => (props.transparentNavigation ? White : IgnitusBlue)};
+    &:hover {
+      color: ${SecondaryColor};
+    }
+  }
 
   @media only screen and (max-width: 1042px) {
     margin-left: 0rem;
     margin-bottom: 1rem;
   }
 `;
+
+export const NavigationLink = styled(HashLink)``;
 
 export const Burger = styled(Icon)<ToggleProps>`
   position: absolute;

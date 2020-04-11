@@ -2,95 +2,85 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import {HashLink} from 'react-router-hash-link';
 import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo.svg';
 import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 
-import {
-  PureNavigationProps,
-  displayClassTypes,
-  NavigationProps,
-} from '../types';
-
-import '../Styles/style.scss';
-
-import * as N from '../styles';
-import useToggle from '../../../../ignitus-Utilities/reactHooks/toogleHook';
+import {PureNavigationProps, NavigationProps} from '../types';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 
+import * as N from '../styles';
+import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
+
 const PureNavigation: React.FC<PureNavigationProps> = ({
-  displayClass,
+  transparentNavigation,
   dynamicLogo,
 }) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   return (
-    <nav className={`navbar  ${displayClass}`}>
-      <N.NavBarBrand to="/#">
+    <N.Navigation transparentNavigation={transparentNavigation}>
+      <N.NavigationBarBrand to="/#">
         <N.Logo src={dynamicLogo} alt="logo" />
-      </N.NavBarBrand>
+      </N.NavigationBarBrand>
 
-      <N.NavLinks isExpanded={isExpanded}>
-        <N.NavLinkItem>
-          <HashLink smooth to="/#" className="navlink">
+      <N.NavigationLinks isExpanded={isExpanded}>
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
+          <N.NavigationLink smooth to="/#">
             Home
-          </HashLink>
-        </N.NavLinkItem>
+          </N.NavigationLink>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
-          <HashLink smooth to="/#what-we-do" className="navlink">
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
+          <N.NavigationLink smooth to="/#what-we-do">
             What we provide?
-          </HashLink>
-        </N.NavLinkItem>
+          </N.NavigationLink>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
-          <HashLink smooth to="/#contributors" className="navlink">
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
+          <N.NavigationLink smooth to="/#contributors">
             Contributors
-          </HashLink>
-        </N.NavLinkItem>
+          </N.NavigationLink>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
-          <Link to="/aboutus" className="navlink">
-            About
-          </Link>
-        </N.NavLinkItem>
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
+          <Link to="/aboutus">About</Link>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
           <a
-            className="navlink"
             rel="noopener noreferrer"
             target="_blank"
             href="https://bit.ly/2SaYXMO"
           >
             Join
           </a>
-        </N.NavLinkItem>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
           <Link to="/Login" className="navlink">
             Sign in
           </Link>
-        </N.NavLinkItem>
+        </N.NavigationLinkItem>
 
-        <N.NavLinkItem>
+        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
           <Link to="/Signup" className="navlink">
             Sign up
           </Link>
-        </N.NavLinkItem>
-      </N.NavLinks>
+        </N.NavigationLinkItem>
+      </N.NavigationLinks>
 
       <N.Burger
         onClick={toogleIsExpanded}
         name={AppIcon.Chevron}
         isExpanded={isExpanded}
       />
-    </nav>
+    </N.Navigation>
   );
 };
 
 const Navigation: React.FunctionComponent = () => {
-  const [navScrolled, setNavScrolled] = useState(false);
-  const [displayClass, setDisplayClass] = useState<displayClassTypes>(
-    'transparent',
+  const [navigationScrolled, setNavigationScrolled] = useState(false);
+  const [transparentNavigation, setTransparentNavigation] = useState<boolean>(
+    true,
   );
   const [dynamicLogo, setDynamicLogo] = useState(blackLogo);
 
@@ -98,14 +88,14 @@ const Navigation: React.FunctionComponent = () => {
     const scrollFn = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY < 20) {
-        if (navScrolled === true) {
-          setNavScrolled(false);
-          setDisplayClass('transparent');
+        if (navigationScrolled === true) {
+          setNavigationScrolled(false);
+          setTransparentNavigation(true);
           setDynamicLogo(blackLogo);
         }
-      } else if (navScrolled === false) {
-        setNavScrolled(true);
-        setDisplayClass('whitenav');
+      } else if (navigationScrolled === false) {
+        setNavigationScrolled(true);
+        setTransparentNavigation(false);
         setDynamicLogo(logo);
       }
     };
@@ -113,17 +103,22 @@ const Navigation: React.FunctionComponent = () => {
     return () => {
       window.removeEventListener('scroll', scrollFn);
     };
-  }, [navScrolled]);
+  }, [navigationScrolled]);
 
   return (
-    <PureNavigation displayClass={displayClass} dynamicLogo={dynamicLogo} />
+    <PureNavigation
+      transparentNavigation={transparentNavigation}
+      dynamicLogo={dynamicLogo}
+    />
   );
 };
 
 export const OptionalNavigation: React.FC<NavigationProps> = React.memo(
-  ({dynamicNavigation = false}) => {
-    if (!dynamicNavigation)
-      return <PureNavigation displayClass="whitenav" dynamicLogo={logo} />;
+  ({transparentNavigation = false}) => {
+    if (!transparentNavigation)
+      return (
+        <PureNavigation transparentNavigation={transparentNavigation} dynamicLogo={logo} />
+      );
     return <Navigation />;
   },
 );
