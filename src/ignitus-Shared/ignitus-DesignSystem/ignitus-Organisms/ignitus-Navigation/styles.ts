@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
 import {HashLink} from 'react-router-hash-link';
 import Icon from '../../../ignitus-Utilities/Components/icon';
+import {keyframes, css} from '@emotion/core';
 
 type ToggleProps = {
   isExpanded: boolean;
-}
+};
 
 export const NavBarBrand = styled(HashLink)`
   padding: 0rem 1rem;
@@ -13,6 +14,16 @@ export const NavBarBrand = styled(HashLink)`
 export const Logo = styled.img`
   width: 2.5rem;
   height: 2.5rem;
+`;
+
+const fadeIn = keyframes`
+    from { opacity: 0; }
+      to { opacity: 1; }
+`;
+
+const fadeOut = keyframes`
+    from { opacity: 1; }
+      to { opacity: 0; }
 `;
 
 export const NavLinks = styled.ul<ToggleProps>`
@@ -26,8 +37,15 @@ export const NavLinks = styled.ul<ToggleProps>`
     align-items: center;
     justify-content: center;
     width: 100%;
-    display: ${props => (props.isExpanded ? 'none' : 'flex') };
-    transition:transform 100ms ease-in-out;
+    display: ${props => (props.isExpanded ? 'none' : 'flex')};
+    animation: ${props =>
+      props.isExpanded
+        ? css`
+            ${fadeOut} 2s ease
+          `
+        : css`
+            ${fadeIn} 2s ease
+          `};
   }
 `;
 
