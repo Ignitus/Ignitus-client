@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Navigation from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation';
-import Footer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer';
 
 import Testimonial from '../../ignitus-HomePage/ignitus-Testimonial';
 
@@ -24,10 +22,13 @@ import { WhatWeDo } from '../../ignitus-HomePage/ignitus-WhatWeDo/Components';
 import { Introduction } from '../../ignitus-HomePage/ignitus-Introduction/Components';
 import { GetStarted } from '../../ignitus-HomePage/ignitus-GetStarted/Components';
 import { Notfound } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import { Footer } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
+import { OptionalNavigation as Navigation } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 import Loadable from 'react-loadable';
+
 
 
 
@@ -48,6 +49,7 @@ const AboutUs = Loadable({
   loading: Loading,
 });
 
+
 export const PublicRoutes: React.FunctionComponent = () => {
   return (
     <React.Fragment>
@@ -57,10 +59,10 @@ export const PublicRoutes: React.FunctionComponent = () => {
           path={[
             "/", "/aboutus"
           ]}
-          render={() => <Navigation.components.Navigation dynamicNavigation/>}
+          render={() => <Navigation dynamicNavigation/>}
         />
         <Route
-          component={Navigation.components.Navigation}
+          component={Navigation}
         />
       </Switch>
       <Switch>
@@ -110,7 +112,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
 
         <Route path="/" component={Notfound} />
       </Switch>
-      <Footer.components.Footer />
+      <Footer />
     </React.Fragment>
   );
 };

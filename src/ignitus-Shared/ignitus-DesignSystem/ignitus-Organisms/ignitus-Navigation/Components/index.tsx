@@ -7,6 +7,7 @@ import logo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlueLogo
 import blackLogo from '../../../ignitus-Assets/ignitus-Logos/logo-Svg/ignitusBlackLogo.svg';
 import { PureNavigationProps, displayClassTypes, NavigationProps } from '../types';
 import '../Styles/style.scss';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 const handleSmallerScreen = () => {
   const navlinks = document.querySelector('.navlinks');
@@ -98,9 +99,8 @@ const Navigation: React.FunctionComponent = () => {
   return <PureNavigation displayClass={displayClass} dynamicLogo={dynamicLogo} />;
 };
 
-const OptionalNavigations: React.FC<NavigationProps> = ({ dynamicNavigation = false }) => {
+export const OptionalNavigation: React.FC<NavigationProps> = withErrorBoundary(({ dynamicNavigation = false }) => {
   if (!dynamicNavigation) return <PureNavigation displayClass="whitenav" dynamicLogo={logo} />;
   return <Navigation />
-};
+});
 
-export default React.memo(OptionalNavigations);

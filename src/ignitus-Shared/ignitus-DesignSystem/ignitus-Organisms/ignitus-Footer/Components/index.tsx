@@ -84,7 +84,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
   </S.Footer>
 );
 
-const Footer = () => {
+export const Footer = withErrorBoundary((() => {
   const [featuresToggle, setFeaturesToggle] = useState(true);
   const [communityToggle, setCommunityToggle] = useState(true);
   const [companyToggle, setCompanyToggle] = useState(true);
@@ -117,6 +117,5 @@ const Footer = () => {
       linkToggle={linkToggle}
     />
   );
-};
+}));
 
-export default withErrorBoundary(Footer);
