@@ -18,7 +18,7 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
       <T.BottomRow>
         {[...data].map(x => (
           <S.Card key={x.src}>
-            <S.CardPicture src={x.src} alt="logo" />
+            <S.CardPicture data-src={x.src} className="lazyload" alt="logo" />
             <Paragraph>{x.description}</Paragraph>
           </S.Card>
         ))}

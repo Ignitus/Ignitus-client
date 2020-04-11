@@ -11,8 +11,8 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
   <div className="col-md-6 p-0 container-image">
     <img
       alt={`${role}auth`}
-      className="img-fluid img-login d-block"
-      src={(role === 'Student') ? t.studentAuthentication : t.professorAuthentication}
+      className="img-fluid img-login d-block lazyload"
+      data-src={(role === 'Student') ? t.studentAuthentication : t.professorAuthentication}
     />
 
     <div className="text-below-image text-center">

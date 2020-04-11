@@ -20,7 +20,7 @@ const handleSmallerScreen = () => {
 const PureNavigation: React.FC<PureNavigationProps> = ({ displayClass, dynamicLogo }) => (
   <nav className={`navbar  ${displayClass}`}>
     <HashLink className="navbar-brand" to="/#">
-      <img src={dynamicLogo} width="40" height="40" alt="logo" />
+      <img data-src={dynamicLogo} className="lazyload" width="40" height="40" alt="logo" />
     </HashLink>
 
     <ul className="navlinks">

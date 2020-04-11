@@ -47,7 +47,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
                 <p>{testimonialData[currentIndex].description}</p>
               </T.Text>
               <T.Avatar>
-                <img src={Avatars[currentIndex]} alt={''}/>
+                <img data-src={Avatars[currentIndex]} className="lazyload" alt={''}/>
               </T.Avatar>
               <T.Name>{testimonialData[currentIndex].author}</T.Name>
               <T.Designation>
@@ -56,10 +56,10 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
             </T.Carousel>
           )}
           <T.Navigation>
-            <img id="1" src={Avatars[0]} alt="" onClick={handleClick} />
-            <img id="2" src={Avatars[1]} alt="" onClick={handleClick} />
-            <img id="3" src={Avatars[2]} alt="" onClick={handleClick} />
-            <img id="4" src={Avatars[3]} alt="" onClick={handleClick} />
+            <img id="1" className="lazyload" data-src={Avatars[0]} alt="" onClick={handleClick} />
+            <img id="2" className="lazyload" data-src={Avatars[1]} alt="" onClick={handleClick} />
+            <img id="3" className="lazyload" data-src={Avatars[2]} alt="" onClick={handleClick} />
+            <img id="4" className="lazyload" data-src={Avatars[3]} alt="" onClick={handleClick} />
           </T.Navigation>
         </T.Testimonial>
       </T.Container>

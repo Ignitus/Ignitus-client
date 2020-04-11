@@ -23,7 +23,7 @@ const PureSupportedBy = ({ data, type, paragraph }: Props) => (
         <S.BottomRow>
           {data.map((logo:string) => (
             <S.Card key={logo}>
-              <S.CardPicture src={logo} alt="logo" />
+              <S.CardPicture data-src={logo} className="lazyload" alt="logo" />
             </S.Card>
           ))}
         </S.BottomRow>
@@ -34,4 +34,3 @@ const PureSupportedBy = ({ data, type, paragraph }: Props) => (
 export const SupportedBy: React.FunctionComponent = withErrorBoundary(() => (
   <PureSupportedBy data={Data} type="Supported By" paragraph="by following Organizations, Programs & Companies." />
 ));
-

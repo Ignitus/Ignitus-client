@@ -41,7 +41,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
         </S.FooterLinks>
       </S.FooterSections>
       <S.FooterSections>
-        <img src={logo} alt="logo" />
+        <img data-src={logo} className="lazyload" alt="logo" />
       </S.FooterSections>
 
       <S.FooterSections>

@@ -27,8 +27,8 @@ function commonLoginRegister(props: Props): React.ComponentType {
               <Link to={studentRoute}>
                 <img
                   alt="Student auth"
-                  className="img-fluid"
-                  src={t.studentAuthentication}
+                  className="img-fluid lazyload"
+                  data-src={t.studentAuthentication}
                 />
               </Link>
             </div>
@@ -37,8 +37,8 @@ function commonLoginRegister(props: Props): React.ComponentType {
               <Link to={professorRoute}>
                 <img
                   alt="Professor auth"
-                  className="img-fluid"
-                  src={t.professorAuthentication}
+                  className="img-fluid lazyload"
+                  data-src={t.professorAuthentication}
                 />
               </Link>
             </div>

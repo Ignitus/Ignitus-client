@@ -42,7 +42,7 @@ const WelcomeFlow: FunctionComponent = () => (
         </form>
       </T.LeftSection>
       <T.RightSection>
-        <img className="profileImageMap" src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
+        <img className="profileImageMap lazyload" data-src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
       </T.RightSection>
     </T.MiddleSection>
     <T.BottomSection>

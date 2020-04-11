@@ -39,7 +39,7 @@ export const Team = withErrorBoundary(({
   if (isFetching) {
     return (
       <S.Loader>
-        <img alt="loader" src={loader} />
+        <img alt="loader" className="lazyload" data-src={loader} />
       </S.Loader>
     );
   }
