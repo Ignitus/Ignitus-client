@@ -1,6 +1,7 @@
 import React from 'react';
 import * as C from '../styles';
-import {StyledHeading2} from '../../../../styles';
+import { Interface } from '../../../../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
   PrimaryColors,
   GreyShades,
@@ -8,21 +9,22 @@ import {
   SocialPlatformColors,
 } from '../constants';
 
+
 export const interfaceColors: React.FC = () => (
-  <C.ColorsContainer>
-    <StyledHeading2>Primary Colors</StyledHeading2>
+  <Interface>
+    <Heading2>Primary Colors</Heading2>
     <ColorsMapper colors={PrimaryColors} />
     <hr />
-    <StyledHeading2>Grey Shades </StyledHeading2>
+    <Heading2>Grey Shades </Heading2>
     <ColorsMapper colors={GreyShades} />
     <hr />
-    <StyledHeading2>Basic Colors </StyledHeading2>
+    <Heading2>Basic Colors </Heading2>
     <ColorsMapper colors={BasicColors} />
     <hr />
-    <StyledHeading2>Social Platforms Colors </StyledHeading2>
+    <Heading2>Social Platforms Colors </Heading2>
     <ColorsMapper colors={SocialPlatformColors} />
     <hr />
-  </C.ColorsContainer>
+  </Interface>
 );
 
 const ColorsMapper: Function = ({colors}: {colors: string[]}): JSX.Element[] =>

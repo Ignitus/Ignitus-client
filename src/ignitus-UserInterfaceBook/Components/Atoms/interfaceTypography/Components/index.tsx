@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyledHeading2} from '../../../../styles';
-import {TypographyContainer} from '../styles';
+
 import {
   Heading1,
   Heading2,
@@ -11,10 +10,11 @@ import {
   Paragraph,
   TextLink,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Interface } from '../../../../styles';
 
 export const interfaceTypography: React.FC = () => (
-  <TypographyContainer>
-    <StyledHeading2>Typography ★</StyledHeading2>
+  <Interface>
+    <Heading2>Typography</Heading2>
     <hr />
     <Heading1>Heading 1</Heading1>
     <Heading2>Heading 2</Heading2>
@@ -24,5 +24,5 @@ export const interfaceTypography: React.FC = () => (
     <Heading6>Heading 6</Heading6>
     <Paragraph>Paragraph</Paragraph>
     <TextLink>Text Link</TextLink>
-  </TypographyContainer>
+  </Interface>
 );
