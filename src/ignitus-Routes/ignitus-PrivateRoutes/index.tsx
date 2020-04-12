@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
-const PrivateRoute = ({ Component }) => (
+const PrivateRoute = ({ Component }: any) => (
   <Route
     render={() => (localStorage.getItem('authenticated') ? (
       <Component />
