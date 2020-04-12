@@ -1,4 +1,4 @@
-import React, {Suspense, lazy} from 'react';
+import React, {Suspense, lazy, Fragment} from 'react';
 import {Switch, Route} from 'react-router-dom';
 
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
@@ -9,7 +9,6 @@ import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-
 
 /**
  * Route-based code splitting.
@@ -34,7 +33,7 @@ const LazyAboutComponent = lazy(() =>
 
 export const PublicRoutes: React.FunctionComponent = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <Switch>
         <Route
           exact
@@ -45,28 +44,26 @@ export const PublicRoutes: React.FunctionComponent = () => {
       </Switch>
       <Suspense
         fallback={
-          <div>
+          <Fragment>
             <Loading />
-          </div>
+          </Fragment>
         }
       >
         <Switch>
           <Route path="/aboutus" component={LazyAboutComponent} />
+          <Route exact path="/" component={Home} />
+          <Route
+            path={['/login', '/signup', '/flow']}
+            component={AuthenticationRoutes}
+          />
+          <Route
+            path="/jobConfirmation"
+            component={JobConfirmation.components.JobConfirmation}
+          />
+          <Route path="/" component={Notfound} />
         </Switch>
       </Suspense>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route
-          path={['/login', '/signup', '/flow']}
-          component={AuthenticationRoutes}
-        />
-        <Route
-          path="/jobConfirmation"
-          component={JobConfirmation.components.JobConfirmation}
-        />
-        <Route path="/" component={Notfound} />
-      </Switch>
       <Footer />
-    </React.Fragment>
+    </Fragment>
   );
 };

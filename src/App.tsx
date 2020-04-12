@@ -2,8 +2,7 @@ import React, {Suspense, lazy} from 'react';
 import {Switch, Route} from 'react-router-dom';
 import {PublicRoutes} from './ignitus-Routes/ignitus-PublicRoutes';
 import {withErrorBoundary} from './ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-
-import './App.scss';
+import './App.css';
 
 const LazyUserInterfaceBook = lazy(() =>
   import('./ignitus-Routes/ignitus-UserInterfaceBookRoutes'),
