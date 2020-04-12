@@ -8,7 +8,7 @@ import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { Loading } from '../../ignitus-Shared/ignitus-Utilities/Components/loader';
 
 /**
  * Route-based code splitting.
@@ -18,14 +18,6 @@ import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ign
  * The React.lazy function lets you render a dynamic import as a regular component.
  * https://reactjs.org/docs/code-splitting.html
  */
-
-const Loading: React.FunctionComponent = () => (
-  <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
-    <div className="loader">
-      <img src={loader} alt="Loading..." />
-    </div>
-  </div>
-);
 
 const LazyAboutComponent = lazy(() =>
   import('../../ignitus-AboutPage/ignitus-About/Components'),

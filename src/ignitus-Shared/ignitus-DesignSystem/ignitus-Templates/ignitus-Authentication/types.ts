@@ -33,6 +33,7 @@ export interface FormProps {
   setState: Function;
   authenticationData: authData;
   handleSubmit: Function;
+  isFetching: boolean
 }
 
 export interface SignupState extends LoginState {

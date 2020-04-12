@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
-import loader from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import {Loading} from '../../../ignitus-Shared/ignitus-Utilities/Components/loader';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
@@ -27,37 +27,39 @@ const PureTeam = ({contributors}: any) => (
   </S.Section>
 );
 
-export const Team = withErrorBoundary(({
-  getContributorsData,
-  contributorsData: {presets, isFetching},
-}: TeamPropType) => {
-  useEffect(() => {
-    getContributorsData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+export const Team = withErrorBoundary(
+  ({
+    getContributorsData,
+    contributorsData: {presets, isFetching},
+  }: TeamPropType) => {
+    useEffect(() => {
+      getContributorsData();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-  if (isFetching) {
-    return (
-      <S.Loader>
-        <img alt="loader" src={loader} />
-      </S.Loader>
-    );
-  }
+    if (isFetching) {
+      return (
+        <S.Loader>
+          <Loading />
+        </S.Loader>
+      );
+    }
 
-  const contributors = presets.map((item: GitHubDataType) => (
-    <S.Link
-      key={item.id}
-      target="_blank"
-      rel="noopener noreferrer"
-      href={item.html_url}
-    >
-      <S.Avatar
-        src={item.avatar_url}
-        width="100%"
-        alt={`avatar ${item.login}`}
-      />
-    </S.Link>
-  ));
+    const contributors = presets.map((item: GitHubDataType) => (
+      <S.Link
+        key={item.id}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={item.html_url}
+      >
+        <S.Avatar
+          src={item.avatar_url}
+          width="100%"
+          alt={`avatar ${item.login}`}
+        />
+      </S.Link>
+    ));
 
-  return <PureTeam contributors={contributors} />;
-});
+    return <PureTeam contributors={contributors} />;
+  },
+);

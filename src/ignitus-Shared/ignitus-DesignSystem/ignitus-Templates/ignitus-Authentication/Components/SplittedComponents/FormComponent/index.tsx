@@ -14,11 +14,12 @@ export const Form: FunctionComponent<FormProps> = ({
   setState,
   authenticationData,
   handleSubmit,
+  isFetching,
 }) => {
   const {message, success} = authenticationData;
   return (
     <div className="col-md-6 container-form">
-      <div className="my-4">
+      <div className="my-4 text-align">
         <img
           className="img-fluid img mx-auto d-block"
           src={t.logo}
