@@ -14,7 +14,7 @@ import {
   Paragraph as P,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {Link} from 'react-router-dom';
-import {Bold} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {Medium} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   padding: 4rem;
@@ -24,26 +24,6 @@ export const Container = styled.div`
 
 export const Section = styled(flexibleColDiv)`
   margin: 0 auto;
-  ${minimumWidthQuery[1]} {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  ${minimumWidthQuery[2]} {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  ${minimumWidthQuery[3]} {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  ${minimumWidthQuery[4]} {
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-  ${minimumWidthQuery[5]} {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
 `;
 
 export const Title = styled(Heading2)`
@@ -60,6 +40,21 @@ export const TopSection = styled.div`
 
 export const BottomSection = styled(flexibleRowDiv)`
   margin: 4rem 0;
+  ${minimumWidthQuery[1]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[2]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: row;
+  }
+  ${minimumWidthQuery[4]} {
+    flex-direction: row;
+  }
+  ${minimumWidthQuery[5]} {
+    flex-direction: row;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -80,12 +75,25 @@ export const StyledLink = styled(Link)`
 
 export const Paragraph = styled(P)`
   color: ${IgnitusBlue};
-  font-weight: ${Bold};
+  font-weight: ${Medium};
 `;
 
 export const Image = styled.img`
   width: 16rem;
   height: 16rem;
+
+  ${minimumWidthQuery[1]} {
+    width: 10rem;
+    height: 10rem;
+  }
+  ${minimumWidthQuery[2]} {
+    width: 14rem;
+    height: 14rem;
+  }
+  ${minimumWidthQuery[5]} {
+    width: 16rem;
+    height: 16rem;
+  }
 `;
 export const LeftRow = styled(StyledLink)``;
 export const RightRow = styled(StyledLink)``;
