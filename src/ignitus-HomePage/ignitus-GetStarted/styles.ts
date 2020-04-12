@@ -8,8 +8,8 @@ import {
   White,
   IgnitusBlue,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { flexibleColDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const Container = styled(flexibleColDiv)`
   background-color: ${IgnitusBlue};

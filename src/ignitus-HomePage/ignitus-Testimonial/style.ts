@@ -2,8 +2,7 @@ import styled from '@emotion/styled';
 import {maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Heading2} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {IgnitusBlue} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
-import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {flexibleRowDiv, flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {
   MD,
   SemiBold,

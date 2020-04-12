@@ -6,7 +6,7 @@ import {
   Paragraph as P,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { White } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import { flexibleColDiv } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
+import { flexibleColDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import {White, GreyLight, IgnitusBlue} from '../../../ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
+import { flexibleColDiv } from '../../../shared';
 
 type Props = {
   border: boolean;

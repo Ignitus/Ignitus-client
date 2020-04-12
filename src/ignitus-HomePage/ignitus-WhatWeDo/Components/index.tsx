@@ -17,7 +17,7 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
         in well researched and goal-oriented courses, Internships etc.
       </S.Paragraph>
     </T.TopSection>
-    <T.BottomSection>
+    <T.BootStrapSection>
       <T.BottomRow>
         {[...data].map(x => (
           <S.Card key={x.src}>
@@ -26,6 +26,6 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
           </S.Card>
         ))}
       </T.BottomRow>
-    </T.BottomSection>
+    </T.BootStrapSection>
   </div>
 ));

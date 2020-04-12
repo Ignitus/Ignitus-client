@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import { minimumWidthQuery } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { flexibleColDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const WelcomeContainer = styled(flexibleColDiv)`
   background: white;
