@@ -4,7 +4,6 @@ import {
   SignupStatePayload,
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-// import '../Styles/style.scss';
 
 /*
   Core functionality of Professor signup is not implemented yet.

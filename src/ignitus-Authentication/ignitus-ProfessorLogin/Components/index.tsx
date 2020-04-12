@@ -7,7 +7,7 @@ import {
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 
 const Login: FunctionComponent = () => {
-  // Dummy Implementation.
+  /* Dummy Implementation. */
   const professorLogInData: authData = {
     isFetching: false,
     message: '',

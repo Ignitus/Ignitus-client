@@ -53,13 +53,13 @@ const PureNavigation: React.FC<NavigationProps> = ({
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <Link to="/Login" className="navlink">
+          <Link to="/login" className="navlink">
             Sign in
           </Link>
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <Link to="/Signup" className="navlink">
+          <Link to="/signup" className="navlink">
             Sign up
           </Link>
         </N.NavigationLinkItem>

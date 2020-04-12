@@ -1,20 +1,6 @@
 import React, {Suspense, lazy} from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import LoginProfessor from '../../ignitus-Authentication/ignitus-ProfessorLogin';
-import SignupProfessor from '../../ignitus-Authentication/ignitus-ProfessorSignUp';
-import LoginStudent from '../../ignitus-Authentication/ignitus-StudentLogin';
-import SignupStudent from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-StudentSignUp';
-
-import {
-  CommonLoginUI,
-  CommonSignUpUI,
-} from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
-
-import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
 import {Footer} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
 import {OptionalNavigation as Navigation} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
@@ -22,6 +8,7 @@ import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import AuthenticationRoutes from '../ignitus-AuthenticationRoutes';
 
 /**
  * Route-based code splitting.
@@ -69,35 +56,13 @@ export const PublicRoutes: React.FunctionComponent = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route
-          path="/login/professor"
-          component={LoginProfessor.components.Login}
+          path={['/login', '/signup', '/flow']}
+          component={AuthenticationRoutes}
         />
-        <Route
-          path="/signup/professor"
-          component={SignupProfessor.components.Signup}
-        />
-        <Route
-          path="/login/student"
-          component={LoginStudent.containers.Login}
-        />
-        <Route
-          path="/signup/student"
-          component={SignupStudent.containers.Signup}
-        />
-        <Route path="/Signup" component={CommonSignUpUI} />
-        <Route path="/Login" component={CommonLoginUI} />
         <Route
           path="/jobConfirmation"
           component={JobConfirmation.components.JobConfirmation}
         />
-        <Route
-          path="/flow/emailConfirmationFlow"
-          component={EmailConfirmationFlow}
-        />
-        <Route path="/flow/emailFlow" component={EmailFlow} />
-        <Route path="/flow/interestFlow" component={InterestFlow} />
-        <Route path="/flow/welcomeFlow" component={WelcomeFlow} />
-
         <Route path="/" component={Notfound} />
       </Switch>
       <Footer />
