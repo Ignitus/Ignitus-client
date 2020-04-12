@@ -4,6 +4,7 @@ import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/c
 import PlusIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 import ChevronIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chevronIcon/chevronIcon';
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Loading} from '../../../ignitus-Shared/ignitus-Utilities/Components/loader';
 
 export const GithubContributorsContainer = styled(T.Container)`
   display: flex;
@@ -76,8 +77,11 @@ export const Avatar = styled(T.Avatar)`
   opacity: 0.9;
 `;
 
-export const Loader = styled(T.flexibleColDiv)`
+export const Loader = styled(Loading)`
   margin: 3em;
+  img {
+    width: 6rem;
+  }
 `;
 
 export const GithubContributorsLink = styled(T.Link)`

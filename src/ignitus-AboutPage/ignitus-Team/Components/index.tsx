@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
-import {Loading} from '../../../ignitus-Shared/ignitus-Utilities/Components/loader';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
@@ -37,11 +36,9 @@ export const Team = withErrorBoundary(
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    if (isFetching) {
+    if (true) {
       return (
-        <S.Loader>
-          <Loading />
-        </S.Loader>
+        <S.Loader />
       );
     }
 

@@ -3,7 +3,10 @@ import styled from '@emotion/styled';
 import {default as L} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 
 const Container = styled.div`
-  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 const Loader = styled.img``;
 
@@ -15,9 +18,9 @@ export const Loading = ({...rest}) => (
 
 /**
  * Way to modify Loader components using css.
-export const Loader = styled(Loading)`
-  img {
-    width: 10rem;
-  }
-`;
+    export const Loader = styled(Loading)`
+      img {
+        width: 10rem;
+      }
+    `;
  */

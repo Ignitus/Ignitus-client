@@ -5,20 +5,20 @@ import {Switch, Route} from 'react-router-dom';
 import PrivateRoute from '../ignitus-PrivateRoutes';
 import dashBoardHeader from '../../ignitus-Dashboard/ignitus-DashboardHeader';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import {Loading} from '../../ignitus-Shared/ignitus-Utilities/Components/loader';
+import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 const LazyStudentDashBoard = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
 );
 
-const DashboardRoutes = () => (
+export const DashboardRoutes = () => (
   <React.Fragment>
     <dashBoardHeader.containers.dashboardHeaderContainer />
     <Suspense
       fallback={
-        <div>
-          <Loading />
-        </div>
+        <Fragment>
+          <LazyLoader />
+        </Fragment>
       }
     >
       <Switch>
@@ -29,4 +29,3 @@ const DashboardRoutes = () => (
   </React.Fragment>
 );
 
-export default DashboardRoutes;
