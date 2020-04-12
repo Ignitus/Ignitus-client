@@ -5,10 +5,11 @@ import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout
 import {Footer} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
 import {OptionalNavigation as Navigation} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
 import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
+import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
 import loader from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
-import AuthenticationRoutes from '../ignitus-AuthenticationRoutes';
+
 
 /**
  * Route-based code splitting.

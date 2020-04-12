@@ -34,7 +34,7 @@ const LazyProfessorSignUp = lazy(() =>
   ),
 );
 
-const AuthenticationRoutes: React.FunctionComponent = () => (
+export const AuthenticationRoutes: React.FunctionComponent = () => (
   <Fragment>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
@@ -55,5 +55,3 @@ const AuthenticationRoutes: React.FunctionComponent = () => (
     </Suspense>
   </Fragment>
 );
-
-export default AuthenticationRoutes;
