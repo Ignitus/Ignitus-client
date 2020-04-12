@@ -18,7 +18,7 @@ import {Medium} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fo
 
 export const Container = styled.div`
   padding: 4rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   background: ${IgnitusBlue};
 `;
 
