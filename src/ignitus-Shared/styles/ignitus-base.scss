@@ -15,8 +15,5 @@ $font-family-base: 'Raleway';
 // import bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
 
-// import site reset
-@import 'ignitus-reset.scss';
-
 // import common css shared among multiple components;
 @import 'ignitus-components-common.scss';

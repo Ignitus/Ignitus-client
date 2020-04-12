@@ -1,7 +1,19 @@
 .loader {
-  	display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vw;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }

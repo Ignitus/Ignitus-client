@@ -17,35 +17,21 @@ function commonLoginRegister(props: Props): React.ComponentType {
 
   const SignInPage = () => (
     <A.Container>
-      <A.Section className="col-lg-7 col-md-8 col-sm-12 col-12 box-container">
-        <div className="login-signup m-top">
-          <h3>{title}</h3>
-          <p> Who are you? </p>
-        </div>
-        <div className="row mt-5">
-          <Link
-            to={studentRoute}
-            className="col-lg-5 col-md-5 ml-lg-5 ml-md-4 col-sm-5 col p-0 h-50 common-auth-ui-css"
-          >
-            <p className="mb-5 text-center common-ui-text">Student</p>
-            <img
-              alt="Student auth"
-              className="img-fluid"
-              src={t.studentAuthentication}
-            />
-          </Link>
-          <Link
-            to={professorRoute}
-            className="col-lg-5 col-md-5 ml-lg-4 ml-md-4 col-sm-5 ml-sm-4 col p-0 common-auth-ui-css"
-          >
-            <p className="mb-5 text-center common-ui-text">Professor</p>
-            <img
-              alt="Professor auth"
-              className="img-fluid"
-              src={t.professorAuthentication}
-            />
-          </Link>
-        </div>
+      <A.Section>
+        <A.TopSection>
+          <A.Title>{title}</A.Title>
+          <A.SubTitle> Who are you? </A.SubTitle>
+        </A.TopSection>
+        <A.BottomSection>
+          <A.RightRow to={studentRoute}>
+            <A.Paragraph>Student</A.Paragraph>
+            <A.Image alt="Student auth" src={t.studentAuthentication} />
+          </A.RightRow>
+          <A.LeftRow to={professorRoute}>
+            <A.Paragraph>Professor</A.Paragraph>
+            <A.Image alt="Professor auth" src={t.professorAuthentication} />
+          </A.LeftRow>
+        </A.BottomSection>
       </A.Section>
     </A.Container>
   );
