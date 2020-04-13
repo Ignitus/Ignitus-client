@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 import { isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 
-export const selectStudentState = state => state.studentLoginReducer;
+export const selectState = state => state.loginReducer;
 
-export const makeSelectStudentData = () => createSelector(selectStudentState, (substate) => {
+export const makeSelectData = () => createSelector(selectState, (substate) => {
   if (isObject(substate)) {
     return substate;
   }

@@ -8,7 +8,7 @@ import {
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 import { LogInProps } from '../types';
 
-const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData, clearPreviousLogin }) => {
+const Login: FunctionComponent<LogInProps> = ({ logInRequest, logInData, clearPreviousLogin }) => {
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
@@ -48,7 +48,7 @@ const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData, 
         return;
       }
     }
-    logInRequest(email, password);
+    logInRequest(email, password, 'student');
     setState(LoginStatePayload);
   };
 
@@ -59,7 +59,7 @@ const Login: FunctionComponent<LogInProps> = ({ logInRequest, studentLoginData, 
       handleSubmit={handleSubmit}
       state={state}
       setState={setState}
-      authenticationData={studentLoginData}
+      authenticationData={logInData}
     />
   );
 };

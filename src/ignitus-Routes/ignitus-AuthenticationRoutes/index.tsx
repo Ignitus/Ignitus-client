@@ -26,7 +26,9 @@ import {
 // });
 
 const LazyLogInStudent = lazy(() =>
-  import('../../ignitus-Authentication/ignitus-StudentLogin/Containers/index'),
+  import(
+    '../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/studenLogin'
+  ),
 );
 
 const LazySignUpStudent = lazy(() =>
@@ -37,7 +39,7 @@ const LazySignUpStudent = lazy(() =>
 
 const LazyLogInProfessor = lazy(() =>
   import(
-    '../../ignitus-Authentication/ignitus-ProfessorLogin/Components/index'
+    '../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/professorLogin'
   ),
 );
 

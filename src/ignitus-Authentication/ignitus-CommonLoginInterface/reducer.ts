@@ -6,7 +6,7 @@ const RESET = {
   success: false,
 };
 
-const studentLoginReducer = (state = { isFetching: false, message: '', success: false }, action) => {
+const loginReducer = (state = { isFetching: false, message: '', success: false }, action) => {
   switch (action.type) {
     case t.LOG_IN_RESPONSE:
       return Object.assign({}, state, { isFetching: false }, action.data);
@@ -22,4 +22,4 @@ const studentLoginReducer = (state = { isFetching: false, message: '', success: 
   }
 };
 
-export default studentLoginReducer;
+export default loginReducer;
