@@ -9,10 +9,6 @@ export type DefaultIconInputProperties = {
 };
 
 export type DefaultPasswordInputProperties = {
-  type: string;
-  iconOneName: AppIcon;
-  iconTwoName: AppIcon;
   placeholder: string;
-  handleClick: (value: string) => void;
   handleChange: (value: string) => void;
 };

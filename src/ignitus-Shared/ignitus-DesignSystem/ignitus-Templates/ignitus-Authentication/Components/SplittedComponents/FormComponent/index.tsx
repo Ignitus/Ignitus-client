@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 import {FormProps} from '../../../types';
-import { AppIcon } from '../../../../../../types/iconsTypes/iconEnums';
+import {AppIcon} from '../../../../../../types/iconsTypes/iconEnums';
 
 import * as t from '../../../constants';
 import * as A from '../../styles';
@@ -66,46 +66,15 @@ export const Form: FunctionComponent<FormProps> = ({
               <strong>Please </strong> input a valid mail!
             </div>
           )}
-          <div className="input-group form-group mb-2">
-            <div className="input-group-prepend">
-              <span className="input-group-text  span-bg">
-                <i className="fa fa-key fa-fw key-color" />
-              </span>
-            </div>
-            <input
-              name="password"
-              type={state.showPassword ? 'text' : 'password'}
-              id="pass"
-              className="form-control"
-              placeholder="Password"
-              value={state.password}
-              onChange={e => {
-                setState({
-                  ...state,
-                  password: e.target.value,
-                });
-              }}
-              required
-            />
-            <div className="input-group-append">
-              <span
-                className="input-group-text password-visiblity-icon"
-                onClick={() => {
-                  setState({
-                    ...state,
-                    showPassword: !state.showPassword,
-                  });
-                }}
-              >
-                {!state.showPassword && (
-                  <i className="fa fa-eye-slash" aria-hidden="true" />
-                )}
-                {state.showPassword && (
-                  <i className="fa fa-eye" aria-hidden="true" />
-                )}
-              </span>
-            </div>
-          </div>
+          <A.PasswordInput
+            placeholder="Password"
+            handleChange={password => {
+              setState({
+                ...state,
+                password,
+              });
+            }}
+          />
           {/* SIGNUP CONFIRM PASSWORD */}
           {authenticationType === 'SignUp' && (
             <>

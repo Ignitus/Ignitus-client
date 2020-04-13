@@ -76,13 +76,14 @@ export const EmailInput = styled(DefaultIconInput)`
   flex-direction: row-reverse;
   padding: 0;
   background: ${IgnitusBlue};
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: none;
   &:hover {
     border: none;
   }
 
   input {
+    width: 18.2rem;
     padding: 0.5rem;
     background: ${White};
     border: 1px solid ${GreyLight};
@@ -97,10 +98,9 @@ export const EmailInput = styled(DefaultIconInput)`
 `;
 
 export const PasswordInput = styled(DefaultPasswordInput)`
-  flex-direction: row-reverse;
   padding: 0;
   background: ${IgnitusBlue};
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: none;
   &:hover {
     border: none;
@@ -120,4 +120,4 @@ export const PasswordInput = styled(DefaultPasswordInput)`
   }
 `;
 
-export const InputGroup = styled.div``;
+export const InputGroup = styled(flexibleColDiv)``;
