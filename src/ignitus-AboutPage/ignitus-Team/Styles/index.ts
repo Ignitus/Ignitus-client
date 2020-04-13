@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import PlusIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
-import ChevronIcon from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chevronIcon/chevronIcon';
+import KeyBoardArrowDown from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {minimumWidthQuery} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
@@ -94,7 +94,7 @@ export const Plus = styled(PlusIcon)`
   fill: ${C.IgnitusBlue};
 `;
 
-export const Chevron = styled(ChevronIcon)`
+export const Chevron = styled(KeyBoardArrowDown)`
   height: 1.5rem;
   fill: ${C.IgnitusBlue};
 `;

@@ -106,8 +106,8 @@ export const Burger = styled(Icon)<ToggleProps>`
   right: 2rem;
   display: none;
   cursor: pointer;
-
-  transform: ${props => (props.isExpanded ? 'rotate(0deg)' : 'rotate(90deg)')};
+  width: 2rem;
+  transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 
   @media only screen and (max-width: 1042px) {

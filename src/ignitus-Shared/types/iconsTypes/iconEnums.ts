@@ -1,7 +1,6 @@
 export enum AppIcon {
   ApplyIcon = 'ApplyIcon',
   AngelListIcon = 'AngelListIcon',
-  Chevron = 'Chevron',
   CopyIcon = 'CopyIcon',
   CameraIcon = 'CameraIcon',
   LinkedInIcon = 'LinkedInIcon',
@@ -20,8 +19,6 @@ export enum AppIcon {
   KeyBoardArrowRight = 'KeyBoardArrowRight',
   IgnitusFullLogo = 'IgnitusFullLogo',
   CreateIcon = 'CreateIcon',
-  ClearIcon = 'ClearIcon',
-  LocationOnIcon = 'LocationOnIcon',
   QuestionAnswerIcon = 'QuestionAnswerIcon',
   GithubIcon = 'GithubIcon',
   FacebookIcon = 'FacebookIcon',
