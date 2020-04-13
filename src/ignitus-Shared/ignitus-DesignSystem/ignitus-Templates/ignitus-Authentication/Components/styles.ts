@@ -14,6 +14,7 @@ import {Paragraph as P} from '../../../ignitus-Atoms/typography';
 import {Bold} from '../../../ignitus-Atoms/fonts';
 import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
 import {DefaultPasswordInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
+import {Button as B} from '../../../ignitus-Atoms/buttons';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
@@ -123,3 +124,8 @@ export const PasswordInput = styled(DefaultPasswordInput)`
 `;
 
 export const InputGroup = styled(flexibleColDiv)``;
+export const Button = styled(B)`
+  border-radius: 0.5rem;
+`;
+
+export const ButtonContainer = styled.div``;

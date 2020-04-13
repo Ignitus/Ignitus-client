@@ -7,7 +7,6 @@ import {AppIcon} from '../../../../../../types/iconsTypes/iconEnums';
 
 import * as t from '../../../constants';
 import * as A from '../../styles';
-import {Button} from '../../../../../ignitus-Atoms/buttons';
 
 export const Form: FunctionComponent<FormProps> = ({
   role,
@@ -101,27 +100,25 @@ export const Form: FunctionComponent<FormProps> = ({
             </>
           )}
         </A.InputGroup>
-
-        <div>
-          <Button
+        <A.ButtonContainer>
+          <A.Button
             category="primary"
             size="large"
             onClick={e => handleSubmit(e)}
           >
             {' '}
             {authenticationType} as {role}{' '}
-          </Button>
-        </div>
-        <div>
+          </A.Button>
+        </A.ButtonContainer>
+        <A.Paragraph>
           {authRedirectText}{' '}
           <Link
             to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
-            className="text-center linkform"
           >
             {' '}
             {alternateAuth}
           </Link>
-        </div>
+        </A.Paragraph>
       </A.LeftColumnTwo>
     </A.RightRow>
   );
