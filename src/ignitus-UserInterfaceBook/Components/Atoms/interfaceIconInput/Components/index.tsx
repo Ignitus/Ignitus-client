@@ -8,18 +8,42 @@ import {
 import {DefaultIconInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components';
 import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {Interface} from '../../../../styles';
-import {GreyLight} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {
+  GreyLight,
+  White,
+  IgnitusBlue,
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
 
 const CustomDefaultIconInput = styled(DefaultIconInput)`
-  background: ${GreyLight};
-  border: 1px solid ${GreyLight};
   flex-direction: row-reverse;
-
   svg {
     margin-right: 0.4rem;
+  }
+`;
+
+const CustomEmailInput = styled(DefaultIconInput)`
+  flex-direction: row-reverse;
+  padding: 0;
+  background: ${IgnitusBlue};
+  border: none;
+  &:hover {
+    border: none;
+  }
+
+  input {
+    padding: 0.5rem;
+    background: ${White};
+    border: 1px solid ${GreyLight};
+    &:hover {
+      border: 1px solid ${IgnitusBlue};
+    }
+  }
+  svg {
+    margin: 0 0.5rem;
+    fill: ${White};
   }
 `;
 
@@ -35,13 +59,23 @@ export const interfaceIconInput = () => (
       handleClick={copy}
       handleChange={handleChange}
     />
+
     <br />
     <br />
-    <Heading4>Publication Details</Heading4>
+    <Heading4>Customized</Heading4>
     <CustomDefaultIconInput
       name={AppIcon.PdfIcon}
       type="string"
       placeholder="Give your publication a title..."
+      handleChange={handleChange}
+    />
+    <br />
+    <br />
+
+    <CustomEmailInput
+      name={AppIcon.MessageIcon}
+      type="string"
+      placeholder="Email"
       handleChange={handleChange}
     />
   </Interface>

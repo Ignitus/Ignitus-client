@@ -33,6 +33,19 @@ export const getPadding = ({size}: ButtonProperties) => {
   }
 };
 
+export const getInputPadding = ({size}: ButtonProperties) => {
+  switch (size) {
+    case AppSize.Small:
+      return '6px 4px';
+
+    case AppSize.Medium:
+      return '10px 4px';
+
+    case AppSize.Large:
+      return '14px 4px';
+  }
+};
+
 export const getFontSizes = ({size}: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:

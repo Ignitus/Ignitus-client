@@ -3,6 +3,7 @@ import {
   IgnitusBlue,
   GreyText,
   White,
+  GreyLight,
 } from '../colors';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {Normal, SM} from '../fonts';
@@ -14,8 +15,8 @@ export const InputContainer = styled.div`
   flex-direction: row;
   border-radius: 0.5rem;
   padding: 0.7rem;
-  background: ${White};
-  border: 1px solid ${White};
+  background: ${GreyLight};
+  border: 1px solid ${GreyLight};
   &:hover {
     border: 1px solid ${IgnitusBlue};
   }
@@ -32,8 +33,8 @@ export const Input = styled.input`
 `;
 
 export const StyledIcon = styled(Icon)`
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
   cursor: pointer;
   fill: ${IgnitusBlue};
 `;
