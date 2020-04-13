@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { flexibleRowDiv } from '../../shared';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledIcon = styled(Icon)`
