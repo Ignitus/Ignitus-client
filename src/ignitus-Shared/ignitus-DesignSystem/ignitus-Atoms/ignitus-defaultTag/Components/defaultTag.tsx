@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputTypes } from '../types';
-import { StyledTag1, StyledTag2, StyledTag3, StyledTag4, InputContainer, StyledIcon } from '../styles';
+import { StyledTag1, StyledTag2, StyledTag3, StyledTag4, StyledIcon } from '../styles';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 export const DefaultTag1 = ({ label }: InputTypes) => (
