@@ -32,7 +32,7 @@ export const NavigationBarBrand = styled(HashLink)`
   /* padding: 1rem; */
   align-self: stretch;
 `;
-export const Logo = styled(Icon)<NavigationProps>`
+export const Logo = styled(Icon)`
   width: 2.5rem;
   height: 2.5rem;
   path {

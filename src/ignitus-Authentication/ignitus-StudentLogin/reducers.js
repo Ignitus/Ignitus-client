@@ -1,3 +1,4 @@
+/* eslint-disable import/no-default-export */
 import * as t from './actionTypes';
 
 const RESET = {
@@ -6,15 +7,25 @@ const RESET = {
   success: false,
 };
 
-const studentLoginReducer = (state = { isFetching: false, message: '', success: false }, action) => {
+const studentLoginReducer = (
+  state = { isFetching: false, message: '', success: false },
+  action,
+) => {
   switch (action.type) {
     case t.LOG_IN_RESPONSE:
       return Object.assign({}, state, { isFetching: false }, action.data);
 
     case t.LOG_IN_REQUEST:
-      return Object.assign({}, state, { isFetching: true, message: 'Processing...', success: false });
+      return Object.assign({}, state, {
+        isFetching: true,
+        message: 'Processing...',
+        success: false,
+      });
 
-    case t.LOG_USER_OUT: case t.LOG_IN_CLEAR_PREVIOUS:
+    case t.LOG_USER_OUT:
+      return RESET;
+
+    case t.LOG_IN_CLEAR_PREVIOUS:
       return RESET;
 
     default:
