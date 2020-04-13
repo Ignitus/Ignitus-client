@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import * as I from '../../styles';
 import {DefaultIconInputProperties} from '../../types';
 
@@ -11,6 +11,11 @@ const DefaultIconInput = ({
   ...rest
 }: DefaultIconInputProperties) => {
   const [value, setValue] = useState('');
+
+  useEffect(() => {
+    handleChange(value);
+  }, [value]);
+
   return (
     <React.Fragment>
       <I.InputContainer {...rest}>
@@ -20,7 +25,6 @@ const DefaultIconInput = ({
           value={value}
           onChange={e => {
             setValue(e.target.value);
-            handleChange(value);
           }}
         />
         <I.StyledIcon

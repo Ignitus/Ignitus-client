@@ -97,6 +97,8 @@ export const EmailInput = styled(DefaultIconInput)`
   }
 `;
 
+export const ConfirmPasswordInput = styled(EmailInput)``;
+
 export const PasswordInput = styled(DefaultPasswordInput)`
   padding: 0;
   background: ${IgnitusBlue};

@@ -7,6 +7,7 @@ import {AppIcon} from '../../../../../../types/iconsTypes/iconEnums';
 
 import * as t from '../../../constants';
 import * as A from '../../styles';
+import {Button} from '../../../../../ignitus-Atoms/buttons';
 
 export const Form: FunctionComponent<FormProps> = ({
   role,
@@ -48,6 +49,18 @@ export const Form: FunctionComponent<FormProps> = ({
         </div>
       )}
 
+      {state.invalidEmail && (
+        <div className="alert alert-danger margin-Top">
+          <strong>Please </strong> input a valid mail!
+        </div>
+      )}
+
+      {state.equalmessage && (
+        <div className="alert alert-danger margin-Top">
+          <strong>Password </strong> does not match the confirm password.!
+        </div>
+      )}
+
       <A.LeftColumnTwo>
         <A.InputGroup>
           <A.EmailInput
@@ -61,11 +74,7 @@ export const Form: FunctionComponent<FormProps> = ({
               });
             }}
           />
-          {state.invalidEmail && (
-            <div className="text-danger small mb-2">
-              <strong>Please </strong> input a valid mail!
-            </div>
-          )}
+
           <A.PasswordInput
             placeholder="Password"
             handleChange={password => {
@@ -78,55 +87,40 @@ export const Form: FunctionComponent<FormProps> = ({
           {/* SIGNUP CONFIRM PASSWORD */}
           {authenticationType === 'SignUp' && (
             <>
-              <div className="input-group form-group mb-2">
-                <div className="input-group-prepend">
-                  <span className="input-group-text span-bg">
-                    <i className="fa fa-key fa-fw key-color" />
-                  </span>
-                </div>
-                <input
-                  type={state.showPassword ? 'text' : 'password'}
-                  id="confirmPass"
-                  className="form-control password-border"
-                  placeholder="Confirm Password"
-                  required
-                  value={state.confirmPassword}
-                  onChange={e =>
-                    setState({...state, confirmPassword: e.target.value})
-                  }
-                />
-              </div>
-
-              {state.equalmessage && (
-                <div className="text-danger small mb-1">
-                  <strong>Password </strong> does not match the confirm
-                  password.!
-                </div>
-              )}
+              <A.ConfirmPasswordInput
+                name={AppIcon.MessageIcon}
+                type="password"
+                placeholder="Confirm Password"
+                handleChange={confirmPassword => {
+                  setState({
+                    ...state,
+                    confirmPassword,
+                  });
+                }}
+              />
             </>
           )}
         </A.InputGroup>
 
-        <div className="text-center mb-3 mt-3">
-          <button
-            type="button"
-            className="btn btn-success btn-rounded button-bg px-3 py-2"
+        <div>
+          <Button
+            category="primary"
+            size="large"
             onClick={e => handleSubmit(e)}
           >
-            {authenticationType} as {role}
-          </button>
+            {' '}
+            {authenticationType} as {role}{' '}
+          </Button>
         </div>
-        <div className="text-center mb-3 mt-3">
-          <div>
-            {authRedirectText}{' '}
-            <Link
-              to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
-              className="text-center linkform"
-            >
-              {' '}
-              {alternateAuth}
-            </Link>
-          </div>
+        <div>
+          {authRedirectText}{' '}
+          <Link
+            to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
+            className="text-center linkform"
+          >
+            {' '}
+            {alternateAuth}
+          </Link>
         </div>
       </A.LeftColumnTwo>
     </A.RightRow>
