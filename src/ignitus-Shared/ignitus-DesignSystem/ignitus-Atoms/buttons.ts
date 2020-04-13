@@ -32,7 +32,7 @@ export const ParentButton = styled.button`
   transition: all 0.3s ease;
   &:hover,
   &:focus {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   }
 `;
 
