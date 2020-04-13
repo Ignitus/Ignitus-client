@@ -24,7 +24,7 @@ const CustomDefaultIconInput = styled(DefaultIconInput)`
   }
 `;
 
-const CustomEmailInput = styled(DefaultIconInput)`
+export const CustomEmailInput = styled(DefaultIconInput)`
   flex-direction: row-reverse;
   padding: 0;
   background: ${IgnitusBlue};

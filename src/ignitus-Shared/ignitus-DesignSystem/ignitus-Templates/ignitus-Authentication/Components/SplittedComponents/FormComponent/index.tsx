@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 import {FormProps} from '../../../types';
+import { AppIcon } from '../../../../../../types/iconsTypes/iconEnums';
+
 import * as t from '../../../constants';
 import * as A from '../../styles';
 
@@ -47,29 +49,18 @@ export const Form: FunctionComponent<FormProps> = ({
       )}
 
       <A.LeftColumnTwo>
-        <A.InputContainer>
-          <div className="input-group form-group mb-2">
-            <div className="input-group-prepend">
-              <span className="input-group-text span-bg">
-                <i className="fa fa-envelope-o fa-fw envelope-color" />
-              </span>
-            </div>
-            <input
-              name="email"
-              type="email"
-              id="email"
-              className="form-control"
-              placeholder="Email"
-              value={state.email}
-              onChange={e => {
-                setState({
-                  ...state,
-                  email: e.target.value,
-                });
-              }}
-              required
-            />
-          </div>
+        <A.InputGroup>
+          <A.EmailInput
+            name={AppIcon.MessageIcon}
+            type="string"
+            placeholder="Email"
+            handleChange={email => {
+              setState({
+                ...state,
+                email,
+              });
+            }}
+          />
           {state.invalidEmail && (
             <div className="text-danger small mb-2">
               <strong>Please </strong> input a valid mail!
@@ -145,7 +136,7 @@ export const Form: FunctionComponent<FormProps> = ({
               )}
             </>
           )}
-        </A.InputContainer>
+        </A.InputGroup>
 
         <div className="text-center mb-3 mt-3">
           <button
@@ -154,18 +145,6 @@ export const Form: FunctionComponent<FormProps> = ({
             onClick={e => handleSubmit(e)}
           >
             {authenticationType} as {role}
-          </button>
-        </div>
-        <div className="or-seperator">
-          <i className="text-black-50">or</i>
-        </div>
-        <div className="mb-4">
-          <button
-            type="button"
-            className="btn btn-primary btn-rounded btn-linkedin mx-auto btn-block"
-          >
-            <i className="fa fa-linkedin mr-3" />
-            Linked-in
           </button>
         </div>
         <div className="text-center mb-3 mt-3">
