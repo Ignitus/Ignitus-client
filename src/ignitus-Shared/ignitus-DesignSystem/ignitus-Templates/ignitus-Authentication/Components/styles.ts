@@ -20,15 +20,16 @@ export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 4rem;
+  padding: 8rem 4rem;
 `;
 
 export const Container = styled.div`
   background: ${IgnitusBlue};
 `;
 
-export const Row = styled(flexibleRowDiv)`
-  margin: 2rem 0;
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 `;
 
 export const Paragraph = styled(P)`
