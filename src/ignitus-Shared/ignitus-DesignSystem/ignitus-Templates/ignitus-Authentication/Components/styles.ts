@@ -12,7 +12,8 @@ import {
 } from '../../../ignitus-Atoms/colors';
 import {Paragraph as P} from '../../../ignitus-Atoms/typography';
 import {Bold} from '../../../ignitus-Atoms/fonts';
-import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components';
+import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
+import {DefaultPasswordInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
@@ -72,6 +73,30 @@ export const LeftColumnTwo = styled.form`
 `;
 
 export const EmailInput = styled(DefaultIconInput)`
+  flex-direction: row-reverse;
+  padding: 0;
+  background: ${IgnitusBlue};
+  margin: 1rem 0;
+  border: none;
+  &:hover {
+    border: none;
+  }
+
+  input {
+    padding: 0.5rem;
+    background: ${White};
+    border: 1px solid ${GreyLight};
+    &:hover {
+      border: 1px solid ${IgnitusBlue};
+    }
+  }
+  svg {
+    margin: 0 0.5rem;
+    fill: ${White};
+  }
+`;
+
+export const PasswordInput = styled(DefaultPasswordInput)`
   flex-direction: row-reverse;
   padding: 0;
   background: ${IgnitusBlue};

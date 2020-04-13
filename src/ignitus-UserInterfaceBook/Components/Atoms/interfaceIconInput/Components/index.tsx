@@ -5,7 +5,7 @@ import {
   Heading4,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-import {DefaultIconInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components';
+import {DefaultIconInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
 import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {Interface} from '../../../../styles';
 import {

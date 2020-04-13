@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import * as I from '../styles';
-import {InputTypes} from '../types';
+import * as I from '../../styles';
+import {DefaultIconInputProperties} from '../../types';
 
 const DefaultIconInput = ({
   placeholder,
@@ -9,7 +9,7 @@ const DefaultIconInput = ({
   handleClick,
   handleChange,
   ...rest
-}: InputTypes) => {
+}: DefaultIconInputProperties) => {
   const [value, setValue] = useState('');
   return (
     <React.Fragment>
