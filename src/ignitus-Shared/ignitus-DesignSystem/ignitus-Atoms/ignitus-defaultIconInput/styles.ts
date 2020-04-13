@@ -1,21 +1,21 @@
 import styled from '@emotion/styled';
-import {GreyBackground, IgnitusBlue, GreyText, GreyLight} from '../colors';
+import {
+  IgnitusBlue,
+  GreyText,
+  White,
+} from '../colors';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {Normal, SM} from '../fonts';
-import {InputContainerProps} from './types';
 
-export const InputContainer = styled.div<InputContainerProps>`
+export const InputContainer = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: ${props => props.position};
+  flex-direction: row;
   border-radius: 0.5rem;
-  border: 1px solid
-    ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground)};
   padding: 0.7rem;
-  background: ${props =>
-    props.position === 'row-reverse' ? GreyLight : GreyBackground};
-
+  background: ${White};
+  border: 1px solid ${White};
   &:hover {
     border: 1px solid ${IgnitusBlue};
   }
@@ -31,10 +31,9 @@ export const Input = styled.input`
   color: ${GreyText};
 `;
 
-export const StyledIcon = styled(Icon)<InputContainerProps>`
+export const StyledIcon = styled(Icon)`
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  margin-right: ${props => (props.position === 'row-reverse' ? '1rem' : '0')};
   fill: ${IgnitusBlue};
 `;

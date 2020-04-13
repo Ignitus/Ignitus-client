@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
 import {FormProps} from '../../../types';
 import * as t from '../../../constants';
+import * as A from '../../styles';
 
 export const Form: FunctionComponent<FormProps> = ({
   role,
@@ -14,18 +15,17 @@ export const Form: FunctionComponent<FormProps> = ({
   setState,
   authenticationData,
   handleSubmit,
-  isFetching,
 }) => {
   const {message, success} = authenticationData;
   return (
-    <div className="col-md-6 container-form">
-      <div className="my-4 text-align">
+    <A.RightRow>
+      <A.LeftColumnOne>
         <img
           className="img-fluid img mx-auto d-block"
           src={t.logo}
           alt="Ignitus Logo"
         />
-      </div>
+      </A.LeftColumnOne>
 
       {/* SIGNUP SUCCESS */}
       {authenticationType === 'SignUp' && success && (
@@ -46,8 +46,8 @@ export const Form: FunctionComponent<FormProps> = ({
         </div>
       )}
 
-      <form>
-        <div className="px-4">
+      <A.LeftColumnTwo>
+        <A.InputContainer>
           <div className="input-group form-group mb-2">
             <div className="input-group-prepend">
               <span className="input-group-text span-bg">
@@ -145,7 +145,7 @@ export const Form: FunctionComponent<FormProps> = ({
               )}
             </>
           )}
-        </div>
+        </A.InputContainer>
 
         <div className="text-center mb-3 mt-3">
           <button
@@ -180,7 +180,7 @@ export const Form: FunctionComponent<FormProps> = ({
             </Link>
           </div>
         </div>
-      </form>
-    </div>
+      </A.LeftColumnTwo>
+    </A.RightRow>
   );
 };

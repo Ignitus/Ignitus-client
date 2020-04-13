@@ -10,7 +10,7 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
   alternateRole,
 }) => (
   <A.LeftRow>
-    <A.ColumnOne>
+    <A.RightColumnOne>
       {' '}
       <A.Image
         alt={`${role}auth`}
@@ -20,8 +20,8 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
             : t.professorAuthentication
         }
       />
-    </A.ColumnOne>
-    <A.ColumnTwo>
+    </A.RightColumnOne>
+    <A.RightColumnTwo>
       <A.Paragraph>Let&apos;s get started</A.Paragraph>
       <A.Paragraph>
         Skyrocket your career with best global opportunities.{' '}
@@ -37,6 +37,6 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
           I am a {alternateRole}
         </Link>
       </A.Paragraph>
-    </A.ColumnTwo>
+    </A.RightColumnTwo>
   </A.LeftRow>
 );

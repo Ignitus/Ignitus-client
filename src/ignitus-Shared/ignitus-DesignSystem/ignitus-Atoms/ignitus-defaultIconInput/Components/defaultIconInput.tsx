@@ -8,12 +8,12 @@ const DefaultIconInput = ({
   name,
   handleClick,
   handleChange,
-  position,
+  ...rest
 }: InputTypes) => {
   const [value, setValue] = useState('');
   return (
     <React.Fragment>
-      <I.InputContainer position={position}>
+      <I.InputContainer {...rest}>
         <I.Input
           type={type}
           placeholder={placeholder}
@@ -26,7 +26,6 @@ const DefaultIconInput = ({
         <I.StyledIcon
           name={name}
           onClick={() => (handleClick ? handleClick(value) : null)}
-          position={position}
         />
       </I.InputContainer>
     </React.Fragment>
