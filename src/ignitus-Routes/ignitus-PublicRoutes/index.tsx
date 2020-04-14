@@ -8,7 +8,7 @@ import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 /**
  * Route-based code splitting.
@@ -47,10 +47,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
           <Route
             path={['/login', '/signup', '/flow']}
             component={AuthenticationRoutes}
-          />
-          <Route
-            path="/jobConfirmation"
-            component={JobConfirmation.components.JobConfirmation}
           />
           <Route path="/" component={Notfound} />
         </Switch>

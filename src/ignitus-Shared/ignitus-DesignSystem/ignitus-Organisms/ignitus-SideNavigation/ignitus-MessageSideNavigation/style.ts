@@ -4,6 +4,7 @@ import {
   IgnitusBlue,
   GreyLight,
   Red,
+  boxShadowColor,
 } from '../../../ignitus-Atoms/colors';
 import {XS, MD, Normal} from '../../../ignitus-Atoms/fonts';
 import { flexibleColDiv } from '../../../shared';
@@ -17,7 +18,7 @@ type Props = {
 export const MessageContainer = styled(flexibleColDiv)`
   background: ${White};
   border-radius: 16px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 ${boxShadowColor};
   width: 14rem;
   height: 16rem;
 `;

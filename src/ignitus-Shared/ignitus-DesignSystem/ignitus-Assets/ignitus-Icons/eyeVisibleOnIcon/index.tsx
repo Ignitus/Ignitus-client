@@ -1,23 +1,20 @@
 import React from 'react';
 import {HTMLAttributes} from 'react';
-
 type Props = HTMLAttributes<SVGElement>;
 
-const LocationOnIcon = ({title = 'Location On Icon', ...rest}: Props) => {
+export const EyeVisibleOnIcon = ({title = 'Eye Visible On Icon', ...rest}: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      aria-label={title}
       viewBox="0 0 24 24"
+      aria-label={title}
       {...rest}
     >
       <title>{title}</title>
       <path d="M0 0h24v24H0V0z" fill="none" />
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+      <path d="M12 4C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
     </svg>
   );
 };
-
-export default LocationOnIcon;
 
 /* SVG credits goes to https://material.io/resources/icons/ */

@@ -23,7 +23,6 @@ export interface SideWrapperProps {
   alternateRole: userRole;
 }
 
-
 export interface FormProps {
   role: userRole;
   authenticationType: authType;
@@ -33,7 +32,6 @@ export interface FormProps {
   setState: Function;
   authenticationData: authData;
   handleSubmit: Function;
-  isFetching: boolean
 }
 
 export interface SignupState extends LoginState {

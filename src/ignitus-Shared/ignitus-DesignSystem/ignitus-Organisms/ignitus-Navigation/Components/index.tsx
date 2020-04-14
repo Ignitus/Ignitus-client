@@ -31,12 +31,6 @@ const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <N.NavigationLink smooth to="/#contributors">
-            Contributors
-          </N.NavigationLink>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
           <Link to="/aboutus">About</Link>
         </N.NavigationLinkItem>
 
@@ -65,7 +59,7 @@ const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
 
       <N.Burger
         onClick={toogleIsExpanded}
-        name={AppIcon.Chevron}
+        name={AppIcon.KeyBoardArrowRight}
         isExpanded={isExpanded}
       />
     </N.Navigation>

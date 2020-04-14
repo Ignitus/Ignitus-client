@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import * as I from '../styles';
-import {InputTypes} from '../types';
+import React, {useState, useEffect} from 'react';
+import * as I from '../../styles';
+import {DefaultIconInputProperties} from '../../types';
 
 const DefaultIconInput = ({
   placeholder,
@@ -8,25 +8,28 @@ const DefaultIconInput = ({
   name,
   handleClick,
   handleChange,
-  position,
-}: InputTypes) => {
+  ...rest
+}: DefaultIconInputProperties) => {
   const [value, setValue] = useState('');
+
+  useEffect(() => {
+    handleChange(value);
+  }, [value]);
+
   return (
     <React.Fragment>
-      <I.InputContainer position={position}>
+      <I.InputContainer {...rest}>
         <I.Input
           type={type}
           placeholder={placeholder}
           value={value}
           onChange={e => {
             setValue(e.target.value);
-            handleChange(value);
           }}
         />
         <I.StyledIcon
           name={name}
           onClick={() => (handleClick ? handleClick(value) : null)}
-          position={position}
         />
       </I.InputContainer>
     </React.Fragment>

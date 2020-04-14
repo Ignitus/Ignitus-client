@@ -10,7 +10,7 @@ export const OpportunityList = styled(flexibleColDiv)``;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
   padding: 1rem;
   width: 100%;

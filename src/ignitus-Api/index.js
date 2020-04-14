@@ -41,7 +41,8 @@ async function getHeaders(name) {
       headers: {
         'If-None-Match': item.etag,
       },
-      validateStatus: status => (status >= 200 && status < 300) || status === 304,
+      validateStatus: status =>
+        (status >= 200 && status < 300) || status === 304,
     };
   }
   return {};

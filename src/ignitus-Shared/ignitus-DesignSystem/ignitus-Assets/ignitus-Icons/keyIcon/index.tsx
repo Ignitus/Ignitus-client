@@ -2,24 +2,19 @@ import React from 'react';
 import {HTMLAttributes} from 'react';
 type Props = HTMLAttributes<SVGElement>;
 
-const ChevronIcon = ({title = 'ChevronIcon', ...rest}: Props) => {
+export const KeyIcon = ({title = 'Key Icon', ...rest}: Props) => {
   return (
     <svg
-      aria-label={title}
       xmlns="http://www.w3.org/2000/svg"
-      height="24"
-      role="img"
       viewBox="0 0 24 24"
-      width="24"
+      aria-label={title}
       {...rest}
     >
       <title>{title}</title>
       <path d="M0 0h24v24H0V0z" fill="none" />
-      <path d="M9.29 6.71a1 1 0 000 1.41L13.17 12l-3.88 3.88a1 1 0 101.41 1.41l4.59-4.59a1 1 0 000-1.41L10.7 6.7a1 1 0 00-1.41.01z" />
+      <path d="M12.65 10C11.7 7.31 8.9 5.5 5.77 6.12c-2.29.46-4.15 2.29-4.63 4.58C.32 14.57 3.26 18 7 18c2.61 0 4.83-1.67 5.65-4H17v2c0 1.1.9 2 2 2s2-.9 2-2v-2c1.1 0 2-.9 2-2s-.9-2-2-2h-8.35zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
     </svg>
   );
 };
-
-export default ChevronIcon;
 
 /* SVG credits goes to https://material.io/resources/icons/ */

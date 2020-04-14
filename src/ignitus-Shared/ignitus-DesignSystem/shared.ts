@@ -3,7 +3,7 @@ import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
 import {minimumWidthQuery} from './ignitus-Atoms/media';
 import {Heading2} from './ignitus-Atoms/typography';
-import { Loading } from '../ignitus-Utilities/Components/loader';
+import {Loading} from '../ignitus-Utilities/Components/loader';
 
 export const Title = styled(Heading2)`
   color: ${C.IgnitusBlue};
@@ -31,6 +31,9 @@ export const TopSection = styled.section`
 
 /* Helpful to define max-width on different screen sizes. */
 export const Container = styled.div`
+  ${minimumWidthQuery[1]} {
+    max-width: 320px;
+  }
   ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
@@ -91,11 +94,10 @@ export const flexibleRowDiv = styled.div`
   justify-content: center;
 `;
 
-
 export const LazyLoader = styled(Loading)`
   height: 67vh;
   img {
     width: 15rem;
   }
-`
+`;
 /* Shared between partners & contirbutors component. */

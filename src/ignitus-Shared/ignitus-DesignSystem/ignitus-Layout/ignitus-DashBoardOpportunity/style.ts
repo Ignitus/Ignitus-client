@@ -5,7 +5,7 @@ import {flexibleRowDiv} from '../../shared';
 import {Normal, SemiBold, Bold, XS} from '../../ignitus-Atoms/fonts';
 
 export const Container = styled.div`
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
   border-radius: 20px;
   display: flex;

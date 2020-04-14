@@ -2,7 +2,6 @@ import React, {HTMLAttributes} from 'react';
 import TwitterIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/twitterIcon/twitterIcon';
 import LinkedInIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkedInIcon/linkedInIcon';
 import AngelListIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon/angelListIcon';
-import ChevronIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/chevronIcon/chevronIcon';
 import PlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
 import HeartIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
@@ -15,8 +14,6 @@ import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight';
 import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
 import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon/createIcon';
-import ClearIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/clearIcon';
-import LocationOnIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationOnIcon';
 import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
 import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
@@ -39,7 +36,10 @@ import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/co
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
 import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
-import { IgnitusLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
+import {IgnitusLogo} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
+import {EyeVisibleOffIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOffIcon/index';
+import {EyeVisibleOnIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOnIcon/index';
+import {KeyIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -52,9 +52,6 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.ApplyIcon:
       return <ApplyIcon {...rest} />;
-
-    case AppIcon.Chevron:
-      return <ChevronIcon {...rest} />;
 
     case AppIcon.HeartIcon:
       return <HeartIcon {...rest} />;
@@ -113,12 +110,6 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.CreateIcon:
       return <CreateIcon {...rest} />;
 
-    case AppIcon.ClearIcon:
-      return <ClearIcon {...rest} />;
-
-    case AppIcon.LocationOnIcon:
-      return <LocationOnIcon {...rest} />;
-
     case AppIcon.QuestionAnswerIcon:
       return <QuestionAnswerIcon {...rest} />;
 
@@ -166,6 +157,15 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.IgnitusLogo:
       return <IgnitusLogo {...rest} />;
+
+    case AppIcon.EyeVisibleOffIcon:
+      return <EyeVisibleOffIcon {...rest} />;
+
+    case AppIcon.EyeVisibleOnIcon:
+      return <EyeVisibleOnIcon {...rest} />;
+
+    case AppIcon.KeyIcon:
+      return <KeyIcon {...rest} />;
   }
 };
 
