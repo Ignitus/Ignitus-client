@@ -22,11 +22,7 @@ export const Form: FunctionComponent<FormProps> = ({
   return (
     <A.RightRow>
       <A.LeftColumnOne>
-        <img
-          className="img-fluid img mx-auto d-block"
-          src={t.logo}
-          alt="Ignitus Logo"
-        />
+        <A.Logo name={AppIcon.IgnitusLogo} />
       </A.LeftColumnOne>
 
       {/* SIGNUP SUCCESS */}

@@ -1,9 +1,19 @@
+html * {
+	font-size: 16px;
+	font-family: Raleway;
+  margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
