@@ -2,14 +2,13 @@ import styled from '@emotion/styled';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
   minimumWidthQuery,
-  maximumWidthQuery,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {
   Heading3,
   Paragraph as P,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {White} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+// import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};

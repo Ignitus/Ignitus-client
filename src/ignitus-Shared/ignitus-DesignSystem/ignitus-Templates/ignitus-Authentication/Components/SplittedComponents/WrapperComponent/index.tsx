@@ -1,5 +1,4 @@
 import React, {FunctionComponent} from 'react';
-import {BootStrapSection} from '../../../../../shared';
 import * as A from '../../styles';
 
 export const Wrapper: FunctionComponent<{

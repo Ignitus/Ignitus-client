@@ -5,7 +5,6 @@ import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodas
 import {FormProps} from '../../../types';
 import {AppIcon} from '../../../../../../types/iconsTypes/iconEnums';
 
-import * as t from '../../../constants';
 import * as A from '../../styles';
 
 export const Form: FunctionComponent<FormProps> = ({

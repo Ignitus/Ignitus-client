@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import {
   BootStrapSection,
-  flexibleRowDiv,
   flexibleColDiv,
 } from '../../../shared';
 
@@ -10,8 +9,6 @@ import {
   IgnitusBlue,
   White,
   GreyLight,
-  GreyOne,
-  Black,
 } from '../../../ignitus-Atoms/colors';
 
 import {Paragraph as P} from '../../../ignitus-Atoms/typography';
