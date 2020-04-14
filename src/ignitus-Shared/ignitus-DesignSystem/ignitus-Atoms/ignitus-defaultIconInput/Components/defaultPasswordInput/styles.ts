@@ -30,13 +30,13 @@ export const InputContainer = styled.div`
     padding: 0.45rem;
     
     margin: 0;
-    &:first-child {
+    &:first-of-type {
       fill: ${White};
       background: ${IgnitusBlue};
       border-radius: 0.5rem 0 0 0.5rem;
     }
 
-    &:last-child {
+    &:last-of-type {
       background: ${GreyLight};
       border-radius: 0 0.5rem 0.5rem 0;
     }

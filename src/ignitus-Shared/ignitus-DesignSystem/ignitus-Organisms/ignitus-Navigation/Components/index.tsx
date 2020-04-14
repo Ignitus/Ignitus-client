@@ -8,53 +8,32 @@ import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
 
 import * as N from '../styles';
+import {
+  AuthenticatedNavigationItemsList,
+  NonAuthenticatedNavigationItemsList,
+} from '../constants';
 
 const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
+  const NavigationItemsList = localStorage.getItem('authenticated')
+    ? AuthenticatedNavigationItemsList
+    : NonAuthenticatedNavigationItemsList;
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   return (
     <N.Navigation transparentNavigation={transparentNavigation}>
       <N.NavigationBarBrand to="/#">
         <N.Logo name={AppIcon.IgnitusLogo} />
       </N.NavigationBarBrand>
-
       <N.NavigationLinks isExpanded={isExpanded}>
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <N.NavigationLink smooth to="/#">
-            Home
-          </N.NavigationLink>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <N.NavigationLink smooth to="/#what-we-do">
-            What we provide?
-          </N.NavigationLink>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <Link to="/aboutus">About</Link>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://bit.ly/2SaYXMO"
+        {NavigationItemsList.map(({title, route}) => (
+          <N.NavigationLinkItem
+            key={title}
+            transparentNavigation={transparentNavigation}
           >
-            Join
-          </a>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <Link to="/login" className="navlink">
-            Sign in
-          </Link>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <Link to="/signup" className="navlink">
-            Sign up
-          </Link>
-        </N.NavigationLinkItem>
+            <N.NavigationLink smooth to={route}>
+              {title}
+            </N.NavigationLink>
+          </N.NavigationLinkItem>
+        ))}
       </N.NavigationLinks>
 
       <N.Burger

@@ -5,3 +5,8 @@ export interface NavigationProps {
 export type ToggleProps = {
   isExpanded: boolean;
 };
+
+export type NavigationItems = {
+  title: string;
+  route: string;
+};
