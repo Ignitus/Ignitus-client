@@ -53,6 +53,7 @@ export const interfaceIconInput = () => (
     <hr />
     <Heading4> Direct link</Heading4>
     <DefaultIconInput
+      state=""
       name={AppIcon.CopyIcon}
       type="string"
       placeholder="Paste URL Here"
@@ -64,6 +65,7 @@ export const interfaceIconInput = () => (
     <br />
     <Heading4>Customized</Heading4>
     <CustomDefaultIconInput
+      state=""
       name={AppIcon.PdfIcon}
       type="string"
       placeholder="Give your publication a title..."
@@ -73,6 +75,7 @@ export const interfaceIconInput = () => (
     <br />
 
     <CustomEmailInput
+      state=""
       name={AppIcon.MessageIcon}
       type="string"
       placeholder="Email"

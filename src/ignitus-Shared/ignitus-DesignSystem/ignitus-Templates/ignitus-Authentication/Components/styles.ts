@@ -131,7 +131,7 @@ export const EmailInput = styled(DefaultIconInput)`
   }
 
   input {
-    width: 12.2rem;
+    width: 12.5rem;
     padding: 0.5rem;
     background: ${White};
     border: 1px solid ${GreyLight};

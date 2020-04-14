@@ -1,5 +1,3 @@
-/* eslint-disable import/no-default-export */
-/* eslint-disable no-throw-literal */
 import { effects } from 'redux-saga';
 import * as t from './actionTypes';
 import * as a from './actions';
@@ -10,13 +8,13 @@ const {
 } = effects;
 
 function* signIn(action) {
-  const { email, password } = action;
+  const { email, password, userType } = action;
   try {
-    const data = yield call(api.signIn, email, password);
+    const data = yield call(api.signIn, email, password, userType);
     if (!data.data.data) {
       throw { ...data };
     } else {
-      localStorage.setItem('authenticated', true);
+      localStorage.setItem('authenticated', 'true');
       localStorage.setItem('data', JSON.stringify(data.data.data.clientData));
       yield put(a.logInResponse(data.data));
     }

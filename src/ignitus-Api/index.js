@@ -26,11 +26,11 @@ export async function getTestimonialData() {
 }
 
 export function signUp(email, password) {
-  return axios.post(t.STUDENT_SIGN_UP, {email, password, userType: 'student'});
+  return axios.post(t.STUDENT_SIGN_UP, { email, password, userType: 'student' });
 }
 
-export function signIn(email, password) {
-  return axios.post(t.STUDENT_SIGN_IN, {email, password, userType: 'student'});
+export function signIn(email, password, userType) {
+  return axios.post(t.STUDENT_SIGN_IN, { email, password, userType });
 }
 
 async function getHeaders(name) {
@@ -41,8 +41,7 @@ async function getHeaders(name) {
       headers: {
         'If-None-Match': item.etag,
       },
-      validateStatus: status =>
-        (status >= 200 && status < 300) || status === 304,
+      validateStatus: status => (status >= 200 && status < 300) || status === 304,
     };
   }
   return {};

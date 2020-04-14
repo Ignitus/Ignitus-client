@@ -65,6 +65,7 @@ export const Form: FunctionComponent<FormProps> = ({
           <A.EmailInput
             name={AppIcon.MessageIcon}
             type="string"
+            state={state.email}
             placeholder="Email"
             handleChange={email => {
               setState({
@@ -76,6 +77,7 @@ export const Form: FunctionComponent<FormProps> = ({
 
           <A.PasswordInput
             placeholder="Password"
+            state={state.password}
             handleChange={password => {
               setState({
                 ...state,
@@ -89,6 +91,7 @@ export const Form: FunctionComponent<FormProps> = ({
               <A.ConfirmPasswordInput
                 name={AppIcon.KeyIcon}
                 type="password"
+                state={state.confirmPassword}
                 placeholder="Confirm Password"
                 handleChange={confirmPassword => {
                   setState({
