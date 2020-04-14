@@ -28,6 +28,7 @@ export const LinkWrapper = styled.div<LinkWrapperProps>(
     width: '100%',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    marginTop: '0.5rem',
   },
   props => ({display: props.toggle ? 'flex' : 'none'}),
 );
@@ -42,7 +43,7 @@ export const PureCoreTeam = styled.div`
 
 export const TeamContainer = styled.div`
   display: grid;
-
+  margin-top: 1.5rem;
   ${minimumWidthQuery[1]} {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: none;
@@ -79,6 +80,7 @@ export const TeamCard = styled.div`
   text-align: center;
   padding: 2rem;
   margin: 0.5em 0.5em;
+  min-height: 12rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 `;
 
