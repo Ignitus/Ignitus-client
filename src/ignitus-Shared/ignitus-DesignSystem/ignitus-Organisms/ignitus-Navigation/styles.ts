@@ -5,6 +5,7 @@ import {
   White,
   SecondaryColor,
   IgnitusBlue,
+  boxShadowColor,
 } from '../../ignitus-Atoms/colors';
 import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
 import {NavigationProps, ToggleProps} from './types';
@@ -21,6 +22,7 @@ export const Navigation = styled.nav<NavigationProps>`
   justify-content: space-between;
   transition: background-color 300ms ease-in;
   background: ${props => (props.transparentNavigation ? 'transparent' : White)};
+  box-shadow: ${props => (props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`)};
   padding: 0.5rem;
   @media only screen and (max-width: 1042px) {
     flex-direction: column;

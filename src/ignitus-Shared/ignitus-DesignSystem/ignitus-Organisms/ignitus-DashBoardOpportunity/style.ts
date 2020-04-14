@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
 import {flexibleRowDiv} from '../../shared';
-import {Normal, SemiBold, Bold, XS} from '../../ignitus-Atoms/fonts';
+import {Normal, XS} from '../../ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
@@ -31,19 +31,19 @@ export const RightRow = styled.div`
   padding: 0.5rem;
 `;
 
-export const Description = styled(T.Heading6)`
+export const Description = styled(T.Paragraph)`
   font-weight: ${Normal};
-  color: ${C.Black};
-  margin-right: 25px;
+  color: ${C.GreyText};
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
 `;
 
-export const Title = styled(T.Heading4)`
+export const Title = styled(T.Heading3)`
   flex: 1;
-  font-weight: ${Bold};
 `;
 
 export const SubTitle = styled.p`
-  font-weight: ${SemiBold};
+  font-weight: ${Normal};
   color: ${C.GreySecondaryText};
   font-size: ${XS};
 `;

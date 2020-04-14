@@ -73,13 +73,14 @@ export const OpportunityDescriptionBtnContainer = styled.div`
   align-items: center;
 `;
 
-export const OpportunityDescription = styled(T.Heading5)`
+export const OpportunityDescription = styled(T.Paragraph)`
   font-weight: ${Normal};
-  color: ${C.Black};
+  color: ${C.GreyText};
+  margin-top: 1rem;
 `;
 
 export const OpportunityDateTitle = styled.div`
-  display: flex;
+  display: flex;s
   flex-direction: row;
 `;
 
@@ -87,14 +88,14 @@ export const OpportunityTitle = styled(T.Heading3)`
   flex: 1;
 `;
 
-export const OpportunityData = styled(T.Heading6)`
-  color: ${C.GreyOne};
+export const OpportunityData = styled(T.Paragraph)`
+  color: ${C.GreyText};
   font-weight: ${Normal};
   flex: 1;
   text-align: end;
 `;
 
-export const OpportunitySubTitle = styled(T.Heading4)`
+export const OpportunitySubTitle = styled(T.Paragraph)`
   font-weight: ${Normal};
   color: ${C.GreyOne};
 `;

@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import {
-  XL,
   LG,
-  Normal,
+  Light,
   MD,
   XS,
   SM,
@@ -47,27 +46,8 @@ export const Title = styled(Heading9)`
 `;
 
 export const PrimaryText = styled.p`
-  color: ${C.Black};
-  font-weight: ${Normal};
-  margin: 1rem 0;
-
-  ${minimumWidthQuery[1]} {
-    font-size: ${XS};
-  }
-  ${minimumWidthQuery[2]} {
-    font-size: ${SM};
-  }
-  ${minimumWidthQuery[3]} {
-    font-size: ${MD};
-  }
-  ${minimumWidthQuery[4]} {
-    font-size: ${XL};
-  }
-`;
-
-export const SecondaryText = styled.p`
-  color: ${C.Black};
-  font-weight: ${Normal};
+  color: ${C.GreyText};
+  font-weight: ${Light};
   margin: 1rem 0;
 
   ${minimumWidthQuery[1]} {
@@ -104,6 +84,7 @@ export const Torch = styled.img`
 export const Button = styled(B)`
   border-radius: 2rem;
   width: 10rem;
+  margin-left: 0rem;
 `;
 
 export const Resume = styled.img`

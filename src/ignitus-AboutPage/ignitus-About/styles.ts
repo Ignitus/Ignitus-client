@@ -7,7 +7,7 @@ import {
   Heading3,
   Paragraph as P,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {White} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {White, boxShadowColor} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 // import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const AboutSection = styled.section`
@@ -84,6 +84,7 @@ export const ContentContainer = styled.div`
   border-radius: 1rem;
   background-color: ${White};
   padding: 2rem;
+  box-shadow: 0 2px 4px 0 ${boxShadowColor};
 `;
 
 export const Title = styled(Heading3)`
