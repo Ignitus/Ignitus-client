@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 
-import SLogin from '../../ignitus-StudentLogin/Components';
+import StudentLogin from '../../ignitus-StudentLogin/Components';
 import {
   mapDispatchToProps,
   mapStateToProps
@@ -9,4 +9,4 @@ import {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SLogin);
+)(StudentLogin);

@@ -17,7 +17,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData, cle
   const handleSubmit = e => {
     e.preventDefault();
     clearPreviousSignUp();
-
+    console.log('state', state);
     if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       setState({
         ...state,
