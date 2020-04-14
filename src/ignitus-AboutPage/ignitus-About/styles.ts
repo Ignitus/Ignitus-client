@@ -7,12 +7,7 @@ import {
   Heading3,
   Paragraph as P,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-<<<<<<< HEAD
-import {White} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-=======
 import {White, boxShadowColor} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-// import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
->>>>>>> d94eb68... css changes
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};
