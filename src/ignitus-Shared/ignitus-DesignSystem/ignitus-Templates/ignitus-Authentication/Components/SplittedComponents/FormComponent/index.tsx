@@ -87,7 +87,7 @@ export const Form: FunctionComponent<FormProps> = ({
           {authenticationType === 'SignUp' && (
             <>
               <A.ConfirmPasswordInput
-                name={AppIcon.MessageIcon}
+                name={AppIcon.KeyIcon}
                 type="password"
                 placeholder="Confirm Password"
                 handleChange={confirmPassword => {

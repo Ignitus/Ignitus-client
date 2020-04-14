@@ -10,6 +10,8 @@ import {
   IgnitusBlue,
   White,
   GreyLight,
+  GreyOne,
+  Black,
 } from '../../../ignitus-Atoms/colors';
 
 import {Paragraph as P} from '../../../ignitus-Atoms/typography';
@@ -147,25 +149,7 @@ export const ConfirmPasswordInput = styled(EmailInput)``;
 
 export const PasswordInput = styled(DefaultPasswordInput)`
   padding: 0;
-  background: ${IgnitusBlue};
   margin: 0.5rem 0;
-  border: none;
-  &:hover {
-    border: none;
-  }
-
-  input {
-    padding: 0.5rem;
-    background: ${White};
-    border: 1px solid ${GreyLight};
-    &:hover {
-      border: 1px solid ${IgnitusBlue};
-    }
-  }
-  svg {
-    margin: 0 0.5rem;
-    fill: ${White};
-  }
 `;
 
 export const InputGroup = styled(flexibleColDiv)``;

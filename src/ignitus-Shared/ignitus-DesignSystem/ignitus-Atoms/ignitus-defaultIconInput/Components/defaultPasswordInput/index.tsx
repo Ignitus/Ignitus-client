@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {DefaultPasswordInputProperties} from '../../types';
 import {AppIcon} from '../../../../../types/iconsTypes/iconEnums';
-import * as I from '../../styles';
+import * as I from './styles';
 
 /* Primarly used to take care of user password! */
 
