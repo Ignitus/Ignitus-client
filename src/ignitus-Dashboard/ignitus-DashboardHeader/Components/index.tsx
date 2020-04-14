@@ -46,7 +46,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
 
       <N.Burger
         onClick={toogleIsExpanded}
-        name={AppIcon.Chevron}
+        name={AppIcon.KeyBoardArrowRight}
         isExpanded={isExpanded}
       />
     </N.Navigation>
