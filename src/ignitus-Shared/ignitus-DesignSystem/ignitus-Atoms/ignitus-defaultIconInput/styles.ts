@@ -23,7 +23,6 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 16rem;
   outline: none;
   border: none;
   background: transparent;

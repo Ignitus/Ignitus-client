@@ -36,7 +36,7 @@ export const Team = withErrorBoundary(
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    if (true) {
+    if (isFetching) {
       return (
         <S.Loader />
       );

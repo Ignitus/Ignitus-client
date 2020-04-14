@@ -15,6 +15,7 @@ import {Bold} from '../../../ignitus-Atoms/fonts';
 import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
 import {DefaultPasswordInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
 import {Button as B} from '../../../ignitus-Atoms/buttons';
+import {minimumWidthQuery} from '../../../ignitus-Atoms/media';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
@@ -29,7 +30,27 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  ${minimumWidthQuery[1]} {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+  }
+  ${minimumWidthQuery[2]} {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+  }
+  ${minimumWidthQuery[3]} {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+  }
+  ${minimumWidthQuery[4]} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+  }
+  ${minimumWidthQuery[5]} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+  }
 `;
 
 export const Paragraph = styled(P)`
@@ -56,6 +77,19 @@ export const RightColumnTwo = styled(flexibleColDiv)`
 
 export const Image = styled.img`
   width: 16rem;
+  height: 16rem;
+  ${minimumWidthQuery[1]} {
+    width: 10rem;
+    height: 10rem;
+  }
+  ${minimumWidthQuery[2]} {
+    width: 14rem;
+    height: 14rem;
+  }
+  ${minimumWidthQuery[5]} {
+    width: 16rem;
+    height: 16rem;
+  }
 `;
 
 export const RightRow = styled(flexibleColDiv)`
@@ -85,7 +119,7 @@ export const EmailInput = styled(DefaultIconInput)`
   }
 
   input {
-    width: 18.2rem;
+    width: 14rem;
     padding: 0.5rem;
     background: ${White};
     border: 1px solid ${GreyLight};
