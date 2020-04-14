@@ -6,11 +6,24 @@ import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFl
 import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
 import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
 import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
   CommonLoginUI,
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
+
+// const LazyLogInStudent = lazy(() => {
+//   return new Promise(resolve => {
+//     setTimeout(
+//       () =>
+//         import(
+//           '../../ignitus-Authentication/ignitus-StudentLogin/Containers/index'
+//         ).then(m => m, e => null as never),
+//       300,
+//     );
+//   });
+// });
 
 const LazyLogInStudent = lazy(() =>
   import('../../ignitus-Authentication/ignitus-StudentLogin/Containers/index'),
@@ -36,7 +49,13 @@ const LazyProfessorSignUp = lazy(() =>
 
 export const AuthenticationRoutes: React.FunctionComponent = () => (
   <Fragment>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense
+      fallback={
+        <Fragment>
+          <LazyLoader />
+        </Fragment>
+      }
+    >
       <Switch>
         <Route path="/login/professor" component={LazyLogInProfessor} />
         <Route path="/signup/professor" component={LazyProfessorSignUp} />

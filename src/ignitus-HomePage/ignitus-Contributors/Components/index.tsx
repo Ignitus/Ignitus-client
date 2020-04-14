@@ -25,7 +25,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
           {paragraph}
         </S.Paragraph>
       </T.TopSection>
-      <T.BottomSection>
+      <T.BootStrapSection>
         <S.BottomRow>
           {data.map((logo: string) => (
             <S.Card key={logo}>
@@ -33,7 +33,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
             </S.Card>
           ))}
         </S.BottomRow>
-      </T.BottomSection>
+      </T.BootStrapSection>
     </div>
   </div>
 );

@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  flexibleColDiv,
-} from '../../ignitus-Atoms/atoms';
+import { flexibleColDiv } from '../../shared';
 
 export const Container = styled(flexibleColDiv)`
   margin-top: 6rem;

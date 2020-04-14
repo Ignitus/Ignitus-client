@@ -1,4 +1,6 @@
-const SearchUsers = [
+import {Users} from './types';
+
+const SearchUsers: Users[] = [
   {
     id: 1,
     avatar:

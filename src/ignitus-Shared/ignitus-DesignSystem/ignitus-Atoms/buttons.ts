@@ -54,6 +54,7 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   &:focus {
     background-color: ${props => getHoverBackgroundColor(props)};
     color: ${props => getHoverColor(props)};
+    outline: none;
 
     a {
       color: ${C.IgnitusBlue};

@@ -20,7 +20,6 @@ export const Container = styled.div`
     flex-direction: column;
     padding: 9rem 2rem;
   }
-
   ${minimumWidthQuery[2]} {
     flex-direction: column;
     padding: 9rem 6rem;

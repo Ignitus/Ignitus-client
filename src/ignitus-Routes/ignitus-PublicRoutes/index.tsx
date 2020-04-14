@@ -8,7 +8,7 @@ import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 
 import JobConfirmation from '../../ignitus-Careers/ignitus-JobConfirmation';
-import { Loading } from '../../ignitus-Shared/ignitus-Utilities/Components/loader';
+import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 /**
  * Route-based code splitting.
@@ -37,7 +37,7 @@ export const PublicRoutes: React.FunctionComponent = () => {
       <Suspense
         fallback={
           <Fragment>
-            <Loading />
+            <LazyLoader />
           </Fragment>
         }
       >
@@ -47,10 +47,6 @@ export const PublicRoutes: React.FunctionComponent = () => {
           <Route
             path={['/login', '/signup', '/flow']}
             component={AuthenticationRoutes}
-          />
-          <Route
-            path="/jobConfirmation"
-            component={JobConfirmation.components.JobConfirmation}
           />
           <Route path="/" component={Notfound} />
         </Switch>

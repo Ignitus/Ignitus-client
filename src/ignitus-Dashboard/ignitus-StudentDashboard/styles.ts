@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { BottomSection } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { BootStrapSection } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
-export const Container = styled(BottomSection)`
+export const Container = styled(BootStrapSection)`
   margin-top: 7rem;
 `;

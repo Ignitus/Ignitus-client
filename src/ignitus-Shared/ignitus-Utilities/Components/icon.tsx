@@ -36,7 +36,10 @@ import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/co
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
 import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
-import { IgnitusLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
+import {IgnitusLogo} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
+import {EyeVisibleOffIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOffIcon/index';
+import {EyeVisibleOnIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOnIcon/index';
+import {KeyIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -154,6 +157,15 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.IgnitusLogo:
       return <IgnitusLogo {...rest} />;
+
+    case AppIcon.EyeVisibleOffIcon:
+      return <EyeVisibleOffIcon {...rest} />;
+
+    case AppIcon.EyeVisibleOnIcon:
+      return <EyeVisibleOnIcon {...rest} />;
+
+    case AppIcon.KeyIcon:
+      return <KeyIcon {...rest} />;
   }
 };
 

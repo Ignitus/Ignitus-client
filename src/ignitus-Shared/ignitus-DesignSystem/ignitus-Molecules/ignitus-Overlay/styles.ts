@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
-import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
 import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
 import {
@@ -16,6 +15,7 @@ import {
   boxShadowColor,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { props } from './types';
+import { flexibleColDiv } from '../../shared';
 
 
 export const Overlay = styled.div`

@@ -1,27 +1,19 @@
-import React, {Suspense, lazy} from 'react';
-import {Switch, Route} from 'react-router-dom';
-import {PublicRoutes} from './ignitus-Routes/ignitus-PublicRoutes';
-import {withErrorBoundary} from './ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { withErrorBoundary } from './ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { DashboardRoutes } from './ignitus-Routes/ignitus-DashboardRoutes';
+// eslint-disable-next-line import/named
+import { PublicRoutes } from './ignitus-Routes/ignitus-PublicRoutes';
 import './App.css';
+import UserInterfaceBookRoutes from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
 
-const LazyUserInterfaceBook = lazy(() =>
-  import('./ignitus-Routes/ignitus-UserInterfaceBookRoutes'),
-);
-
-const LazyDashBoardRoutes = lazy(() =>
-  import('./ignitus-Routes/ignitus-DashboardRoutes'),
-);
 
 const App = () => (
   <div className="content-container">
     <Switch>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-          <Route path="/dashboard" component={LazyDashBoardRoutes} />
-          <Route path="/interface" component={LazyUserInterfaceBook} />
-          <Route path="/" component={PublicRoutes} />{' '}
-        </Switch>
-      </Suspense>
+      <Route path="/dashboard" component={DashboardRoutes} />
+      <Route path="/interface" component={UserInterfaceBookRoutes} />
+      <Route path="/" component={PublicRoutes} />
     </Switch>
   </div>
 );

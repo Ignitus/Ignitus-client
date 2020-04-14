@@ -6,8 +6,8 @@ import {
   Red,
   boxShadowColor,
 } from '../../../ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {XS, MD, Normal} from '../../../ignitus-Atoms/fonts';
+import { flexibleColDiv } from '../../../shared';
 
 type Props = {
   border: boolean;

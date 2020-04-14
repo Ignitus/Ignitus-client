@@ -1,3 +1,4 @@
+/* eslint-disable import/no-default-export */
 /* eslint-disable no-throw-literal */
 import { effects } from 'redux-saga';
 import * as t from './actionTypes';

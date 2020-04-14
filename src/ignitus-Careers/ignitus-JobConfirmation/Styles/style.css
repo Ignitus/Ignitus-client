@@ -1,3 +1,8 @@
+/*
+
+* We have dropped uspport for SASS, this component needs to be re-designed using pure css.
+
+
 // import ignitus token variables
 @import './src/ignitus-Shared/styles/ignitus-components-common';
 $base-color: #000066;
@@ -248,4 +253,4 @@ $reddit-color: #ff5706;
     margin: 20px;
     margin-bottom: 0;
   }
-}
+} */

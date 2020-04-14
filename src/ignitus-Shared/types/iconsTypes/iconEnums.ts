@@ -36,4 +36,7 @@ export enum AppIcon {
   MapMarkerIcon = 'MapMarkerIcon',
   VideoLibIcon = 'VideoLibrary',
   IgnitusLogo = 'IgnitusLogo',
+  KeyIcon = 'keyIcon',
+  EyeVisibleOffIcon = 'EyeVisibleOffIcon',
+  EyeVisibleOnIcon = 'EyeVisibleOnIcon',
 }

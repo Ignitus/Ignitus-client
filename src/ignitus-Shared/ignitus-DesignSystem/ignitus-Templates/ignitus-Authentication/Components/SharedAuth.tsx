@@ -13,7 +13,7 @@ const SharedAuthComponent: FunctionComponent<Props> = (props: Props) => {
     authenticationType === 'LogIn'
       ? `Don't have an account?`
       : `Already have an account?`;
-  const {isFetching, success} = authenticationData;
+  const {success} = authenticationData;
 
   if (authenticationType === 'LogIn' && success) {
     return <Redirect to="/dashboard" />;
@@ -30,7 +30,6 @@ const SharedAuthComponent: FunctionComponent<Props> = (props: Props) => {
         {...props}
         alternateAuth={alternateAuth}
         authRedirectText={authRedirectText}
-        isFetching={isFetching}
       />
     </Wrapper>
   );

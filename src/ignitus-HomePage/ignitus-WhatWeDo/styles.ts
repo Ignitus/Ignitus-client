@@ -29,20 +29,20 @@ export const Card = styled.div`
   background: ${C.White};
 
   ${minimumWidthQuery[1]} {
-    flex: 0 0 85%;
-    max-width: 85%;
+    flex: 0 0 80%;
+    max-width: 80%;
   }
   ${minimumWidthQuery[2]} {
-    flex: 0 0 65%;
-    max-width: 65%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
   ${minimumWidthQuery[3]} {
-    flex: 0 0 45.33333%;
-    max-width: 45.33333%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
   ${minimumWidthQuery[4]} {
-    flex: 0 0 30.33333%;
-    max-width: 30.33333%;
+    flex: 0 0 27%;
+    max-width: 27%;
   }
 `;
 

@@ -3,6 +3,7 @@ import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
 import {minimumWidthQuery} from './ignitus-Atoms/media';
 import {Heading2} from './ignitus-Atoms/typography';
+import {Loading} from '../ignitus-Utilities/Components/loader';
 
 export const Title = styled(Heading2)`
   color: ${C.IgnitusBlue};
@@ -28,16 +29,16 @@ export const TopSection = styled.section`
   margin-bottom: 2rem;
 `;
 
-export const BottomSection = styled.section`
-  width: 100%;
-  padding: 0 15px 0 15px;
-  margin: 0 auto 0 auto;
-
+/* Helpful to define max-width on different screen sizes. */
+export const Container = styled.div`
+  ${minimumWidthQuery[1]} {
+    max-width: 320px;
+  }
   ${minimumWidthQuery[2]} {
     max-width: 540px;
   }
   ${minimumWidthQuery[3]} {
-    max-width: 760px;
+    max-width: 720px;
   }
   ${minimumWidthQuery[4]} {
     max-width: 960px;
@@ -45,6 +46,12 @@ export const BottomSection = styled.section`
   ${minimumWidthQuery[5]} {
     max-width: 1140px;
   }
+`;
+
+export const BootStrapSection = styled(Container)`
+  width: 100%;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
 `;
 
 export const BottomRow = styled.div`
@@ -70,22 +77,6 @@ export const BottomRow = styled.div`
   }
 `;
 
-// We plan to use Container as parent element of in lot of components.
-export const Container = styled.div`
-  ${minimumWidthQuery[2]} {
-    max-width: 540px;
-  }
-  ${minimumWidthQuery[3]} {
-    max-width: 720px;
-  }
-  ${minimumWidthQuery[4]} {
-    max-width: 960px;
-  }
-  ${minimumWidthQuery[5]} {
-    max-width: 1140px;
-  }
-`;
-
 export const Avatar = styled.img``;
 export const Link = styled.a``;
 
@@ -103,4 +94,10 @@ export const flexibleRowDiv = styled.div`
   justify-content: center;
 `;
 
+export const LazyLoader = styled(Loading)`
+  height: 67vh;
+  img {
+    width: 15rem;
+  }
+`;
 /* Shared between partners & contirbutors component. */

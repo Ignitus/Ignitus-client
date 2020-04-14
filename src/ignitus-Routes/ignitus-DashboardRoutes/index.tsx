@@ -2,25 +2,28 @@
 /* eslint-disable import/extensions */
 import React, {Suspense, lazy, Fragment} from 'react';
 import {Switch, Route} from 'react-router-dom';
-import PrivateRoute from '../ignitus-PrivateRoutes';
-import dashBoardHeader from '../../ignitus-Dashboard/ignitus-DashboardHeader';
 import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import {Loading} from '../../ignitus-Shared/ignitus-Utilities/Components/loader';
+import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import PrivateRoute from '../ignitus-PrivateRoutes';
 
 const LazyStudentDashBoard = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
 );
 
-const DashboardRoutes = () => (
+const LazyDashBoardNavigation = lazy(() =>
+  import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'),
+);
+
+export const DashboardRoutes = () => (
   <React.Fragment>
-    <dashBoardHeader.containers.dashboardHeaderContainer />
     <Suspense
       fallback={
-        <div>
-          <Loading />
-        </div>
+        <Fragment>
+          <LazyLoader />
+        </Fragment>
       }
     >
+      <LazyDashBoardNavigation />
       <Switch>
         <Route exact path="/" render={() => <Notfound />} />
         <PrivateRoute path="/dashboard" Component={LazyStudentDashBoard} />
@@ -28,5 +31,3 @@ const DashboardRoutes = () => (
     </Suspense>
   </React.Fragment>
 );
-
-export default DashboardRoutes;

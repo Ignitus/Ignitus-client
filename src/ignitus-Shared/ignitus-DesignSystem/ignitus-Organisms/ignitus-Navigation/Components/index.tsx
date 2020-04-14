@@ -3,20 +3,18 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import { NavigationProps } from '../types';
-import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { useToggle } from '../../../../ignitus-Utilities/reactHooks/toogleHook'; 
+import {NavigationProps} from '../types';
+import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
+import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
 
 import * as N from '../styles';
 
-const PureNavigation: React.FC<NavigationProps> = ({
-  transparentNavigation,
-}) => {
+const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   return (
     <N.Navigation transparentNavigation={transparentNavigation}>
       <N.NavigationBarBrand to="/#">
-        <N.Logo name={AppIcon.IgnitusLogo} transparentNavigation={transparentNavigation} />
+        <N.Logo name={AppIcon.IgnitusLogo} />
       </N.NavigationBarBrand>
 
       <N.NavigationLinks isExpanded={isExpanded}>
@@ -93,21 +91,13 @@ const Navigation: React.FunctionComponent = () => {
     };
   }, [scrolling]);
 
-  return (
-    <PureNavigation
-      transparentNavigation={transparentNavigation}
-    />
-  );
+  return <PureNavigation transparentNavigation={transparentNavigation} />;
 };
 
 export const OptionalNavigation: React.FC<NavigationProps> = React.memo(
   ({transparentNavigation = false}) => {
     if (!transparentNavigation)
-      return (
-        <PureNavigation
-          transparentNavigation={transparentNavigation}
-        />
-      );
+      return <PureNavigation transparentNavigation={transparentNavigation} />;
     return <Navigation />;
   },
 );

@@ -28,6 +28,7 @@ export const LinkWrapper = styled.div<LinkWrapperProps>(
     width: '100%',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    marginTop: '0.5rem',
   },
   props => ({display: props.toggle ? 'flex' : 'none'}),
 );
@@ -40,12 +41,29 @@ export const PureCoreTeam = styled.div`
   align-items: center;
 `;
 
-export const TeamContainer = styled(T.Container)`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
+export const TeamContainer = styled.div`
+  display: grid;
+  margin-top: 1.5rem;
+  ${minimumWidthQuery[1]} {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: none;
+  }
+  ${minimumWidthQuery[2]} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+  }
+  ${minimumWidthQuery[3]} {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+  }
+  ${minimumWidthQuery[4]} {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
+  ${minimumWidthQuery[5]} {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
 `;
 
 export const TeamItemImg = styled.img`
@@ -60,7 +78,7 @@ export const TeamCard = styled.div`
   justify-content: center;
   border-radius: 16px;
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
   margin: 0.5em 0.5em;
   min-height: 3em;
   min-width: 3em;
@@ -72,31 +90,6 @@ export const TeamCard = styled.div`
 export const TeamCardContainer = styled.div`
   cursor: pointer;
   margin-top: 0.5em;
-  height: 15em;
-  flex: 0 0 35%;
-  max-width: 35%;
-
-  ${minimumWidthQuery[1]} {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-
-  ${minimumWidthQuery[2]} {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  ${minimumWidthQuery[3]} {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
-  ${minimumWidthQuery[4]} {
-    flex: 0 0 26%;
-    max-width: 26%;
-  }
-  ${minimumWidthQuery[5]} {
-    flex: 0 0 22%;
-    max-width: 22%;
-  }
 
   &:hover {
     transform: scale(1.05);
