@@ -2,13 +2,13 @@ export const PrimaryFamily: string = 'Raleway, sans-serif';
 export const SecondaryFamily: string = 'Open Sans, sans-serif';
 
 /* Font Weights */
-export const Thin: number = 300;
-export const Light: number = 400;
-export const Normal: number = 500;
-export const Medium: number = 600;
-export const SemiBold: number = 700;
-export const Bold: number = 800;
-export const ExtraBold: number = 900;
+export const Thin: number = 200;
+export const Light: number = 300;
+export const Normal: number = 400;
+export const Medium: number = 500;
+export const SemiBold: number = 600;
+export const Bold: number = 700;
+export const ExtraBold: number = 800;
 
 /* Font sizes */
 export const XXS: string = '12px';

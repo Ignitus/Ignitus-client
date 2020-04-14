@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid } from '../style';
 import { List } from '../constants';
 import { Opportunity } from '../types';
-import DashBoardOpportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
+import DashBoardOpportunity from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
 import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { Interface } from '../../../../styles';
 

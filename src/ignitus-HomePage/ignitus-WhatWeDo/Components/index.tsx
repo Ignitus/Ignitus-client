@@ -3,7 +3,6 @@ import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {data} from '../constants';
-import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
   <div id="what-we-do">
@@ -22,7 +21,7 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
         {[...data].map(x => (
           <S.Card key={x.src}>
             <S.CardPicture src={x.src} alt="logo" />
-            <Paragraph>{x.description}</Paragraph>
+            <S.Paragraph>{x.description}</S.Paragraph>
           </S.Card>
         ))}
       </T.BottomRow>

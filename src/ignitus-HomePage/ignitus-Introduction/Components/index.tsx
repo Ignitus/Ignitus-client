@@ -14,12 +14,10 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
       </I.TitleImage>
       <I.PrimaryText>
         Get handpicked top-quality global research and industrial internships,
-        for free!
-      </I.PrimaryText>
-      <I.SecondaryText>
+        for free! <br/>
         Ignite your resume and get the best global opportunities and
         Skyrocketing your career
-      </I.SecondaryText>
+        </I.PrimaryText>
       <I.Button category="primary" size="large">
         SIGN UP
       </I.Button>
