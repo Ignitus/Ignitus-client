@@ -12,7 +12,7 @@ const Login: FunctionComponent<LogInProps> = ({ logInRequest, logInData, clearPr
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
-  useEffect(() => (() => clearPreviousLogin()),[]);
+  useEffect(() => (() => clearPreviousLogin()),[clearPreviousLogin]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
