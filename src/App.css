@@ -1,7 +1,7 @@
 html * {
 	font-size: 16px;
 	font-family: Raleway;
-  margin: 0;
+	margin: 0;
 }
 
 a {
@@ -16,4 +16,8 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+.content-container {
+	background: #f7f7f7;
 }
