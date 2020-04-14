@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import {White, IgnitusBlue, GreyLight, boxShadowColor} from '../../../ignitus-Atoms/colors';
-import {flexibleColDiv} from '../../../ignitus-Atoms/atoms';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import { flexibleColDiv } from '../../../shared';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
