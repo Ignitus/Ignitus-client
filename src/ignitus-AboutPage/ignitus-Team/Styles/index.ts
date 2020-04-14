@@ -42,8 +42,7 @@ export const StyledParagraph = styled(Paragraph)`
 `;
 
 export const Link = styled(T.Link)`
-  width: 8rem;
-  height: 10rem;
+  width: 7.5rem;
   background: none;
   margin: 10px;
   position: relative;
