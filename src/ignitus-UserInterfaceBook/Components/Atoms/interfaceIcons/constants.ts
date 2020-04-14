@@ -1,4 +1,5 @@
 import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/iconEnums';
+// import VideoLibraryIcon from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon/videoLibraryIcon';
 
 export const SocialIcons: AppIcon[] = [
   AppIcon.LinkedInIcon,
@@ -10,32 +11,38 @@ export const SocialIcons: AppIcon[] = [
 ];
 
 export const DashboardIcons: AppIcon[] = [
-  AppIcon.PlusIcon,
-  AppIcon.ApplyIcon,
-  AppIcon.HeartIcon,
-  AppIcon.MessageIcon,
-  AppIcon.SaveIcon,
-  AppIcon.NetworkIcon,
-  AppIcon.MentorsIcon,
-  AppIcon.CreateIcon,
-  AppIcon.ClearIcon,
-  AppIcon.LocationOnIcon,
-  AppIcon.QuestionAnswerIcon,
   AppIcon.AccountCircleIcon,
-  AppIcon.SearchIcon,
-  AppIcon.NotificationIcon,
-  AppIcon.QuestionAnswerIcon,
+  AppIcon.ApplyIcon,
+  AppIcon.CameraIcon,
+  AppIcon.CopyIcon,
+  AppIcon.CreateIcon,
+  AppIcon.GraduationCapIcon,
+  AppIcon.HeartIcon,
   AppIcon.InfoIcon,
-  AppIcon.PdfIcon,
   AppIcon.LibraryBooksIcon,
   AppIcon.LocalLibraryIcon,
-  AppIcon.GraduationCapIcon,
+  AppIcon.LocationIcon,
+  AppIcon.MentorsIcon,
+  AppIcon.MessageIcon,
+  AppIcon.NetworkIcon,
+  AppIcon.NotificationIcon,
+  AppIcon.PdfIcon,
+  AppIcon.PollIcon,
+  AppIcon.QuestionAnswerIcon,
+  AppIcon.SaveIcon,
+  AppIcon.VideoLibIcon,
 ];
 
 export const GeneralIcons: AppIcon[] = [
   AppIcon.KeyBoardArrowDown,
   AppIcon.KeyBoardArrowRight,
-  AppIcon.Chevron,
+  AppIcon.FilledArrowDownIcon,
+  AppIcon.SearchIcon,
+  AppIcon.CrossIcon,
+  AppIcon.PlusIcon,
 ];
 
-export const IgnitusLogos: AppIcon[] = [AppIcon.IgnitusFullLogo];
+export const IgnitusLogos: AppIcon[] = [
+  AppIcon.IgnitusFullLogo,
+  AppIcon.IgnitusLogo,
+];
