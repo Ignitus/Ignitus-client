@@ -16,6 +16,10 @@ import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/
 import {DefaultPasswordInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
 import {Button as B} from '../../../ignitus-Atoms/buttons';
 import {minimumWidthQuery} from '../../../ignitus-Atoms/media';
+import {
+  MessageProps,
+  getMessageColor,
+} from '../../../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
@@ -163,4 +167,17 @@ export const Button = styled(B)`
   border-radius: 0.5rem;
 `;
 
-export const ButtonContainer = styled.div``;
+export const ButtonContainer = styled.div`
+  outline: none;
+`;
+
+export const Message = styled.div<MessageProps>`
+  margin: 0.2rem 0;
+  background-color: ${props => getMessageColor(props)};
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+
+  p {
+    color: ${White};
+  }
+`;

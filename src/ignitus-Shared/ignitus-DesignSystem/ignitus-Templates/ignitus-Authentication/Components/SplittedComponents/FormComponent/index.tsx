@@ -31,33 +31,37 @@ export const Form: FunctionComponent<FormProps> = ({
 
       {/* SIGNUP SUCCESS */}
       {authenticationType === 'SignUp' && success && (
-        <div className="alert alert-success margin-Top">
-          <strong>Success!</strong> Please login!.
-        </div>
+        <A.Message type="success">
+          <A.Paragraph>
+            <strong>Success!</strong> Please login!.
+          </A.Paragraph>
+        </A.Message>
       )}
 
       {!success && !isEmpty(message) && (
-        <div className="alert alert-danger margin-Top">
-          <strong>{message}</strong>
-        </div>
+        <A.Message type="alert">
+          <A.Paragraph>{message}</A.Paragraph>
+        </A.Message>
       )}
 
       {state.emptyMessage && (
-        <div className="alert alert-danger margin-Top">
-          <strong>Please fill the form to proceed!</strong>
-        </div>
+        <A.Message type="alert">Please fill the form to proceed!</A.Message>
       )}
 
       {state.invalidEmail && (
-        <div className="alert alert-danger margin-Top">
-          <strong>Please </strong> input a valid mail!
-        </div>
+        <A.Message type="alert">
+          <A.Paragraph>
+            <strong>Please </strong> input a valid mail!
+          </A.Paragraph>
+        </A.Message>
       )}
 
       {state.equalmessage && (
-        <div className="alert alert-danger margin-Top">
-          <strong>Password </strong> does not match the confirm password.!
-        </div>
+        <A.Message type="alert">
+          <A.Paragraph>
+            <strong>Password </strong> does not match the confirm password.!
+          </A.Paragraph>
+        </A.Message>
       )}
 
       <A.LeftColumnTwo>
