@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import {
   IgnitusBlue,
   GreyText,
-  White,
   GreyLight,
 } from '../colors';
 import Icon from '../../../ignitus-Utilities/Components/icon';

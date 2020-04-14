@@ -1,32 +1,29 @@
 import styled from '@emotion/styled';
 import {
   BootStrapSection,
-  flexibleRowDiv,
   flexibleColDiv,
-} from '../../../shared';
+} from '../../shared';
 
 import {
   SecondaryColor,
   IgnitusBlue,
   White,
   GreyLight,
-  GreyOne,
-  Black,
-} from '../../../ignitus-Atoms/colors';
+} from '../../ignitus-Atoms/colors';
 
-import {Paragraph as P} from '../../../ignitus-Atoms/typography';
-import {Bold} from '../../../ignitus-Atoms/fonts';
-import {DefaultIconInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
-import {DefaultPasswordInput} from '../../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
-import {Button as B} from '../../../ignitus-Atoms/buttons';
-import {minimumWidthQuery} from '../../../ignitus-Atoms/media';
+import {Paragraph as P} from '../../ignitus-Atoms/typography';
+import {Bold} from '../../ignitus-Atoms/fonts';
+import {DefaultIconInput} from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
+import {DefaultPasswordInput} from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
+import {Button as B} from '../../ignitus-Atoms/buttons';
+import {minimumWidthQuery} from '../../ignitus-Atoms/media';
 
 import {
   MessageProps,
   getMessageColor,
-} from '../../../../ignitus-Utilities/HelperFunctions/emotionHelpers';
+} from '../../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
-import Icon from '../../../../ignitus-Utilities/Components/icon';
+import Icon from '../../../ignitus-Utilities/Components/icon';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
