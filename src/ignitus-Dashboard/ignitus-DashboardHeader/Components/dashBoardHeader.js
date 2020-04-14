@@ -39,7 +39,7 @@ class dashBoardHeader extends React.Component {
         <nav className="navbar navbar-expand-lg whitenav">
           <HashLink className="navbar-brand" to="/#">
             <img
-              data-src="https://storage.googleapis.com/ignitus_assets/ig-logo/ignitusBlue.svg"
+              src="https://storage.googleapis.com/ignitus_assets/ig-logo/ignitusBlue.svg"
               width="40"
               height="40"
               className="lazyload"

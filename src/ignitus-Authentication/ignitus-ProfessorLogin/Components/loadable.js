@@ -6,7 +6,7 @@ import loader from '../../ignitus-Assets/Images/loader.gif';
 const Loading = () =>
  <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
     <div className="loader">
-      <img data-src={loader} className="lazyload" alt="Loading..." />
+      <img src={loader} className="lazyload" alt="Loading..." />
     </div>
   </div>;
 

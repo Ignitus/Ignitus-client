@@ -8,7 +8,7 @@ export const Opportunity: React.FunctionComponent = () => (
       <S.ImageContainer>
         <img
           className="lazyload"
-          data-src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
+          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
           alt="universityLogo"
           height="150"
         />

@@ -29,7 +29,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
         <S.BottomRow>
           {data.map((logo: string) => (
             <S.Card key={logo}>
-              <S.CardPicture data-src={logo} className="lazyload" alt="logo" />
+              <S.CardPicture src={logo} className="lazyload" alt="logo" />
             </S.Card>
           ))}
         </S.BottomRow>

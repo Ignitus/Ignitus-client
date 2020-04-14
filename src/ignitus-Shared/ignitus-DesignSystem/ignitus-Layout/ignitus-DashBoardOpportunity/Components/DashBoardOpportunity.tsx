@@ -16,7 +16,7 @@ const Card = ({title, description, subtitle, src}: Opportunity) => (
   <S.Container>
     <S.Row>
       <S.LeftRow>
-        <img className="lazyload" data-src={src} alt={title} />
+        <img className="lazyload" src={src} alt={title} />
       </S.LeftRow>
       <S.RightRow>
         <S.Title>{title}</S.Title>

@@ -21,7 +21,7 @@ export const Form: FunctionComponent<FormProps> = ({
       <div className="my-4">
         <img
           className="img-fluid img mx-auto d-block lazyload"
-          data-src={t.logo}
+          src={t.logo}
           alt="Ignitus Logo"
         />
       </div>

@@ -37,7 +37,7 @@ import Loadable from 'react-loadable';
 const Loading: React.FunctionComponent = () => (
   <div className="container col-lg-6 col-md-4 col-sm-6 col-9 mx-auto loader">
     <div className="loader">
-      <img className="lazyload" data-src={loader} alt="Loading..." />
+      <img className="lazyload" src={loader} alt="Loading..." />
     </div>
   </div>
 );
