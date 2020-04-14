@@ -27,6 +27,7 @@ export const ParentButton = styled.button`
   line-height: 1rem;
   margin: 0.5rem;
   outline: none;
+  text-transform: uppercase;
   font-size: ${F.MD};
   font-weight: ${F.Normal};
   transition: all 0.3s ease;
@@ -66,12 +67,15 @@ export const Button = styled(ParentButton)<ButtonProperties>`
 
 export const ButtonBottomRight = styled(Button)`
   border-radius: 0px 30px;
+  text-transform: capitalize;
 `;
 
 export const StyledButtonTopLeft = styled(Button)`
   border-radius: 30px 0px;
+  text-transform: capitalize;
 `;
 
 export const RoundedButton = styled(Button)`
   border-radius: 30px;
+  text-transform: capitalize;
 `;

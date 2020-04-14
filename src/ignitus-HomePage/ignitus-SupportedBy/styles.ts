@@ -5,7 +5,7 @@ import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/
 import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {SemiNormal} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {Light} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Icon = styled.span`
   i {
@@ -65,6 +65,6 @@ export const Heart = styled(HeartIcon)`
 `;
 
 export const Paragraph = styled(P)`
-  font-weight: ${SemiNormal};
+  font-weight: ${Light};
   text-align: center;
 `;

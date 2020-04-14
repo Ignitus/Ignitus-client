@@ -12,7 +12,7 @@ export const Icon = styled.span`
 `;
 
 export const Paragraph = styled(P)`
-  font-weight: ${F.SemiNormal};
+  font-weight: ${F.Light};
   text-align: center;
 `;
 

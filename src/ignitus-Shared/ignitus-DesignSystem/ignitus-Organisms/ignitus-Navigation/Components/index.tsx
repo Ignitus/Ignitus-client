@@ -33,12 +33,6 @@ const PureNavigation: React.FC<NavigationProps> = ({
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
-          <N.NavigationLink smooth to="/#contributors">
-            Contributors
-          </N.NavigationLink>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem transparentNavigation={transparentNavigation}>
           <Link to="/aboutus">About</Link>
         </N.NavigationLinkItem>
 
