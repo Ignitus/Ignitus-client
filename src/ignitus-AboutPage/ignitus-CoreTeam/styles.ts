@@ -78,7 +78,7 @@ export const TeamCard = styled.div`
   justify-content: center;
   border-radius: 16px;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   margin: 0.5em 0.5em;
   min-height: 12rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);

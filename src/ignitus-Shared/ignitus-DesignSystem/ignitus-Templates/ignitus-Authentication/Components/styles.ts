@@ -129,7 +129,7 @@ export const EmailInput = styled(DefaultIconInput)`
   }
 
   input {
-    width: 14rem;
+    width: 12.2rem;
     padding: 0.5rem;
     background: ${White};
     border: 1px solid ${GreyLight};
@@ -175,6 +175,7 @@ export const Button = styled(B)`
 
 export const ButtonContainer = styled.div`
   outline: none;
+  margin-top: 3rem;
 `;
 
 export const Message = styled.div<MessageProps>`
@@ -189,7 +190,6 @@ export const Message = styled.div<MessageProps>`
 `;
 
 export const Logo = styled(Icon)`
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
   fill: ${IgnitusBlue};
 `;
