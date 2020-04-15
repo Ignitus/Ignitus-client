@@ -1,4 +1,4 @@
-import React, {useState, FunctionComponent} from 'react';
+import React, {useState, FunctionComponent, useEffect} from 'react';
 import {
   isEmpty,
   isEqual,
@@ -10,14 +10,16 @@ import {
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
 import {Props} from '../types';
 
-const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData, clearPreviousSignUp}) => {
+const Signup: FunctionComponent<Props> = ({signUpRequest, signUpData, clearPreviousSignUp}) => {
   const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
+
+  useEffect(() => (() => clearPreviousSignUp()), []);
 
   const handleSubmit = e => {
     e.preventDefault();
     clearPreviousSignUp();
-    console.log('state', state);
+
     if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       setState({
         ...state,
@@ -61,7 +63,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData, cle
       return;
     }
 
-    signUpRequest(email, password);
+    signUpRequest(email, password, 'student');
     setState(SignupStatePayload);
   };
 
@@ -71,7 +73,7 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, studentSignUpData, cle
       role="Student"
       state={state}
       setState={setState}
-      authenticationData={studentSignUpData}
+      authenticationData={signUpData}
       handleSubmit={handleSubmit}
     />
   );
