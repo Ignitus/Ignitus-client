@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from '../styles';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-export const Opportunity = () => (
+export const Opportunity: React.FunctionComponent = () => (
   <S.OpportunityContainer>
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
@@ -19,7 +19,7 @@ export const Opportunity = () => (
         </S.OpportunityDateTitle>
 
         <S.OpportunitySubTitle>
-          Full Time | Munich, Germany 🇩🇪
+          Full Time | Munich, Germany <span role="img" aria-label="flag">🇩🇪</span>
         </S.OpportunitySubTitle>
         <S.OpportunityDescriptionBtnContainer>
           <S.OpportunityDescription>

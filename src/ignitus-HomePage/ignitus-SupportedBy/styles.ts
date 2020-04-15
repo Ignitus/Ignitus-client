@@ -1,0 +1,70 @@
+/* eslint-disable import/prefer-default-export */
+import styled from '@emotion/styled';
+import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
+import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Light} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+
+export const Icon = styled.span`
+  i {
+    color: ${C.Red};
+  }
+`;
+
+export const BottomRow = styled(Row)``;
+
+export const Card = styled.div`
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0.5em;
+  padding: 0.3em;
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${C.White};
+
+  ${minimumWidthQuery[1]} {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  ${minimumWidthQuery[2]} {
+    flex: 0 0 43%;
+    max-width: 43%;
+  }
+  ${minimumWidthQuery[3]} {
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
+  }
+  ${minimumWidthQuery[4]} {
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
+  }
+`;
+
+export const CardPicture = styled.img`
+  max-width: 100%;
+  height: 3rem;
+  object-fit: contain;
+
+  ${minimumWidthQuery[1]} {
+    height: 2.5rem;
+  }
+  ${minimumWidthQuery[4]} {
+    height: 3rem;
+  }
+`;
+
+export const Heart = styled(HeartIcon)`
+  height: 1rem;
+  fill: ${C.Red};
+`;
+
+export const Paragraph = styled(P)`
+  font-weight: ${Light};
+  text-align: center;
+`;

@@ -8,8 +8,9 @@ export const GreyText: string = '#2D2D2D';
 export const GreyBackground: string = '#F7F7F7';
 export const GreySecondaryText: string = '#4D4D4D';
 export const GreyLight: string = '#E0E0E0';
-export const Grey1: string = '#9C9C9C';
-export const Grey2: string = '#C4C4C4';
+export const GreyOne: string = '#9C9C9C';
+export const GreyTwo: string = '#C4C4C4';
+export const GreyThree: string = ' #C5C5C5;';
 
 // basic Colors
 export const Black: string = '#000000';
@@ -24,3 +25,6 @@ export const LinkedinIconColor: string = '#0e76a8';
 export const RedditIconColor: string = ' #FF4301';
 export const AngellistIconColor: string = '#040404';
 export const FacebookIconColor: string = ' #3b5998';
+
+// Box shadow
+export const boxShadowColor: string = 'rgba(0, 0, 0, 0.05)'; 
