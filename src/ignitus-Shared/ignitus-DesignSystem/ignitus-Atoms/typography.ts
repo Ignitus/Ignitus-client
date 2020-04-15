@@ -3,7 +3,7 @@ import * as C from './colors';
 import * as F from './fonts';
 import {minimumWidthQuery} from './media';
 
-type HeadingProps = {
+type Props = {
   color?: string;
 };
 
@@ -25,7 +25,7 @@ export const Heading3 = styled.h3`
   color: ${C.IgnitusBlue};
 `;
 
-export const Heading4 = styled.h4<HeadingProps>`
+export const Heading4 = styled.h4<Props>`
   font-weight: ${F.Normal};
   font-size: ${F.LG};
   color: ${props => (props.color ? props.color : C.IgnitusBlue)};
@@ -43,10 +43,10 @@ export const Heading6 = styled.h6`
   color: ${C.IgnitusBlue};
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<Props>`
   font-size: ${F.SM};
   font-weight: ${F.Normal};
-  color: ${C.GreyText};
+  color: ${props => (props.color ? props.color : C.GreyText)};
   margin: 0;
 `;
 

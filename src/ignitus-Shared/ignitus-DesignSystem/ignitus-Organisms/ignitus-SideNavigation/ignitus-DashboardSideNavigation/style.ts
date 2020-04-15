@@ -8,6 +8,7 @@ import {
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import {flexibleColDiv} from '../../../shared';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
+import {Paragraph} from '../../../ignitus-Atoms/typography';
 
 type Props = {
   border: boolean;
@@ -19,6 +20,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   background: ${White};
   border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
+  width: 10rem;
 `;
 
 export const Layer = styled.div<Props>`
@@ -32,14 +34,17 @@ export const Layer = styled.div<Props>`
   font-weight: ${Normal};
   margin-top: ${props => (props.marginTop ? '0.5rem' : 'none')};
   margin-bottom: ${props => (props.marginBottom ? '0.5rem' : 'none')};
-  width: 8rem;
-  padding: 1rem;
+  padding: 1rem 0;
+  width: 100%;
   flex-direction: row;
   &:hover {
     background-color: ${IgnitusBlue};
-    color: ${White};
+    p {
+      color: ${White};
+    }
     svg {
       fill: ${White};
+      margin: 0 0.5rem;
     }
   }
 `;
@@ -48,9 +53,5 @@ export const SideNavIcon = styled(Icon)`
   height: 1.5rem;
   width: 1.5rem;
   fill: ${IgnitusBlue};
-`;
-
-export const styledParagraph = styled.p`
-  margin: 0;
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
 `;
