@@ -9,7 +9,6 @@ export default function* rootSaga() {
     Testimonial.sagas.default(),
     login.sagas.default(),
     signUp.sagas.default(),
-    login.sagas.default(),
     contributors.sagas.default(),
   ]);
 }
