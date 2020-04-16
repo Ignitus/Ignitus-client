@@ -6,9 +6,6 @@ import { AppIcon } from '../../../../../ignitus-Shared/types/iconsTypes/iconEnum
 import { Heading2, Heading6 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { Interface } from '../../../../styles';
 
-{
-  /* https://miro.medium.com/max/2800/1*rPFTtW01pNiPF7nwuJER5Q.png */
-}
 export const interfaceButttons: React.FC = () => (
   <Interface>
     <Heading2> Buttons </Heading2>

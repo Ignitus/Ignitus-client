@@ -5,7 +5,7 @@ export const Data: Team[] = [
     title: 'Ayush Pareek',
     img:
       'https://storage.googleapis.com/ignitus_assets/ig-team/ayush.jpeg',
-    description: 'Founder, CEO',
+    description: 'Co-Founder, CEO',
     linkedin: 'https://www.linkedin.com/in/ayushpareek/',
     angellist: 'https://angel.co/ignitus-2',
   },

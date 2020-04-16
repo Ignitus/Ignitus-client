@@ -5,3 +5,7 @@ export interface Props {
   companyToggle: boolean;
   linkToggle: boolean;
 };
+
+export type FooterLinkprops = {
+  toggle: boolean;
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import * as S from '../style';
 import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import useToggle from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
+import {useToggle} from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
 import {edges} from '../constants';
 import {NavigationLayerProps} from '../types';
 
@@ -17,7 +17,11 @@ export const InterfaceSideNavigation = () => {
   );
 };
 
-const NavigationLayers = ({edges, nesting = false, level}: NavigationLayerProps) => (
+const NavigationLayers = ({
+  edges,
+  nesting = false,
+  level,
+}: NavigationLayerProps) => (
   <React.Fragment>
     {edges.map(edge => (
       <Layers edge={edge} nesting={nesting} key={edge.title} level={level} />
@@ -30,7 +34,11 @@ const Layers = ({edge, nesting, level}: any) => {
   return (
     <React.Fragment key={edge.title}>
       {edge.route === undefined && (
-        <S.HeadingArrowContainer onClick={toogleisexpanded} nesting={nesting} level={level}>
+        <S.HeadingArrowContainer
+          onClick={toogleisexpanded}
+          nesting={nesting}
+          level={level}
+        >
           {' '}
           <S.Heading nesting={nesting}>{edge.title}</S.Heading>{' '}
           <S.Arrow
@@ -40,7 +48,12 @@ const Layers = ({edge, nesting, level}: any) => {
           />
         </S.HeadingArrowContainer>
       )}
-      <Extension isexpanded={isexpanded} edge={edge} nesting={nesting} level={level} />
+      <Extension
+        isexpanded={isexpanded}
+        edge={edge}
+        nesting={nesting}
+        level={level}
+      />
     </React.Fragment>
   );
 };
@@ -50,14 +63,20 @@ const Extension = ({isexpanded, edge, nesting, level}) => {
     return (
       <Link to={edge.route} key={edge.title}>
         {' '}
-        <S.ListItem nesting={nesting} level={level}>{edge.title}</S.ListItem>
+        <S.ListItem nesting={nesting} level={level}>
+          {edge.title}
+        </S.ListItem>
       </Link>
     );
   }
   return (
     edge.children && (
       <S.UnorderedList isexpanded={isexpanded}>
-        <NavigationLayers edges={edge.children} nesting={true} level={level + 1} />
+        <NavigationLayers
+          edges={edge.children}
+          nesting={true}
+          level={level + 1}
+        />
       </S.UnorderedList>
     )
   );
