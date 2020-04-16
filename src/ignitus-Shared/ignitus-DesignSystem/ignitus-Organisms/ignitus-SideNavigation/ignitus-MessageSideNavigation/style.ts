@@ -39,7 +39,7 @@ export const Layer = styled.div<Props>`
   align-items: center;
   p,
   div {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
   }
   &:hover {
     background-color: ${IgnitusBlue};

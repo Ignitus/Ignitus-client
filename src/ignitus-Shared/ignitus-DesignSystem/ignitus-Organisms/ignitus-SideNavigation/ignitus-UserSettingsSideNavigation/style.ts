@@ -18,7 +18,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   background: ${White};
   border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
-  width: 12rem;
+  width: 14rem;
   height: 22rem;
 `;
 

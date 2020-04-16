@@ -20,7 +20,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   background: ${White};
   border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
-  width: 10rem;
+  width: 14rem;
 `;
 
 export const Layer = styled.div<Props>`
@@ -44,7 +44,6 @@ export const Layer = styled.div<Props>`
     }
     svg {
       fill: ${White};
-      margin: 0 0.5rem;
     }
   }
 `;
@@ -53,5 +52,5 @@ export const SideNavIcon = styled(Icon)`
   height: 1.5rem;
   width: 1.5rem;
   fill: ${IgnitusBlue};
-  margin: 0 0.5rem;
+  margin: 0 1rem;
 `;
