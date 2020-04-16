@@ -25,6 +25,6 @@ export const LinkedinIconColor: string = '#0e76a8';
 export const RedditIconColor: string = ' #FF4301';
 export const AngellistIconColor: string = '#040404';
 export const FacebookIconColor: string = ' #3b5998';
-export const SlackIconColor: string = '#000000';
+export const SlackIconColor: string = Black;
 export const MediumIconColor: string = '#12100E';
 export const YoutubeIconColor: string = '#282828';

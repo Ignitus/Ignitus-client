@@ -34,8 +34,11 @@ export enum AppIcon {
   GraduationCapIcon = 'GraduationCapIcon',
   AccountCircleIcon = 'AccountCircleIcon',
   NotificationIcon = 'NotificationIcon',
-	FileIcon = 'FileIcon',
-	BookmarkIcon = 'BookmarkIcon',
-	MapMarkerIcon = 'MapMarkerIcon',
-  VideoLibIcon = 'VideoLibrary'
+  FileIcon = 'FileIcon',
+  BookmarkIcon = 'BookmarkIcon',
+  MapMarkerIcon = 'MapMarkerIcon',
+  VideoLibIcon = 'VideoLibrary',
+  YoutubeIcon = 'YoutubeIcon',
+  MediumIcon = 'MediumIcon',
+  SlackIcon = 'SlackIcon',
 }

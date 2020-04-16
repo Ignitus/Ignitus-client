@@ -39,6 +39,9 @@ import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/co
 import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
 import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
 import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
+import YoutubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youtubeIcon';
+import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon';
+import SlackIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon';
 
 type Props = {
   name: AppIcon;
@@ -162,6 +165,12 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.CameraIcon:
       return <CameraIcon {...rest} />;
+    case AppIcon.YoutubeIcon:
+      return <YoutubeIcon {...rest} />;
+    case AppIcon.SlackIcon:
+      return <SlackIcon {...rest} />;
+    case AppIcon.MediumIcon:
+      return <MediumIcon />;
   }
 };
 
