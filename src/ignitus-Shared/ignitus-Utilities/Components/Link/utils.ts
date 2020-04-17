@@ -1,8 +1,6 @@
 /**
  * Reference from eui/EuiLink
  */
-import React from 'react';
-
 const ignitusUrl = /(http|https):\/\/(.+\.)?ignitus\.org((\/|\?)[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/g;
 
 const isIgnitusUrl = (url: string = '') => {
@@ -14,7 +12,7 @@ const isIgnitusUrl = (url: string = '') => {
   return matches[0].length === url.length;
 };
 
-const secureRel = ({ href, target, rel }) => {
+export const secureRel = ({ href, target, rel }) => {
   const isSecureUrl = !!href && isIgnitusUrl(href);
   const rel_ = !!rel ? rel.split(' ').filter(part => !!part.length && part !== 'noreferrer') : [];
 
@@ -29,30 +27,4 @@ const secureRel = ({ href, target, rel }) => {
   }
 
   return rel_.join(' ').trim();
-};
-
-interface Props {
-  href?: string;
-  target?: string;
-  rel?: string;
-  children: React.ReactNode;
-  [rest: string]: any;
-};
-
-export const Link: React.FC<Props> = ({
-  href = '#',
-  target,
-  rel,
-  children,
-  ...rest
-}) => {
-  return (
-    <a
-      href={href}
-      target={target}
-      rel={secureRel({ href, target, rel })}
-      {...rest}>
-      {children}
-    </a>
-  );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import { Link } from './link';
+import { Link } from './index';
 
 const nr = 'noreferrer';
 const no = 'noopener';
