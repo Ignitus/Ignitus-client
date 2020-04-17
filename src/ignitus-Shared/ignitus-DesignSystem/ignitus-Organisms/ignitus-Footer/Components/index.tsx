@@ -188,7 +188,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
             href="https://bit.ly/JoinIgnitusSlack"
           >
             {' '}
-            <i className="fa fa-slack" />
+            <S.Icon name={AppIcon.SlackIcon} />
           </a>{' '}
         </li>
         <li>
@@ -210,7 +210,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
             href="https://github.com/Ignitus"
           >
             {' '}
-            <i className="fa fa-github" />
+            <S.Icon name={AppIcon.GithubIcon} />
           </a>{' '}
         </li>
         <li>
@@ -221,7 +221,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
             href="https://medium.com/@social_63397"
           >
             {' '}
-            <i className="fa fa-medium" />
+            <S.Icon name={AppIcon.MediumIcon} />
           </a>{' '}
         </li>
         <li>
@@ -232,7 +232,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
             href="https://www.youtube.com/channel/UCW2BmTcaghAmhELP4_RdRrw"
           >
             {' '}
-            <i className="fa fa-youtube" />
+            <S.Icon name={AppIcon.YouTubeIcon} />
           </a>{' '}
         </li>
       </S.FooterSocial>

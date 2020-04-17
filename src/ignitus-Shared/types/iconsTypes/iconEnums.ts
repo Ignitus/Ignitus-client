@@ -39,4 +39,7 @@ export enum AppIcon {
   KeyIcon = 'keyIcon',
   EyeVisibleOffIcon = 'EyeVisibleOffIcon',
   EyeVisibleOnIcon = 'EyeVisibleOnIcon',
+  SlackIcon = 'SlackIcon',
+  MediumIcon = 'MediumIcon',
+  YouTubeIcon = 'YouTubeIcon',
 }

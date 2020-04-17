@@ -40,6 +40,9 @@ import {IgnitusLogo} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ico
 import {EyeVisibleOffIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOffIcon/index';
 import {EyeVisibleOnIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOnIcon/index';
 import {KeyIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyIcon/index';
+import SlackIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon/index';
+import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon/index';
+import YouTubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -166,6 +169,15 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.KeyIcon:
       return <KeyIcon {...rest} />;
+
+    case AppIcon.SlackIcon:
+      return <SlackIcon {...rest} />;
+
+    case AppIcon.MediumIcon:
+      return <MediumIcon {...rest} />;
+
+    case AppIcon.YouTubeIcon:
+      return <YouTubeIcon {...rest} />;
   }
 };
 
