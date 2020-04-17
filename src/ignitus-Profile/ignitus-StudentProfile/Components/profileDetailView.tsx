@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyledHeading2, StyledHeading4, StyledHeading6} from '../../../ignitus-UserInterfaceBook/styles';
 import * as P from '../styles';
 import { AppIcon } from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import { ButtonBottomRight, RoundedButton } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
