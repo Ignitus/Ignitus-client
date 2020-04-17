@@ -1,62 +1,26 @@
 import styled from '@emotion/styled';
 import Icon from '../../../ignitus-Utilities/Components/icon';
+import * as C from '../colors';
+import { StyledTagProps } from './types';
 
 export const StyledIcon = styled(Icon)`
   height: 1.2rem;
   width: 1.2rem;
-  fill: black;
+  fill: ${props => props.color};
   transition: 0.3s;
   flex: 1;
+  margin: 0.03rem;
 `;
 
-export const StyledTag1 = {
-  backgroundColor: "#FFA500",
-  color: "white",
-  fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "45px",
-  margin: "0.5rem",
-  lineHeight: "1rem",
-  fontSize: "18px",
-  padding: "16px 32px",
-  display: "-webkit-inline-box"
-} as React.CSSProperties;
-
-export const StyledTag2 = {
-  backgroundColor: "#A9A9A9",
-  color: "#000066",
-  fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "45px",
-  margin: "0.5rem",
-  lineHeight: "1rem",
-  fontSize: "18px",
-  padding: "16px 32px",
-  display: "-webkit-inline-box"
-} as React.CSSProperties;
-
-export const StyledTag3 = {
-  backgroundColor: "#000066",
-  color: "#ffffff",
-  fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "45px",
-  margin: "0.5rem",
-  lineHeight: "1rem",
-  fontSize: "18px",
-  padding: "16px 32px",
-  display: "-webkit-inline-box"
-} as React.CSSProperties;
-
-export const StyledTag4 = {
-  backgroundColor: "#ffffff",
-  color: "#000066",
-  fontWeight: 600,
-  textAlign: "center",
-  borderRadius: "45px",
-  margin: "0.5rem",
-  lineHeight: "1rem",
-  fontSize: "18px",
-  padding: "16px 32px",
-  display: "-webkit-inline-box"
-} as React.CSSProperties;
+export const StyledTag = styled.span<StyledTagProps>`
+  background: ${props => props.background};
+  color: ${props => props.color};
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2.8rem;
+  margin: 0.5rem;
+  line-height: 1rem;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+`;

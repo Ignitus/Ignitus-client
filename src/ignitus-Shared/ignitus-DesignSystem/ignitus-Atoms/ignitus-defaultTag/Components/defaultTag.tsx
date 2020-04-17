@@ -1,28 +1,29 @@
 import React from 'react';
 import { InputTypes } from '../types';
-import { StyledTag1, StyledTag2, StyledTag3, StyledTag4, StyledIcon } from '../styles';
+import { StyledTag, StyledIcon } from '../styles';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import * as C from '../../colors';
 
-export const DefaultTag1 = ({ label }: InputTypes) => (
+export const DefaultTag1 = ({ label, color, background }: InputTypes) => (
   <React.Fragment>
-    <span style={StyledTag1}>{ label }</span>
+    <StyledTag color={ color } background={ background }>{ label }</StyledTag>
   </React.Fragment>
 );
 
-export const DefaultTag2 = ({ label }: InputTypes) => (
+export const DefaultTag2 = ({ label, color, background }: InputTypes) => (
   <React.Fragment>
-    <span style={StyledTag2}><StyledIcon style={{"fill": "#000066", "margin": "0 5px"}} name={AppIcon.CrossIcon} />{ label }</span>
+    <StyledTag color={ color } background={ background }><StyledIcon color={ C.IgnitusBlue } name={AppIcon.CrossIcon} />{ label }</StyledTag>
   </React.Fragment>
 );
 
-export const DefaultTag3 = ({ label }: InputTypes) => (
+export const DefaultTag3 = ({ label, color, background }: InputTypes) => (
   <React.Fragment>
-    <span style={StyledTag3}>{ label }<StyledIcon style={{"fill": "#fff", "margin": "0 5px"}} name={AppIcon.CrossIcon} /></span>
+    <StyledTag color={ color } background={ background }>{ label }<StyledIcon color={ C.White } name={AppIcon.CrossIcon} /></StyledTag>
   </React.Fragment>
 );
 
-export const DefaultTag4 = ({ label }: InputTypes) => (
+export const DefaultTag4 = ({ label, color, background }: InputTypes) => (
   <React.Fragment>
-    <span style={StyledTag4}>{ label }<StyledIcon style={{"fill": "#A9A9A9", "margin": "0 5px"}} name={AppIcon.CrossIcon} /></span>
+    <StyledTag color={ color } background={ background }>{ label }<StyledIcon color={ C.GreyOne } name={AppIcon.CrossIcon} /></StyledTag>
   </React.Fragment>
 );
