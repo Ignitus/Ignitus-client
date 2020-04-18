@@ -57,7 +57,6 @@ export const Content = styled(Container)`
 `;
 
 export const University = styled(Heading5)`
-  color: ${C.Black};
   font-weight: ${F.SemiBold};
 `;
 
@@ -94,17 +93,12 @@ export const RightRow = styled(flexibleRowDiv)`
   flex: 2;
   margin-left: 2rem;
 `;
-
 export const Avatar = styled.img`
   margin: 1rem;
   width: 9rem;
   border-radius: 50%;
 `;
-
-export const Name = styled(Heading5)`
-  color: ${C.IgnitusBlue};
-`;
-
+export const Name = styled(Heading5)``;
 export const Designation = styled(Heading6)`
   margin: 0.4rem 0;
 `;

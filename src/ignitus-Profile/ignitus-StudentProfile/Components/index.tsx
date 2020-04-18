@@ -12,7 +12,7 @@ import {
   RecommendationsProps,
 } from '../types';
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {GreySecondaryText} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {GreySecondaryText, Black} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const StudentProfile = () => (
   <P.ParentContainer>
@@ -126,7 +126,7 @@ const Education = ({university, address, batch}: EducationProps) => (
   <Fragment>
     <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
     <P.Content>
-      <P.University>{university}</P.University>
+      <P.University color={Black}>{university}</P.University>
       <P.Address>{address}</P.Address>
       <P.Date>{batch}</P.Date>
     </P.Content>
