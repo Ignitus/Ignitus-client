@@ -1,66 +1,57 @@
 import styled from '@emotion/styled';
-import { Container, flexibleColDiv, flexibleRowDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import {
+  Container,
+  flexibleColDiv,
+  flexibleRowDiv,
+} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {Avatar} from '../../ignitus-AboutPage/ignitus-Team/Styles';
+import {
+  Heading5, Paragraph,
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
-export const MainContainer = styled(Container)`
+export const ParentContainer = styled(Container)`
   margin: 10rem auto;
   background: ${C.White};
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 0 0 5rem 2rem;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
 `;
 
 export const TopSection = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-items: flex-end;
-  align-items: flex-end;
+  justify-content: flex-end;
+`;
+export const MiddleSection = styled.div`
+  padding: 2rem;
+`;
+export const ElementContainer = styled(Container)``;
+
+export const Title = styled(Heading5)`
+  padding: 0.5rem 2rem;
 `;
 
-export const MainSection = styled.div`
-`;
-
-export const ElementContainer = styled(Container)`
-`;
-
-export const HeadingText = styled.div`
-  padding: 0.5rem;
-  margin: 0 0 0 0.5rem;
-  flex: 10;
-  color: ${C.IgnitusBlue};
-  font-size: ${F.XXL};
-  font-weight: ${F.SemiBold};
-`;
-
-export const HeadingWrapper = styled.div`
+export const TitleWrapper = styled.div`
   display: flex;
-  margin: 0.6rem 0;
   flex-direction: row;
-  justify-items: flex-start;
-  align-items: baseline;
 `;
 
-export const HeadingStyledIcon = styled(Icon)`
-  height: 2rem;
-  width: 2rem;
+export const Icon = styled(I)`
+  width: 1.5rem;
   fill: ${C.IgnitusBlue};
-  transition: 0.3s;
-  flex: 1;
 `;
 
-export const ContentContainer = styled(Container)`
-  margin: 0 2rem 0 7rem;
+export const Content = styled(Container)`
+  margin-left: 3.6rem;
+  margin-top: 0.5rem;
 `;
 
 export const AboutWrapper = styled.div`
   margin: 0.6rem 0;
 `;
 
-export const About = styled.p`
-  font-size: ${F.MD};
+export const About = styled(Paragraph)`
   color: ${C.GreySecondaryText};
 `;
 
@@ -75,7 +66,7 @@ export const EducationWrapper = styled.div`
 export const University = styled.p`
   font-size: ${F.MD};
   font-weight: ${F.SemiBold};
-  color: ${C.GreyOne}
+  color: ${C.GreyOne};
   width: 15rem;
   margin: 0;
 `;
@@ -88,10 +79,10 @@ export const Address = styled.p`
 `;
 
 export const Batch = styled.p`
-    font-size: ${F.MD};
-    width: 15rem;
-    color: ${C.GreySecondaryText};
-    margin:0;
+  font-size: ${F.MD};
+  width: 15rem;
+  color: ${C.GreySecondaryText};
+  margin: 0;
 `;
 
 export const PublicationsText = styled.div`
@@ -125,14 +116,14 @@ export const ContributionsContainer = styled.div`
   margin: 0.7rem 0;
   flex-direction: row;
   justify-items: flex-start;
-  flex:1;
+  flex: 1;
 `;
 
 export const ContributionsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-items: space-around;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 `;
 
 export const ContributionsText = styled.div`
@@ -152,7 +143,6 @@ export const ContributionsStyledIcon = styled(Icon)`
   width: 1.3rem;
   fill: ${C.IgnitusBlue};
   transition: 0.3s;
-
 `;
 
 export const RecommendationsWrapper = styled.div`
@@ -163,20 +153,20 @@ export const RecommendationsWrapper = styled.div`
 `;
 
 export const RecommendationsProfile = styled(flexibleRowDiv)`
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: space-evenly;
-  flex:1;
+  flex: 1;
 `;
 
 export const RecommendationsAvatar = styled(Avatar)`
   border-radius: 50%;
-  border:none;
-  margin:2rem;
-  flex:1;
+  border: none;
+  margin: 2rem;
+  flex: 1;
 `;
 
 export const RecommendationsDetails = styled(flexibleColDiv)`
-  flex:1;
+  flex: 1;
   align-items: flex-start;
 `;
 
@@ -185,14 +175,14 @@ export const Name = styled.p`
   font-weight: ${F.Bold};
   font-size: ${F.XL};
   margin: 0;
-  flex:1;
+  flex: 1;
 `;
 
 export const Designation = styled.p`
   color: ${C.IgnitusBlue};
   font-weight: ${F.Normal};
   font-size: ${F.MD};
-  flex:1;
+  flex: 1;
   margin: 0;
 `;
 
@@ -201,7 +191,7 @@ export const Date = styled.p`
   font-weight: ${F.Normal};
   font-size: ${F.MD};
   margin: 1rem 0 0 0;
-  flex:2;
+  flex: 2;
 `;
 
 export const Experience = styled.p`
@@ -210,11 +200,11 @@ export const Experience = styled.p`
   font-weight: ${F.Normal};
   background: transparent;
   font-size: ${F.SM};
-  flex:1;
+  flex: 1;
 `;
 
 export const BottomSection = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-items: flex-start;
   align-items: center;
