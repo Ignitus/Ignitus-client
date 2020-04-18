@@ -31,10 +31,10 @@ export const Heading4 = styled.h4<Props>`
   color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
-export const Heading5 = styled.h5`
+export const Heading5 = styled.h5<Props>`
   font-weight: ${F.Bold};
   font-size: ${F.MD};
-  color: ${C.IgnitusBlue};
+  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading6 = styled.h6`

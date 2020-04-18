@@ -43,6 +43,8 @@ import {KeyIcon} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/k
 import SlackIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon/index';
 import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon/index';
 import YouTubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
+import ContributionIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
+import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
 
 type Props = {
   name: AppIcon;
@@ -178,6 +180,12 @@ const Icon = ({name, ...rest}: Props) => {
 
     case AppIcon.YouTubeIcon:
       return <YouTubeIcon {...rest} />;
+
+    case AppIcon.ContributionIcon:
+      return <ContributionIcon {...rest} />
+
+    case AppIcon.StarCircleIcon:
+      return < StarCircleIcon {...rest} />
   }
 };
 

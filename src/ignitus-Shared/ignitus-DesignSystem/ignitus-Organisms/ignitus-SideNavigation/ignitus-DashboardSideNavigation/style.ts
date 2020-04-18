@@ -8,7 +8,6 @@ import {
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 import {flexibleColDiv} from '../../../shared';
 import Icon from '../../../../ignitus-Utilities/Components/icon';
-import {Paragraph} from '../../../ignitus-Atoms/typography';
 
 type Props = {
   border: boolean;

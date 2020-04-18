@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, {useState} from 'react';
-import {HashLink} from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 import {Props} from '../types';
@@ -127,19 +127,19 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={linkToggle}>
           <li>
             {' '}
-            <HashLink to="/#!">Home</HashLink>{' '}
+            <Link to="/#!">Home</Link>{' '}
           </li>
           <li>
             {' '}
-            <HashLink to="/#what-we-do">What we Do?</HashLink>{' '}
+            <Link to="/#what-we-do">What we Do?</Link>{' '}
           </li>
           <li>
             {' '}
-            <HashLink to="/interface">Design System</HashLink>{' '}
+            <Link to="/interface">Design System</Link>{' '}
           </li>
           <li>
             {' '}
-            <HashLink to="/#contributors">Contributors</HashLink>{' '}
+            <Link to="/#contributors">Contributors</Link>{' '}
           </li>
         </S.FooterLinks>
       </S.FooterSections>
