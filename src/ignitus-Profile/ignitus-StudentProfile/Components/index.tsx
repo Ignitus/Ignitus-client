@@ -14,7 +14,7 @@ import {
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {GreySecondaryText} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
-const ProfileDetailView = () => (
+export const StudentProfile = () => (
   <P.ParentContainer>
     <P.TopSection>
       <ButtonBottomRight size="large" category="primary">
@@ -158,5 +158,3 @@ const RecommendationsSection = ({
     </P.Content>
   </P.ElementContainer>
 );
-
-export default ProfileDetailView;
