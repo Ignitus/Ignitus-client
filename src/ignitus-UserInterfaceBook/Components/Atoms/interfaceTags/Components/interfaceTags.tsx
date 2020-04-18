@@ -9,8 +9,8 @@ const interfaceTags: React.FC = () => (
     <StyledHeading2>Tags</StyledHeading2>
     <hr />
 
-    <DefaultTag1 label={'Sophia_resume.pdf'} color={C.White} background={C.Orange} />
-    <DefaultTag2 label={'publication_report.pdf'} color={C.IgnitusBlue} background={C.GreyOne} />
+    <DefaultTag1 label={'Sophia_resume.pdf'} color={C.IgnitusBlue} background={C.Orange} />
+    <DefaultTag2 label={'publication_report.pdf'} color={C.White} background={C.GreyOne} />
     <DefaultTag3 label={'Full Time'} color={C.White} background={C.IgnitusBlue} />
     <DefaultTag4 label={'Literature'} color={C.IgnitusBlue} background={C.White} />
   </TagsContainer>

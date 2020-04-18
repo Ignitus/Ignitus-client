@@ -12,7 +12,7 @@ export const DefaultTag1 = ({ label, color, background }: InputTypes) => (
 
 export const DefaultTag2 = ({ label, color, background }: InputTypes) => (
   <React.Fragment>
-    <StyledTag color={ color } background={ background }><StyledIcon color={ C.IgnitusBlue } name={AppIcon.CrossIcon} />{ label }</StyledTag>
+    <StyledTag color={ color } background={ background }><StyledIcon color={ C.White } name={AppIcon.CrossIcon} />{ label }</StyledTag>
   </React.Fragment>
 );
 
