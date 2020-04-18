@@ -114,38 +114,11 @@ export const PublicationsStyledIcon = styled(Icon)`
   transition: 0.3s;
 `;
 
-export const ContributionsContainer = styled.div`
-  display: flex;
-  margin: 0.7rem 0;
-  flex-direction: row;
-  justify-items: flex-start;
-  flex: 1;
-`;
-
 export const ContributionsWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-items: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-`;
-
-export const ContributionsText = styled.div`
-  flex: 5;
-  color: ${C.GreySecondaryText};
-  font-size: ${F.SM};
-`;
-
-export const ContributionsIconWrapper = styled.div`
-  height: 1.3rem;
-  width: 1.3rem;
-  flex: 1;
-`;
-
-export const ContributionsStyledIcon = styled(Icon)`
-  height: 1.3rem;
-  width: 1.3rem;
-  fill: ${C.IgnitusBlue};
-  transition: 0.3s;
 `;
 
 export const RecommendationsWrapper = styled.div`
@@ -207,9 +180,7 @@ export const Experience = styled.p`
 `;
 
 export const BottomSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-  align-items: center;
+  text-align: center;
   margin: 1rem;
+  padding: 2rem;
 `;

@@ -7,10 +7,8 @@ import {
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   AboutProps,
-  ContributionsProps,
   EducationProps,
   HeadingProps,
-  PublicationsProps,
   RecommendationsProps,
 } from '../types';
 
@@ -63,12 +61,33 @@ const ProfileDetailView = () => (
         </P.Content>
       </P.ElementContainer>
 
-      <ContributionsSection
-        articles="5"
-        polls="5"
-        publications="2"
-        videos="3"
-      />
+      <P.ElementContainer>
+        <Heading title="Contributions" icon={AppIcon.ContributionIcon} />
+        <P.Content>
+          <P.ContributionsWrapper>
+            <Heading
+              title="5 Articles"
+              icon={AppIcon.LibraryBooksIcon}
+              fontStyle="paragraph"
+            />
+            <Heading
+              title="5 Polls"
+              icon={AppIcon.PollIcon}
+              fontStyle="paragraph"
+            />
+            <Heading
+              title="2 Publications"
+              icon={AppIcon.PdfIcon}
+              fontStyle="paragraph"
+            />
+            <Heading
+              title="3 Videos"
+              icon={AppIcon.VideoLibIcon}
+              fontStyle="paragraph"
+            />
+          </P.ContributionsWrapper>
+        </P.Content>
+      </P.ElementContainer>
 
       <RecommendationsSection
         name="Nicholas Young"
@@ -110,45 +129,6 @@ const Education = ({university, address, batch}: EducationProps) => (
       <P.Year>{batch}</P.Year>
     </P.Content>
   </Fragment>
-);
-
-const ContributionsSection = ({
-  articles,
-  polls,
-  publications,
-  videos,
-}: ContributionsProps) => (
-  <P.ElementContainer>
-    <Heading title="Contributions" icon={AppIcon.ContributionIcon} />
-    <P.Content>
-      <P.ContributionsWrapper>
-        <P.ContributionsContainer>
-          <P.ContributionsIconWrapper>
-            <P.ContributionsStyledIcon name={AppIcon.LibraryBooksIcon} />
-          </P.ContributionsIconWrapper>
-          <P.ContributionsText> {articles} Articles</P.ContributionsText>
-        </P.ContributionsContainer>
-        <P.ContributionsContainer>
-          <P.ContributionsIconWrapper>
-            <P.ContributionsStyledIcon name={AppIcon.PollIcon} />
-          </P.ContributionsIconWrapper>
-          <P.ContributionsText>{polls} Polls</P.ContributionsText>
-        </P.ContributionsContainer>
-        <P.ContributionsContainer>
-          <P.ContributionsIconWrapper>
-            <P.ContributionsStyledIcon name={AppIcon.PdfIcon} />
-          </P.ContributionsIconWrapper>
-          <P.ContributionsText>{publications} Publications</P.ContributionsText>
-        </P.ContributionsContainer>
-        <P.ContributionsContainer>
-          <P.ContributionsIconWrapper>
-            <P.ContributionsStyledIcon name={AppIcon.VideoLibIcon} />
-          </P.ContributionsIconWrapper>
-          <P.ContributionsText>{videos} Videos</P.ContributionsText>
-        </P.ContributionsContainer>
-      </P.ContributionsWrapper>
-    </P.Content>
-  </P.ElementContainer>
 );
 
 const RecommendationsSection = ({
