@@ -12,7 +12,10 @@ import {
   RecommendationsProps,
 } from '../types';
 import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {GreySecondaryText, Black} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {
+  GreySecondaryText,
+  Black,
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const StudentProfile = () => (
   <P.ParentContainer>
