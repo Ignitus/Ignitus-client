@@ -14,10 +14,12 @@ export const interfaceDropDown: React.FC = () => (
     <Heading2>DropDowns</Heading2>
     <hr />
     <Heading5>Inline Block</Heading5>
+    <br />
     <DefaultDropdown options={cars} label={'cars'} display="inline-block" />
     <br />
     <br />
     <Heading5>Block</Heading5>
+    <br />
     <DefaultDropdown options={cars} label={'cars'} display="block" />
   </Interface>
 );

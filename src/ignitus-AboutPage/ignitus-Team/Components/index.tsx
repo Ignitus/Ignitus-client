@@ -3,26 +3,27 @@ import React, {useEffect} from 'react';
 import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
+import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
-    <S.GithubContributorsContainer>
+    <S.Container>
       <S.TitleWrapper>
-        <S.GithubContributorsTitle>
-          <S.Plus />
+        <S.Title>
+          <S.Icon name={AppIcon.PlusIcon} />
           {contributors.length} Contributors
-        </S.GithubContributorsTitle>
+        </S.Title>
         <S.StyledParagraph>
           This project was made possible by these contributors. 🎉 🎨
         </S.StyledParagraph>
       </S.TitleWrapper>
-      <S.GithubContributors>
+      <S.ContributorsWrapper>
         <S.Contributors>{contributors}</S.Contributors>
-        <S.GithubContributorsLink href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
-          View All <S.Chevron />
-        </S.GithubContributorsLink>
-      </S.GithubContributors>
-    </S.GithubContributorsContainer>
+        <S.Link href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
+          View All <S.Icon name={AppIcon.KeyBoardArrowDown} />
+        </S.Link>
+      </S.ContributorsWrapper>
+    </S.Container>
   </S.Section>
 );
 
@@ -37,13 +38,11 @@ export const Team = withErrorBoundary(
     }, []);
 
     if (isFetching) {
-      return (
-        <S.Loader />
-      );
+      return <S.Loader />;
     }
 
     const contributors = presets.map((item: GitHubDataType) => (
-      <S.Link
+      <S.AvatarLink
         key={item.id}
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +53,7 @@ export const Team = withErrorBoundary(
           width="100%"
           alt={`avatar ${item.login}`}
         />
-      </S.Link>
+      </S.AvatarLink>
     ));
 
     return <PureTeam contributors={contributors} />;

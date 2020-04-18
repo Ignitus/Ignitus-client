@@ -1,41 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import * as T from '../style';
 
-import { Avatars } from '../constants';
-import { Props } from '../types';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {Avatars} from '../constants';
+import {Props} from '../types';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const Testimonial: React.FC<Props> = withErrorBoundary(
   ({testimonialData, getTestimonialData}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const handleClick = event => {
-      const {
-        target: {id},
-      } = event;
-
-      switch (id) {
-        case '1':
-          setCurrentIndex(0);
-          break;
-
-        case '2':
-          setCurrentIndex(1);
-          break;
-
-        case '3':
-          setCurrentIndex(2);
-          break;
-
-        case '4':
-          setCurrentIndex(3);
-          break;
-      }
-    };
 
     useEffect(() => {
       getTestimonialData();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [getTestimonialData]);
 
     return (
       <T.Container>
@@ -47,7 +23,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
                 <p>{testimonialData[currentIndex].description}</p>
               </T.Text>
               <T.Avatar>
-                <img src={Avatars[currentIndex]} alt={''}/>
+                <img src={Avatars[currentIndex]} alt={''} />
               </T.Avatar>
               <T.Name>{testimonialData[currentIndex].author}</T.Name>
               <T.Designation>
@@ -56,10 +32,15 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
             </T.Carousel>
           )}
           <T.Navigation>
-            <img id="1" src={Avatars[0]} alt="" onClick={handleClick} />
-            <img id="2" src={Avatars[1]} alt="" onClick={handleClick} />
-            <img id="3" src={Avatars[2]} alt="" onClick={handleClick} />
-            <img id="4" src={Avatars[3]} alt="" onClick={handleClick} />
+            {testimonialData.length > 0 &&
+              testimonialData.map((_, index) => (
+                <img
+                  key={_.author}
+                  src={Avatars[index]}
+                  alt=""
+                  onClick={() => setCurrentIndex(index)}
+                />
+              ))}
           </T.Navigation>
         </T.Testimonial>
       </T.Container>

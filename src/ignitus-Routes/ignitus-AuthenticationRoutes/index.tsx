@@ -13,18 +13,6 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-// const LazyLogInStudent = lazy(() => {
-//   return new Promise(resolve => {
-//     setTimeout(
-//       () =>
-//         import(
-//           '../../ignitus-Authentication/ignitus-StudentLogin/Containers/index'
-//         ).then(m => m, e => null as never),
-//       300,
-//     );
-//   });
-// });
-
 const LazyLogInStudent = lazy(() =>
   import(
     '../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/studenLogin'
@@ -33,7 +21,7 @@ const LazyLogInStudent = lazy(() =>
 
 const LazySignUpStudent = lazy(() =>
   import(
-    '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-StudentSignUp/Containers/index'
+    '../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/studentSignup'
   ),
 );
 
@@ -45,7 +33,7 @@ const LazyLogInProfessor = lazy(() =>
 
 const LazyProfessorSignUp = lazy(() =>
   import(
-    '../../ignitus-Authentication/ignitus-ProfessorSignUp/Components/index'
+    '../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/professorSignup'
   ),
 );
 
