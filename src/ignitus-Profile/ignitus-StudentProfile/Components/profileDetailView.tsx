@@ -24,14 +24,16 @@ const ProfileDetailView = () => (
     </P.TopSection>
     <P.MiddleSection>
       <P.ElementContainer>
-        <AboutSection content="Well-versed in over a dozen literary genres and can teach to any range of students. Adept at creating a lesson plan that engages students helping students to see the beauty in literature and encouraging students to read on their own. Specializes in high school and junior college level classes." />
+        <About content="Well-versed in over a dozen literary genres and can teach to any range of students. Adept at creating a lesson plan that engages students helping students to see the beauty in literature and encouraging students to read on their own. Specializes in high school and junior college level classes." />
       </P.ElementContainer>
 
-      <EducationSection
-        university="Graham Junior College"
-        address="New Parkland,CA"
-        batch="2015 – 2019"
-      />
+      <P.ElementContainer>
+        <Education
+          university="Graham Junior College"
+          address="New Parkland,CA"
+          batch="2015 – 2019"
+        />
+      </P.ElementContainer>
 
       <P.ElementContainer>
         <Heading title="Research Fields" icon={AppIcon.LocalLibraryIcon} />
@@ -82,7 +84,7 @@ const Heading = ({title, icon}: HeadingProps) => (
   </P.TitleWrapper>
 );
 
-const AboutSection = ({content}: AboutProps) => (
+const About = ({content}: AboutProps) => (
   <Fragment>
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
@@ -91,17 +93,15 @@ const AboutSection = ({content}: AboutProps) => (
   </Fragment>
 );
 
-const EducationSection = ({university, address, batch}: EducationProps) => (
-  <P.ElementContainer>
+const Education = ({university, address, batch}: EducationProps) => (
+  <Fragment>
     <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
     <P.Content>
-      <P.EducationWrapper>
-        <P.University>{university}</P.University>
-        <P.Address>{address}</P.Address>
-        <P.Batch>{batch}</P.Batch>
-      </P.EducationWrapper>
+      <P.University>{university}</P.University>
+      <P.Address>{address}</P.Address>
+      <P.Year>{batch}</P.Year>
     </P.Content>
-  </P.ElementContainer>
+  </Fragment>
 );
 
 const PublicationsIconContent = ({content}: PublicationsProps) => (

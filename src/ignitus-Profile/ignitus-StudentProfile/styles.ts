@@ -9,7 +9,8 @@ import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colo
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {Avatar} from '../../ignitus-AboutPage/ignitus-Team/Styles';
 import {
-  Heading5, Paragraph,
+  Heading5,
+  Paragraph,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const ParentContainer = styled(Container)`
@@ -26,7 +27,9 @@ export const TopSection = styled.div`
 export const MiddleSection = styled.div`
   padding: 2rem;
 `;
-export const ElementContainer = styled(Container)``;
+export const ElementContainer = styled(Container)`
+  margin: 1.5rem 0;
+`;
 
 export const Title = styled(Heading5)`
   padding: 0.5rem 2rem;
@@ -44,7 +47,6 @@ export const Icon = styled(I)`
 
 export const Content = styled(Container)`
   margin-left: 3.6rem;
-  margin-top: 0.5rem;
 `;
 
 export const AboutWrapper = styled.div`
@@ -63,26 +65,21 @@ export const EducationWrapper = styled.div`
   align-items: baseline;
 `;
 
-export const University = styled.p`
+export const University = styled(Paragraph)`
   font-size: ${F.MD};
   font-weight: ${F.SemiBold};
-  color: ${C.GreyOne};
-  width: 15rem;
-  margin: 0;
+  color: ${C.Black};
+  margin: 0.4rem 0;
 `;
 
-export const Address = styled.p`
+export const Address = styled(Paragraph)`
   font-size: ${F.MD};
-  width: 15rem;
   color: ${C.GreySecondaryText};
-  margin: 0;
+  margin: 0.4rem 0;
 `;
 
-export const Batch = styled.p`
-  font-size: ${F.MD};
-  width: 15rem;
-  color: ${C.GreySecondaryText};
-  margin: 0;
+export const Year = styled(Paragraph)`
+  margin: 0.4rem 0;
 `;
 
 export const PublicationsText = styled.div`
