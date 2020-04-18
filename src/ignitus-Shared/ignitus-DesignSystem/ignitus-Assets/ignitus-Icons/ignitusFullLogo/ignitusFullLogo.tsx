@@ -2,15 +2,14 @@ import React from 'react';
 import {HTMLAttributes} from 'react';
 type Props = HTMLAttributes<SVGElement>;
 
-const IgnitusFullLogo = ({title = 'KeyBoardArrowDown', ...rest}: Props) => {
-  console.log('dd', {...rest});
+const IgnitusFullLogo = ({title = 'Ignitus Full Logo', ...rest}: Props) => {
   return (
     <svg
       viewBox="0 0 322 104"
       xmlns="http://www.w3.org/2000/svg"
       aria-label={title}
       aria-hidden="true"
-      data-icon="KeyBoardArrowDown"
+      data-icon="Ignitus Full Logo"
       {...rest}
     >
       <path

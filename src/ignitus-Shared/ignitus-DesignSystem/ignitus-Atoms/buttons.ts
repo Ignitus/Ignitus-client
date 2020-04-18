@@ -32,7 +32,7 @@ export const ParentButton = styled.button`
   transition: all 0.3s ease;
   &:hover,
   &:focus {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   }
 `;
 
@@ -46,13 +46,14 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   border: ${props => getBorder(props)};
 
   a {
-    color: ${C.White};
+    color: ${props => getColor(props)};
   }
 
   &:hover,
   &:focus {
     background-color: ${props => getHoverBackgroundColor(props)};
     color: ${props => getHoverColor(props)};
+    outline: none;
 
     a {
       color: ${C.IgnitusBlue};

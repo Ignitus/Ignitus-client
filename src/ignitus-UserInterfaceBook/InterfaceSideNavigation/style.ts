@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
-import {Heading3} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import isPropValid from '@emotion/is-prop-valid';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {
   XL,
   SM,
-  Normal,
+  Light,
   Medium,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
@@ -26,10 +26,10 @@ export const NavigationContainer = styled.nav`
   background: ${C.GreyLight};
 `;
 
-export const Heading = styled(Heading3)<SubNestingProps>`
+export const Heading = styled.h5<SubNestingProps>`
   font-size: ${props => (props.nesting ? SM : XL)};
   color: ${props => (props.nesting ? C.GreyText : C.IgnitusBlue)};
-  font-weight: ${props => (props.nesting ? Normal : Medium)};
+  font-weight: ${props => (props.nesting ? Light : Medium)};
   padding: ${props => (props.nesting ? '0.5rem' : '0')};
   margin-bottom: 0;
 `;
@@ -55,8 +55,8 @@ export const ListItem = styled.li<SubNestingProps>`
   }
 `;
 
-export const Arrow = styled(Icon)<ArrowProps>`
-  height: 2rem;
+export const Arrow = styled(Icon, { shouldForwardProp: isPropValid })<ArrowProps>`
+  height: ${props => (props.nesting ? '1.5rem' : '2rem')};
   fill: ${props => (props.nesting ? C.GreyText : C.IgnitusBlue)};
   transform: ${props => (props.isexpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;

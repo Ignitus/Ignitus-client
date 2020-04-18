@@ -10,7 +10,7 @@ export const InputContainer = styled.div`
   flex-direction: column;
   padding: 1rem 1.5rem;
   background: ${C.White};
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   border-radius: 16px;
   width: 25rem;
 `;
@@ -27,12 +27,13 @@ export const BottomContainer = styled.div`
   margin-top: 0.5rem;
 `;
 
-export const Input = styled.textarea`
+export const Input = styled.textarea<{ initialHeight?: string }>`
   flex: 1;
   border: none;
   outline: none;
   overflow: hidden;
   font-size: ${SM};
+  height: ${ props => props.initialHeight ? props.initialHeight : 'auto' };
   resize: none;
   &::placeholder {
     color: ${C.GreyOne};

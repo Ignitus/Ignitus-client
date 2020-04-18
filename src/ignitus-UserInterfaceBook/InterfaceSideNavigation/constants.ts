@@ -1,4 +1,5 @@
 import {Edges} from './types';
+// Not developed routes are commented out but collected them for reference
 
 export const edges: Edges[] = [
   {
@@ -43,10 +44,10 @@ export const edges: Edges[] = [
             title: 'Primary',
             route: '/interface/primaryInput',
           },
-          {
-            title: 'TextArea',
-            route: '/interface/textArea',
-          },
+          // {
+          //   title: 'TextArea',
+          //   route: '/interface/textArea',
+          // },
           {
             title: 'Icon Input',
             route: '/interface/defaultIconInput',
@@ -62,22 +63,22 @@ export const edges: Edges[] = [
         children: [
           {
             title: 'Checkboxes',
-            route: '/interface/checkboxes',
+            route: '/interface/defaultCheckbox',
           },
-          {
-            title: 'Radio Buttons',
-            route: '/interface/radioButtons',
-          },
-          {
-            title: 'Toggles',
-            route: '/interface/toggles',
-          },
+          // {
+          //   title: 'Radio Buttons',
+          //   route: '/interface/radioButtons',
+          // },
+          // {
+          //   title: 'Toggles',
+          //   route: '/interface/toggles',
+          // },
         ],
       },
-      {
-        title: 'Tooltips',
-        route: '/interface/tooltips',
-      },
+      // {
+      //   title: 'Tooltips',
+      //   route: '/interface/tooltips',
+      // },
       {
         title: 'Dropdowns',
         children: [
@@ -85,10 +86,10 @@ export const edges: Edges[] = [
             title: 'Default',
             route: '/interface/defaultDropdown',
           },
-          {
-            title: 'Secondary',
-            route: '/interface/secondaryDropdown',
-          },
+          // {
+          //   title: 'Secondary',
+          //   route: '/interface/secondaryDropdown',
+          // },
         ],
       },
     ],
@@ -96,22 +97,22 @@ export const edges: Edges[] = [
   {
     title: 'Molecules',
     children: [
-      {
-        title: 'Chips',
-        route: '/interface/chips',
-      },
-      {
-        title: 'Progress indicators',
-        route: '/interface/progressBars',
-      },
-      {
-        title: 'Input with Buttons',
-        route: '/interface/inputButtons',
-      },
-      {
-        title: 'Banners',
-        route: '/interface/banner',
-      },
+      // {
+      //   title: 'Chips',
+      //   route: '/interface/chips',
+      // },
+      // {
+      //   title: 'Progress indicators',
+      //   route: '/interface/progressBars',
+      // },
+      // {
+      //   title: 'Input with Buttons',
+      //   route: '/interface/inputButtons',
+      // },
+      // {
+      //   title: 'Banners',
+      //   route: '/interface/banner',
+      // },
       {
         title: 'Overlay',
         route: '/interface/overlay',
@@ -126,7 +127,7 @@ export const edges: Edges[] = [
         children: [
           {
             title: 'Dashboard',
-            route: '/interface/defaultDropdown',
+            route: '/interface/dashboardNavigation',
           },
           {
             title: 'Settings',
@@ -134,10 +135,10 @@ export const edges: Edges[] = [
           },
         ],
       },
-      {
-        title: 'Navigation Drawer',
-        route: '/interface/checkboxes',
-      },
+      // {
+      //   title: 'Navigation Drawer',
+      //   route: '/interface/topNavigation',
+      // },
       {
         title: 'Footer',
         children: [
@@ -145,10 +146,10 @@ export const edges: Edges[] = [
             title: 'Dashboard',
             route: '/interface/dashBoardFooter',
           },
-          {
-            title: 'Default',
-            route: '/interface/defaultFooter',
-          },
+          // {
+          //   title: 'Default',
+          //   route: '/interface/defaultFooter',
+          // },
         ],
       },
       {
@@ -173,26 +174,26 @@ export const edges: Edges[] = [
   {
     title: 'Templates',
     children: [
-      {
-        title: 'Forms',
-        route: '/interface/forms',
-      },
+      // {
+      //   title: 'Forms',
+      //   route: '/interface/forms',
+      // },
       {
         title: 'Filters',
         route: '/interface/filters',
       },
-      {
-        title: 'Profile Side Section',
-        route: '/interface/profileSideSection',
-      },
-      {
-        title: 'Authentication Forms',
-        route: '/interface/authForms',
-      },
-      {
-        title: 'Post Layouts',
-        route: '/interface/postLayout',
-      },
+      // {
+      //   title: 'Profile Side Section',
+      //   route: '/interface/profileSideSection',
+      // },
+      // {
+      //   title: 'Authentication Forms',
+      //   route: '/interface/authForms',
+      // },
+      // {
+      //   title: 'Post Layouts',
+      //   route: '/interface/postLayout',
+      // },
     ],
   },
   {
@@ -205,10 +206,6 @@ export const edges: Edges[] = [
       {
         title: 'Under Construction',
         route: '/interface/underConstruction',
-      },
-      {
-        title: 'Opportunities Saved',
-        route: '/interface/opportunitiesSaved',
       },
     ],
   },

@@ -1,5 +1,7 @@
 import React from 'react';
 import * as S from '../style';
+import {Paragraph} from '../../../../ignitus-Atoms/typography';
+import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
 
 type props = {
   text: string;
@@ -28,6 +30,6 @@ const Layer = ({
   marginBottom = false,
 }: props) => (
   <S.Layer border={border} marginTop={marginTop} marginBottom={marginBottom}>
-    {text}
+    <Paragraph color={IgnitusBlue}>{text}</Paragraph>
   </S.Layer>
 );

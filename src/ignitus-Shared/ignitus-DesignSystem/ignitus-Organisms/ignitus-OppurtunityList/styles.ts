@@ -1,24 +1,17 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
-import { 
-  flexibleColDiv,
-  flexibleRowDiv,
- } from '../../shared';
-import { Normal, MD} from '../../ignitus-Atoms/fonts';
+import {flexibleColDiv, flexibleRowDiv} from '../../shared';
+import {Normal, MD} from '../../ignitus-Atoms/fonts';
 import ApplyIcon from '../../ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
-import { Paragraph } from '../../shared';
+import {Paragraph} from '../../shared';
 
-
-export const OpportunityList = styled(flexibleColDiv)`
-  padding: 2rem;
-`;
+export const OpportunityList = styled(flexibleColDiv)``;
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
-  margin: 0.5rem;
   padding: 1rem;
   width: 100%;
 `;
@@ -80,13 +73,14 @@ export const OpportunityDescriptionBtnContainer = styled.div`
   align-items: center;
 `;
 
-export const OpportunityDescription = styled(T.Heading5)`
+export const OpportunityDescription = styled(T.Paragraph)`
   font-weight: ${Normal};
-  color: ${C.Black};
+  color: ${C.GreyText};
+  margin-top: 1rem;
 `;
 
 export const OpportunityDateTitle = styled.div`
-  display: flex;
+  display: flex;s
   flex-direction: row;
 `;
 
@@ -94,14 +88,14 @@ export const OpportunityTitle = styled(T.Heading3)`
   flex: 1;
 `;
 
-export const OpportunityData = styled(T.Heading6)`
-  color: ${C.GreyOne};
+export const OpportunityData = styled(T.Paragraph)`
+  color: ${C.GreyText};
   font-weight: ${Normal};
   flex: 1;
   text-align: end;
 `;
 
-export const OpportunitySubTitle = styled(T.Heading4)`
+export const OpportunitySubTitle = styled(T.Paragraph)`
   font-weight: ${Normal};
   color: ${C.GreyOne};
 `;
