@@ -12,6 +12,7 @@ import {
   Heading5,
   Paragraph,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {TitleProps} from './types';
 
 export const ParentContainer = styled(Container)`
   margin: 10rem auto;
@@ -31,8 +32,13 @@ export const ElementContainer = styled(Container)`
   margin: 1.5rem 0;
 `;
 
-export const Title = styled(Heading5)`
+export const Title = styled(Heading5)<TitleProps>`
   padding: 0.5rem 2rem;
+  font-weight: ${props =>
+    props.fontStyle === 'paragraph' ? F.Medium : F.Bold};
+  font-size: ${props => (props.fontStyle === 'paragraph' ? F.SM : F.MD)};
+  color: ${props =>
+    props.fontStyle === 'paragraph' ? C.GreyText : C.IgnitusBlue};
 `;
 
 export const TitleWrapper = styled.div`

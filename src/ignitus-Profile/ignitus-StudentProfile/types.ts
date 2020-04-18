@@ -2,11 +2,16 @@ import {AppIcon} from '../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 export type HeadingProps = {
   title: string;
-  icon:AppIcon;
+  icon: AppIcon;
+  fontStyle?: string;
 };
 
 export type AboutProps = {
   content: string;
+};
+
+export type TitleProps = {
+  fontStyle?: string;
 };
 
 export type ContributionsProps = {

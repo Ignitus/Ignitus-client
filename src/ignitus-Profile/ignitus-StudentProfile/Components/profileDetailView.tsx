@@ -50,8 +50,16 @@ const ProfileDetailView = () => (
       <P.ElementContainer>
         <Heading title="Publications" icon={AppIcon.LibraryBooksIcon} />
         <P.Content>
-          <PublicationsIconContent content="Shakespeare and Elizabethan Poetry: A Study of His Earlier Work in Relation to the Poetry of the Time" />
-          <PublicationsIconContent content="Practice in a second language: Perspectives from applied linguistics and cognitive psychology" />
+          <Heading
+            title="Shakespeare and Elizabethan Poetry: A Study of His Earlier Work in Relation to the Poetry of the Time."
+            icon={AppIcon.PdfIcon}
+            fontStyle="paragraph"
+          />
+          <Heading
+            title="Practice in a second language: Perspectives from applied linguistics and cognitive psychology."
+            icon={AppIcon.PdfIcon}
+            fontStyle="paragraph"
+          />
         </P.Content>
       </P.ElementContainer>
 
@@ -77,10 +85,10 @@ const ProfileDetailView = () => (
   </P.ParentContainer>
 );
 
-const Heading = ({title, icon}: HeadingProps) => (
+const Heading = ({title, icon, fontStyle}: HeadingProps) => (
   <P.TitleWrapper>
     <P.Icon name={icon} />
-    <P.Title>{title}</P.Title>
+    <P.Title fontStyle={fontStyle}>{title}</P.Title>
   </P.TitleWrapper>
 );
 
@@ -102,15 +110,6 @@ const Education = ({university, address, batch}: EducationProps) => (
       <P.Year>{batch}</P.Year>
     </P.Content>
   </Fragment>
-);
-
-const PublicationsIconContent = ({content}: PublicationsProps) => (
-  <P.PublicationsWrapper>
-    <P.PublicationsIconWrapper>
-      <P.PublicationsStyledIcon name={AppIcon.PdfIcon} />
-    </P.PublicationsIconWrapper>
-    <P.PublicationsText>{content}</P.PublicationsText>
-  </P.PublicationsWrapper>
 );
 
 const ContributionsSection = ({
