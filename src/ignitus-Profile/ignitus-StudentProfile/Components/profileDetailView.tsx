@@ -11,6 +11,8 @@ import {
   HeadingProps,
   RecommendationsProps,
 } from '../types';
+import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {GreySecondaryText} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 const ProfileDetailView = () => (
   <P.ParentContainer>
@@ -115,7 +117,7 @@ const About = ({content}: AboutProps) => (
   <Fragment>
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
-      <P.About>{content}</P.About>
+      <Paragraph color={GreySecondaryText}>{content}</Paragraph>
     </P.Content>
   </Fragment>
 );
@@ -140,17 +142,19 @@ const RecommendationsSection = ({
   <P.ElementContainer>
     <Heading title="Recommendations" icon={AppIcon.StarCircleIcon} />
     <P.Content>
-      <P.RecommendationsWrapper>
-        <P.RecommendationsProfile>
-          <P.RecommendationsAvatar />
-          <P.RecommendationsDetails>
+      <P.RecommendationsRow>
+        <P.LeftRow>
+          <P.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" />
+          <div>
             <P.Name>{name}</P.Name>
             <P.Designation>{designation}</P.Designation>
             <P.Date>{date}</P.Date>
-          </P.RecommendationsDetails>
-        </P.RecommendationsProfile>
-        <P.Experience>{experience}</P.Experience>
-      </P.RecommendationsWrapper>
+          </div>
+        </P.LeftRow>
+        <P.RightRow>
+          <Paragraph color={GreySecondaryText}>{experience}</Paragraph>
+        </P.RightRow>
+      </P.RecommendationsRow>
     </P.Content>
   </P.ElementContainer>
 );

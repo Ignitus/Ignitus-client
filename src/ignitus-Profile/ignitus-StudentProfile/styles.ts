@@ -1,19 +1,18 @@
 import styled from '@emotion/styled';
 import {
   Container,
-  flexibleColDiv,
   flexibleRowDiv,
 } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {Avatar} from '../../ignitus-AboutPage/ignitus-Team/Styles';
+
 import {
   Heading5,
   Paragraph,
   Heading6,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {TitleProps} from './types';
+import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const ParentContainer = styled(Container)`
   margin: 10rem auto;
@@ -57,22 +56,6 @@ export const Content = styled(Container)`
   margin-top: 1rem;
 `;
 
-export const AboutWrapper = styled.div`
-  margin: 0.6rem 0;
-`;
-
-export const About = styled(Paragraph)`
-  color: ${C.GreySecondaryText};
-`;
-
-export const EducationWrapper = styled.div`
-  display: flex;
-  margin: 0.6rem 0;
-  flex-direction: column;
-  justify-items: flex-start;
-  align-items: baseline;
-`;
-
 export const University = styled(Heading5)`
   color: ${C.Black};
   font-weight: ${F.SemiBold};
@@ -95,28 +78,27 @@ export const ContributionsWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export const RecommendationsWrapper = styled.div`
+export const RecommendationsRow = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 `;
 
-export const RecommendationsProfile = styled(flexibleRowDiv)`
+export const LeftRow = styled(flexibleRowDiv)`
   flex-wrap: wrap;
   align-items: space-evenly;
   flex: 1;
 `;
 
-export const RecommendationsAvatar = styled(Avatar)`
-  border-radius: 50%;
-  border: none;
-  margin: 2rem;
-  flex: 1;
+export const RightRow = styled(flexibleRowDiv)`
+  flex: 2;
+  margin-left: 2rem;
 `;
 
-export const RecommendationsDetails = styled(flexibleColDiv)`
-  flex: 1;
-  align-items: flex-start;
+export const Avatar = styled.img`
+  margin: 1rem;
+  width: 9rem;
+  border-radius: 50%;
 `;
 
 export const Name = styled(Heading5)`
@@ -125,11 +107,6 @@ export const Name = styled(Heading5)`
 
 export const Designation = styled(Heading6)`
   margin: 0.4rem 0;
-`;
-
-export const Experience = styled(Paragraph)`
-  color: ${C.GreySecondaryText};
-  flex: 1;
 `;
 
 export const BottomSection = styled.div`
