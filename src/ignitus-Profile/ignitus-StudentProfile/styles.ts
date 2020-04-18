@@ -11,6 +11,7 @@ import {Avatar} from '../../ignitus-AboutPage/ignitus-Team/Styles';
 import {
   Heading5,
   Paragraph,
+  Heading6,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {TitleProps} from './types';
 
@@ -53,6 +54,7 @@ export const Icon = styled(I)`
 
 export const Content = styled(Container)`
   margin-left: 3.6rem;
+  margin-top: 1rem;
 `;
 
 export const AboutWrapper = styled.div`
@@ -71,11 +73,9 @@ export const EducationWrapper = styled.div`
   align-items: baseline;
 `;
 
-export const University = styled(Paragraph)`
-  font-size: ${F.MD};
-  font-weight: ${F.SemiBold};
+export const University = styled(Heading5)`
   color: ${C.Black};
-  margin: 0.4rem 0;
+  font-weight: ${F.SemiBold};
 `;
 
 export const Address = styled(Paragraph)`
@@ -84,34 +84,8 @@ export const Address = styled(Paragraph)`
   margin: 0.4rem 0;
 `;
 
-export const Year = styled(Paragraph)`
+export const Date = styled(Paragraph)`
   margin: 0.4rem 0;
-`;
-
-export const PublicationsText = styled.div`
-  flex: 20;
-  color: ${C.GreySecondaryText};
-  font-size: ${F.XS};
-  font-weight: ${F.SemiBold};
-`;
-
-export const PublicationsWrapper = styled.div`
-  display: flex;
-  margin: 0.7rem 0;
-  flex-direction: row;
-  justify-items: flex-start;
-`;
-export const PublicationsIconWrapper = styled.div`
-  height: 1.3rem;
-  width: 1.3rem;
-  margin: 0 0.2rem 0 0;
-  flex: 1;
-`;
-export const PublicationsStyledIcon = styled(Icon)`
-  height: 1.3rem;
-  width: 1.3rem;
-  fill: ${C.IgnitusBlue};
-  transition: 0.3s;
 `;
 
 export const ContributionsWrapper = styled.div`
@@ -123,9 +97,8 @@ export const ContributionsWrapper = styled.div`
 
 export const RecommendationsWrapper = styled.div`
   display: flex;
-  margin: 0.7rem 0;
   flex-direction: row;
-  justify-items: space-evenly;
+  flex-wrap: wrap;
 `;
 
 export const RecommendationsProfile = styled(flexibleRowDiv)`
@@ -146,36 +119,16 @@ export const RecommendationsDetails = styled(flexibleColDiv)`
   align-items: flex-start;
 `;
 
-export const Name = styled.p`
+export const Name = styled(Heading5)`
   color: ${C.IgnitusBlue};
-  font-weight: ${F.Bold};
-  font-size: ${F.XL};
-  margin: 0;
-  flex: 1;
 `;
 
-export const Designation = styled.p`
-  color: ${C.IgnitusBlue};
-  font-weight: ${F.Normal};
-  font-size: ${F.MD};
-  flex: 1;
-  margin: 0;
+export const Designation = styled(Heading6)`
+  margin: 0.4rem 0;
 `;
 
-export const Date = styled.p`
-  color: ${C.GreyOne};
-  font-weight: ${F.Normal};
-  font-size: ${F.MD};
-  margin: 1rem 0 0 0;
-  flex: 2;
-`;
-
-export const Experience = styled.p`
-  padding: 0.5rem;
+export const Experience = styled(Paragraph)`
   color: ${C.GreySecondaryText};
-  font-weight: ${F.Normal};
-  background: transparent;
-  font-size: ${F.SM};
   flex: 1;
 `;
 

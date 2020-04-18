@@ -126,7 +126,7 @@ const Education = ({university, address, batch}: EducationProps) => (
     <P.Content>
       <P.University>{university}</P.University>
       <P.Address>{address}</P.Address>
-      <P.Year>{batch}</P.Year>
+      <P.Date>{batch}</P.Date>
     </P.Content>
   </Fragment>
 );
