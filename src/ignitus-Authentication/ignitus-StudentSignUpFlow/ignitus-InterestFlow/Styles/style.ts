@@ -8,31 +8,31 @@ export const CheckboxContainer = styled.div`
 `;
 
 export const LeftSection = styled.div`
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     margin-right: none;
   }
-  ${minimumWidthQuery[1]} {
-    margin-right: 3rem;
-  }
-  ${minimumWidthQuery[2]} {
-    margin-right: 3rem;
-  }
   ${minimumWidthQuery[3]} {
+    margin-right: 3rem;
+  }
+  ${minimumWidthQuery[4]} {
+    margin-right: 3rem;
+  }
+  ${minimumWidthQuery[5]} {
     margin-right: 3rem;
   }
 `;
 
 export const RightSection = styled.div`
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[2]} {
     margin-left: none;
   }
-  ${minimumWidthQuery[1]} {
-    margin-left: 4rem;
-  }
-  ${minimumWidthQuery[2]} {
-    margin-left: 4rem;
-  }
   ${minimumWidthQuery[3]} {
+    margin-left: 4rem;
+  }
+  ${minimumWidthQuery[4]} {
+    margin-left: 4rem;
+  }
+  ${minimumWidthQuery[5]} {
     margin-left: 4rem;
   }
 `;

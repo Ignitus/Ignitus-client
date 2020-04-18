@@ -2,7 +2,7 @@ import React from 'react';
 
 type UseToggleReturn = [boolean, () => void];
 
-const useToggle = (inititalValue = false): UseToggleReturn => {
+export const useToggle = (inititalValue = false): UseToggleReturn => {
   const [value, setValue] = React.useState<boolean>(inititalValue);
 
   const toggleValue = () => {
@@ -11,5 +11,3 @@ const useToggle = (inititalValue = false): UseToggleReturn => {
 
   return [value, toggleValue];
 };
-
-export default useToggle;

@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyledHeading2} from '../../../../styles';
 import {SeparatorContainer, Separator} from '../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceSeparator: React.FC = () => (
   <SeparatorContainer>
-    <StyledHeading2>Separator</StyledHeading2>
+    <Heading2>Separator</Heading2>
     <hr />
     <Separator data-content="OR" />
   </SeparatorContainer>

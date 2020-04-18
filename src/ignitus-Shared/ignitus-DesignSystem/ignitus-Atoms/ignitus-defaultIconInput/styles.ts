@@ -1,28 +1,27 @@
 import styled from '@emotion/styled';
-import {GreyBackground, IgnitusBlue, GreyText, GreyLight} from '../colors';
+import {
+  IgnitusBlue,
+  GreyText,
+  GreyLight,
+} from '../colors';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {Normal, SM} from '../fonts';
-import {InputContainerProps} from './types';
 
-export const InputContainer = styled.div<InputContainerProps>`
+export const InputContainer = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: ${props => props.position};
+  flex-direction: row;
   border-radius: 0.5rem;
-  border: 1px solid
-    ${props => (props.position === 'row-reverse' ? GreyLight : GreyBackground)};
   padding: 0.7rem;
-  background: ${props =>
-    props.position === 'row-reverse' ? GreyLight : GreyBackground};
-
+  background: ${GreyLight};
+  border: 1px solid ${GreyLight};
   &:hover {
     border: 1px solid ${IgnitusBlue};
   }
 `;
 
 export const Input = styled.input`
-  width: 16rem;
   outline: none;
   border: none;
   background: transparent;
@@ -31,10 +30,9 @@ export const Input = styled.input`
   color: ${GreyText};
 `;
 
-export const StyledIcon = styled(Icon)<InputContainerProps>`
-  height: 1.5rem;
-  width: 1.5rem;
+export const StyledIcon = styled(Icon)`
+  height: 1.4rem;
+  width: 1.4rem;
   cursor: pointer;
-  margin-right: ${props => (props.position === 'row-reverse' ? '1rem' : '0')};
   fill: ${IgnitusBlue};
 `;

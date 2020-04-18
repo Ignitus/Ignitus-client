@@ -29,7 +29,7 @@ const ProfileDetailView = () => (
         batch="2015 – 2019"
       />
 
-      <P.ResearchSection>
+      <P.ElementContainer>
         <HeadingIconContent heading="Research Fields" icon={AppIcon.LocalLibraryIcon}/>
         <P.ContentContainer>
           <RoundedButton size="medium" category="grey">Psycholinguistics </RoundedButton>

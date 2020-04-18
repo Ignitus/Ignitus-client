@@ -27,12 +27,13 @@ export const ParentButton = styled.button`
   line-height: 1rem;
   margin: 0.5rem;
   outline: none;
+  text-transform: uppercase;
   font-size: ${F.MD};
   font-weight: ${F.Normal};
   transition: all 0.3s ease;
   &:hover,
   &:focus {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   }
 `;
 
@@ -53,6 +54,7 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   &:focus {
     background-color: ${props => getHoverBackgroundColor(props)};
     color: ${props => getHoverColor(props)};
+    outline: none;
 
     a {
       color: ${C.IgnitusBlue};
@@ -66,12 +68,15 @@ export const Button = styled(ParentButton)<ButtonProperties>`
 
 export const ButtonBottomRight = styled(Button)`
   border-radius: 0px 30px;
+  text-transform: capitalize;
 `;
 
 export const StyledButtonTopLeft = styled(Button)`
   border-radius: 30px 0px;
+  text-transform: capitalize;
 `;
 
 export const RoundedButton = styled(Button)`
   border-radius: 30px;
+  text-transform: capitalize;
 `;

@@ -4,7 +4,7 @@ import { withErrorBoundary } from './ignitus-Shared/ignitus-ErrorHandlingCompone
 import { DashboardRoutes } from './ignitus-Routes/ignitus-DashboardRoutes';
 // eslint-disable-next-line import/named
 import { PublicRoutes } from './ignitus-Routes/ignitus-PublicRoutes';
-import './App.scss';
+import './App.css';
 import UserInterfaceBookRoutes from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
 
 

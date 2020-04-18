@@ -19,7 +19,7 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
 `;
@@ -142,7 +142,7 @@ export const DropDownMenu = styled.ul`
   top: 30px;
   left: 0;
   border-radius: 10px 0 10px 10px;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
   color: ${C.IgnitusBlue};
   display: none;
@@ -158,7 +158,7 @@ export const DropDownMenuListItem = styled.li`
   font-size: 14px;
   width: 200px;
 
-  &:first-child {
+  &:first-of-type {
     border-top-left-radius: 10px;
   }
 

@@ -23,6 +23,8 @@ import {interfaceDashBoardFooter} from '../../ignitus-UserInterfaceBook/Componen
 import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
 import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
+import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
+import {interfaceUserProfile} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 
 const Container = styled.div`
   display: flex;
@@ -82,28 +84,21 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/underConstruction"
           component={interfaceUnderConstruction}
         />
-
         <Route path="/interface/colors" component={interfaceColors} />
-
         <Route
           path="/interface/defaultDropdown"
           component={interfaceDropDown}
         />
-
         <Route
           path="/interface/defaultCheckbox"
           component={interfaceCheckBox}
         />
-
         <Route path="/interface/primaryInput" component={interfaceInput} />
-
         <Route
           path="/interface/opportunitySaved"
           component={interfaceSavedOpportunity}
         />
-
         <Route path="/interface/searchInput" component={interfaceSearchInput} />
-
         <Route
           path="/interface/defaultIconInput"
           component={interfaceIconInput}
@@ -112,14 +107,13 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/defaultMultiMediaInput"
           component={interfaceMultiMediaInput}
         />
-
         <Route path="/interface/seperators" component={interfaceSeparator} />
-
         <Route
           path="/interface/dashBoardFooter"
           component={interfaceDashBoardFooter}
         />
-
+        <Route path="/interface/filters" component={interfaceFilters} />
+        <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
       </Switch>
     </LeftRow>
