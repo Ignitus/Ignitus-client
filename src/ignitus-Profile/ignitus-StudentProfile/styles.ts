@@ -13,6 +13,7 @@ import {TitleProps} from './types';
 import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import { minimumWidthQuery } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const ParentContainer = styled(Container)`
   margin: 10rem auto;
@@ -75,6 +76,22 @@ export const ContributionsWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  ${minimumWidthQuery[0]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[2]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: row;
+  }
+  ${minimumWidthQuery[4]} {
+    flex-direction: row;
+  }
+  ${minimumWidthQuery[5]} {
+    flex-direction: row;
+  }
 `;
 
 export const RecommendationsRow = styled.div`
