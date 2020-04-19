@@ -35,7 +35,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
             {testimonialData.length > 0 &&
               testimonialData.map((_, index) => (
                 <img
-                  key={_.author}
+                  key={_._id}
                   src={Avatars[index]}
                   alt=""
                   onClick={() => setCurrentIndex(index)}
