@@ -26,6 +26,7 @@ import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molec
 import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import {interfaceUserProfile} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 import {InterfaceAvatar} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
+import {InterfaceProgress} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 
 const Container = styled.div`
   display: flex;
@@ -117,6 +118,7 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
+        <Route path="/interface/progress" component={InterfaceProgress} />
       </Switch>
     </LeftRow>
   </Container>
