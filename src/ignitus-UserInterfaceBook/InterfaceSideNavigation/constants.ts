@@ -165,6 +165,10 @@ export const edges: Edges[] = [
           },
         ],
       },
+      {
+        title: 'Random Avatar',
+        route: '/interface/avatar',
+      },
     ],
   },
   {
