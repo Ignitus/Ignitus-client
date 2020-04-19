@@ -36,9 +36,7 @@
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "test:update": "npm test --updateSnapshot",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "test:update": "npm test --updateSnapshot"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.8",
@@ -53,7 +51,6 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "docz": "2.3.1",
     "enzyme": "^3.6.0",
     "codecov": "^3.3.0",
     "husky": "^1.0.0-rc.13",
