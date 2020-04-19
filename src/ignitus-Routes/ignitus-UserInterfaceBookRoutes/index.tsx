@@ -59,7 +59,7 @@ const LeftRow = styled.div`
 `;
 
 // eslint-disable-next-line import/prefer-default-export
-const UserInterfaceBookRoutes: React.FunctionComponent = () => (
+export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
   <Container>
     <RightRow>
       <InterfaceSideNavigation />
@@ -121,5 +121,3 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
     </LeftRow>
   </Container>
 );
-
-export default UserInterfaceBookRoutes;
