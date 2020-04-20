@@ -17,8 +17,7 @@ export const Circle = styled('span', { shouldForwardProp: noForward })<CirclePro
   && `box-shadow: inset 0px 0px 0px 0.1rem ${IgnitusBlue};`}
   border-radius: 50%;
   background-color: ${(props) => props.fill ? IgnitusBlue : 'none'};
-  transition: background-color 0.5s linear;
-  transition: box-shadow 0.5s ease-in;
+  transition: background-color 0.2s linear, box-shadow 0.5s ease-in;
 `;
 
 export const Line = styled.span`
