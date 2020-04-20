@@ -4,7 +4,7 @@ import BookmarkIcon from '../../../ignitus-Assets/ignitus-Icons/bookmarkIcon';
 import * as V from '../../../ignitus-Atoms/fonts';
 
 
-export const Container = styled.div `
+export const Container = styled.div`
   background-color: ${C.White};
   border-radius: 1rem;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
@@ -46,7 +46,6 @@ export const ProfileDetails = styled.div`
 export const Name = styled.div`
   font-size: ${V.LG};
   font-weight: ${V.Bold};
-  
 `;
 
 export const Designation = styled.div`

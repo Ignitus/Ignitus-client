@@ -1,10 +1,10 @@
 import React from 'react';
 import * as S from '../style';
 
-const ViewProfileButton = () => (
+const ViewProfileButton: React.FunctionComponent = () => (
   <S.Button>
     <S.Text>View Profile</S.Text>
-  </S.Button>  
-)
+  </S.Button>
+);
 
 export default ViewProfileButton;
