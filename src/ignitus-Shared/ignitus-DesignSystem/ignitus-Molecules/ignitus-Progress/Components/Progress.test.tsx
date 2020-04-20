@@ -24,4 +24,13 @@ describe('<Progress />', () => {
     wrapper = shallow(<Progress steps={5} current={5} />);
     expect(wrapper.find(Circle).at(4).props()['current']).toBeTruthy();
   });
+
+  it('should contains correct Lines filled', () => {
+    const current = 3;
+    const wrapper = shallow(<Progress steps={5} current={current} />);
+    wrapper.find(Line).forEach((line, i) => {
+      if (i < current - 1) expect(line.props().fill).toBeTruthy();
+      else expect(line.props().fill).toBeFalsy();
+    });
+  });
 });
