@@ -18,7 +18,7 @@ export const Progress: React.FC<Props> = ({
           {index === current - 1
             ? <Circle current />
             : (index < current ? <Circle fill /> : <Circle />)}
-          {index !== steps - 1 && <Line />}
+          {index !== steps - 1 && <Line fill={ index < current - 1 } />}
         </React.Fragment>
       ))}
     </Container>
