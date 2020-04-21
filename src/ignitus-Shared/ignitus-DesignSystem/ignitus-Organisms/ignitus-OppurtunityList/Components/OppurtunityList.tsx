@@ -7,7 +7,7 @@ export const Opportunity: React.FunctionComponent = () => (
     <S.ImageDescriptionContainer>
       <S.ImageContainer>
         <img
-          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
+          src="https://storage.googleapis.com/ignitus_assets/ig-avatars/avataaars6.svg"
           alt="universityLogo"
           height="150"
         />

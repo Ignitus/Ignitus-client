@@ -147,7 +147,7 @@ const RecommendationsSection = ({
     <P.Content>
       <P.RecommendationsRow>
         <P.LeftRow>
-          <P.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" />
+          <P.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/avataaars2.svg" />
           <div>
             <P.Name>{name}</P.Name>
             <P.Designation>{designation}</P.Designation>

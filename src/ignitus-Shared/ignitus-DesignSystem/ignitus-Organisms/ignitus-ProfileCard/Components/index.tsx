@@ -16,7 +16,7 @@ export const UserProfileCard = withErrorBoundary(() => (
     <S.BottomSection>
       <S.LeftRow>
         <div>
-          <S.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" alt="ProfileLogo" />
+          <S.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/avataaars2.svg" alt="ProfileLogo" />
         </div>
         <S.ProfileInformationContainer>
           <S.Name>Sophia Carter</S.Name>
