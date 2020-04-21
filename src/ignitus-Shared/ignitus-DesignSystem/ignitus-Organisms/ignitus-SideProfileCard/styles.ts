@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import * as C from '../../../ignitus-Atoms/colors'
-import BookmarkIcon from '../../../ignitus-Assets/ignitus-Icons/bookmarkIcon';
-import * as V from '../../../ignitus-Atoms/fonts';
-
+import * as C from '../../ignitus-Atoms/colors';
+import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon';
+import * as V from '../../ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   background-color: ${C.White};
@@ -16,7 +15,6 @@ export const Container = styled.div`
   padding: 1.5rem;
   width: 17rem;
 `;
-
 
 export const TopSection = styled.div`
   display: flex;
@@ -58,7 +56,7 @@ export const ViewProfileContainer = styled.div`
 `;
 
 export const BottomSection = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: row;
 `;
 
@@ -72,4 +70,3 @@ export const Text = styled.div`
   font-size: ${V.XS};
   font-weight: ${V.Normal};
 `;
-

@@ -1,19 +1,21 @@
 import React from 'react';
 import * as S from '../styles';
-import ViewProfileButton from '../../../../ignitus-Molecules/ignitus-ViewProfileButton/Components';
+import ViewProfileButton from '../../../ignitus-Molecules/ignitus-ViewProfileButton/Components';
 
-
-const ProfileSideNavigation: React.FunctionComponent = () => (
+export const SideProfileCard: React.FunctionComponent = () => (
   <S.Container>
     <S.TopSection>
-      <S.UserImage src="https://storage.googleapis.com/ignitus_assets/ig-avatars/melanie.png" alt="ProfileImage"/>
+      <S.UserImage
+        src="https://storage.googleapis.com/ignitus_assets/ig-avatars/melanie.png"
+        alt="ProfileImage"
+      />
       <S.ProfileContainer>
         <S.ProfileDetails>
           <S.Name>Sophia Carter</S.Name>
           <S.Designation>Literature Student</S.Designation>
         </S.ProfileDetails>
         <S.ViewProfileContainer>
-          <ViewProfileButton/>
+          <ViewProfileButton />
         </S.ViewProfileContainer>
       </S.ProfileContainer>
     </S.TopSection>
@@ -23,5 +25,3 @@ const ProfileSideNavigation: React.FunctionComponent = () => (
     </S.BottomSection>
   </S.Container>
 );
-
-export default ProfileSideNavigation;
