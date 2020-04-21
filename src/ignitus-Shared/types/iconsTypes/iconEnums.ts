@@ -2,6 +2,7 @@ export enum AppIcon {
   ApplyIcon = 'ApplyIcon',
   AngelListIcon = 'AngelListIcon',
   CopyIcon = 'CopyIcon',
+  ContributionIcon = 'ContributionIcon',
   CameraIcon = 'CameraIcon',
   LinkedInIcon = 'LinkedInIcon',
   PlusIcon = 'PlusIcon',
@@ -12,6 +13,7 @@ export enum AppIcon {
   CrossIcon = 'CrossIcon',
   SearchIcon = 'SearchIcon',
   SaveIcon = 'SaveIcon',
+  StarCircleIcon = 'StarCircle',
   MessageIcon = 'MessageIcon',
   NetworkIcon = 'NetworkIcon',
   MentorsIcon = 'MentorsIcon',
@@ -39,4 +41,7 @@ export enum AppIcon {
   KeyIcon = 'keyIcon',
   EyeVisibleOffIcon = 'EyeVisibleOffIcon',
   EyeVisibleOnIcon = 'EyeVisibleOnIcon',
+  SlackIcon = 'SlackIcon',
+  MediumIcon = 'MediumIcon',
+  YouTubeIcon = 'YouTubeIcon',
 }

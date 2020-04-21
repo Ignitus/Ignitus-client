@@ -25,6 +25,7 @@ import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Componen
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import {interfaceUserProfile} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
+import {InterfaceAvatar} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 
 const Container = styled.div`
   display: flex;
@@ -58,7 +59,7 @@ const LeftRow = styled.div`
 `;
 
 // eslint-disable-next-line import/prefer-default-export
-const UserInterfaceBookRoutes: React.FunctionComponent = () => (
+export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
   <Container>
     <RightRow>
       <InterfaceSideNavigation />
@@ -115,9 +116,8 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/filters" component={interfaceFilters} />
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
+        <Route path="/interface/avatar" component={InterfaceAvatar} />
       </Switch>
     </LeftRow>
   </Container>
 );
-
-export default UserInterfaceBookRoutes;
