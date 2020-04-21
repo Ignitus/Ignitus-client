@@ -163,6 +163,10 @@ export const edges: Edges[] = [
             title: 'User Profile',
             route: '/interface/userProfile',
           },
+          {
+            title: 'Side Profile',
+            route: '/interface/sideProfile',
+          },
         ],
       },
       {
