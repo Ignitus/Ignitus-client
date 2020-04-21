@@ -67,4 +67,5 @@ export const Heart = styled(HeartIcon)`
 export const Paragraph = styled(P)`
   font-weight: ${Light};
   text-align: center;
+  margin: 0.5rem 0;
 `;

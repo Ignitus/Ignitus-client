@@ -30,7 +30,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
 
       <N.NavigationLinks isExpanded={isExpanded}>
         <N.NavigationLinkItem>
-          <N.NavigationLink smooth to="/#">
+          <N.NavigationLink to="/#">
             Home
           </N.NavigationLink>
         </N.NavigationLinkItem>
