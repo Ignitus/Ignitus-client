@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
-import {HashLink} from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import {keyframes, css} from '@emotion/core';
+import isValidProps from '@emotion/is-prop-valid';
 import {
   White,
   SecondaryColor,
@@ -10,6 +11,7 @@ import {
 import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
 import {NavigationProps, ToggleProps} from './types';
 import Icon from '../../../ignitus-Utilities/Components/icon';
+
 
 export const Navigation = styled.nav<NavigationProps>`
   align-items: center;
@@ -30,7 +32,7 @@ export const Navigation = styled.nav<NavigationProps>`
   }
 `;
 
-export const NavigationBarBrand = styled(HashLink)`
+export const NavigationBarBrand = styled(Link)`
   /* padding: 1rem; */
   align-self: stretch;
 `;
@@ -100,9 +102,9 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
   }
 `;
 
-export const NavigationLink = styled(HashLink)``;
+export const NavigationLink = styled(Link)``;
 
-export const Burger = styled(Icon)<ToggleProps>`
+export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<ToggleProps>`
   position: absolute;
   top: 1.2rem;
   right: 2rem;

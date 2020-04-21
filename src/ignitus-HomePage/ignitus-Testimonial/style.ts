@@ -2,7 +2,10 @@ import styled from '@emotion/styled';
 import {maximumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 import {Heading2} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {IgnitusBlue} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {flexibleRowDiv, flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {
+  flexibleRowDiv,
+  flexibleColDiv,
+} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {
   MD,
   SemiBold,
@@ -30,14 +33,16 @@ export const Carousel = styled(flexibleColDiv)`
 export const Text = styled.div`
   &::before {
     color: ${IgnitusBlue};
-    content: '\f10d';
+    content: '❝';
+    font-size: 1.5rem;
     display: inline-block;
     font-family: 'FontAwesome';
     vertical-align: top;
   }
   ::after {
     color: ${IgnitusBlue};
-    content: '\f10e';
+    content: '❞';
+    font-size: 1.5rem;
     display: inline-block;
     font-family: 'FontAwesome';
     vertical-align: bottom;

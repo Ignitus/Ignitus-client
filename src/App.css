@@ -10,6 +10,7 @@ a {
 
 hr {
 	margin: 1rem 0;
+	border-top: 1px solid #e0dfde;
 }
 
 a:hover {
@@ -20,8 +21,4 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
-}
-
-.content-container {
-	background: #f7f7f7;
 }

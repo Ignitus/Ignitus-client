@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import isPropValid from '@emotion/is-prop-valid';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
@@ -54,7 +55,7 @@ export const ListItem = styled.li<SubNestingProps>`
   }
 `;
 
-export const Arrow = styled(Icon)<ArrowProps>`
+export const Arrow = styled(Icon, { shouldForwardProp: isPropValid })<ArrowProps>`
   height: ${props => (props.nesting ? '1.5rem' : '2rem')};
   fill: ${props => (props.nesting ? C.GreyText : C.IgnitusBlue)};
   transform: ${props => (props.isexpanded ? 'rotate(90deg)' : 'rotate(0deg)')};

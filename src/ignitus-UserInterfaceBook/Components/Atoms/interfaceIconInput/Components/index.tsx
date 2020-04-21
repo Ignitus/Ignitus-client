@@ -52,6 +52,7 @@ export const interfaceIconInput = () => (
     <Heading2>Input with Icon </Heading2>
     <hr />
     <Heading4> Direct link</Heading4>
+    <br />
     <DefaultIconInput
       state=""
       name={AppIcon.CopyIcon}
@@ -64,6 +65,7 @@ export const interfaceIconInput = () => (
     <br />
     <br />
     <Heading4>Customized</Heading4>
+    <br />
     <CustomDefaultIconInput
       state=""
       name={AppIcon.PdfIcon}
