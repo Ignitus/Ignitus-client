@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
-import * as C from '../../ignitus-Atoms/colors';
-import * as F from '../../ignitus-Atoms/fonts';
+
 import {default as I} from '../../../ignitus-Utilities/Components/icon';
+import {flexibleColDiv} from '../../shared';
+import {Paragraph, Heading3, Heading6} from '../../ignitus-Atoms/typography';
+
+import * as C from '../../ignitus-Atoms/colors';
 
 export const Container = styled.div`
   background-color: ${C.White};
@@ -19,19 +22,17 @@ export const Container = styled.div`
 export const TopSection = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 0 0 2.5rem 0;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 `;
 
-export const UserImage = styled.img`
+export const Avatar = styled.img`
   border-radius: 1rem;
   height: 6rem;
-  margin: 0 1.5rem 0 0;
 `;
 
-export const ProfileContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+export const ProfileContainer = styled(flexibleColDiv)`
+  text-align: center;
 `;
 
 export const Profile = styled.div`
@@ -41,19 +42,11 @@ export const Profile = styled.div`
   line-height: 1.7rem;
 `;
 
-export const Name = styled.div`
-  font-size: ${F.LG};
-  font-weight: ${F.Bold};
-`;
+export const Name = styled(Heading3)``;
 
-export const Designation = styled.div`
-  font-size: ${F.XS};
-  font-weight: ${F.SemiBold};
-`;
+export const Designation = styled(Heading6)``;
 
-export const ViewProfileContainer = styled.div`
-  margin: 0.5rem 0 0 0;
-`;
+export const ButtonContainer = styled.div``;
 
 export const BottomSection = styled.div`
   display: flex;
@@ -66,7 +59,4 @@ export const Icon = styled(I)`
   margin: 0 1rem 0 0;
 `;
 
-export const Text = styled.div`
-  font-size: ${F.XS};
-  font-weight: ${F.Normal};
-`;
+export const Text = styled(Paragraph)``;

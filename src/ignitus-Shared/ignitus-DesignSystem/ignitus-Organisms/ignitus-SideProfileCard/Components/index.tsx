@@ -11,7 +11,7 @@ export const SideProfileCard = ({
 }: Props) => (
   <S.Container>
     <S.TopSection>
-      <S.UserImage
+      <S.Avatar
         src="https://storage.googleapis.com/ignitus_assets/ig-avatars/melanie.png"
         alt="ProfileImage"
       />
@@ -20,12 +20,12 @@ export const SideProfileCard = ({
           <S.Name>{name}</S.Name>
           <S.Designation>{designation}</S.Designation>
         </S.Profile>
-        <S.ViewProfileContainer>
+        <S.ButtonContainer>
           <Button category="primary" size="medium">
             {' '}
             ViewProfile{' '}
           </Button>
-        </S.ViewProfileContainer>
+        </S.ButtonContainer>
       </S.ProfileContainer>
     </S.TopSection>
     <S.BottomSection>
