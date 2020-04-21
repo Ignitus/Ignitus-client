@@ -186,6 +186,10 @@ export const edges: Edges[] = [
         title: 'Filters',
         route: '/interface/filters',
       },
+      {
+        title: 'Signup Progress',
+        route: '/interface/progress',
+      }
       // {
       //   title: 'Profile Side Section',
       //   route: '/interface/profileSideSection',
