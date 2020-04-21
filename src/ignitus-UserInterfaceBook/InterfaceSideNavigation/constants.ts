@@ -26,6 +26,10 @@ export const edges: Edges[] = [
         route: '/interface/cards',
       },
       {
+        title: 'Tags',
+        route: '/interface/tags',
+      },
+      {
         title: 'Separator',
         route: '/interface/seperators',
       },

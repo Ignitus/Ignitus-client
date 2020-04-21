@@ -23,6 +23,7 @@ import {interfaceDashBoardFooter} from '../../ignitus-UserInterfaceBook/Componen
 import {interfaceIconInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
 import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
+import {interfaceTags} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTags/Components';
 import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import {interfaceUserProfile} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 import {InterfaceAvatar} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
@@ -111,6 +112,9 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={interfaceMultiMediaInput}
         />
         <Route path="/interface/seperators" component={interfaceSeparator} />
+
+        <Route path="/interface/tags" component={interfaceTags} />
+
         <Route
           path="/interface/dashBoardFooter"
           component={interfaceDashBoardFooter}
