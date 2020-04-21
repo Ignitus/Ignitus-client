@@ -1,7 +1,7 @@
 import React from 'react';
+import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
+import {Button} from '../../../ignitus-Atoms/buttons';
 import * as S from '../styles';
-import ViewProfileButton from '../../../ignitus-Molecules/ignitus-ViewProfileButton/Components';
-import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 export const SideProfileCard: React.FunctionComponent = () => (
   <S.Container>
@@ -16,12 +16,15 @@ export const SideProfileCard: React.FunctionComponent = () => (
           <S.Designation>Literature Student</S.Designation>
         </S.ProfileDetails>
         <S.ViewProfileContainer>
-          <ViewProfileButton />
+          <Button category="primary" size="medium">
+            {' '}
+            ViewProfile{' '}
+          </Button>
         </S.ViewProfileContainer>
       </S.ProfileContainer>
     </S.TopSection>
     <S.BottomSection>
-      <S.Icon name={AppIcon.BookmarkIcon}/>
+      <S.Icon name={AppIcon.BookmarkIcon} />
       <S.Text>21 students and 11 professors are tracking your progress</S.Text>
     </S.BottomSection>
   </S.Container>
