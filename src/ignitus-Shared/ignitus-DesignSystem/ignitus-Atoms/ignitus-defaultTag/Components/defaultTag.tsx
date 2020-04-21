@@ -2,7 +2,6 @@ import React from 'react';
 import {InputTypes} from '../types';
 import {StyledTag, StyledIcon} from '../styles';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
-import * as C from '../../colors';
 
 export const DefaultTag1 = ({
   label,
