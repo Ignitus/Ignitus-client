@@ -8,6 +8,10 @@ export const interfaceSideProfile: React.FC = () => (
   <Interface>
     <Heading2>Side Profile</Heading2>
     <hr />
-    <SideProfileCard />
+    <SideProfileCard
+      name="Sophia Carter"
+      designation="Literature Student"
+      trackingInformation="21 students and 11 professors are tracking your progress"
+    />
   </Interface>
 );

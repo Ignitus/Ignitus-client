@@ -34,7 +34,7 @@ export const ProfileContainer = styled.div`
   justify-content: flex-end;
 `;
 
-export const ProfileDetails = styled.div`
+export const Profile = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

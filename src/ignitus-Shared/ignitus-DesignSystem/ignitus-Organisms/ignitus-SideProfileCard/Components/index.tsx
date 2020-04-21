@@ -1,9 +1,14 @@
 import React from 'react';
 import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import {Button} from '../../../ignitus-Atoms/buttons';
+import {Props} from '../types';
 import * as S from '../styles';
 
-export const SideProfileCard: React.FunctionComponent = () => (
+export const SideProfileCard = ({
+  name,
+  designation,
+  trackingInformation,
+}: Props) => (
   <S.Container>
     <S.TopSection>
       <S.UserImage
@@ -11,10 +16,10 @@ export const SideProfileCard: React.FunctionComponent = () => (
         alt="ProfileImage"
       />
       <S.ProfileContainer>
-        <S.ProfileDetails>
-          <S.Name>Sophia Carter</S.Name>
-          <S.Designation>Literature Student</S.Designation>
-        </S.ProfileDetails>
+        <S.Profile>
+          <S.Name>{name}</S.Name>
+          <S.Designation>{designation}</S.Designation>
+        </S.Profile>
         <S.ViewProfileContainer>
           <Button category="primary" size="medium">
             {' '}
@@ -25,7 +30,7 @@ export const SideProfileCard: React.FunctionComponent = () => (
     </S.TopSection>
     <S.BottomSection>
       <S.Icon name={AppIcon.BookmarkIcon} />
-      <S.Text>21 students and 11 professors are tracking your progress</S.Text>
+      <S.Text>{trackingInformation}</S.Text>
     </S.BottomSection>
   </S.Container>
 );
