@@ -1,6 +1,7 @@
 import React from 'react';
 import * as S from '../styles';
 import ViewProfileButton from '../../../ignitus-Molecules/ignitus-ViewProfileButton/Components';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 export const SideProfileCard: React.FunctionComponent = () => (
   <S.Container>
@@ -20,7 +21,7 @@ export const SideProfileCard: React.FunctionComponent = () => (
       </S.ProfileContainer>
     </S.TopSection>
     <S.BottomSection>
-      <S.Icon />
+      <S.Icon name={AppIcon.BookmarkIcon}/>
       <S.Text>21 students and 11 professors are tracking your progress</S.Text>
     </S.BottomSection>
   </S.Container>

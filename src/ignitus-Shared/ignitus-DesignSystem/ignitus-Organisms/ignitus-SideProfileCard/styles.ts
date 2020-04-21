@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import BookmarkIcon from '../../ignitus-Assets/ignitus-Icons/bookmarkIcon';
-import * as V from '../../ignitus-Atoms/fonts';
+import * as F from '../../ignitus-Atoms/fonts';
+import {default as I} from '../../../ignitus-Utilities/Components/icon';
 
 export const Container = styled.div`
   background-color: ${C.White};
@@ -42,13 +42,13 @@ export const ProfileDetails = styled.div`
 `;
 
 export const Name = styled.div`
-  font-size: ${V.LG};
-  font-weight: ${V.Bold};
+  font-size: ${F.LG};
+  font-weight: ${F.Bold};
 `;
 
 export const Designation = styled.div`
-  font-size: ${V.XS};
-  font-weight: ${V.SemiBold};
+  font-size: ${F.XS};
+  font-weight: ${F.SemiBold};
 `;
 
 export const ViewProfileContainer = styled.div`
@@ -60,13 +60,13 @@ export const BottomSection = styled.div`
   flex-direction: row;
 `;
 
-export const Icon = styled(BookmarkIcon)`
+export const Icon = styled(I)`
   fill: ${C.IgnitusBlue};
   height: 2rem;
   margin: 0 1rem 0 0;
 `;
 
 export const Text = styled.div`
-  font-size: ${V.XS};
-  font-weight: ${V.Normal};
+  font-size: ${F.XS};
+  font-weight: ${F.Normal};
 `;
