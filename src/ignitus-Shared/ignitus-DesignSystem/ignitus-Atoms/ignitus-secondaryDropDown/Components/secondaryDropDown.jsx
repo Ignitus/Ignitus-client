@@ -6,7 +6,7 @@ import { Details } from '../constants';
 
 export default function SecondaryDropDown() {
   const [showOptions, setShowOptions] = React.useState(false);
-  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchTerm, setSearchTerm] = React.useState('');
   const [searchResults, setSearchResults] = React.useState([]);
   const handleChange = event => {
       setSearchTerm(event.target.value);
