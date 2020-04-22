@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {DefaultSearchInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultSearchInput/Components';
+import {DefaultSearchInput, Heading2} from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
-import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceSearchInput: React.FC = () => (
   <Interface>

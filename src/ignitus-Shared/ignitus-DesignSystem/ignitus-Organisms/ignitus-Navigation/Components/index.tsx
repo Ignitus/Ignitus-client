@@ -27,7 +27,7 @@ const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
             key={title}
             transparentNavigation={transparentNavigation}
           >
-            <N.NavigationLink smooth to={route}>
+            <N.NavigationLink to={route}>
               {title}
             </N.NavigationLink>
           </N.NavigationLinkItem>

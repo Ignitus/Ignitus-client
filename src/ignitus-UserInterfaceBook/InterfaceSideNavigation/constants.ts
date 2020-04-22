@@ -26,6 +26,10 @@ export const edges: Edges[] = [
         route: '/interface/cards',
       },
       {
+        title: 'Tags',
+        route: '/interface/tags',
+      },
+      {
         title: 'Separator',
         route: '/interface/seperators',
       },
@@ -163,7 +167,15 @@ export const edges: Edges[] = [
             title: 'User Profile',
             route: '/interface/userProfile',
           },
+          {
+            title: 'Side Profile',
+            route: '/interface/sideProfile',
+          },
         ],
+      },
+      {
+        title: 'Random Avatar',
+        route: '/interface/avatar',
       },
     ],
   },
@@ -178,6 +190,10 @@ export const edges: Edges[] = [
         title: 'Filters',
         route: '/interface/filters',
       },
+      {
+        title: 'Signup Progress',
+        route: '/interface/progress',
+      }
       // {
       //   title: 'Profile Side Section',
       //   route: '/interface/profileSideSection',

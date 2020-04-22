@@ -1,4 +1,4 @@
-import { isString, isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { isString, isObject } from '../../ignitus-Shared';
 import * as t from './actionTypes';
 
 export const logInRequest = (email, password, userType) => {

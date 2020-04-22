@@ -1,18 +1,19 @@
 import React, {Fragment} from 'react';
 import * as P from '../styles';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import {
-  ButtonBottomRight,
-  RoundedButton,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   AboutProps,
   EducationProps,
   HeadingProps,
   RecommendationsProps,
 } from '../types';
-import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {GreySecondaryText, Black} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {
+  AppIcon,
+  Black,
+  ButtonBottomRight,
+  GreySecondaryText,
+  Paragraph,
+  RoundedButton,
+} from '../../../ignitus-Shared';
 
 export const StudentProfile = () => (
   <P.ParentContainer>
