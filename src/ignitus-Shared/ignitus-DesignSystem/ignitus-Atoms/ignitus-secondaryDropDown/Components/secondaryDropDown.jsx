@@ -13,10 +13,12 @@ export default function SecondaryDropDown() {
       setShowOptions(1);
   };
   React.useEffect(() => {
-    if(searchTerm)
+    if(searchTerm){
       setShowOptions(1);
-    else
+    }
+    else{
       setShowOptions(null);
+    }
     const results = Details.filter(person =>
       person.name.replace(/\s+/g,'').toLowerCase().includes(searchTerm.replace(/\s+/g,'').toLowerCase())
     );
