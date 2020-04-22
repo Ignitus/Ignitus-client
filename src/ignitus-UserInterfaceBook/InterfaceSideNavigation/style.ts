@@ -8,7 +8,7 @@ import {
   SM,
   Light,
   Medium,
-} from '../../ignitus-Shared';
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 type ArrowProps = {
   isexpanded: boolean;

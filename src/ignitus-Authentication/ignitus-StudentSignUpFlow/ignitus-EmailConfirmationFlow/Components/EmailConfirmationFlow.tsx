@@ -7,12 +7,13 @@ import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-
 import {
   Paragraph,
   Heading2,
-  RoundedButton,
-  withErrorBoundary
-} from '../../../../ignitus-Shared';
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
+
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 const EmailConfirmationFlow: FunctionComponent = () => (
   <T.WelcomeContainer>

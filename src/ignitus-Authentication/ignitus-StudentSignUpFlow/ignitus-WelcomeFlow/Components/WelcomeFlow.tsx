@@ -1,13 +1,13 @@
 /* eslint-disable import/extensions */
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
+import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   Paragraph,
   Heading1,
-  RoundedButton,
-  DefaultDropdown,
-  withErrorBoundary,
-} from '../../../../ignitus-Shared';
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components';
+import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import * as T from '../Styles/style';
 
 const WelcomeFlow: FunctionComponent = () => (
@@ -42,7 +42,7 @@ const WelcomeFlow: FunctionComponent = () => (
         </form>
       </T.LeftSection>
       <T.RightSection>
-        <img src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
+        <img className="profileImageMap" src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
       </T.RightSection>
     </T.MiddleSection>
     <T.BottomSection>

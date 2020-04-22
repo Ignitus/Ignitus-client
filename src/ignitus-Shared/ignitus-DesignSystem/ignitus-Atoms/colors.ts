@@ -20,14 +20,11 @@ export const Green: string = '#209653';
 export const Yellow: string = '#ffd747';
 
 // social platform colors
-export const TwitterIconColor: string = '#00acee';
+export const TwitterIconColor: string = ' #00acee';
 export const LinkedinIconColor: string = '#0e76a8';
-export const RedditIconColor: string = '#FF4301';
+export const RedditIconColor: string = ' #FF4301';
 export const AngellistIconColor: string = '#040404';
-export const FacebookIconColor: string = '#3b5998';
-
-// other colors
-export const Orange: string = '#ffa500';
+export const FacebookIconColor: string = ' #3b5998';
 
 // Box shadow
 export const boxShadowColor: string = 'rgba(0, 0, 0, 0.05)'; 

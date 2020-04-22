@@ -1,9 +1,10 @@
 import React from 'react';
 
+import { DefaultInput } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultInput/Components';
+
 import {
   Heading2,
-  DefaultInput
-} from '../../../../../ignitus-Shared';
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { Interface } from '../../../../styles';
 
 export const interfaceInput: React.FC = () => (

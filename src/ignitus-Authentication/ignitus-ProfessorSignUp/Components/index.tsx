@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react';
 import {
   isEmpty,
   isEqual,
+} from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import {
   SharedAuthentication,
   SignupStatePayload,
-  withErrorBoundary,
-} from '../../../ignitus-Shared';
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {Props} from '../types';
 
 const SignUp: React.FC<Props> = ({

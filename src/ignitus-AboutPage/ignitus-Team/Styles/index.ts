@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
-import {Paragraph, Loading, Normal} from '../../../ignitus-Shared';
+import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Loading} from '../../../ignitus-Shared/ignitus-Utilities/Components/loader';
+import {Normal} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {default as I} from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
