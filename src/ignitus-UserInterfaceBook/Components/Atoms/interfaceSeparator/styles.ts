@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import { Medium } from '../../../../ignitus-Shared';
+import { Medium } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const SeparatorContainer = styled.div`
   padding: 2rem;

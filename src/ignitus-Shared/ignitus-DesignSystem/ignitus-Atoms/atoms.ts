@@ -25,3 +25,6 @@ export const Wrapper = styled.div`
   margin: 1rem;
   margin-bottom: 2rem;
 `;
+
+export const Avatar = styled.img``;
+export const Link = styled.a``;

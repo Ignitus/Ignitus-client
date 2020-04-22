@@ -1,6 +1,7 @@
 import React from 'react';
-import { DefaultCheckbox, Heading2 } from '../../../../../ignitus-Shared';
+import { DefaultCheckbox } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 import { Interface } from '../../../../styles';
+import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceCheckBox: React.FC = () => (
   <Interface>

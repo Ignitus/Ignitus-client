@@ -22,6 +22,7 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
     "react-router-dom": "^4.4.0-beta.6",
+    "react-router-hash-link": "^1.2.0",
     "react-scripts": "^3.2.0",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
@@ -36,7 +37,9 @@
     "lint": "eslint ./src",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "test:update": "npm test --updateSnapshot"
+    "test:update": "npm test --updateSnapshot",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.8",
@@ -51,6 +54,7 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "docz": "2.3.1",
     "enzyme": "^3.6.0",
     "codecov": "^3.3.0",
     "husky": "^1.0.0-rc.13",

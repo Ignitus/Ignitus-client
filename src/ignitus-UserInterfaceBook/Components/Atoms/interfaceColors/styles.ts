@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import {color} from './types';
 import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import { hexDifferentiate } from '../../../../ignitus-Shared';
+import { hexDifferentiate } from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const ColorsContainer = styled.div`
   padding: 3rem;

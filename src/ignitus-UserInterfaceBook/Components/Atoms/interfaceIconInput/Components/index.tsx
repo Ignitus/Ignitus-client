@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {
-  AppIcon,
-  DefaultIconInput,
-  GreyLight,
   Heading2,
   Heading4,
-  IgnitusBlue,
-  White,
-} from '../../../../../ignitus-Shared';
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
+import {DefaultIconInput} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
+import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {Interface} from '../../../../styles';
+import {
+  GreyLight,
+  White,
+  IgnitusBlue,
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);

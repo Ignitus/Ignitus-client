@@ -8,12 +8,12 @@ import {
   Heading5,
   Paragraph,
   Heading6,
-} from '../../ignitus-Shared';
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {TitleProps} from './types';
 import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { minimumWidthQuery } from '../../ignitus-Shared';
+import { minimumWidthQuery } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const ParentContainer = styled(Container)`
   margin: 10rem auto;

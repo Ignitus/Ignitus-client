@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { createSelector } from 'reselect';
-import { isObject } from '../../ignitus-Shared';
+import { isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 
 export const selectContributorsState = (state: any) => state.contributorsReducer;
 

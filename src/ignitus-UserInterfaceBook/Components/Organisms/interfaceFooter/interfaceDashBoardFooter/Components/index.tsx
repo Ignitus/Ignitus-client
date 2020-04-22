@@ -1,7 +1,8 @@
 import React from 'react';
 
-import {DashboardFooter, Heading2} from '../../../../../../ignitus-Shared';
+import DashboardFooter from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
+import { Heading2 } from '../../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { Interface } from '../../../../../styles';
 
 export const interfaceDashBoardFooter = () => (

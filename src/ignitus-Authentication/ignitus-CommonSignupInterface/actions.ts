@@ -1,7 +1,7 @@
 import {
   isString,
   isObject,
-} from '../../ignitus-Shared';
+} from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
 import * as t from './actionTypes';
 
 export const signUpRequest = (email: string, password: string, userType: 'student' | 'professor') => {

@@ -4,12 +4,12 @@ import {
   LG,
   Light,
   MD,
-  minimumWidthQuery,
-  Button as B,
-  Heading9,
   XS,
   SM,
-} from '../../ignitus-Shared';
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import {Heading9} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const Container = styled.div`
   display: flex;

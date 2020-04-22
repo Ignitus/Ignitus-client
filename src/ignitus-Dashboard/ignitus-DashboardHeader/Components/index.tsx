@@ -2,7 +2,9 @@
 import React from 'react';
 
 import {Redirect} from 'react-router-dom';
-import {withErrorBoundary, AppIcon, useToggle} from '../../../ignitus-Shared';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
+import {useToggle} from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
 import * as N from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
 
 const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
@@ -28,7 +30,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
 
       <N.NavigationLinks isExpanded={isExpanded}>
         <N.NavigationLinkItem>
-          <N.NavigationLink to="/#">
+          <N.NavigationLink smooth to="/#">
             Home
           </N.NavigationLink>
         </N.NavigationLinkItem>

@@ -1,12 +1,13 @@
 import React from 'react';
 
+import DefaultDropdown from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components/defaultDropdown';
+
 import {cars} from '../constants';
 import { Interface } from '../../../../styles';
 import {
-  DefaultDropdown,
   Heading2,
   Heading5,
-} from '../../../../../ignitus-Shared';
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceDropDown: React.FC = () => (
   <Interface>
