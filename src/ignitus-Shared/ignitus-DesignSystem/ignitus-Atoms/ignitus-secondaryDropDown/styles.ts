@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import * as C from '../colors';
+import * as F from '../fonts';
 
 export const ParentContainer = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ export const ParentContainer = styled.div`
 
 export const SearchBarWrapper = styled.div`
   width: 20rem;
-  height: 2.5rem;
+  height: 3rem;
 `;
 
 export const SearchBar = styled.input`
@@ -20,6 +21,13 @@ export const SearchBar = styled.input`
   border-radius: 0.5rem;
   width: 20rem;
   height: 2.5rem;
+  padding-left:0.25rem;
+  color: ${C.IgnitusBlue};
+  font-weight: ${F.SemiBold};
+  :: placeholder{
+    color: ${C.IgnitusBlue};
+    font-weight: ${F.SemiBold};
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -30,7 +38,6 @@ export const OptionsContainer = styled.div`
   overflow:auto;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  // display:none
 `;
 
 export const CardWrapper = styled.div`
