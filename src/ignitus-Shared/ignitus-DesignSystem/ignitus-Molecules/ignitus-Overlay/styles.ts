@@ -1,19 +1,17 @@
 import styled from '@emotion/styled';
 import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
-import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Paragraph as P} from '../../../../ignitus-Shared';
 import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
 import {
   MD,
   XS,
   Normal,
   Medium,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {
   GreySecondaryText,
   White,
   GreyOne,
   boxShadowColor,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+} from '../../../../ignitus-Shared';
 import { props } from './types';
 import { flexibleColDiv } from '../../shared';
 

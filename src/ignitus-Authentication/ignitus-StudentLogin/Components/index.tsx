@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/aria-role */
 import React, { useState, FunctionComponent, useEffect } from 'react';
-import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
+  isEmpty,
+  withErrorBoundary,
   SharedAuthentication,
   LoginStatePayload
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
+} from '../../../ignitus-Shared';
 import { LogInProps } from '../types';
 
 const Login: FunctionComponent<LogInProps> = ({ logInRequest, logInData, clearPreviousLogin }) => {

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { IgnitusIntroduction, AboutImage } from '../constants';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared';
 
 import { CoreTeam } from '../../ignitus-CoreTeam/Components';
 import {default as Team }  from '../../ignitus-Team';

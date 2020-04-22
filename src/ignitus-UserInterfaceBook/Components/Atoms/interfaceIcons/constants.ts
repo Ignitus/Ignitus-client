@@ -1,4 +1,4 @@
-import {AppIcon} from '../../../../ignitus-Shared/types/iconsTypes/iconEnums';
+import {AppIcon} from '../../../../ignitus-Shared';
 // import VideoLibraryIcon from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon/videoLibraryIcon';
 
 export const SocialIcons: AppIcon[] = [

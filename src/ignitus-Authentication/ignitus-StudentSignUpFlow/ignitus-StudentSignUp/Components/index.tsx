@@ -2,12 +2,10 @@ import React, {useState, FunctionComponent, useEffect} from 'react';
 import {
   isEmpty,
   isEqual,
-} from '../../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import {withErrorBoundary} from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import {
   SharedAuthentication,
   SignupStatePayload,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
+  withErrorBoundary,
+} from '../../../../ignitus-Shared';
 import {Props} from '../types';
 
 const Signup: FunctionComponent<Props> = ({signUpRequest, signUpData, clearPreviousSignUp}) => {

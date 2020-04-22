@@ -14,6 +14,7 @@ export const Icon = styled.span`
 export const Paragraph = styled(P)`
   font-weight: ${F.Light};
   text-align: center;
+  margin: 0.5rem 0;
 `;
 
 export const Card = styled.div`

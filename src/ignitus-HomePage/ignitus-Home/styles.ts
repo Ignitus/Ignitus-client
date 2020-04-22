@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import {ContainerBackground} from './constants';
-import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery} from '../../ignitus-Shared';
 
 export const HomeContainer = styled.section`
   background: url(${ContainerBackground}) no-repeat;

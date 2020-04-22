@@ -3,6 +3,7 @@ import React from 'react';
 import {Props, State} from './types';
 
 export class ErrorBoundary extends React.Component<Props, State> {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +24,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
     const { children } = this.props;
     if (errorInfo) {
       return (
-        <div className="container">
+        <div>
           <h2
             style={{ textAlign: 'center', marginTop: '4em', color: '#000066' }}
           >

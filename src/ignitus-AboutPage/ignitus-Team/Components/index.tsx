@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, {useEffect} from 'react';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary, AppIcon} from '../../../ignitus-Shared';
 import {TeamPropType, GitHubDataType} from '../types';
 import * as S from '../Styles';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
 
 const PureTeam = ({contributors}: any) => (
   <S.Section>
