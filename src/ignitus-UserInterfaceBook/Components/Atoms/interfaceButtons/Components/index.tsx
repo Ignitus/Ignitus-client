@@ -1,12 +1,12 @@
 import React from 'react';
 import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
-import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
-import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {
+  AppIcon,
+  DefaultButtonWithIcon,
   Heading2,
   Heading6,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+} from '../../../../../ignitus-Shared';
 import {Interface} from '../../../../styles';
 
 export const interfaceButttons: React.FC = () => (

@@ -2,7 +2,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import styled from '@emotion/styled';
-import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
+import {Notfound} from '../../ignitus-Shared';
 import {interfaceButttons} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceButtons/Components';
 import {interfaceNavigation} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNavigation/Components';
 import {interfaceIcons} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIcons/Components';

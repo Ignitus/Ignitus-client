@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 import {Data} from '../constants';
 import {Props} from '../types';
 

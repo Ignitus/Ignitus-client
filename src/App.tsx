@@ -5,8 +5,7 @@ import {Switch, Route} from 'react-router-dom';
 import {DashboardRoutes} from './ignitus-Routes/ignitus-DashboardRoutes';
 import {PublicRoutes} from './ignitus-Routes/ignitus-PublicRoutes';
 import {UserInterfaceBookRoutes} from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
-import {withErrorBoundary} from './ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import {GreyBackground} from './ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {withErrorBoundary, GreyBackground} from './ignitus-Shared';
 
 import './App.css';
 const Root = styled.div`

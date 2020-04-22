@@ -3,10 +3,8 @@
 import React from 'react';
 
 import { Data } from '../constants';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary, AppIcon, Paragraph } from '../../../ignitus-Shared';
 import { Team, TeamItemProps } from '../types';
-import { AppIcon } from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
