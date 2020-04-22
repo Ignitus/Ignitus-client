@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../styles';
 import * as H from '../../typography';
-import {Details} from '../constants';
+import { Details } from '../constants';
 
 
 export default function SecondaryDropDown() {
