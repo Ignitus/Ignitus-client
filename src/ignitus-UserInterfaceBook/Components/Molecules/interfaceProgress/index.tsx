@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 import { Interface } from '../../../styles';
-import { Heading2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { Button } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { Heading2, Button } from '../../../../ignitus-Shared';
 import { Progress } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Progress';
 import { flexibleRowDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 

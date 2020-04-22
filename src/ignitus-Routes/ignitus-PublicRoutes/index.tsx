@@ -1,15 +1,13 @@
 import React, {Suspense, lazy, Fragment} from 'react';
 import {Switch, Route} from 'react-router-dom';
-import {Notfound} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Layout/ignitus-NotFound/Components';
-import {Footer} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Footer/Components';
-import {OptionalNavigation as Navigation} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
+import {Notfound, Footer, OptionalNavigation as Navigation} from '../../ignitus-Shared';
 import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { StudentProfile } from '../../ignitus-Profile/ignitus-StudentProfile/Components';
 
 /**
- * Route-based code splitting. 
+ * Route-based code splitting.
  * Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app.
  * While you haven’t reduced the overall amount of code in your app, you’ve avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.
  * The best way to introduce code-splitting into your app is through the dynamic import() syntax.

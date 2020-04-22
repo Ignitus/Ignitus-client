@@ -3,18 +3,16 @@ import {
   IgnitusBlue,
   White,
   SecondaryColor,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+  minimumWidthQuery,
+  Heading2,
+  Paragraph as P,
+  Medium,
+} from '../../ignitus-Shared';
 import {
   flexibleColDiv,
   flexibleRowDiv,
 } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {
-  Heading2,
-  Paragraph as P,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {Link} from 'react-router-dom';
-import {Medium} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   padding: 4rem;

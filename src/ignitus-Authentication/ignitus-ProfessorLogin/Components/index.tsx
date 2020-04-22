@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   SharedAuthentication,
   LoginStatePayload,
-  authData
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
-import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-
+  authData,
+  withErrorBoundary,
+  isEmpty,
+} from '../../../ignitus-Shared';
 
 export interface LogInProps {
   logInRequest: Function;

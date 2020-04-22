@@ -3,7 +3,7 @@ import React from 'react';
 import * as T from '../constants';
 import * as I from '../styles';
 
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 
 export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
   <I.Container>

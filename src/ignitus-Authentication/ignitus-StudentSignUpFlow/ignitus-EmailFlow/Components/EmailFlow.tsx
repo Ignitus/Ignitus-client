@@ -4,16 +4,14 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   Paragraph,
   Heading2,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+  withErrorBoundary,
+  Button,
+} from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
-import {
-  Button,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
 const EmailFlow: FunctionComponent = () => (
   <T.WelcomeContainer>

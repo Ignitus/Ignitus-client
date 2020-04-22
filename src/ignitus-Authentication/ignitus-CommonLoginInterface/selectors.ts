@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import { isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { isObject } from '../../ignitus-Shared';
 
 export const selectState = state => state.loginReducer;
 

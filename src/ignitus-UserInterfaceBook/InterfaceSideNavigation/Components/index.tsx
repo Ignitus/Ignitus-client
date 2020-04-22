@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import * as S from '../style';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import {useToggle} from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
+import {AppIcon, useToggle} from '../../../ignitus-Shared';
 import {edges} from '../constants';
 import {NavigationLayerProps} from '../types';
 

@@ -2,9 +2,7 @@
 import React from 'react';
 
 import {Redirect} from 'react-router-dom';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import {useToggle} from '../../../ignitus-Shared/ignitus-Utilities/reactHooks/toogleHook';
+import {withErrorBoundary, AppIcon, useToggle} from '../../../ignitus-Shared';
 import * as N from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
 
 const DashBoardNavigation: React.FC = ({logUserOut}: any) => {

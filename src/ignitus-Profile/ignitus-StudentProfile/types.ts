@@ -1,4 +1,4 @@
-import {AppIcon} from '../../ignitus-Shared/types/iconsTypes/iconEnums';
+import {AppIcon} from '../../ignitus-Shared';
 
 export type HeadingProps = {
   title: string;
