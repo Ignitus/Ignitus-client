@@ -1,11 +1,10 @@
 import React from 'react';
 import * as I from '../styles';
+import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {
-  AppIcon,
-  Black,
   Heading4,
   Heading2,
-} from '../../../../../ignitus-Shared';
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
   SocialIcons,
   DashboardIcons,
@@ -13,6 +12,7 @@ import {
   IgnitusLogos,
 } from '../constants';
 import {Interface} from '../../../../styles';
+import { Black } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const interfaceIcons: React.FC = () => (
   <Interface>

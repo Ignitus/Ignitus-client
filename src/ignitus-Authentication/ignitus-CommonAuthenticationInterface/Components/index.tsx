@@ -2,7 +2,7 @@ import React from 'react';
 import * as t from '../constants';
 import * as A from '../styles';
 
-import {withErrorBoundary} from '../../../ignitus-Shared';
+import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 
 interface Props {
   title: string;

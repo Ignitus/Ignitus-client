@@ -2,11 +2,12 @@ import styled from '@emotion/styled';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
   minimumWidthQuery,
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {
   Heading3,
   Paragraph as P,
-  White,
-  boxShadowColor,
-} from '../../ignitus-Shared';
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {White, boxShadowColor} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const AboutSection = styled.section`
   font-weight: ${F.Normal};

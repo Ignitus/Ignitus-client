@@ -7,6 +7,11 @@ export const NonAuthenticatedNavigationItemsList: NavigationItems[] = [
   },
 
   {
+    title: 'What we provide?',
+    route: '/#what-we-do',
+  },
+
+  {
     title: 'About',
     route: '/aboutus',
   },
