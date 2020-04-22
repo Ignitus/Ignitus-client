@@ -3,7 +3,7 @@ import * as T from '../style';
 
 import {Avatars} from '../constants';
 import {Props} from '../types';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 
 export const Testimonial: React.FC<Props> = withErrorBoundary(
   ({testimonialData, getTestimonialData}) => {

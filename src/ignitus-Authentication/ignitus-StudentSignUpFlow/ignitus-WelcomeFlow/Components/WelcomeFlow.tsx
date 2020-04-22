@@ -1,13 +1,13 @@
 /* eslint-disable import/extensions */
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   Paragraph,
   Heading1,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+  RoundedButton,
+  DefaultDropdown,
+  withErrorBoundary,
+} from '../../../../ignitus-Shared';
 import * as T from '../Styles/style';
 
 const WelcomeFlow: FunctionComponent = () => (

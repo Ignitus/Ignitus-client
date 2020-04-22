@@ -11,6 +11,8 @@ export * from './ignitus-DesignSystem/ignitus-Atoms/media';
 
 export * from './ignitus-DesignSystem/ignitus-Atoms/typography';
 
+export * from './ignitus-DesignSystem/ignitus-Atoms/fonts';
+
 /**
  * ignitus-Atoms
  */
@@ -97,7 +99,12 @@ export {Loading} from './ignitus-Utilities/Components/loader';
  */
 export * from './ignitus-Utilities/HelperFunctions/emotionHelpers';
 
-export {default as loadashHelpers} from './ignitus-Utilities/HelperFunctions/lodashHelpers';
+export {
+  isObject,
+  isEmpty,
+  isEqual,
+  isString,
+} from './ignitus-Utilities/HelperFunctions/lodashHelpers';
 
 export {getRandomInt} from './ignitus-Utilities/HelperFunctions/randomNumber';
 

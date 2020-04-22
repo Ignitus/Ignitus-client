@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { minimumWidthQuery } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { minimumWidthQuery } from '../../../../ignitus-Shared';
 import { flexibleColDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const WelcomeContainer = styled(flexibleColDiv)`

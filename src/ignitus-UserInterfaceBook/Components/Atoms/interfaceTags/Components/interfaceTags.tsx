@@ -4,8 +4,8 @@ import {
   DefaultTag2,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
 import {TagsContainer, DefaultTag3} from '../styles';
-import {Heading2} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import * as C from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {Heading2} from '../../../../../ignitus-Shared';
+import * as C from '../../../../../ignitus-Shared';
 
 const interfaceTags: React.FC = () => (
   <TagsContainer>

@@ -3,10 +3,10 @@ import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colo
 import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
 import {
   minimumWidthQuery,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+  Paragraph as P,
+  Medium,
+} from '../../ignitus-Shared';
 import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {Medium} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Icon = styled.span`
   i {

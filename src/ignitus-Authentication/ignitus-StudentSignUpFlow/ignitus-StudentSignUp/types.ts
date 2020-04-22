@@ -1,4 +1,4 @@
-import {authData} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication/index';
+import {authData} from '../../../ignitus-Shared';
 
 export interface Props {
   signUpRequest: Function;

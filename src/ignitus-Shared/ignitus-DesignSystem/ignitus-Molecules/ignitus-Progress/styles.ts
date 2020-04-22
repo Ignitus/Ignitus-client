@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import {IgnitusBlue, GreyLight} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import {IgnitusBlue, GreyLight} from '../../../../ignitus-Shared';
 import {flexibleRowDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import {CircleProps, LineProps} from './types';
 

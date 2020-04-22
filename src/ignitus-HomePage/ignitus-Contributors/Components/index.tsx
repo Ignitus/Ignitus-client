@@ -4,7 +4,7 @@ import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {Data} from '../constants';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 
 interface Props {
   data: any;
