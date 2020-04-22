@@ -25,6 +25,7 @@ import {interfaceMultiMediaInput} from '../../ignitus-UserInterfaceBook/Componen
 import {interfaceOverlay} from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import {interfaceFilters} from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import {interfaceUserProfile} from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
+import {interfaceSecondaryDropDown} from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 
 const Container = styled.div`
   display: flex;
@@ -88,6 +89,10 @@ const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route
           path="/interface/defaultDropdown"
           component={interfaceDropDown}
+        />
+        <Route
+          path="/interface/secondaryDropdown"
+          component={interfaceSecondaryDropDown}
         />
         <Route
           path="/interface/defaultCheckbox"
