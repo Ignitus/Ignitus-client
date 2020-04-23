@@ -6,7 +6,7 @@ import {White, IgnitusBlue, GreyOne, GreyTwo, boxShadowColor} from '../../../ign
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 
 import Icon from '../../../../ignitus-Utilities/Components/icon';
-import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
+import {DefaultButtonWithIconOnRight} from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
 
 export const Container = styled(Card)`
   border-radius: 16px;
@@ -54,7 +54,7 @@ export const SearchIcon = styled(Icon)`
   width: 1.5rem;
 `;
 
-export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
+export const RoundedDefaultButtonWithIcon = styled(DefaultButtonWithIconOnRight)`
   border-radius: 2rem;
 `;
 

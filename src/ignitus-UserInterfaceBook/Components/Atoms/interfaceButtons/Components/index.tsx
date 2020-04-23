@@ -3,7 +3,8 @@ import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-A
 
 import {
   AppIcon,
-  DefaultButtonWithIcon,
+  DefaultButtonWithIconOnRight,
+  DefaultButtonWithIconOnLeft,
   Heading2,
   Heading6,
 } from '../../../../../ignitus-Shared';
@@ -54,14 +55,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="large"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="large"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -112,14 +113,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="medium"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="medium"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -170,14 +171,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="small"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIcon
+    <DefaultButtonWithIconOnRight
       size="small"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -335,8 +336,46 @@ export const interfaceButttons: React.FC = () => (
 
     <hr />
     <br />
-    <Heading6> Social Buttons </Heading6>
     <Heading6> Button with Icons </Heading6>
+
+    <DefaultButtonWithIconOnLeft
+      size="medium"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content={'Primary Button'}
+    />
+
+    <DefaultButtonWithIconOnLeft
+      size="medium"
+      category="secondary"
+      name={AppIcon.LocationIcon}
+      content={'Secondary Button'}
+    />
+
+    <DefaultButtonWithIconOnLeft
+      size="medium"
+      category="grey"
+      name={AppIcon.MessageIcon}
+      content={'Grey Button'}
+    />
+
+    <DefaultButtonWithIconOnLeft
+      size="medium"
+      category="orange"
+      name={AppIcon.LocationIcon}
+      content={'Orange Button'}
+    />
+
+    <DefaultButtonWithIconOnLeft
+      size="medium"
+      category="white"
+      name={AppIcon.MessageIcon}
+      content={'White Button'}
+    />
+
+    <hr />
+    <br />
+    <Heading6> Social Buttons </Heading6>
     <Heading6> Floating Action Button </Heading6>
     <Heading6> Icon with text link</Heading6>
     <Heading6> Icon Button</Heading6>
