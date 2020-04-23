@@ -76,7 +76,7 @@ https://github.com/Ignitus/Ignitus-client/wiki/About
 We also plan to introduce some new technologies in the future such as.
 - [GraphQl](https://graphql.org/) - A query language for your API.
 - [Relay](https://relay.dev/) - The production-ready GraphQL client for React.
-- Microservices in [Golang](https://golang.org/) - Go is a statically typed, compiled programming language 
+- Microservices in [Golang](https://golang.org/) - Go is a statically typed, compiled programming language. 
 
 ## Contributing.
 
