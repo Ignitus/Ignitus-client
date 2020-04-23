@@ -4,7 +4,7 @@ import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {Data} from '../constants';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 
 interface Props {
   data: any;
@@ -14,7 +14,7 @@ interface Props {
 
 export const PureContributors = ({data, type, paragraph}: Props) => (
   <div id="contributors">
-    <T.Wrapper>
+    <div>
       <T.TopSection>
         <T.Title>{type}</T.Title>
         <S.Paragraph>
@@ -25,7 +25,7 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
           {paragraph}
         </S.Paragraph>
       </T.TopSection>
-      <T.BottomSection>
+      <T.BootStrapSection>
         <S.BottomRow>
           {data.map((logo: string) => (
             <S.Card key={logo}>
@@ -33,8 +33,8 @@ export const PureContributors = ({data, type, paragraph}: Props) => (
             </S.Card>
           ))}
         </S.BottomRow>
-      </T.BottomSection>
-    </T.Wrapper>
+      </T.BootStrapSection>
+    </div>
   </div>
 );
 

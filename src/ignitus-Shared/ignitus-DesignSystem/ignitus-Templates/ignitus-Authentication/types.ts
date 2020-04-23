@@ -23,7 +23,6 @@ export interface SideWrapperProps {
   alternateRole: userRole;
 }
 
-
 export interface FormProps {
   role: userRole;
   authenticationType: authType;

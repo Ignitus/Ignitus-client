@@ -1,7 +1,7 @@
-import {authData} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
+import {authData} from '../../ignitus-Shared';
 
 export interface LogInProps {
   logInRequest: Function;
-  studentLoginData: authData;
+  logInData: authData;
   clearPreviousLogin: Function;
 };

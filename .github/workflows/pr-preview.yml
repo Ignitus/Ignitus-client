@@ -16,7 +16,7 @@ jobs:
       - if: env.worker == 'true'
         run: |
           git fetch origin +refs/pull/${{ github.event.issue.number }}/merge
-          git checkout FETCH_HEAD
+          git checkout -f FETCH_HEAD
           npm install -s
           CI=false npm run build
           mv ./build/index.html ./build/200.html

@@ -1,6 +1,8 @@
 import React from 'react';
 import * as S from '../style';
 import {AppIcon} from '../../../../../types/iconsTypes/iconEnums';
+import { Paragraph } from '../../../../ignitus-Atoms/typography';
+import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
 
 type props = {
   text: string;
@@ -16,8 +18,8 @@ export default function DashboardNavigation() {
       <Layer text="Saved" marginTop={true} name={AppIcon.SaveIcon} />
       <Layer text="Liked" name={AppIcon.HeartIcon} />
       <Layer text="Applied" name={AppIcon.ApplyIcon} />
-      <Layer text="My Network" name={AppIcon.NetworkIcon} />
-      <Layer text="My Mentors" name={AppIcon.MentorsIcon} />
+      <Layer text="Network" name={AppIcon.NetworkIcon} />
+      <Layer text="Mentors" name={AppIcon.MentorsIcon} />
       <Layer
         text="Message"
         border={false}
@@ -37,6 +39,6 @@ const Layer = ({
 }: props) => (
   <S.Layer border={border} marginTop={marginTop} marginBottom={marginBottom}>
     <S.SideNavIcon name={name} />
-    <S.styledParagraph>{text}</S.styledParagraph>
+    <Paragraph color={IgnitusBlue}>{text}</Paragraph>
   </S.Layer>
 );

@@ -3,7 +3,7 @@ import React from 'react';
 import * as T from '../constants';
 import * as I from '../styles';
 
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import {withErrorBoundary} from '../../../ignitus-Shared';
 
 export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
   <I.Container>
@@ -14,12 +14,10 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
       </I.TitleImage>
       <I.PrimaryText>
         Get handpicked top-quality global research and industrial internships,
-        for <b>free!</b>
-      </I.PrimaryText>
-      <I.SecondaryText>
-        Ignite your resume and get the <b>best global opportunities </b>
-        and Skyrocketing your career
-      </I.SecondaryText>
+        for free! <br/>
+        Ignite your resume and get the best global opportunities and
+        Skyrocketing your career
+        </I.PrimaryText>
       <I.Button category="primary" size="large">
         SIGN UP
       </I.Button>

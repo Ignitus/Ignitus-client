@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
-import { minimumWidthQuery } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import { minimumWidthQuery } from '../../../../ignitus-Shared';
+import { flexibleColDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const WelcomeContainer = styled(flexibleColDiv)`
   background: white;
@@ -34,30 +34,30 @@ export const BottomSection = styled(flexibleColDiv)`
 `;
 
 export const LeftSection = styled(flexibleColDiv)`
-  ${minimumWidthQuery[0]} {
-    margin-right: none;
-  }
-  ${minimumWidthQuery[1]} {
-    margin-right: none;
-  }
   ${minimumWidthQuery[2]} {
-    margin-right: 1rem;
+    margin-right: none;
   }
   ${minimumWidthQuery[3]} {
+    margin-right: none;
+  }
+  ${minimumWidthQuery[4]} {
+    margin-right: 1rem;
+  }
+  ${minimumWidthQuery[5]} {
     margin-right: 1rem;
   }
 `;
 export const RightSection = styled.div`
-  ${minimumWidthQuery[0]} {
-    margin-left: none;
-  }
-  ${minimumWidthQuery[1]} {
-    margin-left: none;
-  }
   ${minimumWidthQuery[2]} {
-    margin-left: 1rem;
+    margin-left: none;
   }
   ${minimumWidthQuery[3]} {
+    margin-left: none;
+  }
+  ${minimumWidthQuery[4]} {
+    margin-left: 1rem;
+  }
+  ${minimumWidthQuery[5]} {
     margin-left: 1rem;
   }
 `;

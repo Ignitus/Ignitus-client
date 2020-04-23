@@ -2,10 +2,8 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import HeartIcon from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import {minimumWidthQuery} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
+import {minimumWidthQuery, Paragraph as P, Light} from '../../ignitus-Shared';
 import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {SemiNormal} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const Icon = styled.span`
   i {
@@ -20,7 +18,7 @@ export const Card = styled.div`
   max-width: 100%;
   margin: 0.5em;
   padding: 0.3em;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   border-radius: 15px;
   height: 100px;
   display: flex;
@@ -28,15 +26,19 @@ export const Card = styled.div`
   align-items: center;
   background: ${C.White};
 
-  ${minimumWidthQuery[0]} {
+  ${minimumWidthQuery[1]} {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  ${minimumWidthQuery[2]} {
     flex: 0 0 43%;
     max-width: 43%;
   }
-  ${minimumWidthQuery[1]} {
-    flex: 0 0 28.33333%;
-    max-width: 28.33333%;
+  ${minimumWidthQuery[3]} {
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
   }
-  ${minimumWidthQuery[2]} {
+  ${minimumWidthQuery[4]} {
     flex: 0 0 30.33333%;
     max-width: 30.33333%;
   }
@@ -44,8 +46,15 @@ export const Card = styled.div`
 
 export const CardPicture = styled.img`
   max-width: 100%;
-  height: 3.6rem;
+  height: 3rem;
   object-fit: contain;
+
+  ${minimumWidthQuery[1]} {
+    height: 2.5rem;
+  }
+  ${minimumWidthQuery[4]} {
+    height: 3rem;
+  }
 `;
 
 export const Heart = styled(HeartIcon)`
@@ -54,5 +63,7 @@ export const Heart = styled(HeartIcon)`
 `;
 
 export const Paragraph = styled(P)`
-  font-weight: ${SemiNormal};
+  font-weight: ${Light};
+  text-align: center;
+  margin: 0.5rem 0;
 `;

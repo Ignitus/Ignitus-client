@@ -1,6 +1,6 @@
 import React from 'react';
 import {SeparatorContainer, Separator} from '../styles';
-import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading2 } from '../../../../../ignitus-Shared';
 
 export const interfaceSeparator: React.FC = () => (
   <SeparatorContainer>

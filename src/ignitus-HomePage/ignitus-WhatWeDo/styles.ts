@@ -12,7 +12,9 @@ export const Icon = styled.span`
 `;
 
 export const Paragraph = styled(P)`
-  font-weight: ${F.SemiNormal};
+  font-weight: ${F.Light};
+  text-align: center;
+  margin: 0.5rem 0;
 `;
 
 export const Card = styled.div`
@@ -22,22 +24,26 @@ export const Card = styled.div`
   padding: 1rem;
   display: flex;
   text-align: center;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   border-radius: 15px;
   flex-direction: column;
   background: ${C.White};
 
-  ${minimumWidthQuery[0]} {
-    flex: 0 0 85%;
-    max-width: 85%;
-  }
   ${minimumWidthQuery[1]} {
-    flex: 0 0 45.33333%;
-    max-width: 45.33333%;
+    flex: 0 0 80%;
+    max-width: 80%;
   }
   ${minimumWidthQuery[2]} {
-    flex: 0 0 30.33333%;
-    max-width: 30.33333%;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  ${minimumWidthQuery[3]} {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  ${minimumWidthQuery[4]} {
+    flex: 0 0 27%;
+    max-width: 27%;
   }
 `;
 

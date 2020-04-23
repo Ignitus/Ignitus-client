@@ -1,10 +1,12 @@
-export type displayClassTypes = 'transparent' | 'whitenav';
+export interface NavigationProps {
+  transparentNavigation?: boolean;
+}
 
-export interface PureNavigationProps {
-  displayClass: displayClassTypes;
-  dynamicLogo: any;
+export type ToggleProps = {
+  isExpanded: boolean;
 };
 
-export interface NavigationProps {
-  dynamicNavigation?: boolean;
+export type NavigationItems = {
+  title: string;
+  route: string;
 };

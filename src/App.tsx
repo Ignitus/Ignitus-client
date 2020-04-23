@@ -1,21 +1,25 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { withErrorBoundary } from './ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import { DashboardRoutes } from './ignitus-Routes/ignitus-DashboardRoutes';
-// eslint-disable-next-line import/named
-import { PublicRoutes } from './ignitus-Routes/ignitus-PublicRoutes';
-import './App.scss';
-import UserInterfaceBookRoutes from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
+import styled from '@emotion/styled';
 
+import {Switch, Route} from 'react-router-dom';
+import {DashboardRoutes} from './ignitus-Routes/ignitus-DashboardRoutes';
+import {PublicRoutes} from './ignitus-Routes/ignitus-PublicRoutes';
+import {UserInterfaceBookRoutes} from './ignitus-Routes/ignitus-UserInterfaceBookRoutes';
+import {withErrorBoundary, GreyBackground} from './ignitus-Shared';
+
+import './App.css';
+const Root = styled.div`
+  background: ${GreyBackground};
+`;
 
 const App = () => (
-  <div className="content-container">
+  <Root>
     <Switch>
       <Route path="/dashboard" component={DashboardRoutes} />
       <Route path="/interface" component={UserInterfaceBookRoutes} />
       <Route path="/" component={PublicRoutes} />
     </Switch>
-  </div>
+  </Root>
 );
 
 export default withErrorBoundary(App);

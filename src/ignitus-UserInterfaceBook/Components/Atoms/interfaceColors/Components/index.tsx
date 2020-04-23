@@ -1,7 +1,7 @@
 import React from 'react';
 import * as C from '../styles';
 import { Interface } from '../../../../styles';
-import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading2 } from '../../../../../ignitus-Shared';
 import {
   PrimaryColors,
   GreyShades,

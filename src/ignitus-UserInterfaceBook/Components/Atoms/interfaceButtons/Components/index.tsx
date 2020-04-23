@@ -1,14 +1,18 @@
 import React from 'react';
 import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
-import { DefaultButtonWithIcon } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
-import { AppIcon } from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import { Heading2, Heading6 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { Interface } from '../../../../styles';
+import {
+  AppIcon,
+  DefaultButtonWithIcon,
+  Heading2,
+  Heading6,
+} from '../../../../../ignitus-Shared';
+import {Interface} from '../../../../styles';
 
 export const interfaceButttons: React.FC = () => (
   <Interface>
     <Heading2> Buttons </Heading2>
+    <br />
     <B.Button size="large" category="primary">
       {' '}
       Primary Button{' '}
@@ -65,6 +69,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
+    <br />
     <Heading6> Medium Size Buttons </Heading6>
     <B.Button size="medium" category="primary">
       {' '}
@@ -122,6 +127,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
+    <br />
     <Heading6> Small Size Buttons </Heading6>
     <B.Button size="small" category="primary">
       {' '}
@@ -179,6 +185,7 @@ export const interfaceButttons: React.FC = () => (
     />
 
     <hr />
+    <br />
     <Heading6> Text Button </Heading6>
     <B.Button size="large" category="text">
       {' '}
@@ -193,7 +200,7 @@ export const interfaceButttons: React.FC = () => (
       Text Button{' '}
     </B.Button>
     <hr />
-
+    <br />
     <Heading2> Styled Buttons </Heading2>
 
     <B.ButtonBottomRight size="large" category="primary">
@@ -220,7 +227,8 @@ export const interfaceButttons: React.FC = () => (
       {' '}
       Button Top Left{' '}
     </B.StyledButtonTopLeft>
-
+    <hr />
+    <br />
     <Heading6> Medium Size Buttons </Heading6>
 
     <B.ButtonBottomRight size="medium" category="primary">
@@ -242,7 +250,8 @@ export const interfaceButttons: React.FC = () => (
       {' '}
       Button Bottom Right{' '}
     </B.ButtonBottomRight>
-
+    <hr />
+    <br />
     <Heading6> Small Size Buttons </Heading6>
 
     <B.ButtonBottomRight size="small" category="primary">
@@ -295,7 +304,8 @@ export const interfaceButttons: React.FC = () => (
       {' '}
       Rounded Button{' '}
     </B.RoundedButton>
-
+    <hr />
+    <br />
     <Heading6> Medium Size Buttons </Heading6>
 
     <B.RoundedButton size="medium" category="primary">
@@ -324,6 +334,7 @@ export const interfaceButttons: React.FC = () => (
     </B.RoundedButton>
 
     <hr />
+    <br />
     <Heading6> Social Buttons </Heading6>
     <Heading6> Button with Icons </Heading6>
     <Heading6> Floating Action Button </Heading6>

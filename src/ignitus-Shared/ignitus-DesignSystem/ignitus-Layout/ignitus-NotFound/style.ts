@@ -144,4 +144,8 @@ export const StyledParagraph = styled(Paragraph)`
   font-size: ${SM};
 `;
 
+export const NotFoundContainer = styled.div`
+  background: ${C.GreyBackground};
+`;
+
 /* Animation Credit goes to  https://codepen.io/paarmita/pen/pqVzZL */

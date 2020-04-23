@@ -1,20 +1,19 @@
 import styled from '@emotion/styled';
 import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
-import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/atoms';
-import {Paragraph as P} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import {Paragraph as P} from '../../../../ignitus-Shared';
 import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
 import {
   MD,
   XS,
   Normal,
   Medium,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {
   GreySecondaryText,
   White,
   GreyOne,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+  boxShadowColor,
+} from '../../../../ignitus-Shared';
 import { props } from './types';
+import { flexibleColDiv } from '../../shared';
 
 
 export const Overlay = styled.div`
@@ -24,7 +23,7 @@ export const Overlay = styled.div`
   border-radius: 1rem;
   display: inline-flex;
   flex-direction: column;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 ${boxShadowColor};
 `;
 
 export const TopSection = styled(flexibleColDiv)`

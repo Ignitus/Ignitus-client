@@ -12,6 +12,7 @@ import {
 import {AppSize} from '../../types/sizeTypes/sizeEnums';
 import {CategoryEnums} from '../../types/categoryTypes/categoryEnums';
 import {Green, Yellow} from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
+import {AppMessage} from '../../types/messageTypes/messageEnums';
 
 const hexArray = [GreyBackground, White, GreyLight];
 
@@ -19,6 +20,10 @@ export type ButtonProperties = {
   size?: string;
   category?: string;
 };
+
+export interface MessageProps {
+  type: string;
+}
 
 export const getPadding = ({size}: ButtonProperties) => {
   switch (size) {
@@ -30,6 +35,19 @@ export const getPadding = ({size}: ButtonProperties) => {
 
     case AppSize.Large:
       return '16px 32px';
+  }
+};
+
+export const getInputPadding = ({size}: ButtonProperties) => {
+  switch (size) {
+    case AppSize.Small:
+      return '6px 4px';
+
+    case AppSize.Medium:
+      return '10px 4px';
+
+    case AppSize.Large:
+      return '14px 4px';
   }
 };
 
@@ -170,6 +188,16 @@ export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
 
     default:
       return 'none';
+  }
+};
+
+export const getMessageColor = ({type}: MessageProps) => {
+  switch (type) {
+    case AppMessage.Success:
+      return Green;
+
+    default:
+      return '#ee150e';
   }
 };
 
