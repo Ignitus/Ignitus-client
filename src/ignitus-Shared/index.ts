@@ -32,6 +32,7 @@ export {DefaultMultiMediaInput} from './ignitus-DesignSystem/ignitus-Atoms/ignit
 
 export {DefaultSearchInput} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultSearchInput/Components';
 
+export {SecondaryDropDown} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components/secondaryDropDown';
 /**
  * ignitus-Layout
  */
