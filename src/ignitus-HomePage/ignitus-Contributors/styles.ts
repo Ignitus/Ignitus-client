@@ -6,7 +6,7 @@ import {
   Paragraph as P,
   Medium,
 } from '../../ignitus-Shared';
-import {BottomRow as Row} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { BottomRow as Row } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const Icon = styled.span`
   i {

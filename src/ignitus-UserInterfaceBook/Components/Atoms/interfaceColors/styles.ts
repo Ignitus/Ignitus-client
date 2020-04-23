@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {color} from './types';
+import { color } from './types';
 import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { hexDifferentiate } from '../../../../ignitus-Shared';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as O from '../styles';
-import {Heading1} from '../../../../../ignitus-Shared';
-import {OverlayProps} from '../types';
+import { Heading1 } from '../../../..';
+import { OverlayProps } from '../types';
 
 const Overlay = ({
   title,

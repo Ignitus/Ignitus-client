@@ -4,9 +4,9 @@ export type Team = {
   description: string;
   linkedin: string;
   angellist: string;
-}
+};
 
 export type TeamItemProps = {
   key: string;
   item: Team;
-}
+};

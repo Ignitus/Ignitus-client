@@ -1,7 +1,7 @@
 import React from 'react';
-import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
-import {Button} from '../../../ignitus-Atoms/buttons';
-import {Props} from '../types';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { Button } from '../../../ignitus-Atoms/buttons';
+import { Props } from '../types';
 import * as S from '../styles';
 
 export const SideProfileCard = ({

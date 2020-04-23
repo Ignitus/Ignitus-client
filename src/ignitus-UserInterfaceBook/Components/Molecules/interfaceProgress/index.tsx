@@ -12,14 +12,13 @@ export const InterfaceProgress = () => {
   const [current, updateCurrent] = useState(1);
   const steps = 5;
 
-  const next = () => (current === steps + 1 ? null : updateCurrent(current + 1));
+  const next = () =>
+    current === steps + 1 ? null : updateCurrent(current + 1);
   const previous = () => (current === 1 ? null : updateCurrent(current - 1));
 
   return (
     <Interface>
-      <Heading2>
-        Signup Progress
-      </Heading2>
+      <Heading2>Signup Progress</Heading2>
       <hr />
       <br />
       <Progress steps={steps} current={current} />

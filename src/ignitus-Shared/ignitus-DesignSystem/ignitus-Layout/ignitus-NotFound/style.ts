@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import {keyframes} from '@emotion/core';
+import { keyframes } from '@emotion/core';
 import * as C from '../../ignitus-Atoms/colors';
-import {SM} from '../../ignitus-Atoms/fonts';
-import {Paragraph} from '../../ignitus-Atoms/typography';
-import {Button} from '../../ignitus-Atoms/buttons';
+import { SM } from '../../ignitus-Atoms/fonts';
+import { Paragraph } from '../../ignitus-Atoms/typography';
+import { Button } from '../../ignitus-Atoms/buttons';
 
 export const eye = keyframes`
   0% ,30% , 55%, 90% , 100% {

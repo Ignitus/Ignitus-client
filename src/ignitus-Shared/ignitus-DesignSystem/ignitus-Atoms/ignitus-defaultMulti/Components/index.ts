@@ -1,1 +1,1 @@
-export {default as DefaultMultiMediaInput} from './defaultMultiMediaInput';
+export { default as DefaultMultiMediaInput } from './defaultMultiMediaInput';

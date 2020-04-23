@@ -13,14 +13,15 @@ const loginReducer = (
 ) => {
   switch (action.type) {
     case t.LOG_IN_RESPONSE:
-      return Object.assign({}, state, { isFetching: false }, action.data);
+      return { ...state, isFetching: false, ...action.data };
 
     case t.LOG_IN_REQUEST:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isFetching: true,
         message: 'Processing...',
         success: false,
-      });
+      };
 
     case t.LOG_USER_OUT:
       return RESET;

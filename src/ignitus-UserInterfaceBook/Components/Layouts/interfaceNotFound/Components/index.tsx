@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Notfound, Heading2} from '../../../../../ignitus-Shared';
-import {NotFoundContainer, Container} from '../style';
+import { Notfound, Heading2 } from '../../../../../ignitus-Shared';
+import { NotFoundContainer, Container } from '../style';
 
 export const interfaceNotFound: React.FC = () => (
   <Container>

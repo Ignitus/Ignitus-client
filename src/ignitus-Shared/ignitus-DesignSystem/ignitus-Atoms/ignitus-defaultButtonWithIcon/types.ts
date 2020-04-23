@@ -1,4 +1,5 @@
 import { AppIcon } from '../../../types/iconsTypes/iconEnums';
+
 export type BtnSizeProps = {
   type: boolean;
 };

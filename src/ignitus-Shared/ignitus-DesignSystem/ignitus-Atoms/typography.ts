@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from './colors';
 import * as F from './fonts';
-import {minimumWidthQuery} from './media';
+import { minimumWidthQuery } from './media';
 
 type Props = {
   color?: string;

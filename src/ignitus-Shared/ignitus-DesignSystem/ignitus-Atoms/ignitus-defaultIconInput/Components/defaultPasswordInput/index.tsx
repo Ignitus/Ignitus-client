@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {DefaultPasswordInputProperties} from '../../types';
-import {AppIcon} from '../../../../../types/iconsTypes/iconEnums';
+import React, { useState, useEffect } from 'react';
+import { DefaultPasswordInputProperties } from '../../types';
+import { AppIcon } from '../../../../../types/iconsTypes/iconEnums';
 import * as I from './styles';
 
 /* Primarly used to take care of user password! */
@@ -11,6 +11,10 @@ export const DefaultPasswordInput = ({
   state,
   ...rest
 }: DefaultPasswordInputProperties) => {
+  const [value, setValue] = useState<string>('');
+  const [type, setType] = useState<string>('password');
+  const [icon, setIcon] = useState<AppIcon>(AppIcon.EyeVisibleOffIcon);
+
   const handleClick = () => {
     if (type === 'password' && icon === AppIcon.EyeVisibleOffIcon) {
       setType('text');
@@ -20,10 +24,6 @@ export const DefaultPasswordInput = ({
       setIcon(AppIcon.EyeVisibleOffIcon);
     }
   };
-
-  const [value, setValue] = useState<string>('');
-  const [type, setType] = useState<string>('password');
-  const [icon, setIcon] = useState<AppIcon>(AppIcon.EyeVisibleOffIcon);
 
   useEffect(() => {
     handleChange(value);

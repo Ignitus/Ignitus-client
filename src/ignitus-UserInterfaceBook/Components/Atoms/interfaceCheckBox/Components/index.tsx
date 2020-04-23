@@ -6,6 +6,6 @@ export const interfaceCheckBox: React.FC = () => (
   <Interface>
     <Heading2>Check Box </Heading2>
     <hr />
-    <DefaultCheckbox value={'cars'} label={'cars'} />
+    <DefaultCheckbox value="cars" label="cars" />
   </Interface>
 );

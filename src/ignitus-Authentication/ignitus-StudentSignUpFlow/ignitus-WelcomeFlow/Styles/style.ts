@@ -13,8 +13,7 @@ export const Progress = styled.img`
   max-width: 100%;
 `;
 
-export const TopSection = styled(flexibleColDiv)`
-`;
+export const TopSection = styled(flexibleColDiv)``;
 
 export const DefaultDropdownContainer = styled.div`
   margin: 1rem;

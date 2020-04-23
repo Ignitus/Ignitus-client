@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleRowDiv} from '../../shared';
-import {Normal, XS} from '../../ignitus-Atoms/fonts';
+import { flexibleRowDiv } from '../../shared';
+import { Normal, XS } from '../../ignitus-Atoms/fonts';
 
 export const Container = styled.div`
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};

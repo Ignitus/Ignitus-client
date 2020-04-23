@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../style';
-import {Paragraph} from '../../../../ignitus-Atoms/typography';
+import { Paragraph } from '../../../../ignitus-Atoms/typography';
 import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
 
 type props = {
@@ -13,10 +13,10 @@ type props = {
 export default function MessageSideNavigation() {
   return (
     <S.MessageContainer>
-      <Layer text="Direct Messages" marginTop={true} />
+      <Layer text="Direct Messages" marginTop />
       <Layer text="Mentors" />
       <Layer text="Organizations" />
-      <Layer text="Groups" border={false} marginBottom={true} />
+      <Layer text="Groups" border={false} marginBottom />
     </S.MessageContainer>
   );
 }

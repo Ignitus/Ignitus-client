@@ -1,4 +1,4 @@
-import {AppIcon} from '../../../types/iconsTypes/iconEnums';
+import { AppIcon } from '../../../types/iconsTypes/iconEnums';
 
 export type DefaultIconInputProperties = {
   type: string;

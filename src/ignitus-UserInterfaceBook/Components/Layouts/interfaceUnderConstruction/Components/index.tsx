@@ -1,7 +1,10 @@
 import React from 'react';
 
 import { UnderConstructionContainer } from '../style';
-import { WebsiteUnderConstruction, Heading2 } from '../../../../../ignitus-Shared';
+import {
+  WebsiteUnderConstruction,
+  Heading2,
+} from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
 
 export const interfaceUnderConstruction: React.FC = () => (
