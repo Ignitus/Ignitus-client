@@ -3,6 +3,10 @@ import * as C from './colors';
 import * as F from './fonts';
 import {minimumWidthQuery} from './media';
 
+type Props = {
+  color?: string;
+};
+
 export const Heading1 = styled.h1`
   font-weight: ${F.Medium};
   font-size: ${F.XXXL};
@@ -21,10 +25,10 @@ export const Heading3 = styled.h3`
   color: ${C.IgnitusBlue};
 `;
 
-export const Heading4 = styled.h4`
+export const Heading4 = styled.h4<Props>`
   font-weight: ${F.Normal};
   font-size: ${F.LG};
-  color: ${C.IgnitusBlue};
+  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading5 = styled.h5`
@@ -39,10 +43,10 @@ export const Heading6 = styled.h6`
   color: ${C.IgnitusBlue};
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<Props>`
   font-size: ${F.SM};
   font-weight: ${F.Normal};
-  color: ${C.GreyText};
+  color: ${props => (props.color ? props.color : C.GreyText)};
   margin: 0;
 `;
 
@@ -54,7 +58,7 @@ export const TextLink = styled.a`
 `;
 
 export const Heading9 = styled.h6`
-  font-weight: ${F.Medium};s
+  font-weight: ${F.Medium};
   color: ${C.IgnitusBlue};
 
   ${minimumWidthQuery[1]} {
@@ -260,7 +264,6 @@ export const Heading9 = styled.h6`
 //     font-size: 16px;
 //   }
 // `;
-
 
 // export const Body1 = styled.p`
 //   font-weight: ${F.Normal};

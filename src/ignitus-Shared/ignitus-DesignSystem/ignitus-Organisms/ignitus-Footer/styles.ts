@@ -3,7 +3,7 @@ import {maximumWidthQuery} from '../../ignitus-Atoms/media';
 import {Heading3} from '../../ignitus-Atoms/typography';
 import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
 import {FooterLinkprops} from './types';
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import {default as I} from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};
@@ -50,7 +50,7 @@ export const FooterSections = styled.div`
   }
 `;
 
-export const Logo = styled(Icon)`
+export const Logo = styled(I)`
   margin-top: 1rem;
   width: 5rem;
   ${maximumWidthQuery[3]} {
@@ -108,6 +108,15 @@ export const FooterSocial = styled.ul`
         color: ${SecondaryColor};
       }
     }
+  }
+`;
+
+export const Icon = styled(I)`
+  width: 1rem;
+  height: 1rem;
+  fill: ${White};
+  &:hover {
+    fill: ${SecondaryColor};
   }
 `;
 
