@@ -1,1 +1,1 @@
-export {DefaultButtonWithIconOnRight, DefaultButtonWithIconOnLeft} from './defaultButtonWithIcon';
+export {default as DefaultButtonWithIcon} from './defaultButtonWithIcon';

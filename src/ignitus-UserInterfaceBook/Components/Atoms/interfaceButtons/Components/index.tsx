@@ -1,14 +1,22 @@
+import styled from '@emotion/styled';
+
 import React from 'react';
 import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
 import {
   AppIcon,
-  DefaultButtonWithIconOnRight,
-  DefaultButtonWithIconOnLeft,
+  DefaultButtonWithIcon,
   Heading2,
   Heading6,
 } from '../../../../../ignitus-Shared';
 import {Interface} from '../../../../styles';
+
+const CustomDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
+  flex-direction: row-reverse;
+  svg {
+    margin-right: 0.2rem;
+  }
+`;
 
 export const interfaceButttons: React.FC = () => (
   <Interface>
@@ -55,14 +63,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="large"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="large"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -113,14 +121,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="medium"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="medium"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -171,14 +179,14 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="small"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Message'}
     />
 
-    <DefaultButtonWithIconOnRight
+    <DefaultButtonWithIcon
       size="small"
       category="primary"
       name={AppIcon.LocationIcon}
@@ -338,35 +346,35 @@ export const interfaceButttons: React.FC = () => (
     <br />
     <Heading6> Button with Icons </Heading6>
 
-    <DefaultButtonWithIconOnLeft
+    <CustomDefaultButtonWithIcon
       size="medium"
       category="primary"
       name={AppIcon.MessageIcon}
       content={'Primary Button'}
     />
 
-    <DefaultButtonWithIconOnLeft
+    <CustomDefaultButtonWithIcon
       size="medium"
       category="secondary"
       name={AppIcon.LocationIcon}
       content={'Secondary Button'}
     />
 
-    <DefaultButtonWithIconOnLeft
+    <CustomDefaultButtonWithIcon
       size="medium"
       category="grey"
       name={AppIcon.MessageIcon}
       content={'Grey Button'}
     />
 
-    <DefaultButtonWithIconOnLeft
+    <CustomDefaultButtonWithIcon
       size="medium"
       category="orange"
       name={AppIcon.LocationIcon}
       content={'Orange Button'}
     />
 
-    <DefaultButtonWithIconOnLeft
+    <CustomDefaultButtonWithIcon
       size="medium"
       category="white"
       name={AppIcon.MessageIcon}

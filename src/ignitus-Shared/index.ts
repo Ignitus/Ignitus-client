@@ -16,7 +16,7 @@ export * from './ignitus-DesignSystem/ignitus-Atoms/fonts';
 /**
  * ignitus-Atoms
  */
-export {DefaultButtonWithIconOnRight, DefaultButtonWithIconOnLeft} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
+export {DefaultButtonWithIcon} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
 
 export {DefaultCheckbox} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultCheckbox/Components';
 

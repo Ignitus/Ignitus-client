@@ -3,7 +3,7 @@ import {Button} from '../../buttons';
 import {StyledIcon} from '../styles';
 import {BtnProps} from '../types';
 
-export const DefaultButtonWithIconOnRight = ({
+const DefaultButtonWithIcon = ({
   size,
   category,
   name,
@@ -15,14 +15,4 @@ export const DefaultButtonWithIconOnRight = ({
   </Button>
 );
 
-export const DefaultButtonWithIconOnLeft = ({
-  size,
-  category,
-  name,
-  content,
-  ...rest
-}: BtnProps) => (
-  <Button size={size} category={category} {...rest}>
-    <StyledIcon name={name} category={category} size={size} /> {content}
-  </Button>
-);
+export default DefaultButtonWithIcon;
