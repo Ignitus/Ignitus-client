@@ -1,9 +1,10 @@
-import {openDB} from 'idb';
+import { openDB } from 'idb';
 import * as t from './constants';
 
 const DB_NAME: string = 'ignitus';
 const version: number = 1;
 
+// eslint-disable-next-line no-async-promise-executor
 const createDB = new Promise(async (resolve, reject) => {
   try {
     const dbPromise = await openDB(DB_NAME, version, {

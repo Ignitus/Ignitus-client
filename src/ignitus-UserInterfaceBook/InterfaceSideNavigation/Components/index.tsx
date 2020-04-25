@@ -1,20 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as S from '../style';
-import {AppIcon, useToggle} from '../../../ignitus-Shared';
-import {edges} from '../constants';
-import {NavigationLayerProps} from '../types';
+import { AppIcon, useToggle } from '../../../ignitus-Shared';
+import { allEdges } from '../constants';
+import { NavigationLayerProps } from '../types';
 
-export const InterfaceSideNavigation = () => {
-  return (
-    <S.NavigationContainer>
-      <Link to="/">
-        <S.StyledLogo name={AppIcon.IgnitusFullLogo} />
-      </Link>
-      <NavigationLayers edges={edges} level={0} />
-    </S.NavigationContainer>
-  );
-};
+export const InterfaceSideNavigation = () => (
+  <S.NavigationContainer>
+    <Link to="/">
+      <S.StyledLogo name={AppIcon.IgnitusFullLogo} />
+    </Link>
+    <NavigationLayers edges={allEdges} level={0} />
+  </S.NavigationContainer>
+);
 
 const NavigationLayers = ({
   edges,
@@ -28,7 +26,7 @@ const NavigationLayers = ({
   </React.Fragment>
 );
 
-const Layers = ({edge, nesting, level}: any) => {
+const Layers = ({ edge, nesting, level }: any) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   return (
     <React.Fragment key={edge.title}>
@@ -57,7 +55,7 @@ const Layers = ({edge, nesting, level}: any) => {
   );
 };
 
-const Extension = ({isexpanded, edge, nesting, level}) => {
+const Extension = ({ isexpanded, edge, nesting, level }) => {
   if (edge.route) {
     return (
       <Link to={edge.route} key={edge.title}>
@@ -71,11 +69,7 @@ const Extension = ({isexpanded, edge, nesting, level}) => {
   return (
     edge.children && (
       <S.UnorderedList isexpanded={isexpanded}>
-        <NavigationLayers
-          edges={edge.children}
-          nesting={true}
-          level={level + 1}
-        />
+        <NavigationLayers edges={edge.children} nesting level={level + 1} />
       </S.UnorderedList>
     )
   );

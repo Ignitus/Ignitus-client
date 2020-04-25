@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {cars} from '../constants';
+import { cars } from '../constants';
 import { Interface } from '../../../../styles';
 import {
   DefaultDropdown,
@@ -14,11 +14,11 @@ export const interfaceDropDown: React.FC = () => (
     <hr />
     <Heading5>Inline Block</Heading5>
     <br />
-    <DefaultDropdown options={cars} label={'cars'} display="inline-block" />
+    <DefaultDropdown options={cars} label="cars" display="inline-block" />
     <br />
     <br />
     <Heading5>Block</Heading5>
     <br />
-    <DefaultDropdown options={cars} label={'cars'} display="block" />
+    <DefaultDropdown options={cars} label="cars" display="block" />
   </Interface>
 );

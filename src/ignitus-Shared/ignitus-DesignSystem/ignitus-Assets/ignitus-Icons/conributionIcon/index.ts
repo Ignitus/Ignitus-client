@@ -1,1 +1,1 @@
-export {default} from './contributionIcon';
+export { default } from './contributionIcon';

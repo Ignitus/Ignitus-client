@@ -16,7 +16,10 @@ import * as C from '../Styles/style';
 const EmailFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png"
+        alt="progress-bar"
+      />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <Heading2>Let’s confirm your email.</Heading2>
       <Paragraph>
@@ -37,7 +40,9 @@ const EmailFlow: FunctionComponent = () => (
           <Link to="/">I don’t see the email</Link>
         </Button>
       </C.ButtonContainer>
-      <Paragraph><Link to="/">I don’t want to confirm my email yet.</Link></Paragraph>
+      <Paragraph>
+        <Link to="/">I don’t want to confirm my email yet.</Link>
+      </Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
 );

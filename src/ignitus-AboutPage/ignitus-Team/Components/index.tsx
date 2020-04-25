@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, {useEffect} from 'react';
-import {withErrorBoundary, AppIcon} from '../../../ignitus-Shared';
-import {TeamPropType, GitHubDataType} from '../types';
+import React, { useEffect } from 'react';
+import { withErrorBoundary, AppIcon } from '../../../ignitus-Shared';
+import { TeamPropType, GitHubDataType } from '../types';
 import * as S from '../Styles';
 
-const PureTeam = ({contributors}: any) => (
+const PureTeam = ({ contributors }: any) => (
   <S.Section>
     <S.Container>
       <S.TitleWrapper>
@@ -29,11 +29,10 @@ const PureTeam = ({contributors}: any) => (
 export const Team = withErrorBoundary(
   ({
     getContributorsData,
-    contributorsData: {presets, isFetching},
+    contributorsData: { presets, isFetching },
   }: TeamPropType) => {
     useEffect(() => {
       getContributorsData();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (isFetching) {

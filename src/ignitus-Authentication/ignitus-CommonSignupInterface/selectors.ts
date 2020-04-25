@@ -1,5 +1,5 @@
-import {createSelector} from 'reselect';
-import {isObject} from '../../ignitus-Shared';
+import { createSelector } from 'reselect';
+import { isObject } from '../../ignitus-Shared';
 
 export const selectState = state => state.signUpReducer;
 

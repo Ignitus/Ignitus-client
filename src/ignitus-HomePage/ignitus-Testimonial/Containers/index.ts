@@ -11,7 +11,8 @@ const mapStateToProps = createStructuredSelector({
   testimonialData: makeSelectTestimonialData(),
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({ getTestimonialData }, dispatch);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ getTestimonialData }, dispatch);
 export const TestimonialContainer = connect(
   mapStateToProps,
   mapDispatchToProps,

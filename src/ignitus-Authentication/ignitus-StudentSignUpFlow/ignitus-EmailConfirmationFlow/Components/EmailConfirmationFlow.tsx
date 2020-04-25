@@ -8,7 +8,7 @@ import {
   Paragraph,
   Heading2,
   RoundedButton,
-  withErrorBoundary
+  withErrorBoundary,
 } from '../../../../ignitus-Shared';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
@@ -17,7 +17,10 @@ import * as C from '../Styles/style';
 const EmailConfirmationFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png"
+        alt="progress-bar"
+      />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <C.TopMiddleSection>
         <Heading2>Your email has been confirmed.</Heading2>

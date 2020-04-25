@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import {BrowserRouter} from 'react-router-dom';
-import {applyMiddleware, createStore} from 'redux';
-import {logger} from 'redux-logger';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { applyMiddleware, createStore } from 'redux';
+import { logger } from 'redux-logger';
 
 import createSagaMiddleware from 'redux-saga';
 import App from './App';

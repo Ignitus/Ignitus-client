@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {default as L} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
+import { default as L } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 
 const Container = styled.div`
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `;
 const Loader = styled.img``;
 
-export const Loading = ({...rest}) => (
+export const Loading = ({ ...rest }) => (
   <Container {...rest}>
     <Loader alt="loader" src={L} />
   </Container>

@@ -7,7 +7,7 @@ import {
   Heading2,
   Heading6,
 } from '../../../../../ignitus-Shared';
-import {Interface} from '../../../../styles';
+import { Interface } from '../../../../styles';
 
 export const interfaceButttons: React.FC = () => (
   <Interface>
@@ -58,14 +58,14 @@ export const interfaceButttons: React.FC = () => (
       size="large"
       category="primary"
       name={AppIcon.MessageIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <DefaultButtonWithIcon
       size="large"
       category="primary"
       name={AppIcon.LocationIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <hr />
@@ -116,14 +116,14 @@ export const interfaceButttons: React.FC = () => (
       size="medium"
       category="primary"
       name={AppIcon.MessageIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <DefaultButtonWithIcon
       size="medium"
       category="primary"
       name={AppIcon.LocationIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <hr />
@@ -174,14 +174,14 @@ export const interfaceButttons: React.FC = () => (
       size="small"
       category="primary"
       name={AppIcon.MessageIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <DefaultButtonWithIcon
       size="small"
       category="primary"
       name={AppIcon.LocationIcon}
-      content={'Message'}
+      content="Message"
     />
 
     <hr />

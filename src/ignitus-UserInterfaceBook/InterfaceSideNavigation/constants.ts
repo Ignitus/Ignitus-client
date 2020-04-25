@@ -1,7 +1,7 @@
-import {Edges} from './types';
+import { Edges } from './types';
 // Not developed routes are commented out but collected them for reference
 
-export const edges: Edges[] = [
+export const allEdges: Edges[] = [
   {
     title: 'Atoms',
     children: [
@@ -193,7 +193,7 @@ export const edges: Edges[] = [
       {
         title: 'Signup Progress',
         route: '/interface/progress',
-      }
+      },
       // {
       //   title: 'Profile Side Section',
       //   route: '/interface/profileSideSection',

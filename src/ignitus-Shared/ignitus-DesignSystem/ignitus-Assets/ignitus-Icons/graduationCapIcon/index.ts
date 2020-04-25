@@ -1,1 +1,1 @@
-export {default} from './graduationCapIcon';
+export { default } from './graduationCapIcon';

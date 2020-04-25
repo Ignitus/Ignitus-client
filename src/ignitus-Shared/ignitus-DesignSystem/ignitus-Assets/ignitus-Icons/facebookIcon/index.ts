@@ -1,1 +1,1 @@
-export {default} from './facebookIcon';
+export { default } from './facebookIcon';

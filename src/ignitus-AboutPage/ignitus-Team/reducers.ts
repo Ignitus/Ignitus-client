@@ -1,12 +1,12 @@
 import * as t from './actionTypes';
-import {TeamActionType, TeamReducerReturnType} from './types';
+import { TeamActionType, TeamReducerReturnType } from './types';
 
-const initialState = {presets: [], isFetching: false};
+const initialState = { presets: [], isFetching: false };
 function setContributorsData(action: TeamActionType) {
-  return Object.assign({}, {presets: action.data}, {isFetching: false});
+  return { presets: action.data, isFetching: false };
 }
 function getContributorsData() {
-  return Object.assign({}, {isFetching: true}, {presets: []});
+  return { isFetching: true, presets: [] };
 }
 
 const contributorsReducer = (
