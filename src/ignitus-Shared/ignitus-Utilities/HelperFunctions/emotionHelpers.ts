@@ -210,5 +210,5 @@ export const getMessageColor = ({ type }: MessageProps) => {
 
 export const hexDifferentiate = color => {
   const result = hexArray.indexOf(color);
-  return !(result === -1);
+  return result !== -1;
 };
