@@ -1,17 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-import {Heading2, Avatar, Button} from '../../../../../ignitus-Shared';
-import {Interface} from '../../../../styles';
+import { Heading2, Avatar, Button } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const InterfaceAvatar: React.FC = () => {
-  const [,update] = useState();
+  const [, update] = useState();
   const forceUpdate = () => update({});
 
   return (
     <Interface>
-      <Heading2>
-        Random Avatar
-    </Heading2>
+      <Heading2>Random Avatar</Heading2>
       <hr />
       <Avatar />
       <br />
@@ -20,4 +18,4 @@ export const InterfaceAvatar: React.FC = () => {
       </Button>
     </Interface>
   );
-}
+};

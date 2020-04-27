@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {DashboardFooter, Heading2} from '../../../../../../ignitus-Shared';
+import { DashboardFooter, Heading2 } from '../../../../../../ignitus-Shared';
 
 import { Interface } from '../../../../../styles';
 

@@ -1,4 +1,4 @@
-import {SM, MD, XXS} from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
+import { SM, MD, XXS } from '../../ignitus-DesignSystem/ignitus-Atoms/fonts';
 import {
   GreyBackground,
   White,
@@ -6,13 +6,14 @@ import {
   IgnitusBlue,
   SecondaryColor,
   GreyTwo,
+  Yellow,
+  Green,
   Red,
   GreySecondaryText,
 } from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
-import {AppSize} from '../../types/sizeTypes/sizeEnums';
-import {CategoryEnums} from '../../types/categoryTypes/categoryEnums';
-import {Green, Yellow} from '../../ignitus-DesignSystem/ignitus-Atoms/colors';
-import {AppMessage} from '../../types/messageTypes/messageEnums';
+import { AppSize } from '../../types/sizeTypes/sizeEnums';
+import { CategoryEnums } from '../../types/categoryTypes/categoryEnums';
+import { AppMessage } from '../../types/messageTypes/messageEnums';
 
 const hexArray = [GreyBackground, White, GreyLight];
 
@@ -25,12 +26,13 @@ export interface MessageProps {
   type: string;
 }
 
-export const getPadding = ({size}: ButtonProperties) => {
+export const getPadding = ({ size }: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:
       return '4px 15px';
 
     case AppSize.Medium:
+    default:
       return '8px 20px';
 
     case AppSize.Large:
@@ -38,12 +40,13 @@ export const getPadding = ({size}: ButtonProperties) => {
   }
 };
 
-export const getInputPadding = ({size}: ButtonProperties) => {
+export const getInputPadding = ({ size }: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:
       return '6px 4px';
 
     case AppSize.Medium:
+    default:
       return '10px 4px';
 
     case AppSize.Large:
@@ -51,12 +54,13 @@ export const getInputPadding = ({size}: ButtonProperties) => {
   }
 };
 
-export const getFontSizes = ({size}: ButtonProperties) => {
+export const getFontSizes = ({ size }: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:
       return XXS;
 
     case AppSize.Medium:
+    default:
       return SM;
 
     case AppSize.Large:
@@ -64,12 +68,13 @@ export const getFontSizes = ({size}: ButtonProperties) => {
   }
 };
 
-export const getRadius = ({size}: ButtonProperties) => {
+export const getRadius = ({ size }: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:
       return '3px';
 
     case AppSize.Medium:
+    default:
       return '3px';
 
     case AppSize.Large:
@@ -77,12 +82,13 @@ export const getRadius = ({size}: ButtonProperties) => {
   }
 };
 
-export const getIconDimension = ({size}: ButtonProperties) => {
+export const getIconDimension = ({ size }: ButtonProperties) => {
   switch (size) {
     case AppSize.Small:
       return '0.7rem';
 
     case AppSize.Medium:
+    default:
       return '0.9rem';
 
     case AppSize.Large:
@@ -90,7 +96,7 @@ export const getIconDimension = ({size}: ButtonProperties) => {
   }
 };
 
-export const getColor = ({category}: ButtonProperties) => {
+export const getColor = ({ category }: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Primary:
       return White;
@@ -115,9 +121,10 @@ export const getColor = ({category}: ButtonProperties) => {
   }
 };
 
-export const getBackgroundColor = ({category}: ButtonProperties) => {
+export const getBackgroundColor = ({ category }: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Primary:
+    default:
       return IgnitusBlue;
 
     case CategoryEnums.Secondary:
@@ -149,7 +156,7 @@ export const getBackgroundColor = ({category}: ButtonProperties) => {
   }
 };
 
-export const getBorder = ({category}: ButtonProperties) => {
+export const getBorder = ({ category }: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Secondary:
       return `2px solid ${IgnitusBlue}`;
@@ -159,7 +166,7 @@ export const getBorder = ({category}: ButtonProperties) => {
   }
 };
 
-export const getHoverColor = ({category}: ButtonProperties) => {
+export const getHoverColor = ({ category }: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Primary:
       return IgnitusBlue;
@@ -175,7 +182,7 @@ export const getHoverColor = ({category}: ButtonProperties) => {
   }
 };
 
-export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
+export const getHoverBackgroundColor = ({ category }: ButtonProperties) => {
   switch (category) {
     case CategoryEnums.Primary:
       return SecondaryColor;
@@ -191,7 +198,7 @@ export const getHoverBackgroundColor = ({category}: ButtonProperties) => {
   }
 };
 
-export const getMessageColor = ({type}: MessageProps) => {
+export const getMessageColor = ({ type }: MessageProps) => {
   switch (type) {
     case AppMessage.Success:
       return Green;
@@ -203,5 +210,5 @@ export const getMessageColor = ({type}: MessageProps) => {
 
 export const hexDifferentiate = color => {
   const result = hexArray.indexOf(color);
-  return result === -1 ? false : true;
+  return result !== -1;
 };

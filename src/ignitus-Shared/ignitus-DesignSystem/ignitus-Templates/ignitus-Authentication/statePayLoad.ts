@@ -1,7 +1,4 @@
-import {
-  LoginState,
-  SignupState
-} from './types';
+import { LoginState, SignupState } from './types';
 
 export const LoginStatePayload: LoginState = {
   email: '',

@@ -10,7 +10,7 @@ import {
   Paragraph,
   TextLink,
 } from '../../../../../ignitus-Shared';
-import {Interface} from '../../../../styles';
+import { Interface } from '../../../../styles';
 
 export const interfaceTypography: React.FC = () => (
   <Interface>

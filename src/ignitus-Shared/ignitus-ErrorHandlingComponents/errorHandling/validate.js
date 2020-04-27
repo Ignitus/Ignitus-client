@@ -17,7 +17,7 @@ const minLengthValidator = (value, minLength) => value.length >= minLength;
  * @param  value
  * @return
  */
-const requiredValidator = value => value.trim() !== '';
+const requiredValidator = (value) => value.trim() !== '';
 
 /**
  * Email validation

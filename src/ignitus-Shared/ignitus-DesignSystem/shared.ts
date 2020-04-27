@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import * as C from './ignitus-Atoms/colors';
 import * as F from './ignitus-Atoms/fonts';
-import {minimumWidthQuery} from './ignitus-Atoms/media';
-import {Heading2} from './ignitus-Atoms/typography';
-import {Loading} from '../ignitus-Utilities/Components/loader';
+import { minimumWidthQuery } from './ignitus-Atoms/media';
+import { Heading2 } from './ignitus-Atoms/typography';
+import { Loading } from '../ignitus-Utilities/Components/loader';
 
 export const Title = styled(Heading2)`
   color: ${C.IgnitusBlue};

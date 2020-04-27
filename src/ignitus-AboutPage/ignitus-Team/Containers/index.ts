@@ -10,5 +10,9 @@ const mapStateToProps = createStructuredSelector({
   contributorsData: makeSelectContributorsData(),
 });
 
-const mapDispatchToProps = (dispatch: any) => bindActionCreators({ getContributorsData }, dispatch);
-export const TeamContainer = connect(mapStateToProps, mapDispatchToProps)(Team);
+const mapDispatchToProps = (dispatch: any) =>
+  bindActionCreators({ getContributorsData }, dispatch);
+export const TeamContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Team);

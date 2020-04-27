@@ -1,4 +1,4 @@
-export type props = {
+export type Props = {
   secondary?: boolean;
 };
 

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import {maximumWidthQuery} from '../../ignitus-Atoms/media';
-import {Heading3} from '../../ignitus-Atoms/typography';
-import {White, SecondaryColor, IgnitusBlue} from '../../ignitus-Atoms/colors';
-import {FooterLinkprops} from './types';
-import {default as I} from '../../../ignitus-Utilities/Components/icon';
+import { maximumWidthQuery } from '../../ignitus-Atoms/media';
+import { Heading3 } from '../../ignitus-Atoms/typography';
+import { White, SecondaryColor, IgnitusBlue } from '../../ignitus-Atoms/colors';
+import { FooterLinkprops } from './types';
+import { default as I } from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};
@@ -83,7 +83,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
     }
   }
   ${maximumWidthQuery[3]} {
-    display: ${props => (props.toggle ? `none` : 'block')};
+    display: ${props => (props.toggle ? 'none' : 'block')};
   }
 `;
 

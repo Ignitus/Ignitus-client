@@ -1,1 +1,1 @@
-export {default} from './githubIcon';
+export { default } from './githubIcon';

@@ -1,1 +1,1 @@
-export {default} from './libraryBooksIcon';
+export { default } from './libraryBooksIcon';

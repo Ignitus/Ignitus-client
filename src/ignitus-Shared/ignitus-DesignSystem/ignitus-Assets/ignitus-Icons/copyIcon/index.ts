@@ -1,1 +1,1 @@
-export {default} from './copyIcon';
+export { default } from './copyIcon';

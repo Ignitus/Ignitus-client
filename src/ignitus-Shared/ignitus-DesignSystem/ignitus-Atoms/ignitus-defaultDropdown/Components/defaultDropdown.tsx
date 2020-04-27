@@ -2,7 +2,7 @@ import React from 'react';
 import { DropDownType } from '../types';
 import * as D from '../styles';
 
-const DefaultDropdown = ({label, options, display}: DropDownType) => (
+const DefaultDropdown = ({ label, options, display }: DropDownType) => (
   <React.Fragment>
     <label htmlFor={label}>{label} *</label>
     <D.Select id={label} display={display}>
@@ -13,6 +13,6 @@ const DefaultDropdown = ({label, options, display}: DropDownType) => (
   </React.Fragment>
 );
 
-const OptionMapper = ({option}) => <option value={option}>{option}</option>;
+const OptionMapper = ({ option }) => <option value={option}>{option}</option>;
 
 export default DefaultDropdown;

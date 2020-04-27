@@ -16,7 +16,10 @@ export const UserProfileCard = withErrorBoundary(() => (
     <S.BottomSection>
       <S.LeftRow>
         <div>
-          <S.Avatar src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png" alt="ProfileLogo" />
+          <S.Avatar
+            src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
+            alt="ProfileLogo"
+          />
         </div>
         <S.ProfileInformationContainer>
           <S.Name>Sophia Carter</S.Name>
@@ -42,7 +45,10 @@ export const UserProfileCard = withErrorBoundary(() => (
           </S.Link>
         </S.Icons>
         <S.Contact>
-          <IconContent content="Send Message" name={AppIcon.QuestionAnswerIcon} />
+          <IconContent
+            content="Send Message"
+            name={AppIcon.QuestionAnswerIcon}
+          />
           <IconContent content="Resume" name={AppIcon.FileIcon} />
         </S.Contact>
       </S.RightRow>
@@ -66,6 +72,8 @@ const DropDownButton = () => (
 const IconContent = ({ content, name }: Props) => (
   <S.Wrapper>
     <S.Icon name={name} />
-    <S.Paragraph margin="0 0 0 0.5rem" primary>{content}</S.Paragraph>
+    <S.Paragraph margin="0 0 0 0.5rem" primary>
+      {content}
+    </S.Paragraph>
   </S.Wrapper>
 );

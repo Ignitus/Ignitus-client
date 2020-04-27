@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import * as P from '../styles';
 import {
   AboutProps,
@@ -107,14 +107,14 @@ export const StudentProfile = () => (
   </P.ParentContainer>
 );
 
-const Heading = ({title, icon, fontStyle}: HeadingProps) => (
+const Heading = ({ title, icon, fontStyle }: HeadingProps) => (
   <P.TitleWrapper>
     <P.Icon name={icon} />
     <P.Title fontStyle={fontStyle}>{title}</P.Title>
   </P.TitleWrapper>
 );
 
-const About = ({content}: AboutProps) => (
+const About = ({ content }: AboutProps) => (
   <Fragment>
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
@@ -123,7 +123,7 @@ const About = ({content}: AboutProps) => (
   </Fragment>
 );
 
-const Education = ({university, address, batch}: EducationProps) => (
+const Education = ({ university, address, batch }: EducationProps) => (
   <Fragment>
     <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
     <P.Content>

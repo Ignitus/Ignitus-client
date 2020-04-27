@@ -1,8 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  BootStrapSection,
-  flexibleColDiv,
-} from '../../shared';
+import { BootStrapSection, flexibleColDiv } from '../../shared';
 
 import {
   SecondaryColor,
@@ -11,12 +8,12 @@ import {
   GreyLight,
 } from '../../ignitus-Atoms/colors';
 
-import {Paragraph as P} from '../../ignitus-Atoms/typography';
-import {Bold} from '../../ignitus-Atoms/fonts';
-import {DefaultIconInput} from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
-import {DefaultPasswordInput} from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
-import {Button as B} from '../../ignitus-Atoms/buttons';
-import {minimumWidthQuery} from '../../ignitus-Atoms/media';
+import { Paragraph as P } from '../../ignitus-Atoms/typography';
+import { Bold } from '../../ignitus-Atoms/fonts';
+import { DefaultIconInput } from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultIconInput';
+import { DefaultPasswordInput } from '../../ignitus-Atoms/ignitus-defaultIconInput/Components/defaultPasswordInput';
+import { Button as B } from '../../ignitus-Atoms/buttons';
+import { minimumWidthQuery } from '../../ignitus-Atoms/media';
 
 import {
   MessageProps,
