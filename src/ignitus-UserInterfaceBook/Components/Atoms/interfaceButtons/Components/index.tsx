@@ -350,35 +350,35 @@ export const interfaceButttons: React.FC = () => (
       size="medium"
       category="primary"
       name={AppIcon.MessageIcon}
-      content={'Primary Button'}
+      content='Primary Button'
     />
 
     <CustomDefaultButtonWithIcon
       size="medium"
       category="secondary"
       name={AppIcon.LocationIcon}
-      content={'Secondary Button'}
+      content='Secondary Button'
     />
 
     <CustomDefaultButtonWithIcon
       size="medium"
       category="grey"
       name={AppIcon.MessageIcon}
-      content={'Grey Button'}
+      content='Grey Button'
     />
 
     <CustomDefaultButtonWithIcon
       size="medium"
       category="orange"
       name={AppIcon.LocationIcon}
-      content={'Orange Button'}
+      content='Orange Button'
     />
 
     <CustomDefaultButtonWithIcon
       size="medium"
       category="white"
       name={AppIcon.MessageIcon}
-      content={'White Button'}
+      content='White Button'
     />
 
     <hr />
