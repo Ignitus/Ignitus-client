@@ -44,7 +44,9 @@ export const Button = styled(ParentButton)<ButtonProperties>`
   font-size: ${props => getFontSizes(props)};
   border-radius: ${props => getRadius(props)};
   border: ${props => getBorder(props)};
-
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   a {
     color: ${props => getColor(props)};
   }

@@ -2,7 +2,7 @@
 
 exports[`<DefaultButtonWithIcon /> should rendered 1`] = `
 <button
-  class="css-1x5n1x2"
+  class="css-r6j84o"
 >
   Content 
   <svg
