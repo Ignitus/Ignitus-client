@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultCheckbox /> should render 1`] = `
+Array [
+  <input
+    class="css-7sjvxi"
+    id="Label"
+    name="Label"
+    type="checkbox"
+    value="Value"
+  />,
+  <label
+    class="css-5yljri"
+    for="Label"
+  >
+    <p
+      class="css-nbwbpt"
+    >
+      Label
+    </p>
+  </label>,
+]
+`;
