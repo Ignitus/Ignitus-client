@@ -29,6 +29,7 @@ import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
+import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 
 const Container = styled.div`
   display: flex;
@@ -92,6 +93,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route
           path="/interface/defaultDropdown"
           component={interfaceDropDown}
+        />
+        <Route
+          path="/interface/secondaryDropdown"
+          component={interfaceSecondaryDropDown}
         />
         <Route
           path="/interface/defaultCheckbox"

@@ -48,6 +48,9 @@ export {
   DefaultSearchInput,
 } from './ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultSearchInput/Components';
 
+export {
+  SecondaryDropDown,
+} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components';
 /**
  * ignitus-Layout
  */
