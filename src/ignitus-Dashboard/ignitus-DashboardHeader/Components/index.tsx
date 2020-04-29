@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-import {Redirect} from 'react-router-dom';
-import {withErrorBoundary, AppIcon, useToggle} from '../../../ignitus-Shared';
+import { Redirect } from 'react-router-dom';
+import { withErrorBoundary, AppIcon, useToggle } from '../../../ignitus-Shared';
 import * as N from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
 
-const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
+const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
   const logout = () => {
     logUserOut();
     localStorage.clear();
@@ -13,7 +13,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
   };
 
   const [isExpanded, toogleIsExpanded] = useToggle(false);
-  let userInformation: string | null = localStorage.getItem('data');
+  const userInformation: string | null = localStorage.getItem('data');
   let userEmail: string = '';
 
   if (localStorage.getItem('data') && typeof userInformation === 'string') {
@@ -28,9 +28,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
 
       <N.NavigationLinks isExpanded={isExpanded}>
         <N.NavigationLinkItem>
-          <N.NavigationLink to="/#">
-            Home
-          </N.NavigationLink>
+          <N.NavigationLink to="/#">Home</N.NavigationLink>
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem>

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultDropdown /> should rendered 1`] = `
+Array [
+  <label
+    for="options"
+  >
+    options *
+  </label>,
+  .emotion-0 {
+  display: block;
+  margin-left: 0;
+  background-color: #ffffff;
+  border: 2px solid #000066;
+  border-radius: 12px;
+  font-size: 14px;
+  height: 2rem;
+  width: 18rem;
+  outline: none;
+}
+
+<select
+    class="emotion-0"
+    display="block"
+    id="options"
+  >
+    <option
+      value="option1"
+    >
+      option1
+    </option>
+    <option
+      value="option2"
+    >
+      option2
+    </option>
+    <option
+      value="option3"
+    >
+      option3
+    </option>
+    <option
+      value="option4"
+    >
+      option4
+    </option>
+  </select>,
+]
+`;

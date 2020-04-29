@@ -17,6 +17,8 @@
     "@emotion/styled": "^10.0.23",
     "@types/react": "16.9.23",
     "axios": "^0.18.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.3",
     "idb": "^4.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -33,10 +35,12 @@
     "start": "react-scripts start",
     "heroku-postbuild": "react-scripts build",
     "build": "npm run heroku-postbuild && sw-precache --config=sw-precache-config.js",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src --ext .ts,.tsx --cache",
+    "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "test:update": "npm test --updateSnapshot"
+    "test:update": "npm test --updateSnapshot",
+    "ci": "CI=true react-scripts test && npm run lint"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.8",
@@ -46,16 +50,23 @@
     "@types/react-redux": "^7.1.7",
     "@types/react-router-dom": "5.1.3",
     "@types/redux-logger": "3.0.7",
-    "enzyme-adapter-react-16": "^1.5.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "enzyme": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "2.29.0",
+    "@typescript-eslint/parser": "2.29.0",
     "codecov": "^3.3.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "3.4.4",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-typescript": "7.2.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
     "husky": "^1.0.0-rc.13",
     "istanbul": "^1.0.0-alpha.2",
     "jest-cli": "^24.7.1",
+    "jest-emotion": "10.0.32",
     "jest-localstorage-mock": "^2.2.0",
     "prettier": "1.17.0",
     "sw-precache": "^5.2.1"
@@ -67,11 +78,14 @@
     "coverageReporters": [
       "json",
       "html"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true react-scripts test"
+      "pre-commit": "npm run ci"
     }
   },
   "browserslist": [

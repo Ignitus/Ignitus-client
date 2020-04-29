@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 import {
   IgnitusBlue,
   White,
@@ -12,7 +13,6 @@ import {
   flexibleColDiv,
   flexibleRowDiv,
 } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {Link} from 'react-router-dom';
 
 export const Container = styled.div`
   padding: 4rem;

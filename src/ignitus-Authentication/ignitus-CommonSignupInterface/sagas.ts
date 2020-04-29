@@ -1,13 +1,9 @@
-
-
 import { effects } from 'redux-saga';
 import * as t from './actionTypes';
 import * as a from './actions';
 import * as api from '../../ignitus-Api';
 
-const {
-  call, put, takeLatest, all,
-} = effects;
+const { call, put, takeLatest, all } = effects;
 
 function* signUp(action) {
   const { email, password, userType } = action;
@@ -25,7 +21,5 @@ function* actionWatcher() {
 }
 
 export default function* sagas() {
-  yield all([
-    actionWatcher(),
-  ]);
+  yield all([actionWatcher()]);
 }

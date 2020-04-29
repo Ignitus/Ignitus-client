@@ -1,1 +1,1 @@
-export {default as DefaultIconInput} from './defaultIconInput';
+export { default as DefaultIconInput } from './defaultIconInput';

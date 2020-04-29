@@ -3,7 +3,7 @@ export const IgnitusBlue: string = '#000066';
 export const SecondaryColor: string = '#F9BF64';
 export const OtherBlue: string = '#7272F4';
 
-//Grey shades
+// Grey shades
 export const GreyText: string = '#2D2D2D';
 export const GreyBackground: string = '#F7F7F7';
 export const GreySecondaryText: string = '#4D4D4D';
@@ -30,4 +30,4 @@ export const FacebookIconColor: string = '#3b5998';
 export const Orange: string = '#ffa500';
 
 // Box shadow
-export const boxShadowColor: string = 'rgba(0, 0, 0, 0.05)'; 
+export const boxShadowColor: string = 'rgba(0, 0, 0, 0.05)';

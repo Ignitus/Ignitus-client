@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {Opportunity, Heading2} from '../../../../../ignitus-Shared';
-import {Interface} from '../../../../styles';
+import { Opportunity, Heading2 } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceOpportunity: React.FC = () => (
   <Interface>

@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import confetti from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
-import {Paragraph as P} from '../../../../ignitus-Shared';
-import {Button as B} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/styles';
+import confetti from '../../ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
 import {
+  Paragraph as P,
   MD,
   XS,
   Normal,
@@ -11,10 +10,11 @@ import {
   White,
   GreyOne,
   boxShadowColor,
-} from '../../../../ignitus-Shared';
-import { props } from './types';
-import { flexibleColDiv } from '../../shared';
+} from '../../..';
+import { Button as B } from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
 
+import { Props } from './types';
+import { flexibleColDiv } from '../../shared';
 
 export const Overlay = styled.div`
   background-image: url(${confetti});
@@ -35,7 +35,7 @@ export const BottomSection = styled(flexibleColDiv)`
   align-items: flex-end;
 `;
 
-export const Paragraph = styled(P)<props>`
+export const Paragraph = styled(P)<Props>`
   color: ${props => (props.secondary ? GreyOne : GreySecondaryText)};
   font-weight: ${props => (props.secondary ? Normal : Medium)};
   font-size: ${props => (props.secondary ? XS : MD)};

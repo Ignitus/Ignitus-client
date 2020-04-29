@@ -1,7 +1,7 @@
-import {authData} from '../../../ignitus-Shared';
+import { AuthData } from '../../../ignitus-Shared';
 
 export interface Props {
   signUpRequest: Function;
-  signUpData: authData;
+  signUpData: AuthData;
   clearPreviousSignUp: Function;
 }

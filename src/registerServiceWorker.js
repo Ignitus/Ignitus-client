@@ -47,20 +47,19 @@ function registerValidSW(swUrl) {
           'BMRATagxJMbZdcX-a-lwaMC93vL7-Kmr3trsTc_g0HJy6C6UGCRMSKfxzJUOjAsXt3W5Ov7t_a8J9y9qROw9mFE',
         ),
       });
-        try {
+      try {
         fetch('https://ignitusrestapi.herokuapp.com/subscribe', {
           method: 'POST',
           body: JSON.stringify(subscription),
           headers: {
             'content-type': 'application/json',
           },
-        }).then(function (response) {
-          console.log('success',response)
-        }).catch(function (err) {
-          console.log('failure',err)
-        })
-      } 
-      catch (error) {
+        }).then((response) => {
+          console.log('success', response);
+        }).catch((err) => {
+          console.log('failure', err);
+        });
+      } catch (error) {
         console.error('error', error);
       }
 

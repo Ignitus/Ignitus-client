@@ -1,4 +1,4 @@
-import React, {useState, FunctionComponent, useEffect} from 'react';
+import React, { useState, FunctionComponent, useEffect } from 'react';
 import {
   isEmpty,
   isEqual,
@@ -6,13 +6,17 @@ import {
   SignupStatePayload,
   withErrorBoundary,
 } from '../../../../ignitus-Shared';
-import {Props} from '../types';
+import { Props } from '../types';
 
-const Signup: FunctionComponent<Props> = ({signUpRequest, signUpData, clearPreviousSignUp}) => {
+const Signup: FunctionComponent<Props> = ({
+  signUpRequest,
+  signUpData,
+  clearPreviousSignUp,
+}) => {
   const [state, setState] = useState(SignupStatePayload);
-  const {email, password, confirmPassword} = state;
+  const { email, password, confirmPassword } = state;
 
-  useEffect(() => (() => clearPreviousSignUp()), []);
+  useEffect(() => () => clearPreviousSignUp(), []);
 
   const handleSubmit = e => {
     e.preventDefault();

@@ -12,7 +12,7 @@ import {
   GeneralIcons,
   IgnitusLogos,
 } from '../constants';
-import {Interface} from '../../../../styles';
+import { Interface } from '../../../../styles';
 
 export const interfaceIcons: React.FC = () => (
   <Interface>
@@ -42,5 +42,9 @@ export const interfaceIcons: React.FC = () => (
   </Interface>
 );
 
-const IconsMapper: Function = ({icons}: {icons: AppIcon[]}): JSX.Element[] =>
+type IconsT = {
+  icons: AppIcon[];
+};
+
+const IconsMapper: Function = ({ icons }: IconsT): JSX.Element[] =>
   icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);

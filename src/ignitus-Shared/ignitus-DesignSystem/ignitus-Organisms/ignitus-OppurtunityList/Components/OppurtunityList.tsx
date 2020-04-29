@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../styles';
-import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const Opportunity: React.FunctionComponent = () => (
   <S.OpportunityContainer>
@@ -19,7 +19,10 @@ export const Opportunity: React.FunctionComponent = () => (
         </S.OpportunityDateTitle>
 
         <S.OpportunitySubTitle>
-          Full Time | Munich, Germany <span role="img" aria-label="flag">🇩🇪</span>
+          Full Time | Munich, Germany{' '}
+          <span role="img" aria-label="flag">
+            🇩🇪
+          </span>
         </S.OpportunitySubTitle>
         <S.OpportunityDescriptionBtnContainer>
           <S.OpportunityDescription>

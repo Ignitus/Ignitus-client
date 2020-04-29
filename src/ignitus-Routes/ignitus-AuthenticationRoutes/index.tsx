@@ -1,12 +1,12 @@
 /* eslint-disable import/extensions */
-import React, {Suspense, Fragment, lazy} from 'react';
-import {Switch, Route} from 'react-router-dom';
+import React, { Suspense, Fragment, lazy } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import {InterestFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import {EmailFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import {WelcomeFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import {EmailConfirmationFlow} from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
-import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
+import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
+import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
+import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
   CommonLoginUI,

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import {IgnitusBlue, White, Red, GreyOne} from '../colors';
-import {SM} from '../fonts';
+import { IgnitusBlue, White, Red, GreyOne } from '../colors';
+import { SM } from '../fonts';
 import Icon from '../../../ignitus-Utilities/Components/icon';
-import {flexibleRowDiv} from '../../shared';
+import { flexibleRowDiv } from '../../shared';
 
 export const InputContainer = styled(flexibleRowDiv)`
   border: 1px solid ${IgnitusBlue};

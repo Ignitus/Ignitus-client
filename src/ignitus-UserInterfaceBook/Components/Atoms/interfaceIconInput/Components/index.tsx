@@ -10,7 +10,7 @@ import {
   White,
 } from '../../../../../ignitus-Shared';
 
-import {Interface} from '../../../../styles';
+import { Interface } from '../../../../styles';
 
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);

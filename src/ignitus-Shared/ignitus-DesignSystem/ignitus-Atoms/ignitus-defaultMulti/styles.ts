@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import {flexibleRowDiv} from '../../shared';
+import { flexibleRowDiv } from '../../shared';
 import * as C from '../colors';
-import {SM} from '../fonts';
-import {default as I} from '../../../ignitus-Utilities/Components/icon';
-import {Button as Btn} from '../buttons';
+import { SM } from '../fonts';
+import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { Button as Btn } from '../buttons';
 
 export const InputContainer = styled.div`
   display: inline-flex;
@@ -33,7 +33,7 @@ export const Input = styled.textarea<{ initialHeight?: string }>`
   outline: none;
   overflow: hidden;
   font-size: ${SM};
-  height: ${ props => props.initialHeight ? props.initialHeight : 'auto' };
+  height: ${props => (props.initialHeight ? props.initialHeight : 'auto')};
   resize: none;
   &::placeholder {
     color: ${C.GreyOne};

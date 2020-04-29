@@ -1,9 +1,9 @@
-import React, {FunctionComponent} from 'react';
-import {Link} from 'react-router-dom';
+import React, { FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
 
-import {isEmpty} from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
-import {FormProps} from '../../../types';
-import {AppIcon} from '../../../../../../types/iconsTypes/iconEnums';
+import { isEmpty } from '../../../../../../ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { FormProps } from '../../../types';
+import { AppIcon } from '../../../../../../types/iconsTypes/iconEnums';
 
 import * as A from '../../../styles';
 
@@ -17,7 +17,7 @@ export const Form: FunctionComponent<FormProps> = ({
   authenticationData,
   handleSubmit,
 }) => {
-  const {message, success} = authenticationData;
+  const { message, success } = authenticationData;
   return (
     <A.RightRow>
       <A.LeftColumnOne>
@@ -109,7 +109,8 @@ export const Form: FunctionComponent<FormProps> = ({
             onClick={e => handleSubmit(e)}
           >
             {' '}
-            {authenticationType} as {role}{' '}
+            {authenticationType} as
+            {role}{' '}
           </A.Button>
         </A.ButtonContainer>
         <A.Paragraph>

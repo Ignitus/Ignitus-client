@@ -23,7 +23,7 @@ describe('Testimonial Selectors', () => {
         author: 'John Smith',
         source: 'https://example.com',
       }];
-      const testimonialState = data
+      const testimonialState = data;
       const mockedState = {
         testimonialReducer: testimonialState,
       };

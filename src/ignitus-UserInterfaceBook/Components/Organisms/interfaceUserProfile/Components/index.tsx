@@ -1,6 +1,6 @@
 import React from 'react';
-import {Heading2, UserProfileCard} from '../../../../../ignitus-Shared';
-import {Interface} from '../../../../styles';
+import { Heading2, UserProfileCard } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceUserProfile: React.FC = () => (
   <Interface>
