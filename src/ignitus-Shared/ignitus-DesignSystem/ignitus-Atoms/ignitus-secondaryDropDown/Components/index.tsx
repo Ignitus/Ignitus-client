@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from '../styles';
 import * as H from '../../typography';
-import { Details } from '../constants';
+import { DataType } from '../types';
 
-export const SecondaryDropDown: React.FC = () => {
+export const SecondaryDropDown = ({ data }) => {
   const [showOptions, setShowOptions] = React.useState(false);
   const [searchTerm, setSearchTerm] = React.useState('');
   const [searchResults, setSearchResults] = React.useState([] as any);
@@ -12,14 +12,12 @@ export const SecondaryDropDown: React.FC = () => {
     setShowOptions(true);
   };
   React.useEffect(() => {
-    const results =
-      [] ||
-      Details.filter(person =>
-        person.name
-          .replace(/\s+/g, '')
-          .toLowerCase()
-          .includes(searchTerm.replace(/\s+/g, '').toLowerCase()),
-      );
+    const results: [] | DataType = data.filter(person =>
+      person.name
+        .replace(/\s+/g, '')
+        .toLowerCase()
+        .includes(searchTerm.replace(/\s+/g, '').toLowerCase()),
+    );
     setSearchResults(results);
     if (searchTerm) {
       setShowOptions(true);
@@ -40,11 +38,11 @@ export const SecondaryDropDown: React.FC = () => {
       </S.SearchBarWrapper>
       {showOptions && (
         <S.OptionsContainer>
-          {searchResults.map(person => (
-            <S.CardWrapper key={`${person.name}`}>
-              <S.Avatar src={person.avatarLink} />
+          {searchResults.map(({ name, avatar }) => (
+            <S.CardWrapper key={`${name}`}>
+              <S.Avatar src={avatar} />
               <S.NameWrapper>
-                <H.Heading5>{person.name}</H.Heading5>
+                <H.Heading5>{name}</H.Heading5>
               </S.NameWrapper>
             </S.CardWrapper>
           ))}

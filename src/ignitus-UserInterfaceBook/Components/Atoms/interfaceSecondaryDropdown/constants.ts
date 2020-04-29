@@ -1,31 +1,33 @@
-export const Details = [
+import { DataType } from './types';
+
+export const data: DataType[] = [
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Harpar Hopman',
   },
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Hara Hopman',
   },
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Harbour Center',
   },
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Harvard University',
   },
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Henry Harbour',
   },
   {
-    avatarLink:
+    avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     name: 'Hara Jackson',
   },

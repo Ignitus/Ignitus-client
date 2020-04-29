@@ -3,16 +3,13 @@ import * as C from '../colors';
 import * as F from '../fonts';
 
 export const ParentContainer = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  width: 20rem;
-  margin: 2rem;
-  max-height: 20rem;
 `;
 
 export const SearchBarWrapper = styled.div`
   width: 20rem;
-  height: 3rem;
+  height: 2rem;
 `;
 
 export const SearchBar = styled.input`
@@ -20,7 +17,7 @@ export const SearchBar = styled.input`
   border: 0.1rem solid ${C.IgnitusBlue};
   border-radius: 0.5rem;
   width: 20rem;
-  height: 2.5rem;
+  height: 2rem;
   padding-left: 0.25rem;
   color: ${C.IgnitusBlue};
   font-weight: ${F.SemiBold};
