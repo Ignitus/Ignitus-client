@@ -8,7 +8,6 @@ import * as I from './styles';
 export const DefaultPasswordInput = ({
   placeholder,
   handleChange,
-  state,
   ...rest
 }: DefaultPasswordInputProperties) => {
   const [value, setValue] = useState<string>('');
@@ -36,7 +35,7 @@ export const DefaultPasswordInput = ({
         <I.Input
           type={type}
           placeholder={placeholder}
-          value={state}
+          value={value}
           onChange={e => {
             setValue(e.target.value);
             handleChange(value);
