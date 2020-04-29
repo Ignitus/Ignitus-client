@@ -86,10 +86,10 @@ export const allEdges: Edges[] = [
             title: 'Default',
             route: '/interface/defaultDropdown',
           },
-          // {
-          //   title: 'Secondary',
-          //   route: '/interface/secondaryDropdown',
-          // },
+          {
+            title: 'Secondary',
+            route: '/interface/secondaryDropdown',
+          },
         ],
       },
     ],

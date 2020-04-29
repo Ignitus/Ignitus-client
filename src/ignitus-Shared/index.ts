@@ -50,7 +50,7 @@ export {
 
 export {
   SecondaryDropDown,
-} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components/secondaryDropDown';
+} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components';
 /**
  * ignitus-Layout
  */

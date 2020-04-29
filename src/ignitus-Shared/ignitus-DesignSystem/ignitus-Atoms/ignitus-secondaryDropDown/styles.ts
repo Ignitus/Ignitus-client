@@ -24,7 +24,7 @@ export const SearchBar = styled.input`
   padding-left: 0.25rem;
   color: ${C.IgnitusBlue};
   font-weight: ${F.SemiBold};
-  :: placeholder {
+  &::placeholder {
     color: ${C.IgnitusBlue};
     font-weight: ${F.SemiBold};
   }
