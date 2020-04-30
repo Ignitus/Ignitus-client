@@ -76,6 +76,7 @@ export const Form: FunctionComponent<FormProps> = ({
 
           <A.PasswordInput
             placeholder="Password"
+            state={state.password}
             handleChange={password => {
               setState({
                 ...state,

@@ -11,5 +11,6 @@ export type DefaultIconInputProperties = {
 
 export type DefaultPasswordInputProperties = {
   placeholder: string;
+  state: string;
   handleChange: (value: string) => void;
 };

@@ -8,6 +8,7 @@ import { EyeVisibleOnIcon } from '../../../../ignitus-Assets/ignitus-Icons/eyeVi
 
 const props = {
   placeholder: 'Placeholder',
+  state: 'state',
   handleChange: jest.fn(),
 };
 
@@ -32,6 +33,10 @@ describe('<DefaultPasswordInput />', () => {
 
   it('should render input type password', () => {
     expect(wrapper.find(inputPassword).length).toBe(1);
+  });
+
+  it('should render input with value of state', () => {
+    expect(wrapper.find(inputPassword).props().value).toBe(props.state);
   });
 
   it('should toggle EyeVisible icons on Click', () => {
