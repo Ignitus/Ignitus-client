@@ -2,9 +2,14 @@ import React from 'react';
 import { InputType } from '../types';
 import { Input } from '../styles';
 
-const DefaultInput = ({ placeholder, type, name }: InputType) => (
+const DefaultInput = ({ placeholder, type, name, handleChange }: InputType) => (
   <React.Fragment>
-    <Input placeholder={placeholder} type={type} name={name} />
+    <Input
+      placeholder={placeholder}
+      type={type}
+      name={name}
+      onChange={e => handleChange && handleChange(e.target.value)}
+    />
   </React.Fragment>
 );
 

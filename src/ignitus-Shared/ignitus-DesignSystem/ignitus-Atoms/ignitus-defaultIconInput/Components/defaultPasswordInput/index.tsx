@@ -7,8 +7,8 @@ import * as I from './styles';
 
 export const DefaultPasswordInput = ({
   placeholder,
-  handleChange,
   state,
+  handleChange,
   ...rest
 }: DefaultPasswordInputProperties) => {
   const [value, setValue] = useState<string>('');
