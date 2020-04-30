@@ -45,7 +45,7 @@ export const CareersPage = () => (
       </S.Wrapper>
       <S.FlexRow>
         {Benefits.map((x: any) => (
-          <BenefitElement
+          <BenefitElement key = {x.content}
             content={x.content}
             imgLink={x.imgLink}
           />
@@ -57,7 +57,7 @@ export const CareersPage = () => (
       <S.Wrapper>
         <S.Heading>Open Jobs</S.Heading > <br/>
         {Openings.map((x: any)=>(
-          <S.Wrapper>
+          <S.Wrapper key={x.content}>
           <Heading4 >{x.content}</Heading4 >
           </S.Wrapper>
         ))};
@@ -70,8 +70,8 @@ export const CareersPage = () => (
           </S.Wrapper>
           <br/>
           {Design.map((x:any)=> (
-            <S.Wrapper align="left">
-              <Heading4  key={x.content}>
+            <S.Wrapper align="left" key={x.content}>
+              <Heading4  >
                 {x.content} <br/>
               </Heading4 >
             </S.Wrapper>
@@ -92,8 +92,8 @@ export const CareersPage = () => (
           </S.Wrapper>
           <br/>
           {Software.map((x:any)=> (
-            <S.Wrapper align="left">
-              <Heading4  key={x.content}>
+            <S.Wrapper align="left" key={x.content}>
+              <Heading4  >
                 {x.content} <br/>
               </Heading4 >
             </S.Wrapper>
@@ -113,8 +113,8 @@ export const CareersPage = () => (
             </S.Wrapper>
             <br/>
             {Marketing.map((x:any)=> (
-              <S.Wrapper align="left">
-                <Heading4  key={x.content}>
+              <S.Wrapper align="left" key={x.content}>
+                <Heading4  >
                   {x.content} <br/>
                 </Heading4 >
               </S.Wrapper>
@@ -134,8 +134,8 @@ export const CareersPage = () => (
             </S.Wrapper>
             <br/>
             {Others.map((x:any)=> (
-              <S.Wrapper align="left">
-                <Heading4  key={x.content}>
+              <S.Wrapper align="left" key={x.content}>
+                <Heading4  >
                   {x.content} <br/>
                 </Heading4 >
               </S.Wrapper>
@@ -146,8 +146,8 @@ export const CareersPage = () => (
             </S.Wrapper>
             <br/>
             {Operations.map((x:any)=> (
-              <S.Wrapper align="left">
-                <Heading4  key={x.content}>
+              <S.Wrapper align="left" key={x.content}>
+                <Heading4  >
                   {x.content} <br/>
                 </Heading4 >
               </S.Wrapper>
@@ -169,11 +169,13 @@ const WhySection = ({title,}: Basictypes) => (
     <S.Wrapper>
       <S.Heading >{title}</S.Heading >
     </S.Wrapper>
-    <S.Wrapper>
+
       {WhyContent.map((x: any) => (
+        <S.Wrapper  key={x.content}>
         <S.Paragraph>{x.content}<br/><br/></S.Paragraph>
+        </S.Wrapper>
       ))};
-    </S.Wrapper>
+
   </S.Section>
 );
 
@@ -190,7 +192,7 @@ const BuildingSection = ({title,imgLink}: Basictypes) => (
             <S.Heading >{title}</S.Heading >
           </S.Wrapper>
         {BuildingContent.map((x: any)=> (
-          <S.Wrapper align="left" >
+          <S.Wrapper align="left" key={x.content} >
             <S.Paragraph>{x.content}<br/><br/></S.Paragraph>
           </S.Wrapper>
         ))};
