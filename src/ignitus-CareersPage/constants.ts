@@ -41,10 +41,10 @@ export const Operations: Basictypes[] = [
 ];
 
 export const Benefits: Basictypes[] = [
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
-  {imgLink: benefits, content: 'Lorem ipsum dolor sit amet, consectetur' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
+  {imgLink: benefits, content: 'Ignitus helps students and professionals get' },
 ];
