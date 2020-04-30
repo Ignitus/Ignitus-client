@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultTag1 /> should render 1`] = `
+.emotion-0 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 2rem;
+  line-height: 1rem;
+  padding: 1rem 2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+<span
+  class="emotion-0"
+  color="#000"
+>
+  Label
+</span>
+`;
+
+exports[`<DefaultTag2 /> should render 1`] = `
+.emotion-1 {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 2rem;
+  line-height: 1rem;
+  padding: 1rem 2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  width: 1.4rem;
+  fill: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0.03rem;
+}
+
+<span
+  class="emotion-1"
+  color="#000"
+>
+  <svg
+    aria-label="CrossIcon"
+    class="emotion-0"
+    color="#000"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      CrossIcon
+    </title>
+    <path
+      d="M0 0h24v24H0V0z"
+      fill="none"
+    />
+    <path
+      d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+    />
+  </svg>
+  Label
+</span>
+`;
