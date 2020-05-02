@@ -20,7 +20,7 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
       </I.PrimaryText>
       {localStorage.getItem('authenticated')? 
         <a href = "https://app.slack.com/client/TRN1H1V43/CUCLB9VJL" target = "_blank" rel="noopener noreferrer">
-         <I.Button category="primary" size="large">
+         <I.Button category="secondary" size="large">
          JOIN US
          </I.Button>
         </a> :  
