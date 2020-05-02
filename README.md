@@ -25,7 +25,6 @@
 - [MongoDB](https://www.mongodb.com/) - The database for modern applications.
 - [Redis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
 
-## Contributing. 
 
 👋 Please refer our [doumentation](https://ignitus.gitbook.io/ignitus/) to get insights on contributing & conventions guidelines. 
 
