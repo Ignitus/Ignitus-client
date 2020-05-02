@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { White } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { White } from '../../ignitus-Shared';
 
 export const Container = styled.div`
-  background: ${White}
+  background: ${White};
 `;

@@ -1,13 +1,22 @@
+import styled from '@emotion/styled';
+
 import React from 'react';
 import * as B from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
-import {DefaultButtonWithIcon} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
-import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {
+  AppIcon,
+  DefaultButtonWithIcon,
   Heading2,
   Heading6,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {Interface} from '../../../../styles';
+} from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
+
+const CustomDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
+  flex-direction: row-reverse;
+  svg {
+    margin-right: 0.2rem;
+  }
+`;
 
 export const interfaceButttons: React.FC = () => (
   <Interface>
@@ -54,23 +63,9 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIcon
-      size="large"
-      category="primary"
-      name={AppIcon.MessageIcon}
-      content={'Message'}
-    />
-
-    <DefaultButtonWithIcon
-      size="large"
-      category="primary"
-      name={AppIcon.LocationIcon}
-      content={'Message'}
-    />
-
     <hr />
     <br />
-    <Heading6> Medium Size Buttons </Heading6>
+    <Heading6> Medium </Heading6>
     <B.Button size="medium" category="primary">
       {' '}
       Primary Button{' '}
@@ -112,23 +107,9 @@ export const interfaceButttons: React.FC = () => (
       Yellow Button{' '}
     </B.Button>
 
-    <DefaultButtonWithIcon
-      size="medium"
-      category="primary"
-      name={AppIcon.MessageIcon}
-      content={'Message'}
-    />
-
-    <DefaultButtonWithIcon
-      size="medium"
-      category="primary"
-      name={AppIcon.LocationIcon}
-      content={'Message'}
-    />
-
     <hr />
     <br />
-    <Heading6> Small Size Buttons </Heading6>
+    <Heading6> Small </Heading6>
     <B.Button size="small" category="primary">
       {' '}
       Primary Button{' '}
@@ -169,20 +150,6 @@ export const interfaceButttons: React.FC = () => (
       {' '}
       Yellow Button{' '}
     </B.Button>
-
-    <DefaultButtonWithIcon
-      size="small"
-      category="primary"
-      name={AppIcon.MessageIcon}
-      content={'Message'}
-    />
-
-    <DefaultButtonWithIcon
-      size="small"
-      category="primary"
-      name={AppIcon.LocationIcon}
-      content={'Message'}
-    />
 
     <hr />
     <br />
@@ -229,7 +196,7 @@ export const interfaceButttons: React.FC = () => (
     </B.StyledButtonTopLeft>
     <hr />
     <br />
-    <Heading6> Medium Size Buttons </Heading6>
+    <Heading6> Medium </Heading6>
 
     <B.ButtonBottomRight size="medium" category="primary">
       {' '}
@@ -252,7 +219,7 @@ export const interfaceButttons: React.FC = () => (
     </B.ButtonBottomRight>
     <hr />
     <br />
-    <Heading6> Small Size Buttons </Heading6>
+    <Heading6> Small </Heading6>
 
     <B.ButtonBottomRight size="small" category="primary">
       {' '}
@@ -306,7 +273,7 @@ export const interfaceButttons: React.FC = () => (
     </B.RoundedButton>
     <hr />
     <br />
-    <Heading6> Medium Size Buttons </Heading6>
+    <Heading6> Medium </Heading6>
 
     <B.RoundedButton size="medium" category="primary">
       {' '}
@@ -335,8 +302,117 @@ export const interfaceButttons: React.FC = () => (
 
     <hr />
     <br />
+
+    <Heading6> Small </Heading6>
+
+    <B.RoundedButton size="small" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="small" category="primary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="small" category="secondary">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="small" category="grey">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <B.RoundedButton size="small" category="orange">
+      {' '}
+      Rounded Button{' '}
+    </B.RoundedButton>
+
+    <hr />
+    <br />
+    <Heading2> Button with Icons </Heading2>
+
+    <CustomDefaultButtonWithIcon
+      size="large"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content="Primary Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="large"
+      category="secondary"
+      name={AppIcon.LocationIcon}
+      content="Secondary Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="large"
+      category="grey"
+      name={AppIcon.MessageIcon}
+      content="Grey Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="large"
+      category="orange"
+      name={AppIcon.LocationIcon}
+      content="Orange Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="large"
+      category="white"
+      name={AppIcon.MessageIcon}
+      content="White Button"
+    />
+
+    <hr />
+    <br />
+
+    <Heading6> Small </Heading6>
+
+    <CustomDefaultButtonWithIcon
+      size="small"
+      category="primary"
+      name={AppIcon.MessageIcon}
+      content="Primary Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="small"
+      category="secondary"
+      name={AppIcon.LocationIcon}
+      content="Secondary Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="small"
+      category="grey"
+      name={AppIcon.MessageIcon}
+      content="Grey Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="small"
+      category="orange"
+      name={AppIcon.LocationIcon}
+      content="Orange Button"
+    />
+
+    <CustomDefaultButtonWithIcon
+      size="small"
+      category="white"
+      name={AppIcon.MessageIcon}
+      content="White Button"
+    />
+
+    <br />
+    <br />
+    <br />
     <Heading6> Social Buttons </Heading6>
-    <Heading6> Button with Icons </Heading6>
     <Heading6> Floating Action Button </Heading6>
     <Heading6> Icon with text link</Heading6>
     <Heading6> Icon Button</Heading6>

@@ -1,2 +1,2 @@
 /* eslint-disable import/prefer-default-export */
-export {default as InterestFlow} from './InterestFlow';
+export { default as InterestFlow } from './InterestFlow';

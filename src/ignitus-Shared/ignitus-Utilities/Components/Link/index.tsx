@@ -8,7 +8,7 @@ interface Props {
   rel?: string;
   children: React.ReactNode;
   [rest: string]: any;
-};
+}
 
 export const Link: React.FC<Props> = ({
   href = '#',
@@ -16,14 +16,13 @@ export const Link: React.FC<Props> = ({
   rel,
   children,
   ...rest
-}) => {
-  return (
-    <a
-      href={href}
-      target={target}
-      rel={secureRel({ href, target, rel })}
-      {...rest}>
-      {children}
-    </a>
-  );
-};
+}) => (
+  <a
+    href={href}
+    target={target}
+    rel={secureRel({ href, target, rel })}
+    {...rest}
+  >
+    {children}
+  </a>
+);

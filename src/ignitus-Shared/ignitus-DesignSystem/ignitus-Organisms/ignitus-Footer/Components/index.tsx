@@ -1,12 +1,12 @@
 /* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-import {Props} from '../types';
-import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
+import { Props } from '../types';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 import * as S from '../styles';
 

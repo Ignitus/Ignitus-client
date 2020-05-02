@@ -1,1 +1,1 @@
-export {default} from './googlePlusIcon';
+export { default } from './googlePlusIcon';

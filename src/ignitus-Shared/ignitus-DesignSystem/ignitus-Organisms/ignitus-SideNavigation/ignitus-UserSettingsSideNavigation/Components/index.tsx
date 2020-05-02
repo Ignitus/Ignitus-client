@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../style';
-import {Paragraph} from '../../../../ignitus-Atoms/typography';
+import { Paragraph } from '../../../../ignitus-Atoms/typography';
 import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
 
 type props = {
@@ -13,12 +13,12 @@ type props = {
 export default function UserSettingsSideNavigation() {
   return (
     <S.SettingsContainer>
-      <Layer text="General" marginTop={true} />
+      <Layer text="General" marginTop />
       <Layer text="Password" />
       <Layer text="Messaging" />
       <Layer text="Notification" />
       <Layer text="Blocked Users" />
-      <Layer text="Privacy" border={false} marginBottom={true} />
+      <Layer text="Privacy" border={false} marginBottom />
     </S.SettingsContainer>
   );
 }

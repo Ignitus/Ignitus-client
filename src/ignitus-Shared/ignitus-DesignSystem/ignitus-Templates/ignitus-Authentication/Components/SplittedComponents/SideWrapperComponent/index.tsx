@@ -1,7 +1,7 @@
-import React, {FunctionComponent} from 'react';
-import {Link} from 'react-router-dom';
+import React, { FunctionComponent } from 'react';
+import { Link } from 'react-router-dom';
 import * as t from '../../../constants';
-import {SideWrapperProps} from '../../../types';
+import { SideWrapperProps } from '../../../types';
 import * as A from '../../../styles';
 
 export const SideWrapper: FunctionComponent<SideWrapperProps> = ({

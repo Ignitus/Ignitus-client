@@ -9,8 +9,8 @@ import {
   Heading6,
   Paragraph,
   TextLink,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {Interface} from '../../../../styles';
+} from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceTypography: React.FC = () => (
   <Interface>

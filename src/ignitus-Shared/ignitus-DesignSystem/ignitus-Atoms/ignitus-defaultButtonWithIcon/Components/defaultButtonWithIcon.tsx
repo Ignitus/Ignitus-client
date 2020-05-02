@@ -1,7 +1,7 @@
 import React from 'react';
-import {Button} from '../../buttons';
-import {StyledIcon} from '../styles';
-import {BtnProps} from '../types';
+import { Button } from '../../buttons';
+import { StyledIcon } from '../styles';
+import { BtnProps } from '../types';
 
 const DefaultButtonWithIcon = ({
   size,

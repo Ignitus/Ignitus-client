@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { DefaultMultiMediaInput } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components';
+import {
+  DefaultMultiMediaInput,
+  Heading2,
+} from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
-import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const interfaceMultiMediaInput = () => (
   <Interface>
@@ -13,7 +15,7 @@ export const interfaceMultiMediaInput = () => (
       placeholder={
         'Share an article, poll, document, video, photo or an idea.\nUse @ to mention someone \n\n'
       }
-      name={'name'}
+      name="name"
     />
   </Interface>
 );

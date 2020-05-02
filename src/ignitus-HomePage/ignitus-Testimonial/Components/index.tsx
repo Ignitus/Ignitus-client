@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events, no-underscore-dangle */
+import React, { useState, useEffect } from 'react';
 import * as T from '../style';
 
-import {Avatars} from '../constants';
-import {Props} from '../types';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { Avatars } from '../constants';
+import { Props } from '../types';
+import { withErrorBoundary } from '../../../ignitus-Shared';
 
 export const Testimonial: React.FC<Props> = withErrorBoundary(
-  ({testimonialData, getTestimonialData}) => {
+  ({ testimonialData, getTestimonialData }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -23,7 +25,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
                 <p>{testimonialData[currentIndex].description}</p>
               </T.Text>
               <T.Avatar>
-                <img src={Avatars[currentIndex]} alt={''} />
+                <img src={Avatars[currentIndex]} alt="" />
               </T.Avatar>
               <T.Name>{testimonialData[currentIndex].author}</T.Name>
               <T.Designation>

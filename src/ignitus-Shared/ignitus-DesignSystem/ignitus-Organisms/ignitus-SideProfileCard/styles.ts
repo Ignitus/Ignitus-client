@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-import {default as I} from '../../../ignitus-Utilities/Components/icon';
-import {flexibleColDiv} from '../../shared';
-import {Paragraph, Heading3, Heading6} from '../../ignitus-Atoms/typography';
+import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { flexibleColDiv } from '../../shared';
+import { Paragraph, Heading3, Heading6 } from '../../ignitus-Atoms/typography';
 
 import * as C from '../../ignitus-Atoms/colors';
 

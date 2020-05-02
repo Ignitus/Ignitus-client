@@ -7,18 +7,20 @@ import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-
 import {
   Paragraph,
   Heading2,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+  RoundedButton,
+  withErrorBoundary,
+} from '../../../../ignitus-Shared';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-
 const EmailConfirmationFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png"
+        alt="progress-bar"
+      />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <C.TopMiddleSection>
         <Heading2>Your email has been confirmed.</Heading2>

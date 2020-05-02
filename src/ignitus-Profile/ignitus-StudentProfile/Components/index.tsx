@@ -1,21 +1,19 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import * as P from '../styles';
-import {AppIcon} from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import {
-  ButtonBottomRight,
-  RoundedButton,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   AboutProps,
   EducationProps,
   HeadingProps,
   RecommendationsProps,
 } from '../types';
-import {Paragraph} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
-  GreySecondaryText,
+  AppIcon,
   Black,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+  ButtonBottomRight,
+  GreySecondaryText,
+  Paragraph,
+  RoundedButton,
+} from '../../../ignitus-Shared';
 
 export const StudentProfile = () => (
   <P.ParentContainer>
@@ -109,14 +107,14 @@ export const StudentProfile = () => (
   </P.ParentContainer>
 );
 
-const Heading = ({title, icon, fontStyle}: HeadingProps) => (
+const Heading = ({ title, icon, fontStyle }: HeadingProps) => (
   <P.TitleWrapper>
     <P.Icon name={icon} />
     <P.Title fontStyle={fontStyle}>{title}</P.Title>
   </P.TitleWrapper>
 );
 
-const About = ({content}: AboutProps) => (
+const About = ({ content }: AboutProps) => (
   <Fragment>
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
@@ -125,7 +123,7 @@ const About = ({content}: AboutProps) => (
   </Fragment>
 );
 
-const Education = ({university, address, batch}: EducationProps) => (
+const Education = ({ university, address, batch }: EducationProps) => (
   <Fragment>
     <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
     <P.Content>

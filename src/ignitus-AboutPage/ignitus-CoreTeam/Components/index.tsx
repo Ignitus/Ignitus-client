@@ -3,15 +3,13 @@
 import React from 'react';
 
 import { Data } from '../constants';
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary, AppIcon, Paragraph } from '../../../ignitus-Shared';
 import { Team, TeamItemProps } from '../types';
-import { AppIcon } from '../../../ignitus-Shared/types/iconsTypes/iconEnums';
-import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
-const PureCoreTeam = ({team}: any) => (
+const PureCoreTeam = ({ team }: any) => (
   <S.PureCoreTeam>
     <T.Title> Our Team </T.Title>
     <S.TeamContainer>{team}</S.TeamContainer>
@@ -19,7 +17,7 @@ const PureCoreTeam = ({team}: any) => (
 );
 
 const TeamItem = ({
-  item: {title, img, description, linkedin, angellist},
+  item: { title, img, description, linkedin, angellist },
 }: TeamItemProps) => {
   const [value, setValue] = React.useState(false);
   return (
@@ -45,9 +43,8 @@ const TeamItem = ({
 };
 
 export const CoreTeam = withErrorBoundary(() => {
-  const team = Data.map((item: Team) => {
-    return <TeamItem key={item.title} item={item} />;
-  });
+  const team = Data.map((item: Team) => (
+    <TeamItem key={item.title} item={item} />
+  ));
   return <PureCoreTeam team={team} />;
 });
-

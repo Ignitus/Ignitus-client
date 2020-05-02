@@ -1,14 +1,12 @@
 import styled from '@emotion/styled';
-import {Paragraph as P} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import {
+  Button as B,
   XL,
   Normal,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import {
+  Paragraph as P,
   White,
   IgnitusBlue,
-} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import {Button as B} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+} from '../../ignitus-Shared';
 import { flexibleColDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const Container = styled(flexibleColDiv)`

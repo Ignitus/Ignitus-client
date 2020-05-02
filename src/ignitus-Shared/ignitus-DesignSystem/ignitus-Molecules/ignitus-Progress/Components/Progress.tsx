@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ProgressProps} from '../types';
+import { ProgressProps } from '../types';
 import { Container, Circle, Line } from '../styles';
 
 export const Progress: React.FC<ProgressProps> = ({
@@ -24,16 +24,27 @@ export const Progress: React.FC<ProgressProps> = ({
     transition: lineTransitionDuration,
   };
 
+  const CircleType = index =>
+    index < current ? (
+      <Circle fill {...circleProps} />
+    ) : (
+      <Circle {...circleProps} />
+    );
+
   return (
     <Container {...rest}>
       {new Array(steps).fill(0).map((val, index) => (
-        <React.Fragment key={val + index}>
-          {index === current - 1
-            ? <Circle current {...circleProps} />
-            : (index < current ? <Circle fill {...circleProps} /> : <Circle {...circleProps} />)}
-          {index !== steps - 1 && <Line fill={index < current - 1} {...lineProps} />}
+        <React.Fragment key={Math.floor(Math.random() * 100)}>
+          {index === current - 1 ? (
+            <Circle current {...circleProps} />
+          ) : (
+            CircleType(index)
+          )}
+          {index !== steps - 1 && (
+            <Line fill={index < current - 1} {...lineProps} />
+          )}
         </React.Fragment>
       ))}
     </Container>
   );
-}
+};

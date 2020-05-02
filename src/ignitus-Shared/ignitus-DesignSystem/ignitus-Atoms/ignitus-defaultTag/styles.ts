@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Icon from '../../../ignitus-Utilities/Components/icon';
-import {StyledTagProps} from './types';
+import { StyledTagProps } from './types';
 
 export const StyledIcon = styled(Icon)`
   width: 1.4rem;

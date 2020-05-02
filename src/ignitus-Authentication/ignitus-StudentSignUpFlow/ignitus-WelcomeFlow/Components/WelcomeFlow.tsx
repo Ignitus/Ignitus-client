@@ -1,19 +1,22 @@
 /* eslint-disable import/extensions */
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import { RoundedButton } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 import {
   Paragraph,
   Heading1,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { DefaultDropdown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultDropdown/Components';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+  RoundedButton,
+  DefaultDropdown,
+  withErrorBoundary,
+} from '../../../../ignitus-Shared';
 import * as T from '../Styles/style';
 
 const WelcomeFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressOne.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressOne.png"
+        alt="progress-bar"
+      />
       <Heading1>Welcome, Sophia</Heading1>
       <Paragraph>
         Let’s start with your profile. This will get you successful on Ignitus
@@ -34,15 +37,26 @@ const WelcomeFlow: FunctionComponent = () => (
           </T.DefaultDropdownContainer>
           <T.DefaultDropdownContainer>
             {' '}
-            <DefaultDropdown label="Province" options={['Bavaria', 'Berlin']} display="block" />
+            <DefaultDropdown
+              label="Province"
+              options={['Bavaria', 'Berlin']}
+              display="block"
+            />
           </T.DefaultDropdownContainer>
           <T.DefaultDropdownContainer>
-            <DefaultDropdown label="Time Zone" options={['CEST', 'IST']} display="block" />
+            <DefaultDropdown
+              label="Time Zone"
+              options={['CEST', 'IST']}
+              display="block"
+            />
           </T.DefaultDropdownContainer>
         </form>
       </T.LeftSection>
       <T.RightSection>
-        <img src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png" alt="map" />
+        <img
+          src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png"
+          alt="map"
+        />
       </T.RightSection>
     </T.MiddleSection>
     <T.BottomSection>

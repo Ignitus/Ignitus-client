@@ -1,23 +1,23 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   isEmpty,
   isEqual,
-} from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-import {
   SharedAuthentication,
   SignupStatePayload,
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import {Props} from '../types';
+  withErrorBoundary,
+} from '../../../ignitus-Shared';
+import { Props } from '../types';
 
 const SignUp: React.FC<Props> = ({
-  signUpData, signUpRequest, clearPreviousSignUp,
+  signUpData,
+  signUpRequest,
+  clearPreviousSignUp,
 }) => {
   const [state, setState] = useState(SignupStatePayload);
 
   const { email, password, confirmPassword } = state;
 
-  useEffect(() => (() => clearPreviousSignUp()), []);
+  useEffect(() => () => clearPreviousSignUp(), []);
 
   const handleSubmit = e => {
     e.preventDefault();

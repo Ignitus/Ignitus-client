@@ -4,7 +4,7 @@ export interface Props {
   communityToggle: boolean;
   companyToggle: boolean;
   linkToggle: boolean;
-};
+}
 
 export type FooterLinkprops = {
   toggle: boolean;

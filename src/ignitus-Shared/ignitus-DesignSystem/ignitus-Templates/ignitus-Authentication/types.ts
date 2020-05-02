@@ -1,12 +1,12 @@
-import {ComponentState} from 'react';
+import { ComponentState } from 'react';
 
 export type userRole = 'Student' | 'Professor';
 export type authType = 'LogIn' | 'SignUp';
 
-export interface authData {
+export interface AuthData {
   isFetching: boolean;
   message: string;
-  success: boolean | undefined; // SEE PROFESSOR SIGNUP COMPONENT, remove undefined once implemented.
+  success: boolean | undefined;
 }
 
 export interface LoginState {
@@ -30,7 +30,7 @@ export interface FormProps {
   authRedirectText: string;
   state: ComponentState;
   setState: Function;
-  authenticationData: authData;
+  authenticationData: AuthData;
   handleSubmit: Function;
 }
 
@@ -45,5 +45,5 @@ export interface Props {
   handleSubmit: Function;
   state: ComponentState;
   setState: Function;
-  authenticationData: authData;
+  authenticationData: AuthData;
 }
