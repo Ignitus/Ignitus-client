@@ -27,7 +27,7 @@
 
 ## Contributing. 
 
-👋 Please refer our doumentation to get insights on contributing & conventions guidelines. https://ignitus.gitbook.io/ignitus/
+👋 Please refer our [doumentation](https://ignitus.gitbook.io/ignitus/) to get insights on contributing & conventions guidelines. 
 
 <div align="center">
   <br>
