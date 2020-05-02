@@ -11,8 +11,8 @@
 </div>
 
 
-## About Ignitus.
-https://github.com/Ignitus/Ignitus-client/wiki/About 
+## About Ignitus 👋
+https://ignitus.gitbook.io/ignitus/
 
 ## Created using. 🔨
 
