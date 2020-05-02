@@ -1,7 +1,7 @@
 export type Basictypes = {
   title?: string;
   content?: string;
-  fontStyle?:string;
+  fontStyle?: string;
   imgLink?: string;
 };
 
@@ -10,6 +10,7 @@ export type StyleTypes = {
   padding?: string;
   flex?: string;
   direction?: string;
-  color?:string;
-  weight?:string;
+  color?: string;
+  weight?: string;
+  cursor?: string;
 };
