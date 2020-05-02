@@ -19,17 +19,21 @@ export const GetStarted: React.FunctionComponent = withErrorBoundary(() => (
       </Paragraph>
     </TopSection>
     <BottomSection>
-      { localStorage.getItem('authenticated')? 
-        <a href = "https://app.slack.com/client/TRN1H1V43/CUCLB9VJL" target = "_blank" rel="noopener noreferrer">
+      {localStorage.getItem('authenticated') ? ( 
+        <a 
+          href = "https://app.slack.com/client/TRN1H1V43/CUCLB9VJL" 
+          target = "_blank" 
+          rel="noopener noreferrer"
+        >
           <Button category="secondary" size="large">
             Join-Us
           </Button>
-        </a> :
+        </a>
+      ) : (
         <Button size="large" category="secondary">
-            <Link to="/Signup">
-              Sign-Up
-            </Link>
-        </Button> }
+          <Link to="/Signup"> Sign-Up </Link>
+        </Button> 
+      )}
     </BottomSection>
   </Container>
 ));
