@@ -29,13 +29,6 @@
 
 👋 Please refer our doumentation to get insights on contributing & conventions guidelines. https://ignitus.gitbook.io/ignitus/
 
-
-<p>
-  <sub>Built with ❤︎ by
-    <a href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">contributors.</a>
-  </sub>
-</p>
-
 <div align="center">
   <br>
     <img src="https://media.giphy.com/media/l46ChKeGsmsfE3Un6/giphy.gif" alt="Ignitus.org" width="200">
