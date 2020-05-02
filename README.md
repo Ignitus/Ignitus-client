@@ -11,10 +11,10 @@
 </div>
 
 
-## About Ignitus 👋
+## About Ignitus. 👋
 https://ignitus.gitbook.io/ignitus/
 
-## Created using. 🔨
+## Created using. 
 
 #### Frameworks.
 
@@ -78,7 +78,7 @@ We also plan to introduce some new technologies in the future such as.
 - [Relay](https://relay.dev/) - The production-ready GraphQL client for React.
 - Microservices in [Golang](https://golang.org/) - Go is a statically typed, compiled programming language. 
 
-## Contributing.
+## Contributing. 
 
 - Please check the [Contribution Guidelines](https://github.com/Ignitus/Ignitus-Client-Side-Development/blob/master/.github/CONTRIBUTION/CONTRIBUTION.md).
 - Please check the [Coding Conventions](https://github.com/Ignitus/Ignitus-client/wiki/CodeGuidelines-And-Conventions).
