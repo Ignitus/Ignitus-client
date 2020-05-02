@@ -109,11 +109,7 @@ const PureFooter: React.FunctionComponent<Props> = ({
           </li>
           <li>
             {' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="/careerPage">
               Blog
             </a>{' '}
           </li>
