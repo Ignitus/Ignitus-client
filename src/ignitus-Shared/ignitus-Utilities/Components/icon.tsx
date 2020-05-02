@@ -45,6 +45,8 @@ import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/
 import YouTubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
 import ContributionIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
 import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
+import BarsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
+import GridIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
 
 type Props = {
   name: AppIcon;
@@ -187,6 +189,12 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.StarCircleIcon:
       return <StarCircleIcon {...rest} />;
+
+    case AppIcon.BarsIcon:
+      return <BarsIcon {...rest} />;
+
+    case AppIcon.GridIcon:
+      return <GridIcon {...rest} />;
   }
 };
 
