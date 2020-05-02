@@ -17,7 +17,7 @@ import {
   Software,
   WhyContent,
 } from '../constants';
-import { RoundedButton } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { RoundedButton } from '../../ignitus-Shared';
 
 export const CareersPage = () => (
   <S.Container>
@@ -27,9 +27,9 @@ export const CareersPage = () => (
       </S.Heading>
       <br />
       <br />
-      <RoundedButton color="white" size="large">
+      <RoundedButton size="large" category="secondary">
         {' '}
-        We`&apos;`re Hiring{' '}
+        We&apos;re Hiring{' '}
       </RoundedButton>
     </S.TopSection>
 
@@ -79,7 +79,7 @@ export const CareersPage = () => (
         </S.Wrapper>
 
         <S.Wrapper flex="1">
-          <img src={manAtDesk} alt="Design" />
+          <S.Img src={manAtDesk} alt="Design" />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -98,7 +98,7 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <img src={developer} alt="DeveloperImg" />
+          <S.Img src={developer} alt="DeveloperImg" />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -117,7 +117,7 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <img src={pcSocial} alt="MarketingImg" />
+          <S.Img src={pcSocial} alt="MarketingImg" />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -148,7 +148,7 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <img src={takingNotes} alt="OperationsImg" />
+          <S.Img src={takingNotes} alt="OperationsImg" />
         </S.Wrapper>
       </S.FlexRow>
     </S.Section>
@@ -177,7 +177,7 @@ const BuildingSection = ({ title, imgLink }: Basictypes) => (
   <S.Section>
     <S.FlexRow>
       <S.Wrapper flex="1">
-        <img src={imgLink} alt="BuildingImg" />
+        <S.Img src={imgLink} alt="BuildingImg" />
       </S.Wrapper>
       <S.Wrapper flex="1">
         <S.Wrapper align="left">

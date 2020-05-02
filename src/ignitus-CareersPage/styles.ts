@@ -93,6 +93,22 @@ export const FlexRow = styled.div`
   display: flex;
   flex-direction: ${(props: StyleTypes) => props.direction};
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+`;
+
+export const Img = styled.img`
+  ${minimumWidthQuery[1]} {
+    width: 20rem;
+  }
+  ${minimumWidthQuery[2]} {
+    width: 20rem;
+  }
+  ${minimumWidthQuery[3]} {
+    width: 30rem;
+  }
+  ${minimumWidthQuery[4]} {
+    width: 30rem;
+  }
+  ${minimumWidthQuery[5]} {
+    width: 30rem;
+  }
 `;
