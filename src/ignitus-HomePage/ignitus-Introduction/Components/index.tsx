@@ -29,7 +29,7 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
           </I.Button>
         </a> 
       ) : (  
-        <I.Button category="primary" size="large">
+        <I.Button category="secondary" size="large">
            SIGN UP
         </I.Button> 
       )}
