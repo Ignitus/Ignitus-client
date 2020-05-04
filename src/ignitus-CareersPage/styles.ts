@@ -1,12 +1,6 @@
 import styled from '@emotion/styled';
-import * as C from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { StyleTypes, HeadingProps } from './types';
-import { Heading4, minimumWidthQuery } from '../ignitus-Shared';
-import {
-  Paragraph as P,
-  Heading2 as H,
-} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { HeadingType, ParagraphType } from './types';
+import { minimumWidthQuery, IgnitusBlue } from '../ignitus-Shared';
 
 export const Container = styled.div`
   ${minimumWidthQuery[1]} {
@@ -32,16 +26,17 @@ export const TextContainer = styled.div`
 `;
 
 export const TopSection = styled.div`
-  background: ${C.IgnitusBlue};
+  background: ${IgnitusBlue};
   padding: 9rem 4rem 4rem 4rem;
   text-align: center;
 `;
 
-export const ParagraphWrapper = styled(P)`
+export const ParagraphWrapper = styled.div<ParagraphType>`
+  text-align: ${(props: { alignment?: string }) => props.alignment};
   padding: 0.5rem 0;
 `;
 
-export const HeadingWrapper = styled(H)<HeadingProps>`
+export const HeadingWrapper = styled.div<HeadingType>`
   padding: 1rem 0;
   text-align: ${(props: { alignment?: string }) => props.alignment};
 `;
@@ -87,7 +82,7 @@ export const Wrapper = styled.div`
   text-align: left;
 `;
 
-export const BenefitWrapper = styled.div`
+export const PerksWrapper = styled.div`
   flex: 1 1 30%;
   padding: 1rem;
   display: flex;

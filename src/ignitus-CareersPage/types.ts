@@ -15,6 +15,14 @@ export type StyleTypes = {
   cursor?: string;
 };
 
-export type HeadingProps = {
-  alignment: string;
+export type HeadingType = {
+  alignment?: string;
+};
+
+export type ParagraphType = {
+  alignment?: string;
+};
+
+export type PerksType = {
+  content: string;
 };

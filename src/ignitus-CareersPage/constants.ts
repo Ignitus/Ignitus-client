@@ -1,4 +1,4 @@
-import { Basictypes } from './types';
+import { Basictypes, PerksType } from './types';
 
 export const WhyContent: Basictypes[] = [
   {
@@ -8,17 +8,6 @@ export const WhyContent: Basictypes[] = [
   {
     content:
       'Our struggle focuses on breaking down economic borders, those that impede access to better training and work opportunities, providing our members with knowledge, tools and the opportunity to demonstrate to the world and themselves what they are capable of.',
-  },
-];
-
-export const BuildingContent: Basictypes[] = [
-  {
-    content:
-      'Ignitus helps students and professionals get handpicked top-quality global research and industrial internships, for free! Additionally, students participate in projects and training programs supervised by our experts. ',
-  },
-  {
-    content:
-      "We have only one goal - 'Skyrocketing your career by providing you the best global opportunities'. The platform has got exponential growth after successful internship completion by our students with researchers from SAIL (Stanford AI Lab), MIT Media Lab and Oxford University.",
   },
 ];
 
@@ -51,35 +40,23 @@ export const Others: Basictypes[] = [
 
 export const Operations: Basictypes[] = [{ content: 'Human Resources' }];
 
-export const Benefits: Basictypes[] = [
+export const PerksObject: PerksType[] = [
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Internship offer & completion certificate/letter.',
   },
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Open source software development experience.',
   },
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Technical Mentorship & guidance from product maintainers.',
   },
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Written Letter & LinkedIn recommendation.',
   },
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Guidance & Advice writing SOP & M.S Applications.',
   },
   {
-    imgLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
-    content: 'Ignitus helps students and professionals get',
+    content: 'Invitation to Mentor for RGSOC, GSOC, GCI etc.',
   },
 ];

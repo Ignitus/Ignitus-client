@@ -2,8 +2,7 @@ import * as React from 'react';
 import * as S from '../styles';
 import { Basictypes } from '../types';
 import {
-  Benefits,
-  BuildingContent,
+  PerksObject,
   Design,
   Marketing,
   Openings,
@@ -32,21 +31,6 @@ export const CareersPage = () => (
       </RoundedButton>
     </S.TopSection>
     <MidSection />
-
-    <S.Section>
-      <S.HeadingWrapper alignment="centre">
-        <Heading> Benefits and Perks</Heading>
-      </S.HeadingWrapper>
-      <S.Row>
-        {Benefits.map(x => (
-          <BenefitElement
-            key={x.content}
-            content={x.content}
-            imgLink={x.imgLink}
-          />
-        ))}
-      </S.Row>
-    </S.Section>
 
     <S.Section>
       <S.Wrapper>
@@ -166,7 +150,7 @@ export const CareersPage = () => (
 const MidSection = () => (
   <React.Fragment>
     <S.Section>
-      <S.HeadingWrapper alignment="centre">
+      <S.HeadingWrapper>
         <Heading>Why Ignitus? 💭</Heading>
       </S.HeadingWrapper>
       <S.TextContainer>
@@ -224,37 +208,36 @@ const MidSection = () => (
         </S.RightRow>
       </S.Row>
     </S.Section>
+
+    <S.Section>
+      <S.HeadingWrapper>
+        <Heading> Benefits & Perks. 🎁</Heading>
+      </S.HeadingWrapper>
+      <S.Row>
+        {PerksObject.map(({ content }) => (
+          <PerksComponent
+            key={content}
+            content={content}
+            imgLink={
+              'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg'
+            }
+          />
+        ))}
+      </S.Row>
+    </S.Section>
   </React.Fragment>
 );
 
-const BuildingSection = ({ title, imgLink }: Basictypes) => (
-  <S.Section>
-    <S.Row>
-      <S.Wrapper>
-        <S.Img src={imgLink} alt="BuildingImg" />
-      </S.Wrapper>
-      <S.Wrapper>
-        <S.Wrapper>
-          <Heading>{title}</Heading>
-        </S.Wrapper>
-        {BuildingContent.map(x => (
-          <S.Wrapper key={x.content}>
-            <Paragraph>{x.content}</Paragraph>
-          </S.Wrapper>
-        ))}
-        ;
-      </S.Wrapper>
-    </S.Row>
-  </S.Section>
-);
-
-const BenefitElement = ({ content, imgLink }: Basictypes) => (
-  <S.BenefitWrapper>
+const PerksComponent = ({ content }: Basictypes) => (
+  <S.PerksWrapper>
     <S.Wrapper>
-      <img src={imgLink} alt="Img" />
+      <img
+        src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg"
+        alt="Img"
+      />
     </S.Wrapper>
-    <S.Wrapper>
+    <S.ParagraphWrapper alignment="left">
       <Paragraph>{content}</Paragraph>
-    </S.Wrapper>
-  </S.BenefitWrapper>
+    </S.ParagraphWrapper>
+  </S.PerksWrapper>
 );
