@@ -1,21 +1,18 @@
 import * as React from 'react';
 import * as S from '../styles';
-import { Basictypes } from '../types';
-import {
-  PerksObject,
-  Design,
-  Marketing,
-  Openings,
-  Operations,
-  Others,
-  Software,
-} from '../constants';
+
+import { PerksObject, OpportunityList } from '../constants';
 import { RoundedButton } from '../../ignitus-Shared';
+import {
+  IgnitusBlue,
+  Black,
+} from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 import {
   Paragraph,
   Heading2 as Heading,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { PerksType } from '../types';
 
 export const CareersPage = () => (
   <S.Container>
@@ -31,119 +28,7 @@ export const CareersPage = () => (
       </RoundedButton>
     </S.TopSection>
     <MidSection />
-
-    <S.Section>
-      <S.Wrapper>
-        <Heading>Open Jobs</Heading> <br />
-        {Openings.map(x => (
-          <S.Wrapper key={x.content}>
-            <Paragraph>{x.content}</Paragraph>
-          </S.Wrapper>
-        ))}
-        ;
-      </S.Wrapper>
-
-      <S.Row>
-        <S.Wrapper>
-          <S.Wrapper>
-            <Paragraph>Design</Paragraph>
-          </S.Wrapper>
-          <br />
-          {Design.map(x => (
-            <S.Wrapper key={x.content}>
-              <Paragraph>
-                {x.content} <br />
-              </Paragraph>
-            </S.Wrapper>
-          ))}
-        </S.Wrapper>
-
-        <S.Wrapper>
-          <S.Img
-            src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg"
-            alt="Design"
-          />
-        </S.Wrapper>
-      </S.Row>
-
-      <S.Row direction="row-reverse">
-        <S.Wrapper>
-          <S.Wrapper>
-            <Paragraph>Software Engineering</Paragraph>
-          </S.Wrapper>
-          <br />
-          {Software.map(x => (
-            <S.Wrapper key={x.content}>
-              <Paragraph>
-                {x.content} <br />
-              </Paragraph>
-            </S.Wrapper>
-          ))}
-        </S.Wrapper>
-        <S.Wrapper>
-          <S.Img
-            src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFour.svg"
-            alt="DeveloperImg"
-          />
-        </S.Wrapper>
-      </S.Row>
-
-      <S.Row>
-        <S.Wrapper>
-          <S.Wrapper>
-            <Paragraph>Marketing</Paragraph>
-          </S.Wrapper>
-          <br />
-          {Marketing.map(x => (
-            <S.Wrapper key={x.content}>
-              <Paragraph>
-                {x.content} <br />
-              </Paragraph>
-            </S.Wrapper>
-          ))}
-        </S.Wrapper>
-        <S.Wrapper>
-          <S.Img
-            src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFive.svg"
-            alt="MarketingImg"
-          />
-        </S.Wrapper>
-      </S.Row>
-
-      <S.Row direction="row-reverse">
-        <S.Wrapper>
-          <S.Wrapper>
-            <Paragraph>Others</Paragraph>
-          </S.Wrapper>
-          <br />
-          {Others.map(x => (
-            <S.Wrapper key={x.content}>
-              <Paragraph>
-                {x.content} <br />
-              </Paragraph>
-            </S.Wrapper>
-          ))}
-          <br />
-          <S.Wrapper>
-            <Paragraph>Operations</Paragraph>
-          </S.Wrapper>
-          <br />
-          {Operations.map(x => (
-            <S.Wrapper key={x.content}>
-              <Paragraph>
-                {x.content} <br />
-              </Paragraph>
-            </S.Wrapper>
-          ))}
-        </S.Wrapper>
-        <S.Wrapper>
-          <S.Img
-            src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarSix.svg"
-            alt="OperationsImg"
-          />
-        </S.Wrapper>
-      </S.Row>
-    </S.Section>
+    <BottomSection />
   </S.Container>
 );
 
@@ -215,20 +100,14 @@ const MidSection = () => (
       </S.HeadingWrapper>
       <S.Row>
         {PerksObject.map(({ content }) => (
-          <PerksComponent
-            key={content}
-            content={content}
-            imgLink={
-              'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg'
-            }
-          />
+          <Perks key={content} content={content} />
         ))}
       </S.Row>
     </S.Section>
   </React.Fragment>
 );
 
-const PerksComponent = ({ content }: Basictypes) => (
+const Perks = ({ content }: PerksType) => (
   <S.PerksWrapper>
     <S.Wrapper>
       <img
@@ -241,3 +120,43 @@ const PerksComponent = ({ content }: Basictypes) => (
     </S.ParagraphWrapper>
   </S.PerksWrapper>
 );
+
+const BottomSection = () => (
+  <S.Section>
+    <S.Wrapper>
+      <S.HeadingWrapper alignment="center">
+        <Heading> Current Opportunities.</Heading>
+      </S.HeadingWrapper>
+
+      <S.ParagraphWrapper alignment="center">
+        <Paragraph color={IgnitusBlue}>
+          {' '}
+          We’re looking for people to join the team who are as excited as we are
+          to help build the platform that empowers the students.
+        </Paragraph>
+      </S.ParagraphWrapper>
+    </S.Wrapper>
+
+    {OpportunityList.map(({ type, openings, picture }) => (
+      <React.Fragment>
+        <S.Row>
+          <S.Wrapper>
+            <S.ParagraphWrapper key={type}>
+              <Paragraph color={Black}>{type}</Paragraph>
+            </S.ParagraphWrapper>
+            {openings.map(({ title }) => (
+              <S.ParagraphWrapper key={title}>
+                <Paragraph color={Black}>{title}</Paragraph>
+              </S.ParagraphWrapper>
+            ))}
+          </S.Wrapper>
+        </S.Row>
+        <S.Wrapper>
+          <S.Img src={picture} />
+        </S.Wrapper>
+      </React.Fragment>
+    ))}
+  </S.Section>
+);
+
+const OpportunityComponent = () => {};

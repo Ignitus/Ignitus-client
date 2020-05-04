@@ -27,7 +27,7 @@ export const TextContainer = styled.div`
 
 export const TopSection = styled.div`
   background: ${IgnitusBlue};
-  padding: 9rem 4rem 4rem 4rem;
+  padding: 8rem 4rem 4rem;
   text-align: center;
 `;
 
