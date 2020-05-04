@@ -4,7 +4,7 @@ export const OpportunityList: OpportunityListType[] = [
   {
     type: 'Design',
     picture:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFour.svg',
     openings: [
       {
         title: 'Product Designer Internship',
@@ -18,7 +18,7 @@ export const OpportunityList: OpportunityListType[] = [
   {
     type: 'Software Development',
     picture:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarTwor.svg',
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg',
     openings: [
       {
         title: 'SWE Internship',
@@ -32,7 +32,7 @@ export const OpportunityList: OpportunityListType[] = [
   {
     type: 'Marketing',
     picture:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFour.svg',
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFive.svg',
     openings: [
       {
         title: 'SEO Analyst Internship',
@@ -46,7 +46,7 @@ export const OpportunityList: OpportunityListType[] = [
   {
     type: 'Other',
     picture:
-      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFivesvg',
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarSix.svg',
     openings: [
       {
         title: 'Ignitus Scholar Internship',

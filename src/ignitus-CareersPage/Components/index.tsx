@@ -61,7 +61,7 @@ const MidSection = () => (
     </S.Section>
     <S.Section>
       <S.Row direction="row">
-        <S.LeftRow>
+        <S.LeftRow alignment="center">
           <S.Img
             src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarTwo.svg"
             alt=""
@@ -137,25 +137,27 @@ const BottomSection = () => (
       </S.ParagraphWrapper>
     </S.Wrapper>
 
-    {OpportunityList.map(({ type, openings, picture }) => (
-      <React.Fragment>
-        <S.Row>
-          <S.Wrapper>
-            <S.ParagraphWrapper key={type}>
-              <Paragraph color={Black}>{type}</Paragraph>
-            </S.ParagraphWrapper>
-            {openings.map(({ title }) => (
-              <S.ParagraphWrapper key={title}>
-                <Paragraph color={Black}>{title}</Paragraph>
+    <S.Section>
+      {OpportunityList.map(({ type, openings, picture }, index) => (
+        <S.OpportunityWrapper>
+          <S.Row direction={index % 2 === 0 ? 'row-reverse' : 'row'}>
+            <S.RightRow>
+              <S.ParagraphWrapper key={type} alignment="left">
+                <Paragraph color={Black}>{type}</Paragraph>
               </S.ParagraphWrapper>
-            ))}
-          </S.Wrapper>
-        </S.Row>
-        <S.Wrapper>
-          <S.Img src={picture} />
-        </S.Wrapper>
-      </React.Fragment>
-    ))}
+              {openings.map(({ title }) => (
+                <S.ParagraphWrapper key={title} alignment="left">
+                  <Paragraph color={IgnitusBlue}>{title}</Paragraph>
+                </S.ParagraphWrapper>
+              ))}
+            </S.RightRow>
+            <S.LeftRow>
+              <S.Img src={picture} />
+            </S.LeftRow>
+          </S.Row>
+        </S.OpportunityWrapper>
+      ))}
+    </S.Section>
   </S.Section>
 );
 

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { HeadingType, ParagraphType } from './types';
 import { minimumWidthQuery, IgnitusBlue } from '../ignitus-Shared';
 
 export const Container = styled.div`
@@ -31,12 +30,12 @@ export const TopSection = styled.div`
   text-align: center;
 `;
 
-export const ParagraphWrapper = styled.div<ParagraphType>`
+export const ParagraphWrapper = styled.div`
   text-align: ${(props: { alignment?: string }) => props.alignment};
   padding: 0.5rem 0;
 `;
 
-export const HeadingWrapper = styled.div<HeadingType>`
+export const HeadingWrapper = styled.div`
   padding: 1rem 0;
   text-align: ${(props: { alignment?: string }) => props.alignment};
 `;
@@ -70,7 +69,7 @@ export const LeftRow = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: ${(props: { alignment?: string }) => props.alignment};
 `;
 export const RightRow = styled.div`
   flex: 1;
@@ -80,6 +79,10 @@ export const RightRow = styled.div`
 export const Wrapper = styled.div`
   padding: 0.5rem;
   text-align: left;
+`;
+
+export const OpportunityWrapper = styled.div`
+  margin: 2rem 0;
 `;
 
 export const PerksWrapper = styled.div`
@@ -93,6 +96,8 @@ export const PerksWrapper = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   flex-direction: ${(props: { direction?: string }) => props.direction};
 `;
 
@@ -104,12 +109,12 @@ export const Img = styled.img`
     width: 10rem;
   }
   ${minimumWidthQuery[3]} {
-    width: 20rem;
+    width: 18rem;
   }
   ${minimumWidthQuery[4]} {
-    width: 20rem;
+    width: 18rem;
   }
   ${minimumWidthQuery[5]} {
-    width: 20rem;
+    width: 18rem;
   }
 `;
