@@ -1,8 +1,12 @@
 import styled from '@emotion/styled';
 import * as C from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { StyleTypes } from './types';
+import { StyleTypes, HeadingProps } from './types';
 import { Heading4, minimumWidthQuery } from '../ignitus-Shared';
+import {
+  Paragraph as P,
+  Heading2 as H,
+} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const Container = styled.div`
   ${minimumWidthQuery[1]} {
@@ -33,9 +37,17 @@ export const TopSection = styled.div`
   text-align: center;
 `;
 
+export const ParagraphWrapper = styled(P)`
+  padding: 0.5rem 0;
+`;
+
+export const HeadingWrapper = styled(H)<HeadingProps>`
+  padding: 1rem 0;
+  text-align: ${(props: { alignment?: string }) => props.alignment};
+`;
+
 export const Section = styled.div`
   flex-direction: column;
-  
   ${minimumWidthQuery[1]} {
     margin: 0;
     padding: 0.5rem;
@@ -61,9 +73,13 @@ export const Section = styled.div`
 
 export const LeftRow = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const RightRow = styled.div`
   flex: 1;
+  text-align: left;
 `;
 
 export const Wrapper = styled.div`

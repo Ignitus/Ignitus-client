@@ -14,3 +14,7 @@ export type StyleTypes = {
   weight?: string;
   cursor?: string;
 };
+
+export type HeadingProps = {
+  alignment: string;
+};

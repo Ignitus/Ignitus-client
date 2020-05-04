@@ -12,17 +12,18 @@ import {
   Software,
 } from '../constants';
 import { RoundedButton } from '../../ignitus-Shared';
+
 import {
   Paragraph,
-  Heading2,
+  Heading2 as Heading,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 export const CareersPage = () => (
   <S.Container>
     <S.TopSection>
-      <Heading2 color="white">
+      <Heading color="white">
         Do The Most Meaningful Work of Your Career 🎯
-      </Heading2>
+      </Heading>
       <br />
       <br />
       <RoundedButton size="large" category="secondary">
@@ -33,9 +34,9 @@ export const CareersPage = () => (
     <MidSection />
 
     <S.Section>
-      <S.Wrapper>
-        <Heading2> Benefits and Perks</Heading2>
-      </S.Wrapper>
+      <S.HeadingWrapper alignment="centre">
+        <Heading> Benefits and Perks</Heading>
+      </S.HeadingWrapper>
       <S.Row>
         {Benefits.map(x => (
           <BenefitElement
@@ -49,7 +50,7 @@ export const CareersPage = () => (
 
     <S.Section>
       <S.Wrapper>
-        <Heading2>Open Jobs</Heading2> <br />
+        <Heading>Open Jobs</Heading> <br />
         {Openings.map(x => (
           <S.Wrapper key={x.content}>
             <Paragraph>{x.content}</Paragraph>
@@ -165,23 +166,31 @@ export const CareersPage = () => (
 const MidSection = () => (
   <React.Fragment>
     <S.Section>
-      <Heading2>Why Ignitus? 💭</Heading2>
+      <S.HeadingWrapper alignment="centre">
+        <Heading>Why Ignitus? 💭</Heading>
+      </S.HeadingWrapper>
       <S.TextContainer>
-        <Paragraph>
-          We believe that we have the foundation to build something to remember.
-        </Paragraph>
-        <Paragraph>
-          We are creating an Non-Profit, Open-Source platform with an aim to
-          assist scholars in seeking research opportunities. 🎓
-        </Paragraph>
-        <Paragraph>
-          We all are working together, remotely from different parts of the
-          world for the sake of education.
-        </Paragraph>
+        <S.ParagraphWrapper>
+          <Paragraph>
+            We believe that we have the foundation to build something to
+            remember.
+          </Paragraph>
+        </S.ParagraphWrapper>
+        <S.ParagraphWrapper>
+          <Paragraph>
+            We are creating an Non-Profit, Open-Source platform with an aim to
+            assist scholars in seeking research opportunities. 🎓
+          </Paragraph>
+        </S.ParagraphWrapper>
+        <S.ParagraphWrapper>
+          <Paragraph>
+            We all are working together, remotely from different parts of the
+            world for the sake of education.
+          </Paragraph>
+        </S.ParagraphWrapper>
       </S.TextContainer>
     </S.Section>
     <S.Section>
-      <Heading2>What we're building?</Heading2>
       <S.Row direction="row">
         <S.LeftRow>
           <S.Img
@@ -190,18 +199,28 @@ const MidSection = () => (
           />
         </S.LeftRow>
         <S.RightRow>
-          <Paragraph>
-            An Initiative to help students and professionals get handpicked
-            top-quality global research and industrial opportunities 🎯.
-          </Paragraph>
-          <Paragraph>
-            We are creating a global open-source platform where anyone enrolled
-            in an undergraduate/postgraduate program at any institution can look
-            for opportunities, our unique value proposition is we are devoted to
-            educational opportunities with no involvement of any startup,
-            companies, etc. we are still in a phase of creating Ignitus our goal
-            is to act as an opportunity bridge. 🎓
-          </Paragraph>
+          <S.HeadingWrapper alignment="left">
+            <Heading>What we're building?</Heading>
+          </S.HeadingWrapper>
+          <S.ParagraphWrapper>
+            <Paragraph>
+              An Initiative to help students and professionals get handpicked
+              top-quality global research and industrial opportunities 🎯.
+            </Paragraph>
+          </S.ParagraphWrapper>
+
+          <S.ParagraphWrapper>
+            {' '}
+            <Paragraph>
+              We are creating a global open-source platform where anyone
+              enrolled in an undergraduate/postgraduate program at any
+              institution can look for opportunities, our unique value
+              proposition is we are devoted to educational opportunities with no
+              involvement of any startup, companies, etc. we are still in a
+              phase of creating Ignitus our goal is to act as an opportunity
+              bridge. 🎓
+            </Paragraph>
+          </S.ParagraphWrapper>
         </S.RightRow>
       </S.Row>
     </S.Section>
@@ -216,7 +235,7 @@ const BuildingSection = ({ title, imgLink }: Basictypes) => (
       </S.Wrapper>
       <S.Wrapper>
         <S.Wrapper>
-          <Heading2>{title}</Heading2>
+          <Heading>{title}</Heading>
         </S.Wrapper>
         {BuildingContent.map(x => (
           <S.Wrapper key={x.content}>
