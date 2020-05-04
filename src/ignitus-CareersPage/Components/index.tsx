@@ -1,11 +1,7 @@
 import * as React from 'react';
 import * as S from '../styles';
 import { Basictypes } from '../types';
-import building from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/building.svg';
-import manAtDesk from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/manAtDesk.svg';
-import developer from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/developer.svg';
-import pcSocial from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/pcSocial.svg';
-import takingNotes from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/takingNotes.svg';
+
 import {
   Benefits,
   BuildingContent,
@@ -15,7 +11,6 @@ import {
   Operations,
   Others,
   Software,
-  WhyContent,
 } from '../constants';
 import { RoundedButton } from '../../ignitus-Shared';
 
@@ -23,19 +18,16 @@ export const CareersPage = () => (
   <S.Container>
     <S.TopSection>
       <S.Heading color="white">
-        Do the Most Meaningful Work of Your Career
+        Do The Most Meaningful Work of Your Career 🎯
       </S.Heading>
       <br />
       <br />
       <RoundedButton size="large" category="secondary">
         {' '}
-        We&apos;re Hiring{' '}
+        We're Hiring{' '}
       </RoundedButton>
     </S.TopSection>
-
-    <WhySection title="Why Ignitus?" />
-
-    <BuildingSection title="What we're building" imgLink={building} />
+    <MidSection />
 
     <S.Section>
       <S.Wrapper>
@@ -79,7 +71,10 @@ export const CareersPage = () => (
         </S.Wrapper>
 
         <S.Wrapper flex="1">
-          <S.Img src={manAtDesk} alt="Design" />
+          <S.Img
+            src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg"
+            alt="Design"
+          />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -98,7 +93,7 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <S.Img src={developer} alt="DeveloperImg" />
+          <S.Img src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFour.svg" alt="DeveloperImg" />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -117,7 +112,7 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <S.Img src={pcSocial} alt="MarketingImg" />
+          <S.Img src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFive.svg" alt="MarketingImg" />
         </S.Wrapper>
       </S.FlexRow>
 
@@ -148,28 +143,47 @@ export const CareersPage = () => (
           ))}
         </S.Wrapper>
         <S.Wrapper flex="1">
-          <S.Img src={takingNotes} alt="OperationsImg" />
+          <S.Img src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarSix.svg" alt="OperationsImg" />
         </S.Wrapper>
       </S.FlexRow>
     </S.Section>
   </S.Container>
 );
 
-const WhySection = ({ title }: Basictypes) => (
+const MidSection = () => (
   <S.Section>
     <S.Wrapper>
-      <S.Heading>{title}</S.Heading>
+      <S.Heading>Why Ignitus? 💭</S.Heading>
     </S.Wrapper>
-    {WhyContent.map(x => (
-      <S.Wrapper key={x.content}>
-        <S.Paragraph>
-          {x.content}
-          <br />
-          <br />
-        </S.Paragraph>
+    <S.Wrapper>
+      <S.Paragraph>
+        We believe that we have the foundation to build something to remember.
+      </S.Paragraph>
+      <S.Paragraph>
+        We are creating an Non-Profit, Open-Source platform with an aim to
+        assist scholars in seeking research opportunities. 🎓
+      </S.Paragraph>
+      <S.Paragraph>
+        We all are working together, remotely from different parts of the world
+        for the sake of education.
+      </S.Paragraph>
+    </S.Wrapper>
+    <S.FlexRow>
+      <S.Wrapper flex="1">
+        <S.Img src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarTwo.svg" alt="BuildingImg" />
       </S.Wrapper>
-    ))}
-    ;
+      <S.Wrapper flex="1">
+        <S.Wrapper align="left">
+          <S.Heading>What we're building? 💭</S.Heading>
+        </S.Wrapper>
+        {BuildingContent.map(x => (
+          <S.Wrapper align="left" key={x.content}>
+            <S.Paragraph>{x.content}</S.Paragraph>
+          </S.Wrapper>
+        ))}
+        ;
+      </S.Wrapper>
+    </S.FlexRow>
   </S.Section>
 );
 
@@ -185,11 +199,7 @@ const BuildingSection = ({ title, imgLink }: Basictypes) => (
         </S.Wrapper>
         {BuildingContent.map(x => (
           <S.Wrapper align="left" key={x.content}>
-            <S.Paragraph>
-              {x.content}
-              <br />
-              <br />
-            </S.Paragraph>
+            <S.Paragraph>{x.content}</S.Paragraph>
           </S.Wrapper>
         ))}
         ;

@@ -1,5 +1,4 @@
 import { Basictypes } from './types';
-import benefits from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/benefits.svg';
 
 export const WhyContent: Basictypes[] = [
   {
@@ -54,27 +53,33 @@ export const Operations: Basictypes[] = [{ content: 'Human Resources' }];
 
 export const Benefits: Basictypes[] = [
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
   {
-    imgLink: benefits,
+    imgLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg',
     content: 'Ignitus helps students and professionals get',
   },
 ];

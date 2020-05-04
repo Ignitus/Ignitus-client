@@ -39,6 +39,7 @@ export const Heading = styled.p`
 `;
 
 export const Paragraph = styled(Heading4)`
+  margin: 0.5rem;
   color: ${(props: StyleTypes) =>
     props.color === 'blue' ? C.IgnitusBlue : C.GreySecondaryText};
   font-weight: ${(props: StyleTypes) =>
@@ -86,7 +87,7 @@ export const BenefitWrapper = styled.div`
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-contents: flex-start;
+  justify-content: flex-start;
 `;
 
 export const FlexRow = styled.div`

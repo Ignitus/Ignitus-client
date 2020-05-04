@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import confetti from '../../ignitus-Assets/ignitus-Images/img-Svg/confetti.svg';
 import {
   Paragraph as P,
   MD,
@@ -17,7 +16,7 @@ import { Props } from './types';
 import { flexibleColDiv } from '../../shared';
 
 export const Overlay = styled.div`
-  background-image: url(${confetti});
+  background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
   background-color: ${White};
   background-size: contain;
   border-radius: 1rem;

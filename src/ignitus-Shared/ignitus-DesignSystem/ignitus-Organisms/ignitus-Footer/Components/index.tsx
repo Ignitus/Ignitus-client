@@ -89,27 +89,15 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={companyToggle}>
           <li>
             {' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/Ignitus.org/"
-            >
-              About
-            </a>{' '}
+            <Link to="/aboutus">About</Link>{' '}
           </li>
           <li>
             {' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://angel.co/ignitus-2/jobs"
-            >
-              Careers
-            </a>{' '}
+            <Link to="/careersPage">Careers</Link>{' '}
           </li>
           <li>
             {' '}
-            <a target="_blank" rel="noopener noreferrer" href="/careerPage">
+            <a target="_blank" rel="noopener noreferrer" href="/#">
               Blog
             </a>{' '}
           </li>
