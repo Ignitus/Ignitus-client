@@ -23,63 +23,52 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
+export const TextContainer = styled.div`
+  text-align: center;
+`;
+
 export const TopSection = styled.div`
   background: ${C.IgnitusBlue};
   padding: 9rem 4rem 4rem 4rem;
   text-align: center;
 `;
 
-export const Heading = styled.p`
-  color: ${(props: StyleTypes) =>
-    props.color === 'white' ? C.White : C.IgnitusBlue};
-  font-weight: ${F.Light};
-  font-size: ${F.XXXXL};
-  cursor: ${(props: StyleTypes) =>
-    props.cursor === 'pointer' ? 'pointer' : ''};
-`;
-
-export const Paragraph = styled(Heading4)`
-  margin: 0.5rem;
-  color: ${(props: StyleTypes) =>
-    props.color === 'blue' ? C.IgnitusBlue : C.GreySecondaryText};
-  font-weight: ${(props: StyleTypes) =>
-    props.weight === 'bold' ? F.SemiBold : F.Light};
-`;
-
 export const Section = styled.div`
+  flex-direction: column;
+  
   ${minimumWidthQuery[1]} {
-    flex-direction: column;
     margin: 0;
     padding: 0.5rem;
   }
   ${minimumWidthQuery[2]} {
-    flex-direction: column;
     margin: 0;
     padding: 0.5rem;
   }
   ${minimumWidthQuery[3]} {
-    flex-direction: row;
     margin: 3rem 10rem;
     padding: 1rem;
   }
   ${minimumWidthQuery[4]} {
-    flex-direction: row;
     margin: 3rem 10rem;
     padding: 1rem;
   }
   ${minimumWidthQuery[5]} {
-    flex-direction: row;
     margin: 3rem 10rem;
     padding: 1rem;
   }
   text-align: center;
 `;
 
+export const LeftRow = styled.div`
+  flex: 1;
+`;
+export const RightRow = styled.div`
+  flex: 1;
+`;
+
 export const Wrapper = styled.div`
   padding: 0.5rem;
-  text-align: ${(props: StyleTypes) =>
-    props.align === 'left' ? 'left' : 'center'};
-  flex: ${(props: StyleTypes) => (props.flex === '1' ? '1' : '')};
+  text-align: left;
 `;
 
 export const BenefitWrapper = styled.div`
@@ -90,26 +79,26 @@ export const BenefitWrapper = styled.div`
   justify-content: flex-start;
 `;
 
-export const FlexRow = styled.div`
+export const Row = styled.div`
   display: flex;
-  flex-direction: ${(props: StyleTypes) => props.direction};
   flex-wrap: wrap;
+  flex-direction: ${(props: { direction?: string }) => props.direction};
 `;
 
 export const Img = styled.img`
   ${minimumWidthQuery[1]} {
-    width: 20rem;
+    width: 10rem;
   }
   ${minimumWidthQuery[2]} {
-    width: 20rem;
+    width: 10rem;
   }
   ${minimumWidthQuery[3]} {
-    width: 30rem;
+    width: 20rem;
   }
   ${minimumWidthQuery[4]} {
-    width: 30rem;
+    width: 20rem;
   }
   ${minimumWidthQuery[5]} {
-    width: 30rem;
+    width: 20rem;
   }
 `;
