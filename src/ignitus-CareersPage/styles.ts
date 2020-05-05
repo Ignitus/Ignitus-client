@@ -42,10 +42,22 @@ export const LeftRow = styled.div<RowTypes>`
   display: flex;
   align-items: center;
   justify-content: ${props => props.alignment};
+  ${minimumWidthQuery[0]} {
+    margin: 1rem 0;
+  }
+  ${minimumWidthQuery[3]} {
+    margin: 0;
+  }
 `;
 export const RightRow = styled.div<RowTypes>`
   flex: ${props => props.flex};
   text-align: left;
+  ${minimumWidthQuery[0]} {
+    margin: 1rem 0;
+  }
+  ${minimumWidthQuery[3]} {
+    margin: 0;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -73,17 +85,25 @@ export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-around;
   flex-direction: ${(props: { direction?: string }) => props.direction};
+
+  ${minimumWidthQuery[0]} {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: row;
+    margin: 0;
+  }
 `;
 
 export const Img = styled.img`
   ${minimumWidthQuery[1]} {
-    width: 6rem;
+    width: 10rem;
   }
   ${minimumWidthQuery[2]} {
-    width: 6rem;
+    width: 10rem;
   }
   ${minimumWidthQuery[3]} {
     width: 15rem;

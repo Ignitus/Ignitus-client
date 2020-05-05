@@ -21,7 +21,7 @@ export const OpportunityList: OpportunityListType[] = [
       'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarThree.svg',
     openings: [
       {
-        title: 'SWE Internship',
+        title: 'Software Engineering Internship',
       },
       {
         title: 'Front End Internship',
@@ -30,29 +30,29 @@ export const OpportunityList: OpportunityListType[] = [
   },
 
   {
-    type: 'Marketing',
+    type: 'Marketing & Content Writing',
     picture:
       'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarFive.svg',
     openings: [
       {
-        title: 'SEO Analyst Internship',
+        title: 'Search Engine Analyst Internship',
       },
       {
         title: 'Marketing Internship',
+      },
+      {
+        title: 'Content Writing Internship',
       },
     ],
   },
 
   {
-    type: 'Other',
+    type: 'Research',
     picture:
       'https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarSix.svg',
     openings: [
       {
-        title: 'Ignitus Scholar Internship',
-      },
-      {
-        title: 'Content Writing Internship',
+        title: 'Ignitus Research Scholar Internship',
       },
     ],
   },

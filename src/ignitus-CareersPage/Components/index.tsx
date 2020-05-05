@@ -18,13 +18,16 @@ export const CareersPage = () => (
   <React.Fragment>
     <S.TopSection>
       <Heading color="white">
-        Do The Most Meaningful Work of Your Career 🎯
+        Do The Most Meaningful Work of Your Career.{' '}
+        <span role="img" aria-label="bullseye">
+          🎯
+        </span>{' '}
       </Heading>
       <br />
       <br />
       <RoundedButton size="large" category="secondary">
         {' '}
-        We're Hiring{' '}
+        We&apos;re Hiring{' '}
       </RoundedButton>
     </S.TopSection>
     <S.Section>
@@ -40,7 +43,12 @@ const MidSection = () => (
   <React.Fragment>
     <S.Section>
       <S.HeadingWrapper>
-        <Heading>Why Ignitus? 💭</Heading>
+        <Heading>
+          Why Ignitus?{' '}
+          <span role="img" aria-label="cloud">
+            💭
+          </span>{' '}
+        </Heading>
       </S.HeadingWrapper>
       <S.TextContainer>
         <S.ParagraphWrapper>
@@ -52,7 +60,10 @@ const MidSection = () => (
         <S.ParagraphWrapper>
           <Paragraph>
             We are creating an Non-Profit, Open-Source platform with an aim to
-            assist scholars in seeking research opportunities. 🎓
+            assist scholars in seeking research opportunities.{' '}
+            <span role="img" aria-label="hat">
+              🎓
+            </span>
           </Paragraph>
         </S.ParagraphWrapper>
         <S.ParagraphWrapper>
@@ -73,12 +84,15 @@ const MidSection = () => (
         </S.LeftRow>
         <S.RightRow flex={1}>
           <S.HeadingWrapper alignment="left">
-            <Heading>What we're building?</Heading>
+            <Heading>What we&apos;re building?</Heading>
           </S.HeadingWrapper>
           <S.ParagraphWrapper>
             <Paragraph>
               An Initiative to help students and professionals get handpicked
-              top-quality global research and industrial opportunities 🎯.
+              top-quality global research and industrial opportunities.{' '}
+              <span role="img" aria-label="bullsseye">
+                🎯
+              </span>{' '}
             </Paragraph>
           </S.ParagraphWrapper>
 
@@ -100,7 +114,13 @@ const MidSection = () => (
 
     <S.Section>
       <S.HeadingWrapper>
-        <Heading> Benefits & Perks. 🎁</Heading>
+        <Heading>
+          {' '}
+          Benefits & Perks.{' '}
+          <span role="img" aria-label="gift">
+            🎁
+          </span>{' '}
+        </Heading>
       </S.HeadingWrapper>
       <S.Row>
         {PerksObject.map(({ content, picture }) => (
@@ -161,5 +181,3 @@ const BottomSection = () => (
     </S.OpportunitySection>
   </S.Section>
 );
-
-const OpportunityComponent = () => {};
