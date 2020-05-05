@@ -61,13 +61,13 @@ const MidSection = () => (
     </S.Section>
     <S.Section>
       <S.Row direction="row">
-        <S.LeftRow alignment="center">
+        <S.LeftRow alignment="center" flex={1}>
           <S.Img
             src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarTwo.svg"
             alt=""
           />
         </S.LeftRow>
-        <S.RightRow>
+        <S.RightRow flex={1}>
           <S.HeadingWrapper alignment="left">
             <Heading>What we're building?</Heading>
           </S.HeadingWrapper>
@@ -137,7 +137,7 @@ const BottomSection = () => (
       </S.ParagraphWrapper>
     </S.Wrapper>
 
-    <S.Section>
+    <S.OpportunitySection>
       {OpportunityList.map(({ type, openings, picture }, index) => (
         <S.OpportunityWrapper>
           <S.Row direction={index % 2 === 0 ? 'row-reverse' : 'row'}>
@@ -157,7 +157,7 @@ const BottomSection = () => (
           </S.Row>
         </S.OpportunityWrapper>
       ))}
-    </S.Section>
+    </S.OpportunitySection>
   </S.Section>
 );
 

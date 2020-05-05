@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { minimumWidthQuery, IgnitusBlue } from '../ignitus-Shared';
+import { RowTypes } from './types';
 
 export const Container = styled.div`
   ${minimumWidthQuery[1]} {
@@ -41,7 +42,11 @@ export const HeadingWrapper = styled.div`
 `;
 
 export const Section = styled.div`
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   ${minimumWidthQuery[1]} {
     margin: 0;
     padding: 0.5rem;
@@ -51,28 +56,28 @@ export const Section = styled.div`
     padding: 0.5rem;
   }
   ${minimumWidthQuery[3]} {
-    margin: 3rem 10rem;
+    margin: 3rem 6rem;
     padding: 1rem;
   }
   ${minimumWidthQuery[4]} {
-    margin: 3rem 10rem;
+    margin: 3rem 6rem;
     padding: 1rem;
   }
   ${minimumWidthQuery[5]} {
-    margin: 3rem 10rem;
+    margin: 3rem 6rem;
     padding: 1rem;
   }
   text-align: center;
 `;
 
-export const LeftRow = styled.div`
-  flex: 1;
+export const LeftRow = styled.div<RowTypes>`
+  flex: ${props => props.flex};
   display: flex;
   align-items: center;
-  justify-content: ${(props: { alignment?: string }) => props.alignment};
+  justify-content: ${props => props.alignment};
 `;
-export const RightRow = styled.div`
-  flex: 1;
+export const RightRow = styled.div<RowTypes>`
+  flex: ${props => props.flex};
   text-align: left;
 `;
 
@@ -83,6 +88,10 @@ export const Wrapper = styled.div`
 
 export const OpportunityWrapper = styled.div`
   margin: 2rem 0;
+`;
+
+export const OpportunitySection = styled.div`
+  width: 100%;
 `;
 
 export const PerksWrapper = styled.div`
@@ -97,7 +106,8 @@ export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
   flex-direction: ${(props: { direction?: string }) => props.direction};
 `;
 

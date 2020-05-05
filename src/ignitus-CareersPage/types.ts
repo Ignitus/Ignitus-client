@@ -11,3 +11,8 @@ export type OpportunityListType = {
 type OpeningsType = {
   title: string;
 };
+
+export type RowTypes = {
+  flex?: number;
+  alignment?: string;
+};
