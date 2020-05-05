@@ -3,7 +3,7 @@ import { mount, render } from 'enzyme';
 
 import { DefaultSearchInput } from './index';
 import { InputTypes } from '../types';
-import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/SearchIcon/searchIcon';
+import SearchIcon from '../../../ignitus-Assets/ignitus-Icons/SearchIcon';
 
 const props: InputTypes = {
   type: 'text',
