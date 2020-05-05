@@ -16,12 +16,21 @@ let wrapper;
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
-const styleCheckParagraph = () => {
-  const para = wrapper.find('p');
-  expect(para).toHaveStyleRule('color', '#4D4D4D');
-  expect(para).toHaveStyleRule('font-weight', '500');
-  expect(para).toHaveStyleRule('font-size', '18px');
-  expect(para).toHaveStyleRule('margin-top', '0');
+const propsCheck = () => {
+  expect(wrapper.find('h1').text()).toEqual(`${props.title}`);
+  expect(
+    wrapper
+      .find('p')
+      .at(0)
+      .text(),
+  ).toEqual(`${props.primaryText}`);
+  expect(
+    wrapper
+      .find('p')
+      .at(1)
+      .text(),
+  ).toEqual(`${props.secondaryText}`);
+  expect(wrapper.find('button').text()).toEqual(` ${props.buttonText}`);
 };
 
 describe('<Overlay />', () => {
@@ -40,5 +49,5 @@ describe('<Overlay />', () => {
     expect(wrapper.find('p').length).toBe(2);
   });
 
-  it('should render paragraph with style passed in prop', styleCheckParagraph);
+  it('should render values passed in props properly', propsCheck);
 });
