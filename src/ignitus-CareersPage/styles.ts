@@ -31,8 +31,6 @@ export const Container = styled(C)`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0;
-  margin: 3rem 0;
 `;
 
 export const Section = styled(flexibleColDiv)`
@@ -76,24 +74,24 @@ export const Row = styled.div`
   flex-wrap: wrap;
   align-items: center;
   /* justify-content: center; */
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: ${(props: { direction?: string }) => props.direction};
 `;
 
 export const Img = styled.img`
   ${minimumWidthQuery[1]} {
-    width: 10rem;
+    width: 6rem;
   }
   ${minimumWidthQuery[2]} {
-    width: 10rem;
+    width: 6rem;
   }
   ${minimumWidthQuery[3]} {
-    width: 18rem;
+    width: 15rem;
   }
   ${minimumWidthQuery[4]} {
-    width: 18rem;
+    width: 15rem;
   }
   ${minimumWidthQuery[5]} {
-    width: 18rem;
+    width: 15rem;
   }
 `;

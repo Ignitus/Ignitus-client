@@ -91,7 +91,7 @@ const MidSection = () => (
               proposition is we are devoted to educational opportunities with no
               involvement of any startup, companies, etc. we are still in a
               phase of creating Ignitus our goal is to act as an opportunity
-              bridge. 🎓
+              bridge.
             </Paragraph>
           </S.ParagraphWrapper>
         </S.RightRow>
@@ -103,21 +103,18 @@ const MidSection = () => (
         <Heading> Benefits & Perks. 🎁</Heading>
       </S.HeadingWrapper>
       <S.Row>
-        {PerksObject.map(({ content }) => (
-          <Perks key={content} content={content} />
+        {PerksObject.map(({ content, picture }) => (
+          <Perks key={content} content={content} picture={picture} />
         ))}
       </S.Row>
     </S.Section>
   </React.Fragment>
 );
 
-const Perks = ({ content }: PerksType) => (
+const Perks = ({ content, picture }: PerksType) => (
   <S.PerksWrapper>
     <S.Wrapper>
-      <img
-        src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarOne.svg"
-        alt="Img"
-      />
+      <img src={picture} alt="Img" />
     </S.Wrapper>
     <S.ParagraphWrapper alignment="left">
       <Paragraph>{content}</Paragraph>

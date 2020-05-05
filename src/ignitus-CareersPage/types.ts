@@ -1,5 +1,6 @@
 export type PerksType = {
   content: string;
+  picture: string;
 };
 
 export type OpportunityListType = {
