@@ -26,7 +26,7 @@
 - [Redis](https://redislabs.com/) - Redis is an open source (BSD licensed), in-memory data structure store.
 
 
-👋 Please refer our [doumentation](https://ignitus-1.gitbook.io/ignitus/design/visual-design) to get insights on contributing & conventions guidelines. 
+👋 Please refer our [doumentation](https://ignitus-docs.gitbook.io/ignitus/) to get insights on contributing & conventions guidelines. 
 
 <div align="center">
   <br>
