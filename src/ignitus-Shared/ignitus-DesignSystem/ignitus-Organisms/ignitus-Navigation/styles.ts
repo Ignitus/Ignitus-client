@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import {keyframes, css} from '@emotion/core';
+import { keyframes, css } from '@emotion/core';
 import isValidProps from '@emotion/is-prop-valid';
 import {
   White,
@@ -8,10 +8,9 @@ import {
   IgnitusBlue,
   boxShadowColor,
 } from '../../ignitus-Atoms/colors';
-import {XS, SemiBold} from '../../ignitus-Atoms/fonts';
-import {NavigationProps, ToggleProps} from './types';
+import { XS, SemiBold } from '../../ignitus-Atoms/fonts';
+import { NavigationProps, ToggleProps } from './types';
 import Icon from '../../../ignitus-Utilities/Components/icon';
-
 
 export const Navigation = styled.nav<NavigationProps>`
   align-items: center;
@@ -24,7 +23,8 @@ export const Navigation = styled.nav<NavigationProps>`
   justify-content: space-between;
   transition: background-color 300ms ease-in;
   background: ${props => (props.transparentNavigation ? 'transparent' : White)};
-  box-shadow: ${props => (props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`)};
+  box-shadow: ${props =>
+    props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`};
   padding: 0.5rem;
   @media only screen and (max-width: 1042px) {
     flex-direction: column;
@@ -104,7 +104,9 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
 
 export const NavigationLink = styled(Link)``;
 
-export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<ToggleProps>`
+export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
+  ToggleProps
+>`
   position: absolute;
   top: 1.2rem;
   right: 2rem;

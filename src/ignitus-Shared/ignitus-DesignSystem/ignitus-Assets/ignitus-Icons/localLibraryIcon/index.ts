@@ -1,1 +1,1 @@
-export {default} from './localLibraryIcon';
+export { default } from './localLibraryIcon';

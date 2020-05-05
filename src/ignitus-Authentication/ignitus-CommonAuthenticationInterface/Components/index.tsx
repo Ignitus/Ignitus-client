@@ -2,7 +2,7 @@ import React from 'react';
 import * as t from '../constants';
 import * as A from '../styles';
 
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
+import { withErrorBoundary } from '../../../ignitus-Shared';
 
 interface Props {
   title: string;
@@ -11,7 +11,7 @@ interface Props {
 }
 
 function commonLoginRegister(props: Props): React.ComponentType {
-  const {title, studentRoute, professorRoute} = props;
+  const { title, studentRoute, professorRoute } = props;
 
   const SignInPage = () => (
     <A.Container>

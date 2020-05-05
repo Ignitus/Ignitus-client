@@ -1,4 +1,5 @@
-import {AppIcon} from '../../../types/iconsTypes/iconEnums';
+import { AppIcon } from '../../../types/iconsTypes/iconEnums';
+
 export type Props = {
   content: string;
   name: AppIcon;

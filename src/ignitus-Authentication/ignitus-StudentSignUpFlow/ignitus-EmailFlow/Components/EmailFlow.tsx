@@ -4,21 +4,22 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import newsletter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Png/newsletterIcon.png';
-import { withErrorBoundary } from '../../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   Paragraph,
   Heading2,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+  withErrorBoundary,
+  Button,
+} from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
-import {
-  Button,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
 
 const EmailFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressFive.png"
+        alt="progress-bar"
+      />
       <C.NewsletterImage src={newsletter} alt="newsletter" />
       <Heading2>Let’s confirm your email.</Heading2>
       <Paragraph>
@@ -39,7 +40,9 @@ const EmailFlow: FunctionComponent = () => (
           <Link to="/">I don’t see the email</Link>
         </Button>
       </C.ButtonContainer>
-      <Paragraph><Link to="/">I don’t want to confirm my email yet.</Link></Paragraph>
+      <Paragraph>
+        <Link to="/">I don’t want to confirm my email yet.</Link>
+      </Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
 );

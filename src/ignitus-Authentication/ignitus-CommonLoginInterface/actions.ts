@@ -1,4 +1,4 @@
-import { isString, isObject } from '../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
+import { isString, isObject } from '../../ignitus-Shared';
 import * as t from './actionTypes';
 
 export const logInRequest = (email, password, userType) => {
@@ -7,10 +7,15 @@ export const logInRequest = (email, password, userType) => {
     throw new Error(`password must be string: ${password}`);
   }
 
-  return { type: t.LOG_IN_REQUEST, email, password, userType };
+  return {
+    type: t.LOG_IN_REQUEST,
+    email,
+    password,
+    userType,
+  };
 };
 
-export const logInResponse = (data) => {
+export const logInResponse = data => {
   if (!isObject(data)) throw new Error(`data should be object: ${data}`);
   return { type: t.LOG_IN_RESPONSE, data };
 };

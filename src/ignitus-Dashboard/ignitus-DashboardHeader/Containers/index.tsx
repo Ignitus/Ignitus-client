@@ -5,7 +5,8 @@ import dashBoardHeader from '../Components';
 import { logUserOut } from '../../../ignitus-Authentication/ignitus-CommonLoginInterface/actions';
 
 const mapStateToProps = state => ({ state });
-const mapDispatchToProps = dispatch => bindActionCreators({ logUserOut }, dispatch);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ logUserOut }, dispatch);
 
 export default connect(
   mapStateToProps,

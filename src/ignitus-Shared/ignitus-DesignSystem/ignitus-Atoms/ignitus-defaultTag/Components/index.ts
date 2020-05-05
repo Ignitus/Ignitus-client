@@ -1,1 +1,1 @@
-export {DefaultTag1, DefaultTag2} from './defaultTag';
+export { DefaultTag1, DefaultTag2 } from './defaultTag';

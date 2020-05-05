@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleColDiv, flexibleRowDiv} from '../../shared';
-import {PrimaryFamily, XS} from '../../ignitus-Atoms/fonts';
+import { flexibleColDiv, flexibleRowDiv } from '../../shared';
+import { PrimaryFamily, XS } from '../../ignitus-Atoms/fonts';
 
 export const Footer = styled.footer`
   background-color: ${C.White};

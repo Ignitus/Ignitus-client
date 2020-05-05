@@ -1,18 +1,18 @@
 import React from 'react';
 import * as I from '../styles';
-import {AppIcon} from '../../../../../ignitus-Shared/types/iconsTypes/iconEnums';
 import {
+  AppIcon,
+  Black,
   Heading4,
   Heading2,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+} from '../../../../../ignitus-Shared';
 import {
   SocialIcons,
   DashboardIcons,
   GeneralIcons,
   IgnitusLogos,
 } from '../constants';
-import {Interface} from '../../../../styles';
-import { Black } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { Interface } from '../../../../styles';
 
 export const interfaceIcons: React.FC = () => (
   <Interface>
@@ -42,5 +42,9 @@ export const interfaceIcons: React.FC = () => (
   </Interface>
 );
 
-const IconsMapper: Function = ({icons}: {icons: AppIcon[]}): JSX.Element[] =>
+type IconsT = {
+  icons: AppIcon[];
+};
+
+const IconsMapper: Function = ({ icons }: IconsT): JSX.Element[] =>
   icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);

@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
-import { withErrorBoundary } from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
 import {
   SharedAuthentication,
   LoginStatePayload,
-  authData
-} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
-import { isEmpty } from '../../../ignitus-Shared/ignitus-Utilities/HelperFunctions/lodashHelpers';
-
+  AuthData,
+  withErrorBoundary,
+  isEmpty,
+} from '../../../ignitus-Shared';
 
 export interface LogInProps {
   logInRequest: Function;
-  logInData: authData;
+  logInData: AuthData;
   clearPreviousLogin: Function;
-};
+}
 
 const Login: React.FC<LogInProps> = ({
   logInRequest,
   logInData,
   clearPreviousLogin,
 }) => {
-  const professorLogInData: authData = logInData;
+  const professorLogInData: AuthData = logInData;
 
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
-  useEffect(() => (() => clearPreviousLogin()),[clearPreviousLogin]);
+  useEffect(() => () => clearPreviousLogin(), [clearPreviousLogin]);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -46,11 +45,11 @@ const Login: React.FC<LogInProps> = ({
 
       if (
         !(
-          lastAtPos < lastDotPos
-          && lastAtPos > 0
-          && email.indexOf('@@') === -1
-          && lastDotPos > 2
-          && email.length - lastDotPos > 2
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          email.indexOf('@@') === -1 &&
+          lastDotPos > 2 &&
+          email.length - lastDotPos > 2
         )
       ) {
         setState({

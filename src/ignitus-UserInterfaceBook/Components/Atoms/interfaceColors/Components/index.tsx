@@ -1,14 +1,13 @@
 import React from 'react';
 import * as C from '../styles';
 import { Interface } from '../../../../styles';
-import { Heading2 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading2 } from '../../../../../ignitus-Shared';
 import {
   PrimaryColors,
   GreyShades,
   BasicColors,
   SocialPlatformColors,
 } from '../constants';
-
 
 export const interfaceColors: React.FC = () => (
   <Interface>
@@ -27,5 +26,14 @@ export const interfaceColors: React.FC = () => (
   </Interface>
 );
 
-const ColorsMapper: Function = ({colors}: {colors: string[]}): JSX.Element[] =>
-  colors.map((color: string) => <C.Color key={color} hex={color}> {color} </C.Color>);
+type colorsT = {
+  colors: string[];
+};
+
+const ColorsMapper: Function = ({ colors }: colorsT): JSX.Element[] =>
+  colors.map((color: string) => (
+    <C.Color key={color} hex={color}>
+      {' '}
+      {color}{' '}
+    </C.Color>
+  ));

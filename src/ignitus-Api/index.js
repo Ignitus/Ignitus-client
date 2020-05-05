@@ -21,7 +21,7 @@ export async function getTestimonialData() {
     }
     return await DBHelper.getDataFromDB(t.TESTIMONIALS_STORE);
   } catch (err) {
-    return new Promise(reject => reject(err));
+    return new Promise((reject) => reject(err));
   }
 }
 
@@ -41,7 +41,7 @@ async function getHeaders(name) {
       headers: {
         'If-None-Match': item.etag,
       },
-      validateStatus: status => (status >= 200 && status < 300) || status === 304,
+      validateStatus: (status) => (status >= 200 && status < 300) || status === 304,
     };
   }
   return {};
@@ -101,6 +101,6 @@ export async function getContributorsData() {
     }
     return await DBHelper.getDataFromDB(t.CONTRIBUTORS_STORE);
   } catch (err) {
-    return new Promise(reject => reject(err));
+    return new Promise((reject) => reject(err));
   }
 }

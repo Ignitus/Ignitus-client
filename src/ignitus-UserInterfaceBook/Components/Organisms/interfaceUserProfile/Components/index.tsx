@@ -1,7 +1,6 @@
 import React from 'react';
-import {Heading2} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import {Interface} from '../../../../styles';
-import {UserProfileCard} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components/index';
+import { Heading2, UserProfileCard } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceUserProfile: React.FC = () => (
   <Interface>

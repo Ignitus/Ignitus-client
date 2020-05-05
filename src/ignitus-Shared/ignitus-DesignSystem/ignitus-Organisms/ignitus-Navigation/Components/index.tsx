@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, {useEffect, useState} from 'react';
-import {NavigationProps} from '../types';
-import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
-import {useToggle} from '../../../../ignitus-Utilities/reactHooks/toogleHook';
+import React, { useEffect, useState } from 'react';
+import { NavigationProps } from '../types';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { useToggle } from '../../../../ignitus-Utilities/reactHooks/toogleHook';
 
 import * as N from '../styles';
 import {
@@ -11,7 +11,9 @@ import {
   NonAuthenticatedNavigationItemsList,
 } from '../constants';
 
-const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
+const PureNavigation: React.FC<NavigationProps> = ({
+  transparentNavigation,
+}) => {
   const NavigationItemsList = localStorage.getItem('authenticated')
     ? AuthenticatedNavigationItemsList
     : NonAuthenticatedNavigationItemsList;
@@ -22,14 +24,12 @@ const PureNavigation: React.FC<NavigationProps> = ({transparentNavigation}) => {
         <N.Logo name={AppIcon.IgnitusLogo} />
       </N.NavigationBarBrand>
       <N.NavigationLinks isExpanded={isExpanded}>
-        {NavigationItemsList.map(({title, route}) => (
+        {NavigationItemsList.map(({ title, route }) => (
           <N.NavigationLinkItem
             key={title}
             transparentNavigation={transparentNavigation}
           >
-            <N.NavigationLink to={route}>
-              {title}
-            </N.NavigationLink>
+            <N.NavigationLink to={route}>{title}</N.NavigationLink>
           </N.NavigationLinkItem>
         ))}
       </N.NavigationLinks>
@@ -62,7 +62,7 @@ const Navigation: React.FunctionComponent = () => {
         setTransparentNavigation(false);
       }
     };
-    window.addEventListener('scroll', scrollFn, {passive: true});
+    window.addEventListener('scroll', scrollFn, { passive: true });
     return () => {
       window.removeEventListener('scroll', scrollFn);
     };
@@ -72,9 +72,10 @@ const Navigation: React.FunctionComponent = () => {
 };
 
 export const OptionalNavigation: React.FC<NavigationProps> = React.memo(
-  ({transparentNavigation = false}) => {
-    if (!transparentNavigation)
+  ({ transparentNavigation = false }) => {
+    if (!transparentNavigation) {
       return <PureNavigation transparentNavigation={transparentNavigation} />;
+    }
     return <Navigation />;
   },
 );

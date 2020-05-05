@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 import { Interface } from '../../../styles';
-import { Heading2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
-import { Button } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/buttons';
+import { Heading2, Button } from '../../../../ignitus-Shared';
 import { Progress } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Progress';
 import { flexibleRowDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
@@ -13,14 +12,13 @@ export const InterfaceProgress = () => {
   const [current, updateCurrent] = useState(1);
   const steps = 5;
 
-  const next = () => (current === steps + 1 ? null : updateCurrent(current + 1));
+  const next = () =>
+    current === steps + 1 ? null : updateCurrent(current + 1);
   const previous = () => (current === 1 ? null : updateCurrent(current - 1));
 
   return (
     <Interface>
-      <Heading2>
-        Signup Progress
-      </Heading2>
+      <Heading2>Signup Progress</Heading2>
       <hr />
       <br />
       <Progress steps={steps} current={current} />

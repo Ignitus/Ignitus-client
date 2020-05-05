@@ -1,5 +1,4 @@
-import { getContributorsData } from "./actions";
-
+/* eslint-disable camelcase */
 export type TeamActionType = {
   type: string;
   data?: any;
@@ -34,6 +33,6 @@ export type TeamReducerReturnType = {
 };
 
 export type TeamPropType = {
-  getContributorsData: typeof getContributorsData,
-  contributorsData: TeamReducerReturnType
-}
+  getContributorsData: Function;
+  contributorsData: TeamReducerReturnType;
+};

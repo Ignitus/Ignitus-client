@@ -1,4 +1,4 @@
-import {AppIcon} from '../../../types/iconsTypes/iconEnums';
+import { AppIcon } from '../../../types/iconsTypes/iconEnums';
 
 export type DefaultIconInputProperties = {
   type: string;
@@ -10,7 +10,7 @@ export type DefaultIconInputProperties = {
 };
 
 export type DefaultPasswordInputProperties = {
-  state: string;
   placeholder: string;
+  state: string;
   handleChange: (value: string) => void;
 };

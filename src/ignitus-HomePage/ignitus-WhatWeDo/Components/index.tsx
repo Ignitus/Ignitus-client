@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
-import {withErrorBoundary} from '../../../ignitus-Shared/ignitus-ErrorHandlingComponents/errorBoundary';
-import {data} from '../constants';
+import { withErrorBoundary } from '../../../ignitus-Shared';
+import { data } from '../constants';
 
 export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
   <div id="what-we-do">

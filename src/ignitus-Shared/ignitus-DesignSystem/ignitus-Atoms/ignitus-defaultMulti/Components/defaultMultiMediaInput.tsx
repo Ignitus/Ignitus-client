@@ -3,14 +3,18 @@ import { InputTypes } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200, initialHeight }: InputTypes) => {
-
+const DefaultMultiMediaInput = ({
+  placeholder,
+  name,
+  maxHeightOfInput = 200,
+  initialHeight,
+}: InputTypes) => {
   let overflowVisible = false;
 
   const setOverflowVisible = e => {
     e.target.style.overflow = 'visible';
     overflowVisible = true;
-  }
+  };
 
   const setOverflowHidden = e => {
     e.target.style.overflow = 'hidden';
@@ -34,7 +38,12 @@ const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200, ini
     <React.Fragment>
       <I.InputContainer>
         <I.TopContainer>
-          <I.Input placeholder={placeholder} name={name} onChange={setHeight} initialHeight={initialHeight} />
+          <I.Input
+            placeholder={placeholder}
+            name={name}
+            onChange={setHeight}
+            initialHeight={initialHeight}
+          />
         </I.TopContainer>
         <I.BottomContainer>
           <I.IconsContainer>
@@ -57,11 +66,11 @@ const DefaultMultiMediaInput = ({ placeholder, name, maxHeightOfInput = 200, ini
           <I.Button category="primary" size="medium">
             {' '}
             Post
-        </I.Button>
+          </I.Button>
         </I.BottomContainer>
       </I.InputContainer>
     </React.Fragment>
-  )
+  );
 };
 
 export default DefaultMultiMediaInput;

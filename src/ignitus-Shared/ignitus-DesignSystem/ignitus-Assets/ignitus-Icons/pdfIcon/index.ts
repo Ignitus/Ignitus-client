@@ -1,1 +1,1 @@
-export {default} from './pdfIcon';
+export { default } from './pdfIcon';

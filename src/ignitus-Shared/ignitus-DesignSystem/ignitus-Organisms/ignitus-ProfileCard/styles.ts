@@ -7,11 +7,11 @@ import {
   Link as L,
   Paragraph as P,
 } from '../../shared';
-import {Heading1, Heading4} from '../../ignitus-Atoms/typography';
-import {XXXL, SemiBold, Normal} from '../../ignitus-Atoms/fonts';
+import { Heading1, Heading4 } from '../../ignitus-Atoms/typography';
+import { XXXL, SemiBold, Normal } from '../../ignitus-Atoms/fonts';
 
-import {default as I} from '../../../ignitus-Utilities/Components/icon';
-import {ParagraphProps} from './types';
+import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { ParagraphProps } from './types';
 
 export const Container = styled.div`
   display: flex;
