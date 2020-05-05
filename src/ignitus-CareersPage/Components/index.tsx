@@ -83,7 +83,7 @@ const MidSection = () => (
           />
         </S.LeftRow>
         <S.RightRow flex={1}>
-          <S.HeadingWrapper alignment="left">
+          <S.HeadingWrapper alignment="center">
             <Heading>What we&apos;re building?</Heading>
           </S.HeadingWrapper>
           <S.ParagraphWrapper>
@@ -96,7 +96,7 @@ const MidSection = () => (
             </Paragraph>
           </S.ParagraphWrapper>
 
-          <S.ParagraphWrapper>
+          <S.ParagraphWrapper alignment="center">
             {' '}
             <Paragraph>
               We are creating a global open-source platform where anyone
