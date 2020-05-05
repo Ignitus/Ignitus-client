@@ -5,7 +5,6 @@ import * as S from './styles.ts';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { RoundedButton } from '../../../ignitus-Atoms/buttons';
 
-
 export default function OpportunityFilters() {
   const dummyData = {
     dummyDates: ['Past 24 hours', 'Past week', 'Past Month'],
@@ -21,14 +20,16 @@ export default function OpportunityFilters() {
   const [keyWords, setKeyWords] = useState({
     keywords: '',
   });
-  const handlechange = (e, type) => setTags({
-    ...Tags,
-    [type]: e.target.textContent,
-  });
-  const resetTag = type => setTags({
-    ...Tags,
-    [type]: '',
-  });
+  const handlechange = (e, type) =>
+    setTags({
+      ...Tags,
+      [type]: e.target.textContent,
+    });
+  const resetTag = type =>
+    setTags({
+      ...Tags,
+      [type]: '',
+    });
   const resetFilters = () => {
     setTags({
       ...Tags,
@@ -44,17 +45,23 @@ export default function OpportunityFilters() {
   return (
     <S.Container>
       <S.TopContainer>
-
         <S.SelectedFiltersContainer>
           <S.SearchIcon name={AppIcon.SearchIcon} />
           <S.SelectedFilters>
-            {
-              Object.keys(Tags).map(key => (Tags[key] && (
-                <S.RoundedDefaultButtonWithIcon size="medium" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
-              )))
-            }
+            {Object.keys(Tags).map(
+              key =>
+                Tags[key] && (
+                  <S.RoundedDefaultButtonWithIcon
+                    size="medium"
+                    onClick={() => resetTag(key)}
+                    category="primary"
+                    key={key}
+                    name={AppIcon.CrossIcon}
+                    content={Tags[key]}
+                  />
+                ),
+            )}
           </S.SelectedFilters>
-
         </S.SelectedFiltersContainer>
 
         <S.SearchContainer>
@@ -74,56 +81,44 @@ export default function OpportunityFilters() {
         </S.SearchContainer>
       </S.TopContainer>
       <S.BottomContainer>
-        {
-          Object.keys(Tags).map(key => (
-            <S.ButtonDropDownContainer key={key}>
-              {
-                key === 'dummyDates'
-                && (
-                  <S.RoundedDefaultButtonWithIcon
-                    size="medium"
-                    category="secondary"
-                    name={AppIcon.FilledArrowDownIcon}
-                    content="Date Posted"
-                  />
-                )
+        {Object.keys(Tags).map(key => (
+          <S.ButtonDropDownContainer key={key}>
+            {key === 'dummyDates' && (
+              <S.RoundedDefaultButtonWithIcon
+                size="medium"
+                category="secondary"
+                name={AppIcon.FilledArrowDownIcon}
+                content="Date Posted"
+              />
+            )}
+            {key === 'dummyJobType' && (
+              <S.RoundedDefaultButtonWithIcon
+                size="medium"
+                category="secondary"
+                name={AppIcon.FilledArrowDownIcon}
+                content="Job Type"
+              />
+            )}
 
-              }
-              {
-                key === 'dummyJobType' && (
-                  <S.RoundedDefaultButtonWithIcon
-                    size="medium"
-                    category="secondary"
-                    name={AppIcon.FilledArrowDownIcon}
-                    content="Job Type"
-                  />
-                )
-              }
-
-              {
-                key === 'dummyJobLocations' && (
-                  <S.RoundedDefaultButtonWithIcon
-                    size="medium"
-                    category="secondary"
-                    name={AppIcon.LocationIcon}
-                    content="Job Location"
-                  />
-                )
-              }
-              <S.OptionSelector>
-                {
-                  dummyData[key].map(value => (
-                    <S.Option key={value}>
-                      <S.OptionText key={value} onClick={e => handlechange(e, key)}>
-                        {value}
-                      </S.OptionText>
-                    </S.Option>
-                  ))
-                }
-              </S.OptionSelector>
-            </S.ButtonDropDownContainer>
-          ))
-        }
+            {key === 'dummyJobLocations' && (
+              <S.RoundedDefaultButtonWithIcon
+                size="medium"
+                category="secondary"
+                name={AppIcon.LocationIcon}
+                content="Job Location"
+              />
+            )}
+            <S.OptionSelector>
+              {dummyData[key].map(value => (
+                <S.Option key={value}>
+                  <S.OptionText key={value} onClick={e => handlechange(e, key)}>
+                    {value}
+                  </S.OptionText>
+                </S.Option>
+              ))}
+            </S.OptionSelector>
+          </S.ButtonDropDownContainer>
+        ))}
         <RoundedButton
           size="medium"
           category="secondary"

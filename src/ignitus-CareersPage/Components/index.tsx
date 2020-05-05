@@ -160,7 +160,7 @@ const BottomSection = () => (
 
     <S.OpportunitySection>
       {OpportunityList.map(({ type, openings, picture }, index) => (
-        <S.OpportunityWrapper>
+        <S.OpportunityWrapper key={type}>
           <S.Row direction={index % 2 === 0 ? 'row-reverse' : 'row'}>
             <S.RightRow>
               <S.ParagraphWrapper key={type} alignment="left">
