@@ -122,41 +122,39 @@ const MidSection = () => (
           </span>{' '}
         </Heading>
       </S.HeadingWrapper>
-      <S.Row>
+      <S.PerksRow>
         {PerksObject.map(({ content, picture }) => (
           <Perks key={content} content={content} picture={picture} />
         ))}
-      </S.Row>
+      </S.PerksRow>
     </S.Section>
   </React.Fragment>
 );
 
 const Perks = ({ content, picture }: PerksType) => (
   <S.PerksWrapper>
-    <S.Wrapper>
+    <S.PerksImageWrapper>
       <img src={picture} alt="Img" />
-    </S.Wrapper>
-    <S.ParagraphWrapper alignment="left">
+    </S.PerksImageWrapper>
+    <S.PerksParagraphWrapper alignment="left">
       <Paragraph>{content}</Paragraph>
-    </S.ParagraphWrapper>
+    </S.PerksParagraphWrapper>
   </S.PerksWrapper>
 );
 
 const BottomSection = () => (
   <S.Section>
-    <S.Wrapper>
-      <S.HeadingWrapper alignment="center">
-        <Heading> Current Opportunities.</Heading>
-      </S.HeadingWrapper>
+    <S.HeadingWrapper alignment="center">
+      <Heading> Current Opportunities.</Heading>
+    </S.HeadingWrapper>
 
-      <S.ParagraphWrapper alignment="center">
-        <Paragraph color={IgnitusBlue}>
-          {' '}
-          We’re looking for people to join the team who are as excited as we are
-          to help build the platform that empowers the students.
-        </Paragraph>
-      </S.ParagraphWrapper>
-    </S.Wrapper>
+    <S.ParagraphWrapper alignment="center">
+      <Paragraph color={IgnitusBlue}>
+        {' '}
+        We’re looking for people to join the team who are as excited as we are
+        to help build the platform that empowers the students.
+      </Paragraph>
+    </S.ParagraphWrapper>
 
     <S.OpportunitySection>
       {OpportunityList.map(({ type, openings, picture }, index) => (

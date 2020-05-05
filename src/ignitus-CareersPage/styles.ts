@@ -21,6 +21,10 @@ export const ParagraphWrapper = styled.div`
   padding: 0.5rem 0;
 `;
 
+export const PerksParagraphWrapper = styled(ParagraphWrapper)`
+  width: 15rem;
+`;
+
 export const HeadingWrapper = styled.div`
   padding: 1rem 0;
   text-align: ${(props: { alignment?: string }) => props.alignment};
@@ -60,7 +64,7 @@ export const RightRow = styled.div<RowTypes>`
   }
 `;
 
-export const Wrapper = styled.div`
+export const PerksImageWrapper = styled.div`
   padding: 0.5rem;
   text-align: left;
 `;
@@ -74,11 +78,24 @@ export const OpportunitySection = styled.div`
 `;
 
 export const PerksWrapper = styled.div`
-  flex: 1 1 30%;
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  ${minimumWidthQuery[0]} {
+    flex: 1 1 100%;
+  }
+  ${minimumWidthQuery[1]} {
+    flex: 1 1 100%;
+  }
+  ${minimumWidthQuery[2]} {
+    flex: 1 1 50%;
+  }
+  ${minimumWidthQuery[3]} {
+    flex: 1 1 30%;
+  }
 `;
 
 export const Row = styled.div`
@@ -87,6 +104,22 @@ export const Row = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: ${(props: { direction?: string }) => props.direction};
+
+  ${minimumWidthQuery[0]} {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: ${(props: { direction?: string }) => props.direction};
+    margin: 0;
+  }
+`;
+
+export const PerksRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 
   ${minimumWidthQuery[0]} {
     margin: 2rem 0;
