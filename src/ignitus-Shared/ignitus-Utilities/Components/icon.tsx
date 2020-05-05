@@ -5,7 +5,7 @@ import AngelListIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ico
 import PlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
 import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
 import HeartIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
-import { AppIcon } from '../../types/iconsTypes/iconEnums';
+
 import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon/messageIcon';
 import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
 import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
@@ -28,7 +28,6 @@ import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
 import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
 import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
-import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/searchIcon/searchIcon';
 import BookmarkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
 import FileIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
 import MapMarkerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
@@ -39,12 +38,14 @@ import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/
 import { IgnitusLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
 import { EyeVisibleOffIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOffIcon/index';
 import { EyeVisibleOnIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOnIcon/index';
+import { AppIcon } from '../../types/iconsTypes/iconEnums';
 import { KeyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyIcon/index';
 import SlackIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon/index';
 import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon/index';
 import YouTubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
 import ContributionIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
 import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
+import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
 
 type Props = {
   name: AppIcon;
