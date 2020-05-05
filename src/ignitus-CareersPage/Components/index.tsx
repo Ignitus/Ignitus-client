@@ -177,5 +177,14 @@ const BottomSection = () => (
         </S.OpportunityWrapper>
       ))}
     </S.OpportunitySection>
+    <br />
+    <br />
+    <br />
+    <S.ParagraphWrapper alignment="center">
+      <Paragraph>
+        To apply please write an email to team@ignitus.org or apply from{' '}
+        <a href="https://angel.co/company/ignitus-2/jobs">here</a>.
+      </Paragraph>
+    </S.ParagraphWrapper>
   </S.Section>
 );
