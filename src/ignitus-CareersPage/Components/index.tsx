@@ -15,7 +15,7 @@ import {
 import { PerksType } from '../types';
 
 export const CareersPage = () => (
-  <S.Container>
+  <React.Fragment>
     <S.TopSection>
       <Heading color="white">
         Do The Most Meaningful Work of Your Career 🎯
@@ -27,9 +27,13 @@ export const CareersPage = () => (
         We're Hiring{' '}
       </RoundedButton>
     </S.TopSection>
-    <MidSection />
-    <BottomSection />
-  </S.Container>
+    <S.Section>
+      <S.Container>
+        <MidSection />
+        <BottomSection />
+      </S.Container>
+    </S.Section>
+  </React.Fragment>
 );
 
 const MidSection = () => (

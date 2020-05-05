@@ -1,25 +1,10 @@
 import styled from '@emotion/styled';
 import { minimumWidthQuery, IgnitusBlue } from '../ignitus-Shared';
 import { RowTypes } from './types';
-
-export const Container = styled.div`
-  ${minimumWidthQuery[1]} {
-    flex-direction: column;
-  }
-  ${minimumWidthQuery[2]} {
-    flex-direction: column;
-  }
-  ${minimumWidthQuery[3]} {
-    flex-direction: row;
-  }
-  ${minimumWidthQuery[4]} {
-    flex-direction: row;
-  }
-  ${minimumWidthQuery[5]} {
-    flex-direction: row;
-  }
-  overflow: hidden;
-`;
+import {
+  Container as C,
+  flexibleColDiv,
+} from '../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const TextContainer = styled.div`
   text-align: center;
@@ -41,33 +26,17 @@ export const HeadingWrapper = styled.div`
   text-align: ${(props: { alignment?: string }) => props.alignment};
 `;
 
-export const Section = styled.div`
+export const Container = styled(C)`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  margin: 3rem 0;
+`;
 
-  ${minimumWidthQuery[1]} {
-    margin: 0;
-    padding: 0.5rem;
-  }
-  ${minimumWidthQuery[2]} {
-    margin: 0;
-    padding: 0.5rem;
-  }
-  ${minimumWidthQuery[3]} {
-    margin: 3rem 6rem;
-    padding: 1rem;
-  }
-  ${minimumWidthQuery[4]} {
-    margin: 3rem 6rem;
-    padding: 1rem;
-  }
-  ${minimumWidthQuery[5]} {
-    margin: 3rem 6rem;
-    padding: 1rem;
-  }
-  text-align: center;
+export const Section = styled(flexibleColDiv)`
+  margin: 2rem 0;
 `;
 
 export const LeftRow = styled.div<RowTypes>`
