@@ -8,30 +8,12 @@ const props = {
   primaryText: 'primary text',
   secondaryText: 'secondary text',
   buttonText: 'button text',
-  secondary: true,
 };
 
 let wrapper;
 
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
-
-const propsCheck = () => {
-  expect(wrapper.find('h1').text()).toEqual(`${props.title}`);
-  expect(
-    wrapper
-      .find('p')
-      .at(0)
-      .text(),
-  ).toEqual(`${props.primaryText}`);
-  expect(
-    wrapper
-      .find('p')
-      .at(1)
-      .text(),
-  ).toEqual(`${props.secondaryText}`);
-  expect(wrapper.find('button').text()).toEqual(` ${props.buttonText}`);
-};
 
 describe('<Overlay />', () => {
   beforeEach(() => {
@@ -49,5 +31,20 @@ describe('<Overlay />', () => {
     expect(wrapper.find('p').length).toBe(2);
   });
 
-  it('should render values passed in props properly', propsCheck);
+  it('should render values passed in props properly', () => {
+    expect(wrapper.find('h1').text()).toEqual(`${props.title}`);
+    expect(
+      wrapper
+        .find('p')
+        .at(0)
+        .text(),
+    ).toEqual(`${props.primaryText}`);
+    expect(
+      wrapper
+        .find('p')
+        .at(1)
+        .text(),
+    ).toEqual(`${props.secondaryText}`);
+    expect(wrapper.find('button').text()).toEqual(` ${props.buttonText}`);
+  });
 });
