@@ -16,7 +16,7 @@ const Overlay = ({
       <O.Paragraph secondary>{secondaryText}</O.Paragraph>
     </O.TopSection>
     <O.BottomSection>
-      <O.Button category="primary" size="medium">
+      <O.Button category="secondary" size="medium">
         {' '}
         {buttonText}
       </O.Button>
