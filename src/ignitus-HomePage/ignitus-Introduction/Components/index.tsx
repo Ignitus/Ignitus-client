@@ -19,19 +19,19 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
         Skyrocketing your career
       </I.PrimaryText>
       {localStorage.getItem('authenticated') ? (
-        <a 
-          href = "https://app.slack.com/client/TRN1H1V43/CUCLB9VJL" 
-          target = "_blank" 
+        <a
+          href="https://app.slack.com/client/TRN1H1V43/CUCLB9VJL"
+          target="_blank"
           rel="noopener noreferrer"
         >
           <I.Button category="secondary" size="large">
             JOIN US
           </I.Button>
-        </a> 
-      ) : (  
+        </a>
+      ) : (
         <I.Button category="secondary" size="large">
-           SIGN UP
-        </I.Button> 
+          SIGN UP
+        </I.Button>
       )}
     </I.LeftSection>
 
