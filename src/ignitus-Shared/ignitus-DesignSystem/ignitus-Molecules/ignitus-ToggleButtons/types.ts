@@ -1,10 +1,11 @@
-export type Props = {
-  secondary?: boolean;
+import { AppIcon } from '../../../types/iconsTypes/iconEnums';
+
+export type InputTypes1 = {
+  leftLabel: string;
+  rightLabel: string;
 };
 
-export type OverlayProps = {
-  primaryText: string;
-  secondaryText: string;
-  title: string;
-  buttonText: string;
+export type InputTypes2 = {
+  leftIcon: AppIcon;
+  rightIcon: AppIcon;
 };

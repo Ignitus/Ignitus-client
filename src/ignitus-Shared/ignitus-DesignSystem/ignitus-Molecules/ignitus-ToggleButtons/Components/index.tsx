@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import React from 'react';
 import * as B from '../../../ignitus-Atoms/buttons';
 import { ToggleButton1, ToggleButton2, StyledIcon } from '../styles';
-import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import * as C from '../../../..';
+import { InputTypes1, InputTypes2 } from '../types';
 
 const ButtonLeft = styled(B.Button)`
   font-weight: 600;
@@ -21,26 +21,29 @@ const ButtonRight = styled(B.Button)`
   border-radius: 0 20px 20px 0;
 `;
 
-export const DefaultToggleButton1 = () => (
+export const DefaultToggleButton1 = ({
+  leftLabel,
+  rightLabel,
+}: InputTypes1) => (
   <ToggleButton1>
     <ButtonLeft size="medium" category="primary">
       {' '}
-      Feed{' '}
+      {leftLabel}{' '}
     </ButtonLeft>
     <ButtonRight size="medium" category="grey">
       {' '}
-      Profile{' '}
+      {rightLabel}{' '}
     </ButtonRight>
   </ToggleButton1>
 );
 
-export const DefaultToggleButton2 = () => (
+export const DefaultToggleButton2 = ({ leftIcon, rightIcon }: InputTypes2) => (
   <ToggleButton2>
     <ButtonLeft size="medium" category="grey">
-      <StyledIcon color={C.IgnitusBlue} name={AppIcon.GridIcon} />
+      <StyledIcon color={C.IgnitusBlue} name={leftIcon} />
     </ButtonLeft>
     <ButtonRight size="medium" category="white">
-      <StyledIcon color={C.IgnitusBlue} name={AppIcon.BarsIcon} />
+      <StyledIcon color={C.IgnitusBlue} name={rightIcon} />
     </ButtonRight>
   </ToggleButton2>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading2 } from '../../../../../ignitus-Shared';
+import { Heading2, AppIcon } from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
 import {
   DefaultToggleButton1,
@@ -11,11 +11,14 @@ export const interfaceToggleButtons: React.FC = () => (
     <Heading2>Toggle Buttons</Heading2>
     <hr />
 
-    <DefaultToggleButton1 />
+    <DefaultToggleButton1 leftLabel="Feed" rightLabel="Profile" />
     <br />
     <br />
     <br />
     <br />
-    <DefaultToggleButton2 />
+    <DefaultToggleButton2
+      leftIcon={AppIcon.GridIcon}
+      rightIcon={AppIcon.BarsIcon}
+    />
   </Interface>
 );

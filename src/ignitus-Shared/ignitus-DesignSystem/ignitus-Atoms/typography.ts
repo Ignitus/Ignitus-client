@@ -13,10 +13,11 @@ export const Heading1 = styled.h1`
   color: ${C.IgnitusBlue};
 `;
 
-export const Heading2 = styled.h2`
+export const Heading2 = styled.h2<Props>`
   font-weight: ${F.Normal};
   font-size: ${F.XXL};
   color: ${C.IgnitusBlue};
+  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading3 = styled.h3`
