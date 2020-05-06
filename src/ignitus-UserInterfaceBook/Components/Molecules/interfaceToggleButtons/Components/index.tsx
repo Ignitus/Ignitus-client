@@ -11,7 +11,12 @@ export const interfaceToggleButtons: React.FC = () => (
     <Heading2>Toggle Buttons</Heading2>
     <hr />
 
-    <DefaultToggleButton1 leftLabel="Feed" rightLabel="Profile" />
+    <DefaultToggleButton1
+      leftLabel="Feed"
+      rightLabel="Profile"
+      categoryLeft="primary"
+      categoryRight="grey"
+    />
     <br />
     <br />
     <br />
@@ -19,6 +24,8 @@ export const interfaceToggleButtons: React.FC = () => (
     <DefaultToggleButton2
       leftIcon={AppIcon.GridIcon}
       rightIcon={AppIcon.BarsIcon}
+      categoryLeft="grey"
+      categoryRight="white"
     />
   </Interface>
 );

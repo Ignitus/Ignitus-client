@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import React from 'react';
+import React, { useState } from 'react';
 import * as B from '../../../ignitus-Atoms/buttons';
 import { ToggleButton1, ToggleButton2, StyledIcon } from '../styles';
 import * as C from '../../../..';
@@ -21,29 +21,58 @@ const ButtonRight = styled(B.Button)`
   border-radius: 0 20px 20px 0;
 `;
 
-export const DefaultToggleButton1 = ({
+export const DefaultToggleButton1: React.FC<InputTypes1> = ({
   leftLabel,
   rightLabel,
-}: InputTypes1) => (
-  <ToggleButton1>
-    <ButtonLeft size="medium" category="primary">
-      {' '}
-      {leftLabel}{' '}
-    </ButtonLeft>
-    <ButtonRight size="medium" category="grey">
-      {' '}
-      {rightLabel}{' '}
-    </ButtonRight>
-  </ToggleButton1>
-);
+  categoryLeft,
+  categoryRight,
+}) => {
+  const [left, setLeft] = useState('primary');
+  const [right, setRight] = useState('grey');
 
-export const DefaultToggleButton2 = ({ leftIcon, rightIcon }: InputTypes2) => (
-  <ToggleButton2>
-    <ButtonLeft size="medium" category="grey">
-      <StyledIcon color={C.IgnitusBlue} name={leftIcon} />
-    </ButtonLeft>
-    <ButtonRight size="medium" category="white">
-      <StyledIcon color={C.IgnitusBlue} name={rightIcon} />
-    </ButtonRight>
-  </ToggleButton2>
-);
+  const swapCategory = () => {
+    [categoryLeft, categoryRight] = [categoryRight, categoryLeft];
+    setLeft(`${categoryLeft}`);
+    setRight(`${categoryRight}`);
+  };
+
+  return (
+    <ToggleButton1 onClick={swapCategory}>
+      <ButtonLeft size="medium" category={left}>
+        {' '}
+        {leftLabel}{' '}
+      </ButtonLeft>
+      <ButtonRight size="medium" category={right}>
+        {' '}
+        {rightLabel}{' '}
+      </ButtonRight>
+    </ToggleButton1>
+  );
+};
+
+export const DefaultToggleButton2: React.FC<InputTypes2> = ({
+  leftIcon,
+  rightIcon,
+  categoryLeft,
+  categoryRight,
+}) => {
+  const [left, setLeft] = useState('grey');
+  const [right, setRight] = useState('white');
+
+  const swapCategory = () => {
+    [categoryLeft, categoryRight] = [categoryRight, categoryLeft];
+    setLeft(`${categoryLeft}`);
+    setRight(`${categoryRight}`);
+  };
+
+  return (
+    <ToggleButton2 onClick={swapCategory}>
+      <ButtonLeft size="medium" category={left}>
+        <StyledIcon color={C.IgnitusBlue} name={leftIcon} />
+      </ButtonLeft>
+      <ButtonRight size="medium" category={right}>
+        <StyledIcon color={C.IgnitusBlue} name={rightIcon} />
+      </ButtonRight>
+    </ToggleButton2>
+  );
+};
