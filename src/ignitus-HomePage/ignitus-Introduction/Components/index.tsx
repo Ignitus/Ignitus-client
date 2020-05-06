@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import * as T from '../constants';
 import * as I from '../styles';
@@ -18,9 +19,26 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
         Ignite your resume and get the best global opportunities and
         Skyrocketing your career
       </I.PrimaryText>
-      <I.Button category="primary" size="large">
-        SIGN UP
-      </I.Button>
+      {localStorage.getItem('authenticated') && (
+        <a
+          href="https://app.slack.com/client/TRN1H1V43/CUCLB9VJL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <I.Button category="primary" size="large">
+            JOIN US
+          </I.Button>
+        </a>
+      )}
+
+      {!localStorage.getItem('authenticated') && (
+        <I.Button category="primary" size="large">
+          <Link to="https://app.slack.com/client/TRN1H1V43/CUCLB9VJL">
+            {' '}
+            Sign Up{' '}
+          </Link>
+        </I.Button>
+      )}
     </I.LeftSection>
 
     <I.RightSection>
