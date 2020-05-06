@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import * as T from '../constants';
 import * as I from '../styles';
 
 import { withErrorBoundary } from '../../../ignitus-Shared';
-import { Link } from 'react-router-dom';
 
 export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
   <I.Container>
