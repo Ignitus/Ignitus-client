@@ -33,7 +33,7 @@ export const Introduction: React.FunctionComponent = withErrorBoundary(() => (
 
       {!localStorage.getItem('authenticated') && (
         <I.Button category="primary" size="large">
-          <Link to="https://app.slack.com/client/TRN1H1V43/CUCLB9VJL">
+          <Link to="/Signup">
             {' '}
             Sign Up{' '}
           </Link>
