@@ -2,7 +2,7 @@
 
 exports[`<Overlay /> should render 1`] = `
 .emotion-6 {
-  background-image: url(confetti.svg);
+  background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
   background-color: #ffffff;
   background-size: contain;
   border-radius: 1rem;
