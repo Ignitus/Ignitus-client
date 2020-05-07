@@ -1,78 +1,52 @@
-import styled from '@emotion/styled';
-import React, { useState } from 'react';
-import * as B from '../../../ignitus-Atoms/buttons';
-import { ToggleButton1, ToggleButton2, StyledIcon } from '../styles';
+import React from 'react';
+
+import { StyledIcon } from '../styles';
 import * as C from '../../../..';
-import { InputTypes1, InputTypes2 } from '../types';
+import { ToggleButtonProps, ToggleIconButtonProps } from '../types';
+import { ToggleButtonInterface } from './ToggleButtoninterface';
 
-const ButtonLeft = styled(B.Button)`
-  font-weight: 600;
-  margin: 0;
-  border: 0;
-  float: left;
-  border-radius: 20px 0 0 20px;
-`;
-
-const ButtonRight = styled(B.Button)`
-  font-weight: 600;
-  margin: 0;
-  border: 0;
-  float: left;
-  border-radius: 0 20px 20px 0;
-`;
-
-export const DefaultToggleButton1: React.FC<InputTypes1> = ({
+export const ToggleButton: React.FC<ToggleButtonProps> = ({
   leftLabel,
   rightLabel,
-  categoryLeft,
-  categoryRight,
+  handleClick,
 }) => {
-  const [left, setLeft] = useState('primary');
-  const [right, setRight] = useState('grey');
-
-  const swapCategory = () => {
-    [categoryLeft, categoryRight] = [categoryRight, categoryLeft];
-    setLeft(`${categoryLeft}`);
-    setRight(`${categoryRight}`);
-  };
+  const active = 'primary';
+  const inActive = 'grey';
 
   return (
-    <ToggleButton1 onClick={swapCategory}>
-      <ButtonLeft size="medium" category={left}>
-        {' '}
-        {leftLabel}{' '}
-      </ButtonLeft>
-      <ButtonRight size="medium" category={right}>
-        {' '}
-        {rightLabel}{' '}
-      </ButtonRight>
-    </ToggleButton1>
+    <ToggleButtonInterface
+      activeCategory={active}
+      inActiveCategory={inActive}
+      handleClick={handleClick}
+    >
+      {{
+        leftButtonContent: <> {leftLabel} </>,
+        rightButtonContent: <> {rightLabel}</>,
+      }}
+    </ToggleButtonInterface>
   );
 };
 
-export const DefaultToggleButton2: React.FC<InputTypes2> = ({
+export const ToggleIconButton: React.FC<ToggleIconButtonProps> = ({
   leftIcon,
   rightIcon,
-  categoryLeft,
-  categoryRight,
+  handleClick,
 }) => {
-  const [left, setLeft] = useState('grey');
-  const [right, setRight] = useState('white');
-
-  const swapCategory = () => {
-    [categoryLeft, categoryRight] = [categoryRight, categoryLeft];
-    setLeft(`${categoryLeft}`);
-    setRight(`${categoryRight}`);
-  };
+  const active = 'grey';
+  const inActive = 'white';
 
   return (
-    <ToggleButton2 onClick={swapCategory}>
-      <ButtonLeft size="medium" category={left}>
-        <StyledIcon color={C.IgnitusBlue} name={leftIcon} />
-      </ButtonLeft>
-      <ButtonRight size="medium" category={right}>
-        <StyledIcon color={C.IgnitusBlue} name={rightIcon} />
-      </ButtonRight>
-    </ToggleButton2>
+    <ToggleButtonInterface
+      activeCategory={active}
+      inActiveCategory={inActive}
+      handleClick={handleClick}
+    >
+      {{
+        leftButtonContent: <StyledIcon color={C.IgnitusBlue} name={leftIcon} />,
+        rightButtonContent: (
+          <StyledIcon color={C.IgnitusBlue} name={rightIcon} />
+        ),
+      }}
+    </ToggleButtonInterface>
   );
 };

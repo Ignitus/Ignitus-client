@@ -1,15 +1,26 @@
+import { ReactNode } from 'react';
 import { AppIcon } from '../../../types/iconsTypes/iconEnums';
 
-export type InputTypes1 = {
+type handleClickType = (whichButtonClicked: 'left' | 'right') => void;
+
+export type ToggleButtonProps = {
   leftLabel: string;
   rightLabel: string;
-  categoryLeft: string;
-  categoryRight: string;
+  handleClick?: handleClickType;
 };
 
-export type InputTypes2 = {
+export type ToggleIconButtonProps = {
   leftIcon: AppIcon;
   rightIcon: AppIcon;
-  categoryLeft: string;
-  categoryRight: string;
+  handleClick?: handleClickType;
 };
+
+export interface ToggleButtonInterfaceProps {
+  activeCategory: string;
+  inActiveCategory: string;
+  children: {
+    leftButtonContent: ReactNode;
+    rightButtonContent: ReactNode;
+  };
+  handleClick?: handleClickType;
+}
