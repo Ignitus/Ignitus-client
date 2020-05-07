@@ -2,6 +2,7 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
 import DashboardFooter from './index';
+import { Copyright } from '../style';
 
 let wrapper;
 
@@ -24,7 +25,7 @@ describe('<DashboardFooter />', () => {
     expect(wrapper.find('p').length).toBe(1);
   });
 
-  it('should render 2018 copywright text', () => {
-    expect(wrapper.find('p').text()).toEqual('© Ignitus 2018');
+  it('should render 2018 copyright text', () => {
+    expect(wrapper.find(Copyright).text()).toEqual('© Ignitus 2018');
   });
 });
