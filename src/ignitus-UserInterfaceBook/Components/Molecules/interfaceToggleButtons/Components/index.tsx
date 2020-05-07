@@ -2,8 +2,8 @@ import React from 'react';
 import { Heading2, AppIcon } from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
 import {
-  DefaultToggleButton1,
-  DefaultToggleButton2,
+  ToggleButton,
+  ToggleIconButton,
 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-ToggleButtons/Components';
 
 export const interfaceToggleButtons: React.FC = () => (
@@ -11,21 +11,20 @@ export const interfaceToggleButtons: React.FC = () => (
     <Heading2>Toggle Buttons</Heading2>
     <hr />
 
-    <DefaultToggleButton1
+    <ToggleButton
       leftLabel="Feed"
       rightLabel="Profile"
-      categoryLeft="primary"
-      categoryRight="grey"
+      handleClick={e => {
+        alert(`${e} button clicked`);
+      }}
     />
     <br />
     <br />
     <br />
     <br />
-    <DefaultToggleButton2
+    <ToggleIconButton
       leftIcon={AppIcon.GridIcon}
       rightIcon={AppIcon.BarsIcon}
-      categoryLeft="grey"
-      categoryRight="white"
     />
   </Interface>
 );
