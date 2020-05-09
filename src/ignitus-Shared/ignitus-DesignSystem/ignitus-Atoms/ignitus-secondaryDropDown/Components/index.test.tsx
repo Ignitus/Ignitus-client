@@ -17,11 +17,19 @@ const props = {
     },
     {
       avatar: 'Primary',
-      name: 'Helen',
+      name: 'Henry',
     },
     {
       avatar: 'Secondary',
       name: 'Parker',
+    },
+    {
+      avatar: 'Secondary',
+      name: 'Helen',
+    },
+    {
+      avatar: 'Custom',
+      name: 'Don Joshua',
     },
   ],
 };
@@ -47,5 +55,23 @@ describe('<SecondaryDropDown />', () => {
     wrapper.find(SearchBar).simulate('change', { target: { value: 'helen' } });
     expect(wrapper.find(Heading5).length).toEqual(1);
     expect(wrapper.find(Avatar).length).toEqual(1);
+
+    wrapper.find(SearchBar).simulate('change', { target: { value: 'he' } });
+    expect(wrapper.find(Heading5).length).toEqual(2);
+    expect(wrapper.find(Avatar).length).toEqual(2);
+
+    wrapper.find(SearchBar).simulate('change', { target: { value: 'jo' } });
+    expect(wrapper.find(Heading5).length).toEqual(2);
+    expect(wrapper.find(Avatar).length).toEqual(2);
+
+    wrapper
+      .find(SearchBar)
+      .simulate('change', { target: { value: 'parker peter' } });
+    expect(wrapper.find(Heading5).length).toEqual(0);
+    expect(wrapper.find(Avatar).length).toEqual(0);
+
+    wrapper.find(SearchBar).simulate('change', { target: { value: ' ' } });
+    expect(wrapper.find(Heading5).length).toEqual(5);
+    expect(wrapper.find(Avatar).length).toEqual(5);
   });
 });
