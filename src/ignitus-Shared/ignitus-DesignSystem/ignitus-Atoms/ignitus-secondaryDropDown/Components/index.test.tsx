@@ -35,6 +35,29 @@ const props = {
 };
 
 const input = 'input[type="text"]';
+
+const searchHelper = (wrapper, searchValue, expectedResults) => {
+  wrapper
+    .find(SearchBar)
+    .simulate('change', { target: { value: `${searchValue}` } });
+  for (let i = 0; i < expectedResults.length; i += 1) {
+    expect(
+      wrapper
+        .find(Heading5)
+        .at(i)
+        .text(),
+    ).toEqual(expectedResults[i].name);
+  }
+  for (let i = 0; i < expectedResults.length; i += 1) {
+    expect(
+      wrapper
+        .find(Avatar)
+        .at(i)
+        .prop('src'),
+    ).toEqual(expectedResults[i].avatar);
+  }
+};
+
 let wrapper;
 
 beforeEach(() => {
@@ -52,26 +75,37 @@ describe('<SecondaryDropDown />', () => {
   });
 
   it('should render correct values when searched', () => {
-    wrapper.find(SearchBar).simulate('change', { target: { value: 'helen' } });
-    expect(wrapper.find(Heading5).length).toEqual(1);
-    expect(wrapper.find(Avatar).length).toEqual(1);
-
-    wrapper.find(SearchBar).simulate('change', { target: { value: 'he' } });
-    expect(wrapper.find(Heading5).length).toEqual(2);
-    expect(wrapper.find(Avatar).length).toEqual(2);
-
-    wrapper.find(SearchBar).simulate('change', { target: { value: 'jo' } });
-    expect(wrapper.find(Heading5).length).toEqual(2);
-    expect(wrapper.find(Avatar).length).toEqual(2);
-
-    wrapper
-      .find(SearchBar)
-      .simulate('change', { target: { value: 'parker peter' } });
-    expect(wrapper.find(Heading5).length).toEqual(0);
-    expect(wrapper.find(Avatar).length).toEqual(0);
-
-    wrapper.find(SearchBar).simulate('change', { target: { value: ' ' } });
-    expect(wrapper.find(Heading5).length).toEqual(5);
-    expect(wrapper.find(Avatar).length).toEqual(5);
+    searchHelper(wrapper, 'helen', [{ name: 'Helen', avatar: 'Secondary' }]);
+    searchHelper(wrapper, 'he', [
+      { name: 'Henry', avatar: 'Primary' },
+      { name: 'Helen', avatar: 'Secondary' },
+    ]);
+    searchHelper(wrapper, 'jo', [
+      { name: 'John', avatar: 'Custom' },
+      { name: 'Don Joshua', avatar: 'Custom' },
+    ]);
+    searchHelper(wrapper, 'parker peter', []);
+    searchHelper(wrapper, ' ', [
+      {
+        avatar: 'Custom',
+        name: 'John',
+      },
+      {
+        avatar: 'Primary',
+        name: 'Henry',
+      },
+      {
+        avatar: 'Secondary',
+        name: 'Parker',
+      },
+      {
+        avatar: 'Secondary',
+        name: 'Helen',
+      },
+      {
+        avatar: 'Custom',
+        name: 'Don Joshua',
+      },
+    ]);
   });
 });
