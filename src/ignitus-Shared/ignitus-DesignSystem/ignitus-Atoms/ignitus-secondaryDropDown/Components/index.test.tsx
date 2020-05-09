@@ -1,9 +1,10 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerialize, { matchers } from 'jest-emotion';
-import { SearchBarWrapper } from '../styles';
+import { SearchBar, Avatar } from '../styles';
 
 import { SecondaryDropDown } from './index';
+import { Heading5 } from '../../typography';
 
 expect.addSnapshotSerializer(emotionSerialize);
 expect.extend(matchers);
@@ -26,7 +27,6 @@ const props = {
 };
 
 const input = 'input[type="text"]';
-
 let wrapper;
 
 beforeEach(() => {
@@ -43,11 +43,9 @@ describe('<SecondaryDropDown />', () => {
     expect(wrapper.find(input).length).toBe(1);
   });
 
-  it('should render input tag with correct search value', () => {
-    const searchTerm = 'Helen';
-    const component = render(<SearchBarWrapper value={searchTerm} />);
-
-    expect(component[0].attribs.value).toEqual(searchTerm);
-    expect(component[0].name).toBe('div');
+  it('should render correct values when searched', () => {
+    wrapper.find(SearchBar).simulate('change', { target: { value: 'helen' } });
+    expect(wrapper.find(Heading5).length).toEqual(1);
+    expect(wrapper.find(Avatar).length).toEqual(1);
   });
 });
