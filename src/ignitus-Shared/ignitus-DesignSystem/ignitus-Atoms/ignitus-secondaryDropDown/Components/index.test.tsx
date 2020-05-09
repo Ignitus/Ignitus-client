@@ -47,8 +47,6 @@ const searchHelper = (wrapper, searchValue, expectedResults) => {
         .at(i)
         .text(),
     ).toEqual(expectedResults[i].name);
-  }
-  for (let i = 0; i < expectedResults.length; i += 1) {
     expect(
       wrapper
         .find(Avatar)
