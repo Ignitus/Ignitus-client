@@ -109,8 +109,7 @@ export const Form: FunctionComponent<FormProps> = ({
             onClick={e => handleSubmit(e)}
           >
             {' '}
-            {authenticationType} as
-            {role}{' '}
+            {authenticationType} as {role}{' '}
           </A.Button>
         </A.ButtonContainer>
         <A.Paragraph>
