@@ -23,7 +23,7 @@ export default function UserSettingsSideNavigation() {
   );
 }
 
-const Layer = ({
+export const Layer = ({
   text,
   border = true,
   marginTop = false,

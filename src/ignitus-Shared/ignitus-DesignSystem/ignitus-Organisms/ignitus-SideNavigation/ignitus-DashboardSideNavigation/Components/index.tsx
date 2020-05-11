@@ -30,7 +30,7 @@ export default function DashboardNavigation() {
   );
 }
 
-const Layer = ({
+export const Layer = ({
   text,
   border = true,
   marginTop = false,

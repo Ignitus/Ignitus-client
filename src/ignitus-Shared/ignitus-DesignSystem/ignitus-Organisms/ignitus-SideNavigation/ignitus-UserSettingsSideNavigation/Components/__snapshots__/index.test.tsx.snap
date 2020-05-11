@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultButtonWithIcon /> should rendered 1`] = `
+<div
+  class="css-1xk2vj9"
+>
+  <div
+    class="css-4l4868"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      General
+    </p>
+  </div>
+  <div
+    class="css-14ts9o7"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Password
+    </p>
+  </div>
+  <div
+    class="css-14ts9o7"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Messaging
+    </p>
+  </div>
+  <div
+    class="css-14ts9o7"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Notification
+    </p>
+  </div>
+  <div
+    class="css-14ts9o7"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Blocked Users
+    </p>
+  </div>
+  <div
+    class="css-naeija"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Privacy
+    </p>
+  </div>
+</div>
+`;

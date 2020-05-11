@@ -21,7 +21,7 @@ export default function MessageSideNavigation() {
   );
 }
 
-const Layer = ({
+export const Layer = ({
   text,
   border = true,
   marginTop = false,
@@ -32,4 +32,4 @@ const Layer = ({
   </S.Layer>
 );
 
-const Notification = () => <S.Notification>4</S.Notification>;
+export const Notification = () => <S.Notification>4</S.Notification>;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultButtonWithIcon /> should rendered 1`] = `
+<div
+  class="css-1j1397a"
+>
+  <div
+    class="css-10yz6th"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Direct Messages
+    </p>
+     
+    <div
+      class="css-86xyh8"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="css-td5ga5"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Mentors
+    </p>
+     
+    <div
+      class="css-86xyh8"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="css-td5ga5"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Organizations
+    </p>
+     
+    <div
+      class="css-86xyh8"
+    >
+      4
+    </div>
+  </div>
+  <div
+    class="css-10tn20j"
+  >
+    <p
+      class="css-7f2qlu"
+      color="#000066"
+    >
+      Groups
+    </p>
+     
+    <div
+      class="css-86xyh8"
+    >
+      4
+    </div>
+  </div>
+</div>
+`;
