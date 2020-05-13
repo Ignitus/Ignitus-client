@@ -1,35 +1,21 @@
 import React from 'react';
-import * as S from '../style';
-import { Paragraph } from '../../../../ignitus-Atoms/typography';
-import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
 
-type props = {
-  text: string;
-  border?: boolean;
-  marginTop?: boolean;
-  marginBottom?: boolean;
-};
+import * as S from '../style';
 
 export default function MessageSideNavigation() {
   return (
     <S.MessageContainer>
-      <Layer text="Direct Messages" marginTop />
-      <Layer text="Mentors" />
-      <Layer text="Organizations" />
-      <Layer text="Groups" border={false} marginBottom />
+      <S.Layer text="Direct Messages" marginTop append={<Notification />} />
+      <S.Layer text="Mentors" append={<Notification />} />
+      <S.Layer text="Organizations" append={<Notification />} />
+      <S.Layer
+        text="Groups"
+        border={false}
+        marginBottom
+        append={<Notification />}
+      />
     </S.MessageContainer>
   );
 }
-
-const Layer = ({
-  text,
-  border = true,
-  marginTop = false,
-  marginBottom = false,
-}: props) => (
-  <S.Layer border={border} marginTop={marginTop} marginBottom={marginBottom}>
-    <Paragraph color={IgnitusBlue}>{text}</Paragraph> <Notification />
-  </S.Layer>
-);
 
 const Notification = () => <S.Notification>4</S.Notification>;
