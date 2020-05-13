@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layer /> should render 1`] = `
+.emotion-1 {
+  border-bottom: 1px solid #E0E0E0;
+  color: #000066;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: none;
+  margin-bottom: none;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.emotion-1:hover {
+  background-color: #000066;
+}
+
+.emotion-1:hover p {
+  color: #ffffff;
+}
+
+.emotion-0 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000066;
+  margin: 0;
+}
+
+<div
+  class="emotion-1"
+>
+  <p
+    class="emotion-0"
+    color="#000066"
+  >
+    Text
+  </p>
+</div>
+`;

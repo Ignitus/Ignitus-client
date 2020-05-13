@@ -1,19 +1,8 @@
 import styled from '@emotion/styled';
-import {
-  White,
-  IgnitusBlue,
-  GreyLight,
-  Red,
-  boxShadowColor,
-} from '../../../ignitus-Atoms/colors';
-import { XS, MD, Normal } from '../../../ignitus-Atoms/fonts';
+import { White, Red, boxShadowColor } from '../../../ignitus-Atoms/colors';
+import { XS } from '../../../ignitus-Atoms/fonts';
 import { flexibleColDiv } from '../../../shared';
-
-type Props = {
-  border: boolean;
-  marginTop: boolean;
-  marginBottom: boolean;
-};
+import { CommonLayer } from '../Common/Layer';
 
 export const MessageContainer = styled(flexibleColDiv)`
   background: ${White};
@@ -23,16 +12,7 @@ export const MessageContainer = styled(flexibleColDiv)`
   height: 16rem;
 `;
 
-export const Layer = styled.div<Props>`
-  border-bottom: ${props => (props.border ? `1px solid ${GreyLight}` : 'null')};
-  color: ${IgnitusBlue};
-  cursor: pointer;
-  font-size: ${MD};
-  font-weight: ${Normal};
-  padding: 1rem 0;
-  margin-top: ${props => (props.marginTop ? '0.5rem' : 'none')};
-  margin-bottom: ${props => (props.marginBottom ? '0.5rem' : 'none')};
-  width: 100%;
+export const Layer = styled(CommonLayer)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,12 +20,6 @@ export const Layer = styled.div<Props>`
   p,
   div {
     margin: 0 1rem;
-  }
-  &:hover {
-    background-color: ${IgnitusBlue};
-    p {
-      color: ${White};
-    }
   }
 `;
 
