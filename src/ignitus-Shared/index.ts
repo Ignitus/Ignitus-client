@@ -72,6 +72,10 @@ export {
   default as Overlay,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
+export {
+  default as ScrollBar,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
+
 /**
  * ignitus-Organisms
  */

@@ -30,6 +30,7 @@ import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Orga
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
+import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 
 const Container = styled.div`
   display: flex;
@@ -127,6 +128,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/filters" component={interfaceFilters} />
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
+        <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
