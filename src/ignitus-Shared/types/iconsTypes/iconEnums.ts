@@ -1,5 +1,7 @@
 export enum AppIcon {
   ApplyIcon = 'ApplyIcon',
+  BarsIcon = 'BarsIcon',
+  GridIcon = 'GridIcon',
   AngelListIcon = 'AngelListIcon',
   CopyIcon = 'CopyIcon',
   ContributionIcon = 'ContributionIcon',
