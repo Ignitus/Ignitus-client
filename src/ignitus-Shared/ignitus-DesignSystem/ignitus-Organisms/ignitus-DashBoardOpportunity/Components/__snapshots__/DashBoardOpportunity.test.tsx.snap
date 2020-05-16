@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DashBoardOpportunity /> should render 1`] = `
+.emotion-6 {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-0 img {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  margin-left: 20px;
+  padding: 0.5rem;
+}
+
+.emotion-1 {
+  font-weight: 500;
+  font-size: 22px;
+  color: #000066;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-2 {
+  font-weight: 400;
+  color: #4D4D4D;
+  font-size: 14px;
+}
+
+.emotion-3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin: 0;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+<div
+  class="emotion-6"
+>
+  <div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-0"
+    >
+      <img
+        alt="Title"
+        src="https://storage.googleapis.com/ignitus_assets/ig-opportunities/universityOfMelbourne.png"
+      />
+    </div>
+    <div
+      class="emotion-4"
+    >
+      <h3
+        class="emotion-1"
+      >
+        Title
+      </h3>
+      <p
+        class="emotion-2"
+      >
+        subtitle
+      </p>
+      <p
+        class="emotion-3"
+      >
+        Description
+      </p>
+    </div>
+  </div>
+</div>
+`;
