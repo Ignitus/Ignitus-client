@@ -37,7 +37,7 @@ export const Opportunity: React.FunctionComponent = () => (
   </S.OpportunityContainer>
 );
 
-const BtnWithIcon = () => (
+export const BtnWithIcon = () => (
   <S.BtnContainer>
     <S.BtnContainerIcon />
     <S.BtnContainerText>Apply</S.BtnContainerText>

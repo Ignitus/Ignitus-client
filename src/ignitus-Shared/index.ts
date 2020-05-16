@@ -97,7 +97,7 @@ export {
 
 export {
   Opportunity,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunityList/Components/OpportunityList';
 
 export {
   UserProfileCard,
