@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DashboardFooter /> should render 1`] = `
+.emotion-6 {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-0 {
+  color: #4D4D4D;
+  font-size: 14px;
+  font-family: Raleway,sans-serif;
+  padding: 0.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-0 li {
+  padding: 0rem 1rem;
+}
+
+.emotion-0 li a:link,
+.emotion-0 li a:visited {
+  color: #3d3d3d;
+}
+
+.emotion-0 li a:hover,
+.emotion-0 li a:active {
+  color: #000066;
+}
+
+.emotion-4 {
+  color: #000066;
+  font-family: Raleway,sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+<footer
+  class="emotion-6"
+>
+  <div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-1"
+    >
+      <ul
+        class="emotion-0"
+      >
+        <li>
+           
+          <a
+            href="#!"
+          >
+            About
+          </a>
+           
+        </li>
+        <li>
+           
+          <a
+            href="#!"
+          >
+            Privacy
+          </a>
+        </li>
+        <li>
+           
+          <a
+            href="#!"
+          >
+            Careers
+          </a>
+           
+        </li>
+      </ul>
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <ul
+        class="emotion-0"
+      >
+        <li>
+           
+          <a
+            href="#!"
+          >
+            Help Center
+          </a>
+           
+        </li>
+        <li>
+           
+          <a
+            href="#!"
+          >
+            Terms & Condtions
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p
+      class="emotion-4"
+    >
+      © Ignitus 2018
+    </p>
+  </div>
+</footer>
+`;
