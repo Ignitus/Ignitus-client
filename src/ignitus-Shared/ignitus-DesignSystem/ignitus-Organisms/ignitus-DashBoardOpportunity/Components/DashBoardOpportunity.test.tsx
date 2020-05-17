@@ -30,9 +30,6 @@ describe('<DashBoardOpportunity />', () => {
 
   it('should render Card component', () => {
     expect(wrapper.find(Card).length).toEqual(1);
-
-    wrapper = mount(<Card {...props} />);
-
     expect(wrapper.find('img').prop('src')).toEqual(props.src);
     expect(wrapper.find('img').prop('alt')).toEqual(props.title);
     expect(wrapper.find(S.Title).text()).toEqual(props.title);
