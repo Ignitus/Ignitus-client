@@ -31,6 +31,7 @@ import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
+import { interfaceOpportunityDetailsCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityDetailsCard/Components';
 
 const Container = styled.div`
   display: flex;
@@ -107,6 +108,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route
           path="/interface/opportunitySaved"
           component={interfaceSavedOpportunity}
+        />
+        <Route
+          path="/interface/opportunityDetailsCard"
+          component={interfaceOpportunityDetailsCard}
         />
         <Route path="/interface/searchInput" component={interfaceSearchInput} />
         <Route

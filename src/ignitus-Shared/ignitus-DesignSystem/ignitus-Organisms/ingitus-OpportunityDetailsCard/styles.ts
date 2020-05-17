@@ -11,6 +11,7 @@ export const Container = styled.div`
   display: flex;
   overflow: hidden;
   align-items: center;
+  padding: 0.5rem;
   ${minimumWidthQuery[0]} {
     flex-direction: column;
     margin: 4rem 1rem 1rem 1rem;
