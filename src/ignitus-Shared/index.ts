@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 /**
  * => ignitus-DesgnSystem
  */
@@ -165,6 +166,7 @@ export { getRandomInt } from './ignitus-Utilities/HelperFunctions/randomNumber';
  * reactHooks
  */
 export { useToggle } from './ignitus-Utilities/reactHooks/toogleHook';
+export { useActive } from './ignitus-Utilities/reactHooks/setActiveHook';
 
 /**
  * types
