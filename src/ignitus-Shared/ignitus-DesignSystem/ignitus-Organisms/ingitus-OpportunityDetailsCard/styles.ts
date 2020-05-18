@@ -11,38 +11,16 @@ export const Container = styled.div`
   display: flex;
   overflow: hidden;
   align-items: center;
-  padding: 0.5rem;
-  ${minimumWidthQuery[0]} {
-    flex-direction: column;
-    margin: 4rem 1rem 1rem 1rem;
-    width: 100%;
-  }
-  ${minimumWidthQuery[2]} {
-    flex-direction: row;
-    margin: 4rem 3rem 1rem 3rem;
-    width: 100%;
-  }
-  ${minimumWidthQuery[3]} {
-    flex-direction: row;
-    margin: 4rem 1.5rem 1rem 1.5rem;
-    width: 100%;
-  }
-  ${minimumWidthQuery[4]} {
-    flex-direction: row;
-    margin: 4rem 2rem 1rem 2rem;
-    max-width: 100%;
-  }
-  ${minimumWidthQuery[5]} {
-    flex-direction: row;
-    margin: 5rem 5rem 1rem 5rem;
-    max-width: 55rem;
-  }
+  padding: 1rem 2rem;
+  flex-direction: row;
+  max-width: 55rem;
 `;
+
 export const LeftRow = styled.div`
   img {
     max-width: 15rem;
     max-height: 15rem;
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 1rem;
   }
 `;

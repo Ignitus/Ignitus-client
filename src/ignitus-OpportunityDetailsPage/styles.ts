@@ -8,32 +8,40 @@ import { minimumWidthQuery } from '../ignitus-Shared/ignitus-DesignSystem/ignitu
 export const Container = styled.div`
   box-shadow: 0 0.5rem 1rem 0 ${boxShadowColor};
   background-color: ${White};
-  border-radius: 20px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   overflow: hidden;
-  ${minimumWidthQuery[0]} {
-    margin: 4rem 1rem 1rem 1rem;
-    width: 100%;
-  }
-  ${minimumWidthQuery[2]} {
-    margin: 4rem 3rem 1rem 3rem;
-    width: 100%;
-  }
+  padding: 2rem;
+  margin-top: 1rem;
   ${minimumWidthQuery[3]} {
-    margin: 4rem 1.5rem 1rem 1.5rem;
-    width: 100%;
+    width: 55rem;
   }
   ${minimumWidthQuery[4]} {
-    margin: 4rem 2rem 1rem 2rem;
-    max-width: 100%;
+    max-width: 55rem;
   }
   ${minimumWidthQuery[5]} {
-    margin: 5rem 5rem 1rem 5rem;
     max-width: 55rem;
   }
 `;
 
 export const Content = styled.div`
-  margin: 1rem;
+  padding: 1rem 1rem;
+`;
+
+export const ParentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 2rem;
+  padding: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
+
+export const Column = styled.div`
+  margin-right: 1.5rem;
+  dislay: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;

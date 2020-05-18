@@ -23,7 +23,7 @@ export const InfoCard = ({ location, commitment }: Cardtypes) => (
           alt="Share icon"
           style={{ marginRight: '0.7rem' }}
         />{' '}
-        Share{' '}
+        Share Link{' '}
       </S.Button>
     </S.ButtonsWrapper>
   </S.Container>
