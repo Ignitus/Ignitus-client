@@ -12,7 +12,7 @@ export const DashBoardOpportunity = ({
   <Card title={title} description={description} subtitle={subtitle} src={src} />
 );
 
-const Card = ({ title, description, subtitle, src }: Opportunity) => (
+export const Card = ({ title, description, subtitle, src }: Opportunity) => (
   <S.Container>
     <S.Row>
       <S.LeftRow>
