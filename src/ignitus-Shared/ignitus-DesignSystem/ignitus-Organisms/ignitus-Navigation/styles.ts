@@ -78,7 +78,6 @@ export const NavigationLinks = styled.ul<ToggleProps>`
 `;
 
 export const NavigationLinkItem = styled.li<NavigationProps>`
-  // padding: 0rem 1rem;
   padding: ${props =>
     props.padding === 'forEmail' ? '0rem 1rem 0rem 0rem' : '0rem 1rem'};
   align-self: stretch;
