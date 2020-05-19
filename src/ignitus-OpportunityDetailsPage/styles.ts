@@ -3,7 +3,6 @@ import {
   White,
   boxShadowColor,
 } from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import { minimumWidthQuery } from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/media';
 
 export const Container = styled.div`
   box-shadow: 0 0.5rem 1rem 0 ${boxShadowColor};
@@ -15,15 +14,7 @@ export const Container = styled.div`
   overflow: hidden;
   padding: 2rem;
   margin-top: 1rem;
-  ${minimumWidthQuery[3]} {
-    width: 55rem;
-  }
-  ${minimumWidthQuery[4]} {
-    max-width: 55rem;
-  }
-  ${minimumWidthQuery[5]} {
-    max-width: 55rem;
-  }
+  max-width: 55rem;
 `;
 
 export const Content = styled.div`

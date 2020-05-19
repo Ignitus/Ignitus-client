@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { Black, White, boxShadowColor } from '../../ignitus-Atoms/colors';
 import { Normal, XS, XL, SemiBold } from '../../ignitus-Atoms/fonts';
 import { Paragraph, Heading6 } from '../../ignitus-Atoms/typography';
-import { minimumWidthQuery } from '../../ignitus-Atoms/media';
 
 export const Container = styled.div`
   box-shadow: 0 0.5rem 1rem 0 ${boxShadowColor};
@@ -28,20 +27,8 @@ export const LeftRow = styled.div`
 export const RightRow = styled.div`
   display: flex;
   flex-direction: column;
-  ${minimumWidthQuery[0]} {
-    margin-left: 1rem;
-    align-items: center;
-  }
-  ${minimumWidthQuery[2]} {
-    margin-left: 1rem;
-    align-items: flex-start;
-  }
-  ${minimumWidthQuery[4]} {
-    margin-left: 0.5rem;
-  }
-  ${minimumWidthQuery[5]} {
-    margin-left: 0.5rem;
-  }
+  align-items: flex-start;
+  margin-left: 0.5rem;
 `;
 
 export const Description = styled(Paragraph)`
