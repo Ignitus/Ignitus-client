@@ -13,6 +13,7 @@ const props: ToggleButtonInterfaceProps = {
     leftButtonContent: <> Left </>,
     rightButtonContent: <> Right </>,
   },
+  handleClick: jest.fn(),
 };
 
 let wrapper;
@@ -46,5 +47,12 @@ describe('<ToggleButtonInterface />', () => {
     expect(wrapper.find(ButtonRight).prop('children')).toBe(
       props.children.rightButtonContent,
     );
+  });
+
+  it('should simulate both side Clicks', () => {
+    wrapper.find(ButtonLeft).simulate('click');
+    expect(props.handleClick).toHaveBeenCalledWith('left');
+    wrapper.find(ButtonRight).simulate('click');
+    expect(props.handleClick).toHaveBeenCalledWith('right');
   });
 });
