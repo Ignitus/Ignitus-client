@@ -121,6 +121,10 @@ export const allEdges: Edges[] = [
         title: 'Scroll Bar',
         route: '/interface/scrollBar',
       },
+      {
+        title: 'Toggle Buttons',
+        route: '/interface/toggleButtons',
+      },
     ],
   },
   {

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SecondaryDropDown /> should rendered 1`] = `
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  width: 20rem;
+  height: 2rem;
+}
+
+.emotion-0 {
+  outline: none;
+  border: 0.1rem solid #000066;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 2rem;
+  padding-left: 0.25rem;
+  color: #000066;
+  font-weight: 600;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #000066;
+  font-weight: 600;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #000066;
+  font-weight: 600;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #000066;
+  font-weight: 600;
+}
+
+.emotion-0::placeholder {
+  color: #000066;
+  font-weight: 600;
+}
+
+<div
+  class="ParentContainer emotion-2"
+>
+  <div
+    class="emotion-1"
+  >
+    <input
+      class="emotion-0"
+      placeholder="Search..."
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
