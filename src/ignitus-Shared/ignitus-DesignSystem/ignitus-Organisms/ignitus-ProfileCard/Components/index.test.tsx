@@ -17,16 +17,14 @@ expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
 describe('<UserProfileCard />', () => {
-  beforeEach(() => {
-    wrapper = mount(<UserProfileCard />);
-  });
-
   it('should render', () => {
     wrapper = render(<UserProfileCard />);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should render Icon, Paragraph, Avatar', () => {
+    wrapper = mount(<UserProfileCard />);
+
     expect(wrapper.find(S.Icon).length).toBe(8);
     expect(wrapper.find(IconContent).length).toBe(3);
     expect(wrapper.find(S.Paragraph).length).toBe(4);
