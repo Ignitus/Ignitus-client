@@ -10,6 +10,12 @@ const LazyStudentDashBoard = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
 );
 
+const LazyPosts = lazy(() =>
+  import(
+    '../../ignitus-Dashboard/ignitus-DashboardHome/ignitus-Posts/Components'
+  ),
+);
+
 const LazyDashBoardNavigation = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'),
 );
@@ -25,6 +31,10 @@ export const DashboardRoutes = () => (
     >
       <LazyDashBoardNavigation />
       <Switch>
+        <PrivateRoute
+          path="/dashboard/ignitus-dashboard"
+          Component={LazyPosts}
+        />
         <Route exact path="/" render={() => <Notfound />} />
         <PrivateRoute path="/dashboard" Component={LazyStudentDashBoard} />
       </Switch>
