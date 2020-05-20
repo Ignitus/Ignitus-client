@@ -31,6 +31,7 @@ import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
+import { PostsPageCards } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfacePostsPageCards/Components';
 
 const Container = styled.div`
   display: flex;
@@ -131,6 +132,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route
           path="/interface/toggleButtons"
           component={interfaceToggleButtons}
+        />
+        <Route
+          path="/interface/StudentDashboardCards"
+          component={PostsPageCards}
         />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
