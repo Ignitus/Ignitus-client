@@ -1,0 +1,62 @@
+import styled from '@emotion/styled';
+import {
+  Paragraph as P,
+  Normal,
+  MD,
+  White,
+  boxShadowColor,
+} from '../../..';
+import { Button as B } from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
+import Icon from '../../../ignitus-Utilities/Components/icon';
+
+import { flexibleColDiv, flexibleRowDiv } from '../../shared';
+
+export const OverlayShare = styled.div`
+  background-color: ${White};
+  background-size: contain;
+  border-radius: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 ${boxShadowColor};
+  width: 35rem;
+`;
+
+export const TopSection = styled(flexibleRowDiv)`
+  padding: 2rem;
+  justify-content: space-between;
+`;
+
+export const BottomSection = styled(flexibleColDiv)`
+  padding: 0.4rem 1.5rem 1.5rem 1.5rem;
+  align-items: flex-start;
+`;
+
+export const IconsContainer = styled(flexibleRowDiv)`
+  border-radius: 1rem;
+  display: inline-flex;
+`;
+
+export const IconContainer = styled.button`
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 0.2rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  background-color: ${props => props.color};
+`;
+
+export const Paragraph = styled(P)`
+  font-weight: ${Normal};
+  font-size: ${MD};
+  margin: 0.6rem;
+`;
+
+export const StyledIcon = styled(Icon)`
+  width: 1.4rem;
+  fill: ${props => props.color};
+  transition: 0.3s;
+  flex: 1;
+  margin: 0.03rem;
+`;

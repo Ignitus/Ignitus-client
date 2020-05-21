@@ -73,6 +73,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
 export {
+  default as OverlayShare,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-OverlayShare/Components';
+
+export {
   default as ScrollBar,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
 
