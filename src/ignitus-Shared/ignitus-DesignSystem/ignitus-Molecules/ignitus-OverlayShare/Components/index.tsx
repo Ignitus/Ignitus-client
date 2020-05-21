@@ -42,7 +42,7 @@ const OverlayShare = ({
           <O.StyledIcon name={AppIcon.FacebookIcon} color={White} />
         </O.IconContainer>
         <O.IconContainer color={RedditColor}>
-          <O.StyledIcon name={AppIcon.GithubIcon} color={White} />
+          <O.StyledIcon name={AppIcon.RedditIcon} color={White} />
         </O.IconContainer>
         <O.IconContainer color={TwitterColor}>
           <O.StyledIcon name={AppIcon.TwitterIcon} color={White} />

@@ -19,6 +19,7 @@ import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
 import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
 import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
+import RedditIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon';
 import GooglePlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon';
 import InfoIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/infoIcon';
 import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdfIcon';
@@ -136,6 +137,9 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.FacebookIcon:
       return <FacebookIcon {...rest} />;
+
+    case AppIcon.RedditIcon:
+      return <RedditIcon {...rest} />;
 
     case AppIcon.GooglePlusIcon:
       return <GooglePlusIcon {...rest} />;

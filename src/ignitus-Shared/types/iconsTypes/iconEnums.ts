@@ -26,6 +26,7 @@ export enum AppIcon {
   QuestionAnswerIcon = 'QuestionAnswerIcon',
   GithubIcon = 'GithubIcon',
   FacebookIcon = 'FacebookIcon',
+  RedditIcon = 'RedditIcon',
   GooglePlusIcon = 'GooglePlusIcon',
   InfoIcon = 'InfoIcon',
   PdfIcon = 'PdfIcon',

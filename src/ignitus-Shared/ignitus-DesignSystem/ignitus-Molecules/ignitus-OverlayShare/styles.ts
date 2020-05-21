@@ -38,6 +38,7 @@ export const IconContainer = styled.button`
   width: 2.8rem;
   border-radius: 50%;
   background-color: ${props => props.color};
+  outline-color: transparent;
 `;
 
 export const Paragraph = styled(P)`
