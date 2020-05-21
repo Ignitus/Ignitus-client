@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
-import OpportunityList, { BtnWithIcon, Opportunity } from '.';
+import { BtnWithIcon, Opportunity } from './index';
 import * as S from '../styles';
 
 let wrapper;
@@ -9,13 +9,13 @@ let wrapper;
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
-describe('<OpportunityList />', () => {
+describe('<Opportunity />', () => {
   beforeEach(() => {
-    wrapper = mount(<OpportunityList />);
+    wrapper = mount(<Opportunity />);
   });
 
   it('should render', () => {
-    wrapper = render(<OpportunityList />);
+    wrapper = render(<Opportunity />);
     expect(wrapper).toMatchSnapshot();
   });
 
