@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as S from '../style';
 
 export const Notfound = () => (
@@ -20,11 +20,9 @@ export const Notfound = () => (
             </span>
           </S.StyledParagraph>
         </S.Message>
-        <BrowserRouter>
-          <S.StyledButton size="large" category="primary">
-            <Link to="/"> Home Page </Link>
-          </S.StyledButton>
-        </BrowserRouter>
+        <S.StyledButton size="large" category="primary">
+          <Link to="/"> Home Page </Link>
+        </S.StyledButton>
       </S.MessageContainer>
     </S.NotFoundContainer>
   </React.Fragment>
