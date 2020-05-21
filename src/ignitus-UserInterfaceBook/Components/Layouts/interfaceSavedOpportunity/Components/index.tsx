@@ -11,14 +11,8 @@ export const interfaceSavedOpportunity: React.FC = () => (
     <Heading2>Opportunities Saved Layout</Heading2>
     <hr />
     <Grid>
-      {List.map(({ title, description, subtitle, src }: Opportunity) => (
-        <DashBoardOpportunity
-          key={title}
-          title={title}
-          description={description}
-          subtitle={subtitle}
-          src={src}
-        />
+      {List.map(({ ...rest }: Opportunity, index) => (
+        <DashBoardOpportunity key={index} {...rest} />
       ))}
     </Grid>
   </Interface>

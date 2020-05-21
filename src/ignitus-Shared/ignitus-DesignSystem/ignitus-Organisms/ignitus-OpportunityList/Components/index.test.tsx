@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
-import OpportunityList, { BtnWithIcon, Opportunity } from './OpportunityList';
+import OpportunityList, { BtnWithIcon, Opportunity } from '.';
 import * as S from '../styles';
 
 let wrapper;

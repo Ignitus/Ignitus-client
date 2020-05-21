@@ -1,4 +1,5 @@
 /* eslint-disable import/no-cycle */
+
 /**
  * => ignitus-DesgnSystem
  */
@@ -75,6 +76,11 @@ export {
 /**
  * ignitus-Organisms
  */
+
+export {
+  Opportunity,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunityList/Components';
+
 export {
   Avatar,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar';
@@ -94,10 +100,6 @@ export {
 export {
   OptionalNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
-
-export {
-  Opportunity,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunityList/Components/OpportunityList';
 
 export {
   UserProfileCard,
