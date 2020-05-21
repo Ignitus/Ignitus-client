@@ -1,12 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  Paragraph as P,
-  Normal,
-  MD,
-  White,
-  boxShadowColor,
-} from '../../..';
-import { Button as B } from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
+import { Paragraph as P, Normal, MD, White, boxShadowColor } from '../../..';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 
 import { flexibleColDiv, flexibleRowDiv } from '../../shared';

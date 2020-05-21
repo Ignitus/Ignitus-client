@@ -8,9 +8,9 @@ export const interfaceOverlayShare = () => (
     <Heading2>Overlay Share</Heading2>
     <hr />
     <OverlayShare
-      title='Share'
-      Share='Share to'
-      Link='Direct link'
+      title="Share"
+      Share="Share to"
+      Link="Direct link"
       LinkedinColor={C.LinkedinIconColor}
       TwitterColor={C.TwitterIconColor}
       RedditColor={C.RedditIconColor}

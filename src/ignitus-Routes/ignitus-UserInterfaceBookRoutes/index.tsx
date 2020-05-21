@@ -130,7 +130,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/filters" component={interfaceFilters} />
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
-        <Route path="/interface/overlayShare" component={interfaceOverlayShare} />
+        <Route
+          path="/interface/overlayShare"
+          component={interfaceOverlayShare}
+        />
         <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route
           path="/interface/toggleButtons"

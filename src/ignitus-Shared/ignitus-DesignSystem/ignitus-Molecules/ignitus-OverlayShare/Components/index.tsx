@@ -1,9 +1,8 @@
 import React from 'react';
-import { Heading1 } from '../../../..';
+import { Heading1, DefaultIconInput } from '../../../..';
 import { OverlayShareProps } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { StyledIcon } from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/styles';
-import { DefaultIconInput } from '../../../../../ignitus-Shared';
+
 import * as O from '../styles';
 
 const copy = value => console.log('copied: ', value);
