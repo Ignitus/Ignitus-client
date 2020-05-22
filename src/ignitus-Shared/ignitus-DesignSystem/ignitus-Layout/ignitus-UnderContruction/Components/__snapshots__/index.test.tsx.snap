@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WebsiteUnderConstruction /> should render 1`] = `
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.emotion-1 {
+  font-weight: 500;
+  font-size: 22px;
+  color: #000066;
+}
+
+.emotion-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin: 0;
+}
+
+<div
+  class="emotion-5"
+>
+  <img
+    alt="Site Under Build"
+    class="emotion-0"
+    src="https://storage.googleapis.com/ignitus_assets/ig-assets/underContruction.png"
+  />
+  <div
+    class="emotion-4"
+  >
+    <h3
+      class="emotion-1"
+    >
+      Our site is under maintenance
+    </h3>
+    <p
+      class="emotion-2"
+    >
+      We are working on making better experiences for you. 
+      <span
+        aria-label="hammer"
+        role="img"
+      >
+        🔨
+      </span>
+    </p>
+    <p
+      class="emotion-2"
+    >
+      We should be back shortly, Thank you for the patience. 
+      <span
+        aria-label="flake"
+        role="img"
+      >
+        ☘️
+      </span>
+    </p>
+  </div>
+</div>
+`;

@@ -15,7 +15,7 @@ import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/Interfa
 import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
 import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
-import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
+import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
@@ -85,7 +85,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/cards" component={interfaceCards} />
         <Route
           path="/interface/opportunityPosted"
-          component={interfaceOpportunity}
+          component={interfaceOpportunityList}
         />
         <Route path="/interface/notFound" component={interfaceNotFound} />
         <Route
