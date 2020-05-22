@@ -55,4 +55,22 @@ describe('<ToggleButtonInterface />', () => {
     wrapper.find(ButtonRight).simulate('click');
     expect(props.handleClick).toHaveBeenCalledWith('right');
   });
+
+  it('should toggle Button categories on click', () => {
+    wrapper.find(ButtonLeft).simulate('click');
+    expect(wrapper.find(ButtonLeft).prop('category')).toBe(
+      props.activeCategory,
+    );
+    expect(wrapper.find(ButtonRight).prop('category')).toBe(
+      props.inActiveCategory,
+    );
+
+    wrapper.find(ButtonRight).simulate('click');
+    expect(wrapper.find(ButtonRight).prop('category')).toBe(
+      props.activeCategory,
+    );
+    expect(wrapper.find(ButtonLeft).prop('category')).toBe(
+      props.inActiveCategory,
+    );
+  });
 });
