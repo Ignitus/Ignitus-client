@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { White, IgnitusBlue } from '../../ignitus-Atoms/colors';
 import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { StyleProps } from './types';
 
 export const Container = styled.div`
   background-color: ${White};
@@ -52,9 +53,9 @@ export const IconsDiv = styled.div`
   flex: 1;
 `;
 
-export const Icon = styled(I)`
-  height: 4rem;
-  width: 4rem;
+export const Icon = styled(I)<StyleProps>`
+  height: ${props => (props.size === 'small' ? '1rem' : '4rem')};
+  width: ${props => (props.size === 'small' ? '1rem' : '4rem')};
   fill: ${IgnitusBlue};
   transition: 0.3s;
 `;

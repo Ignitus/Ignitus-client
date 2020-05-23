@@ -5,7 +5,7 @@ import {
   Heading6,
   Paragraph,
 } from '../../../ignitus-Atoms/typography';
-import { CardTypes } from '../types';
+import { CardTypes, StyleProps } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 /* eslint-disable react/destructuring-assignment */
 
@@ -15,6 +15,7 @@ export const InternshipCard = ({
   Position,
   Company,
   Place,
+  JobType,
 }: CardTypes) => (
   <Card>
     <S.LeftRow>
@@ -28,7 +29,15 @@ export const InternshipCard = ({
       <S.Column>
         <Paragraph>{Position}</Paragraph>
         <Paragraph>{Company}</Paragraph>
-        <Paragraph> I {Place}</Paragraph>
+        <Paragraph>
+          {' '}
+          {JobType === 'remote' ? (
+            <S.Icon size="small" name={AppIcon.RemoteJobIcon} />
+          ) : (
+            <S.Icon size="small" name={AppIcon.LocationIcon} />
+          )}{' '}
+          {Place}
+        </Paragraph>
       </S.Column>
     </S.Content>
   </Card>
@@ -60,9 +69,15 @@ const Card = props => (
   <S.Container>
     {props.children}
     <S.IconsDiv>
-      <Heading6>I Like</Heading6>
-      <Heading6>I Save</Heading6>
-      <Heading6>I Share</Heading6>
+      <Heading6>
+        <S.Icon size="small" name={AppIcon.LikeIcon} /> Like
+      </Heading6>
+      <Heading6>
+        <S.Icon size="small" name={AppIcon.SavePlusIcon} /> Save
+      </Heading6>
+      <Heading6>
+        <S.Icon size="small" name={AppIcon.ShareIcon} /> Share
+      </Heading6>
     </S.IconsDiv>
   </S.Container>
 );
