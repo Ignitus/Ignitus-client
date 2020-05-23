@@ -48,6 +48,10 @@ import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ic
 import BarsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
 import GridIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
+import { LikeIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/likeIcon/index';
+import { SavePlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/savePlusIcon/index';
+import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
+import { RemoteJobIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/remoteJobIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -90,6 +94,9 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.SaveIcon:
       return <SaveIcon {...rest} />;
+
+    case AppIcon.SavePlusIcon:
+      return <SavePlusIcon {...rest} />;
 
     case AppIcon.NetworkIcon:
       return <NetworkIcon {...rest} />;
@@ -152,6 +159,9 @@ const Icon = ({ name, ...rest }: Props) => {
     case AppIcon.LibraryBooksIcon:
       return <LibraryBooksIcon {...rest} />;
 
+    case AppIcon.LikeIcon:
+      return <LikeIcon {...rest} />;
+
     case AppIcon.LocalLibraryIcon:
       return <LocalLibraryIcon {...rest} />;
 
@@ -196,6 +206,9 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.GridIcon:
       return <GridIcon {...rest} />;
+
+    case AppIcon.ShareIcon:
+      return <ShareIcon {...rest} />;
   }
 };
 

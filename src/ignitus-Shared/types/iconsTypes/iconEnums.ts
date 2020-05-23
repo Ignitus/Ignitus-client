@@ -8,9 +8,12 @@ export enum AppIcon {
   CameraIcon = 'CameraIcon',
   LinkedInIcon = 'LinkedInIcon',
   PlusIcon = 'PlusIcon',
+  SavePlusIcon = 'SavePlusIcon',
+  ShareIcon = 'ShareIcon',
   HeartIcon = 'HeartIcon',
   TwitterIcon = 'TwitterIcon',
   LocationIcon = 'LocationIcon',
+  LikeIcon = 'LikeIcon',
   FilledArrowDownIcon = 'FilledArrowDownIcon',
   CrossIcon = 'CrossIcon',
   SearchIcon = 'SearchIcon',
@@ -46,4 +49,5 @@ export enum AppIcon {
   SlackIcon = 'SlackIcon',
   MediumIcon = 'MediumIcon',
   YouTubeIcon = 'YouTubeIcon',
+  RemoteJobIcon = 'RemoteJobIcon',
 }
