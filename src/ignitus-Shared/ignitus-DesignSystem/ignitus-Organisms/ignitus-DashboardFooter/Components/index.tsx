@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../style';
 
-export default function DashboardFooter() {
+export const DashboardFooter = () => {
   return (
     <S.Footer>
       <S.Column>
@@ -37,4 +37,4 @@ export default function DashboardFooter() {
       </S.Column>
     </S.Footer>
   );
-}
+};

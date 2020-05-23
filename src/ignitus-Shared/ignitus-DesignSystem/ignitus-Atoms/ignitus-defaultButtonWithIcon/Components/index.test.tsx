@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import DefaultButtonWithIcon from './defaultButtonWithIcon';
+import { DefaultButtonWithIcon } from '.';
 
 import AccountCircleIcon from '../../../ignitus-Assets/ignitus-Icons/accountCircleIcon';
 import AngelListIcon from '../../../ignitus-Assets/ignitus-Icons/angelListIcon';

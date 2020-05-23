@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from '../style';
 
-export default function UserSettingsSideNavigation() {
+export const UserSettingsSideNavigation = () => {
   return (
     <S.SettingsContainer>
       <S.Layer text="General" marginTop />
@@ -13,4 +13,4 @@ export default function UserSettingsSideNavigation() {
       <S.Layer text="Privacy" border={false} marginBottom />
     </S.SettingsContainer>
   );
-}
+};

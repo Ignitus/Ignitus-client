@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 
-import DefaultCheckbox from './defaultCheckbox';
+import { DefaultCheckbox } from './index';
 
 const props = {
   label: 'Label',

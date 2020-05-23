@@ -2,7 +2,12 @@ import React from 'react';
 import { InputType } from '../types';
 import { Input } from '../styles';
 
-const DefaultInput = ({ placeholder, type, name, handleChange }: InputType) => (
+export const DefaultInput = ({
+  placeholder,
+  type,
+  name,
+  handleChange,
+}: InputType) => (
   <React.Fragment>
     <Input
       placeholder={placeholder}
@@ -12,5 +17,3 @@ const DefaultInput = ({ placeholder, type, name, handleChange }: InputType) => (
     />
   </React.Fragment>
 );
-
-export default DefaultInput;

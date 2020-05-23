@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
-import Overlay from './index';
+import { Overlay } from './index';
 
 const props = {
   title: 'Title',

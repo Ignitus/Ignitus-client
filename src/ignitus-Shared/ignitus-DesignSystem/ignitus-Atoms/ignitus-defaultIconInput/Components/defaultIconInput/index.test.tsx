@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 
 import { AppIcon } from '../../../../..';
-import DefaultIconInput from './defaultIconInput';
+import { DefaultIconInput } from '.';
 import CopyIcon from '../../../../ignitus-Assets/ignitus-Icons/copyIcon';
 import CreateIcon from '../../../../ignitus-Assets/ignitus-Icons/createIcon';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Avatar } from './Avatar';
+import { Avatar } from '.';
 import { AvatarImage } from '../styles';
 import { avatar, AvatarImageProps } from '../types';
 import { avatars } from '../avatars';
