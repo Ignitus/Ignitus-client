@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
   background: ${C.White};
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   border-radius: 16px;
-  width: 25rem;
+  width: 34rem;
 `;
 
 export const TopContainer = styled.div`
