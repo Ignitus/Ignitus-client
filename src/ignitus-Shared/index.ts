@@ -1,4 +1,5 @@
 /* eslint-disable import/no-cycle */
+
 /**
  * => ignitus-DesgnSystem
  */
@@ -72,9 +73,18 @@ export {
   default as Overlay,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
+export {
+  default as ScrollBar,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
+
 /**
  * ignitus-Organisms
  */
+
+export {
+  Opportunity,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunityList/Components';
+
 export {
   Avatar,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar';
@@ -94,10 +104,6 @@ export {
 export {
   OptionalNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
-
-export {
-  Opportunity,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
 
 export {
   UserProfileCard,

@@ -5,8 +5,6 @@ import { flexibleColDiv, flexibleRowDiv, Paragraph } from '../../shared';
 import { Normal, MD } from '../../ignitus-Atoms/fonts';
 import ApplyIcon from '../../ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
 
-export const OpportunityList = styled(flexibleColDiv)``;
-
 export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
@@ -80,7 +78,7 @@ export const OpportunityDescription = styled(T.Paragraph)`
 
 export const OpportunityDateTitle = styled.div`
   display: flex;
-  sflex-direction: row;
+  flex-direction: row;
 `;
 
 export const OpportunityTitle = styled(T.Heading3)`

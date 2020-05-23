@@ -15,7 +15,7 @@ import { InterfaceSideNavigation } from '../../ignitus-UserInterfaceBook/Interfa
 import { interfaceDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceDropDown/Components';
 import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCheckBox/Components';
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
-import { interfaceOpportunity } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunity/Components';
+import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
@@ -30,6 +30,7 @@ import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Orga
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
+import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceOpportunityDetailsCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityDetailsCard/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
@@ -85,7 +86,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/cards" component={interfaceCards} />
         <Route
           path="/interface/opportunityPosted"
-          component={interfaceOpportunity}
+          component={interfaceOpportunityList}
         />
         <Route path="/interface/notFound" component={interfaceNotFound} />
         <Route
@@ -138,6 +139,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/filters" component={interfaceFilters} />
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
+        <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route
           path="/interface/toggleButtons"
           component={interfaceToggleButtons}
