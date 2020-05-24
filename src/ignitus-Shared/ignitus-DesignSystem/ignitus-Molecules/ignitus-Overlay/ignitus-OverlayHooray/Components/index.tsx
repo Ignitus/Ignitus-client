@@ -1,9 +1,9 @@
 import React from 'react';
 import * as O from '../styles';
-import { Heading1 } from '../../../..';
+import { Heading1 } from '../../../../..';
 import { OverlayProps } from '../types';
 
-const Overlay = ({
+export const OverlayHooray = ({
   title,
   primaryText,
   secondaryText,
@@ -23,5 +23,3 @@ const Overlay = ({
     </O.BottomSection>
   </O.Overlay>
 );
-
-export default Overlay;

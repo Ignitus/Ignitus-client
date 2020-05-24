@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading1, DefaultIconInput } from '../../../..';
+import { Heading1, DefaultIconInput } from '../../../../..';
 import { OverlayShareProps } from '../types';
-import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { AppIcon } from '../../../../../types/iconsTypes/iconEnums';
 
 import * as O from '../styles';
 

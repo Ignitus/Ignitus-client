@@ -1,12 +1,12 @@
 import React from 'react';
-import { Overlay, Heading2 } from '../../../../../ignitus-Shared';
+import { OverlayHooray, Heading2 } from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
 
-export const interfaceOverlay = () => (
+export const interfaceOverlayHooray = () => (
   <Interface>
-    <Heading2>Overlay</Heading2>
+    <Heading2>Overlay Hooray</Heading2>
     <hr />
-    <Overlay
+    <OverlayHooray
       primaryText="Your application has been sent successfully!"
       secondaryText="Make sure to keep an eye on your email."
       buttonText="Go Back"

@@ -115,7 +115,16 @@ export const allEdges: Edges[] = [
       // },
       {
         title: 'Overlay',
-        route: '/interface/overlay',
+        children: [
+          {
+            title: 'Overlay Hooray',
+            route: '/interface/overlayHooray',
+          },
+          {
+            title: 'Overlay Share',
+            route: '/interface/overlayShare',
+          },
+        ],
       },
       {
         title: 'Scroll Bar',
@@ -124,10 +133,6 @@ export const allEdges: Edges[] = [
       {
         title: 'Toggle Buttons',
         route: '/interface/toggleButtons',
-      },
-      {
-        title: 'Overlay Share',
-        route: '/interface/overlayShare',
       },
     ],
   },

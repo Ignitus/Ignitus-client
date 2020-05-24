@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import { Paragraph as P, Normal, MD, White, boxShadowColor } from '../../..';
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import { Paragraph as P, Normal, MD, White, boxShadowColor } from '../../../..';
+import Icon from '../../../../ignitus-Utilities/Components/icon';
 
-import { flexibleColDiv, flexibleRowDiv } from '../../shared';
+import { flexibleColDiv, flexibleRowDiv } from '../../../shared';
 
 export const OverlayShare = styled.div`
   background-color: ${White};
@@ -15,12 +15,12 @@ export const OverlayShare = styled.div`
 `;
 
 export const TopSection = styled(flexibleRowDiv)`
-  padding: 2rem;
+  padding: 1.5rem;
   justify-content: space-between;
 `;
 
 export const BottomSection = styled(flexibleColDiv)`
-  padding: 0.4rem 1.5rem 1.5rem 1.5rem;
+  padding: 0.4rem 0.8rem 1.5rem 1.5rem;
   align-items: flex-start;
 `;
 
@@ -44,7 +44,7 @@ export const IconContainer = styled.button`
 export const Paragraph = styled(P)`
   font-weight: ${Normal};
   font-size: ${MD};
-  margin: 0.6rem;
+  margin: 2rem 0.6rem 0.6rem 0.6rem;
 `;
 
 export const StyledIcon = styled(Icon)`
@@ -52,5 +52,5 @@ export const StyledIcon = styled(Icon)`
   fill: ${props => props.color};
   transition: 0.3s;
   flex: 1;
-  margin: 0.03rem;
+  margin-top: 0.2rem;
 `;

@@ -9,11 +9,11 @@ import {
   White,
   GreyOne,
   boxShadowColor,
-} from '../../..';
-import { Button as B } from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
+} from '../../../..';
+import { Button as B } from '../../../ignitus-Atoms/ignitus-defaultMulti/styles';
 
 import { Props } from './types';
-import { flexibleColDiv } from '../../shared';
+import { flexibleColDiv } from '../../../shared';
 
 export const Overlay = styled.div`
   background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
