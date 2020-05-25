@@ -7,7 +7,7 @@ interface Props {
   target?: string;
   rel?: string;
   children: React.ReactNode;
-  [rest: string]: any;
+  [rest: number]: string;
 }
 
 export const Link: React.FC<Props> = ({
