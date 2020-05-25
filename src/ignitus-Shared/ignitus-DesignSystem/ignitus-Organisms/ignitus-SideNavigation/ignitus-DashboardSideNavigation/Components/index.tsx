@@ -3,7 +3,7 @@ import React from 'react';
 import * as S from '../style';
 import { AppIcon } from '../../../../../types/iconsTypes/iconEnums';
 
-export default function DashboardNavigation() {
+export const DashboardNavigation = () => {
   return (
     <S.SettingsContainer>
       <S.Layer
@@ -35,4 +35,4 @@ export default function DashboardNavigation() {
       />
     </S.SettingsContainer>
   );
-}
+};

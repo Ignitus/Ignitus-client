@@ -3,13 +3,15 @@ import * as S from '../style';
 import { Opportunity } from '../types';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
-export const DashBoardOpportunity = ({
-  title,
-  description,
-  subtitle,
-  src,
-}: Opportunity) => (
-  <Card title={title} description={description} subtitle={subtitle} src={src} />
+export const DashBoardOpportunity: React.FC<Opportunity> = withErrorBoundary(
+  ({ title, description, subtitle, src }) => (
+    <Card
+      title={title}
+      description={description}
+      subtitle={subtitle}
+      src={src}
+    />
+  ),
 );
 
 export const Card = ({ title, description, subtitle, src }: Opportunity) => (
@@ -26,5 +28,3 @@ export const Card = ({ title, description, subtitle, src }: Opportunity) => (
     </S.Row>
   </S.Container>
 );
-
-export default withErrorBoundary(DashBoardOpportunity);
