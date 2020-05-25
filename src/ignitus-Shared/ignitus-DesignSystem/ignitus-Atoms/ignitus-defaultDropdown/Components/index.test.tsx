@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerialize, { matchers } from 'jest-emotion';
 
-import DefaultDropdown from './defaultDropdown';
+import { DefaultDropdown } from '.';
 
 expect.addSnapshotSerializer(emotionSerialize);
 expect.extend(matchers);

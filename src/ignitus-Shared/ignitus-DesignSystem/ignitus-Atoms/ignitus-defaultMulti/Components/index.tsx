@@ -3,7 +3,7 @@ import { InputTypes } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultMultiMediaInput = ({
+export const DefaultMultiMediaInput = ({
   placeholder,
   name,
   maxHeightOfInput = 200,
@@ -72,5 +72,3 @@ const DefaultMultiMediaInput = ({
     </React.Fragment>
   );
 };
-
-export default DefaultMultiMediaInput;
