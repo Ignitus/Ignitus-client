@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as I from '../../styles';
 import { DefaultIconInputProperties } from '../../types';
 
-const DefaultIconInput = ({
+export const DefaultIconInput = ({
   placeholder,
   type,
   name,
@@ -36,5 +36,3 @@ const DefaultIconInput = ({
     </React.Fragment>
   );
 };
-
-export default DefaultIconInput;

@@ -3,7 +3,7 @@ import { Button } from '../../buttons';
 import { StyledIcon } from '../styles';
 import { BtnProps } from '../types';
 
-const DefaultButtonWithIcon = ({
+export const DefaultButtonWithIcon = ({
   size,
   category,
   name,
@@ -14,5 +14,3 @@ const DefaultButtonWithIcon = ({
     {content} <StyledIcon name={name} category={category} size={size} />
   </Button>
 );
-
-export default DefaultButtonWithIcon;

@@ -70,11 +70,11 @@ export {
 // Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
-  default as Overlay,
+  Overlay,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
 export {
-  default as ScrollBar,
+  ScrollBar,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
 
 /**
@@ -87,10 +87,10 @@ export {
 
 export {
   Avatar,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar';
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar/Components/index';
 
 export {
-  default as DashboardFooter,
+  DashboardFooter,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
 export {
@@ -110,15 +110,15 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
 export {
-  default as DashboardNavigation,
+  DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
 export {
-  default as MessageSideNavigation,
+  MessageSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
 
 export {
-  default as UserSettingsSideNavigation,
+  UserSettingsSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
 /**

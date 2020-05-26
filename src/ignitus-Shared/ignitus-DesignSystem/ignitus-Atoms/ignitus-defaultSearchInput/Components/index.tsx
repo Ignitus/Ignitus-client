@@ -3,7 +3,7 @@ import { InputTypes } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
-const DefaultSearchInput = ({ placeholder, type, name }: InputTypes) => (
+export const DefaultSearchInput = ({ placeholder, type, name }: InputTypes) => (
   <React.Fragment>
     <I.InputContainer>
       <I.StyledIcon name={AppIcon.SearchIcon} />
@@ -11,5 +11,3 @@ const DefaultSearchInput = ({ placeholder, type, name }: InputTypes) => (
     </I.InputContainer>
   </React.Fragment>
 );
-
-export default DefaultSearchInput;

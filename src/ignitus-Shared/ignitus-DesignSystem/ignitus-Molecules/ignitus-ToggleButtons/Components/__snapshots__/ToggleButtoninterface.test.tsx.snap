@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleButtonInterface /> should render 1`] = `
+.emotion-2 {
+  cursor: pointer;
+}
+
+.emotion-0 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ffffff;
+  background-color: #000066;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 20px 0 0 20px;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-0 a {
+  color: #ffffff;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  background-color: #F9BF64;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-0:hover a,
+.emotion-0:focus a {
+  color: #000066;
+}
+
+.emotion-0:hover svg,
+.emotion-0:focus svg {
+  fill: #000066;
+}
+
+.emotion-1 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #E0E0E0;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 0 20px 20px 0;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-1 a {
+  color: #000066;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  background-color: #C4C4C4;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-1:hover a,
+.emotion-1:focus a {
+  color: #000066;
+}
+
+.emotion-1:hover svg,
+.emotion-1:focus svg {
+  fill: #000066;
+}
+
+<span
+  class="emotion-2"
+>
+  <button
+    class="emotion-0"
+  >
+     Left 
+  </button>
+  <button
+    class="emotion-1"
+  >
+     Right 
+  </button>
+</span>
+`;

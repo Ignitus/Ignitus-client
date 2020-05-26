@@ -7,7 +7,7 @@ import { TagsContainer, DefaultTag3 } from '../styles';
 import { Heading2 } from '../../../../../ignitus-Shared';
 import * as C from '../../../../../ignitus-Shared';
 
-const interfaceTags: React.FC = () => (
+export const interfaceTags: React.FC = () => (
   <TagsContainer>
     <Heading2>Tags</Heading2>
     <hr />
@@ -34,5 +34,3 @@ const interfaceTags: React.FC = () => (
     />
   </TagsContainer>
 );
-
-export default interfaceTags;
