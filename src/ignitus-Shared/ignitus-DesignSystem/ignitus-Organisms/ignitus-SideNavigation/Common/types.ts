@@ -5,7 +5,7 @@ export interface LayerProps {
   marginBottom?: boolean;
   prepend?: React.ReactNode;
   append?: React.ReactNode;
-  [rest: number]: string;
+  [rest: string]: any;
 }
 
 export type StyledLayerProps = {
