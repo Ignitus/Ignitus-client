@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import Icon from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import { Icon } from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import { flexibleRowDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { XL, SM, Light, Medium } from '../../ignitus-Shared';
 

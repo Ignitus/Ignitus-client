@@ -10,7 +10,7 @@ import {
 } from '../../../../ignitus-Shared';
 import * as T from '../Styles/style';
 
-const WelcomeFlow: FunctionComponent = () => (
+export const WelcomeFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress
@@ -69,6 +69,4 @@ const WelcomeFlow: FunctionComponent = () => (
       </Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
-);
-
-export default withErrorBoundary(WelcomeFlow);
+));

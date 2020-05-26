@@ -13,7 +13,7 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-const EmailFlow: FunctionComponent = () => (
+export const EmailFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress
@@ -45,6 +45,4 @@ const EmailFlow: FunctionComponent = () => (
       </Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
-);
-
-export default withErrorBoundary(EmailFlow);
+));

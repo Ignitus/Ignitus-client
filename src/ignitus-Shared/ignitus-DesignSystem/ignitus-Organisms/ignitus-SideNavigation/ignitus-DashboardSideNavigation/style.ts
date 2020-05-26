@@ -6,7 +6,7 @@ import {
   boxShadowColor,
 } from '../../../ignitus-Atoms/colors';
 import { flexibleColDiv } from '../../../shared';
-import Icon from '../../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../../ignitus-Utilities/Components/icon';
 import { CommonLayer } from '../Common/Layer';
 
 export const SettingsContainer = styled(flexibleColDiv)`

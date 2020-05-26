@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../ignitus-Utilities/Components/icon';
 import {
   ButtonProperties,
   getColor,
