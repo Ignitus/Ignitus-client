@@ -48,6 +48,8 @@ import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ic
 import BarsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
 import GridIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
 import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
+import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
+import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -81,6 +83,9 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.CrossIcon:
       return <CrossIcon {...rest} />;
+
+    case AppIcon.CheckIcon:
+      return <CheckIcon {...rest} />;
 
     case AppIcon.SearchIcon:
       return <SearchIcon {...rest} />;
@@ -178,6 +183,9 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.SlackIcon:
       return <SlackIcon {...rest} />;
+
+    case AppIcon.ShareIcon:
+      return <ShareIcon {...rest} />;
 
     case AppIcon.MediumIcon:
       return <MediumIcon {...rest} />;

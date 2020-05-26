@@ -12,13 +12,13 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
-  padding: 2rem;
+  padding: 2rem 3rem;
   margin-top: 1rem;
   max-width: 55rem;
 `;
 
 export const Content = styled.div`
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 `;
 
 export const ParentContainer = styled.div`

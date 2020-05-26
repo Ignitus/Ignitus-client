@@ -6,4 +6,5 @@ export type Opportunity = {
 export type Cardtypes = {
   location: string;
   commitment: string;
+  salary: string;
 };
