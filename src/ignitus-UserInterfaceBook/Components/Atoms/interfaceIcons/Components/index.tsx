@@ -42,9 +42,9 @@ export const interfaceIcons: React.FC = () => (
   </Interface>
 );
 
-type IconsT = {
+type IconsTypes = {
   icons: AppIcon[];
 };
 
-const IconsMapper: Function = ({ icons }: IconsT): JSX.Element[] =>
+const IconsMapper: Function = ({ icons }: IconsTypes): JSX.Element[] =>
   icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);

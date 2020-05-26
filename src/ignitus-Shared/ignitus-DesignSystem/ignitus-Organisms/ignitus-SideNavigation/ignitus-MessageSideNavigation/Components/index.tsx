@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as S from '../style';
 
-export default function MessageSideNavigation() {
+export const MessageSideNavigation = () => {
   return (
     <S.MessageContainer>
       <S.Layer text="Direct Messages" marginTop append={<Notification />} />
@@ -16,6 +16,6 @@ export default function MessageSideNavigation() {
       />
     </S.MessageContainer>
   );
-}
+};
 
 const Notification = () => <S.Notification>4</S.Notification>;

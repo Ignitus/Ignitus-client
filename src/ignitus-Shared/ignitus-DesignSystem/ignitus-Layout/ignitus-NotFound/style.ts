@@ -122,7 +122,7 @@ export const MessageContainer = styled.div`
   margin-bottom: 6rem;
 `;
 
-export const Message = styled.p`
+export const Message = styled.div`
   color: ${C.IgnitusBlue};
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
-import DashboardFooter from './index';
+import { DashboardFooter } from './index';
 import { Copyright } from '../style';
 
 let wrapper;
