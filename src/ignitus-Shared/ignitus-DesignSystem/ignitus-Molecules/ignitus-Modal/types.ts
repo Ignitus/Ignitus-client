@@ -2,7 +2,7 @@ export type Props = {
   secondary?: boolean;
 };
 
-export type OverlayProps = {
+export type ModalProps = {
   primaryText: string;
   secondaryText: string;
   title: string;

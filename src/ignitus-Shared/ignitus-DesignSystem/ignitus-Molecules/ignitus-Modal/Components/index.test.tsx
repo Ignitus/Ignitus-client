@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import emotionSerializer, { matchers } from 'jest-emotion';
-import { Overlay } from './index';
+import { Modal } from './index';
 
 const props = {
   title: 'Title',
@@ -15,13 +15,13 @@ let wrapper;
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
-describe('<Overlay />', () => {
+describe('<Modal />', () => {
   beforeEach(() => {
-    wrapper = mount(<Overlay {...props} />);
+    wrapper = mount(<Modal {...props} />);
   });
 
   it('should render', () => {
-    wrapper = render(<Overlay {...props} />);
+    wrapper = render(<Modal {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
 
