@@ -1,4 +1,5 @@
 /* eslint-disable import/no-cycle */
+
 /**
  * => ignitus-DesgnSystem
  */
@@ -69,18 +70,27 @@ export {
 // Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
-  default as Overlay,
+  Overlay,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
+
+export {
+  ScrollBar,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
 
 /**
  * ignitus-Organisms
  */
-export {
-  Avatar,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar';
 
 export {
-  default as DashboardFooter,
+  Opportunity,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunityList/Components';
+
+export {
+  Avatar,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar/Components/index';
+
+export {
+  DashboardFooter,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
 export {
@@ -96,23 +106,19 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/Components';
 
 export {
-  Opportunity,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-OppurtunityList/Components/OppurtunityList';
-
-export {
   UserProfileCard,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
 export {
-  default as DashboardNavigation,
+  DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
 export {
-  default as MessageSideNavigation,
+  MessageSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
 
 export {
-  default as UserSettingsSideNavigation,
+  UserSettingsSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
 /**

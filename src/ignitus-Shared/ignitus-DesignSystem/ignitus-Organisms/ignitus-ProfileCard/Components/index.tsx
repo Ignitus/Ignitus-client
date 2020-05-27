@@ -56,7 +56,7 @@ export const UserProfileCard = withErrorBoundary(() => (
   </S.Container>
 ));
 
-const DropDownButton = () => (
+export const DropDownButton = () => (
   <S.DropDownBtnContainer>
     <S.DropDownBtn>
       More ...
@@ -69,7 +69,7 @@ const DropDownButton = () => (
   </S.DropDownBtnContainer>
 );
 
-const IconContent = ({ content, name }: Props) => (
+export const IconContent = ({ content, name }: Props) => (
   <S.Wrapper>
     <S.Icon name={name} />
     <S.Paragraph margin="0 0 0 0.5rem" primary>

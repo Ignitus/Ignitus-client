@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleButton /> should render 1`] = `
+.emotion-2 {
+  cursor: pointer;
+}
+
+.emotion-0 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ffffff;
+  background-color: #000066;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 20px 0 0 20px;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-0 a {
+  color: #ffffff;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  background-color: #F9BF64;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-0:hover a,
+.emotion-0:focus a {
+  color: #000066;
+}
+
+.emotion-0:hover svg,
+.emotion-0:focus svg {
+  fill: #000066;
+}
+
+.emotion-1 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #E0E0E0;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 0 20px 20px 0;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-1 a {
+  color: #000066;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  background-color: #C4C4C4;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-1:hover a,
+.emotion-1:focus a {
+  color: #000066;
+}
+
+.emotion-1:hover svg,
+.emotion-1:focus svg {
+  fill: #000066;
+}
+
+<span
+  class="emotion-2"
+>
+  <button
+    class="emotion-0"
+  >
+     left 
+  </button>
+  <button
+    class="emotion-1"
+  >
+     right
+  </button>
+</span>
+`;
+
+exports[`<ToggleIconButton /> should render 1`] = `
+.emotion-4 {
+  cursor: pointer;
+}
+
+.emotion-1 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #E0E0E0;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 20px 0 0 20px;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-1 a {
+  color: #000066;
+}
+
+.emotion-1:hover,
+.emotion-1:focus {
+  background-color: #C4C4C4;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-1:hover a,
+.emotion-1:focus a {
+  color: #000066;
+}
+
+.emotion-1:hover svg,
+.emotion-1:focus svg {
+  fill: #000066;
+}
+
+.emotion-0 {
+  width: 1.4rem;
+  fill: #000066;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0.03rem;
+}
+
+.emotion-3 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 0;
+  border: 0;
+  float: left;
+  border-radius: 0 20px 20px 0;
+}
+
+.emotion-3:hover,
+.emotion-3:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-3 a {
+  color: #000066;
+}
+
+.emotion-3:hover,
+.emotion-3:focus {
+  background-color: none;
+  color: none;
+  outline: none;
+}
+
+.emotion-3:hover a,
+.emotion-3:focus a {
+  color: #000066;
+}
+
+.emotion-3:hover svg,
+.emotion-3:focus svg {
+  fill: #000066;
+}
+
+<span
+  class="emotion-4"
+>
+  <button
+    class="emotion-1"
+  >
+    <svg
+      aria-label="Grid Icon"
+      class="emotion-0"
+      color="#000066"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Grid Icon
+      </title>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"
+      />
+    </svg>
+  </button>
+  <button
+    class="emotion-3"
+  >
+    <svg
+      aria-label="Bars Icon"
+      class="emotion-0"
+      color="#000066"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Bars Icon
+      </title>
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      />
+    </svg>
+  </button>
+</span>
+`;
