@@ -16,6 +16,7 @@ export const OpportunityDetailsPage = () => (
     <S.Column>
       {OpportunityCardDetails.map(({ title, description, subtitle, src }) => (
         <DashBoardOpportunity
+          key={title}
           title={title}
           description={description}
           subtitle={subtitle}
@@ -26,7 +27,7 @@ export const OpportunityDetailsPage = () => (
         <Heading1>Project Description</Heading1>
         <S.Content>
           {ProjectDescription.map(content => (
-            <S.Content>
+            <S.Content key={content}>
               <Paragraph>{content}</Paragraph>
             </S.Content>
           ))}
@@ -34,19 +35,24 @@ export const OpportunityDetailsPage = () => (
             Candidates should apply for a PhD place in the normal way, stating:
           </Paragraph>
           {DetailsRequired.map(content => (
-            <Paragraph>&#9675;{content}</Paragraph>
+            <Paragraph key={content}>&#9675;{content}</Paragraph>
           ))}
         </S.Content>
         <Heading1>Funding Notes</Heading1>
         {Funding.map(content => (
-          <S.Content>
+          <S.Content key={content}>
             <Paragraph>{content}</Paragraph>
           </S.Content>
         ))}
       </S.Container>
     </S.Column>
-    {InfoCardDetails.map(({ location, commitment, salary }) => (
-      <InfoCard location={location} commitment={commitment} salary={salary} />
+    {InfoCardDetails.map(({ index, location, commitment, salary }) => (
+      <InfoCard
+        key={index}
+        location={location}
+        commitment={commitment}
+        salary={salary}
+      />
     ))}
   </S.ParentContainer>
 );

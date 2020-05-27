@@ -15,6 +15,7 @@ export const Funding = [
 
 export const InfoCardDetails = [
   {
+    index: 1,
     location: 'Australia',
     commitment: 'Full-Time',
     salary: 'funded | ¢10/hr',
