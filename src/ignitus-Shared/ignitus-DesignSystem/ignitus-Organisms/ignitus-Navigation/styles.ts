@@ -78,8 +78,7 @@ export const NavigationLinks = styled.ul<ToggleProps>`
 `;
 
 export const NavigationLinkItem = styled.li<NavigationProps>`
-  padding: ${props =>
-    props.padding === 'forEmail' ? '0rem 1rem 0rem 0rem' : '0rem 1rem'};
+  padding: 0rem 1rem;
   align-self: stretch;
 
   a {
@@ -103,10 +102,14 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
   }
 `;
 
-export const NavigationIcon = styled.div`
-  padding: 0 0.5rem 0 1rem;
-`;
+export const StyledIcon = styled(Icon)``;
 
+export const EmailWrapper = styled.span`
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+`;
 export const NavigationLink = styled(Link)``;
 
 export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<

@@ -4,8 +4,6 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { withErrorBoundary, AppIcon, useToggle } from '../../../ignitus-Shared';
 import * as N from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
-import Student from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/Student.svg';
-import Professor from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Images/img-Svg/Professor.svg';
 
 const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
   const logout = () => {
@@ -35,15 +33,16 @@ const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
           <N.NavigationLink to="/#">Home</N.NavigationLink>
         </N.NavigationLinkItem>
 
-        <N.NavigationIcon>
-          <img
-            style={{ display: 'inline' }}
-            src={userType === 'student' ? Student : Professor}
-            alt="id"
-          />
-        </N.NavigationIcon>
-        <N.NavigationLinkItem padding="forEmail">
-          <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
+        <N.NavigationLinkItem>
+          <N.EmailWrapper>
+            {userType === 'student' ? (
+              <N.StyledIcon name={AppIcon.StudentIcon} />
+            ) : (
+              <N.StyledIcon name={AppIcon.ProfessorIcon} />
+            )}
+
+            <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
+          </N.EmailWrapper>
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem onClick={logout}>
