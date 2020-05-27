@@ -6,7 +6,7 @@ import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 export const InfoCard = ({ location, commitment, salary }: Cardtypes) => {
   const [buttonText, setButtonText] = React.useState(<div> Apply </div>);
-  const handleClick = e => {
+  const handleClick = () => {
     setButtonText(
       <div>
         <S.Icon name={AppIcon.CheckIcon} /> Applied

@@ -9,7 +9,10 @@ export const CheckIcon = ({ title = 'Check Icon', ...rest }: Props) => (
     height="17"
     fill="none"
     viewBox="0 0 23 17"
+    aria-label={title}
+    {...rest}
   >
+    <title>{title}</title>
     <path
       // fill="#fff"
       d="M7.291 13.499l-4.52-4.521a1.27 1.27 0 00-1.81 0 1.27 1.27 0 000 1.808l5.413 5.412a1.286 1.286 0 001.821 0L21.887 2.52a1.27 1.27 0 000-1.809 1.27 1.27 0 00-1.809 0L7.291 13.5z"
