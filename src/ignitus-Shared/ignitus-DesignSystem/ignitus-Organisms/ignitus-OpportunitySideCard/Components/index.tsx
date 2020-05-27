@@ -28,7 +28,7 @@ export const InfoCard = ({ location, commitment, salary }: Cardtypes) => {
           Save{' '}
         </S.Button>
         <S.Button size="large" category="grey">
-          <S.Icon name={AppIcon.ShareIcon} /> Share Link{' '}
+          <S.Icon name={AppIcon.ShareIcon} /> Share Link
         </S.Button>
       </S.ButtonsWrapper>
     </S.Container>

@@ -41,11 +41,9 @@ export const Heading = styled(Heading4)`
 `;
 
 export const Button = styled(RoundedButton)`
-  width: 12rem;
+  width: 11rem;
 `;
 
 export const Icon = styled(I)`
   fill: ${IgnitusBlue};
-  // height: 1rem;
-  // width: 1rem;
 `;
