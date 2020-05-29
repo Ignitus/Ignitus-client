@@ -55,7 +55,7 @@ type Props = {
   name: AppIcon;
 } & HTMLAttributes<SVGElement>;
 
-const Icon = ({ name, ...rest }: Props) => {
+export const Icon = ({ name, ...rest }: Props) => {
   switch (name) {
     case AppIcon.AngelListIcon:
       return <AngelListIcon {...rest} />;
@@ -206,5 +206,3 @@ const Icon = ({ name, ...rest }: Props) => {
       return <ProfessorIcon {...rest} />;
   }
 };
-
-export default Icon;

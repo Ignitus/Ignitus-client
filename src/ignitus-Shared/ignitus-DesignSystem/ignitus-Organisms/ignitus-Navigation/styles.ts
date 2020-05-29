@@ -10,7 +10,7 @@ import {
 } from '../../ignitus-Atoms/colors';
 import { XS, SemiBold } from '../../ignitus-Atoms/fonts';
 import { NavigationProps, ToggleProps } from './types';
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../ignitus-Utilities/Components/icon';
 
 export const Navigation = styled.nav<NavigationProps>`
   align-items: center;

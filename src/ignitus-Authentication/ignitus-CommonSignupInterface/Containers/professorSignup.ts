@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { default as ProfessorSignUp } from '../../ignitus-ProfessorSignUp/Components';
+import { SignUp as ProfessorSignUp } from '../../ignitus-ProfessorSignUp/Components';
 
 import { mapStateToProps, mapDispatchToProps } from './utils';
 

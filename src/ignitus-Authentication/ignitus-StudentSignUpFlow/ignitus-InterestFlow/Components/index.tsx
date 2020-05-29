@@ -14,7 +14,7 @@ import {
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
 
-const InterestFlow: FunctionComponent = () => (
+export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
     <T.TopSection>
       <T.Progress
@@ -62,6 +62,4 @@ const InterestFlow: FunctionComponent = () => (
       </Paragraph>
     </T.BottomSection>
   </T.WelcomeContainer>
-);
-
-export default withErrorBoundary(InterestFlow);
+));

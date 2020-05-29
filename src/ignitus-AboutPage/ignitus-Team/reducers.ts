@@ -9,7 +9,7 @@ function getContributorsData() {
   return { isFetching: true, presets: [] };
 }
 
-const contributorsReducer = (
+export const contributorsReducer = (
   state = initialState,
   action: TeamActionType,
 ): TeamReducerReturnType => {
@@ -24,5 +24,3 @@ const contributorsReducer = (
       return state;
   }
 };
-
-export default contributorsReducer;

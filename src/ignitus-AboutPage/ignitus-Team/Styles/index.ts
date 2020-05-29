@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import { Paragraph, Loading, Normal } from '../../../ignitus-Shared';
-import { default as I } from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
