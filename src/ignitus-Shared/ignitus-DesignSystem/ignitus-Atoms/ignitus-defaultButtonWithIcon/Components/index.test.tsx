@@ -4,8 +4,8 @@ import { mount, render } from 'enzyme';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { DefaultButtonWithIcon } from './index';
 
-import AccountCircleIcon from '../../../ignitus-Assets/ignitus-Icons/accountCircleIcon';
-import AngelListIcon from '../../../ignitus-Assets/ignitus-Icons/angelListIcon';
+import { AccountCircleIcon } from '../../../ignitus-Assets/ignitus-Icons/accountCircleIcon';
+import { AngelListIcon } from '../../../ignitus-Assets/ignitus-Icons/angelListIcon';
 
 const props = {
   size: '50px',

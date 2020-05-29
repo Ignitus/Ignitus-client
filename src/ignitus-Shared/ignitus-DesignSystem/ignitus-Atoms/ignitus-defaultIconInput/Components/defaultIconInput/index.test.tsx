@@ -3,8 +3,8 @@ import { mount, render } from 'enzyme';
 
 import { AppIcon } from '../../../../..';
 import { DefaultIconInput } from './index';
-import CopyIcon from '../../../../ignitus-Assets/ignitus-Icons/copyIcon';
-import CreateIcon from '../../../../ignitus-Assets/ignitus-Icons/createIcon';
+import { CopyIcon } from '../../../../ignitus-Assets/ignitus-Icons/copyIcon';
+import { CreateIcon } from '../../../../ignitus-Assets/ignitus-Icons/createIcon';
 
 const props = {
   state: 'copy',
