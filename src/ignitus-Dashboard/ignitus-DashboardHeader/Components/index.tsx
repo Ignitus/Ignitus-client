@@ -15,9 +15,11 @@ const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   const userInformation: string | null = localStorage.getItem('data');
   let userEmail: string = '';
+  let userType: string = '';
 
   if (localStorage.getItem('data') && typeof userInformation === 'string') {
     userEmail = JSON.parse(userInformation).email;
+    userType = JSON.parse(userInformation).userType;
   }
 
   return (
@@ -29,6 +31,15 @@ const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
       <N.NavigationLinks isExpanded={isExpanded}>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">Home</N.NavigationLink>
+        </N.NavigationLinkItem>
+
+        <N.NavigationLinkItem>
+          {userType === 'student' && (
+            <N.StyledIcon name={AppIcon.StudentIcon} />
+          )}
+          {userType === 'professor' && (
+            <N.StyledIcon name={AppIcon.ProfessorIcon} />
+          )}
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem>
