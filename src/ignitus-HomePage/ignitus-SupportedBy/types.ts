@@ -1,5 +1,5 @@
 export type Props = {
-  data: any;
+  data: string[];
   type: string;
   paragraph: string;
 };

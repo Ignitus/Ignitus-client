@@ -48,6 +48,8 @@ import { StarCircleIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitu
 import { BarsIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
 import { GridIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
 import { SearchIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
+import { StudentIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/studentIcon/index';
+import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/professorIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -196,6 +198,12 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.GridIcon:
       return <GridIcon {...rest} />;
+
+    case AppIcon.StudentIcon:
+      return <StudentIcon {...rest} />;
+
+    case AppIcon.ProfessorIcon:
+      return <ProfessorIcon {...rest} />;
   }
 };
 
