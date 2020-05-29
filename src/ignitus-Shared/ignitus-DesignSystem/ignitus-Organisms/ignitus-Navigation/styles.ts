@@ -78,7 +78,7 @@ export const NavigationLinks = styled.ul<ToggleProps>`
 `;
 
 export const NavigationLinkItem = styled.li<NavigationProps>`
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
   align-self: stretch;
 
   a {
@@ -103,13 +103,6 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
 `;
 
 export const StyledIcon = styled(Icon)``;
-
-export const EmailWrapper = styled.span`
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  align-items: center;
-`;
 export const NavigationLink = styled(Link)``;
 
 export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<

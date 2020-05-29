@@ -1,6 +1,5 @@
 export interface NavigationProps {
   transparentNavigation?: boolean;
-  padding?: string;
 }
 
 export type ToggleProps = {

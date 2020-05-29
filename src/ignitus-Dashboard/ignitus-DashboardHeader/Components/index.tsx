@@ -34,15 +34,16 @@ const DashBoardNavigation: React.FC = ({ logUserOut }: any) => {
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem>
-          <N.EmailWrapper>
-            {userType === 'student' ? (
-              <N.StyledIcon name={AppIcon.StudentIcon} />
-            ) : (
-              <N.StyledIcon name={AppIcon.ProfessorIcon} />
-            )}
+          {userType === 'student' && (
+            <N.StyledIcon name={AppIcon.StudentIcon} />
+          )}
+          {userType === 'professor' && (
+            <N.StyledIcon name={AppIcon.ProfessorIcon} />
+          )}
+        </N.NavigationLinkItem>
 
-            <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
-          </N.EmailWrapper>
+        <N.NavigationLinkItem>
+          <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem onClick={logout}>
