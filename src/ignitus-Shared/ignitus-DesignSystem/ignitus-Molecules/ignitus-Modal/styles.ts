@@ -15,7 +15,7 @@ import { Button as B } from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
 import { Props } from './types';
 import { flexibleColDiv } from '../../shared';
 
-export const Overlay = styled.div`
+export const Modal = styled.div`
   background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
   background-color: ${White};
   background-size: contain;
