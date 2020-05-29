@@ -13,13 +13,15 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
       return <Redirect to="/" />;
     };
 
-    const [isExpanded, toogleIsExpanded] = useToggle(false);
-    const userInformation: string | null = localStorage.getItem('data');
-    let userEmail: string = '';
+  const [isExpanded, toogleIsExpanded] = useToggle(false);
+  const userInformation: string | null = localStorage.getItem('data');
+  let userEmail: string = '';
+  let userType: string = '';
 
-    if (localStorage.getItem('data') && typeof userInformation === 'string') {
-      userEmail = JSON.parse(userInformation).email;
-    }
+  if (localStorage.getItem('data') && typeof userInformation === 'string') {
+    userEmail = JSON.parse(userInformation).email;
+    userType = JSON.parse(userInformation).userType;
+  }
 
     return (
       <N.Navigation>
@@ -32,9 +34,18 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
             <N.NavigationLink to="/#">Home</N.NavigationLink>
           </N.NavigationLinkItem>
 
-          <N.NavigationLinkItem>
-            <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
-          </N.NavigationLinkItem>
+        <N.NavigationLinkItem>
+          {userType === 'student' && (
+            <N.StyledIcon name={AppIcon.StudentIcon} />
+          )}
+          {userType === 'professor' && (
+            <N.StyledIcon name={AppIcon.ProfessorIcon} />
+          )}
+        </N.NavigationLinkItem>
+
+        <N.NavigationLinkItem>
+          <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
+        </N.NavigationLinkItem>
 
           <N.NavigationLinkItem onClick={logout}>
             <N.NavigationLink to="#">Logout</N.NavigationLink>
