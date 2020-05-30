@@ -74,7 +74,7 @@ export {
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalHooray/Components';
 
 export {
-   ModalShare,
+  ModalShare,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
