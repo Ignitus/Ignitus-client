@@ -57,7 +57,7 @@ export async function getDataFromDB(storeName) {
   }
 }
 
-export async function getItemFromDB(storeName, key) {
+export async function getItemFromDB(storeName, key: string) {
   try {
     const db: any = await createDB;
     const tx = db.transaction(storeName);

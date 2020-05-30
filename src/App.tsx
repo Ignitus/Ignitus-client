@@ -13,7 +13,7 @@ const Root = styled.div`
   background: ${GreyBackground};
 `;
 
-const App = () => (
+export const App = withErrorBoundary(() => (
   <Root>
     <Switch>
       <Route path="/dashboard" component={DashboardRoutes} />
@@ -21,6 +21,4 @@ const App = () => (
       <Route path="/" component={PublicRoutes} />
     </Switch>
   </Root>
-);
-
-export default withErrorBoundary(App);
+));

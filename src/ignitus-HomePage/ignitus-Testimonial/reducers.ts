@@ -1,6 +1,6 @@
 import * as t from './actionTypes';
 
-const testimonialReducer = (state = [], action) => {
+export const testimonialReducer = (state = [], action) => {
   switch (action.type) {
     case t.SET_TESTIMONIAL_DATA:
       return action.data;
@@ -9,5 +9,3 @@ const testimonialReducer = (state = [], action) => {
       return state;
   }
 };
-
-export default testimonialReducer;

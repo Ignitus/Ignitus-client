@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should render 1`] = `
+.emotion-6 {
+  background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
+  background-color: #ffffff;
+  background-size: contain;
+  border-radius: 1rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.emotion-0 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000066;
+}
+
+.emotion-1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin: 0;
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.emotion-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin: 0;
+  color: #9C9C9C;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 1.5rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 1.5rem 1.5rem;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.emotion-4 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ffffff;
+  background-color: #000066;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border-radius: 2rem;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-4 a {
+  color: #ffffff;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  background-color: #F9BF64;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-4:hover a,
+.emotion-4:focus a {
+  color: #000066;
+}
+
+.emotion-4:hover svg,
+.emotion-4:focus svg {
+  fill: #000066;
+}
+
+<div
+  class="emotion-6"
+>
+  <div
+    class="emotion-3"
+  >
+    <h1
+      class="emotion-0"
+    >
+      Title
+    </h1>
+    <p
+      class="emotion-1"
+    >
+      primary text
+    </p>
+    <p
+      class="emotion-2"
+    >
+      secondary text
+    </p>
+  </div>
+  <div
+    class="emotion-5"
+  >
+    <button
+      class="emotion-4"
+    >
+       button text
+    </button>
+  </div>
+</div>
+`;

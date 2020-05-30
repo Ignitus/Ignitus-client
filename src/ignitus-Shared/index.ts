@@ -67,11 +67,11 @@ export {
 /**
  * ignitus-Molecules
  */
-// Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
+// Because Modal imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
-  Overlay,
-} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
+  Modal,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/Components';
 
 export {
   ScrollBar,
@@ -127,7 +127,7 @@ export {
 export * from './ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 
 export {
-  default as OpportunityFilters,
+  OpportunityFilters,
 } from './ignitus-DesignSystem/ignitus-Templates/ignitus-filterComponents/OpportunityFilters/OpportunityFilters';
 
 /**
@@ -138,7 +138,7 @@ export {
 } from './ignitus-ErrorHandlingComponents/errorBoundary';
 
 export {
-  default as validate,
+  validate,
 } from './ignitus-ErrorHandlingComponents/errorHandling/validate';
 
 /**
@@ -150,7 +150,7 @@ export {
  */
 export { Link } from './ignitus-Utilities/Components/Link';
 
-export { default as Icon } from './ignitus-Utilities/Components/icon';
+export { Icon } from './ignitus-Utilities/Components/icon';
 
 export { Loading } from './ignitus-Utilities/Components/loader';
 
