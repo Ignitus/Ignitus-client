@@ -1,6 +1,6 @@
 import * as t from './actionTypes';
 
-const signUpReducer = (state = {}, action) => {
+export const signUpReducer = (state = {}, action) => {
   switch (action.type) {
     case t.SIGN_UP_RESPONSE:
       return { ...state, isFetching: false, ...action.data };
@@ -20,5 +20,3 @@ const signUpReducer = (state = {}, action) => {
       return state;
   }
 };
-
-export default signUpReducer;

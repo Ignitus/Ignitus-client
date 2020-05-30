@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../ignitus-Utilities/Components/icon';
 import * as B from '../../ignitus-Atoms/buttons';
 
 export const ButtonLeft = styled(B.Button)`

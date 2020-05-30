@@ -11,7 +11,7 @@ import {
   minimumWidthQuery,
 } from '../../ignitus-Shared';
 import { TitleProps } from './types';
-import { default as I } from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 

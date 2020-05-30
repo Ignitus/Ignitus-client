@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { flexibleRowDiv } from '../../shared';
 import * as C from '../colors';
 import { SM } from '../fonts';
-import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { Button as Btn } from '../buttons';
 
 export const InputContainer = styled.div`

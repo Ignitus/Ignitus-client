@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Paragraph as P, Normal, MD, White, boxShadowColor } from '../../../..';
-import Icon from '../../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../../ignitus-Utilities/Components/icon';
 
 import { flexibleColDiv, flexibleRowDiv } from '../../../shared';
 

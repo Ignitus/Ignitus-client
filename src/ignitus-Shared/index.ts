@@ -67,7 +67,7 @@ export {
 /**
  * ignitus-Molecules
  */
-// Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
+// Because Modal imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
   ModalHooray,
@@ -78,7 +78,7 @@ export {
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
-  default as ScrollBar,
+  ScrollBar,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-ScrollBar/Components';
 
 /**
@@ -91,10 +91,10 @@ export {
 
 export {
   Avatar,
-} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar';
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Avatar/Components/index';
 
 export {
-  default as DashboardFooter,
+  DashboardFooter,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 
 export {
@@ -114,15 +114,15 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
 export {
-  default as DashboardNavigation,
+  DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
 export {
-  default as MessageSideNavigation,
+  MessageSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-MessageSideNavigation/Components';
 
 export {
-  default as UserSettingsSideNavigation,
+  UserSettingsSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
 /**
@@ -131,7 +131,7 @@ export {
 export * from './ignitus-DesignSystem/ignitus-Templates/ignitus-Authentication';
 
 export {
-  default as OpportunityFilters,
+  OpportunityFilters,
 } from './ignitus-DesignSystem/ignitus-Templates/ignitus-filterComponents/OpportunityFilters/OpportunityFilters';
 
 /**
@@ -142,7 +142,7 @@ export {
 } from './ignitus-ErrorHandlingComponents/errorBoundary';
 
 export {
-  default as validate,
+  validate,
 } from './ignitus-ErrorHandlingComponents/errorHandling/validate';
 
 /**
@@ -154,7 +154,7 @@ export {
  */
 export { Link } from './ignitus-Utilities/Components/Link';
 
-export { default as Icon } from './ignitus-Utilities/Components/icon';
+export { Icon } from './ignitus-Utilities/Components/icon';
 
 export { Loading } from './ignitus-Utilities/Components/loader';
 

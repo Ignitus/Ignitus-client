@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import * as S from '../style';
 import { AppIcon, useToggle } from '../../../ignitus-Shared';
 import { allEdges } from '../constants';
-import { NavigationLayerProps } from '../types';
+import { NavigationLayerProps, LayerProps } from '../types';
 
 export const InterfaceSideNavigation = () => (
   <S.NavigationContainer>
@@ -26,7 +26,7 @@ const NavigationLayers = ({
   </React.Fragment>
 );
 
-const Layers = ({ edge, nesting, level }: any) => {
+const Layers = ({ edge, nesting, level }: LayerProps) => {
   const [isexpanded, toogleisexpanded] = useToggle(true);
   return (
     <React.Fragment key={edge.title}>

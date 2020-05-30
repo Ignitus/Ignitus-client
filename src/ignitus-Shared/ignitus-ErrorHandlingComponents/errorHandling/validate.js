@@ -31,7 +31,7 @@ const emailValidator = (value) => {
 };
 
 
-const validate = (value, rules) => {
+export const validate = (value, rules) => {
   let isValid = true;
 
   for (const rule in rules) {
@@ -55,6 +55,3 @@ const validate = (value, rules) => {
 
   return isValid;
 };
-
-
-export default validate;
