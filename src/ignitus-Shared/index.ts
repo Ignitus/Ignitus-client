@@ -70,8 +70,12 @@ export {
 // Because Modal imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
-  Modal,
-} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/Components';
+  ModalHooray,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalHooray/Components';
+
+export {
+  ModalShare,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
   ScrollBar,

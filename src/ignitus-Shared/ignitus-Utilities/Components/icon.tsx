@@ -50,6 +50,7 @@ import { GridIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icon
 import { SearchIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
 import { StudentIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/studentIcon/index';
 import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/professorIcon/index';
+import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -138,6 +139,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.FacebookIcon:
       return <FacebookIcon {...rest} />;
+
+    case AppIcon.RedditIcon:
+      return <RedditIcon {...rest} />;
 
     case AppIcon.GooglePlusIcon:
       return <GooglePlusIcon {...rest} />;

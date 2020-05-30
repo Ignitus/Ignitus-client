@@ -1,9 +1,9 @@
 import React from 'react';
 import * as O from '../styles';
-import { Heading1 } from '../../../..';
+import { Heading1 } from '../../../../..';
 import { ModalProps } from '../types';
 
-export const Modal = ({
+export const ModalHooray = ({
   title,
   primaryText,
   secondaryText,

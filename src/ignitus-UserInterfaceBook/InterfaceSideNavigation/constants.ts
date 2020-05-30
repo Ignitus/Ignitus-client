@@ -115,7 +115,16 @@ export const allEdges: Edges[] = [
       // },
       {
         title: 'Modal',
-        route: '/interface/modal',
+        children: [
+          {
+            title: 'Modal Hooray',
+            route: '/interface/modalHooray',
+          },
+          {
+            title: 'Modal Share',
+            route: '/interface/modalShare',
+          },
+        ],
       },
       {
         title: 'Scroll Bar',
