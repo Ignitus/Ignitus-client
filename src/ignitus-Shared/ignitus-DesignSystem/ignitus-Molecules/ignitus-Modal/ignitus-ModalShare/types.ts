@@ -1,4 +1,4 @@
-export type OverlayShareProps = {
+export type ModalShareProps = {
   title: string;
   Share: string;
   Link: string;

@@ -114,15 +114,15 @@ export const allEdges: Edges[] = [
       //   route: '/interface/banner',
       // },
       {
-        title: 'Overlay',
+        title: 'Modal',
         children: [
           {
-            title: 'Overlay Hooray',
-            route: '/interface/overlayHooray',
+            title: 'Modal Hooray',
+            route: '/interface/modalHooray',
           },
           {
-            title: 'Overlay Share',
-            route: '/interface/overlayShare',
+            title: 'Modal Share',
+            route: '/interface/modalShare',
           },
         ],
       },

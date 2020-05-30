@@ -70,12 +70,12 @@ export {
 // Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
 // eslint-disable-next-line import/no-cycle
 export {
-  OverlayHooray,
-} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/ignitus-OverlayHooray/Components';
+  ModalHooray,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalHooray/Components';
 
 export {
-  default as OverlayShare,
-} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/ignitus-OverlayShare/Components';
+   ModalShare,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
   default as ScrollBar,

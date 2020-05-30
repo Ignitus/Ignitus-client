@@ -4,7 +4,7 @@ import Icon from '../../../../ignitus-Utilities/Components/icon';
 
 import { flexibleColDiv, flexibleRowDiv } from '../../../shared';
 
-export const OverlayShare = styled.div`
+export const ModalShare = styled.div`
   background-color: ${White};
   background-size: contain;
   border-radius: 1rem;

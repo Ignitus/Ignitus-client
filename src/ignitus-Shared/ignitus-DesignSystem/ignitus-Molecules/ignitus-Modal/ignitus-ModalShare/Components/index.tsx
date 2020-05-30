@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heading1, DefaultIconInput } from '../../../../..';
-import { OverlayShareProps } from '../types';
+import { ModalShareProps } from '../types';
 import { AppIcon } from '../../../../../types/iconsTypes/iconEnums';
 
 import * as O from '../styles';
@@ -8,7 +8,7 @@ import * as O from '../styles';
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
 
-const OverlayShare = ({
+export const ModalShare = ({
   title,
   Share,
   Link,
@@ -18,8 +18,8 @@ const OverlayShare = ({
   FacebookColor,
   White,
   GreyOne,
-}: OverlayShareProps) => (
-  <O.OverlayShare>
+}: ModalShareProps) => (
+  <O.ModalShare>
     <O.TopSection>
       <Heading1>{title}</Heading1>
       <O.IconContainer color={White}>
@@ -52,7 +52,5 @@ const OverlayShare = ({
         </O.IconContainer>
       </O.IconsContainer>
     </O.BottomSection>
-  </O.OverlayShare>
+  </O.ModalShare>
 );
-
-export default OverlayShare;

@@ -1,15 +1,15 @@
 import React from 'react';
 import * as O from '../styles';
 import { Heading1 } from '../../../../..';
-import { OverlayProps } from '../types';
+import { ModalProps } from '../types';
 
-export const OverlayHooray = ({
+export const ModalHooray = ({
   title,
   primaryText,
   secondaryText,
   buttonText,
-}: OverlayProps) => (
-  <O.Overlay>
+}: ModalProps) => (
+  <O.Modal>
     <O.TopSection>
       <Heading1>{title}</Heading1>
       <O.Paragraph>{primaryText}</O.Paragraph>
@@ -21,5 +21,5 @@ export const OverlayHooray = ({
         {buttonText}
       </O.Button>
     </O.BottomSection>
-  </O.Overlay>
+  </O.Modal>
 );

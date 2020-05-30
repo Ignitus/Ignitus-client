@@ -1,13 +1,13 @@
 import React from 'react';
-import { OverlayShare, Heading2 } from '../../../../../ignitus-Shared';
+import { ModalShare, Heading2 } from '../../../../../ignitus-Shared';
 import { Interface } from '../../../../styles';
 import * as C from '../../../../../ignitus-Shared';
 
-export const interfaceOverlayShare = () => (
+export const interfaceModalShare = () => (
   <Interface>
-    <Heading2>Overlay Share</Heading2>
+    <Heading2>Modal Share</Heading2>
     <hr />
-    <OverlayShare
+    <ModalShare
       title="Share"
       Share="Share to"
       Link="Direct link"
