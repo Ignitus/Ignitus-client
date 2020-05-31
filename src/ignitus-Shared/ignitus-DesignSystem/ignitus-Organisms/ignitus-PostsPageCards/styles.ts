@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
-import { White, IgnitusBlue } from '../../ignitus-Atoms/colors';
+import { White, IgnitusBlue, boxShadowColor } from '../../ignitus-Atoms/colors';
 import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { StyleProps } from './types';
 
 export const Container = styled.div`
+  box-shadow: 0 1rem 2rem 0 ${boxShadowColor};
   background-color: ${White};
-  width: 34rem;
+  width: 37rem;
   height: 7rem;
   display: flex;
   flex-direction: row;
@@ -59,5 +60,4 @@ export const Icon = styled(I)<StyleProps>`
   width: ${props => (props.size === 'small' ? '1rem' : '5rem')};
   fill: ${IgnitusBlue};
   transition: 0.3s;
-  // padding-top: 0rem;
 `;

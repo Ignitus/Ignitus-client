@@ -23,7 +23,7 @@ export const CardInfo = [
     type: 'publication',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'afgrs',
+    title: ' David Johnson ',
     description:
       'Investigating whether gender-based restrictions in sports are morally justified',
   },
@@ -41,7 +41,7 @@ export const CardInfo = [
     type: 'video',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'afgrs',
+    title: ' David',
     description:
       'Investigating whether gender-based restrictions in sports are morally justified',
   },

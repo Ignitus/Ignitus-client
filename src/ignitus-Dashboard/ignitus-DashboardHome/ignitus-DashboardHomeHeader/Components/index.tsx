@@ -60,7 +60,7 @@ const DashBoardHomeHeader = ({ name }: Props) => {
 
       <N.HomeNavigationRight>
         <N.NavigationLinkItem style={{ marginRight: '2rem' }}>
-          <N.NavigationLink to="/#">
+          <N.NavigationLink to="/#" style={{ marginRight: '0.5rem' }}>
             {userType === 'student' ? (
               <N.StyledIcon size="small" name={AppIcon.StudentIcon} />
             ) : (

@@ -63,7 +63,7 @@ export const PostsPageCards = ({
           }[type]
         }
       </S.Row>
-      <S.Row className="icon">
+      <S.Row>
         {
           {
             publication: <S.Icon name={AppIcon.PdfIcon} />,
@@ -81,15 +81,30 @@ const Card = props => (
   <S.Container>
     {props.children}
     <S.IconsDiv>
-      <Heading6>
-        <S.Icon size="small" name={AppIcon.LikeIcon} /> Like
-      </Heading6>
-      <Heading6>
-        <S.Icon size="small" name={AppIcon.SavePlusIcon} /> Save
-      </Heading6>
-      <Heading6>
-        <S.Icon size="small" name={AppIcon.ShareIcon} /> Share
-      </Heading6>
+      <S.Row>
+        <S.Icon
+          style={{ marginRight: '0.3rem' }}
+          size="small"
+          name={AppIcon.LikeIcon}
+        />
+        <Heading6> Like</Heading6>
+      </S.Row>
+      <S.Row>
+        <S.Icon
+          style={{ marginRight: '0.3rem' }}
+          size="small"
+          name={AppIcon.SavePlusIcon}
+        />{' '}
+        <Heading6>Save</Heading6>
+      </S.Row>
+      <S.Row>
+        <S.Icon
+          style={{ marginRight: '0.3rem' }}
+          size="small"
+          name={AppIcon.ShareIcon}
+        />{' '}
+        <Heading6>Share</Heading6>
+      </S.Row>
     </S.IconsDiv>
   </S.Container>
 );

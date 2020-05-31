@@ -16,7 +16,11 @@ export const LeftSection = styled.div`
   left: 2rem;
 `;
 
-export const MiddleSection = styled.div``;
+export const MiddleSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const RightSection = styled.div`
   position: fixed;
@@ -25,9 +29,4 @@ export const RightSection = styled.div`
 
 export const Wrapper = styled.div`
   margin: 1rem;
-`;
-
-export const MultiWrapper = styled.div`
-  /* position: fixed;
-  top: 6rem; */
 `;

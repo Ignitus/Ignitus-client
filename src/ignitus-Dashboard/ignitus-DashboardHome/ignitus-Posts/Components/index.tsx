@@ -27,12 +27,11 @@ function PostsPage() {
         </S.Wrapper>
       </S.LeftSection>
       <S.MiddleSection>
-        <S.MultiWrapper>
-          <DefaultMultiMediaInput
-            placeholder="Share an article, poll, document, video, photo, or idea. Use @ to mention someone. "
-            name="Input"
-          />
-        </S.MultiWrapper>
+        <DefaultMultiMediaInput
+          placeholder="Share an article, poll, document, video, photo, or idea. Use @ to mention someone. "
+          name="Input"
+        />
+
         {CardInfo.map(
           ({
             title,

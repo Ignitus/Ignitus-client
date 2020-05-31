@@ -23,6 +23,8 @@ export const InterfacePostsPageCards = () => (
         Description="fkjbk jsfb kgj bjkgb gjkbjkb kjb gjkbjglsb lgbglkbsgkl bglg"
         type="publication"
       />
+    </S.Container>
+    <S.Container>
       <PostsPageCards
         ImageLink=""
         Title="Donald Kunkel "
