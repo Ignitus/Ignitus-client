@@ -28,6 +28,14 @@ export const CardInfo = [
       'Investigating whether gender-based restrictions in sports are morally justified',
   },
   {
+    type: 'basic',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
+    title: ' Scholarships and Grants  ',
+    description:
+      'The Faculty of Arts and Sciences Scholarship program includes more than 1,500 individual endowment funds, established by generous...',
+  },
+  {
     type: 'internship',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',

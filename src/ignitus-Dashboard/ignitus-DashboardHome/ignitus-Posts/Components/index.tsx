@@ -76,6 +76,16 @@ function PostsPage() {
                   />
                 </S.Wrapper>
               ),
+              basic: (
+                <S.Wrapper key={title}>
+                  <PostsPageCards
+                    ImageLink={imageLink}
+                    Title={title}
+                    Description={description}
+                    type={type}
+                  />
+                </S.Wrapper>
+              ),
             }[type]),
         )}
       </S.MiddleSection>
