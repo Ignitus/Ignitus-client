@@ -21,6 +21,13 @@ export const PostsPageCards = () => (
         ImageLink=""
         Title="Donald Kunkel "
         Description="fkjbk jsfb kgj bjkgb gjkbjkb kjb gjkbjglsb lgbglkbsgkl bglg"
+        type="publication"
+      />
+      <PublicationCard
+        ImageLink=""
+        Title="Donald Kunkel "
+        Description="fkjbk jsfb kgj bjkgb gjkbjkb kjb gjkbjglsb lgbglkbsgkl bglg"
+        type="video"
       />
     </S.Container>
   </S.Container>

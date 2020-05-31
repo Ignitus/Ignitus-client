@@ -44,7 +44,7 @@ export const CardInfo = [
     jobType: 'not remote',
   },
   {
-    type: 'publication',
+    type: 'video',
     imageLink: '..',
     title: 'afgrs',
     description: 'afafa sfbsfiaulfauf falfja fahf ak fhjfa alfujajfaj ufajbajk',

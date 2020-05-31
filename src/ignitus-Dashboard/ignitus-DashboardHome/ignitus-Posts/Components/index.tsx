@@ -50,20 +50,22 @@ function PostsPage() {
                     ImageLink={x.imageLink}
                     Title={x.title}
                     Description={x.description}
+                    type={x.type}
+                  />
+                </S.Wrapper>
+              ),
+              video: (
+                <S.Wrapper>
+                  <PublicationCard
+                    ImageLink={x.imageLink}
+                    Title={x.title}
+                    Description={x.description}
+                    type={x.type}
                   />
                 </S.Wrapper>
               ),
             }[x.type]),
         )}
-        <S.Wrapper>
-          <InternshipCard
-            ImageLink=".."
-            Title="Adaf"
-            Position="afga"
-            Place="aafaf"
-            Company="saf"
-          />
-        </S.Wrapper>
       </S.MiddleSection>
       <S.RightSection>
         <DashboardFooter />

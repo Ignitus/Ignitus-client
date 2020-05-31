@@ -5,7 +5,7 @@ import {
   Heading6,
   Paragraph,
 } from '../../../ignitus-Atoms/typography';
-import { CardTypes, StyleProps } from '../types';
+import { CardTypes, StyleProps, CardProps } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 /* eslint-disable react/destructuring-assignment */
 
@@ -47,7 +47,8 @@ export const PublicationCard = ({
   ImageLink,
   Title,
   Description,
-}: CardTypes) => (
+  type,
+}: CardProps) => (
   <Card>
     <S.LeftRow>
       <S.Avatar alt="profile" src={ImageLink} />
@@ -58,7 +59,13 @@ export const PublicationCard = ({
         <Paragraph> has posted a publication</Paragraph>
       </S.Row>
       <S.Row>
-        <S.Icon name={AppIcon.PdfIcon} />
+        {
+          {
+            publication: <S.Icon name={AppIcon.PdfIcon} />,
+            video: <S.Icon name={AppIcon.VideoLibIcon} />,
+          }[type]
+        }
+
         <Paragraph> {Description}</Paragraph>
       </S.Row>
     </S.Content>
