@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from '../styles';
-import DashboardFooter from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
+import { DashboardFooter } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashboardFooter/Components';
 import { SideProfileCard } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideProfileCard/Components';
 import { DefaultMultiMediaInput } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultMulti/Components/index';
 import { DashboardNavigation } from '../../../../ignitus-Shared';
@@ -9,10 +9,12 @@ import {
   PublicationCard,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-InternshipCard/Components';
 import { CardInfo } from '../constants';
+import DashBoardHomeHeader from '../../ignitus-DashboardHomeHeader/Components/index';
 
 function PostsPage() {
   return (
     <S.Container>
+      <DashBoardHomeHeader />
       <S.LeftSection>
         <SideProfileCard
           name="sfsf"

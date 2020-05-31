@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { White, IgnitusBlue } from '../../ignitus-Atoms/colors';
-import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { StyleProps } from './types';
 
 export const Container = styled.div`
