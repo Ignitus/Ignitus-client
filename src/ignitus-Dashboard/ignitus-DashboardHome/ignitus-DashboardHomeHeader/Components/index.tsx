@@ -32,7 +32,7 @@ const DashBoardHomeHeader = ({ name }: Props) => {
         </N.NavigationLinkItem>
 
         <N.NavigationLinkItem>
-          <N.NavigationLink to="#">Internships</N.NavigationLink>
+          <N.NavigationLink to="#">Opportunity</N.NavigationLink>
         </N.NavigationLinkItem>
       </N.NavItems2>
 
@@ -42,15 +42,17 @@ const DashBoardHomeHeader = ({ name }: Props) => {
             <SecondaryDropDown data={data} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
-
+      </N.NavItems>
+      <N.NavItems>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
             <N.StyledIcon name={AppIcon.MessageIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
-
+      </N.NavItems>
+      <N.NavItems>
         <N.NavigationLinkItem>
-          <N.NavigationLink to="#">
+          <N.NavigationLink to="/#">
             <N.StyledIcon name={AppIcon.NotificationIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
@@ -60,20 +62,15 @@ const DashBoardHomeHeader = ({ name }: Props) => {
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
             {userType === 'student' ? (
-              <N.StyledIcon name={AppIcon.StudentIcon} />
+              <N.StyledIcon size="small" name={AppIcon.StudentIcon} />
             ) : (
-              <N.StyledIcon name={AppIcon.ProfessorIcon} />
+              <N.StyledIcon size="small" name={AppIcon.ProfessorIcon} />
             )}
           </N.NavigationLink>
-        </N.NavigationLinkItem>
-
-        <N.NavigationLinkItem>
-          <N.NavigationLink to="#">{name}</N.NavigationLink>
-        </N.NavigationLinkItem>
-        <N.NavigationLinkItem>
-          <N.NavigationLink to="#">
-            <N.StyledIcon name={AppIcon.KeyBoardArrowDown} />
-          </N.NavigationLink>
+          <N.NavLinkItems>
+            {name}
+            <N.StyledIcon size="small" name={AppIcon.KeyBoardArrowDown} />
+          </N.NavLinkItems>
         </N.NavigationLinkItem>
       </N.NavItems>
       <N.Burger

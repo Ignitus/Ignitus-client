@@ -10,3 +10,7 @@ export type NavigationItems = {
   title: string;
   route: string;
 };
+
+export type StyleProps = {
+  size?: string;
+};
