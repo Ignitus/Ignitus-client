@@ -217,5 +217,8 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.ShareIcon:
       return <ShareIcon {...rest} />;
+
+    case AppIcon.RemoteJobIcon:
+      return <RemoteJobIcon {...rest} />;
   }
 };

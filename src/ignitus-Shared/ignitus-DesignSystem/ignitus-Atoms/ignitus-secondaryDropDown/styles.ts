@@ -35,6 +35,7 @@ export const OptionsContainer = styled.div`
   overflow: auto;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  z-index: 2;
 `;
 
 export const CardWrapper = styled.div`

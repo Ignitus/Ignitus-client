@@ -14,7 +14,7 @@ import DashBoardHomeHeader from '../../ignitus-DashboardHomeHeader/Components/in
 function PostsPage() {
   return (
     <S.Container>
-      <DashBoardHomeHeader />
+      <DashBoardHomeHeader name={ProfileCardInfo.firstname} />
       <S.LeftSection>
         <SideProfileCard
           name={ProfileCardInfo.firstname.concat(ProfileCardInfo.lastname)}
@@ -34,41 +34,50 @@ function PostsPage() {
           />
         </S.MultiWrapper>
         {CardInfo.map(
-          (x: any) =>
+          ({
+            title,
+            imageLink,
+            position,
+            place,
+            company,
+            jobType,
+            description,
+            type,
+          }) =>
             ({
               internship: (
-                <S.Wrapper>
+                <S.Wrapper key={title}>
                   <InternshipCard
-                    ImageLink={x.imageLink}
-                    Title={x.title}
-                    Position={x.position}
-                    Place={x.place}
-                    Company={x.company}
-                    JobType={x.jobType}
+                    ImageLink={imageLink}
+                    Title={title}
+                    Position={position}
+                    Place={place}
+                    Company={company}
+                    JobType={jobType}
                   />
                 </S.Wrapper>
               ),
               publication: (
-                <S.Wrapper>
+                <S.Wrapper key={title}>
                   <PublicationCard
-                    ImageLink={x.imageLink}
-                    Title={x.title}
-                    Description={x.description}
-                    type={x.type}
+                    ImageLink={imageLink}
+                    Title={title}
+                    Description={description}
+                    type={type}
                   />
                 </S.Wrapper>
               ),
               video: (
-                <S.Wrapper>
+                <S.Wrapper key={title}>
                   <PublicationCard
-                    ImageLink={x.imageLink}
-                    Title={x.title}
-                    Description={x.description}
-                    type={x.type}
+                    ImageLink={imageLink}
+                    Title={title}
+                    Description={description}
+                    type={type}
                   />
                 </S.Wrapper>
               ),
-            }[x.type]),
+            }[type]),
         )}
       </S.MiddleSection>
       <S.RightSection>

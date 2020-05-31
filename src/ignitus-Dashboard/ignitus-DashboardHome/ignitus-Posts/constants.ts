@@ -1,11 +1,9 @@
-// import { PropTypes } from './types';
-
 export const CardInfo = [
   {
     type: 'internship',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'Patricia M. Lane',
+    title: 'Patricia Lane',
     position: 'Sales and Marketing Team Member',
     place: 'Spain',
     company: ' Urban International',
@@ -15,7 +13,7 @@ export const CardInfo = [
     type: 'internship',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'Patricia M. Lane',
+    title: 'Patricia',
     position: 'Sales and Marketing Team Member',
     place: 'Spain',
     company: ' Urban International',
@@ -33,21 +31,11 @@ export const CardInfo = [
     type: 'internship',
     imageLink:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'Patricia M. Lane',
+    title: 'Patricia M.',
     position: 'Sales and Marketing Team Member',
     place: 'Spain',
     company: ' Urban International',
     jobType: 'remote',
-  },
-  {
-    type: 'internship',
-    imageLink:
-      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
-    title: 'Adaf',
-    position: 'afga',
-    place: 'aafaf',
-    company: 'saf',
-    jobType: 'not remote',
   },
   {
     type: 'video',

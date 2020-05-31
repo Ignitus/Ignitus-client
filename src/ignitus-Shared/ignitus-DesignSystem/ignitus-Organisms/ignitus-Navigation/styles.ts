@@ -20,6 +20,7 @@ export const Navigation = styled.nav<NavigationProps>`
   top: 0;
   left: 0;
   z-index: 2;
+  height: 3rem;
   justify-content: space-between;
   transition: background-color 300ms ease-in;
   background: ${props => (props.transparentNavigation ? 'transparent' : White)};
@@ -77,7 +78,7 @@ export const NavigationLinks = styled.ul<ToggleProps>`
   }
 `;
 
-export const NavigationLinkItem = styled.li<NavigationProps>`
+export const NavigationLinkItem = styled.div<NavigationProps>`
   padding: 0rem 0.5rem;
   align-self: stretch;
 
@@ -102,7 +103,11 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
   }
 `;
 
-export const StyledIcon = styled(Icon)``;
+export const StyledIcon = styled(Icon)`
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: ${IgnitusBlue};
+`;
 export const NavigationLink = styled(Link)``;
 
 export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
@@ -121,4 +126,18 @@ export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
     display: block;
     top: 1.2rem;
   }
+`;
+
+export const NavItems = styled.div`
+  display: flex;
+  flex: 0.5;
+  flex-grow: 0.5;
+  align-items: baseline;
+`;
+
+export const NavItems2 = styled.div`
+  display: flex;
+  flex: 2;
+  flex-grow: 2;
+  align-items: baseline;
 `;

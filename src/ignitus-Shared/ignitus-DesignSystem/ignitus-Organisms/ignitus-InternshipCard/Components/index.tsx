@@ -5,7 +5,7 @@ import {
   Heading6,
   Paragraph,
 } from '../../../ignitus-Atoms/typography';
-import { CardTypes, StyleProps, CardProps } from '../types';
+import { CardTypes, CardProps } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 /* eslint-disable react/destructuring-assignment */
 
