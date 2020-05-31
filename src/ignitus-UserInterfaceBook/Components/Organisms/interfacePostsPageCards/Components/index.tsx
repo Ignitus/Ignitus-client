@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   InternshipCard,
-  PublicationCard,
-} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-InternshipCard/Components';
+  PostsPageCards,
+} from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-PostsPageCards/Components';
 import * as S from '../styles';
 
-export const PostsPageCards = () => (
+export const InterfacePostsPageCards = () => (
   <S.Container>
     <S.Container>
       <InternshipCard
@@ -17,13 +17,13 @@ export const PostsPageCards = () => (
       />
     </S.Container>
     <S.Container>
-      <PublicationCard
+      <PostsPageCards
         ImageLink=""
         Title="Donald Kunkel "
         Description="fkjbk jsfb kgj bjkgb gjkbjkb kjb gjkbjglsb lgbglkbsgkl bglg"
         type="publication"
       />
-      <PublicationCard
+      <PostsPageCards
         ImageLink=""
         Title="Donald Kunkel "
         Description="fkjbk jsfb kgj bjkgb gjkbjkb kjb gjkbjglsb lgbglkbsgkl bglg"

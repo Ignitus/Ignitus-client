@@ -6,8 +6,8 @@ import { DefaultMultiMediaInput } from '../../../../ignitus-Shared/ignitus-Desig
 import { DashboardNavigation } from '../../../../ignitus-Shared';
 import {
   InternshipCard,
-  PublicationCard,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-InternshipCard/Components';
+  PostsPageCards,
+} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-PostsPageCards/Components';
 import { CardInfo, ProfileCardInfo } from '../constants';
 import DashBoardHomeHeader from '../../ignitus-DashboardHomeHeader/Components/index';
 
@@ -59,7 +59,7 @@ function PostsPage() {
               ),
               publication: (
                 <S.Wrapper key={title}>
-                  <PublicationCard
+                  <PostsPageCards
                     ImageLink={imageLink}
                     Title={title}
                     Description={description}
@@ -69,7 +69,7 @@ function PostsPage() {
               ),
               video: (
                 <S.Wrapper key={title}>
-                  <PublicationCard
+                  <PostsPageCards
                     ImageLink={imageLink}
                     Title={title}
                     Description={description}

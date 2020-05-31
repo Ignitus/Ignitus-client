@@ -78,7 +78,7 @@ export const NavigationLinks = styled.ul<ToggleProps>`
   }
 `;
 
-export const NavigationLinkItem = styled.div<NavigationProps>`
+export const NavigationLinkItem = styled.li<NavigationProps>`
   padding: 0rem 0.5rem;
   align-self: stretch;
   display: flex;
@@ -123,7 +123,7 @@ export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
   }
 `;
 
-export const NavItems = styled.div`
+export const HomeNavigationRight = styled.div`
   display: flex;
   flex: 0.5;
   flex-grow: 0.5;
@@ -131,7 +131,7 @@ export const NavItems = styled.div`
   justify-content: space-evenly;
 `;
 
-export const NavItems2 = styled.div`
+export const HomeNavigationLeft = styled.div`
   display: flex;
   flex: 6;
   flex-grow: 6;
@@ -139,8 +139,8 @@ export const NavItems2 = styled.div`
 `;
 
 export const StyledIcon = styled(Icon)<StyleProps>`
-  width: ${props => (props.size === 'small' ? '1.5rem' : '2rem')};
-  height: ${props => (props.size === 'small' ? '1.5rem' : '2rem')};
+  width: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
+  height: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
   fill: ${IgnitusBlue};
 `;
 

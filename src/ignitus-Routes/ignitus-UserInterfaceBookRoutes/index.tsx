@@ -32,7 +32,7 @@ import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Mo
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
-import { PostsPageCards } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfacePostsPageCards/Components';
+import { InterfacePostsPageCards } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfacePostsPageCards/Components';
 
 const Container = styled.div`
   display: flex;
@@ -137,7 +137,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         />
         <Route
           path="/interface/StudentDashboardCards"
-          component={PostsPageCards}
+          component={InterfacePostsPageCards}
         />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />

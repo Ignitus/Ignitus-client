@@ -30,6 +30,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-start;
 `;
 
 export const Content = styled.div`
@@ -40,22 +41,23 @@ export const Content = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 export const IconsDiv = styled.div`
   display: flex;
   flex-direction: column;
-  algin-items: end;
+  algin-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
   flex: 1;
 `;
 
 export const Icon = styled(I)<StyleProps>`
-  height: ${props => (props.size === 'small' ? '1rem' : '4rem')};
-  width: ${props => (props.size === 'small' ? '1rem' : '4rem')};
+  height: ${props => (props.size === 'small' ? '1rem' : '5rem')};
+  width: ${props => (props.size === 'small' ? '1rem' : '5rem')};
   fill: ${IgnitusBlue};
   transition: 0.3s;
+  // padding-top: 0rem;
 `;

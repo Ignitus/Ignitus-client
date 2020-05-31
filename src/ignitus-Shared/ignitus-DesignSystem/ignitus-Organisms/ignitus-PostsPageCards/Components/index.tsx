@@ -23,7 +23,7 @@ export const InternshipCard = ({
     </S.LeftRow>
     <S.Content>
       <S.Row>
-        <Heading5>{Title}</Heading5>{' '}
+        <Heading5 style={{ marginRight: '0.5rem' }}>{Title}</Heading5>{' '}
         <Paragraph> has posted an internship</Paragraph>
       </S.Row>
       <S.Column>
@@ -43,7 +43,7 @@ export const InternshipCard = ({
   </Card>
 );
 
-export const PublicationCard = ({
+export const PostsPageCards = ({
   ImageLink,
   Title,
   Description,
@@ -55,10 +55,15 @@ export const PublicationCard = ({
     </S.LeftRow>
     <S.Content>
       <S.Row>
-        <Heading5>{Title}</Heading5>{' '}
-        <Paragraph> has posted a publication</Paragraph>
+        <Heading5 style={{ marginRight: '0.5rem' }}>{Title}</Heading5>{' '}
+        {
+          {
+            publication: <Paragraph> has posted a publication</Paragraph>,
+            video: <Paragraph> has posted a video</Paragraph>,
+          }[type]
+        }
       </S.Row>
-      <S.Row>
+      <S.Row className="icon">
         {
           {
             publication: <S.Icon name={AppIcon.PdfIcon} />,

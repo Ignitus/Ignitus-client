@@ -26,7 +26,7 @@ const DashBoardHomeHeader = ({ name }: Props) => {
         <N.Logo name={AppIcon.IgnitusLogo} />
       </N.NavigationBarBrand>
 
-      <N.NavItems2>
+      <N.HomeNavigationLeft>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">Home</N.NavigationLink>
         </N.NavigationLinkItem>
@@ -34,32 +34,32 @@ const DashBoardHomeHeader = ({ name }: Props) => {
         <N.NavigationLinkItem>
           <N.NavigationLink to="#">Opportunity</N.NavigationLink>
         </N.NavigationLinkItem>
-      </N.NavItems2>
+      </N.HomeNavigationLeft>
 
-      <N.NavItems>
+      <N.HomeNavigationRight>
         <N.NavigationLinkItem>
           <N.NavigationLink to="#">
             <SecondaryDropDown data={data} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
-      </N.NavItems>
-      <N.NavItems>
+      </N.HomeNavigationRight>
+      <N.HomeNavigationRight>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
             <N.StyledIcon name={AppIcon.MessageIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
-      </N.NavItems>
-      <N.NavItems>
+      </N.HomeNavigationRight>
+      <N.HomeNavigationRight>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
             <N.StyledIcon name={AppIcon.NotificationIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
-      </N.NavItems>
+      </N.HomeNavigationRight>
 
-      <N.NavItems>
-        <N.NavigationLinkItem>
+      <N.HomeNavigationRight>
+        <N.NavigationLinkItem style={{ marginRight: '2rem' }}>
           <N.NavigationLink to="/#">
             {userType === 'student' ? (
               <N.StyledIcon size="small" name={AppIcon.StudentIcon} />
@@ -72,7 +72,7 @@ const DashBoardHomeHeader = ({ name }: Props) => {
             <N.StyledIcon size="small" name={AppIcon.KeyBoardArrowDown} />
           </N.NavLinkItems>
         </N.NavigationLinkItem>
-      </N.NavItems>
+      </N.HomeNavigationRight>
       <N.Burger
         onClick={toogleIsExpanded}
         name={AppIcon.KeyBoardArrowRight}
