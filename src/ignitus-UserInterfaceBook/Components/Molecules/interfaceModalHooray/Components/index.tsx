@@ -1,6 +1,6 @@
 import React from 'react';
-import { ModalHooray, Heading2 } from '../../../../ignitus-Shared';
-import { Interface } from '../../../styles';
+import { ModalHooray, Heading2 } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceModalHooray = () => (
   <Interface>

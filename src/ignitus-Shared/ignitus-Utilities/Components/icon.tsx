@@ -54,6 +54,7 @@ import { LikeIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icon
 import { SavePlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/savePlusIcon/index';
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 import { RemoteJobIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/remoteJobIcon/index';
+import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -145,6 +146,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.FacebookIcon:
       return <FacebookIcon {...rest} />;
+
+    case AppIcon.RedditIcon:
+      return <RedditIcon {...rest} />;
 
     case AppIcon.GooglePlusIcon:
       return <GooglePlusIcon {...rest} />;

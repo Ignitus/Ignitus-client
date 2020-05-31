@@ -9,6 +9,7 @@ export const SocialIcons: AppIcon[] = [
   AppIcon.GithubIcon,
   AppIcon.FacebookIcon,
   AppIcon.GooglePlusIcon,
+  AppIcon.RedditIcon,
 ];
 
 export const DashboardIcons: AppIcon[] = [
