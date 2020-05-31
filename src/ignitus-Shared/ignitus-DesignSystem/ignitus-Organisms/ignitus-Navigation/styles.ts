@@ -144,7 +144,7 @@ export const StyledIcon = styled(Icon)<StyleProps>`
   fill: ${IgnitusBlue};
 `;
 
-export const NavLinkItems = styled.div`
+export const HomeNavigationItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

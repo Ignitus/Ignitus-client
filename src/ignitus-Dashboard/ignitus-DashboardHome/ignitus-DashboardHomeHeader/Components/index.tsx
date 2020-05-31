@@ -67,10 +67,10 @@ const DashBoardHomeHeader = ({ name }: Props) => {
               <N.StyledIcon size="small" name={AppIcon.ProfessorIcon} />
             )}
           </N.NavigationLink>
-          <N.NavLinkItems>
+          <N.HomeNavigationItems>
             {name}
             <N.StyledIcon size="small" name={AppIcon.KeyBoardArrowDown} />
-          </N.NavLinkItems>
+          </N.HomeNavigationItems>
         </N.NavigationLinkItem>
       </N.HomeNavigationRight>
       <N.Burger
