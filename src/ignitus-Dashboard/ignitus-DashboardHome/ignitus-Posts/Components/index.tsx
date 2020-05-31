@@ -8,7 +8,7 @@ import {
   InternshipCard,
   PublicationCard,
 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-InternshipCard/Components';
-import { CardInfo } from '../constants';
+import { CardInfo, ProfileCardInfo } from '../constants';
 import DashBoardHomeHeader from '../../ignitus-DashboardHomeHeader/Components/index';
 
 function PostsPage() {
@@ -17,17 +17,21 @@ function PostsPage() {
       <DashBoardHomeHeader />
       <S.LeftSection>
         <SideProfileCard
-          name="sfsf"
-          designation="adada"
-          trackingInformation="afagag"
+          name={ProfileCardInfo.firstname.concat(ProfileCardInfo.lastname)}
+          designation={ProfileCardInfo.designation}
+          trackingInformation={ProfileCardInfo.trackingInformation}
         />
+
         <S.Wrapper>
           <DashboardNavigation />
         </S.Wrapper>
       </S.LeftSection>
       <S.MiddleSection>
         <S.MultiWrapper>
-          <DefaultMultiMediaInput placeholder="adjkafnakjf" name="daaf" />
+          <DefaultMultiMediaInput
+            placeholder="Share an article, poll, document, video, photo, or idea. Use @ to mention someone. "
+            name="Input"
+          />
         </S.MultiWrapper>
         {CardInfo.map(
           (x: any) =>

@@ -1,42 +1,48 @@
-import { PropTypes } from './types';
+// import { PropTypes } from './types';
 
 export const CardInfo = [
   {
     type: 'internship',
-    imageLink: '..',
-    title: 'Adaf',
-    position: 'afga',
-    place: 'aafaf',
-    company: 'saf',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
+    title: 'Patricia M. Lane',
+    position: 'Sales and Marketing Team Member',
+    place: 'Spain',
+    company: ' Urban International',
     jobType: 'remote',
   },
   {
     type: 'internship',
-    imageLink: '..',
-    title: 'Adaf',
-    position: 'afga',
-    place: 'aafaf',
-    company: 'saf',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
+    title: 'Patricia M. Lane',
+    position: 'Sales and Marketing Team Member',
+    place: 'Spain',
+    company: ' Urban International',
     jobType: 'not remote',
   },
   {
     type: 'publication',
-    imageLink: '..',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     title: 'afgrs',
-    description: 'afafa sfbsfiaulfauf falfja fahf ak fhjfa alfujajfaj ufajbajk',
+    description:
+      'Investigating whether gender-based restrictions in sports are morally justified',
   },
   {
     type: 'internship',
-    imageLink: '..',
-    title: 'Adaf',
-    position: 'afga',
-    place: 'aafaf',
-    company: 'saf',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
+    title: 'Patricia M. Lane',
+    position: 'Sales and Marketing Team Member',
+    place: 'Spain',
+    company: ' Urban International',
     jobType: 'remote',
   },
   {
     type: 'internship',
-    imageLink: '..',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     title: 'Adaf',
     position: 'afga',
     place: 'aafaf',
@@ -45,8 +51,18 @@ export const CardInfo = [
   },
   {
     type: 'video',
-    imageLink: '..',
+    imageLink:
+      'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
     title: 'afgrs',
-    description: 'afafa sfbsfiaulfauf falfja fahf ak fhjfa alfujajfaj ufajbajk',
+    description:
+      'Investigating whether gender-based restrictions in sports are morally justified',
   },
 ];
+
+export const ProfileCardInfo = {
+  firstname: 'Sophia ',
+  lastname: 'Carter',
+  designation: ' Literature Student',
+  trackingInformation:
+    '21 students and 11 professors are tracking your progress',
+};
