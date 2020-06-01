@@ -36,10 +36,10 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
 
           <N.NavigationLinkItem>
             {userType === 'student' && (
-              <N.StyledIcon size="small" name={AppIcon.StudentIcon} />
+              <N.StyledIcon name={AppIcon.StudentIcon} />
             )}
             {userType === 'professor' && (
-              <N.StyledIcon size="small" name={AppIcon.ProfessorIcon} />
+              <N.StyledIcon name={AppIcon.ProfessorIcon} />
             )}
           </N.NavigationLinkItem>
 
