@@ -138,9 +138,15 @@ export const HomeNavigationLeft = styled.div`
   align-items: center;
 `;
 
-export const StyledIcon = styled(Icon)<StyleProps>`
+export const HomeStyledIcon = styled(Icon)<StyleProps>`
   width: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
   height: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
+  fill: ${IgnitusBlue};
+`;
+
+export const StyledIcon = styled(Icon)<StyleProps>`
+  width: 1.2rem;
+  height: 1.2rem;
   fill: ${IgnitusBlue};
 `;
 

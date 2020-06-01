@@ -46,14 +46,14 @@ const DashBoardHomeHeader = ({ name }: Props) => {
       <N.HomeNavigationRight>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
-            <N.StyledIcon name={AppIcon.MessageIcon} />
+            <N.HomeStyledIcon name={AppIcon.MessageIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
       </N.HomeNavigationRight>
       <N.HomeNavigationRight>
         <N.NavigationLinkItem>
           <N.NavigationLink to="/#">
-            <N.StyledIcon name={AppIcon.NotificationIcon} />
+            <N.HomeStyledIcon name={AppIcon.NotificationIcon} />
           </N.NavigationLink>
         </N.NavigationLinkItem>
       </N.HomeNavigationRight>
@@ -62,14 +62,14 @@ const DashBoardHomeHeader = ({ name }: Props) => {
         <N.NavigationLinkItem style={{ marginRight: '2rem' }}>
           <N.NavigationLink to="/#" style={{ marginRight: '0.5rem' }}>
             {userType === 'student' ? (
-              <N.StyledIcon size="small" name={AppIcon.StudentIcon} />
+              <N.HomeStyledIcon size="small" name={AppIcon.StudentIcon} />
             ) : (
-              <N.StyledIcon size="small" name={AppIcon.ProfessorIcon} />
+              <N.HomeStyledIcon size="small" name={AppIcon.ProfessorIcon} />
             )}
           </N.NavigationLink>
           <N.HomeNavigationItems>
             {name}
-            <N.StyledIcon size="small" name={AppIcon.KeyBoardArrowDown} />
+            <N.HomeStyledIcon size="small" name={AppIcon.KeyBoardArrowDown} />
           </N.HomeNavigationItems>
         </N.NavigationLinkItem>
       </N.HomeNavigationRight>
