@@ -3,7 +3,7 @@ import { White, GreyBackground, IgnitusBlue } from '../../ignitus-Atoms/colors';
 import { SemiBold } from '../../ignitus-Atoms/fonts';
 import { Heading4 } from '../../ignitus-Atoms/typography';
 import { RoundedButton } from '../../ignitus-Atoms/buttons';
-import I from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 
 export const Container = styled.div`
   border-radius: 1rem;

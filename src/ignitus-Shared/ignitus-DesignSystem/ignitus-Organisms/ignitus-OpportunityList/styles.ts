@@ -3,7 +3,7 @@ import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
 import { flexibleColDiv, flexibleRowDiv, Paragraph } from '../../shared';
 import { Normal, MD } from '../../ignitus-Atoms/fonts';
-import ApplyIcon from '../../ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
+import { ApplyIcon } from '../../ignitus-Assets/ignitus-Icons/applyIcon';
 
 export const OpportunityContainer = styled(flexibleRowDiv)`
   border-radius: 4px;

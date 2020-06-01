@@ -1,61 +1,64 @@
 import React, { HTMLAttributes } from 'react';
-import TwitterIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/twitterIcon/twitterIcon';
-import LinkedInIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkedInIcon/linkedInIcon';
-import AngelListIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon/angelListIcon';
-import PlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon/plusIcon';
-import ApplyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
-import HeartIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon/heartIcon';
+import { TwitterIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/twitterIcon';
+import { LinkedInIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkedInIcon';
+import { AngelListIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/angelListIcon';
+import { PlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/plusIcon';
+import { ApplyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/applyIcon';
+import { HeartIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/heartIcon';
 
-import MessageIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon/messageIcon';
-import SaveIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon/saveIcon';
-import NetworkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
-import MentorsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon';
-import KeyBoardArrowDown from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
-import KeyBoardArrowRight from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight';
-import IgnitusFullLogo from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
-import CreateIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon/createIcon';
-import QuestionAnswerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
-import AccountCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
-import NotificationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
-import GithubIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
-import FacebookIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
-import GooglePlusIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon';
-import InfoIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/infoIcon';
-import PdfIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdfIcon';
-import LibraryBooksIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
-import LocalLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
-import GraduationCapIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
-import CrossIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
-import LocationIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
-import FilledArrowDownIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
-import BookmarkIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
-import FileIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
-import MapMarkerIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
-import CopyIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
-import PollIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
-import VideoLibraryIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
-import CameraIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
+import { MessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon';
+import { SaveIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon';
+import { NetworkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
+import { MentorsIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon';
+import { KeyBoardArrowDown } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
+import { KeyBoardArrowRight } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowRight';
+import { IgnitusFullLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusFullLogo';
+import { CreateIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/createIcon';
+import { QuestionAnswerIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/questionAnswerIcon';
+import { AccountCircleIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/accountCircleIcon';
+import { NotificationIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/notificationIcon';
+import { GithubIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/githubIcon';
+import { FacebookIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/facebookIcon';
+import { GooglePlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/googlePlusIcon';
+import { InfoIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/infoIcon';
+import { PdfIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pdfIcon';
+import { LibraryBooksIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/libraryBooksIcon';
+import { LocalLibraryIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/localLibraryIcon';
+import { GraduationCapIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/graduationCapIcon';
+import { CrossIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/crossIcon';
+import { LocationIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/locationIcon';
+import { FilledArrowDownIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
+import { BookmarkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
+import { FileIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
+import { MapMarkerIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
+import { CopyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
+import { PollIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
+import { VideoLibraryIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/videoLibraryIcon';
+import { CameraIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/cameraIcon';
 import { IgnitusLogo } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/ignitusLogo/index';
 import { EyeVisibleOffIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOffIcon/index';
 import { EyeVisibleOnIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/eyeVisibleOnIcon/index';
 import { AppIcon } from '../../types/iconsTypes/iconEnums';
 import { KeyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyIcon/index';
-import SlackIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon/index';
-import MediumIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon/index';
-import YouTubeIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
-import ContributionIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
-import StarCircleIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
-import BarsIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
-import GridIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
-import SearchIcon from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
-import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
+import { SlackIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/slackIcon/index';
+import { MediumIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mediumIcon/index';
+import { YouTubeIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/youTubeIcon/index';
+import { ContributionIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/conributionIcon';
+import { StarCircleIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/starCircleIcon';
+import { BarsIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/barsIcon';
+import { GridIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/gridIcon';
+import { SearchIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/SearchIcon/index';
+import { StudentIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/studentIcon/index';
+import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/professorIcon/index';
+import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
+import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
 
 type Props = {
   name: AppIcon;
 } & HTMLAttributes<SVGElement>;
 
-const Icon = ({ name, ...rest }: Props) => {
+export const Icon = ({ name, ...rest }: Props) => {
   switch (name) {
     case AppIcon.AngelListIcon:
       return <AngelListIcon {...rest} />;
@@ -142,6 +145,9 @@ const Icon = ({ name, ...rest }: Props) => {
     case AppIcon.FacebookIcon:
       return <FacebookIcon {...rest} />;
 
+    case AppIcon.RedditIcon:
+      return <RedditIcon {...rest} />;
+
     case AppIcon.GooglePlusIcon:
       return <GooglePlusIcon {...rest} />;
 
@@ -204,7 +210,11 @@ const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.GridIcon:
       return <GridIcon {...rest} />;
+
+    case AppIcon.StudentIcon:
+      return <StudentIcon {...rest} />;
+
+    case AppIcon.ProfessorIcon:
+      return <ProfessorIcon {...rest} />;
   }
 };
-
-export default Icon;

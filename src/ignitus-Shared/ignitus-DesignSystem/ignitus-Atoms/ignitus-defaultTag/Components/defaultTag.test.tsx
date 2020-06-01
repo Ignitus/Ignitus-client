@@ -4,7 +4,7 @@ import emotionSerializer, { matchers } from 'jest-emotion';
 
 import { DefaultTag1, DefaultTag2 } from './index';
 import { InputTypes } from '../types';
-import CrossIcon from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
+import { CrossIcon } from '../../../ignitus-Assets/ignitus-Icons/crossIcon';
 
 const props: InputTypes = {
   label: 'Label',

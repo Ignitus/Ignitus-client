@@ -114,8 +114,17 @@ export const allEdges: Edges[] = [
       //   route: '/interface/banner',
       // },
       {
-        title: 'Overlay',
-        route: '/interface/overlay',
+        title: 'Modal',
+        children: [
+          {
+            title: 'Modal Hooray',
+            route: '/interface/modalHooray',
+          },
+          {
+            title: 'Modal Share',
+            route: '/interface/modalShare',
+          },
+        ],
       },
       {
         title: 'Scroll Bar',

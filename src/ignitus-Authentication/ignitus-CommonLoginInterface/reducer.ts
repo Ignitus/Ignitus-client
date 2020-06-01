@@ -7,7 +7,7 @@ const RESET = {
   success: false,
 };
 
-const loginReducer = (
+export const loginReducer = (
   state = { isFetching: false, message: '', success: false },
   action,
 ) => {
@@ -33,5 +33,3 @@ const loginReducer = (
       return state;
   }
 };
-
-export default loginReducer;

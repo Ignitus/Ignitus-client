@@ -5,7 +5,7 @@ import * as S from './styles.ts';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { RoundedButton } from '../../../ignitus-Atoms/buttons';
 
-export default function OpportunityFilters() {
+export const OpportunityFilters = () => {
   const dummyData = {
     dummyDates: ['Past 24 hours', 'Past week', 'Past Month'],
     dummyJobType: ['Part time', 'Full time', 'Contract'],

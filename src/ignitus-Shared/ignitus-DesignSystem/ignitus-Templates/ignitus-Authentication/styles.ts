@@ -20,7 +20,7 @@ import {
   getMessageColor,
 } from '../../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
-import Icon from '../../../ignitus-Utilities/Components/icon';
+import { Icon } from '../../../ignitus-Utilities/Components/icon';
 
 export const AuthenticationWrapper = styled(BootStrapSection)`
   display: flex;
