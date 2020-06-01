@@ -17,7 +17,7 @@ const PureNavigation: React.FC<NavigationProps> = ({
   const NavigationItemsList = localStorage.getItem('authenticated')
     ? AuthenticatedNavigationItemsList
     : NonAuthenticatedNavigationItemsList;
-  const [isExpanded, toogleIsExpanded] = useToggle(false);
+  const [isExpanded, toogleIsExpanded] = useToggle(true);
   return (
     <N.Navigation transparentNavigation={transparentNavigation}>
       <N.NavigationBarBrand to="/#">
