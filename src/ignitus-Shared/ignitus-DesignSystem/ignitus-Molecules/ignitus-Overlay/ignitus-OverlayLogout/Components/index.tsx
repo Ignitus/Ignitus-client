@@ -1,16 +1,12 @@
 import React from 'react';
 import * as O from '../styles';
 import { OverlayProps } from '../types';
-import { Heading1 } from '../../../../..';
+import { AppIcon } from '../../../../..';
 
-export const OverlayLogout = ({
-  title,
-  primaryText,
-  secondaryText,
-}: OverlayProps) => (
+export const OverlayLogout = ({ primaryText, secondaryText }: OverlayProps) => (
   <O.Overlay>
     <O.TopSection>
-      <Heading1>{title}</Heading1>
+      <O.Logo name={AppIcon.IgnitusLogo} />
       <O.Paragraph>{primaryText}</O.Paragraph>
       <O.Paragraph secondary>{secondaryText}</O.Paragraph>
     </O.TopSection>

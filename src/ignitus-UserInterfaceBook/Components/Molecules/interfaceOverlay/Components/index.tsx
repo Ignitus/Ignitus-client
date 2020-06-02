@@ -7,9 +7,8 @@ export const interfaceOverlay = () => (
     <Heading2>Overlay</Heading2>
     <hr />
     <OverlayLogout
-      primaryText="Your application has been sent successfully!"
-      secondaryText="Make sure to keep an eye on your email."
-      title="Hooray!"
+      primaryText="You are now logged out."
+      secondaryText="See you soon!"
     />
   </Interface>
 );
