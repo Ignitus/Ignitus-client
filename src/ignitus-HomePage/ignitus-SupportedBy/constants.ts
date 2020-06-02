@@ -10,6 +10,8 @@ export const GIRLSCRIPT: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/girlScriptLogo.png';
 export const PROGATE: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/progateLogo.png';
+export const GITBOOK: string =
+  'https://spng.pngfind.com/pngs/s/94-945871_gitbook-logo-hd-png-download.png';
 
 export const Data: string[] = [
   WOOTECH,
@@ -18,4 +20,5 @@ export const Data: string[] = [
   PROGATE,
   NETLIFY,
   GIRLSCRIPT,
+  GITBOOK,
 ];
