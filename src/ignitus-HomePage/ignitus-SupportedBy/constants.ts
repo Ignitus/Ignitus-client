@@ -1,3 +1,5 @@
+import gitbookLogo from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/gitbookLogo.png';
+
 export const WOOTECH: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/WooTech.svg';
 export const SUGARLABS: string =
@@ -10,8 +12,7 @@ export const GIRLSCRIPT: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/girlScriptLogo.png';
 export const PROGATE: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/progateLogo.png';
-export const GITBOOK: string =
-  'https://spng.pngfind.com/pngs/s/94-945871_gitbook-logo-hd-png-download.png';
+export const GITBOOK: string = gitbookLogo;
 
 export const Data: string[] = [
   WOOTECH,
