@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import { Props } from './types';
 import { flexibleColDiv } from '../../shared';
-import { Paragraph as P } from '../../..';
 import { Icon } from '../../../ignitus-Utilities/Components/icon';
+import { Heading1 } from '../../..';
 
 export const Overlay = styled.div`
   position: relative;
@@ -23,10 +22,8 @@ export const Logo = styled(Icon)`
   }
 `;
 
-export const MessageSection = flexibleColDiv;
-
-export const Paragraph = styled(P)<Props>`
-  color: white;
-  margin-top: ${props => (props.secondary ? '1.5rem' : '0')};
-  font-size: 1.7rem;
+export const Heading = styled(Heading1)`
+  margin-bottom: 1.5rem;
 `;
+
+export const MessageSection = flexibleColDiv;
