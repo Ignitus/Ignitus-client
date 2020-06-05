@@ -130,8 +130,8 @@ export const allEdges: Edges[] = [
         title: 'Overlay',
         children: [
           {
-            title: 'Overlay Logout',
-            route: '/interface/overlayLogout',
+            title: 'Overlay',
+            route: '/interface/overlay',
           },
         ],
       },

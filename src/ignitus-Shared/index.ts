@@ -78,8 +78,8 @@ export {
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
-  OverlayLogout,
-} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/ignitus-OverlayLogout/Components';
+  Overlay,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
 export {
   ScrollBar,
