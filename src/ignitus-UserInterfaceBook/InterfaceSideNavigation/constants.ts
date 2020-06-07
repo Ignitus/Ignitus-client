@@ -127,6 +127,15 @@ export const allEdges: Edges[] = [
         ],
       },
       {
+        title: 'Overlay',
+        children: [
+          {
+            title: 'Overlay',
+            route: '/interface/overlay',
+          },
+        ],
+      },
+      {
         title: 'Scroll Bar',
         route: '/interface/scrollBar',
       },
