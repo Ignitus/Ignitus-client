@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Team /> should be rendered 1`] = `
+<div
+  class="css-1hs3667"
+>
+  <div
+    class="css-1uzyx05"
+  >
+    <div
+      class="css-1hs3667"
+    >
+      <h2
+        class="css-gd3cze"
+      >
+        <svg
+          aria-label="Plus Icon"
+          class="css-1p4zvgu"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Plus Icon
+          </title>
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"
+          />
+        </svg>
+        1 Contributors
+      </h2>
+      <p
+        class="css-gvbdwp"
+      >
+        This project was made possible by these contributors. 🎉 🎨
+      </p>
+    </div>
+    <div
+      class="css-1guir8e"
+    >
+      <div
+        class="css-16kcklx"
+      >
+        <a
+          class="css-861jbu"
+          href="https://github.com/octocat"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="avatar octocat"
+            class="css-a07s8t"
+            src="https://github.com/images/error/octocat_happy.gif"
+            width="100%"
+          />
+        </a>
+      </div>
+      <a
+        class="css-jgl6n1"
+        href="https://github.com/Ignitus/Ignitus-client/graphs/contributors"
+      >
+        View All 
+        <svg
+          aria-hidden="true"
+          aria-label="KeyBoardArrowDown"
+          class="css-1p4zvgu"
+          data-icon="KeyBoardArrowDown"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            KeyBoardArrowDown
+          </title>
+          <path
+            d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+`;
