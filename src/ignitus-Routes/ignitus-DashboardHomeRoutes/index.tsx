@@ -12,12 +12,6 @@ const LazyPosts = lazy(() =>
   ),
 );
 
-// const LazyDashBoardNavigation = lazy(() =>
-//   import(
-//     '../../ignitus-Dashboard/ignitus-DashboardHome/ignitus-DashboardHomeHeader/Components'
-//   ),
-// );
-
 export const DashboardHomeRoutes = () => (
   <React.Fragment>
     <Suspense
