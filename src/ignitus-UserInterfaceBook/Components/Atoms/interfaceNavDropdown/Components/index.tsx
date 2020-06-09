@@ -9,10 +9,7 @@ export const interfaceNavDropdown = () => (
     <Heading1> Dashboard Nav DropDown</Heading1>
     <br />
     <S.Component>
-      <NavDropdown
-        buttonTitle={Options.buttonTitle}
-        options={Options.options}
-      />
+      <NavDropdown options={Options.options} />
     </S.Component>
   </S.Container>
 );
