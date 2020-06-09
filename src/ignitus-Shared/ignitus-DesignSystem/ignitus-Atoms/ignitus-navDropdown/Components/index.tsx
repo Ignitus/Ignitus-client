@@ -8,8 +8,8 @@ export const NavDropdown = ({ options }: Props) => {
     <React.Fragment>
       <S.Container>
         {options.map(details => (
-          <Heading5>
-            <S.Option> {details} </S.Option>
+          <Heading5 key={details}>
+            <S.Option>{details}</S.Option>
           </Heading5>
         ))}
       </S.Container>
