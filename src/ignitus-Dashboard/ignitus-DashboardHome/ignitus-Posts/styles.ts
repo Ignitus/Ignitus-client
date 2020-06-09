@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { GreyOne } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { GreyLight } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const Container = styled.div`
   display: flex;
@@ -33,31 +33,31 @@ export const Wrapper = styled.div`
 `;
 
 export const SkeletonSideProfile = styled.div`
-  background-color: ${GreyOne};
+  background-color: ${GreyLight};
   height: 12rem;
   width: 17rem;
 `;
 
 export const SkeletonDashBoardNavigation = styled.div`
-  background-color: ${GreyOne};
+  background-color: ${GreyLight};
   height: 20rem;
   width: 14rem;
 `;
 
 export const SkeletonMulti = styled.div`
-  background-color: ${GreyOne};
+  background-color: ${GreyLight};
   height: 9rem;
   width: 36rem;
 `;
 
 export const SkeletonFooter = styled.div`
-  background-color: ${GreyOne};
+  background-color: ${GreyLight};
   width: 20rem;
   height: 8rem;
 `;
 
 export const SkeletonCards = styled.div`
-  background-color: ${GreyOne};
+  background-color: ${GreyLight};
   width: 37rem;
   height: 7rem;
   margin: 1rem;
