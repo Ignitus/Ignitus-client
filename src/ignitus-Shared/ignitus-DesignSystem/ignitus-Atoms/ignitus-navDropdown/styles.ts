@@ -7,7 +7,7 @@ import { MD } from '../fonts';
 export const Container = styled.div`
   background-color: ${White};
   width: 12rem;
-  border-radius: 1rem;
+  border-radius: 1rem 0rem 1rem 1rem;
   overflow: hidden;
   left: 0rem;
   margin-top: 1rem;
