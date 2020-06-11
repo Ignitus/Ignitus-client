@@ -1,3 +1,9 @@
 export type Props = {
-  options: string[];
+  options: object[];
+  name: string;
+};
+
+export type StyleProps = {
+  marginLeft?: boolean;
+  marginRight?: boolean;
 };
