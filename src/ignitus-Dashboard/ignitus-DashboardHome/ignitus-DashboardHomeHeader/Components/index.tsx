@@ -10,7 +10,7 @@ import * as N from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Orga
 import { SecondaryDropDown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components/index';
 import { data } from '../constants';
 import { Props } from '../types';
-
+import { Heading6 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   const userInformation: string | null = localStorage.getItem('data');
@@ -61,22 +61,19 @@ const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
           </S.HomeNavigationRight>
 
           <S.HomeNavigationRight>
-            <N.NavigationLinkItem style={{ marginRight: '2rem' }}>
-              <N.NavigationLink to="/#" style={{ marginRight: '0.5rem' }}>
-                {userType === 'student' ? (
-                  <S.HomeStyledIcon size="small" name={AppIcon.StudentIcon} />
-                ) : (
-                  <S.HomeStyledIcon size="small" name={AppIcon.ProfessorIcon} />
-                )}
-              </N.NavigationLink>
-              <S.HomeNavigationItems>
-                {name}
-                <S.HomeStyledIcon
-                  size="small"
-                  name={AppIcon.KeyBoardArrowDown}
-                />
-              </S.HomeNavigationItems>
-            </N.NavigationLinkItem>
+            <S.HomeNavigationItems>
+              <S.HomeStyledIcon
+                size="small"
+                name={AppIcon.StudentIcon}
+                marginRight
+              />
+              <Heading6> {name} </Heading6>
+              <S.HomeStyledIcon
+                size="small"
+                name={AppIcon.FilledArrowDownIcon}
+                marginLeft
+              />
+            </S.HomeNavigationItems>
           </S.HomeNavigationRight>
           <N.Burger
             onClick={toogleIsExpanded}

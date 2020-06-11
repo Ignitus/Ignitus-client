@@ -20,7 +20,7 @@ export const SkeletonStyledIcon = styled.div`
 
 export const SkeletonDropdown = styled.div`
   height: 2rem;
-  width: 5rem;
+  width: 6rem;
   background-color: ${GreyLight};
 `;
 
@@ -42,10 +42,14 @@ export const HomeNavigationLeft = styled.div`
 export const HomeStyledIcon = styled(Icon)<StyleProps>`
   width: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
   height: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
+  margin-right: ${props => (props.marginRight ? '0.5rem' : '')};
+  margin-left: ${props => (props.marginLeft ? '0.5rem' : '')};
   fill: ${IgnitusBlue};
 `;
 export const HomeNavigationItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 1rem;
+  curson: pointer;
 `;
