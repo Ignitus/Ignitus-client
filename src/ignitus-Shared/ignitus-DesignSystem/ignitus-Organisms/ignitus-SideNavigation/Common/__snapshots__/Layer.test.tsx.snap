@@ -9,6 +9,8 @@ exports[`<Layer /> should render 1`] = `
   font-weight: 400;
   padding: 1rem 0;
   width: 100%;
+  margin-top: none;
+  margin-bottom: none;
 }
 
 .emotion-1 .NavDropdown {
