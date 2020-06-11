@@ -7,6 +7,7 @@ import {
   SecondaryColor,
   IgnitusBlue,
   boxShadowColor,
+  GreyBackground,
 } from '../../ignitus-Atoms/colors';
 import { XS, SemiBold } from '../../ignitus-Atoms/fonts';
 import { NavigationProps, ToggleProps, StyleProps } from './types';
@@ -23,7 +24,8 @@ export const Navigation = styled.nav<NavigationProps>`
   height: 3rem;
   justify-content: space-between;
   transition: background-color 300ms ease-in;
-  background: ${props => (props.transparentNavigation ? 'transparent' : White)};
+  background: ${props =>
+    props.transparentNavigation ? GreyBackground : White};
   box-shadow: ${props =>
     props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`};
   padding: 0.5rem;
@@ -123,35 +125,8 @@ export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
   }
 `;
 
-export const HomeNavigationRight = styled.div`
-  display: flex;
-  flex: 0.5;
-  flex-grow: 0.5;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const HomeNavigationLeft = styled.div`
-  display: flex;
-  flex: 6;
-  flex-grow: 6;
-  align-items: center;
-`;
-
-export const HomeStyledIcon = styled(Icon)<StyleProps>`
-  width: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
-  height: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
-  fill: ${IgnitusBlue};
-`;
-
 export const StyledIcon = styled(Icon)<StyleProps>`
   width: 1.2rem;
   height: 1.2rem;
   fill: ${IgnitusBlue};
-`;
-
-export const HomeNavigationItems = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 `;

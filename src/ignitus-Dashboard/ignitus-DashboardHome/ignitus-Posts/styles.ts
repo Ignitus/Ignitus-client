@@ -13,6 +13,7 @@ export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   position: fixed;
   left: 2rem;
 `;

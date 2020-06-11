@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../styles';
 import {
-  Heading5,
+  Heading4,
   Heading6,
   Paragraph,
 } from '../../../ignitus-Atoms/typography';
@@ -23,7 +23,7 @@ export const InternshipCard = ({
     </S.LeftRow>
     <S.Content>
       <S.Row>
-        <Heading5 style={{ marginRight: '0.5rem' }}>{Title}</Heading5>{' '}
+        <Heading4 style={{ marginRight: '0.5rem' }}>{Title}</Heading4>{' '}
         <Paragraph> has posted an internship</Paragraph>
       </S.Row>
       <S.Column>
@@ -55,7 +55,7 @@ export const PostsPageCards = ({
     </S.LeftRow>
     <S.Content>
       <S.Row>
-        <Heading5 style={{ marginRight: '0.5rem' }}>{Title}</Heading5>{' '}
+        <Heading4 style={{ marginRight: '0.5rem' }}>{Title}</Heading4>{' '}
         {
           {
             publication: <Paragraph> has posted a publication</Paragraph>,
@@ -88,14 +88,6 @@ const Card = props => (
           name={AppIcon.LikeIcon}
         />
         <Heading6> Like</Heading6>
-      </S.Row>
-      <S.Row>
-        <S.Icon
-          style={{ marginRight: '0.3rem' }}
-          size="small"
-          name={AppIcon.SavePlusIcon}
-        />{' '}
-        <Heading6>Save</Heading6>
       </S.Row>
       <S.Row>
         <S.Icon

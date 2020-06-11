@@ -52,12 +52,14 @@ export const IconsDiv = styled.div`
   algin-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
+  /* margin-right: 1rem; */
   flex: 1;
 `;
 
 export const Icon = styled(I)<StyleProps>`
-  height: ${props => (props.size === 'small' ? '1rem' : '5rem')};
-  width: ${props => (props.size === 'small' ? '1rem' : '5rem')};
+  height: ${props => (props.size === 'small' ? '1rem' : '4rem')};
+  width: ${props => (props.size === 'small' ? '1rem' : '4rem')};
   fill: ${IgnitusBlue};
   transition: 0.3s;
+  margin-right: 0.5rem;
 `;
