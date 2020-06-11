@@ -11,6 +11,7 @@ import { SecondaryDropDown } from '../../../../ignitus-Shared/ignitus-DesignSyst
 import { data } from '../constants';
 import { Props } from '../types';
 import { Heading6 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+
 const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
   const userInformation: string | null = localStorage.getItem('data');
@@ -27,54 +28,36 @@ const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
           <N.NavigationBarBrand to="/#">
             <N.Logo name={AppIcon.IgnitusLogo} />
           </N.NavigationBarBrand>
+          <S.Container>
+            <S.HomeNavigationLeft>
+              <N.NavigationLinkItem>
+                <N.NavigationLink to="/#">Home</N.NavigationLink>
+              </N.NavigationLinkItem>
 
-          <S.HomeNavigationLeft>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#">Home</N.NavigationLink>
-            </N.NavigationLinkItem>
+              <N.NavigationLinkItem>
+                <N.NavigationLink to="#">Opportunity</N.NavigationLink>
+              </N.NavigationLinkItem>
+            </S.HomeNavigationLeft>
 
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="#">Opportunity</N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationLeft>
-
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="#">
+            <S.HomeNavigationRight>
+              <div style={{ margin: '0rem 1rem' }}>
                 <SecondaryDropDown data={data} />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#">
-                <S.HomeStyledIcon name={AppIcon.MessageIcon} />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#">
-                <S.HomeStyledIcon name={AppIcon.NotificationIcon} />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
-
-          <S.HomeNavigationRight>
-            <S.HomeNavigationItems>
+              </div>
+              <S.HomeStyledIcon marginHorizontal name={AppIcon.MessageIcon} />
               <S.HomeStyledIcon
-                size="small"
-                name={AppIcon.StudentIcon}
-                marginRight
+                marginHorizontal
+                name={AppIcon.NotificationIcon}
               />
-              <Heading6> {name} </Heading6>
-              <S.HomeStyledIcon
-                size="small"
-                name={AppIcon.FilledArrowDownIcon}
-                marginLeft
-              />
-            </S.HomeNavigationItems>
-          </S.HomeNavigationRight>
+              <S.HomeNavigationItems>
+                <S.HomeStyledIcon size="small" name={AppIcon.StudentIcon} />
+                <Heading6> {name} </Heading6>
+                <S.HomeStyledIcon
+                  size="small"
+                  name={AppIcon.FilledArrowDownIcon}
+                />
+              </S.HomeNavigationItems>
+            </S.HomeNavigationRight>
+          </S.Container>
           <N.Burger
             onClick={toogleIsExpanded}
             name={AppIcon.KeyBoardArrowRight}
@@ -86,42 +69,30 @@ const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
           <N.NavigationBarBrand to="/#">
             <N.Logo name={AppIcon.IgnitusLogo} />
           </N.NavigationBarBrand>
-          <S.HomeNavigationLeft>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#" />
-            </N.NavigationLinkItem>
+          <S.Container>
+            <S.HomeNavigationLeft>
+              <N.NavigationLinkItem>
+                <N.NavigationLink to="/#" />
+              </N.NavigationLinkItem>
 
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="#" />
-            </N.NavigationLinkItem>
-          </S.HomeNavigationLeft>
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="#">
+              <N.NavigationLinkItem>
+                <N.NavigationLink to="#" />
+              </N.NavigationLinkItem>
+            </S.HomeNavigationLeft>
+
+            <S.HomeNavigationRight>
+              <div style={{ margin: '0rem 1rem' }}>
                 <S.SkeletonSearchBar />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#">
-                <S.SkeletonStyledIcon />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem>
-              <N.NavigationLink to="/#">
-                <S.SkeletonStyledIcon />
-              </N.NavigationLink>
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
+              </div>
 
-          <S.HomeNavigationRight>
-            <N.NavigationLinkItem style={{ marginRight: '2rem' }}>
-              <S.SkeletonDropdown />
-            </N.NavigationLinkItem>
-          </S.HomeNavigationRight>
+              <S.SkeletonStyledIcon />
+              <S.SkeletonStyledIcon />
+
+              <S.HomeNavigationItems>
+                <S.SkeletonDropdown />
+              </S.HomeNavigationItems>
+            </S.HomeNavigationRight>
+          </S.Container>
           <N.Burger
             onClick={toogleIsExpanded}
             name={AppIcon.KeyBoardArrowRight}

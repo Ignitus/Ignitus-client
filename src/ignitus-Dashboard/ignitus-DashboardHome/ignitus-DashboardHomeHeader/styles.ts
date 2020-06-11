@@ -13,9 +13,10 @@ export const SkeletonSearchBar = styled.div`
 `;
 
 export const SkeletonStyledIcon = styled.div`
-  height: 2rem;
-  width: 2rem;
+  height: 1.7rem;
+  width: 1.7rem;
   background-color: ${GreyLight};
+  margin: 0rem 1rem;
 `;
 
 export const SkeletonDropdown = styled.div`
@@ -24,26 +25,30 @@ export const SkeletonDropdown = styled.div`
   background-color: ${GreyLight};
 `;
 
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
 export const HomeNavigationRight = styled.div`
   display: flex;
-  flex: 0.5;
-  flex-grow: 0.5;
   align-items: center;
   justify-content: space-evenly;
 `;
 
 export const HomeNavigationLeft = styled.div`
   display: flex;
-  flex: 6;
-  flex-grow: 6;
   align-items: center;
+  margin: 0rem 1rem;
+  justify-content: space-evenly;
 `;
 
 export const HomeStyledIcon = styled(Icon)<StyleProps>`
-  width: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
-  height: ${props => (props.size === 'small' ? '1.2rem' : '2rem')};
-  margin-right: ${props => (props.marginRight ? '0.5rem' : '')};
-  margin-left: ${props => (props.marginLeft ? '0.5rem' : '')};
+  width: ${props => (props.size === 'small' ? '1.2rem' : '1.7rem')};
+  height: ${props => (props.size === 'small' ? '1.2rem' : '1.7rem')};
+  margin: ${props => (props.marginHorizontal ? '0rem 1rem' : '0rem 0.5rem')};
   fill: ${IgnitusBlue};
 `;
 export const HomeNavigationItems = styled.div`

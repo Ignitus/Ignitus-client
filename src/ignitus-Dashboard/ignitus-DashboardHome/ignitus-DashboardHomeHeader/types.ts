@@ -5,6 +5,5 @@ export type Props = {
 
 export type StyleProps = {
   size?: string;
-  marginLeft?: boolean;
-  marginRight?: boolean;
+  marginHorizontal?: boolean;
 };
