@@ -1,4 +1,5 @@
 import gitbookLogo from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/gitbookLogo.png';
+import atlassianLogo from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/atlassianLogo.png';
 
 export const WOOTECH: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/WooTech.svg';
@@ -13,6 +14,7 @@ export const GIRLSCRIPT: string =
 export const PROGATE: string =
   'https://storage.googleapis.com/ignitus_assets/ig-partners-logo/progateLogo.png';
 export const GITBOOK: string = gitbookLogo;
+export const ATLASSIAN: string = atlassianLogo;
 
 export const Data: string[] = [
   WOOTECH,
@@ -22,4 +24,5 @@ export const Data: string[] = [
   NETLIFY,
   GIRLSCRIPT,
   GITBOOK,
+  ATLASSIAN,
 ];
