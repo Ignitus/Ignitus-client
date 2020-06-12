@@ -13,4 +13,5 @@ export type NavigationItems = {
 
 export type StyleProps = {
   size?: string;
+  marginHorizontal?: boolean;
 };

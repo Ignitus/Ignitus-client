@@ -7,9 +7,9 @@ import {
   SecondaryColor,
   IgnitusBlue,
   boxShadowColor,
-  GreyBackground,
+  Black,
 } from '../../ignitus-Atoms/colors';
-import { XS, SemiBold } from '../../ignitus-Atoms/fonts';
+import { XS, SemiBold, Normal } from '../../ignitus-Atoms/fonts';
 import { NavigationProps, ToggleProps, StyleProps } from './types';
 import { Icon } from '../../../ignitus-Utilities/Components/icon';
 
@@ -24,8 +24,7 @@ export const Navigation = styled.nav<NavigationProps>`
   height: 3rem;
   justify-content: space-between;
   transition: background-color 300ms ease-in;
-  background: ${props =>
-    props.transparentNavigation ? GreyBackground : White};
+  background: ${props => (props.transparentNavigation ? 'transparent' : White)};
   box-shadow: ${props =>
     props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`};
   padding: 0.5rem;
@@ -39,9 +38,10 @@ export const NavigationBarBrand = styled(Link)`
   /* padding: 1rem; */
   align-self: stretch;
 `;
-export const Logo = styled(Icon)`
+export const Logo = styled(Icon)<StyleProps>`
   width: 2.5rem;
   height: 2.5rem;
+  margin: ${props => (props.marginHorizontal ? '0rem 1.5rem 0rem 2.5rem' : '')};
   path {
     fill: ${IgnitusBlue};
   }
@@ -90,6 +90,11 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
     color: ${props => (props.transparentNavigation ? White : IgnitusBlue)};
     &:hover {
       color: ${SecondaryColor};
+    }
+    .home {
+      color: ${Black};
+      margin: 0 0.5rem;
+      font-weight: ${Normal};
     }
   }
 

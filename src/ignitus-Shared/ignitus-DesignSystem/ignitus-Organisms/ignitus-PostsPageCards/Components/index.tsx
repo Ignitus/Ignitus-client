@@ -82,19 +82,11 @@ const Card = props => (
     {props.children}
     <S.IconsDiv>
       <S.Row>
-        <S.Icon
-          style={{ marginRight: '0.3rem' }}
-          size="small"
-          name={AppIcon.LikeIcon}
-        />
+        <S.Icon size="small" name={AppIcon.LikeIcon} />
         <Heading6> Like</Heading6>
       </S.Row>
       <S.Row>
-        <S.Icon
-          style={{ marginRight: '0.3rem' }}
-          size="small"
-          name={AppIcon.ShareIcon}
-        />{' '}
+        <S.Icon size="small" name={AppIcon.ShareIcon} />{' '}
         <Heading6>Share</Heading6>
       </S.Row>
     </S.IconsDiv>

@@ -24,7 +24,7 @@ export const PostsPage = () => {
       {content ? (
         <S.Container>
           <DashBoardHomeHeader
-            Skeleton={content}
+            Skeleton={!content}
             name={ProfileCardInfo.firstname}
           />
           <S.LeftSection>
@@ -108,7 +108,7 @@ export const PostsPage = () => {
       ) : (
         <S.Container>
           <DashBoardHomeHeader
-            Skeleton={content}
+            Skeleton={!content}
             name={ProfileCardInfo.firstname}
           />
           <S.LeftSection>

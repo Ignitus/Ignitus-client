@@ -61,5 +61,5 @@ export const Icon = styled(I)<StyleProps>`
   width: ${props => (props.size === 'small' ? '1rem' : '4rem')};
   fill: ${IgnitusBlue};
   transition: 0.3s;
-  margin-right: 0.5rem;
+  margin-right: ${props => (props.size === 'small' ? '0.3rem' : '0.5rem')};
 `;

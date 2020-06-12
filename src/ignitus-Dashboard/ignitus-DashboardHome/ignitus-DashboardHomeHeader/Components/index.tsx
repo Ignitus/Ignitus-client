@@ -7,54 +7,57 @@ import {
   useToggle,
 } from '../../../../ignitus-Shared/index';
 import * as N from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
-import { SecondaryDropDown } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components/index';
-import { data } from '../constants';
 import { Props } from '../types';
 import { Heading6 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
   const [isExpanded, toogleIsExpanded] = useToggle(false);
-  const userInformation: string | null = localStorage.getItem('data');
-  let userType: string = '';
-
-  if (localStorage.getItem('data') && typeof userInformation === 'string') {
-    userType = JSON.parse(userInformation).userType;
-  }
-
+  const handleChange = () => console.log('');
   return (
     <React.Fragment>
-      {Skeleton ? (
-        <N.Navigation transparentNavigation>
+      {Skeleton === false ? (
+        <N.Navigation>
           <N.NavigationBarBrand to="/#">
-            <N.Logo name={AppIcon.IgnitusLogo} />
+            <N.Logo name={AppIcon.IgnitusLogo} marginHorizontal />
           </N.NavigationBarBrand>
           <S.Container>
             <S.HomeNavigationLeft>
               <N.NavigationLinkItem>
-                <N.NavigationLink to="/#">Home</N.NavigationLink>
+                <N.NavigationLink to="/#">
+                  <div className="home">Home</div>
+                </N.NavigationLink>
               </N.NavigationLinkItem>
 
               <N.NavigationLinkItem>
-                <N.NavigationLink to="#">Opportunity</N.NavigationLink>
+                <N.NavigationLink to="#">
+                  {' '}
+                  <div className="home">Opportunity</div>
+                </N.NavigationLink>
               </N.NavigationLinkItem>
             </S.HomeNavigationLeft>
 
             <S.HomeNavigationRight>
-              <div style={{ margin: '0rem 1rem' }}>
-                <SecondaryDropDown data={data} />
-              </div>
-              <S.HomeStyledIcon marginHorizontal name={AppIcon.MessageIcon} />
+              <S.SearchBar
+                state=""
+                placeholder="Search @user, #tags ..."
+                type="text"
+                name={AppIcon.SearchIcon}
+                handleChange={handleChange}
+              />
+              <S.HomeStyledIcon
+                marginHorizontal
+                name={AppIcon.FilledMessageIcon}
+              />
               <S.HomeStyledIcon
                 marginHorizontal
                 name={AppIcon.NotificationIcon}
               />
-              <S.HomeNavigationItems>
+              <S.HomeNavigationItems
+                style={{ marginRight: '2rem', cursor: 'pointer' }}
+              >
                 <S.HomeStyledIcon size="small" name={AppIcon.StudentIcon} />
                 <Heading6> {name} </Heading6>
-                <S.HomeStyledIcon
-                  size="small"
-                  name={AppIcon.FilledArrowDownIcon}
-                />
+                <S.HomeStyledIcon name={AppIcon.FilledArrowDownIcon} />
               </S.HomeNavigationItems>
             </S.HomeNavigationRight>
           </S.Container>
@@ -65,25 +68,19 @@ const DashBoardHomeHeader = ({ name, Skeleton }: Props) => {
           />
         </N.Navigation>
       ) : (
-        <N.Navigation transparentNavigation>
+        <N.Navigation>
           <N.NavigationBarBrand to="/#">
-            <N.Logo name={AppIcon.IgnitusLogo} />
+            <N.Logo name={AppIcon.IgnitusLogo} marginHorizontal />
           </N.NavigationBarBrand>
           <S.Container>
             <S.HomeNavigationLeft>
-              <N.NavigationLinkItem>
-                <N.NavigationLink to="/#" />
-              </N.NavigationLinkItem>
+              <N.NavigationLinkItem />
 
-              <N.NavigationLinkItem>
-                <N.NavigationLink to="#" />
-              </N.NavigationLinkItem>
+              <N.NavigationLinkItem />
             </S.HomeNavigationLeft>
 
             <S.HomeNavigationRight>
-              <div style={{ margin: '0rem 1rem' }}>
-                <S.SkeletonSearchBar />
-              </div>
+              <S.SkeletonSearchBar />
 
               <S.SkeletonStyledIcon />
               <S.SkeletonStyledIcon />
