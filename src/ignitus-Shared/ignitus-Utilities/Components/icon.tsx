@@ -55,6 +55,7 @@ import { SavePlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 import { RemoteJobIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/remoteJobIcon/index';
 import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
+import { FilledMessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledMessageIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -94,6 +95,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.MessageIcon:
       return <MessageIcon {...rest} />;
+
+    case AppIcon.FilledMessageIcon:
+      return <FilledMessageIcon {...rest} />;
 
     case AppIcon.SaveIcon:
       return <SaveIcon {...rest} />;
