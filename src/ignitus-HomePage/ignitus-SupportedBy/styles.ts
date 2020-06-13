@@ -45,7 +45,7 @@ export const Card = styled.div`
 `;
 
 export const CardPicture = styled.img`
-  max-width: 100%;
+  max-width: 70%;
   height: 3rem;
   object-fit: contain;
 
