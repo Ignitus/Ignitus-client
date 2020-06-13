@@ -3,7 +3,7 @@ import { maximumWidthQuery } from '../../ignitus-Atoms/media';
 import { Heading3 } from '../../ignitus-Atoms/typography';
 import { White, SecondaryColor, IgnitusBlue } from '../../ignitus-Atoms/colors';
 import { FooterLinkprops } from './types';
-import { default as I } from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 
 export const StyledHeading = styled(Heading3)`
   color: ${White};

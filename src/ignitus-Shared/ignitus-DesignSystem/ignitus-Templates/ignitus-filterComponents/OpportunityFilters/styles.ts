@@ -11,8 +11,8 @@ import {
 } from '../../../ignitus-Atoms/colors';
 import { MD, Normal } from '../../../ignitus-Atoms/fonts';
 
-import Icon from '../../../../ignitus-Utilities/Components/icon';
-import DefaultButtonWithIcon from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components/defaultButtonWithIcon';
+import { Icon } from '../../../../ignitus-Utilities/Components/icon';
+import { DefaultButtonWithIcon } from '../../../ignitus-Atoms/ignitus-defaultButtonWithIcon/Components';
 
 export const Container = styled(Card)`
   border-radius: 16px;

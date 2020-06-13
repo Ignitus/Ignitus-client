@@ -1,27 +1,14 @@
 import React from 'react';
 import * as O from '../styles';
-import { Heading1 } from '../../../..';
 import { OverlayProps } from '../types';
+import { AppIcon, White, Paragraph } from '../../../..';
 
-const Overlay = ({
-  title,
-  primaryText,
-  secondaryText,
-  buttonText,
-}: OverlayProps) => (
+export const Overlay = ({ primaryText, secondaryText }: OverlayProps) => (
   <O.Overlay>
-    <O.TopSection>
-      <Heading1>{title}</Heading1>
-      <O.Paragraph>{primaryText}</O.Paragraph>
-      <O.Paragraph secondary>{secondaryText}</O.Paragraph>
-    </O.TopSection>
-    <O.BottomSection>
-      <O.Button category="primary" size="medium">
-        {' '}
-        {buttonText}
-      </O.Button>
-    </O.BottomSection>
+    <O.MessageSection>
+      <O.Logo name={AppIcon.IgnitusLogo} />
+      <O.Heading color={White}>{primaryText}</O.Heading>
+      <Paragraph color={White}>{secondaryText}</Paragraph>
+    </O.MessageSection>
   </O.Overlay>
 );
-
-export default Overlay;

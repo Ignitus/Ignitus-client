@@ -1,10 +1,10 @@
 /* eslint-disable camelcase */
 export type TeamActionType = {
   type: string;
-  data?: any;
+  data: GitHubDataType[];
 };
 
-export type GitHubDataType = {
+export interface GitHubDataType {
   login: string;
   id: number;
   node_id: string;
@@ -25,7 +25,7 @@ export type GitHubDataType = {
   site_admin: false;
   contributions: number;
   user_id: number;
-};
+}
 
 export type TeamReducerReturnType = {
   presets: GitHubDataType[];

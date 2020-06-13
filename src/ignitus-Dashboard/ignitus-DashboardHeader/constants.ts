@@ -1,6 +1,6 @@
 import { Users } from './types';
 
-const SearchUsers: Users[] = [
+export const SearchUsers: Users[] = [
   {
     id: 1,
     avatar:
@@ -38,5 +38,3 @@ const SearchUsers: Users[] = [
     name: 'Hughes',
   },
 ];
-
-export default SearchUsers;

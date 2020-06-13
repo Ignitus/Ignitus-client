@@ -22,6 +22,8 @@ import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/A
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
 import { interfaceIconInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIconInput/Components';
 import { interfaceMultiMediaInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
+import { interfaceModalHooray } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalHooray/Components';
+import { interfaceModalShare } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalShare/Components';
 import { interfaceOverlay } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import { interfaceTags } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTags/Components';
 import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
@@ -128,6 +130,8 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         />
         <Route path="/interface/filters" component={interfaceFilters} />
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
+        <Route path="/interface/modalHooray" component={interfaceModalHooray} />
+        <Route path="/interface/modalShare" component={interfaceModalShare} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
         <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route
