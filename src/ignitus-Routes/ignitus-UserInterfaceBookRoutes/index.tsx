@@ -17,6 +17,7 @@ import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/At
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
 import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
+import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -141,6 +142,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
+        <Route path="/interface/messageCard" component={interfaceMessageCard} />
       </Switch>
     </LeftRow>
   </Container>
