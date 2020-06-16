@@ -5,14 +5,16 @@ import * as F from '../../ignitus-Atoms/fonts';
 import { flexibleRowDiv } from '../../shared';
 
 export const MessageContainer = styled(flexibleRowDiv)`
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
+  box-sizing: border-box;
   padding: 1rem;
   width: 100%;
+  margin-bottom: 1rem;
 `;
 
-export const ImageContainer = styled(flexibleRowDiv)`
+export const ImageContainer = styled.div`
   position: relative;
   padding: 0.5rem;
 
@@ -27,7 +29,7 @@ export const ImageContainer = styled(flexibleRowDiv)`
     position: absolute;
     bottom: 0;
     right: 0;
-    stroke: white;
+    stroke: ${C.White};
     fill: #219653;
     height: 2rem;
     width: 2rem;
