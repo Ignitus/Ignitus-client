@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
 import * as C from '../../ignitus-Atoms/colors';
 import * as T from '../../ignitus-Atoms/typography';
+import * as F from '../../ignitus-Atoms/fonts';
 import { flexibleRowDiv } from '../../shared';
-import { Normal } from '../../ignitus-Atoms/fonts';
 
 export const MessageContainer = styled(flexibleRowDiv)`
-  border-radius: 4px;
+  border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   background-color: ${C.White};
   padding: 1rem;
-  width: 50%;
-  display: space-be;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export const ImageContainer = styled(flexibleRowDiv)`
-  padding-right: 1rem;
   img {
     position: relative;
     border-radius: 50%;
@@ -31,11 +31,32 @@ export const ImageContainer = styled(flexibleRowDiv)`
 `;
 
 export const MessageSubTitle = styled(T.Paragraph)`
-  padding-right: 1rem;
-  font-weight: ${Normal};
-  color: ${C.GreyOne};
+  margin-left: 1rem;
+`;
+
+export const Sender = styled(T.Paragraph)`
+  font-weight: ${F.Bold};
+  font-size: ${F.MD};
+  color: ${C.IgnitusBlue};
+  margin-bottom: 0.5rem;
+`;
+
+export const SenderPosition = styled(T.Paragraph)`
+  font-weight: ${F.Normal};
+  font-size: ${F.SM};
+  color: ${C.IgnitusBlue};
+  margin-bottom: 0.5rem;
 `;
 
 export const MessageDateTitle = styled.div`
   text-align: right;
+  margin-left: auto;
+`;
+
+export const Details = styled(T.Paragraph)`
+  font-family: Open Sans;
+  font-weight: ${F.Normal};
+  font-size: ${F.SM};
+  color: ${C.GreyOne};
+  margin-bottom: 0.5rem;
 `;

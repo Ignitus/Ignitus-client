@@ -11,13 +11,20 @@ export const interfaceMessageCard: React.FC = () => (
   <Interface>
     <Heading2>Message Card</Heading2>
     <hr />
-    <MessageList>
-      {MessageData.map(({ name, ...rest }) => (
-        <React.Fragment key={name}>
-          <MessageCard name={name} {...rest} />
-          <br />
-        </React.Fragment>
-      ))}
-    </MessageList>
+    <div
+      style={{
+        width: '30vw',
+        height: '30vh',
+      }}
+    >
+      <MessageList>
+        {MessageData.map(({ name, ...rest }) => (
+          <React.Fragment key={name}>
+            <MessageCard name={name} {...rest} />
+            <br />
+          </React.Fragment>
+        ))}
+      </MessageList>
+    </div>
   </Interface>
 );

@@ -1,10 +1,5 @@
 import React from 'react';
 import * as S from '../styles';
-import {
-  Heading5,
-  Heading6,
-  Paragraph,
-} from '../../../ignitus-Atoms/typography';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const MessageCard = withErrorBoundary(
@@ -19,13 +14,13 @@ export const MessageCard = withErrorBoundary(
       </S.ImageContainer>
 
       <S.MessageSubTitle>
-        <Heading5>{name}</Heading5>
-        <Heading6>{position}</Heading6>
+        <S.Sender>{name}</S.Sender>
+        <S.SenderPosition>{position}</S.SenderPosition>
       </S.MessageSubTitle>
 
       <S.MessageDateTitle>
-        <Paragraph>{numberMessages}</Paragraph>
-        <Paragraph>{dateSent}</Paragraph>
+        <S.Details>{numberMessages}</S.Details>
+        <S.Details>{dateSent}</S.Details>
       </S.MessageDateTitle>
     </S.MessageContainer>
   ),
