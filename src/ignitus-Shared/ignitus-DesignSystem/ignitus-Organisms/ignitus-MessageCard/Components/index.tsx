@@ -6,11 +6,11 @@ export const MessageCard = withErrorBoundary(
   ({ name, position, numberMessages, dateSent, avatar, online }) => (
     <S.MessageContainer>
       <S.ImageContainer>
-        <img src={avatar} alt="avatar" />
-        <svg height="100" width="100">
-          <circle cx="70" cy="70" r="10" strokeWidth="3" />
-          {!online && <circle cx="70" cy="70" r="5" fill="white" />}
+        <svg>
+          <circle cx="50%" cy="50%" r="30%" strokeWidth="10%" />
+          {!online && <circle cx="50%" cy="50%" r="15%" fill="white" />}
         </svg>
+        <img src={avatar} alt="avatar" />
       </S.ImageContainer>
 
       <S.MessageSubTitle>

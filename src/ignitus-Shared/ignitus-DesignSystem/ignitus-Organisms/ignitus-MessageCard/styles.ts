@@ -10,23 +10,27 @@ export const MessageContainer = styled(flexibleRowDiv)`
   background-color: ${C.White};
   padding: 1rem;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
 `;
 
 export const ImageContainer = styled(flexibleRowDiv)`
+  position: relative;
+  padding: 0.5rem;
+
   img {
-    position: relative;
     border-radius: 50%;
-    width: 56px;
+    width: 4rem;
     max-width: 100%;
     max-height: 100%;
   }
+
   svg {
     position: absolute;
-    padding: 10px;
+    bottom: 0;
+    right: 0;
     stroke: white;
     fill: #219653;
+    height: 2rem;
+    width: 2rem;
   }
 `;
 
