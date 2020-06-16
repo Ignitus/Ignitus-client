@@ -4,4 +4,5 @@ export type MessageCardData = {
   numberMessages: string;
   dateSent: string;
   avatar: string;
+  online: boolean;
 };

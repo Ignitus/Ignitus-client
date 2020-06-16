@@ -8,12 +8,13 @@ import {
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 
 export const MessageCard = withErrorBoundary(
-  ({ name, position, numberMessages, dateSent, avatar }) => (
+  ({ name, position, numberMessages, dateSent, avatar, online }) => (
     <S.MessageContainer>
       <S.ImageContainer>
         <img src={avatar} alt="avatar" />
         <svg height="100" width="100">
           <circle cx="70" cy="70" r="10" strokeWidth="3" />
+          {!online && <circle cx="70" cy="70" r="5" fill="white" />}
         </svg>
       </S.ImageContainer>
 

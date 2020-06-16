@@ -8,6 +8,7 @@ export const MessageData: MessageCardData[] = [
     dateSent: 'Thu, 8:23AM',
     avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png',
+    online: true,
   },
   {
     name: 'Victoria Hopper',
@@ -16,5 +17,6 @@ export const MessageData: MessageCardData[] = [
     dateSent: 'Wed, 12:02AM',
     avatar:
       'https://storage.googleapis.com/ignitus_assets/ig-avatars/melanie.png',
+    online: false,
   },
 ];

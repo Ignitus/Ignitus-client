@@ -10,6 +10,7 @@ export const MessageContainer = styled(flexibleRowDiv)`
   background-color: ${C.White};
   padding: 1rem;
   width: 50%;
+  display: space-be;
 `;
 
 export const ImageContainer = styled(flexibleRowDiv)`
@@ -22,8 +23,8 @@ export const ImageContainer = styled(flexibleRowDiv)`
     max-height: 100%;
   }
   svg {
-    color: #219653;
     position: absolute;
+    padding: 10px;
     stroke: white;
     fill: #219653;
   }
