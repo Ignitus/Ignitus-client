@@ -14,7 +14,7 @@ export const interfaceMessageCard: React.FC = () => (
     <MessageList>
       {MessageData.map(({ name, ...rest }) => (
         <React.Fragment key={name}>
-          <MessageCard title={name} {...rest} />
+          <MessageCard name={name} {...rest} />
           <br />
         </React.Fragment>
       ))}

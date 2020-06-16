@@ -12,6 +12,9 @@ export const MessageCard = withErrorBoundary(
     <S.MessageContainer>
       <S.ImageContainer>
         <img src={avatar} alt="avatar" />
+        <svg height="100" width="100">
+          <circle cx="70" cy="70" r="10" strokeWidth="3" />
+        </svg>
       </S.ImageContainer>
 
       <S.MessageSubTitle>
