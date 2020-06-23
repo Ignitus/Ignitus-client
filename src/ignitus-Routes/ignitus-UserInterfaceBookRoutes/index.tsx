@@ -17,6 +17,7 @@ import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/At
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
 import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
+import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -24,6 +25,7 @@ import { interfaceIconInput } from '../../ignitus-UserInterfaceBook/Components/A
 import { interfaceMultiMediaInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import { interfaceModalHooray } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalHooray/Components';
 import { interfaceModalShare } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalShare/Components';
+import { interfaceOverlay } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import { interfaceTags } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTags/Components';
 import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
@@ -132,6 +134,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/modalHooray" component={interfaceModalHooray} />
         <Route path="/interface/modalShare" component={interfaceModalShare} />
+        <Route path="/interface/overlay" component={interfaceOverlay} />
         <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route
           path="/interface/toggleButtons"
@@ -144,6 +147,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
+        <Route path="/interface/messageCard" component={interfaceMessageCard} />
       </Switch>
     </LeftRow>
   </Container>

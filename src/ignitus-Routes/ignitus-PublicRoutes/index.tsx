@@ -6,7 +6,7 @@ import { OptionalNavigation as Navigation } from '../../ignitus-Shared/ignitus-D
 import { Home } from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import { AuthenticationRoutes } from '../ignitus-AuthenticationRoutes';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import { StudentProfile } from '../../ignitus-Profile/ignitus-StudentProfile/Components';
+import { StudentProfile } from '../../ignitus-Dashboard/ignitus-StudentProfile/Components';
 import { CareersPage } from '../../ignitus-CareersPage/Components';
 
 /**

@@ -7,16 +7,15 @@ type Props = {
   color?: string;
 };
 
-export const Heading1 = styled.h1`
+export const Heading1 = styled.h1<Props>`
   font-weight: ${F.Medium};
   font-size: ${F.XXXL};
-  color: ${C.IgnitusBlue};
+  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading2 = styled.h2<Props>`
   font-weight: ${F.Normal};
   font-size: ${F.XXL};
-  color: ${C.IgnitusBlue};
   color: ${props => (props.color ? props.color : C.IgnitusBlue)};
 `;
 

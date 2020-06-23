@@ -127,6 +127,15 @@ export const allEdges: Edges[] = [
         ],
       },
       {
+        title: 'Overlay',
+        children: [
+          {
+            title: 'Overlay',
+            route: '/interface/overlay',
+          },
+        ],
+      },
+      {
         title: 'Scroll Bar',
         route: '/interface/scrollBar',
       },
@@ -187,6 +196,10 @@ export const allEdges: Edges[] = [
           {
             title: 'Side Profile',
             route: '/interface/sideProfile',
+          },
+          {
+            title: 'Message Card',
+            route: '/interface/messageCard',
           },
         ],
       },
