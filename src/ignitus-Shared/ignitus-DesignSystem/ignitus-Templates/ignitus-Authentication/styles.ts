@@ -139,6 +139,10 @@ export const EmailInput = styled(DefaultIconInput)`
   }
 `;
 
+export const UsernameInput = styled(EmailInput)``;
+
+export const EmailUsernameInput = styled(EmailInput)``;
+
 export const ConfirmPasswordInput = styled(EmailInput)``;
 
 export const PasswordInput = styled(DefaultPasswordInput)`
