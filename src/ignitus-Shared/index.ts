@@ -129,6 +129,9 @@ export {
   UserSettingsSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
+export {
+  Notifications,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
 /**
  * ignitus-Templates
  */

@@ -28,6 +28,7 @@ import { interfaceOverlay } from '../../ignitus-UserInterfaceBook/Components/Mol
 import { interfaceTags } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTags/Components';
 import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
 import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
+import { interfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components';
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
@@ -139,6 +140,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={interfaceToggleButtons}
         />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
+        <Route path="/interface/notifications" component={Notifications} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
       </Switch>
