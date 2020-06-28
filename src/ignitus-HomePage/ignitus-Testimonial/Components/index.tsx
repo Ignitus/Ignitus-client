@@ -6,6 +6,7 @@ import * as T from '../style';
 import { Avatars } from '../constants';
 import { Props } from '../types';
 import { withErrorBoundary } from '../../../ignitus-Shared';
+import { LazyImage } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 export const Testimonial: React.FC<Props> = withErrorBoundary(
   ({ testimonialData, getTestimonialData }) => {
