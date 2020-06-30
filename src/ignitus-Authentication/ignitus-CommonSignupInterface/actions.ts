@@ -19,6 +19,7 @@ export const signUpRequest = (
 
   return {
     type: t.SIGN_UP_REQUEST,
+    userName,
     email,
     password,
     userType,
