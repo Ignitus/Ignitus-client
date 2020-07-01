@@ -32,6 +32,7 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.PollIcon,
   AppIcon.QuestionAnswerIcon,
   AppIcon.SaveIcon,
+  AppIcon.UploadIcon,
   AppIcon.VideoLibIcon,
 ];
 
