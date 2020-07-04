@@ -8,7 +8,6 @@ import { UserInterfaceBookRoutes } from './ignitus-Routes/ignitus-UserInterfaceB
 import { withErrorBoundary, GreyBackground } from './ignitus-Shared';
 
 import './App.css';
-import { StudentProfile } from './ignitus-Dashboard/ignitus-DashboardSettings/generalSettings/Components';
 
 const Root = styled.div`
   background: ${GreyBackground};
@@ -18,7 +17,6 @@ export const App = withErrorBoundary(() => (
   <Root>
     <Switch>
       <Route path="/dashboard" component={DashboardRoutes} />
-      <Route path="/settings" component={StudentProfile} />
       <Route path="/interface" component={UserInterfaceBookRoutes} />
       <Route path="/" component={PublicRoutes} />
     </Switch>

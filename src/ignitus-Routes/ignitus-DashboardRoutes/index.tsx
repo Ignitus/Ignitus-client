@@ -4,12 +4,12 @@ import React, { Suspense, lazy, Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Notfound } from '../../ignitus-Shared';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-// import { PrivateRoute } from '../ignitus-PrivateRoutes';
-import { StudentProfile } from '../../ignitus-Dashboard/ignitus-DashboardSettings/generalSettings/Components';
+import { PrivateRoute } from '../ignitus-PrivateRoutes';
+import { GeneralSettings } from '../../ignitus-Dashboard/ignitus-DashboardSettings/generalSettings/Components';
 
-// const LazyStudentDashBoard = lazy(() =>
-//   import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
-// );
+const LazyStudentDashBoard = lazy(() =>
+  import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
+);
 
 const LazyDashBoardNavigation = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'),
@@ -27,8 +27,8 @@ export const DashboardRoutes = () => (
       <LazyDashBoardNavigation />
       <Switch>
         <Route exact path="/" render={() => <Notfound />} />
-        <Route path="/settings" component={StudentProfile} />
-        {/* <Route path="/dashboard" Component={LazyStudentDashBoard} /> */}
+        <PrivateRoute path="/settings" component={GeneralSettings} />
+        <PrivateRoute path="/dashboard" Component={LazyStudentDashBoard} />
       </Switch>
     </Suspense>
   </React.Fragment>

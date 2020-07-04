@@ -4,7 +4,7 @@ import { Paragraph, Heading5 } from '../../../../ignitus-Shared';
 import { White } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { UserSettingsSideNavigation } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
-export const StudentProfile = () => (
+export const GeneralSettings = () => (
   <P.ParentContainer>
     <P.LeftContainer>
       <UserSettingsSideNavigation />
