@@ -9,15 +9,15 @@ const props = {
   maxHeightOfInput: 200,
 };
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultMultiMediaInput {...props} />);
+it('should render', () => {
+  const tree = render(<DefaultMultiMediaInput {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultMultiMediaInput />', () => {
-  it('should render', () => {
-    wrapper = render(<DefaultMultiMediaInput {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultMultiMediaInput {...props} />);
   });
 
   it('should contain buttons & textarea', () => {

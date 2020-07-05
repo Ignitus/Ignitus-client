@@ -56,16 +56,15 @@ const searchHelper = (wrapper, searchValue, expectedResults) => {
   }
 };
 
-let wrapper;
-
-beforeEach(() => {
-  wrapper = mount(<SecondaryDropDown {...props} />);
+it('should rendered', () => {
+  const tree = render(<SecondaryDropDown {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<SecondaryDropDown />', () => {
-  it('should rendered', () => {
-    wrapper = render(<SecondaryDropDown {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<SecondaryDropDown {...props} />);
   });
 
   it('should render input tags', () => {

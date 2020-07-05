@@ -8,15 +8,15 @@ const props = {
   value: 'Value',
 };
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultCheckbox {...props} />);
+it('should rendered', () => {
+  const tree = render(<DefaultCheckbox {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultCheckbox />', () => {
-  it('should render', () => {
-    wrapper = render(<DefaultCheckbox {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultCheckbox {...props} />);
   });
 
   it('should contain checkbox with correct attributes', () => {
