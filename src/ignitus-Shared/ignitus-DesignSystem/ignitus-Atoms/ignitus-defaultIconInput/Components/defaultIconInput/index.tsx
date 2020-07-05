@@ -15,7 +15,7 @@ export const DefaultIconInput = ({
 
   useEffect(() => {
     handleChange(value);
-  }, [value]);
+  }, [handleChange, value]);
 
   return (
     <React.Fragment>
