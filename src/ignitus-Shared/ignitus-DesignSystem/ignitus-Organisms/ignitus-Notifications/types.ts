@@ -1,11 +1,14 @@
-import { AppIcon } from '../../../types/iconsTypes/iconEnums';
-
-export type Props = {
-  content: string;
-  name: AppIcon;
+export type InputTypes = {
+  colorText: string;
+  colorTitle: string;
+  background: string;
+  image?: string;
+  title?: string;
+  textLeft?: string;
+  textRight?: string;
 };
 
-export type ParagraphProps = {
-  margin: string;
-  primary?: boolean;
+export type StyledTagProps = {
+  background: string;
+  color: string;
 };

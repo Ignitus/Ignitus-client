@@ -31,6 +31,7 @@ import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components
 // import { interfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components';
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
+import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
@@ -143,6 +144,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         {/* <Route path="/interface/notifications" component={Notifications} /> */}
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
+        <Route
+          path="/interface/notifications"
+          component={InterfaceNotifications}
+        />
       </Switch>
     </LeftRow>
   </Container>
