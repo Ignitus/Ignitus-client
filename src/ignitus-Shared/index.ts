@@ -118,6 +118,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-ProfileCard/Components';
 
 export {
+  MessageCard,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageCard/Components';
+
+export {
   DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
