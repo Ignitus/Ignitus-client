@@ -5,7 +5,10 @@ import { Loader } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignit
 
 export const interfaceLoader: React.FC = () => (
   <Interface>
-    <Heading2>Loaders</Heading2>
-    <Loader />
+    <Heading2>Loader</Heading2>
+    <hr />
+    <div style={{ width: '10rem' }}>
+      <Loader />
+    </div>
   </Interface>
 );
