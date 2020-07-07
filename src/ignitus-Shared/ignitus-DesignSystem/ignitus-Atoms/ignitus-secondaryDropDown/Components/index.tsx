@@ -24,7 +24,7 @@ export const SecondaryDropDown = ({ data }) => {
     } else {
       setShowOptions(false);
     }
-  }, [searchTerm]);
+  }, [searchTerm, data]);
 
   return (
     <S.ParentContainer className="ParentContainer">

@@ -13,7 +13,7 @@ export const Signup: FunctionComponent<Props> = withErrorBoundary(
     const [state, setState] = useState(SignupStatePayload);
     const { email, password, confirmPassword } = state;
 
-    useEffect(() => () => clearPreviousSignUp(), []);
+    useEffect(() => () => clearPreviousSignUp(), [clearPreviousSignUp]);
 
     const handleSubmit = e => {
       e.preventDefault();
