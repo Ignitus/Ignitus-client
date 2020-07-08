@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ToggleButton /> should render 1`] = `
+exports[`should rendered 1`] = `
 .emotion-2 {
   cursor: pointer;
 }
@@ -153,7 +153,7 @@ exports[`<ToggleButton /> should render 1`] = `
 </span>
 `;
 
-exports[`<ToggleIconButton /> should render 1`] = `
+exports[`should rendered 2`] = `
 .emotion-4 {
   cursor: pointer;
 }
