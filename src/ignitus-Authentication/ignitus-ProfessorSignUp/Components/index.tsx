@@ -14,7 +14,7 @@ export const SignUp: React.FC<Props> = withErrorBoundary(
 
     const { email, password, confirmPassword } = state;
 
-    useEffect(() => () => clearPreviousSignUp(), []);
+    useEffect(() => () => clearPreviousSignUp(), [clearPreviousSignUp]);
 
     const handleSubmit = e => {
       e.preventDefault();
