@@ -15,16 +15,16 @@ const props = {
   handleChange: jest.fn(),
 };
 
-let wrapper;
-const input = 'input[type="text"]';
-beforeEach(() => {
-  wrapper = mount(<DefaultIconInput {...props} />);
+it('should rendered', () => {
+  const tree = render(<DefaultIconInput {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultIconInput />', () => {
-  it('should rendered', () => {
-    wrapper = render(<DefaultIconInput {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  const input = 'input[type="text"]';
+  beforeEach(() => {
+    wrapper = mount(<DefaultIconInput {...props} />);
   });
 
   it('should render input & Icon passed in prop', () => {

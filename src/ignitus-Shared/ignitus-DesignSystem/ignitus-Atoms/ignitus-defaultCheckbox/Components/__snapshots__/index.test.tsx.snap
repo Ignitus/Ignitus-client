@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DefaultCheckbox /> should render 1`] = `
+exports[`should rendered 1`] = `
 <div
   class="css-9ncwx"
 >
