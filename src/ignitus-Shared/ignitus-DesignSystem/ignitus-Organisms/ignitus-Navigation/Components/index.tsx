@@ -30,9 +30,21 @@ const PureNavigation: React.FC<NavigationProps> = ({
             key={title}
             transparentNavigation={transparentNavigation}
           >
-            <N.NavigationLink to={route} onClick={toogleIsExpanded}>
-              {title}
-            </N.NavigationLink>
+            {title !== 'Join' && (
+              <N.NavigationLink to={route} onClick={toogleIsExpanded}>
+                {title}
+              </N.NavigationLink>
+            )}
+            {title === 'Join' && (
+              <N.NavigationLink
+                to={{ pathname: `${route}` }}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={toogleIsExpanded}
+              >
+                {title}
+              </N.NavigationLink>
+            )}
           </N.NavigationLinkItem>
         ))}
       </N.NavigationLinks>
