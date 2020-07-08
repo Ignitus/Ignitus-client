@@ -53,6 +53,10 @@ export {
 export {
   SecondaryDropDown,
 } from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components';
+
+export {
+  Loader,
+} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-Loader/Components';
 /**
  * ignitus-Layout
  */

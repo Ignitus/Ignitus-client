@@ -92,6 +92,10 @@ export const allEdges: Edges[] = [
           },
         ],
       },
+      {
+        title: 'Loader',
+        route: '/interface/loader',
+      },
     ],
   },
   {

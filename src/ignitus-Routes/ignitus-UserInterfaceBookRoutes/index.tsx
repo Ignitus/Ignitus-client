@@ -6,6 +6,7 @@ import { Notfound } from '../../ignitus-Shared';
 import { interfaceButttons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceButtons/Components';
 import { interfaceNavigation } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNavigation/Components';
 import { interfaceIcons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIcons/Components';
+import { interfaceLoader } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceLoader/Components';
 import { interfaceTypography } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTypography/Components';
 import { interfaceCards } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCards/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
@@ -83,6 +84,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={interfaceNavigation}
         />
         <Route path="/interface/icons" component={interfaceIcons} />
+        <Route path="/interface/loader" component={interfaceLoader} />
         <Route path="/interface/typography" component={interfaceTypography} />
         <Route path="/interface/cards" component={interfaceCards} />
         <Route
