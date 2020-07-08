@@ -6,6 +6,7 @@ import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUp
 import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
 import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
 import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { DetailsProfileFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-DetailsProfileFlow/Components';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
@@ -57,6 +58,7 @@ export const AuthenticationRoutes: React.FunctionComponent = () => (
           path="/flow/emailConfirmationFlow"
           component={EmailConfirmationFlow}
         />
+        <Route path="/flow/detailsProfileFlow" component={DetailsProfileFlow} />
         <Route path="/flow/emailFlow" component={EmailFlow} />
         <Route path="/flow/interestFlow" component={InterestFlow} />
         <Route path="/flow/welcomeFlow" component={WelcomeFlow} />
