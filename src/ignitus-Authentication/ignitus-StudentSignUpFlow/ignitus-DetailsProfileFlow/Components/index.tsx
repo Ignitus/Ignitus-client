@@ -4,7 +4,11 @@
 import React, { FunctionComponent, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import * as T from '../../ignitus-WelcomeFlow/Styles/style';
+import {
+  WelcomeContainer,
+  TopSection,
+  Progress,
+} from '../../ignitus-WelcomeFlow/Styles/style';
 
 import * as P from '../Styles/style';
 import { EducationProps, HeadingProps } from '../types';
@@ -15,8 +19,6 @@ import {
   Black,
   Paragraph,
   RoundedButton,
-  DefaultIconInput,
-  DefaultInput,
   Heading5,
   IgnitusBlue,
   White,
@@ -32,19 +34,18 @@ const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
 
 export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
-  <T.WelcomeContainer>
-    <T.TopSection>
-      <T.Progress
+  <WelcomeContainer>
+    <TopSection>
+      <Progress
         src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png"
         alt="progress-bar"
       />
       <Heading2>Profile Details</Heading2>
       <Paragraph> This won&apos;t take much time to complete.</Paragraph>
       <P.TopMiddleSection>
-        {/* <P.ParentContainer> */}
         <P.MiddleSection>
           <P.ElementContainer>
-            <About content="Well-versed in over a dozen literary genres and can teach to any range of students. Adept at creating a lesson plan that engages students helping students to see the beauty in literature and encouraging students to read on their own. Specializes in high school and junior college level classes." />
+            <About />
           </P.ElementContainer>
 
           <P.ElementContainer>
@@ -53,12 +54,6 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
               address="New Parkland,CA"
               batch="2015 – 2019"
             />
-            <P.Icon
-              name={AppIcon.PlusIcon}
-              color={C.White}
-              background={C.IgnitusBlue}
-            />{' '}
-            Add an Institution
           </P.ElementContainer>
 
           <P.ElementContainer>
@@ -80,13 +75,17 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
           </P.ElementContainer>
 
           <P.ElementContainer>
-            <Heading title="Publications" icon={AppIcon.LibraryBooksIcon} />
-            <P.Icon
-              name={AppIcon.PlusIcon}
-              color={C.White}
-              background={C.IgnitusBlue}
-            />{' '}
-            Add a Publication
+            <P.HeadingContainer>
+              <Heading title="Publications" icon={AppIcon.LibraryBooksIcon} />
+              <P.IconContainer>
+                <P.Icon
+                  name={AppIcon.PlusIcon}
+                  color={C.White}
+                  background={C.IgnitusBlue}
+                />
+                <Paragraph>Add a Publication</Paragraph>
+              </P.IconContainer>
+            </P.HeadingContainer>
             <P.Content>
               <DefaultButtonWithIcon
                 size="large"
@@ -108,7 +107,6 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
                 handleChange={handleChange}
                 handleClick={copy}
               />
-
               <P.LeftRow>
                 <Heading
                   title="Practice in a second language: Perspectives from applied linguistics and cognitive psychology."
@@ -128,7 +126,6 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
                   />
                 </P.RightRow>
               </P.LeftRow>
-
               <P.LeftRow>
                 <Heading
                   title="Practice in a second language: Perspectives from applied linguistics and cognitive psychology."
@@ -151,15 +148,18 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
             </P.Content>
           </P.ElementContainer>
         </P.MiddleSection>
-        {/* </P.ParentContainer> */}
       </P.TopMiddleSection>
-    </T.TopSection>
+    </TopSection>
     <P.BottomSection>
       <RoundedButton size="large" category="primary">
         <Link to="/">Get started</Link>
       </RoundedButton>
+      <Paragraph>
+        Skip for now
+        {' >> '}
+      </Paragraph>
     </P.BottomSection>
-  </T.WelcomeContainer>
+  </WelcomeContainer>
 ));
 
 const Heading = ({ title, icon, fontStyle }: HeadingProps) => (
@@ -169,12 +169,10 @@ const Heading = ({ title, icon, fontStyle }: HeadingProps) => (
   </P.TitleWrapper>
 );
 
-const About = content => (
+const About = () => (
   <Fragment>
-    {content}
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
-      {/* <Paragraph color={GreySecondaryText}>{content}</Paragraph> */}
       <P.StyledTextArea
         rows={4}
         cols={100}
@@ -186,39 +184,59 @@ const About = content => (
 
 const Education = ({ university, address, batch }: EducationProps) => (
   <Fragment>
-    <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
+    <P.HeadingContainer>
+      <Heading title="Education" icon={AppIcon.GraduationCapIcon} />
+      <P.IconContainer>
+        <P.Icon
+          name={AppIcon.PlusIcon}
+          color={C.White}
+          background={C.IgnitusBlue}
+        />{' '}
+        <Paragraph>Add an Institution</Paragraph>
+      </P.IconContainer>
+    </P.HeadingContainer>
     <P.Content>
       <P.InputContainer>
-        <DefaultInput
+        <P.StyledDefaultInput
           placeholder="University or Institution"
           type="text"
           name="university"
+        />{' '}
+        <P.StyledDefaultInput
+          placeholder="Type or Degree"
+          type="text"
+          name="degree"
+        />{' '}
+        <P.StyledDefaultInput
+          placeholder="Field of Study"
+          type="text"
+          name="study"
         />
-        <DefaultInput placeholder="Type or Degree" type="text" name="degree" />
-        <DefaultInput placeholder="Field of Study" type="text" name="study" />
       </P.InputContainer>
-      <Heading5>from</Heading5>
-      <DefaultIconInput
-        placeholder="year"
-        type="text"
-        name={AppIcon.KeyBoardArrowDown}
-        state=""
-        handleChange={handleChange}
-        handleClick={copy}
-      />
-      <Heading5>to</Heading5>
-      <DefaultIconInput
-        placeholder="year"
-        type="text"
-        name={AppIcon.KeyBoardArrowDown}
-        state=""
-        handleChange={handleChange}
-        handleClick={copy}
-      />
-      <P.StyledDefaultCheckbox
-        label="I am currently studying here"
-        value="to"
-      />
+      <P.DateContainer>
+        <Heading5>from</Heading5>
+        <P.StyledIconInput
+          placeholder="year"
+          type="text"
+          name={AppIcon.KeyBoardArrowDown}
+          state=""
+          handleChange={handleChange}
+          handleClick={copy}
+        />
+        <Heading5>to</Heading5>
+        <P.StyledIconInput
+          placeholder="year"
+          type="text"
+          name={AppIcon.KeyBoardArrowDown}
+          state=""
+          handleChange={handleChange}
+          handleClick={copy}
+        />
+        <P.StyledDefaultCheckbox
+          label="I am currently studying here"
+          value="to"
+        />
+      </P.DateContainer>
       <P.LeftRow>
         <P.University color={Black}>{university}</P.University>
         <P.RightRow>
