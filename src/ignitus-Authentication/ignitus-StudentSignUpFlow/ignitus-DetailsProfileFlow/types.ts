@@ -36,3 +36,8 @@ export type RecommendationsProps = {
   date: string;
   experience: string;
 };
+
+export type IconProps = {
+  color: string;
+  background: string;
+};

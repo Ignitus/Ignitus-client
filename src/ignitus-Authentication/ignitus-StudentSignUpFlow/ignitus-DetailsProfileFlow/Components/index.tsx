@@ -26,6 +26,8 @@ import {
 
 import { DefaultTag2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
 
+import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+
 const copy = value => console.log('copied: ', value);
 const handleChange = value => console.log('change: ', value);
 
@@ -51,7 +53,12 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
               address="New Parkland,CA"
               batch="2015 – 2019"
             />
-            <P.Icon name={AppIcon.PlusIcon} /> Add an Institution
+            <P.Icon
+              name={AppIcon.PlusIcon}
+              color={C.White}
+              background={C.IgnitusBlue}
+            />{' '}
+            Add an Institution
           </P.ElementContainer>
 
           <P.ElementContainer>
@@ -74,7 +81,12 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
 
           <P.ElementContainer>
             <Heading title="Publications" icon={AppIcon.LibraryBooksIcon} />
-            <P.Icon name={AppIcon.PlusIcon} /> Add a Publication
+            <P.Icon
+              name={AppIcon.PlusIcon}
+              color={C.White}
+              background={C.IgnitusBlue}
+            />{' '}
+            Add a Publication
             <P.Content>
               <DefaultButtonWithIcon
                 size="large"
@@ -104,8 +116,16 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
                   fontStyle="paragraph"
                 />
                 <P.RightRow>
-                  <P.Icon name={AppIcon.CreateIcon} />{' '}
-                  <P.Icon name={AppIcon.CrossIcon} />
+                  <P.Icon
+                    name={AppIcon.CreateIcon}
+                    color={C.IgnitusBlue}
+                    background={C.White}
+                  />{' '}
+                  <P.Icon
+                    name={AppIcon.CrossIcon}
+                    color={C.IgnitusBlue}
+                    background={C.White}
+                  />
                 </P.RightRow>
               </P.LeftRow>
 
@@ -116,8 +136,16 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
                   fontStyle="paragraph"
                 />
                 <P.RightRow>
-                  <P.Icon name={AppIcon.CreateIcon} />{' '}
-                  <P.Icon name={AppIcon.CrossIcon} />
+                  <P.Icon
+                    name={AppIcon.CreateIcon}
+                    color={C.IgnitusBlue}
+                    background={C.White}
+                  />{' '}
+                  <P.Icon
+                    name={AppIcon.CrossIcon}
+                    color={C.IgnitusBlue}
+                    background={C.White}
+                  />
                 </P.RightRow>
               </P.LeftRow>
             </P.Content>
@@ -136,13 +164,14 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
 
 const Heading = ({ title, icon, fontStyle }: HeadingProps) => (
   <P.TitleWrapper>
-    <P.Icon name={icon} />
+    <P.Icon name={icon} color={C.IgnitusBlue} background={C.White} />
     <P.Title fontStyle={fontStyle}>{title}</P.Title>
   </P.TitleWrapper>
 );
 
-const About = () => (
+const About = content => (
   <Fragment>
+    {content}
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
       {/* <Paragraph color={GreySecondaryText}>{content}</Paragraph> */}
@@ -193,8 +222,16 @@ const Education = ({ university, address, batch }: EducationProps) => (
       <P.LeftRow>
         <P.University color={Black}>{university}</P.University>
         <P.RightRow>
-          <P.Icon name={AppIcon.CreateIcon} />{' '}
-          <P.Icon name={AppIcon.CrossIcon} />
+          <P.Icon
+            name={AppIcon.CreateIcon}
+            color={C.IgnitusBlue}
+            background={C.White}
+          />{' '}
+          <P.Icon
+            name={AppIcon.CrossIcon}
+            color={C.IgnitusBlue}
+            background={C.White}
+          />
         </P.RightRow>
       </P.LeftRow>
       <P.Address>{address}</P.Address>

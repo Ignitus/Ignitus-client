@@ -9,7 +9,7 @@ import {
   DefaultIconInput,
   DefaultCheckbox,
 } from '../../../../ignitus-Shared';
-import { TitleProps } from '../types';
+import { TitleProps, IconProps } from '../types';
 import { Icon as I } from '../../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
@@ -52,10 +52,12 @@ export const TitleWrapper = styled.div`
   flex-direction: row;
 `;
 
-export const Icon = styled(I)`
+export const Icon = styled(I)<IconProps>`
   width: 1.5rem;
-  fill: ${C.IgnitusBlue};
+  fill: ${props => props.color};
   margin: 0 0.5rem;
+  background-color: ${props => props.background};
+  border-radius: 0.3rem;
 `;
 
 export const Content = styled(Container)`
