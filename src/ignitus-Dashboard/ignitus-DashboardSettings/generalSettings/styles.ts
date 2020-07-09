@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
-  minimumWidthQuery,
   DefaultInput,
   Paragraph,
   RoundedButton,
@@ -13,23 +12,26 @@ import {
   Orange,
   IgnitusBlue,
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import { LG } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const ParentContainer = styled.div`
   display: flex;
+  width: 80%;
 `;
 
 export const LeftContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin: 10rem 1rem 0 2rem;
+  margin: 6rem 2rem 0 2rem;
 `;
 
 export const RightContainer = styled(Container)`
-  margin: 10rem auto;
+  margin: 6rem auto;
   background: ${White};
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
   max-width: 30rem;
+  padding-left: 2rem;
 `;
 
 export const TopSection = styled.div`
@@ -48,22 +50,6 @@ export const ImageContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  ${minimumWidthQuery[0]} {
-    flex-direction: column;
-  }
-  ${minimumWidthQuery[2]} {
-    flex-direction: column;
-  }
-  ${minimumWidthQuery[3]} {
-    flex-direction: row;
-  }
-  ${minimumWidthQuery[4]} {
-    flex-direction: row;
-  }
-  ${minimumWidthQuery[5]} {
-    flex-direction: row;
-  }
 `;
 
 export const BottomSection = styled.div`
@@ -73,9 +59,9 @@ export const BottomSection = styled.div`
 `;
 
 export const Text = styled(Paragraph)`
-  font-size: 1.5rem;
-  margin: 0.5rem 0.4rem 0 2rem;
-  min-width: 10rem;
+  font-size: ${LG};
+  margin: 0.5rem 1rem 0 0;
+  min-width: 7rem;
 `;
 
 export const Input = styled(DefaultInput)`
@@ -120,7 +106,8 @@ export const RightSection = styled.div`
 `;
 
 export const ParagraphLink = styled(Link)`
-  display: block;
+  position: relative;
+  left: 50%;
   font-size: 0.8rem;
   color: ${Orange};
   &:hover {

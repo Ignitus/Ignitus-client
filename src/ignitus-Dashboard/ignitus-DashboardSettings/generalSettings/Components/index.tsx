@@ -1,6 +1,6 @@
 import React from 'react';
 import * as P from '../styles';
-import { Paragraph, Heading5 } from '../../../../ignitus-Shared';
+import { Paragraph, Heading3 } from '../../../../ignitus-Shared';
 import { White } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { UserSettingsSideNavigation } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
@@ -49,9 +49,9 @@ const GeneralSettings = () => (
               name="password"
             />
           </P.InputSection>
-          <P.RightSection>
-            <P.ParagraphLink to="#!">Forgot your password?</P.ParagraphLink>
-          </P.RightSection>
+          {/* <P.RightSection> */}
+          <P.ParagraphLink to="#!">Forgot your password?</P.ParagraphLink>
+          {/* </P.RightSection> */}
           <P.RightSection>
             <P.StyledRoundedButton
               size="medium"
@@ -64,12 +64,14 @@ const GeneralSettings = () => (
         </P.ElementContainer>
       </P.MiddleSection>
       <P.BottomSection>
-        <Heading5>Delete my account</Heading5>
+        <Heading3>Delete my account</Heading3>
+        <br />
         <Paragraph>
           Permanently delete your Ignitus account and all data associated with
           it. If you experienced an issue with your account and need help,
           please contact us so we can assist you.
         </Paragraph>
+        <br />
         <P.StyledRoundedButton size="medium" category="primary">
           Delete Account
         </P.StyledRoundedButton>
