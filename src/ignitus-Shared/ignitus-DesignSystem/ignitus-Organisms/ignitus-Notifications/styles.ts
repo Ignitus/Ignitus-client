@@ -1,12 +1,14 @@
 import styled from '@emotion/styled';
 import { Icon } from '../../../ignitus-Utilities/Components/icon';
 import { StyledTagProps } from './types';
+import { Paragraph } from '../../..';
+import { Bold } from '../../ignitus-Atoms/fonts';
 
 export const StyledTag = styled.span<StyledTagProps>`
   background: ${props => props.background};
   color: ${props => props.color};
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   line-height: 1rem;
   padding: 1rem 2rem;
   display: inline-flex;
@@ -18,6 +20,7 @@ export const StyledTag = styled.span<StyledTagProps>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 `;
 
 export const IconContainer = styled.div`
@@ -39,8 +42,8 @@ export const Image = styled.img`
   margin-right: 1rem;
 `;
 
-export const Text = styled.span`
-  font-weight: bold;
+export const Text = styled(Paragraph)`
+  font-weight: ${Bold};
   color: ${props => props.color};
 `;
 
