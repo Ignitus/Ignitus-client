@@ -14,15 +14,15 @@ const props = {
   content: 'Content',
 };
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultButtonWithIcon {...props} />);
+it('should rendered', () => {
+  const tree = render(<DefaultButtonWithIcon {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultButtonWithIcon />', () => {
-  it('should rendered', () => {
-    const tree = render(<DefaultButtonWithIcon {...props} />);
-    expect(tree).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultButtonWithIcon {...props} />);
   });
 
   it('should render required html tag(s)', () => {

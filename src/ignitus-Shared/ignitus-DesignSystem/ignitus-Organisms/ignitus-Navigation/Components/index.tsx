@@ -17,7 +17,8 @@ const PureNavigation: React.FC<NavigationProps> = ({
   const NavigationItemsList = localStorage.getItem('authenticated')
     ? AuthenticatedNavigationItemsList
     : NonAuthenticatedNavigationItemsList;
-  const [isExpanded, toogleIsExpanded] = useToggle(false);
+  const [isExpanded, toogleIsExpanded] = useToggle(true);
+
   return (
     <N.Navigation transparentNavigation={transparentNavigation}>
       <N.NavigationBarBrand to="/#">
@@ -29,7 +30,21 @@ const PureNavigation: React.FC<NavigationProps> = ({
             key={title}
             transparentNavigation={transparentNavigation}
           >
-            <N.NavigationLink to={route}>{title}</N.NavigationLink>
+            {title !== 'Join' && (
+              <N.NavigationLink to={route} onClick={toogleIsExpanded}>
+                {title}
+              </N.NavigationLink>
+            )}
+            {title === 'Join' && (
+              <N.NavigationLink
+                to={{ pathname: `${route}` }}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={toogleIsExpanded}
+              >
+                {title}
+              </N.NavigationLink>
+            )}
           </N.NavigationLinkItem>
         ))}
       </N.NavigationLinks>

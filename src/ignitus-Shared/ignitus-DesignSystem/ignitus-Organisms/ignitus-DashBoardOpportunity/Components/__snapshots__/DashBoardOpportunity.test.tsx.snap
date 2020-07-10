@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DashBoardOpportunity /> should render 1`] = `
+exports[`should rendered 1`] = `
 .emotion-6 {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
   background-color: #ffffff;

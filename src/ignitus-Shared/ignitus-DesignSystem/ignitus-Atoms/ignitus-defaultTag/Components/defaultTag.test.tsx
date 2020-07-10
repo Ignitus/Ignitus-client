@@ -23,14 +23,14 @@ const styleCheck = () => {
   expect(span).toHaveStyleRule('background', props.background);
 };
 
+it('should rendered', () => {
+  const tree = render(<DefaultTag1 {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<DefaultTag1 />', () => {
   beforeEach(() => {
     wrapper = mount(<DefaultTag1 {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<DefaultTag1 {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render span tag with label', () => {

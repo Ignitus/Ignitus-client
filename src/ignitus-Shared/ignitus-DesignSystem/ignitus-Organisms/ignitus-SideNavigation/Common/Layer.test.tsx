@@ -11,13 +11,13 @@ import { Layer } from './styles';
 expect.addSnapshotSerializer(serializer);
 expect.extend(matchers);
 
-let wrapper;
+it('should rendered', () => {
+  const tree = render(<CommonLayer text="Text" />);
+  expect(tree).toMatchSnapshot();
+});
 
 describe('<Layer />', () => {
-  it('should render', () => {
-    wrapper = render(<CommonLayer text="Text" />);
-    expect(wrapper).toMatchSnapshot();
-  });
+  let wrapper;
 
   it('should render with default border-bottom style', () => {
     wrapper = mount(<CommonLayer text="Text" />);
