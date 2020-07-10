@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import {
   White,
   boxShadowColor,
-} from '../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+} from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
 export const Container = styled.div`
   box-shadow: 0 0.5rem 1rem 0 ${boxShadowColor};
@@ -32,7 +32,7 @@ export const ParentContainer = styled.div`
 
 export const Column = styled.div`
   margin-right: 1.5rem;
-  dislay: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;

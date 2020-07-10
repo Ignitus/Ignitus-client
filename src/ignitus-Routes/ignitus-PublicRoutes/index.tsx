@@ -8,7 +8,7 @@ import { AuthenticationRoutes } from '../ignitus-AuthenticationRoutes';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { StudentProfile } from '../../ignitus-Profile/ignitus-StudentProfile/Components';
 import { CareersPage } from '../../ignitus-CareersPage/Components';
-import { OpportunityDetailsPage } from '../../ignitus-OpportunityDetailsPage/Components/index';
+import { OpportunityDetailsPage } from '../../ignitus-Dashboard/ignitus-Opportunity/ignitus-OpportunityDetails/Components/index';
 
 /**
  * Route-based code splitting.

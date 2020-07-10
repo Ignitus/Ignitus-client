@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading1, Paragraph } from '../../ignitus-Shared';
+import { Heading1, Paragraph } from '../../../../ignitus-Shared';
 import * as S from '../styles';
-import { InfoCard } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunitySideCard/Components';
+import { InfoCard } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunitySideCard/Components';
 import {
   ProjectDescription,
   Funding,
@@ -9,7 +9,7 @@ import {
   InfoCardDetails,
   OpportunityCardDetails,
 } from '../constants';
-import { DashBoardOpportunity } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
+import { DashBoardOpportunity } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
 
 export const OpportunityDetailsPage = () => (
   <S.ParentContainer>
