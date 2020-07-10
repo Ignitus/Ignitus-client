@@ -11,7 +11,7 @@ import {
 } from '../constants';
 import { DashBoardOpportunity } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-DashBoardOpportunity/Components/DashBoardOpportunity';
 
-export const OpportunityDetailsPage = () => (
+export const OpportunityDetails = () => (
   <S.ParentContainer>
     <S.Column>
       {OpportunityCardDetails.map(({ title, description, subtitle, src }) => (

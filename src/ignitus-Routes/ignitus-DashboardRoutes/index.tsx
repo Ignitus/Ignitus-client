@@ -2,6 +2,7 @@
 /* eslint-disable import/extensions */
 import React, { Suspense, lazy, Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { OpportunityDetails } from '../../ignitus-Dashboard/ignitus-Opportunity/ignitus-OpportunityDetails/Components';
 import { Notfound } from '../../ignitus-Shared';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { PrivateRoute } from '../ignitus-PrivateRoutes';
@@ -27,6 +28,10 @@ export const DashboardRoutes = () => (
       <Switch>
         <Route exact path="/" render={() => <Notfound />} />
         <PrivateRoute path="/dashboard" Component={LazyStudentDashBoard} />
+        <Route
+          path="/dashboard/opportunityDetails"
+          component={OpportunityDetails}
+        />
       </Switch>
     </Suspense>
   </React.Fragment>
