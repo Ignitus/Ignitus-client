@@ -27,7 +27,7 @@ export const DefaultPasswordInput = ({
 
   useEffect(() => {
     handleChange(value);
-  }, [handleChange, value]);
+  }, [value]);
 
   return (
     <React.Fragment>
