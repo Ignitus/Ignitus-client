@@ -8,7 +8,7 @@ export const logInRequestUsingEmail = (email, password, userType) => {
   }
 
   return {
-    type: t.LOG_IN_REQUEST,
+    type: t.LOG_IN_REQUEST_USING_EMAIL,
     email,
     password,
     userType,
@@ -23,7 +23,7 @@ export const logInRequestUsingUsername = (userName, password, userType) => {
   }
 
   return {
-    type: t.LOG_IN_REQUEST,
+    type: t.LOG_IN_REQUEST_USING_USERNAME,
     userName,
     password,
     userType,
