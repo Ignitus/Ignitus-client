@@ -15,7 +15,8 @@ export const loginReducer = (
     case t.LOG_IN_RESPONSE:
       return { ...state, isFetching: false, ...action.data };
 
-    case t.LOG_IN_REQUEST:
+    case t.LOG_IN_REQUEST_USING_EMAIL:
+    case t.LOG_IN_REQUEST_USING_USERNAME:
       return {
         ...state,
         isFetching: true,

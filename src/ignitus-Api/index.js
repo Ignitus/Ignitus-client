@@ -29,8 +29,12 @@ export function signUp(userName, email, password, userType) {
   return axios.post(t.STUDENT_SIGN_UP, { userName, email, password, userType });
 }
 
-export function signIn(email, password, userType) {
+export function signInUsingEmail(email, password, userType) {
   return axios.post(t.STUDENT_SIGN_IN, { email, password, userType });
+}
+
+export function signInUsingUsername(userName, password, userType) {
+  return axios.post(t.STUDENT_SIGN_IN, { userName, password, userType });
 }
 
 async function getHeaders(name) {
