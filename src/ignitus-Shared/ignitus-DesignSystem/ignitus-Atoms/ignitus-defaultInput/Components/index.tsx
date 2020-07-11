@@ -6,6 +6,8 @@ export const DefaultInput = ({
   placeholder,
   type,
   name,
+  height,
+  width,
   handleChange,
 }: InputType) => (
   <React.Fragment>
@@ -14,6 +16,8 @@ export const DefaultInput = ({
       type={type}
       name={name}
       onChange={e => handleChange && handleChange(e.target.value)}
+      height={height}
+      width={width}
     />
   </React.Fragment>
 );

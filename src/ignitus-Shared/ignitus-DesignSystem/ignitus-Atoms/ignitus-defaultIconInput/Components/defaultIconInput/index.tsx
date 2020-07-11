@@ -6,6 +6,7 @@ export const DefaultIconInput = ({
   placeholder,
   type,
   name,
+  width,
   handleClick,
   handleChange,
   state,
@@ -24,6 +25,7 @@ export const DefaultIconInput = ({
           type={type}
           placeholder={placeholder}
           value={state}
+          width={width}
           onChange={e => {
             setValue(e.target.value);
           }}

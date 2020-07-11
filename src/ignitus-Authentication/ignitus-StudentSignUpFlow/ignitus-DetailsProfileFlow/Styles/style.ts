@@ -127,7 +127,7 @@ export const StyledDefaultIconInput = styled(DefaultIconInput)`
   svg {
     margin-right: 0.4rem;
   }
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 `;
 
 export const StyledIconInput = styled(DefaultIconInput)`
@@ -136,6 +136,7 @@ export const StyledIconInput = styled(DefaultIconInput)`
 
 export const InputContainer = styled.div`
   margin: 0 0 1rem 0;
+  max-width: 700px;
 `;
 
 export const StyledDefaultCheckbox = styled(DefaultCheckbox)`

@@ -87,26 +87,28 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
               </P.IconContainer>
             </P.HeadingContainer>
             <P.Content>
-              <DefaultButtonWithIcon
-                size="large"
-                category="primary"
-                name={AppIcon.SaveIcon}
-                content="Upload file &nbsp;"
-              />
-              <DefaultTag2
-                label="publication_report.pdf"
-                color={IgnitusBlue}
-                background={GreyThree}
-              />
-
-              <P.StyledDefaultIconInput
-                placeholder="Give your publication a title..."
-                type="text"
-                name={AppIcon.PdfIcon}
-                state=""
-                handleChange={handleChange}
-                handleClick={copy}
-              />
+              <P.InputContainer>
+                <DefaultButtonWithIcon
+                  size="large"
+                  category="primary"
+                  name={AppIcon.SaveIcon}
+                  content="Upload file &nbsp;"
+                />
+                <DefaultTag2
+                  label="publication_report.pdf"
+                  color={IgnitusBlue}
+                  background={GreyThree}
+                />
+                <P.StyledDefaultIconInput
+                  placeholder="Give your publication a title..."
+                  type="text"
+                  name={AppIcon.PdfIcon}
+                  state=""
+                  width="400px"
+                  handleChange={handleChange}
+                  handleClick={copy}
+                />
+              </P.InputContainer>
               <P.LeftRow>
                 <Heading
                   title="Practice in a second language: Perspectives from applied linguistics and cognitive psychology."
@@ -174,7 +176,7 @@ const About = () => (
     <Heading title="About" icon={AppIcon.InfoIcon} />
     <P.Content>
       <P.StyledTextArea
-        rows={4}
+        rows={6}
         cols={100}
         placeholder="Write something about yourself, what you are good at or hobbies"
       />
@@ -201,16 +203,22 @@ const Education = ({ university, address, batch }: EducationProps) => (
           placeholder="University or Institution"
           type="text"
           name="university"
+          height="3rem"
+          width="500px"
         />{' '}
         <P.StyledDefaultInput
           placeholder="Type or Degree"
           type="text"
           name="degree"
+          height="3rem"
+          width="200px"
         />{' '}
         <P.StyledDefaultInput
           placeholder="Field of Study"
           type="text"
           name="study"
+          height="3rem"
+          width="250px"
         />
       </P.InputContainer>
       <P.DateContainer>
@@ -220,6 +228,7 @@ const Education = ({ university, address, batch }: EducationProps) => (
           type="text"
           name={AppIcon.KeyBoardArrowDown}
           state=""
+          width="50px"
           handleChange={handleChange}
           handleClick={copy}
         />
@@ -229,6 +238,7 @@ const Education = ({ university, address, batch }: EducationProps) => (
           type="text"
           name={AppIcon.KeyBoardArrowDown}
           state=""
+          width="50px"
           handleChange={handleChange}
           handleClick={copy}
         />

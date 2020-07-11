@@ -2,10 +2,10 @@
 
 exports[`<DefaultIconInput /> should rendered 1`] = `
 <div
-  class="css-7qg5di"
+  class="css-1ji7vd9"
 >
   <input
-    class="css-1a6zs9k"
+    class="css-m5e268"
     placeholder="Paste URL Here"
     type="text"
     value="copy"

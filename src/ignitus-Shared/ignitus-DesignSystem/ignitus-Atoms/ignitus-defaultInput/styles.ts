@@ -3,8 +3,8 @@ import * as C from '../colors';
 import * as F from '../fonts';
 
 export const Input = styled.input`
-  height: 3rem;
-  width: 300px;
+  height: ${props => props.height};
+  width: ${props => props.width};
   background-color: ${C.GreyLight};
   padding-left: 2rem;
   color: ${C.GreySecondaryText};

@@ -32,6 +32,7 @@ export const ModalShare = ({
         state=""
         name={AppIcon.CopyIcon}
         type="string"
+        width="100px"
         placeholder="Paste URL Here"
         handleClick={copy}
         handleChange={handleChange}

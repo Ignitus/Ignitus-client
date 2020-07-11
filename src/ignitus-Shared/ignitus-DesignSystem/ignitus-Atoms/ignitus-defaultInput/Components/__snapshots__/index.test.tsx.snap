@@ -2,7 +2,7 @@
 
 exports[`<DefaultInput /> should render 1`] = `
 <input
-  class="css-495yyz"
+  class="css-7xmoki"
   name="Input"
   placeholder="Placeholder"
   type="text"
