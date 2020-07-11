@@ -147,7 +147,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/toggleButtons"
           component={interfaceToggleButtons}
         />
-        <Route path="/interface/navDropdown" component={interfaceNavDropdown} />
+        <Route
+          path="/interface/dashboardNavigationDropdown"
+          component={interfaceNavDropdown}
+        />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />

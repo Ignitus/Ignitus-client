@@ -1,15 +1,13 @@
 import React from 'react';
-import * as S from '../styles';
 import { NavDropdown } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-navDropdown/Components';
 import { options, name } from '../constants';
-import { Heading1 } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
+import { Heading2 } from '../../../../../ignitus-Shared';
+import { Interface } from '../../../../styles';
 
 export const interfaceNavDropdown = () => (
-  <S.Container>
-    <Heading1> Dashboard Nav DropDown</Heading1>
-    <br />
-    <S.Component>
-      <NavDropdown options={options} name={name} />
-    </S.Component>
-  </S.Container>
+  <Interface>
+    <Heading2>Dashboard DropDown</Heading2>
+    <hr />
+    <NavDropdown options={options} name={name} />
+  </Interface>
 );
