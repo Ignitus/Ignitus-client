@@ -51,6 +51,8 @@ import { SearchIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ic
 import { StudentIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/studentIcon/index';
 import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/professorIcon/index';
 import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
+import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
+import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -84,6 +86,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.CrossIcon:
       return <CrossIcon {...rest} />;
+
+    case AppIcon.CheckIcon:
+      return <CheckIcon {...rest} />;
 
     case AppIcon.SearchIcon:
       return <SearchIcon {...rest} />;
@@ -184,6 +189,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.SlackIcon:
       return <SlackIcon {...rest} />;
+
+    case AppIcon.ShareIcon:
+      return <ShareIcon {...rest} />;
 
     case AppIcon.MediumIcon:
       return <MediumIcon {...rest} />;

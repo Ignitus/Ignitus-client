@@ -9,7 +9,6 @@ exports[`should rendered 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.5rem;
 }
 
 .emotion-5 {

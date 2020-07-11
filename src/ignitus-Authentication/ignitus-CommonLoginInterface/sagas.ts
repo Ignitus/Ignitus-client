@@ -9,6 +9,7 @@ function* signIn(action) {
   const { email, password, userType } = action;
   try {
     const data = yield call(api.signIn, email, password, userType);
+    console.log('success', data);
     if (!data.data.data) {
       /* eslint-disable no-throw-literal */
       throw { ...data };
@@ -18,7 +19,7 @@ function* signIn(action) {
       yield put(a.logInResponse(data.data));
     }
   } catch (e) {
-    yield put(a.logInResponse(e.data));
+    yield put(a.logInResponse(e.response.data));
   }
 }
 
