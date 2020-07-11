@@ -27,7 +27,11 @@ export const DashboardRoutes = () => (
       <LazyDashBoardNavigation />
       <Switch>
         <Route exact path="/" render={() => <Notfound />} />
-        <PrivateRoute path="/dashboard" Component={LazyStudentDashBoard} />
+        <PrivateRoute
+          exact
+          path="/dashboard"
+          Component={LazyStudentDashBoard}
+        />
         <Route
           path="/dashboard/opportunityDetails"
           component={OpportunityDetails}

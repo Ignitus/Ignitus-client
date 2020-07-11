@@ -1,38 +1,51 @@
 import styled from '@emotion/styled';
+import { minimumWidthQuery } from '../../../ignitus-Shared';
 import {
   White,
   boxShadowColor,
 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
-export const Container = styled.div`
+export const BottomColumn = styled.div`
   box-shadow: 0 0.5rem 1rem 0 ${boxShadowColor};
   background-color: ${White};
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  overflow: hidden;
-  padding: 2rem 3rem;
+  padding: 2rem;
   margin-top: 1rem;
-  max-width: 55rem;
 `;
 
 export const Content = styled.div`
   padding: 1rem 0rem;
 `;
 
-export const ParentContainer = styled.div`
+export const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  margin: 3rem 2rem;
+  margin: 3rem;
   padding: 2rem;
-  justify-content: flex-start;
-  align-items: flex-start;
+
+  ${minimumWidthQuery[0]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[3]} {
+    flex-direction: column;
+  }
+  ${minimumWidthQuery[4]} {
+    flex-direction: row;
+  }
+  ${minimumWidthQuery[5]} {
+    flex-direction: row;
+  }
 `;
 
-export const Column = styled.div`
-  margin-right: 1.5rem;
+export const RowOne = styled.div`
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;
+
+export const RowTwo = styled.div`
+  margin: 1rem;
+`;
+
+export const Dot = styled.span``;

@@ -7,32 +7,24 @@ import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 
 export const Container = styled.div`
   border-radius: 1rem;
-  width: 26rem;
   background-color: ${White};
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  max-height: 35rem;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 20rem;
-  padding: 3rem;
+  min-width: 18rem;
+  padding: 2rem;
   border-bottom: 0.2rem solid ${GreyBackground};
-  overflow: hidden;
 `;
 
 export const ButtonsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  width: 25rem;
   padding: 2rem;
 `;
 
@@ -41,9 +33,10 @@ export const Heading = styled(Heading4)`
 `;
 
 export const Button = styled(RoundedButton)`
-  width: 11rem;
+  width: 12rem;
 `;
 
 export const Icon = styled(I)`
   fill: ${IgnitusBlue};
+  margin-right: 0.2rem;
 `;
