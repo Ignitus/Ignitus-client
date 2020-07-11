@@ -4,6 +4,7 @@ import { SemiBold } from '../../ignitus-Atoms/fonts';
 import { Heading4 } from '../../ignitus-Atoms/typography';
 import { RoundedButton } from '../../ignitus-Atoms/buttons';
 import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
+import { StatusType } from './types';
 
 export const Container = styled.div`
   border-radius: 1rem;
@@ -36,7 +37,12 @@ export const Button = styled(RoundedButton)`
   width: 12rem;
 `;
 
-export const Icon = styled(I)`
+export const Share = styled(I)`
   fill: ${IgnitusBlue};
   margin-right: 0.2rem;
+`;
+
+export const ApplyStatus = styled(I)<StatusType>`
+  fill: ${White};
+  display: ${props => (props.status === 'Applied' ? 'inline-block' : 'none')};
 `;

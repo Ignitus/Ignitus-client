@@ -1,17 +1,13 @@
 import React from 'react';
 import * as S from '../styles';
-import { Opportunity, Cardtypes } from '../types';
+import { OpportunityType, CardType } from '../types';
 import { Paragraph } from '../../../ignitus-Atoms/typography';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
-export const InfoCard = ({ location, commitment, salary }: Cardtypes) => {
-  const [buttonText, setButtonText] = React.useState(<div> Apply </div>);
+export const InfoCard = ({ location, commitment, salary }: CardType) => {
+  const [applyButton, setStatus] = React.useState('Apply');
   const handleClick = () => {
-    setButtonText(
-      <div>
-        <S.Icon name={AppIcon.CheckIcon} /> Applied
-      </div>,
-    );
+    setStatus('Applied');
   };
   return (
     <S.Container>
@@ -21,21 +17,22 @@ export const InfoCard = ({ location, commitment, salary }: Cardtypes) => {
       <S.ButtonsWrapper>
         <S.Button size="large" category="primary" onClick={handleClick}>
           {' '}
-          {buttonText}{' '}
+          <S.ApplyStatus status={applyButton} name={AppIcon.CheckIcon} />
+          {applyButton}{' '}
         </S.Button>
         <S.Button size="large" category="secondary">
           {' '}
           Save{' '}
         </S.Button>
         <S.Button size="large" category="grey">
-          <S.Icon name={AppIcon.ShareIcon} /> Share Link
+          <S.Share name={AppIcon.ShareIcon} /> Share Link
         </S.Button>
       </S.ButtonsWrapper>
     </S.Container>
   );
 };
 
-const Card = ({ title, description }: Opportunity) => (
+const Card = ({ title, description }: OpportunityType) => (
   <S.Wrapper>
     <S.Heading>{title}</S.Heading>
     <br />
