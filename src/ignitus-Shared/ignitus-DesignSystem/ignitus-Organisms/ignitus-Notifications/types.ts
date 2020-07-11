@@ -1,14 +1,14 @@
 export type InputTypes = {
-  colorText: string;
-  colorTitle: string;
-  background: string;
-  image?: string;
+  textColor: string;
+  titleColor: string;
+  bgColor: string;
+  picture?: string;
   title?: string;
   textLeft?: string;
   textRight?: string;
 };
 
 export type StyledTagProps = {
-  background: string;
+  bgColor: string;
   color: string;
 };

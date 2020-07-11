@@ -9,27 +9,27 @@ import { InputTypes } from '../types';
 
 export const Notifications = withErrorBoundary(
   ({
-    colorText,
-    colorTitle,
-    background,
-    image,
+    textColor,
+    titleColor,
+    bgColor,
+    picture,
     title,
     textLeft,
     textRight,
     ...rest
   }: InputTypes) => (
-    <S.StyledTag color={colorText} background={background} {...rest}>
+    <S.Container color={textColor} bgColor={bgColor} {...rest}>
       <S.LeftContainer>
-        {image && <S.Image src={image} alt="universityLogo" height="150" />}
+        {picture && <S.Image src={picture} />}
         {textLeft}
-        <S.Text color={colorTitle}>&nbsp; {title} &nbsp;</S.Text>
+        <S.Text color={titleColor}>&nbsp; {title} &nbsp;</S.Text>
         {textRight}
       </S.LeftContainer>
       <S.RightContainer>
         <S.IconContainer>
-          <S.StyledIcon color={C.GreyOne} name={AppIcon.CrossIcon} />
+          <S.Icon color={C.GreyOne} name={AppIcon.CrossIcon} />
         </S.IconContainer>
       </S.RightContainer>
-    </S.StyledTag>
+    </S.Container>
   ),
 );

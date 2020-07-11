@@ -1,21 +1,15 @@
 import styled from '@emotion/styled';
-import { Icon } from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { StyledTagProps } from './types';
 import { Paragraph } from '../../..';
 import { Bold } from '../../ignitus-Atoms/fonts';
 
-export const StyledTag = styled.span<StyledTagProps>`
-  background: ${props => props.background};
+export const Container = styled.span<StyledTagProps>`
+  background: ${props => props.bgColor};
   color: ${props => props.color};
-  text-align: center;
   border-radius: 0.5rem;
-  line-height: 1rem;
-  padding: 1rem 2rem;
-  display: inline-flex;
-  align-items: center;
   margin: 0.5rem;
   cursor: pointer;
-  width: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,19 +19,16 @@ export const StyledTag = styled.span<StyledTagProps>`
 
 export const IconContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 `;
 
-export const StyledIcon = styled(Icon)`
-  width: 1.4rem;
+export const Icon = styled(I)`
+  width: 1.5rem;
   fill: ${props => props.color};
   transition: 0.3s;
 `;
 
 export const Image = styled.img`
   height: 3rem;
-  width: 3rem;
   border-radius: 50%;
   margin-right: 1rem;
 `;
@@ -50,7 +41,6 @@ export const Text = styled(Paragraph)`
 export const LeftContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
 `;
 
