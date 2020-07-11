@@ -10,19 +10,18 @@ const props = {
   secondaryText: 'secondary text',
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should render', () => {
+  const tree = render(<Overlay {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<Overlay />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<Overlay {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<Overlay {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render logo, heading, paragraph', () => {

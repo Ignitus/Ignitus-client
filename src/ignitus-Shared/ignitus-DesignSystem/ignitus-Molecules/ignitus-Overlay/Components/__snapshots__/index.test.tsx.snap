@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Overlay /> should render 1`] = `
+exports[`should render 1`] = `
 .emotion-4 {
   position: relative;
   display: -webkit-box;
