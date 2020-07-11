@@ -90,7 +90,15 @@ export const allEdges: Edges[] = [
             title: 'Secondary',
             route: '/interface/secondaryDropdown',
           },
+          {
+            title: 'Dashboard Navigation',
+            route: '/interface/dashboardNavigationDropdown',
+          },
         ],
+      },
+      {
+        title: 'Loader',
+        route: '/interface/loader',
       },
     ],
   },
@@ -197,11 +205,19 @@ export const allEdges: Edges[] = [
             title: 'Side Profile',
             route: '/interface/sideProfile',
           },
+          {
+            title: 'Message Card',
+            route: '/interface/messageCard',
+          },
         ],
       },
       {
         title: 'Random Avatar',
         route: '/interface/avatar',
+      },
+      {
+        title: 'Notifications',
+        route: '/interface/notifications',
       },
     ],
   },

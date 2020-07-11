@@ -3,11 +3,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { FunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Paragraph,
   Heading1,
-  RoundedButton,
   DefaultCheckbox,
   withErrorBoundary,
 } from '../../../../ignitus-Shared';
@@ -17,10 +15,6 @@ import * as C from '../Styles/style';
 export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress
-        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressTwo.png"
-        alt="progress-bar"
-      />
       <Heading1>What are you interested in?</Heading1>
       <Paragraph>This will customize your experience.</Paragraph>
       <Paragraph>
@@ -52,14 +46,5 @@ export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
         />
       </C.RightSection>
     </T.MiddleSection>
-    <T.BottomSection>
-      <RoundedButton size="large" category="primary">
-        <Link to="/flow/emailFlow">Save & Continue</Link>
-      </RoundedButton>
-      <Paragraph>
-        Skip for now
-        {' >> '}
-      </Paragraph>
-    </T.BottomSection>
   </T.WelcomeContainer>
 ));

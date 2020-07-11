@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Opportunity /> should render 1`] = `
+exports[`should render 1`] = `
 .emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;

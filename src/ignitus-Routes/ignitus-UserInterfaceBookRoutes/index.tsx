@@ -6,6 +6,7 @@ import { Notfound } from '../../ignitus-Shared';
 import { interfaceButttons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceButtons/Components';
 import { interfaceNavigation } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNavigation/Components';
 import { interfaceIcons } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceIcons/Components';
+import { interfaceLoader } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceLoader/Components';
 import { interfaceTypography } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTypography/Components';
 import { interfaceCards } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceCards/Components';
 import { interfaceNotFound } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceNotFound/Components';
@@ -17,6 +18,7 @@ import { interfaceCheckBox } from '../../ignitus-UserInterfaceBook/Components/At
 import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceInput/Components';
 import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
+import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -30,10 +32,13 @@ import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Tem
 import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
+import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
+import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
+import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
 
 const Container = styled.div`
   display: flex;
@@ -82,6 +87,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={interfaceNavigation}
         />
         <Route path="/interface/icons" component={interfaceIcons} />
+        <Route path="/interface/loader" component={interfaceLoader} />
         <Route path="/interface/typography" component={interfaceTypography} />
         <Route path="/interface/cards" component={interfaceCards} />
         <Route
@@ -111,6 +117,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/opportunitySaved"
           component={interfaceSavedOpportunity}
         />
+        <Route
+          path="/interface/opportunitySideCard"
+          component={interfaceOpportunitySideCard}
+        />
         <Route path="/interface/searchInput" component={interfaceSearchInput} />
         <Route
           path="/interface/defaultIconInput"
@@ -138,9 +148,18 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/toggleButtons"
           component={interfaceToggleButtons}
         />
+        <Route
+          path="/interface/dashboardNavigationDropdown"
+          component={interfaceDashboardNavigationDropdown}
+        />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
+        <Route
+          path="/interface/notifications"
+          component={InterfaceNotifications}
+        />
+        <Route path="/interface/messageCard" component={interfaceMessageCard} />
       </Switch>
     </LeftRow>
   </Container>
