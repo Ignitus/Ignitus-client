@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading1, Paragraph } from '../../../../ignitus-Shared';
+import { Paragraph } from '../../../../ignitus-Shared';
 import * as S from '../styles';
 import { InfoCard } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-OpportunitySideCard/Components';
 import {
@@ -25,7 +25,7 @@ export const OpportunityDetails = () => (
         />
       ))}
       <S.BottomColumn>
-        <Heading1>Project Description</Heading1>
+        <Heading3>Project Description</Heading3>
         <S.Content>
           {ProjectDescription.map(content => (
             <S.Content key={content}>
