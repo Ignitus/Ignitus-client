@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Modal /> should render 1`] = `
+exports[`should render 1`] = `
 .emotion-6 {
   background-image: url('https://storage.googleapis.com/ignitus_assets/ig-assets/confetti.svg');
   background-color: #ffffff;

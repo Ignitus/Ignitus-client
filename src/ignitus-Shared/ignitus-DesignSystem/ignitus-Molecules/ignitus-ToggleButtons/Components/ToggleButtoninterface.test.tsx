@@ -16,19 +16,18 @@ const props: ToggleButtonInterfaceProps = {
   handleClick: jest.fn(),
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should render', () => {
+  const tree = render(<ToggleButtonInterface {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<ToggleButtonInterface />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<ToggleButtonInterface {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<ToggleButtonInterface {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render buttons with correct categories', () => {

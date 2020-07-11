@@ -130,11 +130,11 @@ export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<
   }
 `;
 
-
 export const StyledIcon = styled(Icon)<StyleProps>`
   width: 1.2rem;
   height: 1.2rem;
   fill: ${IgnitusBlue};
+`;
 
 export const Fullscreen = styled.div`
   position: fixed;
@@ -142,5 +142,4 @@ export const Fullscreen = styled.div`
   left: 0;
   height: 100vh;
   width: 100vw;
-
 `;

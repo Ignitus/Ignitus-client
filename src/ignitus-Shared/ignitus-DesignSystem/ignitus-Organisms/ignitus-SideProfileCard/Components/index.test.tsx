@@ -12,19 +12,18 @@ const props: Props = {
   trackingInformation: '10 students are tracking your progree',
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should rendered', () => {
+  const tree = render(<SideProfileCard {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<SideProfileCard />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<SideProfileCard {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<SideProfileCard {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render name, designation, trackingInformation correctly', () => {

@@ -11,17 +11,16 @@ const props: Props = {
   name: AppIcon.QuestionAnswerIcon,
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
-describe('<UserProfileCard />', () => {
-  it('should render', () => {
-    wrapper = render(<UserProfileCard />);
-    expect(wrapper).toMatchSnapshot();
-  });
+it('should rendered', () => {
+  const tree = render(<UserProfileCard />);
+  expect(tree).toMatchSnapshot();
+});
 
+describe('<UserProfileCard />', () => {
+  let wrapper;
   it('should render Icon, Paragraph, Avatar', () => {
     wrapper = mount(<UserProfileCard />);
 

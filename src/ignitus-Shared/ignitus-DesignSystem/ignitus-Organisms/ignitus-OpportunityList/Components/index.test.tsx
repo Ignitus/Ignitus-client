@@ -4,19 +4,18 @@ import emotionSerializer, { matchers } from 'jest-emotion';
 import { BtnWithIcon, Opportunity } from './index';
 import * as S from '../styles';
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should render', () => {
+  const tree = render(<Opportunity />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<Opportunity />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<Opportunity />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<Opportunity />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render BtnWithIcon', () => {

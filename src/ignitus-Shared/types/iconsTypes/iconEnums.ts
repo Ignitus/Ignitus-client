@@ -54,4 +54,5 @@ export enum AppIcon {
   MediumIcon = 'MediumIcon',
   YouTubeIcon = 'YouTubeIcon',
   RemoteJobIcon = 'RemoteJobIcon',
+  CheckIcon = 'CheckIcon',
 }

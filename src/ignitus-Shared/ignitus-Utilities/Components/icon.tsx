@@ -55,7 +55,8 @@ import { SavePlusIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 import { RemoteJobIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/remoteJobIcon/index';
 import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
-import { FilledMessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledMessageIcon/index';
+import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
+import { FilledMessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledMessageIcon';
 
 type Props = {
   name: AppIcon;
@@ -89,6 +90,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.CrossIcon:
       return <CrossIcon {...rest} />;
+
+    case AppIcon.CheckIcon:
+      return <CheckIcon {...rest} />;
 
     case AppIcon.SearchIcon:
       return <SearchIcon {...rest} />;
@@ -199,6 +203,9 @@ export const Icon = ({ name, ...rest }: Props) => {
     case AppIcon.SlackIcon:
       return <SlackIcon {...rest} />;
 
+    case AppIcon.ShareIcon:
+      return <ShareIcon {...rest} />;
+
     case AppIcon.MediumIcon:
       return <MediumIcon {...rest} />;
 
@@ -222,9 +229,6 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.ProfessorIcon:
       return <ProfessorIcon {...rest} />;
-
-    case AppIcon.ShareIcon:
-      return <ShareIcon {...rest} />;
 
     case AppIcon.RemoteJobIcon:
       return <RemoteJobIcon {...rest} />;

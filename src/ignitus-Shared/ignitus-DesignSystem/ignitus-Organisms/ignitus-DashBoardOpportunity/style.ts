@@ -9,7 +9,6 @@ export const Container = styled.div`
   background-color: ${C.White};
   border-radius: 20px;
   display: flex;
-  margin: 0.5rem;
 `;
 
 export const Row = styled(flexibleRowDiv)``;
