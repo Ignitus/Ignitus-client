@@ -1,32 +1,36 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { White, IgnitusBlue } from '../colors';
-import { Icon } from '../../../ignitus-Utilities/Components/icon';
+import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { StyleProps } from './types';
 import { MD } from '../fonts';
 
 export const Container = styled.div`
-  background-color: ${White};
+  display: flex;
+  flex-direction: column;
   width: 12rem;
-  border-radius: 1rem 0rem 1rem 1rem;
-  overflow: hidden;
-  left: 0rem;
+`;
+
+export const Column = styled.div`
+  background-color: ${White};
+  border-radius: 1rem;
   margin-top: 1rem;
 `;
 
-export const NavItem = styled.div`
-  display: flex;
-  justify-content: flex-end;
+export const NavigationHeading = styled.div`
   align-items: center;
   color: ${IgnitusBlue};
   cursor: pointer;
+  display: flex;
   font-size: ${MD};
-  width: 12rem;
+  justify-content: flex-end;
 `;
 
-export const StyledIcon = styled(Icon)<StyleProps>`
-  height: 1.5rem;
-  width: 1.5rem;
+export const Icon = styled(I)<StyleProps>`
+  height: 2rem;
   fill: ${IgnitusBlue};
-  margin-left: ${props => (props.marginLeft ? '0.5rem' : '')};
-  margin-right: ${props => (props.marginRight ? '0.5rem' : '')};
+  margin: 0 0.5rem;
+`;
+
+export const Text = styled.div`
+  text-align: center;
 `;

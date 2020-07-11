@@ -1,6 +1,10 @@
 export type Props = {
-  options: object[];
-  name: string;
+  Options: Option[];
+  Name: string;
+};
+
+type Option = {
+  title: string;
 };
 
 export type StyleProps = {

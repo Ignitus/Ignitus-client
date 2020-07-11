@@ -13,21 +13,6 @@ exports[`should rendered 1`] = `
   margin-bottom: none;
 }
 
-.emotion-1 .NavDropdown {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .emotion-1:hover {
   background-color: #000066;
   color: #ffffff;

@@ -14,6 +14,5 @@ export type StyledLayerProps = {
   marginTop?: boolean;
   marginBottom?: boolean;
   containIcon?: boolean;
-  alignCenter?: boolean;
   semiBold?: boolean;
 };

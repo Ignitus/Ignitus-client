@@ -1,21 +1,17 @@
-export const options = [
+export const Options = [
   {
-    details: 'Dashboard',
-    isLast: false,
+    title: 'Dashboard',
   },
   {
-    details: 'Profile',
-    isLast: false,
+    title: 'Profile',
   },
   {
-    details: 'Settings',
-    isLast: false,
+    title: 'Settings',
   },
-  { details: 'Privacy Policy', isLast: false },
+  { title: 'Privacy Policy' },
   {
-    details: 'Log out',
-    isLast: true,
+    title: 'Log out',
   },
 ];
 
-export const name = 'Sophia';
+export const Name = 'Sophia';
