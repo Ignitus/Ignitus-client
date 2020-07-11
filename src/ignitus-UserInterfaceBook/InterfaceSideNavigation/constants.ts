@@ -215,6 +215,10 @@ export const allEdges: Edges[] = [
         title: 'Random Avatar',
         route: '/interface/avatar',
       },
+      {
+        title: 'Notifications',
+        route: '/interface/notifications',
+      },
     ],
   },
   {
