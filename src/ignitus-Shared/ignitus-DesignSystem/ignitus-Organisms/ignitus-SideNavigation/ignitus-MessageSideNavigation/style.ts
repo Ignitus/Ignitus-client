@@ -10,6 +10,7 @@ export const MessageContainer = styled(flexibleColDiv)`
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
   width: 14rem;
   height: 16rem;
+  overflow: hidden;
 `;
 
 export const Layer = styled(CommonLayer)`

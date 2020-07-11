@@ -7,14 +7,15 @@ exports[`should rendered 1`] = `
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  margin-top: none;
-  margin-bottom: none;
   padding: 1rem 0;
   width: 100%;
+  margin-top: none;
+  margin-bottom: none;
 }
 
 .emotion-1:hover {
   background-color: #000066;
+  color: #ffffff;
 }
 
 .emotion-1:hover p {

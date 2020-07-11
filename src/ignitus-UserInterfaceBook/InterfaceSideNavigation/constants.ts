@@ -90,6 +90,10 @@ export const allEdges: Edges[] = [
             title: 'Secondary',
             route: '/interface/secondaryDropdown',
           },
+          {
+            title: 'Dashboard Navigation',
+            route: '/interface/dashboardNavigationDropdown',
+          },
         ],
       },
       {
