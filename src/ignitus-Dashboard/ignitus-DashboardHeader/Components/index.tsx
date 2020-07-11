@@ -1,19 +1,32 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { withErrorBoundary, AppIcon, useToggle } from '../../../ignitus-Shared';
 import * as N from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-Navigation/styles';
+import { Overlay } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
+
+const OVERLAY_DURATION = 600;
 
 export const DashBoardNavigation: React.FC = withErrorBoundary(
-  ({ logUserOut }: any) => {
+  withRouter(({ logUserOut, history }: any) => {
+    const [visibleLogoutOverlay, setVisibleLogoutOverlay] = useState(false);
+    const [isExpanded, toogleIsExpanded] = useToggle(false);
+
     const logout = () => {
       logUserOut();
       localStorage.clear();
-      return <Redirect to="/" />;
+      history.push('/');
     };
 
-    const [isExpanded, toogleIsExpanded] = useToggle(false);
+    const onClickLogout = () => {
+      setVisibleLogoutOverlay(true);
+
+      setTimeout(() => {
+        logout();
+      }, OVERLAY_DURATION);
+    };
+
     const userInformation: string | null = localStorage.getItem('data');
     let userEmail: string = '';
     let userType: string = '';
@@ -47,10 +60,19 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
             <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
           </N.NavigationLinkItem>
 
-          <N.NavigationLinkItem onClick={logout}>
+          <N.NavigationLinkItem onClick={onClickLogout}>
             <N.NavigationLink to="#">Logout</N.NavigationLink>
           </N.NavigationLinkItem>
         </N.NavigationLinks>
+
+        {visibleLogoutOverlay && (
+          <N.Fullscreen>
+            <Overlay
+              primaryText="You are now logged out."
+              secondaryText="See you soon!"
+            />
+          </N.Fullscreen>
+        )}
 
         <N.Burger
           onClick={toogleIsExpanded}
@@ -59,5 +81,5 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
         />
       </N.Navigation>
     );
-  },
+  }),
 );

@@ -92,6 +92,10 @@ export const allEdges: Edges[] = [
           },
         ],
       },
+      {
+        title: 'Loader',
+        route: '/interface/loader',
+      },
     ],
   },
   {
@@ -196,6 +200,10 @@ export const allEdges: Edges[] = [
           {
             title: 'Side Profile',
             route: '/interface/sideProfile',
+          },
+          {
+            title: 'Message Card',
+            route: '/interface/messageCard',
           },
         ],
       },

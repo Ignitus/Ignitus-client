@@ -13,7 +13,7 @@ export const NonAuthenticatedNavigationItemsList: NavigationItems[] = [
 
   {
     title: 'Join',
-    route: 'https://bit.ly/2SaYXMO',
+    route: 'https://bit.ly/JoinIgnitusSlack',
   },
 
   {
@@ -40,7 +40,7 @@ export const AuthenticatedNavigationItemsList: NavigationItems[] = [
 
   {
     title: 'Join',
-    route: 'https://bit.ly/2SaYXMO',
+    route: 'https://bit.ly/JoinIgnitusSlack',
   },
 
   {

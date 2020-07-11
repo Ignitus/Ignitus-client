@@ -13,19 +13,18 @@ const props: Opportunity = {
     'https://storage.googleapis.com/ignitus_assets/ig-opportunities/universityOfMelbourne.png',
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should rendered', () => {
+  const tree = render(<DashBoardOpportunity {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<DashBoardOpportunity />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<DashBoardOpportunity {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<DashBoardOpportunity {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render Card component', () => {

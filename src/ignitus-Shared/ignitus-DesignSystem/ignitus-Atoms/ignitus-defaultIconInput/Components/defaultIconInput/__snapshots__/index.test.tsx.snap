@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DefaultIconInput /> should rendered 1`] = `
+exports[`should rendered 1`] = `
 <div
   class="css-7qg5di"
 >
