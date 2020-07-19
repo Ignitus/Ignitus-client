@@ -1,7 +1,8 @@
 import { AuthData } from '../../ignitus-Shared';
 
 export interface LogInProps {
-  logInRequest: Function;
+  logInRequestUsingEmail: Function;
+  logInRequestUsingUsername: Function;
   logInData: AuthData;
   clearPreviousLogin: Function;
 }
