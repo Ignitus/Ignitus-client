@@ -1,7 +1,6 @@
 import { LoginState, SignupState } from './types';
 
 export const LoginStatePayload: LoginState = {
-  userName: '',
   email: '',
   password: '',
   showPassword: false,
@@ -11,6 +10,7 @@ export const LoginStatePayload: LoginState = {
 
 export const SignupStatePayload: SignupState = {
   ...LoginStatePayload,
+  userName: '',
   confirmPassword: '',
   equalmessage: false,
 };

@@ -9,23 +9,17 @@ import {
 } from '../../../ignitus-Shared';
 
 export interface LogInProps {
-  logInRequestUsingEmail: Function;
-  logInRequestUsingUsername: Function;
+  logInRequest: Function;
   logInData: AuthData;
   clearPreviousLogin: Function;
 }
 
 export const Login: React.FC<LogInProps> = withErrorBoundary(
-  ({
-    logInRequestUsingEmail,
-    logInRequestUsingUsername,
-    logInData,
-    clearPreviousLogin,
-  }: LogInProps) => {
+  ({ logInRequest, logInData, clearPreviousLogin }) => {
     const professorLogInData: AuthData = logInData;
 
     const [state, setState] = useState(LoginStatePayload);
-    const { userName, password } = state;
+    const { email, password } = state;
 
     useEffect(() => () => clearPreviousLogin(), [clearPreviousLogin]);
 
@@ -33,34 +27,38 @@ export const Login: React.FC<LogInProps> = withErrorBoundary(
       e.preventDefault();
       clearPreviousLogin();
 
-      if (isEmpty(userName) || isEmpty(password)) {
+      if (isEmpty(email) || isEmpty(password)) {
         setState({
           ...state,
           emptyMessage: true,
+          invalidEmail: false,
         });
         return;
       }
-
-      if (typeof userName !== 'undefined') {
-        const lastAtPos = userName.lastIndexOf('@');
-        const lastDotPos = userName.lastIndexOf('.');
+      /*
+      if (typeof email !== 'undefined') {
+        const lastAtPos = email.lastIndexOf('@');
+        const lastDotPos = email.lastIndexOf('.');
 
         if (
           !(
             lastAtPos < lastDotPos &&
             lastAtPos > 0 &&
-            userName.indexOf('@@') === -1 &&
+            email.indexOf('@@') === -1 &&
             lastDotPos > 2 &&
-            userName.length - lastDotPos > 2
+            email.length - lastDotPos > 2
           )
         ) {
-          logInRequestUsingUsername(userName, password, 'professor');
-          setState(LoginStatePayload);
-        } else {
-          logInRequestUsingEmail({ email: userName }, password, 'professor');
-          setState(LoginStatePayload);
+          setState({
+            ...state,
+            invalidEmail: true,
+            emptyMessage: false,
+          });
+          return;
         }
-      }
+      } */
+      logInRequest(email, password, 'professor');
+      setState(LoginStatePayload);
     };
 
     return (

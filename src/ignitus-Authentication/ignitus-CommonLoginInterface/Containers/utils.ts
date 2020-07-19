@@ -1,11 +1,7 @@
 import { bindActionCreators } from 'redux';
 
 import { createStructuredSelector } from 'reselect';
-import {
-  logInRequestUsingEmail,
-  logInRequestUsingUsername,
-  clearPreviousLogin,
-} from '../actions';
+import { logInRequest, clearPreviousLogin } from '../actions';
 
 import { makeSelectData } from '../selectors';
 
@@ -14,7 +10,4 @@ export const mapStateToProps = createStructuredSelector({
 });
 
 export const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    { logInRequestUsingEmail, logInRequestUsingUsername, clearPreviousLogin },
-    dispatch,
-  );
+  bindActionCreators({ logInRequest, clearPreviousLogin }, dispatch);

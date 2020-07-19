@@ -9,14 +9,9 @@ import {
 import { LogInProps } from '../types';
 
 export const Login: FunctionComponent<LogInProps> = withErrorBoundary(
-  ({
-    logInRequestUsingUsername,
-    logInRequestUsingEmail,
-    logInData,
-    clearPreviousLogin,
-  }) => {
+  ({ logInRequest, logInData, clearPreviousLogin }) => {
     const [state, setState] = useState(LoginStatePayload);
-    const { userName, password } = state;
+    const { email, password } = state;
 
     useEffect(() => () => clearPreviousLogin(), [clearPreviousLogin]);
 
@@ -24,34 +19,39 @@ export const Login: FunctionComponent<LogInProps> = withErrorBoundary(
       e.preventDefault();
       clearPreviousLogin();
 
-      if (isEmpty(userName) || isEmpty(password)) {
+      if (isEmpty(email) || isEmpty(password)) {
         setState({
           ...state,
           emptyMessage: true,
+          invalidEmail: false,
         });
         return;
       }
+      /*
+        if (typeof email !== 'undefined') {
+          const lastAtPos = email.lastIndexOf('@');
+          const lastDotPos = email.lastIndexOf('.');
 
-      if (typeof userName !== 'undefined') {
-        const lastAtPos = userName.lastIndexOf('@');
-        const lastDotPos = userName.lastIndexOf('.');
-
-        if (
-          !(
-            lastAtPos < lastDotPos &&
-            lastAtPos > 0 &&
-            userName.indexOf('@@') === -1 &&
-            lastDotPos > 2 &&
-            userName.length - lastDotPos > 2
-          )
-        ) {
-          logInRequestUsingUsername(userName, password, 'student');
-          setState(LoginStatePayload);
-        } else {
-          logInRequestUsingEmail({ email: userName }, password, 'student');
-          setState(LoginStatePayload);
+          if (
+            !(
+              lastAtPos < lastDotPos &&
+              lastAtPos > 0 &&
+              email.indexOf('@@') === -1 &&
+              lastDotPos > 2 &&
+              email.length - lastDotPos > 2
+            )
+          ) {
+            setState({
+              ...state,
+              invalidEmail: true,
+              emptyMessage: false,
+            });
+            return;
+          }
         }
-      }
+      */
+      logInRequest(email, password, 'student');
+      setState(LoginStatePayload);
     };
 
     return (

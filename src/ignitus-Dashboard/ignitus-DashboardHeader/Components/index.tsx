@@ -28,11 +28,11 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
     };
 
     const userInformation: string | null = localStorage.getItem('data');
-    let userEmail: string = '';
+    let userName: string = '';
     let userType: string = '';
 
     if (localStorage.getItem('data') && typeof userInformation === 'string') {
-      userEmail = JSON.parse(userInformation).email;
+      userName = JSON.parse(userInformation).userName;
       userType = JSON.parse(userInformation).userType;
     }
 
@@ -57,7 +57,7 @@ export const DashBoardNavigation: React.FC = withErrorBoundary(
           </N.NavigationLinkItem>
 
           <N.NavigationLinkItem>
-            <N.NavigationLink to="#">{userEmail}</N.NavigationLink>
+            <N.NavigationLink to="#">{userName}</N.NavigationLink>
           </N.NavigationLinkItem>
 
           <N.NavigationLinkItem onClick={onClickLogout}>

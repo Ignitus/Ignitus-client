@@ -29,14 +29,17 @@ export function signUp(userName, email, password, userType) {
   return axios.post(t.STUDENT_SIGN_UP, { userName, email, password, userType });
 }
 
-export function signInUsingEmail(email, password, userType) {
-  return axios.post(t.STUDENT_SIGN_IN, { email, password, userType });
+export function signIn(usernameORemail, password, userType) {
+  let email = null;
+  let userName = null;
+  const emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+  if (emailRegex.test(usernameORemail)) {
+    email = usernameORemail;
+  } else {
+    userName = usernameORemail;
+  }
+  return axios.post(t.STUDENT_SIGN_IN, { email, userName, password, userType });
 }
-
-export function signInUsingUsername(userName, password, userType) {
-  return axios.post(t.STUDENT_SIGN_IN, { userName, password, userType });
-}
-
 async function getHeaders(name) {
   const item = await DBHelper.getItemFromDB(t.COND_HEADERS_STORE, name);
 

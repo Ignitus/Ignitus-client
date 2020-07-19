@@ -10,7 +10,6 @@ export interface AuthData {
 }
 
 export interface LoginState {
-  userName: string;
   email: string;
   password: string;
   emptyMessage: boolean;

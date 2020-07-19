@@ -94,12 +94,12 @@ export const Form: FunctionComponent<FormProps> = ({
             <A.EmailUsernameInput
               name={AppIcon.AccountCircleIcon}
               type="string"
-              state={state.userName}
+              state={state.email}
               placeholder="Username or Email"
-              handleChange={userName => {
+              handleChange={email => {
                 setState({
                   ...state,
-                  userName,
+                  email,
                 });
               }}
             />
