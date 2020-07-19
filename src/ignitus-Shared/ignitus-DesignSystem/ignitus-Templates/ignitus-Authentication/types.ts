@@ -35,6 +35,7 @@ export interface FormProps {
 }
 
 export interface SignupState extends LoginState {
+  userName: string;
   confirmPassword: string;
   equalmessage: boolean;
 }
