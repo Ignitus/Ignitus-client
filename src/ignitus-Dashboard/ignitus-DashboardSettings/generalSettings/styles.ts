@@ -106,7 +106,7 @@ export const RightSection = styled.div`
 `;
 
 export const ParagraphLink = styled(Link)`
-  position: absolute;
+  position: relative;
   left: 40%;
   font-size: 0.8rem;
   color: ${Orange};
