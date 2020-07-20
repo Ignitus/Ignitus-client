@@ -22,7 +22,7 @@ export const ParentContainer = styled.div`
 export const LeftContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin: 6rem 2rem 0 2rem;
+  margin: 6rem 2rem 0 5rem;
 `;
 
 export const RightContainer = styled(Container)`
@@ -106,8 +106,8 @@ export const RightSection = styled.div`
 `;
 
 export const ParagraphLink = styled(Link)`
-  position: relative;
-  left: 50%;
+  position: absolute;
+  left: 40%;
   font-size: 0.8rem;
   color: ${Orange};
   &:hover {

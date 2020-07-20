@@ -49,9 +49,7 @@ const GeneralSettings = () => (
               name="password"
             />
           </P.InputSection>
-          {/* <P.RightSection> */}
           <P.ParagraphLink to="#!">Forgot your password?</P.ParagraphLink>
-          {/* </P.RightSection> */}
           <P.RightSection>
             <P.StyledRoundedButton
               size="medium"
