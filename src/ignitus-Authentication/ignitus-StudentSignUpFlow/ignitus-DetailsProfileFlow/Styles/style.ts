@@ -15,6 +15,7 @@ import { TitleProps, IconProps } from '../types';
 import { Icon as I } from '../../../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import { DefaultTag2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
 
 export const TopMiddleSection = styled.div`
   margin-top: 1rem;
@@ -69,11 +70,11 @@ export const University = styled(Heading5)`
 export const Address = styled(Paragraph)`
   font-size: ${F.MD};
   color: ${C.GreySecondaryText};
-  margin: 0.4rem 0;
+  margin: 0.2rem 0 0 1.2rem;
 `;
 
 export const Date = styled(Paragraph)`
-  margin: 0.4rem 0;
+  margin: 0.2rem 0 0 1.2rem;
 `;
 
 export const LeftRow = styled.div`
@@ -97,7 +98,7 @@ export const BottomSection = styled.div`
 
 export const StyledTextArea = styled.textarea`
   background-color: ${C.GreyLight};
-  padding-left: 1rem;
+  padding: 1.2rem;
   color: ${C.GreySecondaryText};
   font-weight: ${F.SemiBold};
   font-size: ${F.MD};
@@ -127,7 +128,7 @@ export const StyledDefaultIconInput = styled(DefaultIconInput)`
   svg {
     margin-right: 0.4rem;
   }
-  margin-left: 0.5rem;
+  margin: 0.5rem;
 `;
 
 export const StyledIconInput = styled(DefaultIconInput)`
@@ -159,3 +160,25 @@ export const HeadingContainer = styled(flexibleRowDiv)`
 `;
 
 export const IconContainer = styled(flexibleRowDiv)``;
+
+export const StyledParagraph = styled(Paragraph)`
+  font-weight: ${F.Bold};
+`;
+
+export const StyledDefaultTag2 = styled(DefaultTag2)`
+  margin: 0.7rem;
+`;
+
+export const StyledText = styled(Paragraph)`
+  color: ${C.GreyOne};
+  margin: 0.5rem;
+  font-size: ${F.XS};
+`;
+
+export const Circle = styled.span`
+  background-color: ${C.IgnitusBlue};
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  margin: 0.3rem 0.5rem 0 0;
+`;

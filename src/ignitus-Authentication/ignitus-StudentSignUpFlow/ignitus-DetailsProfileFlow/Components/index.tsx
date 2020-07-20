@@ -60,17 +60,18 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
             <Heading title="Research Fields" icon={AppIcon.LocalLibraryIcon} />
             <P.Content>
               <P.StyledArea>
-                <DefaultTag2
+                <P.StyledDefaultTag2
                   label="Literature"
                   color={IgnitusBlue}
                   background={White}
                 />
-                <DefaultTag2
+                <P.StyledDefaultTag2
                   label="Psycholinguistics"
                   color={IgnitusBlue}
                   background={White}
                 />
               </P.StyledArea>
+              <P.StyledText>Separate fields with commas</P.StyledText>
             </P.Content>
           </P.ElementContainer>
 
@@ -83,22 +84,24 @@ export const DetailsProfileFlow: FunctionComponent = withErrorBoundary(() => (
                   color={C.White}
                   background={C.IgnitusBlue}
                 />
-                <Paragraph>Add a Publication</Paragraph>
+                <P.StyledParagraph>Add a Publication</P.StyledParagraph>
               </P.IconContainer>
             </P.HeadingContainer>
             <P.Content>
               <P.InputContainer>
-                <DefaultButtonWithIcon
-                  size="large"
-                  category="primary"
-                  name={AppIcon.SaveIcon}
-                  content="Upload file &nbsp;"
-                />
-                <DefaultTag2
-                  label="publication_report.pdf"
-                  color={IgnitusBlue}
-                  background={GreyThree}
-                />
+                <P.LeftRow>
+                  <DefaultButtonWithIcon
+                    size="large"
+                    category="primary"
+                    name={AppIcon.SaveIcon}
+                    content="Upload file &nbsp;"
+                  />
+                  <DefaultTag2
+                    label="publication_report.pdf"
+                    color={IgnitusBlue}
+                    background={GreyThree}
+                  />
+                </P.LeftRow>
                 <P.StyledDefaultIconInput
                   placeholder="Give your publication a title..."
                   type="text"
@@ -194,7 +197,7 @@ const Education = ({ university, address, batch }: EducationProps) => (
           color={C.White}
           background={C.IgnitusBlue}
         />{' '}
-        <Paragraph>Add an Institution</Paragraph>
+        <P.StyledParagraph>Add an Institution</P.StyledParagraph>
       </P.IconContainer>
     </P.HeadingContainer>
     <P.Content>
@@ -204,7 +207,7 @@ const Education = ({ university, address, batch }: EducationProps) => (
           type="text"
           name="university"
           height="3rem"
-          width="500px"
+          width="480px"
         />{' '}
         <P.StyledDefaultInput
           placeholder="Type or Degree"
@@ -247,7 +250,9 @@ const Education = ({ university, address, batch }: EducationProps) => (
           value="to"
         />
       </P.DateContainer>
+      {/* <P.Circle /> */}
       <P.LeftRow>
+        <P.Circle />
         <P.University color={Black}>{university}</P.University>
         <P.RightRow>
           <P.Icon
