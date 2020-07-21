@@ -147,10 +147,13 @@ export const ConfirmPasswordInput = styled(EmailInput)``;
 
 export const PasswordInput = styled(DefaultPasswordInput)`
   padding: 0;
-  margin: 0.5rem 0 0.5rem 1.6rem;
+  margin: 0.5rem 0;
 `;
 
-export const InputGroup = styled(flexibleColDiv)``;
+export const InputGroup = styled.div`
+  width: 50%;
+`;
+
 export const Button = styled(B)`
   border-radius: 0.5rem;
 `;
