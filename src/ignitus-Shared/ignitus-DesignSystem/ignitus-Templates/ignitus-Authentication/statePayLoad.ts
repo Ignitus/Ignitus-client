@@ -10,6 +10,7 @@ export const LoginStatePayload: LoginState = {
 
 export const SignupStatePayload: SignupState = {
   ...LoginStatePayload,
+  userName: '',
   confirmPassword: '',
   equalmessage: false,
 };

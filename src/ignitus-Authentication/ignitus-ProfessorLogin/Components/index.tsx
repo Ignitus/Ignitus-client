@@ -35,7 +35,7 @@ export const Login: React.FC<LogInProps> = withErrorBoundary(
         });
         return;
       }
-
+      /*
       if (typeof email !== 'undefined') {
         const lastAtPos = email.lastIndexOf('@');
         const lastDotPos = email.lastIndexOf('.');
@@ -56,7 +56,7 @@ export const Login: React.FC<LogInProps> = withErrorBoundary(
           });
           return;
         }
-      }
+      } */
       logInRequest(email, password, 'professor');
       setState(LoginStatePayload);
     };

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DefaultButtonWithIcon /> should rendered 1`] = `
+exports[`should rendered 1`] = `
 <button
   class="css-r6j84o"
 >

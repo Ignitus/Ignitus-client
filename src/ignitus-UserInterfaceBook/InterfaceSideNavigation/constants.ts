@@ -90,7 +90,15 @@ export const allEdges: Edges[] = [
             title: 'Secondary',
             route: '/interface/secondaryDropdown',
           },
+          {
+            title: 'Dashboard Navigation',
+            route: '/interface/dashboardNavigationDropdown',
+          },
         ],
+      },
+      {
+        title: 'Loader',
+        route: '/interface/loader',
       },
     ],
   },
@@ -206,6 +214,10 @@ export const allEdges: Edges[] = [
       {
         title: 'Random Avatar',
         route: '/interface/avatar',
+      },
+      {
+        title: 'Notifications',
+        route: '/interface/notifications',
       },
     ],
   },

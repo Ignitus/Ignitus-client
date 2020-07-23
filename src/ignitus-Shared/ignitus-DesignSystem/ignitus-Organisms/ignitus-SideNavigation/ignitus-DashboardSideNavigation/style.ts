@@ -14,6 +14,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
   width: 14rem;
+  overflow: hidden;
 `;
 
 export const Layer = styled(CommonLayer)`
@@ -21,6 +22,7 @@ export const Layer = styled(CommonLayer)`
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  height: 100%;
 `;
 
 export const SideNavIcon = styled(Icon)`

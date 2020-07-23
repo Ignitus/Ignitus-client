@@ -2,10 +2,14 @@ import { isString, isObject } from '../../ignitus-Shared';
 import * as t from './actionTypes';
 
 export const signUpRequest = (
+  userName: string,
   email: string,
   password: string,
   userType: 'student' | 'professor',
 ) => {
+  if (!isString(userName)) {
+    throw new Error(`Username must be string: ${userName}`);
+  }
   if (!isString(email)) {
     throw new Error(`email must be string: ${email}`);
   }
@@ -15,6 +19,7 @@ export const signUpRequest = (
 
   return {
     type: t.SIGN_UP_REQUEST,
+    userName,
     email,
     password,
     userType,

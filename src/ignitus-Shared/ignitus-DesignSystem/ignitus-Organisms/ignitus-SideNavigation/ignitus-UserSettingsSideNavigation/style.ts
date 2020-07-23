@@ -8,7 +8,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
   border-radius: 16px;
   box-shadow: 0 2px 4px 0 ${boxShadowColor};
   width: 14rem;
-  height: 22rem;
+  height: 20rem;
 `;
 
 export const Layer = styled(CommonLayer)`

@@ -53,6 +53,10 @@ export {
 export {
   SecondaryDropDown,
 } from './ignitus-DesignSystem/ignitus-Atoms/ignitus-secondaryDropDown/Components';
+
+export {
+  Loader,
+} from './ignitus-DesignSystem/ignitus-Atoms/ignitus-Loader/Components';
 /**
  * ignitus-Layout
  */
@@ -133,6 +137,9 @@ export {
   UserSettingsSideNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
+export {
+  Notifications,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
 /**
  * ignitus-Templates
  */

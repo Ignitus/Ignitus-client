@@ -33,7 +33,7 @@ export const Team = withErrorBoundary(
   }: TeamPropType) => {
     useEffect(() => {
       getContributorsData();
-    }, []);
+    }, [getContributorsData]);
 
     if (isFetching) {
       return <S.Loader />;

@@ -10,19 +10,18 @@ const props = {
   buttonText: 'button text',
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should render', () => {
+  const tree = render(<ModalHooray {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<Modal />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<ModalHooray {...props} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<ModalHooray {...props} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render button, h1, p tags', () => {

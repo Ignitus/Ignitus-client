@@ -4,19 +4,18 @@ import emotionSerializer, { matchers } from 'jest-emotion';
 import { DashboardFooter } from './index';
 import { Copyright } from '../style';
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should rendered', () => {
+  const tree = render(<DashboardFooter />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<DashboardFooter />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<DashboardFooter />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<DashboardFooter />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render ul, li, p tags', () => {
