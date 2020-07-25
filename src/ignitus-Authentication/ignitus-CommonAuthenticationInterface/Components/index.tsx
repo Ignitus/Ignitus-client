@@ -1,6 +1,7 @@
 import React from 'react';
 import * as t from '../constants';
 import * as A from '../styles';
+import { LazyImage } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 import { withErrorBoundary } from '../../../ignitus-Shared';
 
@@ -23,11 +24,33 @@ function commonLoginRegister(props: Props): React.ComponentType {
         <A.BottomSection>
           <A.RightRow to={studentRoute}>
             <A.Paragraph>Student</A.Paragraph>
-            <A.Image alt="Student auth" src={t.studentAuthentication} />
+            <LazyImage
+              alt="Student auth"
+              src={t.studentAuthentication}
+              height="16rem"
+              width="16rem"
+              width1="10rem"
+              height1="10rem"
+              width2="14rem"
+              height2="14rem"
+              width5="16rem"
+              height5="16rem"
+            />
           </A.RightRow>
           <A.LeftRow to={professorRoute}>
             <A.Paragraph>Professor</A.Paragraph>
-            <A.Image alt="Professor auth" src={t.professorAuthentication} />
+            <LazyImage
+              alt="Professor auth"
+              src={t.professorAuthentication}
+              height="16rem"
+              width="16rem"
+              width1="10rem"
+              height1="10rem"
+              width2="14rem"
+              height2="14rem"
+              width5="16rem"
+              height5="16rem"
+            />
           </A.LeftRow>
         </A.BottomSection>
       </A.Section>

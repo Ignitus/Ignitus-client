@@ -5,6 +5,7 @@ import React from 'react';
 import { Data } from '../constants';
 import { withErrorBoundary, AppIcon, Paragraph } from '../../../ignitus-Shared';
 import { Team, TeamItemProps } from '../types';
+import { LazyImage } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
@@ -26,7 +27,13 @@ const TeamItem = ({
       onMouseOut={() => setValue(false)}
     >
       <S.TeamCard>
-        <S.TeamItemImg src={img} alt={`avatar ${title}`} />
+        <LazyImage
+          src={img}
+          alt={`avatar ${title}`}
+          width="6rem"
+          borderRadius="100%"
+        />
+        {/* <S.Img src={img} alt={`avatar ${title}`} /> */}
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
         <Paragraph>{description}</Paragraph>
         <S.LinkWrapper toggle={value}>

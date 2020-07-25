@@ -130,21 +130,3 @@ export const PerksRow = styled.div`
     margin: 0;
   }
 `;
-
-export const Img = styled.img`
-  ${minimumWidthQuery[1]} {
-    width: 10rem;
-  }
-  ${minimumWidthQuery[2]} {
-    width: 10rem;
-  }
-  ${minimumWidthQuery[3]} {
-    width: 15rem;
-  }
-  ${minimumWidthQuery[4]} {
-    width: 15rem;
-  }
-  ${minimumWidthQuery[5]} {
-    width: 15rem;
-  }
-`;

@@ -9,12 +9,12 @@ import {
   withErrorBoundary,
 } from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
-import * as C from '../Styles/style';
+import { LazyImage } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 export const EmailFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <C.NewsletterImage src={newsletter} alt="newsletter" />
+      <LazyImage src={newsletter} alt="newsletter" />
       <Heading2>Let’s confirm your email.</Heading2>
       <Paragraph>
         {' '}

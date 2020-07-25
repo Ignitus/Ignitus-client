@@ -10,6 +10,7 @@ import {
   RoundedButton,
   withErrorBoundary,
 } from '../../../../ignitus-Shared';
+import { LazyImage } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
@@ -18,7 +19,7 @@ export const EmailConfirmationFlow: FunctionComponent = withErrorBoundary(
   () => (
     <T.WelcomeContainer>
       <T.TopSection>
-        <C.NewsletterImage src={newsletter} alt="newsletter" />
+        <LazyImage src={newsletter} alt="newsletter" />
         <C.TopMiddleSection>
           <Heading2>Your email has been confirmed.</Heading2>
           <Paragraph> Your verified email is sophia.crater@gmail.com</Paragraph>

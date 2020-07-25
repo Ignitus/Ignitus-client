@@ -1,33 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import styled from '@emotion/styled';
+import { Image, placeHolder } from '../styles';
+import { LazyImageTypes } from '../types';
 
-const placeHolder =
-  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=';
-
-const Image = styled.img`
-  display: block;
-  height: 100px;
-  width: 100px;
-  // Add a smooth animation on loading
-  @keyframes loaded {
-    0% {
-      opacity: 0.1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  // I use utilitary classes instead of props to avoid style regenerating
-  &.loaded:not(.has-error) {
-    animation: loaded 300ms ease-in-out;
-  }
-  &.has-error {
-    // fallback to placeholder image on error
-    content: url(${placeHolder});
-  }
-`;
-
-export const LazyImage = ({ src, alt }) => {
+export const LazyImage = ({
+  src,
+  alt,
+  height,
+  width,
+  width0,
+  width1,
+  width2,
+  width3,
+  width4,
+  width5,
+  height1,
+  height2,
+  height5,
+  maxWidth,
+  borderRadius,
+  padding,
+}: LazyImageTypes) => {
   const [imageSrc, setImageSrc] = useState(placeHolder);
   const [imageRef, setImageRef] = useState();
 
@@ -64,13 +56,11 @@ export const LazyImage = ({ src, alt }) => {
         );
         observer.observe(imageRef);
       } else {
-        // Old browsers fallback
         setImageSrc(src);
       }
     }
     return () => {
       didCancel = true;
-      // on component cleanup, we remove the listner
       if (observer && observer.unobserve) {
         observer.unobserve(imageRef);
       }
@@ -83,6 +73,20 @@ export const LazyImage = ({ src, alt }) => {
       alt={alt}
       onLoad={onLoad}
       onError={onError}
+      height={height}
+      width={width}
+      width0={width0}
+      width1={width1}
+      width2={width2}
+      width3={width3}
+      width4={width4}
+      width5={width5}
+      height1={height1}
+      height2={height2}
+      height5={height5}
+      maxWidth={maxWidth}
+      borderRadius={borderRadius}
+      padding={padding}
     />
   );
 };

@@ -63,7 +63,7 @@ export const TeamContainer = styled.div`
   }
 `;
 
-export const TeamItemImg = styled.img`
+export const Img = styled.img`
   border-radius: 100%;
   width: 6em;
 `;

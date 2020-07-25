@@ -8,11 +8,6 @@ export const WelcomeContainer = styled(flexibleColDiv)`
   padding: 2rem;
 `;
 
-export const Progress = styled.img`
-  max-height: 100%;
-  max-width: 100%;
-`;
-
 export const TopSection = styled(flexibleColDiv)``;
 
 export const DefaultDropdownContainer = styled.div`

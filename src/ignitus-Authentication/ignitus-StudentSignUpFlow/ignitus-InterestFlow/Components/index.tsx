@@ -11,6 +11,7 @@ import {
 } from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
+import { LazyImage } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
@@ -40,7 +41,7 @@ export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
         </form>
       </C.LeftSection>
       <C.RightSection>
-        <C.InterestImage
+        <LazyImage
           src="https://storage.googleapis.com/ignitus_assets/ig-assets/interestFlow.png"
           alt="interests"
         />

@@ -57,25 +57,6 @@ export const PictureContainer = styled.section`
   text-align: center;
 `;
 
-export const Img = styled.img`
-  max-width: 100%;
-  padding: 3rem;
-  width: 22rem;
-
-  ${minimumWidthQuery[0]} {
-    width: 16rem;
-  }
-  ${minimumWidthQuery[2]} {
-    width: 18rem;
-  }
-  ${minimumWidthQuery[3]} {
-    width: 20rem;
-  }
-  ${minimumWidthQuery[5]} {
-    width: 22rem;
-  }
-`;
-
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;

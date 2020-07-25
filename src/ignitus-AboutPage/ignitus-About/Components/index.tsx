@@ -5,6 +5,7 @@ import { withErrorBoundary } from '../../../ignitus-Shared';
 import { CoreTeam } from '../../ignitus-CoreTeam/Components';
 import { default as Team } from '../../ignitus-Team';
 import * as S from '../styles';
+import { LazyImage } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 const About: React.FunctionComponent = withErrorBoundary(() => (
   <Fragment>
@@ -12,7 +13,17 @@ const About: React.FunctionComponent = withErrorBoundary(() => (
       <S.AboutContainer>
         <S.TopSection>
           <S.PictureContainer>
-            <S.Img src={AboutImage} alt="aboutus" />
+            <LazyImage
+              src={AboutImage}
+              alt="aboutus"
+              width="22rem"
+              padding="3rem"
+              maxWidth="100%"
+              width0="16rem"
+              width2="18rem"
+              width3="20rem"
+              width5="22rem"
+            />
           </S.PictureContainer>
           <S.ContentContainer>
             <S.Title> About Us</S.Title>

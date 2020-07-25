@@ -13,6 +13,7 @@ import {
   Heading2 as Heading,
 } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 import { PerksType } from '../types';
+import { LazyImage } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 export const CareersPage = () => (
   <React.Fragment>
@@ -77,9 +78,9 @@ const MidSection = () => (
     <S.Section>
       <S.Row direction="row">
         <S.LeftRow alignment="center" flex={1}>
-          <S.Img
+          <LazyImage
             src="https://storage.googleapis.com/ignitus_assets/ig-careers/careerPageAvatarTwo.svg"
-            alt=""
+            alt="career avatar"
           />
         </S.LeftRow>
         <S.RightRow flex={1}>
@@ -171,7 +172,15 @@ const BottomSection = () => (
               ))}
             </S.RightRow>
             <S.LeftRow>
-              <S.Img src={picture} />
+              <LazyImage
+                src={picture}
+                alt="opportunity"
+                width1="10rem"
+                width2="10rem"
+                width3="15rem"
+                width4="15rem"
+                width5="15rem"
+              />
             </S.LeftRow>
           </S.Row>
         </S.OpportunityWrapper>

@@ -76,22 +76,5 @@ export const Paragraph = styled(P)`
   font-weight: ${Medium};
 `;
 
-export const Image = styled.img`
-  width: 16rem;
-  height: 16rem;
-
-  ${minimumWidthQuery[1]} {
-    width: 10rem;
-    height: 10rem;
-  }
-  ${minimumWidthQuery[2]} {
-    width: 14rem;
-    height: 14rem;
-  }
-  ${minimumWidthQuery[5]} {
-    width: 16rem;
-    height: 16rem;
-  }
-`;
 export const LeftRow = styled(StyledLink)``;
 export const RightRow = styled(StyledLink)``;

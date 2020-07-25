@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CoreTeam /> should be rendered 1`] = `
+exports[`should be rendered 1`] = `
 <div
   class="css-fvwany"
 >
@@ -20,8 +20,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Ayush Pareek"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/ayush.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -87,8 +88,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Afelio Padilla"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/afelio.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -154,8 +156,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Divyanshu Rawat"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/divyanshu.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -221,8 +224,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Jennifer Thornton"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/jennifer.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -288,8 +292,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Paarmita Bhargava"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/paarmita.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -355,8 +360,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Desire BahBioh"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/desire.png"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -422,8 +428,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Rajvardhan Oak"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/rajvardhan.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"
@@ -489,8 +496,9 @@ exports[`<CoreTeam /> should be rendered 1`] = `
       >
         <img
           alt="avatar Hafsa Nefouci"
-          class="css-1qe1uq3"
-          src="https://storage.googleapis.com/ignitus_assets/ig-team/hafsa.jpeg"
+          class="css-1cpi2wf"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          width="6rem"
         />
         <h6
           class="css-ijmnw1"

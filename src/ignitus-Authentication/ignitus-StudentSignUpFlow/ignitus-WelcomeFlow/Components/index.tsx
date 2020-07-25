@@ -7,6 +7,7 @@ import {
   withErrorBoundary,
 } from '../../../../ignitus-Shared';
 import * as T from '../Styles/style';
+import { LazyImage } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Assets/Ignitus-LazyImage/Component';
 
 export const WelcomeFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
@@ -47,7 +48,7 @@ export const WelcomeFlow: FunctionComponent = withErrorBoundary(() => (
         </form>
       </T.LeftSection>
       <T.RightSection>
-        <img
+        <LazyImage
           src="https://storage.googleapis.com/ignitus_assets/ig-assets/map.png"
           alt="map"
         />
