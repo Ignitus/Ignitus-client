@@ -17,7 +17,7 @@ const PureCoreTeam = ({ team }: any) => (
   </S.PureCoreTeam>
 );
 
-const TeamItem = ({
+export const TeamItem = ({
   item: { title, img, description, linkedin, angellist },
 }: TeamItemProps) => {
   const [value, setValue] = React.useState(false);
@@ -33,7 +33,6 @@ const TeamItem = ({
           width="6rem"
           borderRadius="100%"
         />
-        {/* <S.Img src={img} alt={`avatar ${title}`} /> */}
         <S.TeamItemTitle>{title}</S.TeamItemTitle>
         <Paragraph>{description}</Paragraph>
         <S.LinkWrapper toggle={value}>

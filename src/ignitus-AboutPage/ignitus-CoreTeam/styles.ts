@@ -63,11 +63,6 @@ export const TeamContainer = styled.div`
   }
 `;
 
-export const Img = styled.img`
-  border-radius: 100%;
-  width: 6em;
-`;
-
 export const TeamCard = styled.div`
   display: flex;
   flex-direction: column;
