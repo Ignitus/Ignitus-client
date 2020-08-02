@@ -15,7 +15,7 @@ export const DefaultIconInput = ({
 
   useEffect(() => {
     handleChange(value);
-  }, [handleChange, value]);
+  }, [value]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <React.Fragment>

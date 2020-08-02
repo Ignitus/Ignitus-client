@@ -32,10 +32,13 @@ import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Tem
 import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceUserProfile/Components';
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
+import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
 import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
+import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
+import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
 
 const Container = styled.div`
   display: flex;
@@ -114,6 +117,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/opportunitySaved"
           component={interfaceSavedOpportunity}
         />
+        <Route
+          path="/interface/opportunitySideCard"
+          component={interfaceOpportunitySideCard}
+        />
         <Route path="/interface/searchInput" component={interfaceSearchInput} />
         <Route
           path="/interface/defaultIconInput"
@@ -141,9 +148,17 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/toggleButtons"
           component={interfaceToggleButtons}
         />
+        <Route
+          path="/interface/dashboardNavigationDropdown"
+          component={interfaceDashboardNavigationDropdown}
+        />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
+        <Route
+          path="/interface/notifications"
+          component={InterfaceNotifications}
+        />
         <Route path="/interface/messageCard" component={interfaceMessageCard} />
       </Switch>
     </LeftRow>

@@ -13,15 +13,15 @@ const props = {
   display: 'block',
 };
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultDropdown {...props} />);
+it('should rendered', () => {
+  const tree = render(<DefaultDropdown {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultDropdown />', () => {
-  it('should rendered', () => {
-    wrapper = render(<DefaultDropdown {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultDropdown {...props} />);
   });
 
   it('should render label, select & option tags', () => {

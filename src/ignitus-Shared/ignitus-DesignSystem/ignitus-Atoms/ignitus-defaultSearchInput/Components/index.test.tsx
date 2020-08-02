@@ -13,15 +13,15 @@ const props: InputTypes = {
 
 const input = 'input[type="text"]';
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultSearchInput {...props} />);
+it('should render', () => {
+  const tree = render(<DefaultSearchInput {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultSearchInput />', () => {
-  it('should render', () => {
-    wrapper = render(<DefaultSearchInput {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultSearchInput {...props} />);
   });
 
   it('should render input with proper props passed', () => {

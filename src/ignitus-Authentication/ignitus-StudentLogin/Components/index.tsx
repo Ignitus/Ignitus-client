@@ -27,28 +27,29 @@ export const Login: FunctionComponent<LogInProps> = withErrorBoundary(
         });
         return;
       }
+      /*
+        if (typeof email !== 'undefined') {
+          const lastAtPos = email.lastIndexOf('@');
+          const lastDotPos = email.lastIndexOf('.');
 
-      if (typeof email !== 'undefined') {
-        const lastAtPos = email.lastIndexOf('@');
-        const lastDotPos = email.lastIndexOf('.');
-
-        if (
-          !(
-            lastAtPos < lastDotPos &&
-            lastAtPos > 0 &&
-            email.indexOf('@@') === -1 &&
-            lastDotPos > 2 &&
-            email.length - lastDotPos > 2
-          )
-        ) {
-          setState({
-            ...state,
-            invalidEmail: true,
-            emptyMessage: false,
-          });
-          return;
+          if (
+            !(
+              lastAtPos < lastDotPos &&
+              lastAtPos > 0 &&
+              email.indexOf('@@') === -1 &&
+              lastDotPos > 2 &&
+              email.length - lastDotPos > 2
+            )
+          ) {
+            setState({
+              ...state,
+              invalidEmail: true,
+              emptyMessage: false,
+            });
+            return;
+          }
         }
-      }
+      */
       logInRequest(email, password, 'student');
       setState(LoginStatePayload);
     };
