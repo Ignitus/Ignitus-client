@@ -5,7 +5,7 @@ export type DefaultIconInputProperties = {
   name: AppIcon;
   placeholder: string;
   state: string;
-  width: string;
+  width?: string;
   handleClick?: ((value: string) => void) | ((value: string) => null);
   handleChange: (value: string) => void;
 };

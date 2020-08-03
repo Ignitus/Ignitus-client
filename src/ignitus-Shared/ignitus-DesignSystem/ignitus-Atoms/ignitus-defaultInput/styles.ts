@@ -12,6 +12,7 @@ export const Input = styled.input`
   font-size: ${F.XL};
   border: none;
   border-radius: 17px;
+  outline: none;
   margin: 0.3rem 0;
 
   ::placeholder {

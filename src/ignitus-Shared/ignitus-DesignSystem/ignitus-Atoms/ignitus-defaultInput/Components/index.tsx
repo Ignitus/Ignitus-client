@@ -6,12 +6,14 @@ export const DefaultInput = ({
   placeholder,
   type,
   name,
-  height,
-  width,
+  height = '',
+  width = '',
   handleChange,
+  ...rest
 }: InputType) => (
   <React.Fragment>
     <Input
+      {...rest}
       placeholder={placeholder}
       type={type}
       name={name}

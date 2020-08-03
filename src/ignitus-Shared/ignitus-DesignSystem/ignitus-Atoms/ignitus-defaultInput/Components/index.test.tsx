@@ -12,15 +12,15 @@ const props = {
 
 const input = type => `input[type="${type}"]`;
 
-let wrapper;
-beforeEach(() => {
-  wrapper = mount(<DefaultInput {...props} />);
+it('should rendered', () => {
+  const tree = render(<DefaultInput {...props} />);
+  expect(tree).toMatchSnapshot();
 });
 
 describe('<DefaultInput />', () => {
-  it('should render', () => {
-    wrapper = render(<DefaultInput {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultInput {...props} />);
   });
 
   it('should render input with defined type in prop', () => {

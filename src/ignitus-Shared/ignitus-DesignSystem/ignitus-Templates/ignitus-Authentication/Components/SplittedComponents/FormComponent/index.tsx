@@ -61,19 +61,49 @@ export const Form: FunctionComponent<FormProps> = ({
 
       <A.LeftColumnTwo>
         <A.InputGroup>
-          <A.EmailInput
-            name={AppIcon.MessageIcon}
-            type="string"
-            width="100px"
-            state={state.email}
-            placeholder="Email"
-            handleChange={email => {
-              setState({
-                ...state,
-                email,
-              });
-            }}
-          />
+          {authenticationType === 'SignUp' && (
+            <>
+              <A.UsernameInput
+                name={AppIcon.AccountCircleIcon}
+                type="string"
+                state={state.userName}
+                placeholder="Username"
+                handleChange={userName => {
+                  setState({
+                    ...state,
+                    userName,
+                  });
+                }}
+              />
+              <A.EmailInput
+                name={AppIcon.MessageIcon}
+                type="string"
+                state={state.email}
+                placeholder="Email"
+                handleChange={email => {
+                  setState({
+                    ...state,
+                    email,
+                  });
+                }}
+              />
+            </>
+          )}
+
+          {authenticationType !== 'SignUp' && (
+            <A.EmailUsernameInput
+              name={AppIcon.AccountCircleIcon}
+              type="string"
+              state={state.email}
+              placeholder="Username or Email"
+              handleChange={email => {
+                setState({
+                  ...state,
+                  email,
+                });
+              }}
+            />
+          )}
 
           <A.PasswordInput
             placeholder="Password"

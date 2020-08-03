@@ -110,6 +110,7 @@ export const StyledTextArea = styled.textarea`
     font-weight: ${F.SemiBold};
     font-size: ${F.MD};
     opacity: 0.5;
+  }
 `;
 
 export const StyledArea = styled.div`

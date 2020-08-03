@@ -28,19 +28,18 @@ const colorCheck = () => {
   expect(Icon).toHaveStyleRule('fill', propsStyledIcon.color);
 };
 
-let wrapper;
-
 expect.addSnapshotSerializer(emotionSerializer);
 expect.extend(matchers);
 
+it('should rendered', () => {
+  const tree = render(<ToggleButton {...propsButton} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<ToggleButton />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<ToggleButton {...propsButton} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<ToggleButton {...propsButton} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render ToggleButton with correct labels', () => {
@@ -61,14 +60,15 @@ describe('<ToggleButton />', () => {
   });
 });
 
+it('should rendered', () => {
+  const tree = render(<ToggleIconButton {...propsButtonIcon} />);
+  expect(tree).toMatchSnapshot();
+});
+
 describe('<ToggleIconButton />', () => {
+  let wrapper;
   beforeEach(() => {
     wrapper = mount(<ToggleIconButton {...propsButtonIcon} />);
-  });
-
-  it('should render', () => {
-    wrapper = render(<ToggleIconButton {...propsButtonIcon} />);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('should render ToggleButtonIcon with correct icons', () => {

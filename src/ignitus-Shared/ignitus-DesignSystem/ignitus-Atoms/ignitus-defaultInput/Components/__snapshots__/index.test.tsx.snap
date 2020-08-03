@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<DefaultInput /> should render 1`] = `
+exports[`should rendered 1`] = `
 <input
-  class="css-7xmoki"
+  class="css-11t11ia"
+  height=""
   name="Input"
   placeholder="Placeholder"
   type="text"
+  width=""
 />
 `;
