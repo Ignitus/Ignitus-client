@@ -1,6 +1,6 @@
 import React from 'react';
 import * as P from '../styles';
-import { Paragraph, Heading3 } from '../../../../ignitus-Shared';
+import { Heading3 } from '../../../../ignitus-Shared';
 import { White } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import { UserSettingsSideNavigation } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-UserSettingsSideNavigation/Components';
 
@@ -39,10 +39,13 @@ const GeneralSettings = () => (
       <P.MiddleSection>
         <P.ElementContainer>
           <P.StyledParagraph>
-            To save your changes, please enter your password.
+            To save your changes, please enter your current password{' '}
+            <span role="img" aria-label="key">
+              🔑
+            </span>
           </P.StyledParagraph>
           <P.InputSection>
-            <P.Text>Current Password</P.Text>
+            <P.Text>Password</P.Text>
             <P.Input
               placeholder="Current password"
               type="password"
@@ -64,11 +67,10 @@ const GeneralSettings = () => (
       <P.BottomSection>
         <Heading3>Delete my account</Heading3>
         <br />
-        <Paragraph>
+        <P.StyledParagraph>
           Permanently delete your Ignitus account and all data associated with
-          it. If you experienced an issue with your account and need help,
-          please contact us so we can assist you.
-        </Paragraph>
+          it.
+        </P.StyledParagraph>
         <br />
         <P.StyledRoundedButton size="medium" category="primary">
           Delete Account

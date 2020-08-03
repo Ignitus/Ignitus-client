@@ -16,33 +16,33 @@ import { LG } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/f
 
 export const ParentContainer = styled.div`
   display: flex;
-  width: 80%;
+  flex-direction: row;
+  margin-top: 4rem;
 `;
 
 export const LeftContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin: 6rem 2rem 0 5rem;
+  padding: 2rem;
 `;
 
 export const RightContainer = styled(Container)`
-  margin: 6rem auto;
   background: ${White};
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
-  max-width: 30rem;
-  padding-left: 2rem;
+  margin: 2rem 0;
+  padding: 1rem;
 `;
 
 export const TopSection = styled.div`
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 export const MiddleSection = styled.div`
   padding: 2rem;
 `;
 export const ElementContainer = styled(Container)`
-  margin: 1.5rem 0;
+  /* margin: 1rem 0; */
 `;
 
 export const ImageContainer = styled.div`
@@ -60,8 +60,8 @@ export const BottomSection = styled.div`
 
 export const Text = styled(Paragraph)`
   font-size: ${LG};
-  margin: 0.5rem 1rem 0 0;
-  min-width: 7rem;
+  margin-right: 0.5rem;
+  min-width: 8rem;
 `;
 
 export const Input = styled(DefaultInput)`
@@ -72,14 +72,12 @@ export const InputSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 0;
 `;
 
 export const ImageSection = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 1rem;
 `;
 
 export const Image = styled.img`
@@ -90,14 +88,15 @@ export const Image = styled.img`
 
 export const StyledParagraph = styled(Paragraph)`
   font-weight: bold;
+  width: 46rem;
 `;
 
 export const StyledRoundedButton = styled(RoundedButton)`
   display: flex;
   font-weight: bold;
   color: ${props => props.color};
-  margin-left: 1rem;
   height: 3rem;
+  margin: 0;
 `;
 
 export const RightSection = styled.div`
@@ -106,8 +105,6 @@ export const RightSection = styled.div`
 `;
 
 export const ParagraphLink = styled(Link)`
-  position: relative;
-  left: 40%;
   font-size: 0.8rem;
   color: ${Orange};
   &:hover {
