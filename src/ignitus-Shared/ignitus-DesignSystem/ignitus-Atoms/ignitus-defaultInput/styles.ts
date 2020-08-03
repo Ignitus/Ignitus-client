@@ -12,6 +12,7 @@ export const Input = styled.input`
   font-size: ${F.XL};
   border: none;
   border-radius: 17px;
+  outline: none;
 
   ::placeholder {
     color: ${C.GreySecondaryText};

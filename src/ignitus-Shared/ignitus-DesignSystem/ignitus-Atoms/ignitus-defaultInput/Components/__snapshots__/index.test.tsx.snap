@@ -2,7 +2,7 @@
 
 exports[`should rendered 1`] = `
 <input
-  class="css-8xbheg"
+  class="css-1o7pidw"
   name="Input"
   placeholder="Placeholder"
   type="text"
