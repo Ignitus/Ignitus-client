@@ -65,7 +65,8 @@ export const Text = styled(Paragraph)`
 `;
 
 export const Input = styled(DefaultInput)`
-  width: 20rem;
+  width: 16rem;
+  padding: 0.6rem;
 `;
 
 export const InputSection = styled.div`
@@ -84,6 +85,7 @@ export const Image = styled.img`
   height: 10rem;
   width: 10rem;
   border-radius: 0.9rem;
+  margin-right: 1rem;
 `;
 
 export const StyledParagraph = styled(Paragraph)`

@@ -121,6 +121,7 @@ export const Form: FunctionComponent<FormProps> = ({
               <A.ConfirmPasswordInput
                 name={AppIcon.KeyIcon}
                 type="password"
+                width="100px"
                 state={state.confirmPassword}
                 placeholder="Confirm Password"
                 handleChange={confirmPassword => {

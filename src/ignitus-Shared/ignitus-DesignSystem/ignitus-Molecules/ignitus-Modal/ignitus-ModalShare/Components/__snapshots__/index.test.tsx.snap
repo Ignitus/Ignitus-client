@@ -106,14 +106,10 @@ exports[`<ModalShare /> should render 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -134,6 +130,7 @@ exports[`<ModalShare /> should render 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #2D2D2D;
+  width: 100px;
 }
 
 .emotion-6 {
@@ -274,6 +271,7 @@ exports[`<ModalShare /> should render 1`] = `
         placeholder="Paste URL Here"
         type="string"
         value=""
+        width="100px"
       />
       <svg
         aria-label="Copy Icon"

@@ -17,4 +17,5 @@ export const StyledParagraph = styled(Paragraph)`
 
 export const Container = styled.div`
   display: inline-flex;
+  align-items: center;
 `;
