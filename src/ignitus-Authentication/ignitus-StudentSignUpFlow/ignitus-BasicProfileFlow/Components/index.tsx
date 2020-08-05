@@ -2,62 +2,67 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { FunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
 import {
-  Paragraph,
   Heading1,
   withErrorBoundary,
   AppIcon,
-  RoundedButton,
-  DefaultButtonWithIcon,
 } from '../../../../ignitus-Shared';
-import {
-  White,
-  IgnitusBlue,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 
-import * as T from '../../ignitus-WelcomeFlow/Styles/style';
-import * as C from '../Styles/style';
+import {
+  WelcomeContainer,
+  TopSection,
+} from '../../ignitus-WelcomeFlow/Styles/style';
+
+import * as C from '../style';
 
 export const BasicProfileFlow: FunctionComponent = withErrorBoundary(() => (
-  <T.WelcomeContainer>
-    <T.TopSection>
-      <T.Progress
-        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressSix.png"
-        alt="progress-bar"
-      />
+  <WelcomeContainer>
+    <TopSection>
       <Heading1>Basic Profile</Heading1>
-      <Paragraph>This won&apos;t take much time to complete</Paragraph>
-    </T.TopSection>
-    <T.MiddleSection>
+      <C.SubTitle>This won&apos;t take much time to complete</C.SubTitle>
+    </TopSection>
+    <C.BottomSection>
       <C.LeftSection>
-        <C.ImageContainer src="https://storage.googleapis.com/ignitus_assets/ig-section/courses.png" />
+        <C.ImageContainer>
+          <img
+            alt="Student"
+            src="https://storage.googleapis.com/ignitus_assets/ig-avatars/grant.png"
+          />
+        </C.ImageContainer>
         <C.InputContainer>
-          <C.LeftRow>
-            <C.FirstText
+          <C.Row>
+            <C.StyledDefaultInput
               placeholder="First Name"
               type="text"
               name="firstName"
-            />
-            <C.LastText placeholder="Last Name" type="text" name="lastName" />
-          </C.LeftRow>
-          <C.LeftRow>
-            <C.Text
+            />{' '}
+            <C.StyledDefaultInput
+              placeholder="Last Name"
+              type="text"
+              name="lastName"
+            />{' '}
+          </C.Row>
+          <C.Row>
+            <C.StyledDefaultInput
               placeholder="Major or Speciality"
               type="text"
               name="major"
-            />
-          </C.LeftRow>
-          <C.LeftRow>
-            <C.FirstText placeholder="Enter State" type="text" name="state" />
-            <C.LastText
+            />{' '}
+          </C.Row>
+          <C.Row>
+            <C.StyledDefaultInput
+              placeholder="State"
+              type="text"
+              name="state"
+            />{' '}
+            <C.StyledDefaultInput
               placeholder="Enter Country"
               type="text"
               name="country"
             />
-          </C.LeftRow>
-          <DefaultButtonWithIcon
-            size="large"
+          </C.Row>
+          <C.StyledDefaultButtonWithIcon
+            size="medium"
             category="primary"
             name={AppIcon.UploadIcon}
             content="Upload Resume &nbsp;"
@@ -65,28 +70,31 @@ export const BasicProfileFlow: FunctionComponent = withErrorBoundary(() => (
         </C.InputContainer>
       </C.LeftSection>
       <C.RightSection>
-        <C.LeftRow>
-          <C.Icon name={AppIcon.LinkedInIcon} color={White} />
-          <C.Text placeholder="LinkedIn" type="text" name="LinkedIn" />
-        </C.LeftRow>
-        <C.LeftRow>
-          <C.Icon name={AppIcon.FacebookIcon} color={IgnitusBlue} />
-          <C.Text placeholder="Facebook" type="text" name="Facebook" />
-        </C.LeftRow>
-        <C.LeftRow>
-          <C.Icon name={AppIcon.GithubIcon} color={IgnitusBlue} />
-          <C.Text placeholder="GitHub" type="text" name="GitHub" />
-        </C.LeftRow>
+        <C.Row>
+          <C.Icon name={AppIcon.LinkedInIcon} />
+          <C.StyledDefaultInput
+            placeholder="LinkedIn"
+            type="text"
+            name="linkedIn"
+          />
+        </C.Row>
+        <C.Row>
+          <C.Icon name={AppIcon.FacebookIcon} />
+          <C.StyledDefaultInput
+            placeholder="Facebook"
+            type="text"
+            name="facebook"
+          />
+        </C.Row>
+        <C.Row>
+          <C.Icon name={AppIcon.GithubIcon} />
+          <C.StyledDefaultInput
+            placeholder="GitHub"
+            type="text"
+            name="gitHub"
+          />
+        </C.Row>
       </C.RightSection>
-    </T.MiddleSection>
-    <T.BottomSection>
-      <RoundedButton size="large" category="primary">
-        <Link to="/flow/interestFlow">Save and Continue</Link>
-      </RoundedButton>
-      <Paragraph>
-        Skip for now
-        {' >> '}
-      </Paragraph>
-    </T.BottomSection>
-  </T.WelcomeContainer>
+    </C.BottomSection>
+  </WelcomeContainer>
 ));

@@ -3,7 +3,6 @@ import React, { Suspense, Fragment, lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import { StudentSignUpFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow';
-import { BasicProfileFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-BasicProfileFlow/Components';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
@@ -52,7 +51,6 @@ export const AuthenticationRoutes: React.FunctionComponent = () => (
         <Route path="/signup" component={CommonSignUpUI} />
         <Route path="/login" component={CommonLoginUI} />
         <Route path="/flow/studentSignUpFlow" component={StudentSignUpFlow} />
-        <Route path="/flow/basicProfileFlow" component={BasicProfileFlow} />
       </Switch>
     </Suspense>
   </Fragment>
