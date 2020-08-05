@@ -3,8 +3,8 @@ import * as C from '../colors';
 import * as F from '../fonts';
 
 export const Input = styled.input`
-  height: 3rem;
-  width: 300px;
+  height: ${props => props.height};
+  width: ${props => props.width};
   background-color: ${C.GreyLight};
   padding-left: 2rem;
   color: ${C.GreySecondaryText};
@@ -12,11 +12,13 @@ export const Input = styled.input`
   font-size: ${F.XL};
   border: none;
   border-radius: 17px;
+  outline: none;
+  margin: 0.3rem 0;
 
   ::placeholder {
     color: ${C.GreySecondaryText};
     font-weight: ${F.SemiBold};
-    font-size: ${F.XL};
+    font-size: ${F.MD};
     opacity: 0.5;
   }
 `;

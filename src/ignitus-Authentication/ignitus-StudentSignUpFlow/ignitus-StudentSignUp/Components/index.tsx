@@ -11,15 +11,20 @@ import { Props } from '../types';
 export const Signup: FunctionComponent<Props> = withErrorBoundary(
   ({ signUpRequest, signUpData, clearPreviousSignUp }) => {
     const [state, setState] = useState(SignupStatePayload);
-    const { email, password, confirmPassword } = state;
+    const { userName, email, password, confirmPassword } = state;
 
-    useEffect(() => () => clearPreviousSignUp(), []);
+    useEffect(() => () => clearPreviousSignUp(), [clearPreviousSignUp]);
 
     const handleSubmit = e => {
       e.preventDefault();
       clearPreviousSignUp();
 
-      if (isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
+      if (
+        isEmpty(userName) ||
+        isEmpty(email) ||
+        isEmpty(password) ||
+        isEmpty(confirmPassword)
+      ) {
         setState({
           ...state,
           emptyMessage: true,
@@ -62,7 +67,7 @@ export const Signup: FunctionComponent<Props> = withErrorBoundary(
         return;
       }
 
-      signUpRequest(email, password, 'student');
+      signUpRequest(userName, email, password, 'student');
       setState(SignupStatePayload);
     };
 

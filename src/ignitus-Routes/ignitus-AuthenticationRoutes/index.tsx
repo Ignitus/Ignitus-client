@@ -2,10 +2,7 @@
 import React, { Suspense, Fragment, lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { InterestFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-InterestFlow/Components/index';
-import { EmailFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailFlow/Components';
-import { WelcomeFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-WelcomeFlow/Components';
-import { EmailConfirmationFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-EmailConfirmationFlow/Components';
+import { StudentSignUpFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow';
 import { BasicProfileFlow } from '../../ignitus-Authentication/ignitus-StudentSignUpFlow/ignitus-BasicProfileFlow/Components';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
@@ -54,13 +51,7 @@ export const AuthenticationRoutes: React.FunctionComponent = () => (
         <Route path="/signup/student" component={LazySignUpStudent} />
         <Route path="/signup" component={CommonSignUpUI} />
         <Route path="/login" component={CommonLoginUI} />
-        <Route
-          path="/flow/emailConfirmationFlow"
-          component={EmailConfirmationFlow}
-        />
-        <Route path="/flow/emailFlow" component={EmailFlow} />
-        <Route path="/flow/interestFlow" component={InterestFlow} />
-        <Route path="/flow/welcomeFlow" component={WelcomeFlow} />
+        <Route path="/flow/studentSignUpFlow" component={StudentSignUpFlow} />
         <Route path="/flow/basicProfileFlow" component={BasicProfileFlow} />
       </Switch>
     </Suspense>

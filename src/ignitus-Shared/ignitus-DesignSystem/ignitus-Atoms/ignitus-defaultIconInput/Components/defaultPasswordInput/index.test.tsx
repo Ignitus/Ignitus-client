@@ -12,18 +12,18 @@ const props = {
   handleChange: jest.fn(),
 };
 
-let wrapper;
+it('should rendered', () => {
+  const tree = render(<DefaultPasswordInput {...props} />);
+  expect(tree).toMatchSnapshot();
+});
+
 const inputText = 'input[type="text"]';
 const inputPassword = 'input[type="password"]';
 
-beforeEach(() => {
-  wrapper = mount(<DefaultPasswordInput {...props} />);
-});
-
 describe('<DefaultPasswordInput />', () => {
-  it('should render', () => {
-    wrapper = render(<DefaultPasswordInput {...props} />);
-    expect(wrapper).toMatchSnapshot();
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount(<DefaultPasswordInput {...props} />);
   });
 
   it('should render key Icon & EyeVisibleOff(initial)', () => {

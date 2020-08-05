@@ -61,18 +61,49 @@ export const Form: FunctionComponent<FormProps> = ({
 
       <A.LeftColumnTwo>
         <A.InputGroup>
-          <A.EmailInput
-            name={AppIcon.MessageIcon}
-            type="string"
-            state={state.email}
-            placeholder="Email"
-            handleChange={email => {
-              setState({
-                ...state,
-                email,
-              });
-            }}
-          />
+          {authenticationType === 'SignUp' && (
+            <>
+              <A.UsernameInput
+                name={AppIcon.AccountCircleIcon}
+                type="string"
+                state={state.userName}
+                placeholder="Username"
+                handleChange={userName => {
+                  setState({
+                    ...state,
+                    userName,
+                  });
+                }}
+              />
+              <A.EmailInput
+                name={AppIcon.MessageIcon}
+                type="string"
+                state={state.email}
+                placeholder="Email"
+                handleChange={email => {
+                  setState({
+                    ...state,
+                    email,
+                  });
+                }}
+              />
+            </>
+          )}
+
+          {authenticationType !== 'SignUp' && (
+            <A.EmailUsernameInput
+              name={AppIcon.AccountCircleIcon}
+              type="string"
+              state={state.email}
+              placeholder="Username or Email"
+              handleChange={email => {
+                setState({
+                  ...state,
+                  email,
+                });
+              }}
+            />
+          )}
 
           <A.PasswordInput
             placeholder="Password"
@@ -90,6 +121,7 @@ export const Form: FunctionComponent<FormProps> = ({
               <A.ConfirmPasswordInput
                 name={AppIcon.KeyIcon}
                 type="password"
+                width="100px"
                 state={state.confirmPassword}
                 placeholder="Confirm Password"
                 handleChange={confirmPassword => {

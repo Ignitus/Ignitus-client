@@ -136,8 +136,13 @@ export const EmailInput = styled(DefaultIconInput)`
   svg {
     margin: 0 0.5rem;
     fill: ${White};
+    margin-top: 0.4rem;
   }
 `;
+
+export const UsernameInput = styled(EmailInput)``;
+
+export const EmailUsernameInput = styled(EmailInput)``;
 
 export const ConfirmPasswordInput = styled(EmailInput)``;
 

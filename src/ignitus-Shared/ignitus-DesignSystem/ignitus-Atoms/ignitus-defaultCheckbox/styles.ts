@@ -14,3 +14,8 @@ export const Label = styled.label`
 export const StyledParagraph = styled(Paragraph)`
   font-size: ${MD};
 `;
+
+export const Container = styled.div`
+  display: inline-flex;
+  align-items: center;
+`;

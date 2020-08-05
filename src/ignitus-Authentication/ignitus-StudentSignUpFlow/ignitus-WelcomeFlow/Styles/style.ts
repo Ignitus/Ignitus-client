@@ -28,10 +28,6 @@ export const MiddleSection = styled.div`
   flex-wrap: wrap;
 `;
 
-export const BottomSection = styled(flexibleColDiv)`
-  margin-top: 2rem;
-`;
-
 export const LeftSection = styled(flexibleColDiv)`
   ${minimumWidthQuery[2]} {
     margin-right: none;

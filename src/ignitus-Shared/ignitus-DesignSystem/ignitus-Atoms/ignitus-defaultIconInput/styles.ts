@@ -5,8 +5,7 @@ import { Normal, SM } from '../fonts';
 
 export const InputContainer = styled.div`
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   border-radius: 0.5rem;
   padding: 0.7rem;
@@ -24,6 +23,7 @@ export const Input = styled.input`
   font-size: ${SM};
   font-weight: ${Normal};
   color: ${GreyText};
+  width: ${props => props.width};
 `;
 
 export const StyledIcon = styled(Icon)`
