@@ -19,4 +19,5 @@ export type EducationProps = {
 export type IconProps = {
   color: string;
   background: string;
+  size: string;
 };

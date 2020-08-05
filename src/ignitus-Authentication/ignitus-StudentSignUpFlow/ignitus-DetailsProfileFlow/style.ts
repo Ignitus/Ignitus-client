@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import {
   Container,
   flexibleRowDiv,
-} from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
+} from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 import {
   Heading5,
@@ -10,59 +10,48 @@ import {
   DefaultIconInput,
   DefaultCheckbox,
   DefaultInput,
-} from '../../../../ignitus-Shared';
-import { TitleProps, IconProps } from '../types';
-import { Icon as I } from '../../../../ignitus-Shared/ignitus-Utilities/Components/icon';
-import * as C from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
-import * as F from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { DefaultTag2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
+} from '../../../ignitus-Shared';
+import { TitleProps, IconProps } from './types';
+import { Icon as I } from '../../../ignitus-Shared/ignitus-Utilities/Components/icon';
+import * as C from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
+import * as F from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
+import { DefaultTag2 } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
 
-export const TopMiddleSection = styled.div`
-  margin-top: 1rem;
-`;
-
-export const ParentContainer = styled(Container)`
-  margin: 10rem auto;
+export const ParentContainer = styled.div`
   background: ${C.White};
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
 `;
 
-export const MiddleSection = styled.div`
+export const InfoSection = styled.div`
   padding: 2rem;
 `;
-export const ElementContainer = styled(Container)`
-  margin: 1.5rem 0;
+export const Section = styled(Container)`
+  margin: 3rem 0 2rem 0;
 `;
 
 export const Title = styled(Heading5)<TitleProps>`
-  padding: 0.5rem 2rem;
   font-weight: ${props =>
     props.fontStyle === 'paragraph' ? F.Medium : F.Bold};
-  font-size: ${props => (props.fontStyle === 'paragraph' ? F.SM : F.MD)};
+  font-size: ${props => (props.fontStyle === 'paragraph' ? F.SM : F.XL)};
   color: ${props =>
     props.fontStyle === 'paragraph' ? C.GreyText : C.IgnitusBlue};
 `;
 
-export const TitleWrapper = styled.div`
+export const HeadingWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 1rem 0;
 `;
 
 export const Icon = styled(I)<IconProps>`
-  width: 1.5rem;
+  width: ${({ size }) => size};
   fill: ${props => props.color};
-  margin: 0 0.5rem;
+  margin-right: 1rem;
   background-color: ${props => props.background};
   border-radius: 0.3rem;
 `;
 
-export const Content = styled(Container)`
-  margin-left: 3.6rem;
-  margin-top: 1rem;
-`;
-
-export const University = styled(Heading5)`
+export const UniversityInfo = styled(Heading5)`
   font-weight: ${F.SemiBold};
   margin-right: 2rem;
 `;
@@ -77,33 +66,21 @@ export const Date = styled(Paragraph)`
   margin: 0.2rem 0 0 1.2rem;
 `;
 
-export const LeftRow = styled.div`
+export const EducationInfo = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 0.5rem 0 0 0;
-`;
-
-export const RightRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-`;
-
-export const BottomSection = styled.div`
-  text-align: center;
-  margin: 1rem;
-  padding: 2rem;
+  margin-top: 2rem;
 `;
 
 export const StyledTextArea = styled.textarea`
   background-color: ${C.GreyLight};
-  padding: 1.2rem;
+  padding: 1rem;
   color: ${C.GreySecondaryText};
   font-weight: ${F.SemiBold};
   font-size: ${F.MD};
   border: none;
-  border-radius: 17px;
+  border-radius: 1rem;
 
   ::placeholder {
     color: ${C.GreySecondaryText};
@@ -115,13 +92,12 @@ export const StyledTextArea = styled.textarea`
 
 export const StyledArea = styled.div`
   background-color: ${C.GreyLight};
-  padding-left: 1rem;
+  padding: 0.5rem;
   border: none;
-  border-radius: 17px;
+  border-radius: 1rem;
   font-weight: ${F.SemiBold};
   font-size: ${F.MD};
-  height: 10rem;
-  width: 100%;
+  height: 6rem;
 `;
 
 export const StyledDefaultIconInput = styled(DefaultIconInput)`
@@ -135,39 +111,31 @@ export const StyledDefaultIconInput = styled(DefaultIconInput)`
 export const StyledIconInput = styled(DefaultIconInput)`
   margin: 0 2rem 0 1rem;
 `;
-
-export const InputContainer = styled.div`
-  margin: 0 0 1rem 0;
-  max-width: 700px;
-`;
-
 export const StyledDefaultCheckbox = styled(DefaultCheckbox)`
   background-color: ${C.IgnitusBlue};
 `;
-
 export const StyledDefaultInput = styled(DefaultInput)`
-  margin: 1rem 0;
-  padding: 1rem 0;
+  padding: 1rem;
 `;
-
 export const DateContainer = styled(flexibleRowDiv)`
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
   justify-content: flex-start;
 `;
-
 export const HeadingContainer = styled(flexibleRowDiv)`
-  margin: 0 0 1rem 0;
   justify-content: space-between;
 `;
 
 export const IconContainer = styled(flexibleRowDiv)``;
-
 export const StyledParagraph = styled(Paragraph)`
   font-weight: ${F.Bold};
 `;
 
+export const SubTitle = styled(Paragraph)`
+  margin-top: 1rem;
+  font-size: ${F.XL};
+`;
 export const StyledDefaultTag2 = styled(DefaultTag2)`
-  margin: 0.7rem;
+  padding: 0.5rem;
 `;
 
 export const StyledText = styled(Paragraph)`
@@ -182,4 +150,21 @@ export const Circle = styled.span`
   width: 0.7rem;
   border-radius: 50%;
   margin: 0.3rem 0.5rem 0 0;
+`;
+
+export const PublicationInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+`;
+
+export const PublicationInputRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Publication = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;

@@ -18,7 +18,7 @@ export const Input = styled.input`
   ::placeholder {
     color: ${C.GreySecondaryText};
     font-weight: ${F.SemiBold};
-    font-size: ${F.XL};
+    font-size: ${F.MD};
     opacity: 0.5;
   }
 `;
