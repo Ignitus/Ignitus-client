@@ -209,6 +209,10 @@ export const allEdges: Edges[] = [
             title: 'Message Card',
             route: '/interface/messageCard',
           },
+          {
+            title: 'Message Detail',
+            route: '/interface/messageDetail',
+          },
         ],
       },
       {
