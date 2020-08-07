@@ -40,7 +40,7 @@ export const MessageDetail = withErrorBoundary(
         <S.StyledDefaultButtonWithIcon
           size="medium"
           category="white"
-          name={AppIcon.MessageIcon}
+          name={AppIcon.ForwardArrowIcon}
           content="Forward"
         />
       </S.BottomSection>

@@ -30,6 +30,7 @@ import { LocationIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-
 import { FilledArrowDownIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import { BookmarkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
 import { FileIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
+import { ForwardArrowIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/forwardArrowIcon';
 import { MapMarkerIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
 import { CopyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 import { PollIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
@@ -107,6 +108,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.FileIcon:
       return <FileIcon {...rest} />;
+
+    case AppIcon.ForwardArrowIcon:
+      return <ForwardArrowIcon {...rest} />;
 
     case AppIcon.MapMarkerIcon:
       return <MapMarkerIcon {...rest} />;
