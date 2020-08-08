@@ -2,9 +2,10 @@ import React from 'react';
 import * as S from '../styles';
 import * as C from '../../../ignitus-Atoms/colors';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
+import { Props } from '../types';
 
 export const MessageCard = withErrorBoundary(
-  ({ name, position, numberMessages, dateSent, avatar, online }) => (
+  ({ name, position, numberMessages, dateSent, avatar, online }: Props) => (
     <S.MessageContainer>
       <S.ImageContainer>
         <svg>
