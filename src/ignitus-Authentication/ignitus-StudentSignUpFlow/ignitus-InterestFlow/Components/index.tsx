@@ -11,6 +11,7 @@ import {
 } from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';
+import { MD } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
 
 export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
   <T.WelcomeContainer>
@@ -26,16 +27,16 @@ export const InterestFlow: FunctionComponent = withErrorBoundary(() => (
         {' '}
         <form>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="Opportunities" value="true" />
+            <DefaultCheckbox label="Opportunities" value="true" size={MD} />
           </C.CheckboxContainer>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="Build Network" value="true" />
+            <DefaultCheckbox label="Build Network" value="true" size={MD} />
           </C.CheckboxContainer>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="Read Blogs" value="true" />
+            <DefaultCheckbox label="Read Blogs" value="true" size={MD} />
           </C.CheckboxContainer>
           <C.CheckboxContainer>
-            <DefaultCheckbox label="All of these" value="true" />
+            <DefaultCheckbox label="All of these" value="true" size={MD} />
           </C.CheckboxContainer>
         </form>
       </C.LeftSection>
