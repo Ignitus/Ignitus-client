@@ -19,6 +19,7 @@ import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms
 import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
+import { interfaceDeleteFinal } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceDeleteFinal/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -160,6 +161,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={InterfaceNotifications}
         />
         <Route path="/interface/messageCard" component={interfaceMessageCard} />
+        <Route path="/interface/deleteFinal" component={interfaceDeleteFinal} />
       </Switch>
     </LeftRow>
   </Container>
