@@ -2,9 +2,11 @@
 
 exports[`should rendered 1`] = `
 <input
-  class="css-8xbheg"
+  class="css-1cdw5p1"
+  height=""
   name="Input"
   placeholder="Placeholder"
   type="text"
+  width=""
 />
 `;

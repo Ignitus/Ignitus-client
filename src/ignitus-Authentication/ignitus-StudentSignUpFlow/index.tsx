@@ -15,10 +15,11 @@ import {
 import { Progress } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Progress/Components/Progress';
 
 import * as T from './style';
+import { ProfileDetailsFlow } from './ignitus-DetailsProfileFlow/Components/index';
 
 export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
   const [current, updateCurrent] = useState(1);
-  const steps = 4;
+  const steps = 5;
 
   const next = () =>
     current === steps + 1 ? null : updateCurrent(current + 1);
@@ -29,7 +30,9 @@ export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
 
       {current && current === 1 && <WelcomeFlow />}
       {current && current === 2 && <InterestFlow />}
-      {current && current === 3 && (
+      {current && current === 3 && <ProfileDetailsFlow />}
+
+      {current && current === 4 && (
         <React.Fragment>
           <EmailFlow />
           <T.BottomSection>
@@ -47,9 +50,9 @@ export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
           </T.BottomSection>
         </React.Fragment>
       )}
-      {current && current === 4 && <EmailConfirmationFlow />}
+      {current && current === 5 && <EmailConfirmationFlow />}
 
-      {current !== 3 && current !== 4 && (
+      {current && (
         <T.BottomSection>
           <RoundedButton size="large" category="primary" onClick={next}>
             Save & Continue

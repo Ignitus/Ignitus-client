@@ -15,6 +15,12 @@ const LazyDashBoardNavigation = lazy(() =>
   import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'),
 );
 
+const LazyGeneralSettings = lazy(() =>
+  import(
+    '../../ignitus-Dashboard/ignitus-DashboardSettings/generalSettings/Components'
+  ),
+);
+
 export const DashboardRoutes = () => (
   <React.Fragment>
     <Suspense
@@ -36,6 +42,7 @@ export const DashboardRoutes = () => (
           path="/dashboard/opportunityDetails"
           component={OpportunityDetails}
         />
+        <Route path="/dashboard/settings" component={LazyGeneralSettings} />
       </Switch>
     </Suspense>
   </React.Fragment>

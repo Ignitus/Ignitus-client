@@ -27,7 +27,7 @@ export const DefaultPasswordInput = ({
 
   useEffect(() => {
     handleChange(value);
-  }, [value]);
+  }, [value]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <React.Fragment>

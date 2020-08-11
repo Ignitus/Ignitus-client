@@ -42,6 +42,7 @@ export const CustomEmailInput = styled(DefaultIconInput)`
   svg {
     margin: 0 0.5rem;
     fill: ${White};
+    margin-top: 0.4rem;
   }
 `;
 
@@ -56,6 +57,7 @@ export const interfaceIconInput = () => (
       name={AppIcon.CopyIcon}
       type="string"
       placeholder="Paste URL Here"
+      width="200px"
       handleClick={copy}
       handleChange={handleChange}
     />
@@ -68,6 +70,7 @@ export const interfaceIconInput = () => (
       state=""
       name={AppIcon.PdfIcon}
       type="string"
+      width="200px"
       placeholder="Give your publication a title..."
       handleChange={handleChange}
     />
@@ -78,6 +81,7 @@ export const interfaceIconInput = () => (
       state=""
       name={AppIcon.MessageIcon}
       type="string"
+      width="200px"
       placeholder="Email"
       handleChange={handleChange}
     />
