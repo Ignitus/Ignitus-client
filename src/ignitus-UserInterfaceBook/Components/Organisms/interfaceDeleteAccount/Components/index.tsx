@@ -9,6 +9,6 @@ export const interfaceDeleteAccount: React.FC = () => (
   <Interface>
     <Heading2>Delete Account</Heading2>
     <hr />
-    <DeleteAccount />
+    <DeleteAccount username="Sophia" />
   </Interface>
 );

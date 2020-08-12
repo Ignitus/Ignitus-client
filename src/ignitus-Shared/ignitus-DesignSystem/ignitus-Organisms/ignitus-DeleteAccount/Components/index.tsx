@@ -5,8 +5,9 @@ import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/e
 import { Heading1 } from '../../../..';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { SM } from '../../../ignitus-Atoms/fonts';
+import { PropTypes } from '../types';
 
-export const DeleteAccount = withErrorBoundary(() => (
+export const DeleteAccount = withErrorBoundary(({ username }: PropTypes) => (
   <S.DeleteContainer>
     <S.TopSection>
       <Heading1>Delete Account</Heading1>
@@ -16,7 +17,7 @@ export const DeleteAccount = withErrorBoundary(() => (
     </S.TopSection>
     <S.MiddleSection>
       <S.StyledParagraph>
-        We were hoping this day would never come, Sophia. Before we proceed,
+        We were hoping this day would never come, {username}. Before we proceed,
         we&apos;d like to understand why you&apos;re leaving.
       </S.StyledParagraph>
       <S.StyledCheckbox
