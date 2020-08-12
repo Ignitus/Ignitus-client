@@ -1,6 +1,5 @@
 import React from 'react';
 import { DefaultInput, White, SecondaryColor } from '../../../../..';
-import { DefaultTag1 } from '../../../../ignitus-Atoms/ignitus-defaultTag/Components';
 
 import * as O from '../styles';
 import { RoundedButton } from '../../../../ignitus-Atoms/buttons';
@@ -14,14 +13,14 @@ export const ModalApply = () => (
         type="text"
         name="name"
         height="3rem"
-        width="300px"
+        width="450px"
       />
     </O.TopSection>
 
     <O.MiddleSection>
       <O.LeftSection>
         <O.Paragraph>Resume *</O.Paragraph>
-        <DefaultTag1
+        <O.StyledDefaultTag1
           label="Sophia_resume.pdf"
           color={White}
           background={SecondaryColor}
@@ -29,11 +28,9 @@ export const ModalApply = () => (
       </O.LeftSection>
       <O.RightSection>
         <O.Paragraph>Cover letter</O.Paragraph>
-        <DefaultTag1
-          label="Upload document"
-          color={SecondaryColor}
-          background={White}
-        />
+        <O.StyledRoundedButton size="medium" category="orange">
+          Upload Document
+        </O.StyledRoundedButton>
       </O.RightSection>
     </O.MiddleSection>
 
