@@ -36,7 +36,7 @@ describe('<Notifications />', () => {
     expect(wrapper.find(S.Container).prop('bgColor')).toBe(props.bgColor);
   });
 
-  it('should render Image, Icon', () => {
+  it('should render Image, CrossIcon', () => {
     expect(wrapper.find(S.Image).length).toBe(1);
     expect(wrapper.find(S.Image).prop('src')).toBe(props.picture);
     expect(wrapper.find(S.Icon).length).toBe(1);
