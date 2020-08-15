@@ -144,6 +144,10 @@ export {
 export {
   Notifications,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
+
+export {
+  MessageSettings,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageSettings/Components';
 /**
  * ignitus-Templates
  */
