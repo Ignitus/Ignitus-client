@@ -42,6 +42,7 @@ export const GeneralIcons: AppIcon[] = [
   AppIcon.SearchIcon,
   AppIcon.CrossIcon,
   AppIcon.PlusIcon,
+  AppIcon.MoreHorizontalIcon,
 ];
 
 export const IgnitusLogos: AppIcon[] = [

@@ -51,4 +51,5 @@ export enum AppIcon {
   SlackIcon = 'SlackIcon',
   MediumIcon = 'MediumIcon',
   YouTubeIcon = 'YouTubeIcon',
+  MoreHorizontalIcon = 'MoreHorizontalIcon',
 }
