@@ -1,51 +1,41 @@
 import React from 'react';
 import * as S from '../styles';
-import { CheckIcon } from '../../../ignitus-Assets/ignitus-Icons/checkIcon';
-import { Props } from '../types';
+import { DefaultCheckbox } from '../../../ignitus-Atoms/ignitus-defaultCheckbox/Components';
+import { GreySecondaryText } from '../../../ignitus-Atoms/colors';
+import { SM } from '../../../ignitus-Atoms/fonts';
+import { CheckBoxProp } from '../types';
 
-export const MessageSettings: React.FC<Props> = P => {
+export const MessageSettings: React.FC = () => {
   return (
     <S.Container>
-      <S.ItemContainer style={{ top: 41 }}>
-        <S.CheckContainer
-          selected={P.anyone}
-          onClick={() => P.setAnyone(!P.anyone)}
-        >
-          {P.anyone ? <CheckIcon style={{ fill: 'white', width: 14 }} /> : null}
-        </S.CheckContainer>
-        <S.ItemText>Receive Direct Messages from anyone</S.ItemText>
-      </S.ItemContainer>
-      <S.ItemContainer style={{ top: 95 }}>
-        <S.CheckContainer
-          selected={P.connections}
-          onClick={() => P.setConnections(!P.connections)}
-        >
-          {P.connections ? (
-            <CheckIcon style={{ fill: 'white', width: 14 }} />
-          ) : null}
-        </S.CheckContainer>
-        <S.ItemText>Receive Direct Messages from connections</S.ItemText>
-      </S.ItemContainer>
-      <S.ItemContainer style={{ top: 148 }}>
-        <S.CheckContainer
-          selected={P.directConnections}
-          onClick={() => P.setDirectConnections(!P.directConnections)}
-        >
-          {P.directConnections ? (
-            <CheckIcon style={{ fill: 'white', width: 14 }} />
-          ) : null}
-        </S.CheckContainer>
-        <S.ItemText>
-          Receive Direct Messages from connections and their direct connections
-        </S.ItemText>
-      </S.ItemContainer>
-      <S.BtnContainer
-        onClick={() => {
-          alert('Button Clicked');
-        }}
-      >
-        <S.BtnText>Save Changes</S.BtnText>
-      </S.BtnContainer>
+      <S.ListContainer>
+        <CustomCheckBox
+          label="Receive Direct Messages from anyone"
+          value="anyone"
+        />
+        <CustomCheckBox
+          label="Receive Direct Messages from connections"
+          value="connections"
+        />
+        <CustomCheckBox
+          label="Receive Direct Messages from connections and their direct connections"
+          value="directConnections"
+        />
+      </S.ListContainer>
+      <S.CustomButton>Save Changes</S.CustomButton>
     </S.Container>
+  );
+};
+
+export const CustomCheckBox: React.FC<CheckBoxProp> = ({ label, value }) => {
+  return (
+    <S.ItemContainer>
+      <DefaultCheckbox
+        checkBoxProps={{ height: '1.5rem', width: '1.5rem' }}
+        label={label}
+        value={value}
+        textProps={{ color: GreySecondaryText, fontSize: SM, width: '22rem' }}
+      />
+    </S.ItemContainer>
   );
 };

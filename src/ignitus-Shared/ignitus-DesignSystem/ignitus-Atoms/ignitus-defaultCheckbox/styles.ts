@@ -1,18 +1,24 @@
 import styled from '@emotion/styled';
 import { Paragraph } from '../typography';
-import { MD } from '../fonts';
+import { MD, PrimaryFamily, Normal } from '../fonts';
+import { GreyText } from '../colors';
+import { TextProps, checkBoxProps } from './types';
 
-export const CheckBox = styled.input`
-  height: 1rem;
-  width: 1rem;
-  outline: none;
+export const CheckBox = styled.input<checkBoxProps>`
+  height: ${props => (props.height ? props.height : '1rem')};
+  width: ${props => (props.width ? props.width : '1rem')};
 `;
 export const Label = styled.label`
-  margin-left: 0.4rem;
+  margin-left: 0.8rem;
 `;
 
-export const StyledParagraph = styled(Paragraph)`
-  font-size: ${MD};
+export const StyledParagraph = styled(Paragraph)<TextProps>`
+  font-size: ${props => (props.fontSize ? props.fontSize : MD)};
+  font-family: ${props =>
+    props.fontFamily ? props.fontFamily : PrimaryFamily};
+  font-weight: ${props => (props.fontWeight ? props.fontWeight : Normal)};
+  color: ${props => (props.color ? props.color : GreyText)};
+  width: ${props => (props.width ? props.width : 'auto')};
 `;
 
 export const Container = styled.div`
