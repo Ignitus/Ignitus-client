@@ -43,7 +43,7 @@ export const DraftJobData: SavedJobCardData[] = [
 ];
 
 const demoFucntion: Function = e => {
-  alert(`Function Call on ${e.title}`);
+  console.log(`Function Call on ${e.title}`);
 };
 
 export const OpenJobOptions: Option[] = [

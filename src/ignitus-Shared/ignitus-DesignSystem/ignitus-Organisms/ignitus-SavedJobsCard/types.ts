@@ -19,3 +19,12 @@ export type MenuProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
+
+export type DropDownItemProp = {
+  index: number;
+  total: number;
+};
+
+export type DropdownContainerProp = {
+  open: boolean;
+};

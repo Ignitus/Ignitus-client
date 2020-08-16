@@ -4,6 +4,7 @@ import * as T from '../../ignitus-Atoms/typography';
 import * as F from '../../ignitus-Atoms/fonts';
 import { flexibleRowDiv, flexibleColDiv } from '../../shared';
 import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
+import { DropDownItemProp, DropdownContainerProp } from './types';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -66,15 +67,18 @@ export const JobUpdate = styled(T.Paragraph)`
   color: ${C.GreySecondaryText};
 `;
 
-export const Icon = styled(I)``;
+export const Icon = styled(I)`
+  fill: ${C.IgnitusBlue};
+`;
 
 export const IconContainer = styled.div`
+  margin-right: 2rem;
   &:hover {
     cursor: pointer;
   }
 `;
 
-export const DropdownContainer = styled(flexibleColDiv)`
+export const DropdownContainer = styled(flexibleColDiv)<DropdownContainerProp>`
   border-radius: 1rem 0 1rem 1rem;
   width: 10.3rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -84,7 +88,8 @@ export const DropdownContainer = styled(flexibleColDiv)`
   z-index: 1;
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 2rem;
+  display: ${props => (props.open ? 'block' : 'none')};
 `;
 
 export const MoreContainer = styled.div`
@@ -93,9 +98,16 @@ export const MoreContainer = styled.div`
 
 export const RightItemsContainer = styled(flexibleRowDiv)`
   position: absolute;
+  right: 3%;
 `;
 
-export const DropdownItemContainer = styled(flexibleRowDiv)`
+export const DropdownItemContainer = styled(flexibleRowDiv)<DropDownItemProp>`
+  border-width: ${props => (props.index === props.total - 1 ? '0' : '1')};
+  border-bottom-left-radius: ${props =>
+    props.index === props.total - 1 ? '1rem' : '0'};
+  border-bottom-right-radius: ${props =>
+    props.index === props.total - 1 ? '1rem' : '0'};
+  border-top-left-radius: ${props => (props.index === 0 ? '1rem' : 0)};
   justify-content: center;
   align-items: center;
   width: 100%;

@@ -27,7 +27,7 @@ export const SavedJobsCard = ({
         </S.JobDesc>
         <S.JobUpdate>Updated {lastUpdated}</S.JobUpdate>
       </S.DetailContainer>
-      <S.RightItemsContainer style={{ right: isDraft ? '3%' : '8%' }}>
+      <S.RightItemsContainer>
         <S.MoreContainer>
           <S.IconContainer onClick={() => setOpen(!open)}>
             <S.Icon name={AppIcon.MoreHorizontalIcon} />
@@ -35,7 +35,7 @@ export const SavedJobsCard = ({
           <DropdownMenu setOpen={setOpen} open={open} jobOptions={jobOptions} />
         </S.MoreContainer>
         {isDraft ? (
-          <Button size="large" category="secondary" style={{ marginLeft: 25 }}>
+          <Button size="large" category="secondary">
             Publish
           </Button>
         ) : null}
@@ -51,19 +51,13 @@ export const DropdownMenu = ({ jobOptions, open, setOpen }: MenuProps) => {
   };
 
   return (
-    <S.DropdownContainer style={{ display: open ? 'block' : 'none' }}>
+    <S.DropdownContainer open={open}>
       {jobOptions.map(({ action, title, id }, index) => {
         return (
           <S.DropdownItemContainer
             key={id}
-            style={{
-              borderWidth: index === jobOptions.length - 1 ? 0 : '0.25px',
-              borderBottomLeftRadius:
-                index === jobOptions.length - 1 ? '1rem' : 0,
-              borderBottomRightRadius:
-                index === jobOptions.length - 1 ? '1rem' : 0,
-              borderTopLeftRadius: index === 0 ? '1rem' : 0,
-            }}
+            total={jobOptions.length}
+            index={index}
             onClick={() => handleEvent({ action, id, title })}
           >
             <S.DropdownItemText className="title">{title}</S.DropdownItemText>
