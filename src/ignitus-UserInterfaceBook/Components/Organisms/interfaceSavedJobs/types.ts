@@ -11,3 +11,8 @@ export type Option = {
   action: Function;
   id: string;
 };
+export type JobProps = {
+  isDraft: boolean;
+  JobData: SavedJobCardData[];
+  JobOptions: Option[];
+};

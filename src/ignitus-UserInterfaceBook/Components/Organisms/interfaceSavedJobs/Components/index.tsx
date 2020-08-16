@@ -14,39 +14,17 @@ import {
   DraftJobOptions,
   OpenJobOptions,
 } from '../constants';
+import { JobProps } from '../types';
 
 export const interfaceSavedJobs: React.FC = () => {
   return (
     <Interface>
-      <OpenJobs />
+      <Heading2>Saved Jobs</Heading2>
+      <hr />
+      <Jobs isDraft={false} JobData={OpenJobData} JobOptions={OpenJobOptions} />
       <Separator />
-      <DraftJobs />
+      <Jobs isDraft JobData={DraftJobData} JobOptions={DraftJobOptions} />
     </Interface>
-  );
-};
-
-export const OpenJobs: React.FC = () => {
-  return (
-    <React.Fragment>
-      <HeaderContainer>
-        <Heading2>{OpenJobData.length} Open Jobs</Heading2>
-        <Button size="large" category="primary">
-          Post Job
-        </Button>
-      </HeaderContainer>
-      {OpenJobData.map(({ id, ...rest }) => {
-        return (
-          <React.Fragment key={id}>
-            <SavedJobsCard {...rest} jobOptions={OpenJobOptions} />
-          </React.Fragment>
-        );
-      })}
-      {OpenJobData.length === 0 ? (
-        <Heading4 color={C.GreySecondaryText}>
-          You currently have no openings.
-        </Heading4>
-      ) : null}
-    </React.Fragment>
   );
 };
 
@@ -54,22 +32,37 @@ export const Separator: React.FC = () => {
   return <div style={{ height: '4.8rem' }} />;
 };
 
-export const DraftJobs: React.FC = () => {
+export const Jobs: React.FC<JobProps> = ({ isDraft, JobData, JobOptions }) => {
   return (
     <React.Fragment>
-      <Heading2 style={{ marginBottom: '1.875rem' }}>
-        {DraftJobData.length} Saved Draft
-      </Heading2>
-      {DraftJobData.map(({ id, ...rest }) => {
+      <HeaderContainer>
+        <Heading2>
+          {isDraft
+            ? `${DraftJobData.length} Saved Draft`
+            : `${OpenJobData.length} Open Jobs`}
+        </Heading2>
+        {!isDraft ? (
+          <Button size="large" category="primary">
+            Post Job
+          </Button>
+        ) : null}
+      </HeaderContainer>
+      {JobData.map(({ id, ...rest }) => {
         return (
           <React.Fragment key={id}>
-            <SavedJobsCard isDraft {...rest} jobOptions={DraftJobOptions} />
+            <SavedJobsCard
+              isDraft={isDraft}
+              {...rest}
+              jobOptions={JobOptions}
+            />
           </React.Fragment>
         );
       })}
-      {DraftJobData.length === 0 ? (
+      {JobData.length === 0 ? (
         <Heading4 color={C.GreySecondaryText}>
-          You currently have nothing in drafts.
+          {isDraft
+            ? 'You currently have nothing in drafts.'
+            : 'You currently have no openings.'}
         </Heading4>
       ) : null}
     </React.Fragment>
