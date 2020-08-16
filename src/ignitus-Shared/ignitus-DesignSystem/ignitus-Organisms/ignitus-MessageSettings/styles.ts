@@ -7,8 +7,6 @@ import { flexibleRowDiv } from '../../shared';
 export const Container = styled.div`
   width: 40rem;
   height: 21rem;
-  top: 100px;
-  left: 100px;
   background: ${C.White};
   box-shadow: 0px 3px 6px ${C.boxShadowColor};
   border-radius: 1rem;
