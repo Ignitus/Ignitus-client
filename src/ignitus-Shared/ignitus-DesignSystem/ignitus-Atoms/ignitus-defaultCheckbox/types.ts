@@ -1,20 +1,15 @@
-export type CheckBoxType = {
+export interface CheckBoxType {
   label: string;
   value: string;
-  checkBoxProps?: {
-    height: string;
-    width: string;
-  };
-  textProps?: TextProps;
-};
-export type TextProps = {
+  height?: string;
+  width?: string;
+  color?: string;
+}
+
+export interface TextProps {
   color?: string;
   fontSize?: string;
   fontFamily?: string;
   fontWeight?: string;
   width?: string;
-};
-export type checkBoxProps = {
-  height?: string;
-  width?: string;
-};
+}

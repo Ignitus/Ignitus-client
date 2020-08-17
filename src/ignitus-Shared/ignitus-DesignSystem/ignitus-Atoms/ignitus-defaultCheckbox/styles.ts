@@ -2,14 +2,15 @@ import styled from '@emotion/styled';
 import { Paragraph } from '../typography';
 import { MD, PrimaryFamily, Normal } from '../fonts';
 import { GreyText } from '../colors';
-import { TextProps, checkBoxProps } from './types';
+import { TextProps } from './types';
 
-export const CheckBox = styled.input<checkBoxProps>`
+export const CheckBox = styled.input`
   height: ${props => (props.height ? props.height : '1rem')};
   width: ${props => (props.width ? props.width : '1rem')};
 `;
+
 export const Label = styled.label`
-  margin-left: 0.8rem;
+  margin-left: 0.4rem;
 `;
 
 export const StyledParagraph = styled(Paragraph)<TextProps>`

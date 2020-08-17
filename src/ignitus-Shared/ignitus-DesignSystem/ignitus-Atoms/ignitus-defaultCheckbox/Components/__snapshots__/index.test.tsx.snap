@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should rendered 1`] = `
+<div
+  class="css-1orfikq"
+>
+  <input
+    class="css-176h7u8"
+    id="Label"
+    name="Label"
+    type="checkbox"
+    value="Value"
+  />
+  <label
+    class="css-5yljri"
+    for="Label"
+  >
+    <p
+      class="css-12wugqo"
+    >
+      Label
+    </p>
+  </label>
+</div>
+`;
