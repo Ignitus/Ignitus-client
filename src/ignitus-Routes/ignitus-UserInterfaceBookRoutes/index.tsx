@@ -40,6 +40,7 @@ import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/M
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
+import { InterfaceNewMessage } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNewMessage/Components/index'
 
 const Container = styled.div`
   display: flex;
@@ -154,6 +155,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/dashboardNavigationDropdown"
           component={interfaceDashboardNavigationDropdown}
         />
+        <Route path="/interface/newMessage" component={InterfaceNewMessage} />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />
