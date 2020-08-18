@@ -6,9 +6,7 @@ import { flexibleRowDiv, flexibleColDiv } from '../../shared';
 import { Icon as I } from '../../../ignitus-Utilities/Components/icon';
 import { DropDownItemProp, DropdownContainerProp } from './types';
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+export const HeaderContainer = styled(flexibleRowDiv)`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.75rem;
@@ -18,24 +16,16 @@ export const SavedJobContainer = styled(flexibleRowDiv)`
   border-radius: 1rem;
   box-shadow: 0 3px 6px 0 ${C.boxShadowColor};
   background-color: ${C.White};
-  padding-left: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
   width: 100%;
   margin-bottom: 1.25rem;
-  flex-direction: row;
-  justify-content: flex-start;
-  display: flex;
-  position: relative;
+  justify-content: space-between;
 `;
 
-export const ImageContainer = styled.div`
-  position: relative;
-  img {
-    width: 4rem;
-    max-width: 100%;
-    max-height: 100%;
-  }
+export const Image = styled.img`
+  width: 4rem;
+  max-width: 100%;
+  max-height: 100%;
 `;
 
 export const DetailContainer = styled(flexibleColDiv)`
@@ -46,23 +36,19 @@ export const DetailContainer = styled(flexibleColDiv)`
 
 export const JobTitle = styled(T.Paragraph)`
   font-size: ${F.MD};
-  font-family: ${F.PrimaryFamily};
   font-weight: ${F.Bold};
   color: ${C.SecondaryColor};
 `;
 
 export const JobDesc = styled(T.Paragraph)`
   font-size: ${F.XS};
-  font-family: ${F.PrimaryFamily};
   font-wieght: ${F.Light};
   color: ${C.IgnitusBlue};
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin: 2px 0 4px 0;
 `;
 
 export const JobUpdate = styled(T.Paragraph)`
   font-size: ${F.XS};
-  font-family: ${F.PrimaryFamily};
   font-wieght: ${F.Light};
   color: ${C.GreySecondaryText};
 `;
@@ -72,7 +58,7 @@ export const Icon = styled(I)`
 `;
 
 export const IconContainer = styled.div`
-  margin-right: 2rem;
+  margin-right: 1rem;
   &:hover {
     cursor: pointer;
   }
@@ -96,9 +82,17 @@ export const MoreContainer = styled.div`
   position: relative;
 `;
 
-export const RightItemsContainer = styled(flexibleRowDiv)`
-  position: absolute;
-  right: 3%;
+export const LeftItemsContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+export const RightItemsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
 `;
 
 export const DropdownItemContainer = styled(flexibleRowDiv)<DropDownItemProp>`
@@ -124,7 +118,6 @@ export const DropdownItemContainer = styled(flexibleRowDiv)<DropDownItemProp>`
 
 export const DropdownItemText = styled(T.Paragraph)`
   color: ${C.IgnitusBlue};
-  font-family: ${F.PrimaryFamily};
   text-align: center
   font-weight: ${F.Normal};
   font-size: ${F.SM};

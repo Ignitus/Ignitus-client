@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import * as S from '../styles';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 import { Props, Option, MenuProps } from '../types';
@@ -15,27 +15,41 @@ export const SavedJobsCard = ({
 }: Props) => {
   const [open, setOpen] = useState(false);
 
+  const ref: React.MutableRefObject<any> = useRef(null);
+  const handleClickOutside = event => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true);
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  });
+
   return (
     <S.SavedJobContainer>
-      <S.ImageContainer>
-        <img src={avatar} alt="avatar" />
-      </S.ImageContainer>
-      <S.DetailContainer>
-        <S.JobTitle>{title}</S.JobTitle>
-        <S.JobDesc>
-          {poster} | {location}
-        </S.JobDesc>
-        <S.JobUpdate>Updated {lastUpdated}</S.JobUpdate>
-      </S.DetailContainer>
+      <S.LeftItemsContainer>
+        <S.Image src={avatar} alt="avatar" />
+        <S.DetailContainer>
+          <S.JobTitle>{title}</S.JobTitle>
+          <S.JobDesc>
+            {poster} | {location}
+          </S.JobDesc>
+          <S.JobUpdate>Updated {lastUpdated}</S.JobUpdate>
+        </S.DetailContainer>
+      </S.LeftItemsContainer>
       <S.RightItemsContainer>
-        <S.MoreContainer>
+        <S.MoreContainer ref={ref}>
           <S.IconContainer onClick={() => setOpen(!open)}>
             <S.Icon name={AppIcon.MoreHorizontalIcon} />
           </S.IconContainer>
           <DropdownMenu setOpen={setOpen} open={open} jobOptions={jobOptions} />
         </S.MoreContainer>
         {isDraft ? (
-          <Button size="large" category="secondary">
+          <Button size="medium" category="secondary">
             Publish
           </Button>
         ) : null}

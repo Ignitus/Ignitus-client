@@ -4,6 +4,7 @@ import {
   SavedJobsCard,
   Heading2,
   Heading4,
+  Heading3,
   Button,
 } from '../../../../../ignitus-Shared';
 import { HeaderContainer } from '../../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Organisms/ignitus-SavedJobsCard/styles';
@@ -16,7 +17,7 @@ import {
 } from '../constants';
 import { JobProps } from '../types';
 
-export const interfaceSavedJobs: React.FC = () => {
+export const InterfaceSavedJobs: React.FC = () => {
   return (
     <Interface>
       <Heading2>Saved Jobs</Heading2>
@@ -36,13 +37,13 @@ export const Jobs: React.FC<JobProps> = ({ isDraft, JobData, JobOptions }) => {
   return (
     <React.Fragment>
       <HeaderContainer>
-        <Heading2>
+        <Heading3>
           {isDraft
             ? `${DraftJobData.length} Saved Draft`
             : `${OpenJobData.length} Open Jobs`}
-        </Heading2>
+        </Heading3>
         {!isDraft ? (
-          <Button size="large" category="primary">
+          <Button size="medium" category="primary">
             Post Job
           </Button>
         ) : null}
