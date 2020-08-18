@@ -40,7 +40,7 @@ import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/M
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
-import { InterfaceNewMessage } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNewMessage/Components/index'
+import { InterfaceNewMessage } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNewMessage/Components/index';
 
 const Container = styled.div`
   display: flex;

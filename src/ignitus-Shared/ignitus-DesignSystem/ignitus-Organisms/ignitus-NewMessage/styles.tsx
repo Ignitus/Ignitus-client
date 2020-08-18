@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import { StyledTagProps } from './types';
 import { Paragraph } from '../../..';
 import { Bold } from '../../ignitus-Atoms/fonts';
-import * as C from '../../ignitus-Atoms/colors'
-import * as F from '../../ignitus-Atoms/fonts'
+import * as C from '../../ignitus-Atoms/colors';
+import * as F from '../../ignitus-Atoms/fonts';
 
 export const Container = styled.div<StyledTagProps>`
   background: ${props => props.bgColor};
@@ -17,7 +17,6 @@ export const Container = styled.div<StyledTagProps>`
   flex-direction: column;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 `;
-
 
 export const IconContainer = styled.button`
   background-color: ${C.IgnitusBlue};
@@ -39,13 +38,13 @@ export const MessageHeader = styled.div`
   margin: 10px 0px 10px 0px;
 `;
 export const HeaderLeft = styled.div`
- flex: 1;
- justify-content: flex-start;
- font-size: 18px;
- padding-left: 12px;
- margin-left: 10px;
- color: #e0e0e0;
- line-height: 21px;
+  flex: 1;
+  justify-content: flex-start;
+  font-size: 18px;
+  padding-left: 12px;
+  margin-left: 10px;
+  color: #e0e0e0;
+  line-height: 21px;
 `;
 
 export const Input = styled.input`
@@ -103,7 +102,6 @@ export const BodyTab3 = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  
 `;
 
 export const BtnContainer = styled.button`
@@ -111,8 +109,8 @@ export const BtnContainer = styled.button`
   cursor: pointer;
   align-items: center;
   margin-left: 70px;
-  background-color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 29px;
 `;
 
@@ -120,17 +118,17 @@ export const BtnIconContainer = styled.div`
   margin-right: 5px;
 `;
 export const ButtonText = styled.div`
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 14px;
-color: ${C.IgnitusBlue}
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: ${C.IgnitusBlue};
 `;
 
 export const MessageBody = styled.div`
-   width: 100%;
-   height: 80%;
+  width: 100%;
+  height: 80%;
 `;
 
 export const MessageInput = styled.textarea`
@@ -146,27 +144,27 @@ export const MessageInput = styled.textarea`
   border: none;
   resize: none;
 
-   ::placeholder {
-     color: ${C.GreySecondaryText};
-     font-weight: ${F.SemiBold};
-     font-size: ${F.SM};
-   opacity: 0.3;
-   }
+  ::placeholder {
+    color: ${C.GreySecondaryText};
+    font-weight: ${F.SemiBold};
+    font-size: ${F.SM};
+    opacity: 0.3;
+  }
 `;
 
 export const ActionButtons = styled.div`
-   display: flex;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   justify-content: flex-end;
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  justify-content: flex-end;
 `;
 
 export const ActionBtnContainer = styled.button`
   display: flex;
   cursor: pointer;
   align-items: center;
-  background-color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   width: 130px;
@@ -186,19 +184,19 @@ export const ActionBtnContainer2 = styled.button`
   margin-left: 18px;
 `;
 export const ButtonText1 = styled.div`
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-color: ${C.IgnitusBlue};
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: ${C.IgnitusBlue};
 `;
 
 export const ButtonText2 = styled.div`
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-color: #FFFFFF;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
 `;
