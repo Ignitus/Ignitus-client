@@ -210,7 +210,7 @@ export const allEdges: Edges[] = [
             route: '/interface/messageCard',
           },
           {
-            title: 'OpportunitySideCard',
+            title: 'Opportunity Side Card',
             route: '/interface/opportunitySideCard',
           },
         ],
