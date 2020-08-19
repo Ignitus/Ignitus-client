@@ -12,7 +12,7 @@ import {
   Paragraph,
   Button,
 } from '../../ignitus-Shared';
-import { Progress } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Molecules/ignitus-Progress/Components/Progress';
+import { Progress } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Templates/ignitus-Progress/Components/Progress';
 
 import * as T from './style';
 import { ProfileDetailsFlow } from './ignitus-DetailsProfileFlow/Components/index';
