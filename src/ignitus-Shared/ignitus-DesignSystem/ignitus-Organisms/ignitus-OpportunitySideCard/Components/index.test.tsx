@@ -22,6 +22,16 @@ const cardProps: OpportunityType = {
   description: 'Australia',
 };
 
+const mockClickProp = {
+  handleClick: jest.fn(),
+};
+
+const ButtonProp = {
+  size: 'large',
+  category: 'primary',
+  onClick: mockClickProp.handleClick,
+};
+
 it('should rendered', () => {
   const tree = render(<InfoCard {...props} />);
   expect(tree).toMatchSnapshot();
@@ -104,6 +114,15 @@ describe('<InfoCard />', () => {
         .at(2)
         .text(),
     ).toBe('ShareIconShare Link');
+  });
+
+  it('should call handleClick once', () => {
+    wrapper = mount(<S.Button {...{ ...ButtonProp }} />);
+    wrapper
+      .find(S.Button)
+      .at(0)
+      .simulate('click');
+    expect(mockClickProp.handleClick).toBeCalledTimes(1);
   });
 });
 
