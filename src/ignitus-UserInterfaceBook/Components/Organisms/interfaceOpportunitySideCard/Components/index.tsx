@@ -7,6 +7,6 @@ export const interfaceOpportunitySideCard = () => (
   <Interface>
     <Heading2>Opportunity Side Card</Heading2>
     <hr />
-  <InfoCard location="Australia" commitment="Full-time" salary="24" />
+    <InfoCard location="Australia" commitment="Full-time" salary="24" />
   </Interface>
 );
