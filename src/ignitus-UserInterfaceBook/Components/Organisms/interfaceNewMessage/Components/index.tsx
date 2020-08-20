@@ -7,7 +7,7 @@ import * as S from '../style';
 
 export const InterfaceNewMessage: React.FC = () => (
   <Interface>
-    <Heading2>NewMessage</Heading2>
+    <Heading2>New Message</Heading2>
     <hr />
     <S.newMessage
       textColor={C.Black}

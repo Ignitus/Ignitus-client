@@ -40,19 +40,17 @@ export const MessageHeader = styled.div`
 export const HeaderLeft = styled.div`
   flex: 1;
   justify-content: flex-start;
-  font-size: 18px;
+  font-size: ${F.MD};
   padding-left: 12px;
   margin-left: 10px;
   color: #e0e0e0;
-  line-height: 21px;
+  line-height: ${F.LG};
 `;
 
 export const Input = styled.input`
   flex: 6;
   height: 75px;
-  // justify-item: center !important;
   width: 725px;
-  // background-color: ${C.GreyLight};
   background-color: #f7f7f7;
   padding-left: 2rem;
   color: ${C.GreySecondaryText};
@@ -76,7 +74,6 @@ export const BodyOptions = styled.div<StyledTagProps>`
   flex-direction: row;
   height: 44px;
   align-items: center;
-  // justify-content: space-evenly;
 `;
 export const BodyTab1 = styled.div`
   display: flex;
@@ -118,11 +115,11 @@ export const BtnIconContainer = styled.div`
   margin-right: 5px;
 `;
 export const ButtonText = styled.div`
-  font-family: Raleway;
+  font-family: ${F.PrimaryFamily};
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 14px;
+  font-weight: ${F.Bold};
+  font-size: ${F.XS};
+  line-height: ${F.XS};
   color: ${C.IgnitusBlue};
 `;
 
@@ -184,19 +181,19 @@ export const ActionBtnContainer2 = styled.button`
   margin-left: 18px;
 `;
 export const ButtonText1 = styled.div`
-  font-family: Raleway;
+  font-family: ${F.PrimaryFamily};
   font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-weight: ${F.Bold};
+  font-size: ${F.MD};
+  line-height: ${F.LG};
   color: ${C.IgnitusBlue};
 `;
 
 export const ButtonText2 = styled.div`
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-family: ${F.PrimaryFamily};
+  font-style: normal; 
+  font-weight: ${F.Bold};
+  font-size: ${F.MD};
+  line-height: ${F.LG};
   color: #ffffff;
 `;

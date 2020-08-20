@@ -220,7 +220,7 @@ export const allEdges: Edges[] = [
         route: '/interface/avatar',
       },
       {
-        title: 'NewMessage',
+        title: 'New Message',
         route: '/interface/newMessage',
       },
       {
