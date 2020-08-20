@@ -57,14 +57,13 @@ export const Input = styled.input`
   font-weight: ${F.SemiBold};
   font-size: ${F.XL};
   border: none;
-  
 
-   ::placeholder {
-     color: ${C.GreySecondaryText};
-     font-weight: ${F.SemiBold};
-     font-size: ${F.SM};
-   opacity: 0.3;
-   }
+  ::placeholder {
+    color: ${C.GreySecondaryText};
+    font-weight: ${F.SemiBold};
+    font-size: ${F.SM};
+    opacity: 0.3;
+  }
 `;
 
 export const BodyOptions = styled.div<StyledTagProps>`
@@ -191,7 +190,7 @@ export const ButtonText1 = styled.div`
 
 export const ButtonText2 = styled.div`
   font-family: ${F.PrimaryFamily};
-  font-style: normal; 
+  font-style: normal;
   font-weight: ${F.Bold};
   font-size: ${F.MD};
   line-height: ${F.LG};
