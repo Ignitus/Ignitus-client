@@ -213,6 +213,10 @@ export const allEdges: Edges[] = [
             title: 'Message Card',
             route: '/interface/messageCard',
           },
+          {
+            title: 'Opportunity Side Card',
+            route: '/interface/opportunitySideCard',
+          },
         ],
       },
       {
