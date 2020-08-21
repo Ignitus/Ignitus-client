@@ -22,16 +22,6 @@ const cardProps: OpportunityType = {
   description: 'Australia',
 };
 
-const mockClickProp = {
-  handleClick: jest.fn(),
-};
-
-const ButtonProp = {
-  size: 'large',
-  category: 'primary',
-  onClick: mockClickProp.handleClick,
-};
-
 it('should rendered', () => {
   const tree = render(<InfoCard {...props} />);
   expect(tree).toMatchSnapshot();
@@ -116,13 +106,13 @@ describe('<InfoCard />', () => {
     ).toBe('ShareIconShare Link');
   });
 
-  it('should call handleClick once', () => {
-    wrapper = mount(<S.Button {...{ ...ButtonProp }} />);
+  it('should change apply status on Apply button click', () => {
+    expect(wrapper.find(S.ApplyStatus).prop('status')).toBe('Apply');
     wrapper
       .find(S.Button)
       .at(0)
       .simulate('click');
-    expect(mockClickProp.handleClick).toBeCalledTimes(1);
+    expect(wrapper.find(S.ApplyStatus).prop('status')).toBe('Applied');
   });
 });
 
