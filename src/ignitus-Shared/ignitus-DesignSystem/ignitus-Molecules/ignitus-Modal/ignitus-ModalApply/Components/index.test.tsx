@@ -40,4 +40,25 @@ describe('<ModalApply />', () => {
         .text(),
     ).toBe('Cover letter');
   });
+
+  it('should render default button text', () => {
+    expect(
+      wrapper
+        .find('button')
+        .at(0)
+        .text(),
+    ).toBe('Upload Document');
+    expect(
+      wrapper
+        .find('button')
+        .at(1)
+        .text(),
+    ).toBe('Apply');
+    expect(
+      wrapper
+        .find('button')
+        .at(2)
+        .text(),
+    ).toBe('Cancel');
+  });
 });
