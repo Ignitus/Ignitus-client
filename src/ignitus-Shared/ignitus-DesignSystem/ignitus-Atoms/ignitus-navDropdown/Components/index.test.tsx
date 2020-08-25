@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, render } from 'enzyme';
 import { DashboardNavigationDropdown } from './index';
 
-import * as S from '../styles';
+import { Icon } from '../styles';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
 const props = {
@@ -39,7 +39,7 @@ describe('<DashboardNavigationDropdown />', () => {
   });
 
   it('should render given icon', () => {
-    expect(wrapper.find(S.Icon).length).toBe(2);
+    expect(wrapper.find(Icon).length).toBe(2);
     expect(wrapper.find(AppIcon.StudentIcon).length).toBe(1);
     expect(wrapper.find(AppIcon.FilledArrowDownIcon).length).toBe(1);
   });
