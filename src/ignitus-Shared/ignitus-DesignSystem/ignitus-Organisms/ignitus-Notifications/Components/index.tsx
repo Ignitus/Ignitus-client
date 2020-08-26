@@ -22,7 +22,9 @@ export const Notifications = withErrorBoundary(
       <S.LeftContainer>
         {picture && <S.Image src={picture} />}
         {textLeft}
-        <S.Text color={titleColor}>&nbsp; {title} &nbsp;</S.Text>
+        <S.Text color={titleColor}>
+          {'\u00A0'} {title} {'\u00A0'}
+        </S.Text>
         {textRight}
       </S.LeftContainer>
       <S.RightContainer>

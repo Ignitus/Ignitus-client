@@ -82,6 +82,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalShare/Components';
 
 export {
+  ModalApply,
+} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Modal/ignitus-ModalApply/Components';
+
+export {
   Overlay,
 } from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
@@ -128,6 +132,10 @@ export {
 export {
   DeleteAccount,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DeleteAccount/Components';
+
+export {
+  MessageDetail,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageDetail/Components';
 
 export {
   DashboardNavigation,
