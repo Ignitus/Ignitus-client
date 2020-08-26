@@ -54,6 +54,7 @@ import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
+import { MoreHorizontalIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/moreHorizontalIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -61,6 +62,9 @@ type Props = {
 
 export const Icon = ({ name, ...rest }: Props) => {
   switch (name) {
+    case AppIcon.MoreHorizontalIcon:
+      return <MoreHorizontalIcon {...rest} />;
+
     case AppIcon.AngelListIcon:
       return <AngelListIcon {...rest} />;
 

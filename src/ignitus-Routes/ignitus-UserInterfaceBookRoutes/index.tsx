@@ -43,6 +43,7 @@ import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/M
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
+import { InterfaceSavedJobs } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSavedJobs/Components';
 
 const Container = styled.div`
   display: flex;
@@ -165,6 +166,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={InterfaceNotifications}
         />
         <Route path="/interface/messageCard" component={interfaceMessageCard} />
+        <Route path="/interface/savedJobs" component={InterfaceSavedJobs} />
         <Route path="/interface/deleteFinal" component={interfaceDeleteFinal} />
         <Route
           path="/interface/deleteAccount"

@@ -156,6 +156,10 @@ export {
 export {
   Notifications,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
+
+export {
+  SavedJobsCard,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SavedJobsCard/Components';
 /**
  * ignitus-Templates
  */
