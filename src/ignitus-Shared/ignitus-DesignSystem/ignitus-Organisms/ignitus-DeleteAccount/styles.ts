@@ -30,6 +30,7 @@ export const MiddleSection = styled.div`
 
 export const BottomSection = styled(flexibleRowDiv)`
   justify-content: flex-end;
+  margin-top: 2rem;
 `;
 
 export const StyledIcon = styled(Icon)`
@@ -80,4 +81,5 @@ export const StyledTextArea = styled.textarea`
 
 export const StyledRoundedButton = styled(RoundedButton)`
   font-weight: ${F.Bold};
+  box-shadow: 0 6px 12px ${C.boxShadowColorLight};
 `;
