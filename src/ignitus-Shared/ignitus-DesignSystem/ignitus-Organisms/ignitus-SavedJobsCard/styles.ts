@@ -42,14 +42,14 @@ export const JobTitle = styled(T.Paragraph)`
 
 export const JobDesc = styled(T.Paragraph)`
   font-size: ${F.XS};
-  font-wieght: ${F.Light};
+  font-weight: ${F.Light};
   color: ${C.IgnitusBlue};
   margin: 2px 0 4px 0;
 `;
 
 export const JobUpdate = styled(T.Paragraph)`
   font-size: ${F.XS};
-  font-wieght: ${F.Light};
+  font-weight: ${F.Light};
   color: ${C.GreySecondaryText};
 `;
 
@@ -70,7 +70,7 @@ export const DropdownContainer = styled(flexibleColDiv)<DropdownContainerProp>`
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   background-color: ${C.White};
   margin-bottom: 100px;
-  border: 0.25px solid ${C.Border};
+  border: 0.25px solid ${C.GreyLight};
   z-index: 1;
   position: absolute;
   top: 25px;
@@ -106,7 +106,7 @@ export const DropdownItemContainer = styled(flexibleRowDiv)<DropDownItemProp>`
   align-items: center;
   width: 100%;
   height: 2.25rem;
-  border-bottom: 0.25px solid ${C.Border};
+  border-bottom: 0.25px solid ${C.GreyLight};
   &:hover {
     cursor: pointer;
     background-color: ${C.IgnitusBlue};
@@ -118,7 +118,7 @@ export const DropdownItemContainer = styled(flexibleRowDiv)<DropDownItemProp>`
 
 export const DropdownItemText = styled(T.Paragraph)`
   color: ${C.IgnitusBlue};
-  text-align: center
+  text-align: center;
   font-weight: ${F.Normal};
   font-size: ${F.SM};
 `;

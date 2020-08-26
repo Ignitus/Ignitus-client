@@ -28,7 +28,6 @@ export const FacebookIconColor: string = '#3b5998';
 
 // other colors
 export const Orange: string = '#ffa500';
-export const Border: string = '#BBBBBB';
 export const HoverTextColor: string = '#FF4444';
 
 // Box shadow
