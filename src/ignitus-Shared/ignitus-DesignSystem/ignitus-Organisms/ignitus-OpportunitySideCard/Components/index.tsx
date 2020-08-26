@@ -16,26 +16,25 @@ export const InfoCard = ({ location, commitment, salary }: CardType) => {
       <Card title="Salary" description={salary} />
       <S.ButtonsWrapper>
         <S.Button size="large" category="primary" onClick={handleClick}>
-          {' '}
           <S.ApplyStatus status={applyButton} name={AppIcon.CheckIcon} />
-          {applyButton}{' '}
+          {applyButton}
         </S.Button>
         <S.Button size="large" category="secondary">
-          {' '}
-          Save{' '}
+          Save
         </S.Button>
         <S.Button size="large" category="grey">
-          <S.Share name={AppIcon.ShareIcon} /> Share Link
+          <S.Share name={AppIcon.ShareIcon} />
+          Share Link
         </S.Button>
       </S.ButtonsWrapper>
     </S.Container>
   );
 };
 
-const Card = ({ title, description }: OpportunityType) => (
+export const Card = ({ title, description }: OpportunityType) => (
   <S.Wrapper>
     <S.Heading>{title}</S.Heading>
     <br />
-    <Paragraph> {description} </Paragraph>
+    <Paragraph>{description}</Paragraph>
   </S.Wrapper>
 );

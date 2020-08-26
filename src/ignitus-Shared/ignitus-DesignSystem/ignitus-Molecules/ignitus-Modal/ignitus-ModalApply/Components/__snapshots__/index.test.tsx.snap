@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  class="css-xpwoj3"
+>
+  <div
+    class="css-w72ftu"
+  >
+    <p
+      class="css-9adi7w"
+    >
+      Email *
+    </p>
+    <input
+      class="css-v8hd27"
+      height="3rem"
+      name="name"
+      placeholder="Email"
+      type="text"
+      width="450px"
+    />
+  </div>
+  <div
+    class="css-3oqt7t"
+  >
+    <div
+      class="css-w72ftu"
+    >
+      <p
+        class="css-9adi7w"
+      >
+        Resume *
+      </p>
+      <span
+        class="css-1ofj0nk"
+        color="#ffffff"
+      >
+        Sophia_resume.pdf
+      </span>
+    </div>
+    <div
+      class="css-1bz476y"
+    >
+      <p
+        class="css-9adi7w"
+      >
+        Cover letter
+      </p>
+      <button
+        class="css-1x1p5xb"
+      >
+        Upload Document
+      </button>
+    </div>
+  </div>
+  <div
+    class="css-m74gbk"
+  >
+    <button
+      class="css-1w1qkgh"
+    >
+      Apply
+    </button>
+    <button
+      class="css-da71r7"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;

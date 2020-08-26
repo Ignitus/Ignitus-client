@@ -35,7 +35,7 @@ import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
-import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
+import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
