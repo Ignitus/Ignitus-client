@@ -130,6 +130,18 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageCard/Components';
 
 export {
+  DeleteFinal,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DeleteFinal/Components';
+
+export {
+  DeleteAccount,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DeleteAccount/Components';
+
+export {
+  MessageDetail,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageDetail/Components';
+
+export {
   DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
@@ -144,6 +156,10 @@ export {
 export {
   Notifications,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
+
+export {
+  SavedJobsCard,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SavedJobsCard/Components';
 /**
  * ignitus-Templates
  */
