@@ -130,6 +130,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageCard/Components';
 
 export {
+  MessageDetail,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageDetail/Components';
+
+export {
   DashboardNavigation,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SideNavigation/ignitus-DashboardSideNavigation/Components';
 
