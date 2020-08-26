@@ -132,6 +132,10 @@ export const allEdges: Edges[] = [
             title: 'Modal Share',
             route: '/interface/modalShare',
           },
+          {
+            title: 'Modal Apply',
+            route: '/interface/modalApply',
+          },
         ],
       },
       {
