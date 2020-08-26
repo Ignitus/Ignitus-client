@@ -3,9 +3,18 @@ import * as S from '../styles';
 import * as C from '../../../ignitus-Atoms/colors';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { AppIcon } from '../../../..';
+import { MessageCardData } from '../types';
 
 export const MessageDetail = withErrorBoundary(
-  ({ name, position, numberMessages, dateSent, avatar, online, message }) => (
+  ({
+    name,
+    position,
+    numberMessages,
+    dateSent,
+    avatar,
+    online = true,
+    message,
+  }: MessageCardData) => (
     <S.MessageContainer>
       <S.TopSection>
         <S.ImageContainer>

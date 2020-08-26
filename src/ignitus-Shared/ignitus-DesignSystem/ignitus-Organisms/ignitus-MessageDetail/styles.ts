@@ -91,8 +91,9 @@ export const BottomSection = styled(flexibleRowDiv)`
 
 export const StyledDefaultButtonWithIcon = styled(DefaultButtonWithIcon)`
   flex-direction: row-reverse;
-  box-shadow: 0 3px 6px ${C.boxShadowColor};
-
+  box-shadow: 0 6px 12px ${C.boxShadowColorLight};
+  border-radius: 1rem;
+  font-weight: ${F.Bold};
   svg {
     margin-right: 0.2rem;
   }

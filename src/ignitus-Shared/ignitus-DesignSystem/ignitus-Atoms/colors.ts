@@ -31,3 +31,4 @@ export const Orange: string = '#ffa500';
 
 // Box shadow
 export const boxShadowColor: string = 'rgba(0, 0, 0, 0.05)';
+export const boxShadowColorLight: string = 'rgba(0, 0, 0, 0.2)';
