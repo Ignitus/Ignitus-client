@@ -41,6 +41,7 @@ export enum AppIcon {
   AccountCircleIcon = 'AccountCircleIcon',
   NotificationIcon = 'NotificationIcon',
   FileIcon = 'FileIcon',
+  ForwardArrowIcon = 'ForwardArrowIcon',
   BookmarkIcon = 'BookmarkIcon',
   MapMarkerIcon = 'MapMarkerIcon',
   VideoLibIcon = 'VideoLibrary',

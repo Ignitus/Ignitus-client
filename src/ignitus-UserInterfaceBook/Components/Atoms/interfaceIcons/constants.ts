@@ -33,6 +33,7 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.QuestionAnswerIcon,
   AppIcon.SaveIcon,
   AppIcon.VideoLibIcon,
+  AppIcon.ForwardArrowIcon,
 ];
 
 export const GeneralIcons: AppIcon[] = [
