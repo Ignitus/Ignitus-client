@@ -231,6 +231,10 @@ export const allEdges: Edges[] = [
         title: 'Notifications',
         route: '/interface/notifications',
       },
+      {
+        title: 'Delete Account',
+        route: '/interface/deleteAccount',
+      },
     ],
   },
   {
