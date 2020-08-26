@@ -130,6 +130,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageCard/Components';
 
 export {
+  DeleteFinal,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DeleteFinal/Components';
+
+export {
   DeleteAccount,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-DeleteAccount/Components';
 
