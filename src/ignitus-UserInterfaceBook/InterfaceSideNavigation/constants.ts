@@ -132,6 +132,10 @@ export const allEdges: Edges[] = [
             title: 'Modal Share',
             route: '/interface/modalShare',
           },
+          {
+            title: 'Modal Apply',
+            route: '/interface/modalApply',
+          },
         ],
       },
       {
@@ -209,6 +213,14 @@ export const allEdges: Edges[] = [
             title: 'Message Card',
             route: '/interface/messageCard',
           },
+          {
+            title: 'Message Detail',
+            route: '/interface/messageDetail',
+          },
+          {
+            title: 'Opportunity Side Card',
+            route: '/interface/opportunitySideCard',
+          },
         ],
       },
       {
@@ -222,6 +234,10 @@ export const allEdges: Edges[] = [
       {
         title: 'Delete Final',
         route: '/interface/deleteFinal',
+      },
+      {
+        title: 'Delete Account',
+        route: '/interface/deleteAccount',
       },
     ],
   },

@@ -113,6 +113,7 @@ export const StyledIconInput = styled(DefaultIconInput)`
 `;
 export const StyledDefaultCheckbox = styled(DefaultCheckbox)`
   background-color: ${C.IgnitusBlue};
+  font-size: ${F.MD};
 `;
 export const StyledDefaultInput = styled(DefaultInput)`
   padding: 1rem;

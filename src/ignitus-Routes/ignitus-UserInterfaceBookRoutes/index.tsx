@@ -20,6 +20,8 @@ import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Compon
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
 import { interfaceDeleteFinal } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceDeleteFinal/Components';
+import { interfaceDeleteAccount } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceDeleteAccount/Components';
+import { interfaceMessageDetail } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageDetail/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -27,6 +29,7 @@ import { interfaceIconInput } from '../../ignitus-UserInterfaceBook/Components/A
 import { interfaceMultiMediaInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceMulti/Components';
 import { interfaceModalHooray } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalHooray/Components';
 import { interfaceModalShare } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalShare/Components';
+import { interfaceModalApply } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceModalApply/Components';
 import { interfaceOverlay } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceOverlay/Components';
 import { interfaceTags } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceTags/Components';
 import { interfaceFilters } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceFilters/Components/index';
@@ -34,7 +37,7 @@ import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
-import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
+import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
@@ -143,6 +146,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route path="/interface/userProfile" component={interfaceUserProfile} />
         <Route path="/interface/modalHooray" component={interfaceModalHooray} />
         <Route path="/interface/modalShare" component={interfaceModalShare} />
+        <Route path="/interface/modalApply" component={interfaceModalApply} />
         <Route path="/interface/overlay" component={interfaceOverlay} />
         <Route path="/interface/scrollBar" component={interfaceScrollBar} />
         <Route
@@ -162,6 +166,14 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         />
         <Route path="/interface/messageCard" component={interfaceMessageCard} />
         <Route path="/interface/deleteFinal" component={interfaceDeleteFinal} />
+        <Route
+          path="/interface/deleteAccount"
+          component={interfaceDeleteAccount}
+        />
+        <Route
+          path="/interface/messageDetail"
+          component={interfaceMessageDetail}
+        />
       </Switch>
     </LeftRow>
   </Container>

@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should rendered 1`] = `
+.emotion-6 {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.emotion-1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000066;
+  margin: 0;
+  font-weight: 700;
+  color: #000066;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-3 {
+  width: 1.5rem;
+  fill: #9C9C9C;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+<span
+  class="emotion-6"
+  color="#000000"
+>
+  <div
+    class="emotion-2"
+  >
+    <img
+      class="emotion-0"
+      src="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
+    />
+    We found
+    <p
+      class="emotion-1"
+      color="#000066"
+    >
+        3 mentors  
+    </p>
+    that could help you with your journey
+  </div>
+  <div
+    class="emotion-5"
+  >
+    <div
+      class="emotion-4"
+    >
+      <svg
+        aria-label="CrossIcon"
+        class="emotion-3"
+        color="#9C9C9C"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          CrossIcon
+        </title>
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+        />
+      </svg>
+    </div>
+  </div>
+</span>
+`;
