@@ -20,14 +20,14 @@ export const DeleteFinal = withErrorBoundary(() => (
         data.
       </S.StyledText>
       <S.StyledParagraph>
-        For your security, enter your password to delete your account. This
-        cannot be undone.
+        For your security, enter your password to delete your account.
+        <br /> This cannot be undone.
       </S.StyledParagraph>
       <DefaultInput
         name="password"
         type="password"
         placeholder="Enter your password"
-        height="3rem"
+        height="2rem"
         width="300px"
       />
     </S.MiddleSection>

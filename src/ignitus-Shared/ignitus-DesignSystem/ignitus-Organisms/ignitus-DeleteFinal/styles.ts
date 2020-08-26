@@ -14,22 +14,21 @@ export const DeleteContainer = styled.div`
   flex-direction: column;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
   width: 45rem;
+  padding: 2rem;
 `;
 
 export const TopSection = styled(flexibleRowDiv)`
-  padding: 1.5rem;
   justify-content: space-between;
 `;
 
 export const MiddleSection = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.1rem 1.5rem;
   justify-content: flex-start;
 `;
 
 export const BottomSection = styled(flexibleRowDiv)`
-  padding: 1rem 1.5rem;
+  margin-top: 1rem;
   justify-content: flex-end;
 `;
 
@@ -63,5 +62,5 @@ export const StyledText = styled(Paragraph)`
 `;
 
 export const StyledRoundedButton = styled(RoundedButton)`
-  border: 0.25px solid #c4c4c4;
+  box-shadow: 0 6px 12px ${C.boxShadowColorLight};
 `;
