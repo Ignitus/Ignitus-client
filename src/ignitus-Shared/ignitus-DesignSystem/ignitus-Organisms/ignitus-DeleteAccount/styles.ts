@@ -11,6 +11,7 @@ export const DeleteContainer = styled.div`
   background-color: ${C.White};
   background-size: contain;
   border-radius: 1rem;
+  padding: 2rem;
   display: inline-flex;
   flex-direction: column;
   box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
@@ -18,19 +19,16 @@ export const DeleteContainer = styled.div`
 `;
 
 export const TopSection = styled(flexibleRowDiv)`
-  padding: 1.5rem;
   justify-content: space-between;
 `;
 
 export const MiddleSection = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.3rem 1.5rem;
   justify-content: flex-start;
 `;
 
 export const BottomSection = styled(flexibleRowDiv)`
-  padding: 1.5rem;
   justify-content: flex-end;
 `;
 
@@ -60,6 +58,7 @@ export const StyledParagraph = styled(Paragraph)`
 
 export const StyledCheckbox = styled(DefaultCheckbox)`
   font-size: ${F.SM};
+  margin-bottom: 1rem;
 `;
 
 export const StyledTextArea = styled.textarea`
@@ -80,5 +79,5 @@ export const StyledTextArea = styled.textarea`
 `;
 
 export const StyledRoundedButton = styled(RoundedButton)`
-  border: 0.25px solid #c4c4c4;
+  font-weight: ${F.Bold};
 `;
