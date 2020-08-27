@@ -4,6 +4,7 @@ export interface CheckBoxType {
   height?: string;
   width?: string;
   color?: string;
+  size?: string;
 }
 
 export interface TextProps {

@@ -217,6 +217,18 @@ export const allEdges: Edges[] = [
             title: 'Message Settings',
             route: '/interface/messageSettings',
           },
+          {
+            title: 'Saved Jobs',
+            route: '/interface/savedJobs',
+          },
+          {
+            title: 'Message Detail',
+            route: '/interface/messageDetail',
+          },
+          {
+            title: 'Opportunity Side Card',
+            route: '/interface/opportunitySideCard',
+          },
         ],
       },
       {
@@ -226,6 +238,14 @@ export const allEdges: Edges[] = [
       {
         title: 'Notifications',
         route: '/interface/notifications',
+      },
+      {
+        title: 'Delete Final',
+        route: '/interface/deleteFinal',
+      },
+      {
+        title: 'Delete Account',
+        route: '/interface/deleteAccount',
       },
     ],
   },

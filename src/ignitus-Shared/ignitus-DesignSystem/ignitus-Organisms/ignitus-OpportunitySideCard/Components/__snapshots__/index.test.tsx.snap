@@ -1,0 +1,363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should rendered 1`] = `
+.emotion-15 {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 18rem;
+  padding: 2rem;
+  border-bottom: 0.2rem solid #F7F7F7;
+}
+
+.emotion-0 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000066;
+  font-weight: 600;
+}
+
+.emotion-1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2D2D2D;
+  margin: 0;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.emotion-10 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #ffffff;
+  background-color: #000066;
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 12rem;
+}
+
+.emotion-10:hover,
+.emotion-10:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-10 a {
+  color: #ffffff;
+}
+
+.emotion-10:hover,
+.emotion-10:focus {
+  background-color: #F9BF64;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-10:hover a,
+.emotion-10:focus a {
+  color: #000066;
+}
+
+.emotion-10:hover svg,
+.emotion-10:focus svg {
+  fill: #000066;
+}
+
+.emotion-9 {
+  fill: #ffffff;
+  display: none;
+}
+
+.emotion-11 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #ffffff;
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #000066;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 12rem;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-11 a {
+  color: #000066;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background-color: none;
+  color: none;
+  outline: none;
+}
+
+.emotion-11:hover a,
+.emotion-11:focus a {
+  color: #000066;
+}
+
+.emotion-11:hover svg,
+.emotion-11:focus svg {
+  fill: #000066;
+}
+
+.emotion-13 {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 16px 32px;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #000066;
+  background-color: #E0E0E0;
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 12rem;
+}
+
+.emotion-13:hover,
+.emotion-13:focus {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.emotion-13 a {
+  color: #000066;
+}
+
+.emotion-13:hover,
+.emotion-13:focus {
+  background-color: #C4C4C4;
+  color: #000066;
+  outline: none;
+}
+
+.emotion-13:hover a,
+.emotion-13:focus a {
+  color: #000066;
+}
+
+.emotion-13:hover svg,
+.emotion-13:focus svg {
+  fill: #000066;
+}
+
+.emotion-12 {
+  fill: #000066;
+  margin-right: 0.2rem;
+}
+
+<div
+  class="emotion-15"
+>
+  <div
+    class="emotion-2"
+  >
+    <h4
+      class="emotion-0"
+    >
+      Location
+    </h4>
+    <br />
+    <p
+      class="emotion-1"
+    >
+      Australia
+    </p>
+  </div>
+  <div
+    class="emotion-2"
+  >
+    <h4
+      class="emotion-0"
+    >
+      Commitment
+    </h4>
+    <br />
+    <p
+      class="emotion-1"
+    >
+      Full-time
+    </p>
+  </div>
+  <div
+    class="emotion-2"
+  >
+    <h4
+      class="emotion-0"
+    >
+      Salary
+    </h4>
+    <br />
+    <p
+      class="emotion-1"
+    >
+      24
+    </p>
+  </div>
+  <div
+    class="emotion-14"
+  >
+    <button
+      class="emotion-10"
+    >
+      <svg
+        aria-label="Check Icon"
+        class="emotion-9"
+        fill="none"
+        height="17"
+        status="Apply"
+        viewBox="0 0 23 17"
+        width="23"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Check Icon
+        </title>
+        <path
+          d="M7.291 13.499l-4.52-4.521a1.27 1.27 0 00-1.81 0 1.27 1.27 0 000 1.808l5.413 5.412a1.286 1.286 0 001.821 0L21.887 2.52a1.27 1.27 0 000-1.809 1.27 1.27 0 00-1.809 0L7.291 13.5z"
+        />
+      </svg>
+      Apply
+    </button>
+    <button
+      class="emotion-11"
+    >
+      Save
+    </button>
+    <button
+      class="emotion-13"
+    >
+      <svg
+        aria-label="ShareIcon"
+        class="emotion-12"
+        fill="none"
+        height="20"
+        viewBox="0 0 22 20"
+        width="22"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          ShareIcon
+        </title>
+        <path
+          d="M5.5 15C7.58 5.119 15.583 3.333 15.583 3.333V0L22 6.637l-6.417 6.696V10S9.928 9.829 5.5 15zm11 .145V18H1.833V6h6.048a16.033 16.033 0 012.145-2H0v16h18.333v-6.769L16.5 15.145z"
+          fill="#006"
+        />
+      </svg>
+      Share Link
+    </button>
+  </div>
+</div>
+`;

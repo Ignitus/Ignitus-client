@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should rendered 1`] = `
-Array [
-  <label
-    for="options"
-  >
-    options *
-  </label>,
-  .emotion-0 {
+.emotion-0 {
   display: block;
   margin-left: 0;
   background-color: #ffffff;
@@ -19,7 +13,13 @@ Array [
   outline: none;
 }
 
-<select
+<div>
+  <label
+    for="options"
+  >
+    options *
+  </label>
+  <select
     class="emotion-0"
     display="block"
     id="options"
@@ -44,6 +44,6 @@ Array [
     >
       option4
     </option>
-  </select>,
-]
+  </select>
+</div>
 `;

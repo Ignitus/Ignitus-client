@@ -19,6 +19,9 @@ import { interfaceInput } from '../../ignitus-UserInterfaceBook/Components/Atoms
 import { interfaceOpportunityList } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunityList/Components';
 import { interfaceSavedOpportunity } from '../../ignitus-UserInterfaceBook/Components/Layouts/interfaceSavedOpportunity/Components';
 import { interfaceMessageCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageCard/Components';
+import { interfaceDeleteFinal } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceDeleteFinal/Components';
+import { interfaceDeleteAccount } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceDeleteAccount/Components';
+import { interfaceMessageDetail } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageDetail/Components';
 import { interfaceSearchInput } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSearchInput/Components';
 import { interfaceSeparator } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSeparator/Components';
 import { interfaceDashBoardFooter } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceFooter/interfaceDashBoardFooter/Components';
@@ -34,13 +37,14 @@ import { interfaceUserProfile } from '../../ignitus-UserInterfaceBook/Components
 import { InterfaceAvatar } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceAvatar/Components';
 import { interfaceSideProfile } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSideProfile/Components/index';
 import { InterfaceNotifications } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNotifications/Components/index';
-import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceProgress/index';
+import { InterfaceProgress } from '../../ignitus-UserInterfaceBook/Components/Templates/interfaceProgress/index';
 import { interfaceSecondaryDropDown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceSecondaryDropdown/Components';
 import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceScrollBar/Components';
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
 import { InterfaceMessageSettings } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageSettings/Components';
+import { InterfaceSavedJobs } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSavedJobs/Components';
 
 const Container = styled.div`
   display: flex;
@@ -166,6 +170,16 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
         <Route
           path="/interface/messageSettings"
           component={InterfaceMessageSettings}
+        />
+        <Route path="/interface/savedJobs" component={InterfaceSavedJobs} />
+        <Route path="/interface/deleteFinal" component={interfaceDeleteFinal} />
+        <Route
+          path="/interface/deleteAccount"
+          component={interfaceDeleteAccount}
+        />
+        <Route
+          path="/interface/messageDetail"
+          component={interfaceMessageDetail}
         />
       </Switch>
     </LeftRow>

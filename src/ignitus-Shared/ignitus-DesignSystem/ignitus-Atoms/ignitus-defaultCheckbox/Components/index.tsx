@@ -8,6 +8,7 @@ export const DefaultCheckbox = ({
   height,
   width,
   color,
+  size,
 }: CheckBoxType) => (
   <Container>
     <CheckBox
@@ -19,7 +20,9 @@ export const DefaultCheckbox = ({
       width={width}
     />
     <Label htmlFor={label}>
-      <StyledParagraph color={color}>{label}</StyledParagraph>
+      <StyledParagraph fontSize={size} color={color}>
+        {label}
+      </StyledParagraph>
     </Label>
   </Container>
 );
