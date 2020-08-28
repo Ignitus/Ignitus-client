@@ -1,7 +1,6 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import { DashboardNavigationDropdown } from './index';
-
 import { Icon, NavigationHeading, Column } from '../styles';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
 
