@@ -3,7 +3,6 @@ import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { InputTypes } from '../types';
 import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
-import { Icon } from '../../../../ignitus-Utilities/Components/icon';
 
 export const NewMessage = withErrorBoundary(
   ({ textColor, titleColor, bgColor, ...rest }: InputTypes) => (
@@ -21,58 +20,50 @@ export const NewMessage = withErrorBoundary(
       <S.BodyOptions color={textColor} bgColor={bgColor}>
         <S.BodyTab1>
           <S.IconContainer>
-            <Icon name={AppIcon.BoldTextIcon} />
+            <S.Icon name={AppIcon.BoldTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon name={AppIcon.ItalicTextIcon} />
+            <S.Icon name={AppIcon.ItalicTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon name={AppIcon.UnderlineTextIcon} />
+            <S.Icon name={AppIcon.UnderlineTextIcon} />
           </S.IconContainer>
         </S.BodyTab1>
         <S.BodyTab2>
           <S.IconContainer>
-            <Icon name={AppIcon.CapitalizeTextIcon} />
+            <S.Icon name={AppIcon.CapitalizeTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon name={AppIcon.QuotesIcon} />
+            <S.Icon name={AppIcon.QuotesIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon name={AppIcon.LinkIcon} />
+            <S.Icon name={AppIcon.LinkIcon} />
           </S.IconContainer>
         </S.BodyTab2>
         <S.BodyTab3>
           <S.IconContainer>
-            <Icon name={AppIcon.ListBulletIcon} />
+            <S.Icon name={AppIcon.ListBulletIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon name={AppIcon.ListNumberIcon} />
+            <S.Icon name={AppIcon.ListNumberIcon} />
           </S.IconContainer>
-          <S.BtnContainer>
-            <S.BtnIconContainer>
-              <Icon name={AppIcon.AttachFileIcon} />
-            </S.BtnIconContainer>
-            <S.ButtonText>Upload a file</S.ButtonText>
-          </S.BtnContainer>
         </S.BodyTab3>
+        <S.Button size="small" category="white">
+          <S.Icon name={AppIcon.AttachFileIcon} />
+          Upload a file
+        </S.Button>
       </S.BodyOptions>
-      <S.MessageBody>
-        <S.MessageInput placeholder="Type a new message..." />
-      </S.MessageBody>
-      <S.ActionButtons>
-        <S.ActionBtnContainer>
-          <S.BtnIconContainer>
-            <Icon name={AppIcon.DiscardIcon} />
-          </S.BtnIconContainer>
-          <S.ButtonText1>Discard</S.ButtonText1>
-        </S.ActionBtnContainer>
-        <S.ActionBtnContainer2>
-          <S.BtnIconContainer>
-            <Icon name={AppIcon.SendMessageIcon} />
-          </S.BtnIconContainer>
-          <S.ButtonText2>Send</S.ButtonText2>
-        </S.ActionBtnContainer2>
-      </S.ActionButtons>
+      <S.MessageInput placeholder="Type a new message..." />
+      <S.ButtonContainer>
+        <S.Button size="large" category="white">
+          <S.Icon name={AppIcon.DiscardIcon} />
+          Discard
+        </S.Button>
+        <S.Button size="large" category="primary">
+          <S.Icon name={AppIcon.SendMessageIcon} />
+          Send
+        </S.Button>
+      </S.ButtonContainer>
     </S.Container>
   ),
 );
