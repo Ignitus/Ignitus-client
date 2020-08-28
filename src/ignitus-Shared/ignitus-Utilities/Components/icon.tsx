@@ -30,6 +30,7 @@ import { LocationIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-
 import { FilledArrowDownIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/filledArrowDownIcon';
 import { BookmarkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/bookmarkIcon';
 import { FileIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/fileIcon';
+import { ForwardArrowIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/forwardArrowIcon';
 import { MapMarkerIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mapMarkerIcon';
 import { CopyIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/copyIcon';
 import { PollIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/pollIcon';
@@ -64,6 +65,7 @@ import { ListNumberIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitu
 import { QuotesIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/quotesIcon/index';
 import { SendMessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/sendMessageIcon/index';
 import { UnderlineTextIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/underlineTextIcon/index';
+import { MoreHorizontalIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/moreHorizontalIcon/index';
 
 type Props = {
   name: AppIcon;
@@ -71,6 +73,9 @@ type Props = {
 
 export const Icon = ({ name, ...rest }: Props) => {
   switch (name) {
+    case AppIcon.MoreHorizontalIcon:
+      return <MoreHorizontalIcon {...rest} />;
+
     case AppIcon.AngelListIcon:
       return <AngelListIcon {...rest} />;
 
@@ -118,6 +123,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.FileIcon:
       return <FileIcon {...rest} />;
+
+    case AppIcon.ForwardArrowIcon:
+      return <ForwardArrowIcon {...rest} />;
 
     case AppIcon.MapMarkerIcon:
       return <MapMarkerIcon {...rest} />;

@@ -33,6 +33,7 @@ export const DashboardIcons: AppIcon[] = [
   AppIcon.QuestionAnswerIcon,
   AppIcon.SaveIcon,
   AppIcon.VideoLibIcon,
+  AppIcon.ForwardArrowIcon,
 ];
 
 export const GeneralIcons: AppIcon[] = [
@@ -42,6 +43,7 @@ export const GeneralIcons: AppIcon[] = [
   AppIcon.SearchIcon,
   AppIcon.CrossIcon,
   AppIcon.PlusIcon,
+  AppIcon.MoreHorizontalIcon,
 ];
 
 export const IgnitusLogos: AppIcon[] = [
