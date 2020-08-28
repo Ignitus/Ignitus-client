@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 import { StyledTagProps } from './types';
-import { Paragraph } from '../../..';
+import { Paragraph, DefaultInput } from '../../..';
 import { Bold } from '../../ignitus-Atoms/fonts';
 import * as C from '../../ignitus-Atoms/colors';
 import * as F from '../../ignitus-Atoms/fonts';
+import { flexibleRowDiv } from '../../shared';
 
 export const Container = styled.div<StyledTagProps>`
   background: ${props => props.bgColor};
@@ -11,9 +12,8 @@ export const Container = styled.div<StyledTagProps>`
   border-radius: 0.5rem;
   margin: 0.5rem;
   display: flex;
-  padding: 0px !important;
-  width: 592px !important;
-  height: 659px !important;
+  width: 50rem;
+  height: 38rem !important;
   flex-direction: column;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 `;
@@ -29,10 +29,8 @@ export const Text = styled(Paragraph)`
   color: ${props => props.color};
 `;
 
-export const MessageHeader = styled.div`
-  display: flex;
+export const MessageHeader = styled(flexibleRowDiv)`
   width: 90%;
-  flex-direction: row;
   align-items: center;
   justify-items: center;
   margin: 10px 0px 10px 0px;
@@ -47,33 +45,22 @@ export const HeaderLeft = styled.div`
   line-height: ${F.LG};
 `;
 
-export const Input = styled.input`
-  flex: 6;
-  height: 75px;
-  width: 725px;
+export const Input = styled(DefaultInput)`
   background-color: #f7f7f7;
-  padding-left: 2rem;
+  margin-left: 2rem;
   color: ${C.GreySecondaryText};
   font-weight: ${F.SemiBold};
   font-size: ${F.XL};
-  border: none;
-
-  ::placeholder {
-    color: ${C.GreySecondaryText};
-    font-weight: ${F.SemiBold};
-    font-size: ${F.SM};
-    opacity: 0.3;
-  }
 `;
 
-export const BodyOptions = styled.div<StyledTagProps>`
-  display: flex;
+export const BodyOptions = styled(flexibleRowDiv)<StyledTagProps>`
   background: ${C.IgnitusBlue};
-  width: 100%;
-  flex-direction: row;
+  width: 104%;
   height: 44px;
   align-items: center;
+  margin: 0 -1rem;
 `;
+
 export const BodyTab1 = styled.div`
   display: flex;
   height: 100%;
@@ -132,8 +119,7 @@ export const MessageInput = styled.textarea`
   width: 85%;
   margin: 20px 20px 0 20px;
   background-color: #f7f7f7;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px 0 0 20px;
   color: ${C.GreySecondaryText};
   font-weight: ${F.SemiBold};
   font-size: ${F.XL};
@@ -165,7 +151,9 @@ export const ActionBtnContainer = styled.button`
   border-radius: 50px;
   width: 130px;
   padding-left: 25px;
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
 `;
+
 export const ActionBtnContainer2 = styled.button`
   display: flex;
   cursor: pointer;
@@ -178,7 +166,9 @@ export const ActionBtnContainer2 = styled.button`
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   margin-left: 18px;
+  box-shadow: 0 2px 4px 0 ${C.boxShadowColor};
 `;
+
 export const ButtonText1 = styled.div`
   font-family: ${F.PrimaryFamily};
   font-style: normal;

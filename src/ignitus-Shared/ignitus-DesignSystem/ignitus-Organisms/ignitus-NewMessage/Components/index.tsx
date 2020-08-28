@@ -2,58 +2,55 @@ import React from 'react';
 import * as S from '../styles';
 import { withErrorBoundary } from '../../../../ignitus-ErrorHandlingComponents/errorBoundary';
 import { InputTypes } from '../types';
-import { BoldTextIcon } from '../../../ignitus-Assets/ignitus-Icons/boldTextIcon';
-import { ItalicTextIcon } from '../../../ignitus-Assets/ignitus-Icons/italicTextIcon';
-import { UnderlineTextIcon } from '../../../ignitus-Assets/ignitus-Icons/underlineTextIcon';
-import { CapitalizeTextIcon } from '../../../ignitus-Assets/ignitus-Icons/capitalizeTextIcon';
-import { QuotesIcon } from '../../../ignitus-Assets/ignitus-Icons/quotesIcon';
-import { LinkIcon } from '../../../ignitus-Assets/ignitus-Icons/linkIcon';
-import { ListBulletIcon } from '../../../ignitus-Assets/ignitus-Icons/listBulletIcon';
-import { ListNumberIcon } from '../../../ignitus-Assets/ignitus-Icons/listNumberIcon';
-import { AttachFileIcon } from '../../../ignitus-Assets/ignitus-Icons/attachFileIcon';
-import { DiscardIcon } from '../../../ignitus-Assets/ignitus-Icons/discardIcon';
-import { SendMessageIcon } from '../../../ignitus-Assets/ignitus-Icons/sendMessageIcon';
+import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import { Icon } from '../../../../ignitus-Utilities/Components/icon';
 
 export const NewMessage = withErrorBoundary(
   ({ textColor, titleColor, bgColor, ...rest }: InputTypes) => (
     <S.Container color={textColor} bgColor={bgColor} {...rest}>
       <S.MessageHeader>
         <S.HeaderLeft>TO</S.HeaderLeft>
-        <S.Input placeholder="Type the name, username or email of your recepient" />
+        <S.Input
+          placeholder="Type the name, username or email of your recepient"
+          type="text"
+          name="name"
+          height="4.5rem"
+          width="47rem"
+        />
       </S.MessageHeader>
       <S.BodyOptions color={textColor} bgColor={bgColor}>
         <S.BodyTab1>
           <S.IconContainer>
-            <BoldTextIcon />
+            <Icon name={AppIcon.BoldTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <ItalicTextIcon />
+            <Icon name={AppIcon.ItalicTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <UnderlineTextIcon />
+            <Icon name={AppIcon.UnderlineTextIcon} />
           </S.IconContainer>
         </S.BodyTab1>
         <S.BodyTab2>
           <S.IconContainer>
-            <CapitalizeTextIcon />
+            <Icon name={AppIcon.CapitalizeTextIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <QuotesIcon />
+            <Icon name={AppIcon.QuotesIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <LinkIcon />
+            <Icon name={AppIcon.LinkIcon} />
           </S.IconContainer>
         </S.BodyTab2>
         <S.BodyTab3>
           <S.IconContainer>
-            <ListBulletIcon />
+            <Icon name={AppIcon.ListBulletIcon} />
           </S.IconContainer>
           <S.IconContainer>
-            <ListNumberIcon />
+            <Icon name={AppIcon.ListNumberIcon} />
           </S.IconContainer>
           <S.BtnContainer>
             <S.BtnIconContainer>
-              <AttachFileIcon />
+              <Icon name={AppIcon.AttachFileIcon} />
             </S.BtnIconContainer>
             <S.ButtonText>Upload a file</S.ButtonText>
           </S.BtnContainer>
@@ -65,13 +62,13 @@ export const NewMessage = withErrorBoundary(
       <S.ActionButtons>
         <S.ActionBtnContainer>
           <S.BtnIconContainer>
-            <DiscardIcon />
+            <Icon name={AppIcon.DiscardIcon} />
           </S.BtnIconContainer>
           <S.ButtonText1>Discard</S.ButtonText1>
         </S.ActionBtnContainer>
         <S.ActionBtnContainer2>
           <S.BtnIconContainer>
-            <SendMessageIcon />
+            <Icon name={AppIcon.SendMessageIcon} />
           </S.BtnIconContainer>
           <S.ButtonText2>Send</S.ButtonText2>
         </S.ActionBtnContainer2>
