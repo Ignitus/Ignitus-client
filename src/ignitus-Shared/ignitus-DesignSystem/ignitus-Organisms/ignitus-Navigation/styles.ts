@@ -35,6 +35,7 @@ export const Navigation = styled.nav<NavigationProps>`
 export const NavigationBarBrand = styled(Link)`
   /* padding: 1rem; */
   align-self: stretch;
+  width: max-content;
 `;
 export const Logo = styled(Icon)`
   width: 2.5rem;
