@@ -6,6 +6,7 @@ export type InputTypes = {
   title?: string;
   textLeft?: string;
   textRight?: string;
+  onRemove?(): void;
 };
 
 export type StyledTagProps = {
