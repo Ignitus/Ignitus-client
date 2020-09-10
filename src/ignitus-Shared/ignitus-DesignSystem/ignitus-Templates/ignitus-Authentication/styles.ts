@@ -151,7 +151,10 @@ export const PasswordInput = styled(DefaultPasswordInput)`
   margin: 0.5rem 0;
 `;
 
-export const InputGroup = styled(flexibleColDiv)``;
+export const InputGroup = styled.div`
+  width: 50%;
+`;
+
 export const Button = styled(B)`
   border-radius: 0.5rem;
 `;
