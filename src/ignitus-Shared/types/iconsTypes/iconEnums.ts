@@ -16,6 +16,7 @@ export enum AppIcon {
   CrossIcon = 'CrossIcon',
   SearchIcon = 'SearchIcon',
   SaveIcon = 'SaveIcon',
+  UploadIcon = 'UploadIcon',
   StarCircleIcon = 'StarCircle',
   StudentIcon = 'StudentIcon',
   ShareIcon = 'ShareIcon',

@@ -8,6 +8,7 @@ import { HeartIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ico
 
 import { MessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon';
 import { SaveIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon';
+import { UploadIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/uploadIcon';
 import { NetworkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
 import { MentorsIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon';
 import { KeyBoardArrowDown } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
@@ -114,6 +115,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.SaveIcon:
       return <SaveIcon {...rest} />;
+
+    case AppIcon.UploadIcon:
+      return <UploadIcon {...rest} />;
 
     case AppIcon.NetworkIcon:
       return <NetworkIcon {...rest} />;

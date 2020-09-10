@@ -16,10 +16,11 @@ import { Progress } from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Temp
 
 import * as T from './style';
 import { ProfileDetailsFlow } from './ignitus-DetailsProfileFlow/Components/index';
+import { BasicProfileFlow } from './ignitus-BasicProfileFlow/Components';
 
 export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
   const [current, updateCurrent] = useState(1);
-  const steps = 5;
+  const steps = 6;
 
   const next = () =>
     current === steps + 1 ? null : updateCurrent(current + 1);
@@ -30,9 +31,11 @@ export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
 
       {current && current === 1 && <WelcomeFlow />}
       {current && current === 2 && <InterestFlow />}
-      {current && current === 3 && <ProfileDetailsFlow />}
+      {current && current === 3 && <BasicProfileFlow />}
 
-      {current && current === 4 && (
+      {current && current === 4 && <ProfileDetailsFlow />}
+
+      {current && current === 5 && (
         <React.Fragment>
           <EmailFlow />
           <T.BottomSection>
@@ -50,7 +53,7 @@ export const StudentSignUpFlow: FunctionComponent = withErrorBoundary(() => {
           </T.BottomSection>
         </React.Fragment>
       )}
-      {current && current === 5 && <EmailConfirmationFlow />}
+      {current && current === 6 && <EmailConfirmationFlow />}
 
       {current && (
         <T.BottomSection>
