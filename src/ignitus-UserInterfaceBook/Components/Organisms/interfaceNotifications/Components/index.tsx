@@ -17,6 +17,8 @@ export const InterfaceNotifications: React.FC = () => (
       picture="https://storage.googleapis.com/ignitus_assets/ig-avatars/eugene.png"
       title="Davis Johnson"
       textRight="is tracking your progress"
+      // eslint-disable-next-line no-alert
+      onRemove={() => alert('onRemove called.')}
     />
     <S.StyledNotifications
       textColor={C.Black}

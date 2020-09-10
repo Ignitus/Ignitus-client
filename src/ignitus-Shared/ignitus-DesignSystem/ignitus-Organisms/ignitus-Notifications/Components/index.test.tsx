@@ -15,6 +15,7 @@ const props: InputTypes = {
   title: '3 mentors',
   textLeft: 'We found',
   textRight: 'that could help you with your journey',
+  onRemove: jest.fn(),
 };
 
 expect.addSnapshotSerializer(emotionSerializer);
@@ -53,5 +54,10 @@ describe('<Notifications />', () => {
     expect(wrapper.find(S.LeftContainer).text()).toBe(
       props.textLeft + value + props.textRight,
     );
+  });
+
+  it('should call function on cross icon click', () => {
+    wrapper.find(S.Icon).simulate('click');
+    expect(props.onRemove).toBeCalledTimes(1);
   });
 });
