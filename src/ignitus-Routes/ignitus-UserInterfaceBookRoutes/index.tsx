@@ -44,6 +44,7 @@ import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Componen
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
 import { InterfaceMessageSettings } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageSettings/Components';
+import { InterfaceNewMessage } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNewMessage/Components/index';
 import { InterfaceSavedJobs } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSavedJobs/Components';
 
 const Container = styled.div`
@@ -159,6 +160,7 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           path="/interface/dashboardNavigationDropdown"
           component={interfaceDashboardNavigationDropdown}
         />
+        <Route path="/interface/newMessage" component={InterfaceNewMessage} />
         <Route path="/interface/avatar" component={InterfaceAvatar} />
         <Route path="/interface/sideProfile" component={interfaceSideProfile} />
         <Route path="/interface/progress" component={InterfaceProgress} />

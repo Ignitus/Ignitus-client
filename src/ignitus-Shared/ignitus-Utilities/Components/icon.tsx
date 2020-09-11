@@ -8,6 +8,7 @@ import { HeartIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Ico
 
 import { MessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/messageIcon';
 import { SaveIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/saveIcon';
+import { UploadIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/uploadIcon';
 import { NetworkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/networkIcon';
 import { MentorsIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/mentorsIcon';
 import { KeyBoardArrowDown } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/keyBoardArrowDown';
@@ -54,6 +55,17 @@ import { ProfessorIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus
 import { RedditIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/redditIcon/index';
 import { ShareIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/shareIcon/index';
 import { CheckIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/checkIcon/index';
+import { AttachFileIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/attachFileIcon/index';
+import { BoldTextIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/boldTextIcon/index';
+import { CapitalizeTextIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/capitalizeTextIcon/index';
+import { DiscardIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/discardIcon/index';
+import { ItalicTextIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/italicTextIcon/index';
+import { LinkIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/linkIcon/index';
+import { ListBulletIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/listBulletIcon/index';
+import { ListNumberIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/listNumberIcon/index';
+import { QuotesIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/quotesIcon/index';
+import { SendMessageIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/sendMessageIcon/index';
+import { UnderlineTextIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/underlineTextIcon/index';
 import { MoreHorizontalIcon } from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Icons/moreHorizontalIcon/index';
 
 type Props = {
@@ -103,6 +115,9 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.SaveIcon:
       return <SaveIcon {...rest} />;
+
+    case AppIcon.UploadIcon:
+      return <UploadIcon {...rest} />;
 
     case AppIcon.NetworkIcon:
       return <NetworkIcon {...rest} />;
@@ -224,5 +239,38 @@ export const Icon = ({ name, ...rest }: Props) => {
 
     case AppIcon.ProfessorIcon:
       return <ProfessorIcon {...rest} />;
+
+    case AppIcon.BoldTextIcon:
+      return <BoldTextIcon {...rest} />;
+
+    case AppIcon.ItalicTextIcon:
+      return <ItalicTextIcon {...rest} />;
+
+    case AppIcon.UnderlineTextIcon:
+      return <UnderlineTextIcon {...rest} />;
+
+    case AppIcon.CapitalizeTextIcon:
+      return <CapitalizeTextIcon {...rest} />;
+
+    case AppIcon.QuotesIcon:
+      return <QuotesIcon {...rest} />;
+
+    case AppIcon.LinkIcon:
+      return <LinkIcon {...rest} />;
+
+    case AppIcon.ListBulletIcon:
+      return <ListBulletIcon {...rest} />;
+
+    case AppIcon.ListNumberIcon:
+      return <ListNumberIcon {...rest} />;
+
+    case AppIcon.AttachFileIcon:
+      return <AttachFileIcon {...rest} />;
+
+    case AppIcon.DiscardIcon:
+      return <DiscardIcon {...rest} />;
+
+    case AppIcon.SendMessageIcon:
+      return <SendMessageIcon {...rest} />;
   }
 };

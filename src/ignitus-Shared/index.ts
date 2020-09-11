@@ -164,6 +164,10 @@ export {
 export {
   SavedJobsCard,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SavedJobsCard/Components';
+
+export {
+  NewMessage,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-NewMessage/Components';
 /**
  * ignitus-Templates
  */

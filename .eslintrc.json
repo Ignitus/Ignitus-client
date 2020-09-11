@@ -28,7 +28,7 @@
       }
     }
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "jsx-a11y"],
   "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "airbnb", "prettier/react", "prettier/@typescript-eslint", "plugin:prettier/recommended"],
   "rules": {
     "import/extensions": "off",

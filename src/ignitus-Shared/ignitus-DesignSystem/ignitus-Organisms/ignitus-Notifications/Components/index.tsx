@@ -16,6 +16,7 @@ export const Notifications = withErrorBoundary(
     title,
     textLeft,
     textRight,
+    onRemove,
     ...rest
   }: InputTypes) => (
     <S.Container color={textColor} bgColor={bgColor} {...rest}>
@@ -29,7 +30,11 @@ export const Notifications = withErrorBoundary(
       </S.LeftContainer>
       <S.RightContainer>
         <S.IconContainer>
-          <S.Icon color={C.GreyOne} name={AppIcon.CrossIcon} />
+          <S.Icon
+            onClick={onRemove}
+            color={C.GreyOne}
+            name={AppIcon.CrossIcon}
+          />
         </S.IconContainer>
       </S.RightContainer>
     </S.Container>
