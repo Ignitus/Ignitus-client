@@ -5,13 +5,24 @@ import { CheckBox, Label, StyledParagraph, Container } from '../styles';
 export const DefaultCheckbox = ({
   label,
   value,
+  height,
+  width,
+  color,
   size,
-  ...rest
 }: CheckBoxType) => (
-  <Container {...rest}>
-    <CheckBox type="checkbox" id={label} name={label} value={value} />
+  <Container>
+    <CheckBox
+      type="checkbox"
+      id={label}
+      name={label}
+      value={value}
+      height={height}
+      width={width}
+    />
     <Label htmlFor={label}>
-      <StyledParagraph size={size}>{label}</StyledParagraph>
+      <StyledParagraph fontSize={size} color={color}>
+        {label}
+      </StyledParagraph>
     </Label>
   </Container>
 );

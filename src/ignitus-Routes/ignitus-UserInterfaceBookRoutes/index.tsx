@@ -43,6 +43,7 @@ import { interfaceScrollBar } from '../../ignitus-UserInterfaceBook/Components/M
 import { interfaceToggleButtons } from '../../ignitus-UserInterfaceBook/Components/Molecules/interfaceToggleButtons/Components';
 import { interfaceDashboardNavigationDropdown } from '../../ignitus-UserInterfaceBook/Components/Atoms/interfaceNavDropdown/Components';
 import { interfaceOpportunitySideCard } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceOpportunitySideCard/Components';
+import { InterfaceMessageSettings } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceMessageSettings/Components';
 import { InterfaceNewMessage } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceNewMessage/Components/index';
 import { InterfaceSavedJobs } from '../../ignitus-UserInterfaceBook/Components/Organisms/interfaceSavedJobs/Components';
 
@@ -168,6 +169,10 @@ export const UserInterfaceBookRoutes: React.FunctionComponent = () => (
           component={InterfaceNotifications}
         />
         <Route path="/interface/messageCard" component={interfaceMessageCard} />
+        <Route
+          path="/interface/messageSettings"
+          component={InterfaceMessageSettings}
+        />
         <Route path="/interface/savedJobs" component={InterfaceSavedJobs} />
         <Route path="/interface/deleteFinal" component={interfaceDeleteFinal} />
         <Route

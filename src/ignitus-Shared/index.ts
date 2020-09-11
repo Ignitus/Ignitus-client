@@ -158,6 +158,10 @@ export {
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-Notifications/Components';
 
 export {
+  MessageSettings,
+} from './ignitus-DesignSystem/ignitus-Organisms/ignitus-MessageSettings/Components';
+
+export {
   SavedJobsCard,
 } from './ignitus-DesignSystem/ignitus-Organisms/ignitus-SavedJobsCard/Components';
 

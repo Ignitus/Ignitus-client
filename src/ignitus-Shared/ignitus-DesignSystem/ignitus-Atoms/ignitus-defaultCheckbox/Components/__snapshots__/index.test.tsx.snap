@@ -5,7 +5,7 @@ exports[`should rendered 1`] = `
   class="css-1orfikq"
 >
   <input
-    class="css-7sjvxi"
+    class="css-176h7u8"
     id="Label"
     name="Label"
     type="checkbox"
@@ -16,7 +16,7 @@ exports[`should rendered 1`] = `
     for="Label"
   >
     <p
-      class="css-13l7i8d"
+      class="css-12wugqo"
     >
       Label
     </p>
